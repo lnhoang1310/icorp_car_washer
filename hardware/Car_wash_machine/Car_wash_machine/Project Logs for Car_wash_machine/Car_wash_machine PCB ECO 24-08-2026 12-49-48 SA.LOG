@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=SCL_ESP Pin=JP1-3
+Removed Pin From Net: NetName=SDA_ESP Pin=JP1-4
+Added Pin To Net: NetName=SDA_ESP Pin=JP1-3
+Added Pin To Net: NetName=SCL_ESP Pin=JP1-4
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component GND TP_1MM

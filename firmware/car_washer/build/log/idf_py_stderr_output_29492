@@ -1,0 +1,23 @@
+Command: cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe -DESP_PLATFORM=1 -DCCACHE_ENABLE=1 D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer
+CMake Warning at C:/Espressif/frameworks/esp-idf-v5.5.1/tools/cmake/build.cmake:627 (message):
+  WARNING: The following Kconfig variables were used in "if" clauses, but not
+  found in any Kconfig file:
+
+      LV_USE_FREETYPE, introduced by espressif/freetype, defined in (unknown)
+      LV_USE_LIBJPEG_TURBO, introduced by espressif/libjpeg-turbo, defined in (unknown)
+      LV_USE_LIBPNG, introduced by espressif/libpng, defined in (unknown)
+      LV_USE_LZ4, introduced by espressif/lz4, defined in (unknown)
+
+  
+
+Call Stack (most recent call first):
+  C:/Espressif/frameworks/esp-idf-v5.5.1/tools/cmake/project.cmake:740 (idf_build_process)
+  CMakeLists.txt:8 (project)
+
+
+CMake Warning at C:/Espressif/frameworks/esp-idf-v5.5.1/tools/cmake/project.cmake:753 (message):
+  Missing kconfig option.  Re-run the build process...
+Call Stack (most recent call first):
+  CMakeLists.txt:8 (project)
+
+

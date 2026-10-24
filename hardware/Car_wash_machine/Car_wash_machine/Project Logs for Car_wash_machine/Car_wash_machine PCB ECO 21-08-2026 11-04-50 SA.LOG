@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=BCLK Pin=U9-4
+Removed Pin From Net: NetName=LRCLK Pin=U9-5
+Removed Pin From Net: NetName=DIN Pin=U9-6
+Removed Pin From Net: NetName=SD_MODE Pin=U9-7
+Added Pin To Net: NetName=LRCLK Pin=U9-4
+Added Pin To Net: NetName=BCLK Pin=U9-5
+Added Pin To Net: NetName=SD_MODE Pin=U9-6
+Added Pin To Net: NetName=DIN Pin=U9-7
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component GND TP_1MM

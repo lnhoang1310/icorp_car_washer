@@ -1,0 +1,2 @@
+Change Component Footprint: Designator=PS1 Old Footprint=HILINK 5V/3W New Footprint=MODULE_POWER_HLK-20M05
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component GND TP_1MM

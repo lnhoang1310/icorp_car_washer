@@ -1,0 +1,657 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM10 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\car_washer.elf D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM10'
+ESP-ROM:esp32s3-20210327
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1658
+load:0x403c8700,len:0xd98
+load:0x403cb700,len:0x33a4
+entry 0x403c899c
+[0;32mI (25) boot: ESP-IDF v5.5.1-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Sep 28 2026 18:07:58[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.4[0m
+[0;32mI (32) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (36) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00080000[0m
+[0;32mI (63) boot:  1 otadata          OTA data         01 00 00089000 00002000[0m
+[0;32mI (70) boot:  2 phy_init         RF data          01 01 0008b000 00001000[0m
+[0;32mI (76) boot:  3 ota_0            OTA app          00 10 00090000 002ee000[0m
+[0;32mI (83) boot:  4 ota_1            OTA app          00 11 00380000 002ee000[0m
+[0;32mI (89) boot:  5 storage          Unknown data     01 82 0066e000 00400000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00090020 vaddr=3c130020 size=4feech (327404) map[0m
+[0;32mI (161) esp_image: segment 1: paddr=000dff14 vaddr=3fc9ed00 size=00104h (   260) load[0m
+[0;32mI (162) esp_image: segment 2: paddr=000e0020 vaddr=42000020 size=123b4ch (1194828) map[0m
+[0;32mI (365) esp_image: segment 3: paddr=00203b74 vaddr=3fc9ee04 size=05250h ( 21072) load[0m
+[0;32mI (369) esp_image: segment 4: paddr=00208dcc vaddr=40374000 size=1ac54h (109652) load[0m
+[0;32mI (391) esp_image: segment 5: paddr=00223a28 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (401) boot: Loaded app from partition at offset 0x90000[0m
+[0;32mI (401) boot: Disabling RNG early entropy source...[0m
+[0;32mI (411) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (411) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (411) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (413) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (418) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (422) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (426) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (431) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (436) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (440) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (446) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (450) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (454) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (458) esp_psram: Speed: 80MHz[0m
+[0;32mI (461) cpu_start: Multicore app[0m
+[0;32mI (877) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (886) cpu_start: Pro cpu start user code[0m
+[0;32mI (886) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (886) app_init: Application information:[0m
+[0;32mI (886) app_init: Project name:     car_washer[0m
+[0;32mI (890) app_init: App version:      1.0.0[0m
+[0;32mI (894) app_init: Compile time:     Oct 19 2026 21:51:30[0m
+[0;32mI (899) app_init: ELF file SHA256:  a1f2f5dac...[0m
+[0;32mI (903) app_init: ESP-IDF:          v5.5.1-dirty[0m
+[0;32mI (907) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (911) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (915) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (919) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (925) heap_init: At 3FCAA938 len 0003EDD8 (251 KiB): RAM[0m
+[0;32mI (930) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (936) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (941) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (946) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (953) spi_flash: detected chip: generic[0m
+[0;32mI (956) spi_flash: flash io: dio[0m
+[0;32mI (960) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (966) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (973) main_task: Started on CPU0[0m
+[0;32mI (976) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (984) main_task: Calling app_main()[0m
+[0;32mI (1012) device_id: device_id = 80456B281774[0m
+[0;32mI (1012) main: device_id = 80456B281774[0m
+[0;32mI (1012) i2c_bus: i2c_bus_init OK (port=1 sda=1 scl=2)[0m
+[0;32mI (1014) io_exp: init OK (out=0x38 in=0x39 int=GPIO15)[0m
+[0;32mI (1018) fram: fram_init OK (port=1 sda=1 scl=2 addr=0x50 cap=32768 byte)[0m
+[0;32mI (1024) io_exp: PCF input 0x39 OK[0m
+[0;32mI (1028) rtc_ds3231: DS3231 connected (port=1 sda=1 scl=2)[0m
+[0;33mW (1033) ntp_time: Dong ho he thong chua hop le (vua boot/reset)[0m
+[0;33mW (1040) ntp_time: Gio doc tu RTC khong hop le (co the do nhieu I2C lam sai lech du lieu) -- bo qua, cho SNTP[0m
+[0;33mW (1048) devcfg: khong co / hong cau hinh trong NVS -> dung mac dinh[0m
+[0;32mI (1225) display: doc ID man hinh (0xD3): 00 00 00 00 00[0m
+[0;33mW (1226) display: man hinh khong tra loi: chan SDO/MISO chua noi, hoac chip chua nhan duoc lenh (kiem tra day CS/DC/RST/SCK/SDI va nguon man hinh)[0m
+[0;32mI (1233) ili9341: LCD panel create success, version: 2.1.0[0m
+[0;32mI (1359) LVGL: Starting LVGL task[0m
+[0;33mW (1362) lcd_panel.io.spi: Callback on_color_trans_done was already set and now it was overwritten![0m
+[0;32mI (1419) display: cam ung: dung hieu chinh da luu (swap=1 inv_x=1 inv_y=1 x=241..3931 y=14..3949)[0m
+[0;32mI (1419) display: cam ung XPT2046 OK (doc dinh ky, CS=GPIO21)[0m
+[0;32mI (1422) display: display OK ILI9341 320x240, SPI 15 MHz[0m
+[0;33mW (1431) devcfg: ap dung cau hinh TAM (khong luu NVS)[0m
+[0;33mW (1432) peripheral_test: [DEMO] ep kich ban tinh thoi gian = 1: OK[0m
+[0;32mI (1438) peripheral_test: cam ung da co hieu chinh trong NVS (muon lam lai: dat PT_TOUCH_CALIB = 2)[0m
+[0;32mI (1478) audio: phan vung am thanh: dung 1176/4096 KB[0m
+[0;33mW (1509) audio: thieu 5/21 file am thanh trong assets/audio[0m
+[0;32mI (1510) audio: audio OK (I2S 16000 Hz, BCLK=6 WS=7 DIN=5 SD=4)[0m
+[0;32mI (1510) main: =========== Network init ==========[0m
+[1;31mE (1514) gpio: gpio_install_isr_service(526): GPIO isr service already installed[0m
+[0;33mW (1521) net_ethernet: GPIO ISR handler already installed, bo qua[0m
+[0;32mI (1549) esp_eth.netif.netif_glue: 80:45:6b:28:17:77[0m
+[0;32mI (1550) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+[0;32mI (1550) net_ethernet: net_ethernet_init OK (spi_host=2 cs=9 int=10)[0m
+[0;32mI (1565) net_ethernet: Driver started[0m
+[0;32mI (1566) pp: pp rom version: e7ae62f[0m
+[0;32mI (1567) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1568) wifi:wifi driver task: 3fce1490, prio:23, stack:6656, core=0[0m
+[0;32mI (1582) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (1582) wifi:wifi certification version: v7.0[0m
+[0;32mI (1583) wifi:config NVS flash: enabled[0m
+[0;32mI (1584) wifi:config nano formatting: disabled[0m
+[0;32mI (1588) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1593) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1597) wifi:Init management short buffer num: 32[0m
+[0;32mI (1601) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1605) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1610) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1614) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1618) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1622) wifi_init: rx ba win: 6[0m
+[0;32mI (1625) wifi_init: accept mbox: 6[0m
+[0;32mI (1628) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1631) wifi_init: udp mbox: 6[0m
+[0;32mI (1634) wifi_init: tcp mbox: 6[0m
+[0;32mI (1637) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1640) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1643) wifi_init: tcp mss: 1440[0m
+[0;32mI (1646) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (1650) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1654) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1688) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (1721) wifi:mode : sta (80:45:6b:28:17:74) + softAP (80:45:6b:28:17:75)[0m
+[0;32mI (1722) wifi:enable tsf[0m
+[0;32mI (1724) wifi:Total power save buffer number: 16[0m
+[0;32mI (1725) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1728) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1733) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1736) net_wifi: STA fallback used -> auto-connect[0m
+[0;32mI (1742) net_wifi: AP SSID=XTECH - 281774 IP:192.168.4.1[0m
+[0;32mI (1742) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (1754) net_gsm: net_gsm_init OK (uart=2 tx=47 rx=48 apn=v-internet)[0m
+[0;32mI (1760) net_gsm: pulse reset[0m
+[0;32mI (1761) net_manager: net_manager_init[0m
+[0;32mI (1767) ntp_time: SNTP started[0m
+[1;31mE (1779) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (1780) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (1784) mqtt_client: Error transport connect[0m
+[0;33mW (1789) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (1792) cloud: broker uat-mqtt-carwash.icorp.vn:1883, client carwash-80456b281774, bayMac 80456b281774, khoang 0[0m
+[0;32mI (1803) main: khoi dong xong[0m
+[0;32mI (1805) main_task: Returned from app_main()[0m
+[0;32mI (1880) app_fsm: BOOT -> OUT_OF_SERVICE[0m
+[0;32mI (2743) net_wifi: STA fallback used -> auto-connect[0m
+[0;32mI (3576) wifi:ap channel adjust o:1,1 n:6,2[0m
+[0;32mI (3576) wifi:new:<6,0>, old:<1,1>, ap:<6,2>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3577) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3585) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3591) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3625) wifi:connected with Lâm Hoàng, aid = 1, channel 6, BW20, bssid = 66:d1:cf:14:1f:af[0m
+[0;32mI (3625) wifi:security: WPA2-PSK, phy: bgn, rssi: -46[0m
+[0;32mI (3636) wifi:pm start, type: 0[0m
+
+[0;32mI (3636) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3638) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (3647) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (3654) net_manager: WIFI STA CONNECTED[0m
+[0;32mI (4941) esp_netif_handlers: sta ip: 172.20.10.2, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (4941) net_wifi: Got IP: 172.20.10.2[0m
+[0;32mI (4942) net_manager: WIFI GOT IP: 172.20.10.2[0m
+[0;32mI (4946) net_manager: Switch default interface -> WIFI_STA_DEF[0m
+[0;32mI (9263) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (9264) uart: queue free spaces: 30[0m
+[0;32mI (9297) wifi:<ba-add>idx:0 (ifx:0, 66:d1:cf:14:1f:af), tid:0, ssn:2, winSize:64[0m
+[0;32mI (9387) cloud: da ket noi broker[0m
+[0;32mI (9392) cloud: -> {"type":"Boot","packageId":"18403b4e-6c8f-43f1-ab0f-f2027d6612f6","timestamp":"1970-01-01T00:00:08Z","payload":{"mac":"80456b281774","firmwareVersion":"V1.0.0","hardwareVersion":"V1.0","operationMode":{"mode":"SPEED","foam":3,"water":1,"air":2,"vacuum":1}}}[0m
+[0;32mI (9406) cloud: -> {"type":"Meter","packageId":"d4354123-866b-478a-9067-e9ac29dc983c","timestamp":"1970-01-01T00:00:08Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"NORMAL","transactionId":0,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false}}[0m
+[0;33mW (9429) app_fsm: server DA KET NOI (trang thai OUT_OF_SERVICE)[0m
+[0;32mI (9434) app_fsm: OUT_OF_SERVICE -> IDLE[0m
+[0;32mI (17064) ntp_time: SNTP dong bo thanh cong: 2026-10-21 17:58:39[0m
+[0;32mI (17065) ntp_time: Da ghi gio he thong xuong RTC[0m
+[1;31mE (29265) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (30266) net_gsm: Modem/song chua san sang, thu lai sau 5000 ms (fail_count=1)[0m
+[0;32mI (35266) net_gsm: pulse reset[0m
+[0;32mI (35342) display: touch nghi ngo: adc x=875 y=1040 luc=1295 (mau 1/2)[0m
+[0;32mI (38281) display: touch nghi ngo: adc x=709 y=1009 luc=2305 (mau 1/2)[0m
+[0;32mI (38317) display: cam ung: nhan duoc cham dau tien tai x=250 y=197 (luc 2432)[0m
+[0;32mI (38317) display: touch adc x=714 y=1043 luc=2432 -> man hinh x=250 y=197[0m
+[0;32mI (38351) display: touch adc x=702 y=1009 luc=2300 -> man hinh x=253 y=198[0m
+[0;32mI (38425) app_fsm: IDLE -> SELECT[0m
+[0;32mI (40531) display: touch nghi ngo: adc x=1130 y=1102 luc=1781 (mau 1/2)[0m
+[0;32mI (40567) display: touch nghi ngo: adc x=1398 y=1126 luc=1208 (mau 1/2)[0m
+[0;32mI (40601) display: touch nghi ngo: adc x=1609 y=1123 luc=1376 (mau 1/2)[0m
+[0;32mI (40637) display: touch adc x=1776 y=1046 luc=1261 -> man hinh x=250 y=132[0m
+[0;32mI (40671) display: touch adc x=1927 y=1077 luc=1098 -> man hinh x=247 y=123[0m
+[0;32mI (40739) display: touch adc x=2125 y=1059 luc=1325 -> man hinh x=249 y=111[0m
+[0;32mI (42766) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (42767) uart: queue free spaces: 30[0m
+[0;32mI (43745) display: touch nghi ngo: adc x=770 y=2313 luc=785 (mau 1/2)[0m
+[0;32mI (43781) display: touch adc x=905 y=2332 luc=640 -> man hinh x=139 y=185[0m
+[0;32mI (43814) display: touch adc x=912 y=2364 luc=1329 -> man hinh x=136 y=185[0m
+[0;32mI (43850) display: touch adc x=904 y=2356 luc=1463 -> man hinh x=137 y=185[0m
+[0;32mI (43919) display: touch adc x=1198 y=2388 luc=1683 -> man hinh x=134 y=168[0m
+[0;32mI (44021) display: touch adc x=1664 y=2397 luc=1719 -> man hinh x=133 y=139[0m
+[0;32mI (44122) display: touch adc x=2032 y=2340 luc=1522 -> man hinh x=138 y=117[0m
+[0;32mI (44224) display: touch adc x=2372 y=2306 luc=1353 -> man hinh x=141 y=96[0m
+[0;32mI (46220) display: touch nghi ngo: adc x=2536 y=2277 luc=1467 (mau 1/2)[0m
+[0;32mI (46290) display: touch nghi ngo: adc x=2308 y=2279 luc=1928 (mau 1/2)[0m
+[0;32mI (46326) display: touch adc x=2128 y=2269 luc=1810 -> man hinh x=144 y=111[0m
+[0;32mI (46363) display: touch adc x=1907 y=2275 luc=1805 -> man hinh x=144 y=125[0m
+[0;32mI (46467) display: touch adc x=1418 y=2247 luc=1785 -> man hinh x=146 y=154[0m
+[0;32mI (46569) display: touch adc x=873 y=2180 luc=1721 -> man hinh x=152 y=187[0m
+[0;32mI (48047) display: touch nghi ngo: adc x=2500 y=2580 luc=1892 (mau 1/2)[0m
+[0;32mI (48082) display: touch adc x=2483 y=2587 luc=2184 -> man hinh x=117 y=90[0m
+[0;32mI (48116) display: touch adc x=2480 y=2581 luc=2199 -> man hinh x=117 y=90[0m
+[0;32mI (48467) app_fsm: tao don 80456B281774-1792580350-0029: Gói 5 phút 5 phut 10000 d[0m
+[0;32mI (48468) app_fsm: SELECT -> CREATING_QR[0m
+[0;32mI (48475) cloud: -> {"type":"InitTransaction","packageId":"8a52a9f1-2397-45ab-a65d-4038c67da41a","timestamp":"2026-10-21T10:59:10Z","payload":{"bayMac":"80456b281774","bayNumber":0,"packageDuration":300,"price":10000}}[0m
+[0;32mI (48976) cloud: <- carwash/v1/80456b281774/down: {"type":"ShowPaymentCode","payload":{"code":"http://uat-api-carwash.icorp.vn/api/v1/payment-simulation/4/confirm?token=wiu_NtYSBeO5x2wCbLpughSEzejSSqsDZ9hEQ6OaElU","bayMac":"80456b281774","expireAt":"2026-10-21T11:04:11.096Z","bayNumber":1,"transactionId":4},"packageId":"9a9a4390-8bdb-429d-80bd-75348f315deb","timestamp":"2026-10-21T10:59:11.096Z"}[0m
+[0;32mI (49001) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (49078) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[1;31mE (62768) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (63769) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (73769) net_gsm: pulse reset[0m
+[0;32mI (81269) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (81270) uart: queue free spaces: 30[0m
+[1;31mE (101271) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (102272) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (112272) net_gsm: pulse reset[0m
+[0;32mI (119772) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (119773) uart: queue free spaces: 30[0m
+[0;32mI (121524) cloud: <- carwash/v1/80456b281774/down: {"type":"StartTransaction","payload":{"bayMac":"80456b281774","bayNumber":1,"transactionId":4,"packageDuration":300},"packageId":"06e68c9d-446d-49d2-b194-60b6372b8e5e","timestamp":"2026-10-21T11:00:23.677Z"}[0m
+[0;32mI (121536) app_fsm: don 4 da thanh toan[0m
+[0;32mI (121546) cloud: -> {"type":"Meter","packageId":"af9238a8-727f-4105-88d3-0c4bcf4a6e6f","timestamp":"2026-10-21T11:00:23Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":4,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":0,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (121570) app_fsm: WAIT_PAYMENT -> PAID[0m
+[0;32mI (121581) audio: phat: "Thanh toán thành công. Cảm ơn quý khách."[0m
+[0;32mI (121897) app_fsm: den BAT (troi toi)[0m
+[0;32mI (124597) app_fsm: PAID -> WASHING[0m
+[0;32mI (124621) audio: phat: "Bắt đầu rửa xe. Nhấn nút bọt, nước hoặc xịt khô để sử dụng."[0m
+[0;33mW (124632) audio: thieu file /audio/wash_guide.wav[0m
+[1;31mE (139774) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (140775) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (141604) cloud: -> {"type":"Meter","packageId":"c608df77-c82e-4658-90e5-ccfd0033bc6a","timestamp":"2026-10-21T11:00:43Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":4,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":0,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (146503) audio: phat: "Xịt khô."[0m
+[0;32mI (146512) cloud: -> {"type":"Meter","packageId":"0e6fe3d9-7524-4cdf-9b8f-0c4a6c8f28a0","timestamp":"2026-10-21T11:00:48Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":4,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":0,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (150775) net_gsm: pulse reset[0m
+[0;32mI (151280) audio: phat: "Tạm dừng."[0m
+[0;32mI (151289) cloud: -> {"type":"Meter","packageId":"994cd247-3d19-4348-b2d3-504f5051df98","timestamp":"2026-10-21T11:00:53Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":4,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":0,"waterSeconds":0,"airSeconds":4,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (153683) audio: phat: "Phun bọt."[0m
+[0;32mI (153691) cloud: -> {"type":"Meter","packageId":"41898b1d-c458-41a7-8e3c-bf296ab84746","timestamp":"2026-10-21T11:00:55Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":4,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":0,"waterSeconds":0,"airSeconds":4,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (158275) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (158276) uart: queue free spaces: 30[0m
+[0;32mI (159271) audio: phat: "Tạm dừng."[0m
+[0;32mI (159280) cloud: -> {"type":"Meter","packageId":"e5b4722a-dfbe-4a35-aa7e-057bb2e3c828","timestamp":"2026-10-21T11:01:01Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":4,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":5,"waterSeconds":0,"airSeconds":4,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (160540) audio: phat: "Phun nước."[0m
+[0;32mI (160549) cloud: -> {"type":"Meter","packageId":"bcf1152c-50e3-4924-af39-a1f8ac90dc7a","timestamp":"2026-10-21T11:01:02Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":4,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":5,"waterSeconds":0,"airSeconds":4,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;33mW (160551) audio: thieu file /audio/water_on.wav[0m
+[1;31mE (178301) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (179302) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (180620) cloud: -> {"type":"Meter","packageId":"ca3deea5-7fe7-4593-82ac-da6583f5b1c0","timestamp":"2026-10-21T11:01:22Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":4,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":5,"waterSeconds":20,"airSeconds":4,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (189302) net_gsm: pulse reset[0m
+[0;32mI (196802) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (196803) uart: queue free spaces: 30[0m
+[0;32mI (200621) cloud: -> {"type":"Meter","packageId":"db361b54-d89a-4d34-82b1-2dab0590aa2f","timestamp":"2026-10-21T11:01:42Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":4,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":5,"waterSeconds":40,"airSeconds":4,"vacuumSeconds":0,"parkingTime":600}}[0m
+[1;31mE (216804) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (217805) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (220622) cloud: -> {"type":"Meter","packageId":"d7ebe698-903b-4d8c-b771-9eb1ec23f5a5","timestamp":"2026-10-21T11:02:02Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":4,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":5,"waterSeconds":60,"airSeconds":4,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (227805) net_gsm: pulse reset[0m
+[0;32mI (235305) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (235306) uart: queue free spaces: 30[0m
+[0;32mI (240623) cloud: -> {"type":"Meter","packageId":"63b9bd71-1186-46f1-b042-db10f6f77955","timestamp":"2026-10-21T11:02:22Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":4,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":5,"waterSeconds":80,"airSeconds":4,"vacuumSeconds":0,"parkingTime":600}}[0m
+[1;31mE (255307) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (256308) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (260624) cloud: -> {"type":"Meter","packageId":"a4352037-3e49-4f8a-af49-2b1d0ac13c40","timestamp":"2026-10-21T11:02:42Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":4,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":5,"waterSeconds":100,"airSeconds":4,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (266308) net_gsm: pulse reset[0m
+[0;32mI (273808) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (273809) uart: queue free spaces: 30[0m
+[0;32mI (280627) cloud: -> {"type":"Meter","packageId":"4b1a578e-37c3-432d-b981-d3ea9260ea9d","timestamp":"2026-10-21T11:03:02Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":4,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":5,"waterSeconds":120,"airSeconds":4,"vacuumSeconds":0,"parkingTime":600}}[0m
+[1;31mE (293811) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (294812) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (300723) cloud: -> {"type":"Meter","packageId":"61654e6c-5582-4044-a212-a6d63105f591","timestamp":"2026-10-21T11:03:22Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":4,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":5,"waterSeconds":140,"airSeconds":4,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (304812) net_gsm: pulse reset[0m
+[0;32mI (312312) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (312313) uart: queue free spaces: 30[0m
+[0;32mI (320725) cloud: -> {"type":"Meter","packageId":"ce9b4f37-03e2-4cec-8a2a-c8c97437f9fd","timestamp":"2026-10-21T11:03:42Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":4,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":5,"waterSeconds":160,"airSeconds":4,"vacuumSeconds":0,"parkingTime":600}}[0m
+[1;31mE (332315) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (333316) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (340825) cloud: -> {"type":"Meter","packageId":"d2961f16-d598-41ad-9247-e1765ef55d5c","timestamp":"2026-10-21T11:04:02Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":4,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":5,"waterSeconds":180,"airSeconds":4,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (343316) net_gsm: pulse reset[0m
+[0;32mI (350816) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (350817) uart: queue free spaces: 30[0m
+[0;32mI (360825) cloud: -> {"type":"Meter","packageId":"ce1a26f5-468e-4f3d-beda-0b13d440d289","timestamp":"2026-10-21T11:04:22Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":4,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":5,"waterSeconds":200,"airSeconds":4,"vacuumSeconds":0,"parkingTime":600}}[0m
+[1;31mE (370819) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (371820) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (374325) audio: phat: "Thời gian sử dụng còn một phút."[0m
+[0;32mI (380827) cloud: -> {"type":"Meter","packageId":"bc787837-34ab-4a27-a72a-de8c7949432b","timestamp":"2026-10-21T11:04:42Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":4,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":5,"waterSeconds":220,"airSeconds":4,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (381820) net_gsm: pulse reset[0m
+[0;32mI (389320) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (389321) uart: queue free spaces: 30[0m
+[0;32mI (400828) cloud: -> {"type":"Meter","packageId":"2652a2f2-3d74-4075-9d61-67395f9e65cf","timestamp":"2026-10-21T11:05:02Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":4,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":5,"waterSeconds":240,"airSeconds":4,"vacuumSeconds":0,"parkingTime":600}}[0m
+[1;31mE (409322) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (410323) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (420323) net_gsm: pulse reset[0m
+[0;32mI (420828) cloud: -> {"type":"Meter","packageId":"73b85587-b37e-47d5-bc09-ae2044c613f1","timestamp":"2026-10-21T11:05:22Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":4,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":5,"waterSeconds":260,"airSeconds":4,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (427823) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (427824) uart: queue free spaces: 30[0m
+[0;32mI (434328) app_fsm: ket thuc phien 4 (kich ban 1, ly do 2): da tru bot 16s nuoc 273s kho 9s (bom thuc 5s/273s/4s), con 0s su dung, 290s do xe[0m
+[0;32mI (434351) cloud: -> [luu 0] {"type":"Meter","packageId":"0e2f4249-fcf3-4408-b98a-bfaa645a3073","timestamp":"2026-10-21T11:05:36Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"NORMAL","transactionId":4,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"reason":"NORMAL_FINISHED","foamSeconds":5,"waterSeconds":273,"airSeconds":4,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (434382) app_fsm: WASHING -> FINISHED[0m
+[0;32mI (434399) audio: phat: "Đã hết thời gian rửa xe. Cảm ơn quý khách, hẹn gặp lại."[0m
+[0;32mI (434541) cloud: server da nhan ban tin [0], con 0 cho gui[0m
+[0;32mI (439429) app_fsm: FINISHED -> IDLE[0m
+[1;31mE (447825) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (448826) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (458826) net_gsm: pulse reset[0m
+[0;32mI (466326) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (466327) uart: queue free spaces: 30[0m
+[1;31mE (486329) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (487330) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (497330) net_gsm: pulse reset[0m
+[0;32mI (504830) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (504831) uart: queue free spaces: 30[0m
+[1;31mE (524832) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (525833) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (535833) net_gsm: pulse reset[0m
+[0;32mI (543333) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (543334) uart: queue free spaces: 30[0m
+[0;32mI (553930) app_fsm: den TAT (troi toi)[0m
+[1;31mE (563335) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (564336) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (574336) net_gsm: pulse reset[0m
+[0;32mI (581836) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (581837) uart: queue free spaces: 30[0m
+[0;32mI (589050) display: touch nghi ngo: adc x=585 y=1200 luc=1829 (mau 1/2)[0m
+[0;32mI (589787) display: touch nghi ngo: adc x=697 y=1225 luc=1980 (mau 1/2)[0m
+[0;32mI (589823) display: touch adc x=618 y=1266 luc=2242 -> man hinh x=231 y=203[0m
+[0;32mI (589858) display: touch adc x=757 y=1315 luc=988 -> man hinh x=227 y=194[0m
+[0;32mI (589932) app_fsm: IDLE -> SELECT[0m
+[0;32mI (591542) display: touch nghi ngo: adc x=805 y=2121 luc=1162 (mau 1/2)[0m
+[0;32mI (591578) display: touch adc x=811 y=2120 luc=1308 -> man hinh x=157 y=191[0m
+[0;32mI (591613) display: touch adc x=859 y=2144 luc=954 -> man hinh x=155 y=188[0m
+[0;32mI (591681) display: touch adc x=1003 y=2135 luc=1145 -> man hinh x=156 y=179[0m
+[0;32mI (591780) display: touch adc x=1252 y=2118 luc=1615 -> man hinh x=157 y=164[0m
+[0;32mI (591882) display: touch adc x=1525 y=2084 luc=1161 -> man hinh x=160 y=148[0m
+[0;32mI (591985) display: touch adc x=1692 y=2102 luc=1371 -> man hinh x=159 y=138[0m
+[0;32mI (592087) display: touch adc x=1968 y=2034 luc=1531 -> man hinh x=164 y=121[0m
+[0;32mI (592187) display: touch adc x=2351 y=1975 luc=1427 -> man hinh x=170 y=98[0m
+[0;32mI (592971) display: touch nghi ngo: adc x=2169 y=2157 luc=1224 (mau 1/2)[0m
+[0;32mI (593007) display: touch adc x=2151 y=2143 luc=1362 -> man hinh x=155 y=110[0m
+[0;32mI (593041) display: touch adc x=2087 y=2135 luc=1409 -> man hinh x=156 y=114[0m
+[0;32mI (593119) app_fsm: tao don 80456B281774-1792580895-0030: Gói 15 phút 15 phut 30000 d[0m
+[0;32mI (593119) app_fsm: SELECT -> CREATING_QR[0m
+[0;32mI (593126) cloud: -> {"type":"InitTransaction","packageId":"ebc358ce-6723-494e-b695-b846a2bf6ee2","timestamp":"2026-10-21T11:08:15Z","payload":{"bayMac":"80456b281774","bayNumber":0,"packageDuration":900,"price":30000}}[0m
+[0;32mI (593240) display: touch nghi ngo: adc x=1495 y=2138 luc=903 (mau 1/2)[0m
+[0;32mI (593312) display: touch nghi ngo: adc x=1258 y=2128 luc=1334 (mau 1/2)[0m
+[0;32mI (593380) display: touch nghi ngo: adc x=1064 y=2132 luc=1098 (mau 1/2)[0m
+[0;32mI (593724) cloud: <- carwash/v1/80456b281774/down: {"type":"ShowPaymentCode","payload":{"code":"http://uat-api-carwash.icorp.vn/api/v1/payment-simulation/5/confirm?token=oDdiZkVh-Dj6ASs8mckkRxbbdT_h1sYg-8NQJDgU1rY","bayMac":"80456b281774","expireAt":"2026-10-21T11:13:15.847Z","bayNumber":1,"transactionId":5},"packageId":"8bd66ade-2e24-4583-b98e-37d764a66a6e","timestamp":"2026-10-21T11:08:15.847Z"}[0m
+[0;32mI (593750) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (593826) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[1;31mE (601839) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (602840) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (612840) net_gsm: pulse reset[0m
+[0;32mI (620340) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (620341) uart: queue free spaces: 30[0m
+[0;32mI (627883) cloud: <- carwash/v1/80456b281774/down: {"type":"StartTransaction","payload":{"bayMac":"80456b281774","bayNumber":1,"transactionId":5,"packageDuration":900},"packageId":"1d8e4f2b-efb9-4c41-82ef-5c30aa5cf11c","timestamp":"2026-10-21T11:08:50.034Z"}[0m
+[0;32mI (627896) app_fsm: don 5 da thanh toan[0m
+[0;32mI (627905) cloud: -> {"type":"Meter","packageId":"3356439f-bb75-4fe9-9e94-152e26abd6b1","timestamp":"2026-10-21T11:08:50Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":5,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":0,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":1200}}[0m
+[0;32mI (627930) app_fsm: WAIT_PAYMENT -> PAID[0m
+[0;32mI (627940) audio: phat: "Thanh toán thành công. Cảm ơn quý khách."[0m
+[0;32mI (628041) app_fsm: den BAT (troi toi)[0m
+[0;32mI (630944) app_fsm: PAID -> WASHING[0m
+[0;32mI (630966) audio: phat: "Bắt đầu rửa xe. Nhấn nút bọt, nước hoặc xịt khô để sử dụng."[0m
+[0;33mW (630978) audio: thieu file /audio/wash_guide.wav[0m
+[0;32mI (639001) audio: phat: "Xịt khô."[0m
+[0;32mI (639011) cloud: -> {"type":"Meter","packageId":"c71bd8ad-81b5-4f66-bbc7-4354699a4385","timestamp":"2026-10-21T11:09:01Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":5,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":0,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":1200}}[0m
+[1;31mE (640343) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (641344) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (651344) net_gsm: pulse reset[0m
+[0;32mI (658844) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (658845) uart: queue free spaces: 30[0m
+[0;32mI (659051) cloud: -> {"type":"Meter","packageId":"8ad8436f-4ae2-4b82-b127-2e870e65661a","timestamp":"2026-10-21T11:09:21Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":5,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":0,"waterSeconds":0,"airSeconds":20,"vacuumSeconds":0,"parkingTime":1200}}[0m
+[1;31mE (678846) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;32mI (679051) cloud: -> {"type":"Meter","packageId":"259b5dd1-96b5-4add-ac2e-f3d30a505513","timestamp":"2026-10-21T11:09:41Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":5,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":0,"waterSeconds":0,"airSeconds":40,"vacuumSeconds":0,"parkingTime":1200}}[0m
+[0;33mW (679847) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (689847) net_gsm: pulse reset[0m
+[0;32mI (697347) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (697348) uart: queue free spaces: 30[0m
+[0;32mI (699053) cloud: -> {"type":"Meter","packageId":"423850be-13de-4367-9975-0e463120b5a3","timestamp":"2026-10-21T11:10:01Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":5,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":0,"waterSeconds":0,"airSeconds":60,"vacuumSeconds":0,"parkingTime":1200}}[0m
+[1;31mE (717349) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (718350) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (719053) cloud: -> {"type":"Meter","packageId":"199cc5aa-81bc-42c3-bfcd-2578fcf66324","timestamp":"2026-10-21T11:10:21Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":5,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":0,"waterSeconds":0,"airSeconds":80,"vacuumSeconds":0,"parkingTime":1200}}[0m
+[0;32mI (728350) net_gsm: pulse reset[0m
+[0;32mI (735850) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (735851) uart: queue free spaces: 30[0m
+[0;32mI (739054) cloud: -> {"type":"Meter","packageId":"d8ae85c4-418a-4ef5-9140-42be1d063539","timestamp":"2026-10-21T11:10:41Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":5,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":0,"waterSeconds":0,"airSeconds":100,"vacuumSeconds":0,"parkingTime":1200}}[0m
+[1;31mE (755852) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (756853) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (758085) audio: phat: "Phun bọt."[0m
+[0;32mI (758358) cloud: -> {"type":"Meter","packageId":"d35f030a-fcf9-4a86-ac2e-3ecead966bca","timestamp":"2026-10-21T11:11:00Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":5,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":0,"waterSeconds":0,"airSeconds":119,"vacuumSeconds":0,"parkingTime":1200}}[0m
+[0;32mI (766853) net_gsm: pulse reset[0m
+[0;32mI (774356) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (774358) uart: queue free spaces: 30[0m
+[0;32mI (778453) cloud: -> {"type":"Meter","packageId":"2a801694-8506-4ce9-84a3-d1dbe7569e62","timestamp":"2026-10-21T11:11:20Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":5,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":20,"waterSeconds":0,"airSeconds":119,"vacuumSeconds":0,"parkingTime":1200}}[0m
+[1;31mE (794360) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (795361) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (798454) cloud: -> {"type":"Meter","packageId":"049e0c6d-24be-4c9f-9231-0a42b40ceb6a","timestamp":"2026-10-21T11:11:40Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":5,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":40,"waterSeconds":0,"airSeconds":119,"vacuumSeconds":0,"parkingTime":1200}}[0m
+[0;32mI (805361) net_gsm: pulse reset[0m
+[0;32mI (812861) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (812862) uart: queue free spaces: 30[0m
+[0;32mI (818454) cloud: -> {"type":"Meter","packageId":"c759c7a3-d5be-4b33-9133-8b2cc9d8970f","timestamp":"2026-10-21T11:12:00Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":5,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":60,"waterSeconds":0,"airSeconds":119,"vacuumSeconds":0,"parkingTime":1200}}[0m
+[1;31mE (832863) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (833864) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (834262) audio: phat: "Xịt khô."[0m
+[0;32mI (834560) cloud: -> {"type":"Meter","packageId":"ce1e1c0f-8c27-4503-a01d-daa945a1baf4","timestamp":"2026-10-21T11:12:16Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":5,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":75,"waterSeconds":0,"airSeconds":119,"vacuumSeconds":0,"parkingTime":1200}}[0m
+[0;32mI (835713) audio: phat: "Phun bọt."[0m
+[0;32mI (836020) cloud: -> {"type":"Meter","packageId":"ffbb53a9-8a21-4e23-b663-118c4409a37d","timestamp":"2026-10-21T11:12:18Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":5,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":75,"waterSeconds":0,"airSeconds":120,"vacuumSeconds":0,"parkingTime":1200}}[0m
+[0;32mI (837425) audio: phat: "Phun nước."[0m
+[0;33mW (837436) audio: thieu file /audio/water_on.wav[0m
+[0;32mI (837661) cloud: -> {"type":"Meter","packageId":"9704d193-70a8-4ace-8103-3aa3e8bf84aa","timestamp":"2026-10-21T11:12:19Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":5,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":77,"waterSeconds":0,"airSeconds":120,"vacuumSeconds":0,"parkingTime":1200}}[0m
+[0;32mI (843864) net_gsm: pulse reset[0m
+[0;32mI (851365) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (851366) uart: queue free spaces: 30[0m
+[0;32mI (855452) display: touch nghi ngo: adc x=3440 y=732 luc=2348 (mau 1/2)[0m
+[0;32mI (855488) display: touch adc x=3472 y=746 luc=2777 -> man hinh x=276 y=29[0m
+[0;32mI (855523) display: touch adc x=3435 y=752 luc=2846 -> man hinh x=275 y=32[0m
+[0;32mI (855558) display: touch adc x=3440 y=732 luc=2166 -> man hinh x=277 y=31[0m
+[0;32mI (857759) cloud: -> {"type":"Meter","packageId":"2b72a9b6-91cf-4f2d-a56d-1d91db8bd215","timestamp":"2026-10-21T11:12:39Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":5,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":77,"waterSeconds":20,"airSeconds":120,"vacuumSeconds":0,"parkingTime":1200}}[0m
+[0;32mI (861092) display: touch nghi ngo: adc x=929 y=2824 luc=800 (mau 1/2)[0m
+[0;32mI (861127) display: touch adc x=951 y=2834 luc=570 -> man hinh x=95 y=183[0m
+[0;32mI (861202) app_fsm: khach ket thuc som phien 5, con 404s chua dung[0m
+[0;32mI (861202) app_fsm: ket thuc phien 5 (kich ban 1, ly do 4): da tru bot 231s nuoc 23s kho 240s (bom thuc 77s/23s/120s), con 404s su dung, 969s do xe[0m
+[0;32mI (861231) cloud: -> [luu 0] {"type":"Meter","packageId":"4d5f1532-9cb6-4bec-af8c-08f43ab28a68","timestamp":"2026-10-21T11:12:43Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"NORMAL","transactionId":5,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"reason":"USER_STOP","foamSeconds":77,"waterSeconds":23,"airSeconds":120,"vacuumSeconds":0,"parkingTime":1200}}[0m
+[0;32mI (861261) app_fsm: WASHING -> FINISHED[0m
+[0;32mI (861279) audio: phat: "Đã kết thúc phiên rửa xe. Cảm ơn quý khách, hẹn gặp lại."[0m
+[0;32mI (862151) cloud: server da nhan ban tin [0], con 0 cho gui[0m
+[0;32mI (866280) app_fsm: FINISHED -> IDLE[0m
+[1;31mE (871368) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (872369) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (882369) net_gsm: pulse reset[0m
+[0;32mI (888676) display: touch nghi ngo: adc x=915 y=995 luc=1957 (mau 1/2)[0m
+[0;32mI (888712) display: touch adc x=909 y=994 luc=2171 -> man hinh x=254 y=185[0m
+[0;32mI (888748) display: touch adc x=925 y=955 luc=1870 -> man hinh x=258 y=184[0m
+[0;32mI (888822) app_fsm: IDLE -> SELECT[0m
+[0;32mI (889869) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (889870) uart: queue free spaces: 30[0m
+[0;32mI (894496) display: touch nghi ngo: adc x=2471 y=2912 luc=1562 (mau 1/2)[0m
+[0;32mI (894532) display: touch adc x=2471 y=2919 luc=2070 -> man hinh x=88 y=90[0m
+[0;32mI (894567) display: touch adc x=2461 y=2914 luc=2080 -> man hinh x=88 y=91[0m
+[0;32mI (894602) display: touch adc x=2404 y=2757 luc=649 -> man hinh x=102 y=94[0m
+[0;32mI (894680) app_fsm: tao don 80456B281774-1792581196-0031: Gói 5 phút 5 phut 10000 d[0m
+[0;32mI (894681) app_fsm: SELECT -> CREATING_QR[0m
+[0;32mI (894688) cloud: -> {"type":"InitTransaction","packageId":"f654c224-f977-4853-b3c2-1272478f96da","timestamp":"2026-10-21T11:13:16Z","payload":{"bayMac":"80456b281774","bayNumber":0,"packageDuration":300,"price":10000}}[0m
+[0;32mI (895326) cloud: <- carwash/v1/80456b281774/down: {"type":"ShowPaymentCode","payload":{"code":"http://uat-api-carwash.icorp.vn/api/v1/payment-simulation/6/confirm?token=kLPssEmZz7S0wjnY8ywv2BoVQCUYCtmUZt9Yq7b_yu0","bayMac":"80456b281774","expireAt":"2026-10-21T11:18:17.453Z","bayNumber":1,"transactionId":6},"packageId":"f1f46717-e3ce-4aa6-8f38-2fb73891f86c","timestamp":"2026-10-21T11:13:17.453Z"}[0m
+[0;32mI (895351) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (895429) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[0;32mI (909341) cloud: <- carwash/v1/80456b281774/down: {"type":"StartTransaction","payload":{"bayMac":"80456b281774","bayNumber":1,"transactionId":6,"packageDuration":300},"packageId":"c44d59e4-dfe7-4d44-bbf4-e0dac9dc8397","timestamp":"2026-10-21T11:13:31.499Z"}[0m
+[0;32mI (909353) app_fsm: don 6 da thanh toan[0m
+[0;32mI (909363) cloud: -> {"type":"Meter","packageId":"dc0965f6-3303-4be7-8339-a53c87d35477","timestamp":"2026-10-21T11:13:31Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":0,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (909387) app_fsm: WAIT_PAYMENT -> PAID[0m
+[0;32mI (909397) audio: phat: "Thanh toán thành công. Cảm ơn quý khách."[0m
+[1;31mE (909932) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (910933) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (912430) app_fsm: PAID -> WASHING[0m
+[0;32mI (912454) audio: phat: "Bắt đầu rửa xe. Nhấn nút bọt, nước hoặc xịt khô để sử dụng."[0m
+[0;33mW (912465) audio: thieu file /audio/wash_guide.wav[0m
+[0;32mI (917143) ntp_time: SNTP dong bo thanh cong: 2026-10-21 18:13:39[0m
+[0;32mI (917145) ntp_time: Da ghi gio he thong xuong RTC[0m
+[0;32mI (920933) net_gsm: pulse reset[0m
+[0;32mI (922227) audio: phat: "Phun bọt."[0m
+[0;32mI (922236) cloud: -> {"type":"Meter","packageId":"9ace1c70-73c7-4b1e-8240-12b44f930173","timestamp":"2026-10-21T11:13:44Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":0,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (924948) audio: phat: "Phun nước."[0m
+[0;33mW (924959) audio: thieu file /audio/water_on.wav[0m
+[0;32mI (925168) cloud: -> {"type":"Meter","packageId":"73bbc86d-d33c-46f0-a5ee-adcf0535fdea","timestamp":"2026-10-21T11:13:47Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":2,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (928433) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (928434) uart: queue free spaces: 30[0m
+[0;32mI (945260) cloud: -> {"type":"Meter","packageId":"e2a195b7-b95b-47fd-af87-ef66385844c5","timestamp":"2026-10-21T11:14:07Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":2,"waterSeconds":20,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[1;31mE (948435) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (949436) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (959436) net_gsm: pulse reset[0m
+[0;32mI (965263) cloud: -> {"type":"Meter","packageId":"dc43725a-c3ef-4eca-aa83-678056d936ca","timestamp":"2026-10-21T11:14:27Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":2,"waterSeconds":40,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (966936) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (966937) uart: queue free spaces: 30[0m
+[0;32mI (985264) cloud: -> {"type":"Meter","packageId":"0fb1b841-1b55-42a5-9a91-bdcd715d0977","timestamp":"2026-10-21T11:14:47Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":2,"waterSeconds":60,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[1;31mE (986938) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (987939) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (997939) net_gsm: pulse reset[0m
+[0;32mI (1005266) cloud: -> {"type":"Meter","packageId":"e84b673d-84aa-4b4c-b1b4-a66509630e0b","timestamp":"2026-10-21T11:15:07Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":2,"waterSeconds":80,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (1005439) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1005440) uart: queue free spaces: 30[0m
+[0;32mI (1025267) cloud: -> {"type":"Meter","packageId":"b97acb3a-be80-4d93-adcb-ad54cf87f06d","timestamp":"2026-10-21T11:15:27Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":2,"waterSeconds":100,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[1;31mE (1025442) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1026443) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1036443) net_gsm: pulse reset[0m
+[0;32mI (1043943) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1043944) uart: queue free spaces: 30[0m
+[0;32mI (1045267) cloud: -> {"type":"Meter","packageId":"c916f465-ff28-4400-bcd5-449519895971","timestamp":"2026-10-21T11:15:47Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":2,"waterSeconds":120,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[1;31mE (1063945) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1064946) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1065267) cloud: -> {"type":"Meter","packageId":"63aa901b-4386-48fc-9190-869612ae5ff8","timestamp":"2026-10-21T11:16:07Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":2,"waterSeconds":140,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (1074946) net_gsm: pulse reset[0m
+[0;32mI (1082446) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1082447) uart: queue free spaces: 30[0m
+[0;32mI (1085269) cloud: -> {"type":"Meter","packageId":"83458d93-db68-473b-812f-ced85f553adc","timestamp":"2026-10-21T11:16:27Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":2,"waterSeconds":160,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[1;31mE (1102450) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1103451) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1104383) audio: phat: "Xịt khô."[0m
+[0;32mI (1104674) cloud: -> {"type":"Meter","packageId":"971f9c53-1a3e-4667-92bf-12d270f5fef4","timestamp":"2026-10-21T11:16:46Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":2,"waterSeconds":179,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (1105526) audio: phat: "Tạm dừng."[0m
+[0;32mI (1105535) cloud: -> {"type":"Meter","packageId":"5fb9c45f-3301-4506-8250-70ce5c38325f","timestamp":"2026-10-21T11:16:47Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":2,"waterSeconds":179,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (1113451) net_gsm: pulse reset[0m
+[0;32mI (1120951) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1120952) uart: queue free spaces: 30[0m
+[0;32mI (1125570) cloud: -> {"type":"Meter","packageId":"169cccfa-032d-441c-a191-4a52adad990e","timestamp":"2026-10-21T11:17:07Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":2,"waterSeconds":179,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[1;31mE (1140953) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1141954) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1145570) cloud: -> {"type":"Meter","packageId":"e0dc5331-f087-4f12-8146-aa8bf40684f9","timestamp":"2026-10-21T11:17:27Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":2,"waterSeconds":179,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (1151954) net_gsm: pulse reset[0m
+[0;32mI (1159454) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1159455) uart: queue free spaces: 30[0m
+[0;32mI (1165573) cloud: -> {"type":"Meter","packageId":"eb1d61a4-f530-4670-9899-4ed909ff7135","timestamp":"2026-10-21T11:17:47Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":2,"waterSeconds":179,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[1;31mE (1179456) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1180457) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1185573) cloud: -> {"type":"Meter","packageId":"adddcbf5-d0ed-4426-9af7-1444a82c6473","timestamp":"2026-10-21T11:18:07Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":2,"waterSeconds":179,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (1190457) net_gsm: pulse reset[0m
+[0;32mI (1197957) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1197958) uart: queue free spaces: 30[0m
+[0;32mI (1205575) cloud: -> {"type":"Meter","packageId":"033bab8a-65c7-4a7e-b24e-588354ec4f67","timestamp":"2026-10-21T11:18:27Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":2,"waterSeconds":179,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[1;31mE (1217959) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1218960) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1225576) cloud: -> {"type":"Meter","packageId":"919fea73-b37e-4eec-861c-b272037f8848","timestamp":"2026-10-21T11:18:47Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":2,"waterSeconds":179,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (1228960) net_gsm: pulse reset[0m
+[0;32mI (1236460) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1236461) uart: queue free spaces: 30[0m
+[0;32mI (1245576) cloud: -> {"type":"Meter","packageId":"ef1a8dc9-6705-4be4-979d-5027a66cf7c7","timestamp":"2026-10-21T11:19:07Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":2,"waterSeconds":179,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[1;31mE (1256462) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1257463) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1265577) cloud: -> {"type":"Meter","packageId":"07c27a45-6462-4b2e-8bfa-f0e891379576","timestamp":"2026-10-21T11:19:27Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":2,"waterSeconds":179,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (1267463) net_gsm: pulse reset[0m
+[0;32mI (1274963) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1274964) uart: queue free spaces: 30[0m
+[0;32mI (1285580) cloud: -> {"type":"Meter","packageId":"a0954078-0e28-4956-b26c-b5f177609ae3","timestamp":"2026-10-21T11:19:47Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":2,"waterSeconds":179,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[1;31mE (1294965) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1295966) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1305580) cloud: -> {"type":"Meter","packageId":"015d004b-9055-4d43-9cb9-c6e8b043c7fc","timestamp":"2026-10-21T11:20:07Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":2,"waterSeconds":179,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (1305966) net_gsm: pulse reset[0m
+[0;32mI (1313466) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1313467) uart: queue free spaces: 30[0m
+[0;32mI (1325580) cloud: -> {"type":"Meter","packageId":"9c6addc0-ee40-40bf-a75b-aa246b499162","timestamp":"2026-10-21T11:20:27Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":2,"waterSeconds":179,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[1;31mE (1333468) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1334469) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1344469) net_gsm: pulse reset[0m
+[0;32mI (1345581) cloud: -> {"type":"Meter","packageId":"c3c69fb4-db26-4832-b6e0-5f415557e482","timestamp":"2026-10-21T11:20:47Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":2,"waterSeconds":179,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (1351969) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1351970) uart: queue free spaces: 30[0m
+[0;32mI (1365581) cloud: -> {"type":"Meter","packageId":"ac98ed32-7670-4808-ab87-42e7632d2a6e","timestamp":"2026-10-21T11:21:07Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":2,"waterSeconds":179,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[1;31mE (1371972) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1372973) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1382973) net_gsm: pulse reset[0m
+[0;32mI (1385581) cloud: -> {"type":"Meter","packageId":"affe7e1b-1144-43a2-869f-494f8ef480e5","timestamp":"2026-10-21T11:21:27Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":2,"waterSeconds":179,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (1390473) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1390474) uart: queue free spaces: 30[0m
+[0;32mI (1405582) cloud: -> {"type":"Meter","packageId":"43cdd676-2a9a-48dd-ab8c-3c7a0cf7d598","timestamp":"2026-10-21T11:21:47Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":2,"waterSeconds":179,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[1;31mE (1410475) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1411476) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1421476) net_gsm: pulse reset[0m
+[0;32mI (1425584) cloud: -> {"type":"Meter","packageId":"16f69425-9da4-451b-93c7-9f886c45a1a2","timestamp":"2026-10-21T11:22:07Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":2,"waterSeconds":179,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (1428976) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1428977) uart: queue free spaces: 30[0m
+[0;32mI (1445585) cloud: -> {"type":"Meter","packageId":"47e672f9-727c-460d-b20d-5736c751369a","timestamp":"2026-10-21T11:22:27Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":2,"waterSeconds":179,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[1;31mE (1448978) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1449979) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1452485) audio: phat: "Thời gian đỗ xe còn một phút."[0m
+[0;33mW (1452496) audio: thieu file /audio/park_one_min.wav[0m
+[0;32mI (1459979) net_gsm: pulse reset[0m
+[0;32mI (1465588) cloud: -> {"type":"Meter","packageId":"b7f8bb41-73c4-4807-b610-fd14e739c131","timestamp":"2026-10-21T11:22:47Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":2,"waterSeconds":179,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (1467479) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1467480) uart: queue free spaces: 30[0m
+[0;32mI (1485589) cloud: -> {"type":"Meter","packageId":"57a250ee-5c8d-4031-b1e8-bb001ba55edb","timestamp":"2026-10-21T11:23:07Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":2,"waterSeconds":179,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[1;31mE (1487481) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1488482) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1498482) net_gsm: pulse reset[0m
+[0;32mI (1505589) cloud: -> {"type":"Meter","packageId":"943cd0ba-ac73-44de-ac16-6b21f36da450","timestamp":"2026-10-21T11:23:27Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":6,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":2,"waterSeconds":179,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (1505982) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1505983) uart: queue free spaces: 30[0m
+[0;32mI (1512489) app_fsm: ket thuc phien 6 (kich ban 1, ly do 1): da tru bot 8s nuoc 179s kho 1s (bom thuc 2s/179s/0s), con 111s su dung, 0s do xe[0m
+[0;32mI (1512512) cloud: -> [luu 0] {"type":"Meter","packageId":"d6dc7a95-efec-4c2e-a3a9-b807c61fa49b","timestamp":"2026-10-21T11:23:34Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"NORMAL","transactionId":6,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"reason":"NORMAL_FINISHED","foamSeconds":2,"waterSeconds":179,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (1512543) app_fsm: WASHING -> FINISHED[0m
+[0;32mI (1512561) audio: phat: "Đã hết thời gian rửa xe. Cảm ơn quý khách, hẹn gặp lại."[0m
+[0;32mI (1513049) cloud: server da nhan ban tin [0], con 0 cho gui[0m
+[0;32mI (1517592) app_fsm: FINISHED -> IDLE[0m
+[1;31mE (1525984) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1526985) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1536985) net_gsm: pulse reset[0m
+[0;32mI (1544485) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1544486) uart: queue free spaces: 30[0m
+[1;31mE (1564487) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1565488) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1575488) net_gsm: pulse reset[0m
+[0;32mI (1582988) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1582989) uart: queue free spaces: 30[0m
+[1;31mE (1602990) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1603991) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1613991) net_gsm: pulse reset[0m
+[0;32mI (1621491) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1621492) uart: queue free spaces: 30[0m
+[0;32mI (1632197) app_fsm: den TAT (troi toi)[0m
+[1;31mE (1641493) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1642494) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1652494) net_gsm: pulse reset[0m
+[0;32mI (1659994) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1659995) uart: queue free spaces: 30[0m
+[1;31mE (1679996) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1680997) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1690997) net_gsm: pulse reset[0m
+[0;32mI (1698497) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1698498) uart: queue free spaces: 30[0m
+[1;31mE (1718500) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1719501) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1729501) net_gsm: pulse reset[0m
+[0;32mI (1737001) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1737002) uart: queue free spaces: 30[0m
+[1;31mE (1757003) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1758004) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1768004) net_gsm: pulse reset[0m
+[0;32mI (1775504) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1775505) uart: queue free spaces: 30[0m
+[1;31mE (1795506) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1796507) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1806507) net_gsm: pulse reset[0m
+[0;32mI (1814007) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1814008) uart: queue free spaces: 30[0m
+[0;32mI (1817294) ntp_time: SNTP dong bo thanh cong: 2026-10-21 18:28:39[0m
+[0;32mI (1817296) ntp_time: Da ghi gio he thong xuong RTC[0m
+[1;31mE (1834010) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1835011) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1845011) net_gsm: pulse reset[0m
+[0;32mI (1852511) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1852512) uart: queue free spaces: 30[0m
+[1;31mE (1872514) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1873515) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1883515) net_gsm: pulse reset[0m
+[0;32mI (1891015) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1891016) uart: queue free spaces: 30[0m
+[1;31mE (1911017) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1912018) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1922018) net_gsm: pulse reset[0m
+[0;32mI (1929518) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1929519) uart: queue free spaces: 30[0m
+[1;31mE (1949521) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1950522) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1960522) net_gsm: pulse reset[0m
+[0;32mI (1968022) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1968023) uart: queue free spaces: 30[0m

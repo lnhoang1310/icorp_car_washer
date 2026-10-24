@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=INT Pin=U9-11
+Removed Pin From Net: NetName=LED Pin=U9-12
+Added Pin To Net: NetName=INT Pin=U9-15
+Added Pin To Net: NetName=LED Pin=U9-16
+Added Pin To Net: NetName=NetLabel291 Pin=U9-4
+Added Net: Name=NetLabel291
+Added Pin To Net: NetName=NetLabel292 Pin=U9-5
+Added Net: Name=NetLabel292
+Added Pin To Net: NetName=NetLabel293 Pin=U9-6
+Added Net: Name=NetLabel293
+Added Pin To Net: NetName=NetLabel294 Pin=U9-7
+Added Net: Name=NetLabel294
+Added Pin To Net: NetName=NetLabel295 Pin=U9-8
+Added Net: Name=NetLabel295
+Added Pin To Net: NetName=NetLabel296 Pin=U9-9
+Added Net: Name=NetLabel296
+Added Pin To Net: NetName=NetLabel297 Pin=U9-10
+Added Net: Name=NetLabel297
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component GND TP_1MM

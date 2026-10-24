@@ -1,0 +1,33 @@
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C24 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C59 220uF_35V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C60 220uF_16V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C62 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C64 10uF 25V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C65 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C66 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C70 10uF 25V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C72 10uF 16V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C74 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C75 1nF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C76 10uF 25V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C77 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C80 220uF_16V
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component GND1 TP_1MM
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component L3 3.3uH 3.4A
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component L5 BLM21PG300SN1D
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component L7 BLM21PG300SN1D
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R61 4k7 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R62 4k7 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R63 0R 0805
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R64 0R 0805
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R67 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R69 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R73 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R74 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R75 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R76 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R77 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R78 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R80 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R81 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R83 330R 1%

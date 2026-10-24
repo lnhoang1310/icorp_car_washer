@@ -1,0 +1,1113 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM19 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\car_washer.elf D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM19'
+ESP-ROM:esp32s3-20210327
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1658
+load:0x403c8700,len:0xd98
+load:0x403cb700,len:0x33a4
+entry 0x403c899c
+[0;32mI (25) boot: ESP-IDF v5.5.1-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Sep 28 2026 18:07:58[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.4[0m
+[0;32mI (32) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (36) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00080000[0m
+[0;32mI (63) boot:  1 otadata          OTA data         01 00 00089000 00002000[0m
+[0;32mI (70) boot:  2 phy_init         RF data          01 01 0008b000 00001000[0m
+[0;32mI (76) boot:  3 ota_0            OTA app          00 10 00090000 002ee000[0m
+[0;32mI (83) boot:  4 ota_1            OTA app          00 11 00380000 002ee000[0m
+[0;32mI (89) boot:  5 storage          Unknown data     01 82 0066e000 00400000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00090020 vaddr=3c130020 size=5077ch (329596) map[0m
+[0;32mI (162) esp_image: segment 1: paddr=000e07a4 vaddr=3fc9ed00 size=05354h ( 21332) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=000e5b00 vaddr=40374000 size=0a518h ( 42264) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=000f0020 vaddr=42000020 size=124130h (1196336) map[0m
+[0;32mI (374) esp_image: segment 4: paddr=00214158 vaddr=4037e518 size=1073ch ( 67388) load[0m
+[0;32mI (388) esp_image: segment 5: paddr=0022489c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (398) boot: Loaded app from partition at offset 0x90000[0m
+[0;32mI (398) boot: Disabling RNG early entropy source...[0m
+[0;32mI (408) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (408) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (409) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (411) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (415) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (419) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (423) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (428) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (433) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (438) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (443) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (448) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (451) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (455) esp_psram: Speed: 80MHz[0m
+[0;32mI (458) cpu_start: Multicore app[0m
+[0;32mI (874) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (883) cpu_start: Pro cpu start user code[0m
+[0;32mI (883) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (883) app_init: Application information:[0m
+[0;32mI (883) app_init: Project name:     car_washer[0m
+[0;32mI (887) app_init: App version:      1.0.0[0m
+[0;32mI (891) app_init: Compile time:     Oct 14 2026 12:38:17[0m
+[0;32mI (896) app_init: ELF file SHA256:  2cb3ef542...[0m
+[0;32mI (900) app_init: ESP-IDF:          v5.5.1-dirty[0m
+[0;32mI (905) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (908) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (912) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (916) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (923) heap_init: At 3FCAA8F8 len 0003EE18 (251 KiB): RAM[0m
+[0;32mI (928) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (933) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (938) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (944) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (951) spi_flash: detected chip: generic[0m
+[0;32mI (954) spi_flash: flash io: dio[0m
+[0;32mI (957) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (963) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (970) main_task: Started on CPU0[0m
+[0;32mI (973) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (981) main_task: Calling app_main()[0m
+[0;32mI (1011) main: led_debug_task running[0m
+[0;32mI (1011) device_id: device_id = 80456B281774[0m
+[0;32mI (1011) main: device_id = 80456B281774[0m
+[0;32mI (1012) i2c_bus: i2c_bus_init OK (port=1 sda=1 scl=2)[0m
+[0;32mI (1017) io_exp: init OK (out=0x38 in=0x39 int=GPIO15)[0m
+[0;32mI (1021) peripheral_test: [0m
+[0;32mI (1023) peripheral_test: ########## BAT DAU TEST NGOAI VI ##########[0m
+[0;32mI (1027) io_exp: PCF input 0x39 OK[0m
+[0;32mI (1033) peripheral_test: ===== TEST FRAM =====[0m
+[0;32mI (1037) fram: fram_init OK (port=1 sda=1 scl=2 addr=0x50 cap=32768 byte)[0m
+[0;32mI (1044) fram: self_test OK[0m
+[0;32mI (1046) peripheral_test: fram_self_test OK[0m
+[0;32mI (1050) peripheral_test: Ghi/doc pattern tai 0x0100 khop -> FRAM (cap=32768 byte): PASS[0m
+[0;32mI (1058) peripheral_test: [0m
+[0;32mI (1060) peripheral_test: ===== TEST DS3231 =====[0m
+[0;32mI (1065) rtc_ds3231: DS3231 connected (port=1 sda=1 scl=2)[0m
+[0;32mI (1070) peripheral_test: DS3231 connected[0m
+[0;33mW (1074) peripheral_test: DS3231 bao mat dien (bit OSF) -- gio hien tai trong chip co the KHONG dang tin cay[0m
+[0;32mI (1084) peripheral_test: Gio dang luu trong RTC: 2026-10-19 11:16:55[0m
+[0;32mI (2291) peripheral_test: Set 2025-01-01 12:00:00 -> doc lai 2025-01-01 12:00:01 (lech 1 giay) -> DS3231: PASS[0m
+[0;32mI (2292) peripheral_test: Da khoi phuc lai gio RTC nhu truoc luc test[0m
+[0;32mI (2296) peripheral_test: [0m
+[0;32mI (2298) peripheral_test: ===== TEST RELAY =====[0m
+[0;33mW (2303) peripheral_test: Bat TAT CA relay 1000 ms / tat 1000 ms, lap co gioi han -- thao bom hoac cat nguon bom truoc khi test![0m
+[0;32mI (2384) peripheral_test: [1] BAT: bot + nuoc + kho + den[0m
+[0;32mI (3384) peripheral_test: [1] TAT[0m
+[0;32mI (4384) peripheral_test: [2] BAT: bot + nuoc + kho + den[0m
+[0;32mI (5384) peripheral_test: [2] TAT[0m
+[0;32mI (6384) peripheral_test: [3] BAT: bot + nuoc + kho + den[0m
+[0;32mI (7384) peripheral_test: [3] TAT[0m
+[0;32mI (8384) peripheral_test: [4] BAT: bot + nuoc + kho + den[0m
+[0;32mI (9384) peripheral_test: [4] TAT[0m
+[0;32mI (10384) peripheral_test: [5] BAT: bot + nuoc + kho + den[0m
+[0;32mI (11384) peripheral_test: [5] TAT[0m
+[0;32mI (12384) peripheral_test: Test relay xong -> PASS (PASS = ESP32 ghi duoc lenh; con relay co dong that hay khong thi nghe/nhin tren bo)[0m
+[0;32mI (12384) peripheral_test: [0m
+[0;32mI (12387) peripheral_test: ########## KET QUA TEST NGOAI VI ##########[0m
+[0;32mI (12393) peripheral_test: FRAM    : PASS[0m
+[0;32mI (12397) peripheral_test: DS3231  : PASS[0m
+[0;32mI (12401) peripheral_test: RELAY   : PASS[0m
+[0;32mI (12404) peripheral_test: ############################################[0m
+[0;33mW (12411) fram: fram_init da goi roi, bo qua[0m
+[0;32mI (12415) rtc_ds3231: DS3231 connected (port=1 sda=1 scl=2)[0m
+[0;33mW (12420) ntp_time: Dong ho he thong chua hop le (vua boot/reset)[0m
+[0;32mI (12427) ntp_time: Da dat gio he thong TAM THOI tu RTC: 2026-10-19 11:17:05 (cho SNTP xac nhan lai)[0m
+[0;33mW (12435) devcfg: khong co / hong cau hinh trong NVS -> dung mac dinh[0m
+[0;32mI (12611) display: doc ID man hinh (0xD3): 00 00 00 00 00[0m
+[0;33mW (12612) display: man hinh khong tra loi: chan SDO/MISO chua noi, hoac chip chua nhan duoc lenh (kiem tra day CS/DC/RST/SCK/SDI va nguon man hinh)[0m
+[0;32mI (12619) ili9341: LCD panel create success, version: 2.1.0[0m
+[0;32mI (12745) LVGL: Starting LVGL task[0m
+[0;33mW (12748) lcd_panel.io.spi: Callback on_color_trans_done was already set and now it was overwritten![0m
+[0;32mI (12804) display: cam ung: dung hieu chinh da luu (swap=1 inv_x=1 inv_y=1 x=241..3931 y=14..3949)[0m
+[0;32mI (12805) display: cam ung XPT2046 OK (doc dinh ky, CS=GPIO21)[0m
+[0;32mI (12808) display: display OK ILI9341 320x240, SPI 15 MHz[0m
+[0;33mW (12816) devcfg: ap dung cau hinh TAM (khong luu NVS)[0m
+[0;33mW (12818) peripheral_test: [DEMO] ep kich ban tinh thoi gian = 1: OK[0m
+[0;32mI (12824) peripheral_test: cam ung da co hieu chinh trong NVS (muon lam lai: dat PT_TOUCH_CALIB = 2)[0m
+[0;32mI (12864) audio: phan vung am thanh: dung 1176/4096 KB[0m
+[0;33mW (12894) audio: thieu 5/21 file am thanh trong assets/audio[0m
+[0;32mI (12894) audio: audio OK (I2S 16000 Hz, BCLK=6 WS=7 DIN=5 SD=4)[0m
+[0;32mI (12895) main: =========== Network init ==========[0m
+[1;31mE (12899) gpio: gpio_install_isr_service(526): GPIO isr service already installed[0m
+[0;33mW (12906) net_ethernet: GPIO ISR handler already installed, bo qua[0m
+[0;32mI (12934) esp_eth.netif.netif_glue: 80:45:6b:28:17:77[0m
+[0;32mI (12935) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+[0;32mI (12935) net_ethernet: net_ethernet_init OK (spi_host=2 cs=9 int=10)[0m
+[0;32mI (12950) net_ethernet: Driver started[0m
+[0;32mI (12951) pp: pp rom version: e7ae62f[0m
+[0;32mI (12952) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (12953) wifi:wifi driver task: 3fce16dc, prio:23, stack:6656, core=0[0m
+[0;32mI (12967) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (12968) wifi:wifi certification version: v7.0[0m
+[0;32mI (12968) wifi:config NVS flash: enabled[0m
+[0;32mI (12969) wifi:config nano formatting: disabled[0m
+[0;32mI (12974) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (12979) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (12983) wifi:Init management short buffer num: 32[0m
+[0;32mI (12988) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (12992) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (12996) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (13000) wifi:Init static rx buffer num: 10[0m
+[0;32mI (13004) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (13009) wifi_init: rx ba win: 6[0m
+[0;32mI (13011) wifi_init: accept mbox: 6[0m
+[0;32mI (13014) wifi_init: tcpip mbox: 32[0m
+[0;32mI (13018) wifi_init: udp mbox: 6[0m
+[0;32mI (13021) wifi_init: tcp mbox: 6[0m
+[0;32mI (13024) wifi_init: tcp tx win: 5760[0m
+[0;32mI (13027) wifi_init: tcp rx win: 5760[0m
+[0;32mI (13030) wifi_init: tcp mss: 1440[0m
+[0;32mI (13033) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (13037) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (13041) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (13050) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (13084) wifi:mode : sta (80:45:6b:28:17:74) + softAP (80:45:6b:28:17:75)[0m
+[0;32mI (13084) wifi:enable tsf[0m
+[0;32mI (13087) wifi:Total power save buffer number: 16[0m
+[0;32mI (13087) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (13091) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (13096) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (13099) net_wifi: STA fallback used -> auto-connect[0m
+[0;32mI (13105) net_wifi: AP SSID=XTECH - 281774 IP:192.168.4.1[0m
+[0;32mI (13105) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (13118) net_gsm: net_gsm_init OK (uart=2 tx=47 rx=48 apn=v-internet)[0m
+[0;32mI (13124) net_manager: net_manager_init[0m
+[0;32mI (13123) net_gsm: pulse reset[0m
+[0;32mI (13128) ntp_time: SNTP started[0m
+[0;33mW (13133) cloud: !!! CHE DO THU (PT_DEMO_PAYMENT = 1): thanh toan GIA LAP, khong ket noi server !!![0m
+[0;32mI (13143) main: khoi dong xong[0m
+[0;32mI (13144) main_task: Returned from app_main()[0m
+[0;32mI (13220) session_store: khoi phuc phien order=80456B281774-1792383068-0002 state=1 con 52784 ms (seq=605)[0m
+[0;33mW (13220) app_fsm: KHOI PHUC phien 80456B281774-1792383068-0002: con 52s su dung, 636s do xe[0m
+[0;33mW (13227) cloud: su kien: session_restored (80456B281774-1792383068-0002)[0m
+[0;32mI (13233) app_fsm: BOOT -> WASHING[0m
+[0;32mI (13248) audio: phat: "Vui lòng bấm Tiếp tục rửa trên màn hình để tiếp tục phiên rửa xe."[0m
+[0;32mI (13250) cloud: [DEMO] Meter -> server (khong gui that): {"type":"Meter","packageId":"d9846655-e4da-47ef-9a7b-352fd76c709f","timestamp":"2026-10-19T04:17:05Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":0,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":73,"waterSeconds":27,"airSeconds":0,"vacuumSeconds":0,"parkingTime":900}}[0m
+[0;32mI (14105) net_wifi: STA fallback used -> auto-connect[0m
+[0;32mI (14123) wifi:ap channel adjust o:1,1 n:13,2[0m
+[0;32mI (14123) wifi:new:<13,0>, old:<1,1>, ap:<13,2>, sta:<13,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (14124) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (14133) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (14141) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (14152) wifi:connected with TP-Link_FF1E, aid = 5, channel 13, BW20, bssid = c0:c9:e3:1b:ff:1e[0m
+[0;32mI (14153) wifi:security: WPA2-PSK, phy: bgn, rssi: -41[0m
+[0;32mI (14157) wifi:pm start, type: 0[0m
+
+[0;32mI (14158) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (14166) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (14176) net_manager: WIFI STA CONNECTED[0m
+[0;32mI (14180) wifi:<ba-add>idx:0 (ifx:0, c0:c9:e3:1b:ff:1e), tid:0, ssn:0, winSize:64[0m
+[0;32mI (14223) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (15191) esp_netif_handlers: sta ip: 192.168.0.144, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (15191) net_wifi: Got IP: 192.168.0.144[0m
+[0;32mI (15192) net_manager: WIFI GOT IP: 192.168.0.144[0m
+[0;32mI (15196) net_manager: Switch default interface -> WIFI_STA_DEF[0m
+[0;32mI (17158) display: touch nghi ngo: adc x=652 y=1197 luc=1411 (mau 1/2)[0m
+[0;32mI (17194) display: cam ung: nhan duoc cham dau tien tai x=237 y=200 (luc 1284)[0m
+[0;32mI (17194) display: touch adc x=660 y=1194 luc=1284 -> man hinh x=237 y=200[0m
+[0;32mI (17292) audio: phat: "Tiếp tục rửa xe."[0m
+[0;32mI (17293) cloud: [DEMO] Meter -> server (khong gui that): {"type":"Meter","packageId":"76a238c0-4bdd-4b3f-950e-31d3ae5be356","timestamp":"2026-10-19T04:17:09Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":0,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":73,"waterSeconds":27,"airSeconds":0,"vacuumSeconds":0,"parkingTime":900}}[0m
+[0;33mW (17303) audio: thieu file /audio/resume.wav[0m
+[0;32mI (17320) app_fsm: khach tiep tuc phien 80456B281774-1792383068-0002, con 52s[0m
+[0;32mI (17537) wifi:<ba-add>idx:1 (ifx:0, c0:c9:e3:1b:ff:1e), tid:1, ssn:0, winSize:64[0m
+[0;32mI (17572) ntp_time: SNTP dong bo thanh cong: 2026-10-19 11:17:12[0m
+[0;32mI (17574) ntp_time: Da ghi gio he thong xuong RTC[0m
+[0;32mI (20630) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (20631) uart: queue free spaces: 30[0m
+[0;32mI (20642) net_gsm: Signal quality OK: rssi=20 ber=99[0m
+[0;32mI (26597) audio: phat: "Phun nước."[0m
+[0;32mI (26608) cloud: [DEMO] Meter -> server (khong gui that): {"type":"Meter","packageId":"6b2db2ea-5188-44ae-9baf-6a1acd5e01ba","timestamp":"2026-10-19T04:17:21Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":0,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":73,"waterSeconds":27,"airSeconds":0,"vacuumSeconds":0,"parkingTime":900}}[0m
+[0;33mW (26609) audio: thieu file /audio/water_on.wav[0m
+[0;33mW (26752) net_gsm: PPP handshake timeout -> restart modem, cho 5000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (38752) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (38752) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (38752) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (42955) audio: phat: "Tạm dừng."[0m
+[0;32mI (42964) cloud: [DEMO] Meter -> server (khong gui that): {"type":"Meter","packageId":"2783b1b0-eb3c-4b0d-ad4a-03ccb6acf62e","timestamp":"2026-10-19T04:17:37Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":0,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":73,"waterSeconds":44,"airSeconds":0,"vacuumSeconds":0,"parkingTime":900}}[0m
+[0;32mI (44757) net_gsm: pulse reset[0m
+[0;32mI (47698) audio: phat: "Phun nước."[0m
+[0;32mI (47706) cloud: [DEMO] Meter -> server (khong gui that): {"type":"Meter","packageId":"4fac3ff6-6ccf-4d97-a2e9-61d1f32d5ab7","timestamp":"2026-10-19T04:17:42Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":0,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":73,"waterSeconds":44,"airSeconds":0,"vacuumSeconds":0,"parkingTime":900}}[0m
+[0;33mW (47709) audio: thieu file /audio/water_on.wav[0m
+[0;32mI (52257) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (52258) uart: queue free spaces: 30[0m
+[0;32mI (52269) net_gsm: Signal quality OK: rssi=16 ber=99[0m
+[0;33mW (58374) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (67737) cloud: [DEMO] Meter -> server (khong gui that): {"type":"Meter","packageId":"259e3ff7-ad70-42d6-aa98-8c3539d599af","timestamp":"2026-10-19T04:18:02Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":0,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":73,"waterSeconds":64,"airSeconds":0,"vacuumSeconds":0,"parkingTime":900}}[0m
+[0;32mI (70374) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (70374) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (70374) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (81379) net_gsm: pulse reset[0m
+[0;32mI (84036) app_fsm: ket thuc phien 80456B281774-1792383068-0002 (kich ban 1, ly do 2): da tru bot 219s nuoc 80s kho 0s (bom thuc 73s/80s/0s), con 0s su dung, 569s do xe[0m
+[0;32mI (84052) cloud: [DEMO] Meter ket thuc -> server (khong gui that): {"type":"Meter","packageId":"905f5c8e-1b3b-4079-9e9f-3eff421fab9e","timestamp":"2026-10-19T04:18:18Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"NORMAL","transactionId":0,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"reason":"NORMAL_FINISHED","foamSeconds":73,"waterSeconds":80,"airSeconds":0,"vacuumSeconds":0,"parkingTime":900}}[0m
+[0;32mI (84086) app_fsm: WASHING -> FINISHED[0m
+[0;32mI (84103) audio: phat: "Đã hết thời gian rửa xe. Cảm ơn quý khách, hẹn gặp lại."[0m
+[0;32mI (88879) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (88880) uart: queue free spaces: 30[0m
+[0;32mI (88891) net_gsm: Signal quality OK: rssi=20 ber=99[0m
+[0;32mI (92136) app_fsm: FINISHED -> IDLE[0m
+[0;33mW (94995) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (106995) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (106995) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (106995) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (118000) net_gsm: pulse reset[0m
+[0;32mI (125500) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (125501) uart: queue free spaces: 30[0m
+[0;32mI (125512) net_gsm: Signal quality OK: rssi=18 ber=99[0m
+[0;33mW (131626) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (143626) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (143626) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (143626) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (154631) net_gsm: pulse reset[0m
+[0;32mI (162131) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (162132) uart: queue free spaces: 30[0m
+[0;32mI (162143) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (168257) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (180257) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (180257) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (180257) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (191262) net_gsm: pulse reset[0m
+[0;32mI (198762) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (198763) uart: queue free spaces: 30[0m
+[0;32mI (198773) net_gsm: Signal quality OK: rssi=18 ber=99[0m
+[0;33mW (204888) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (216888) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (216888) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (216888) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (227893) net_gsm: pulse reset[0m
+[0;32mI (235393) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (235394) uart: queue free spaces: 30[0m
+[0;32mI (235404) net_gsm: Signal quality OK: rssi=20 ber=99[0m
+[0;33mW (241509) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (253509) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (253509) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (253509) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (264514) net_gsm: pulse reset[0m
+[0;32mI (272014) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (272015) uart: queue free spaces: 30[0m
+[0;32mI (272534) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (278649) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (290649) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (290649) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (290649) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (301654) net_gsm: pulse reset[0m
+[0;32mI (309154) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (309155) uart: queue free spaces: 30[0m
+[0;32mI (309165) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (315280) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (327281) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (327281) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (327281) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (338286) net_gsm: pulse reset[0m
+[0;32mI (345786) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (345787) uart: queue free spaces: 30[0m
+[0;32mI (347323) net_gsm: Signal quality OK: rssi=19 ber=99[0m
+[0;33mW (353438) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (365438) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (365438) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (365438) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (376443) net_gsm: pulse reset[0m
+[0;32mI (383943) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (383944) uart: queue free spaces: 30[0m
+[0;32mI (383955) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (390059) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (402059) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (402059) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (402059) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (413064) net_gsm: pulse reset[0m
+[0;32mI (420564) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (420565) uart: queue free spaces: 30[0m
+[0;32mI (421593) net_gsm: Signal quality OK: rssi=16 ber=99[0m
+[0;33mW (427713) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (439714) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (439714) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (439714) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (450719) net_gsm: pulse reset[0m
+[0;32mI (458219) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (458220) uart: queue free spaces: 30[0m
+[0;32mI (459755) net_gsm: Signal quality OK: rssi=20 ber=99[0m
+[0;33mW (465870) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (477870) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (477870) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (477870) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (488875) net_gsm: pulse reset[0m
+[0;32mI (496375) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (496376) uart: queue free spaces: 30[0m
+[0;32mI (497401) net_gsm: Signal quality OK: rssi=16 ber=99[0m
+[0;33mW (503515) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (515515) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (515515) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (515515) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (526520) net_gsm: pulse reset[0m
+[0;32mI (534020) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (534021) uart: queue free spaces: 30[0m
+[0;32mI (537585) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (543699) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (555699) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (555699) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (555699) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (566704) net_gsm: pulse reset[0m
+[0;32mI (574204) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (574205) uart: queue free spaces: 30[0m
+[0;32mI (574215) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (580320) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (592320) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (592320) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (592320) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (603325) net_gsm: pulse reset[0m
+[0;32mI (610825) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (610826) uart: queue free spaces: 30[0m
+[0;32mI (610837) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (616951) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (628951) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (628951) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (628951) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (639956) net_gsm: pulse reset[0m
+[0;32mI (647456) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (647457) uart: queue free spaces: 30[0m
+[0;32mI (647468) net_gsm: Signal quality OK: rssi=18 ber=99[0m
+[0;33mW (653572) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (665572) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (665572) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (665572) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (676577) net_gsm: pulse reset[0m
+[0;32mI (684077) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (684078) uart: queue free spaces: 30[0m
+[0;32mI (684088) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (690203) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (702203) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (702203) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (702203) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (713208) net_gsm: pulse reset[0m
+[0;32mI (720708) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (720709) uart: queue free spaces: 30[0m
+[0;32mI (720719) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (726839) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (738839) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (738839) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (738839) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (749844) net_gsm: pulse reset[0m
+[0;32mI (757344) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (757345) uart: queue free spaces: 30[0m
+[0;32mI (757356) net_gsm: Signal quality OK: rssi=16 ber=99[0m
+[0;33mW (763460) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (775460) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (775460) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (775460) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (786465) net_gsm: pulse reset[0m
+[0;32mI (793965) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (793966) uart: queue free spaces: 30[0m
+[0;32mI (800582) net_gsm: Signal quality OK: rssi=19 ber=99[0m
+[0;33mW (806696) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (818697) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (818697) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (818697) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (829702) net_gsm: pulse reset[0m
+[0;32mI (837202) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (837203) uart: queue free spaces: 30[0m
+[0;32mI (837214) net_gsm: Signal quality OK: rssi=16 ber=99[0m
+[0;33mW (843318) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (855318) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (855318) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (855318) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (866323) net_gsm: pulse reset[0m
+[0;32mI (873823) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (873824) uart: queue free spaces: 30[0m
+[0;32mI (874344) net_gsm: Signal quality OK: rssi=16 ber=99[0m
+[0;33mW (880468) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (892468) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (892468) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (892468) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (903473) net_gsm: pulse reset[0m
+[0;32mI (910973) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (910974) uart: queue free spaces: 30[0m
+[0;32mI (919118) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (925243) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (932736) ntp_time: SNTP dong bo thanh cong: 2026-10-19 11:32:27[0m
+[0;32mI (932738) ntp_time: Da ghi gio he thong xuong RTC[0m
+[0;32mI (937243) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (937243) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (937243) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (948248) net_gsm: pulse reset[0m
+[0;32mI (955748) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (955749) uart: queue free spaces: 30[0m
+[0;32mI (955759) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (961874) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (973874) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (973874) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (973874) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (984879) net_gsm: pulse reset[0m
+[0;32mI (992379) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (992380) uart: queue free spaces: 30[0m
+[1;31mE (1002556) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1003557) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1013557) net_gsm: pulse reset[0m
+[0;32mI (1021057) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1021058) uart: queue free spaces: 30[0m
+[0;32mI (1021068) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (1027183) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (1039183) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (1039183) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (1039183) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (1050188) net_gsm: pulse reset[0m
+[0;32mI (1057688) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1057689) uart: queue free spaces: 30[0m
+[0;32mI (1057699) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (1063809) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (1075809) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (1075809) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (1075809) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (1086814) net_gsm: pulse reset[0m
+[0;32mI (1094314) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1094315) uart: queue free spaces: 30[0m
+[0;32mI (1094325) net_gsm: Signal quality OK: rssi=18 ber=99[0m
+[0;33mW (1100435) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (1112435) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (1112435) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (1112435) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (1123440) net_gsm: pulse reset[0m
+[0;32mI (1130940) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1130941) uart: queue free spaces: 30[0m
+[0;32mI (1130951) net_gsm: Signal quality OK: rssi=18 ber=99[0m
+[0;33mW (1137056) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (1149057) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (1149057) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (1149057) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (1160062) net_gsm: pulse reset[0m
+[0;32mI (1167562) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1167563) uart: queue free spaces: 30[0m
+[0;32mI (1167574) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (1173688) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (1185688) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (1185688) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (1185688) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (1196693) net_gsm: pulse reset[0m
+[0;32mI (1204193) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1204194) uart: queue free spaces: 30[0m
+[0;32mI (1204204) net_gsm: Signal quality OK: rssi=18 ber=99[0m
+[0;33mW (1210319) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (1222319) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (1222319) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (1222319) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (1233324) net_gsm: pulse reset[0m
+[0;32mI (1240824) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1240825) uart: queue free spaces: 30[0m
+[0;32mI (1240835) net_gsm: Signal quality OK: rssi=19 ber=99[0m
+[0;33mW (1246950) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (1258951) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (1258951) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (1258951) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (1269956) net_gsm: pulse reset[0m
+[0;32mI (1277456) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1277457) uart: queue free spaces: 30[0m
+[0;32mI (1277468) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (1283582) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (1295582) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (1295582) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (1295582) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (1306587) net_gsm: pulse reset[0m
+[0;32mI (1314087) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1314088) uart: queue free spaces: 30[0m
+[0;32mI (1314099) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (1320214) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (1332214) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (1332214) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (1332214) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (1343219) net_gsm: pulse reset[0m
+[0;32mI (1350719) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1350720) uart: queue free spaces: 30[0m
+[0;32mI (1350731) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (1356835) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (1368835) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (1368835) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (1368835) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (1379840) net_gsm: pulse reset[0m
+[0;32mI (1387340) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1387341) uart: queue free spaces: 30[0m
+[0;32mI (1387352) net_gsm: Signal quality OK: rssi=16 ber=99[0m
+[0;33mW (1393461) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (1405461) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (1405461) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (1405461) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (1416466) net_gsm: pulse reset[0m
+[0;32mI (1423966) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1423967) uart: queue free spaces: 30[0m
+[0;32mI (1423977) net_gsm: Signal quality OK: rssi=18 ber=99[0m
+[0;33mW (1430088) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (1442088) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (1442088) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (1442088) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (1453093) net_gsm: pulse reset[0m
+[0;32mI (1460593) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1460594) uart: queue free spaces: 30[0m
+[0;32mI (1460604) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (1466714) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (1478714) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (1478714) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (1478714) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (1489719) net_gsm: pulse reset[0m
+[0;32mI (1497219) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1497220) uart: queue free spaces: 30[0m
+[0;32mI (1497231) net_gsm: Signal quality OK: rssi=16 ber=99[0m
+[0;33mW (1503345) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (1515345) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (1515345) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (1515345) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (1526350) net_gsm: pulse reset[0m
+[0;32mI (1533850) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1533851) uart: queue free spaces: 30[0m
+[0;32mI (1533862) net_gsm: Signal quality OK: rssi=19 ber=99[0m
+[0;33mW (1539972) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (1551972) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (1551972) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (1551972) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (1562977) net_gsm: pulse reset[0m
+[0;32mI (1570477) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1570478) uart: queue free spaces: 30[0m
+[0;32mI (1571503) net_gsm: Signal quality OK: rssi=18 ber=99[0m
+[0;33mW (1577618) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (1589618) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (1589618) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (1589618) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (1600623) net_gsm: pulse reset[0m
+[0;32mI (1608123) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1608124) uart: queue free spaces: 30[0m
+[0;32mI (1609151) net_gsm: Signal quality OK: rssi=15 ber=99[0m
+[0;33mW (1615271) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (1627272) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (1627272) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (1627272) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (1638277) net_gsm: pulse reset[0m
+[0;32mI (1645777) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1645778) uart: queue free spaces: 30[0m
+[0;32mI (1645788) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (1651903) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (1663903) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (1663903) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (1663903) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (1674908) net_gsm: pulse reset[0m
+[0;32mI (1682408) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1682409) uart: queue free spaces: 30[0m
+[0;32mI (1683435) net_gsm: Signal quality OK: rssi=20 ber=99[0m
+[0;33mW (1689554) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (1701554) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (1701554) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (1701554) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (1712559) net_gsm: pulse reset[0m
+[0;32mI (1720059) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1720060) uart: queue free spaces: 30[0m
+[0;32mI (1720071) net_gsm: Signal quality OK: rssi=21 ber=99[0m
+[0;33mW (1726185) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (1738185) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (1738185) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (1738185) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (1749190) net_gsm: pulse reset[0m
+[0;32mI (1756690) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1756691) uart: queue free spaces: 30[0m
+[0;32mI (1764843) net_gsm: Signal quality OK: rssi=21 ber=99[0m
+[0;33mW (1770957) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (1782957) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (1782957) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (1782957) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (1793962) net_gsm: pulse reset[0m
+[0;32mI (1801462) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1801463) uart: queue free spaces: 30[0m
+[0;32mI (1804527) net_gsm: Signal quality OK: rssi=20 ber=99[0m
+[0;33mW (1810637) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (1822637) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (1822637) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (1822637) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (1832799) ntp_time: SNTP dong bo thanh cong: 2026-10-19 11:47:27[0m
+[0;32mI (1832801) ntp_time: Da ghi gio he thong xuong RTC[0m
+[0;32mI (1833642) net_gsm: pulse reset[0m
+[0;32mI (1841142) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1841143) uart: queue free spaces: 30[0m
+[0;32mI (1841156) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (1847271) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (1859271) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (1859271) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (1859271) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (1870276) net_gsm: pulse reset[0m
+[0;32mI (1877776) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1877777) uart: queue free spaces: 30[0m
+[0;32mI (1877787) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (1883902) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (1895902) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (1895902) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (1895902) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (1906907) net_gsm: pulse reset[0m
+[0;32mI (1914407) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1914408) uart: queue free spaces: 30[0m
+[0;32mI (1914418) net_gsm: Signal quality OK: rssi=20 ber=99[0m
+[0;33mW (1920531) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (1932532) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (1932532) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (1932532) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (1943537) net_gsm: pulse reset[0m
+[0;32mI (1951037) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1951038) uart: queue free spaces: 30[0m
+[0;32mI (1951049) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (1957163) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (1969163) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (1969163) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (1969163) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (1980168) net_gsm: pulse reset[0m
+[0;32mI (1987668) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1987669) uart: queue free spaces: 30[0m
+[0;32mI (1987679) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (1993794) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (2005794) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (2005794) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (2005794) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (2016799) net_gsm: pulse reset[0m
+[0;32mI (2024299) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2024300) uart: queue free spaces: 30[0m
+[0;32mI (2024310) net_gsm: Signal quality OK: rssi=16 ber=99[0m
+[0;33mW (2030425) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (2042425) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (2042425) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (2042425) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (2053430) net_gsm: pulse reset[0m
+[0;32mI (2060930) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2060931) uart: queue free spaces: 30[0m
+[0;32mI (2060942) net_gsm: Signal quality OK: rssi=15 ber=99[0m
+[0;33mW (2067051) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (2079051) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (2079051) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (2079051) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (2090056) net_gsm: pulse reset[0m
+[0;32mI (2097556) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2097557) uart: queue free spaces: 30[0m
+[0;32mI (2097567) net_gsm: Signal quality OK: rssi=16 ber=99[0m
+[0;33mW (2103672) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (2115672) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (2115672) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (2115672) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (2126677) net_gsm: pulse reset[0m
+[0;32mI (2134177) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2134178) uart: queue free spaces: 30[0m
+[0;32mI (2134188) net_gsm: Signal quality OK: rssi=20 ber=99[0m
+[0;33mW (2140303) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (2152303) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (2152303) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (2152303) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (2163308) net_gsm: pulse reset[0m
+[0;32mI (2170808) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2170809) uart: queue free spaces: 30[0m
+[0;32mI (2170819) net_gsm: Signal quality OK: rssi=18 ber=99[0m
+[0;33mW (2176933) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (2188933) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (2188933) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (2188933) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (2199938) net_gsm: pulse reset[0m
+[0;32mI (2207438) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2207439) uart: queue free spaces: 30[0m
+[0;32mI (2207449) net_gsm: Signal quality OK: rssi=19 ber=99[0m
+[0;33mW (2213554) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (2225554) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (2225554) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (2225554) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (2236559) net_gsm: pulse reset[0m
+[0;32mI (2244059) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2244060) uart: queue free spaces: 30[0m
+[0;32mI (2244071) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (2250191) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (2262191) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (2262191) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (2262191) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (2273196) net_gsm: pulse reset[0m
+[0;32mI (2280696) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2280697) uart: queue free spaces: 30[0m
+[0;32mI (2286302) net_gsm: Signal quality OK: rssi=18 ber=99[0m
+[0;33mW (2292421) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (2304421) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (2304421) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (2304421) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (2315426) net_gsm: pulse reset[0m
+[0;32mI (2322926) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2322927) uart: queue free spaces: 30[0m
+[0;32mI (2326503) net_gsm: Signal quality OK: rssi=20 ber=99[0m
+[0;33mW (2332616) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (2344616) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (2344616) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (2344616) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (2355621) net_gsm: pulse reset[0m
+[0;32mI (2363121) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2363122) uart: queue free spaces: 30[0m
+[0;32mI (2364150) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (2370269) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (2382269) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (2382269) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (2382269) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (2393274) net_gsm: pulse reset[0m
+[0;32mI (2400774) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2400775) uart: queue free spaces: 30[0m
+[0;32mI (2400786) net_gsm: Signal quality OK: rssi=18 ber=99[0m
+[0;33mW (2406895) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (2418895) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (2418895) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (2418895) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (2429900) net_gsm: pulse reset[0m
+[0;32mI (2437400) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2437401) uart: queue free spaces: 30[0m
+[0;32mI (2437920) net_gsm: Signal quality OK: rssi=16 ber=99[0m
+[0;33mW (2444032) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (2456032) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (2456032) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (2456032) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (2467037) net_gsm: pulse reset[0m
+[0;32mI (2474537) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2474538) uart: queue free spaces: 30[0m
+[0;32mI (2474548) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (2480653) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (2492653) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (2492653) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (2492653) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (2503658) net_gsm: pulse reset[0m
+[0;32mI (2511158) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2511159) uart: queue free spaces: 30[0m
+[0;32mI (2511170) net_gsm: Signal quality OK: rssi=16 ber=99[0m
+[0;33mW (2517279) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (2529279) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (2529279) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (2529279) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (2540284) net_gsm: pulse reset[0m
+[0;32mI (2547784) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2547785) uart: queue free spaces: 30[0m
+[0;32mI (2547796) net_gsm: Signal quality OK: rssi=20 ber=99[0m
+[0;33mW (2553911) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (2565911) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (2565911) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (2565911) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (2576916) net_gsm: pulse reset[0m
+[0;32mI (2584416) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2584417) uart: queue free spaces: 30[0m
+[0;32mI (2584426) net_gsm: Signal quality OK: rssi=15 ber=99[0m
+[0;33mW (2590534) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (2602534) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (2602534) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (2602534) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (2613539) net_gsm: pulse reset[0m
+[0;32mI (2621039) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2621040) uart: queue free spaces: 30[0m
+[0;32mI (2621051) net_gsm: Signal quality OK: rssi=18 ber=99[0m
+[0;33mW (2627165) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (2639165) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (2639165) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (2639165) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (2650170) net_gsm: pulse reset[0m
+[0;32mI (2657670) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2657671) uart: queue free spaces: 30[0m
+[0;32mI (2657682) net_gsm: Signal quality OK: rssi=20 ber=99[0m
+[0;33mW (2663791) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (2675791) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (2675791) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (2675791) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (2686796) net_gsm: pulse reset[0m
+[0;32mI (2694296) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2694297) uart: queue free spaces: 30[0m
+[0;32mI (2694308) net_gsm: Signal quality OK: rssi=20 ber=99[0m
+[0;33mW (2700412) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (2712412) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (2712412) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (2712412) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (2723417) net_gsm: pulse reset[0m
+[0;32mI (2730917) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2730918) uart: queue free spaces: 30[0m
+[0;32mI (2730928) net_gsm: Signal quality OK: rssi=19 ber=99[0m
+[0;32mI (2732859) ntp_time: SNTP dong bo thanh cong: 2026-10-19 12:02:27[0m
+[0;32mI (2732860) ntp_time: Da ghi gio he thong xuong RTC[0m
+[0;33mW (2737038) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (2749039) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (2749039) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (2749039) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (2760044) net_gsm: pulse reset[0m
+[0;32mI (2767544) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2767545) uart: queue free spaces: 30[0m
+[0;32mI (2767556) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (2773665) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (2785665) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (2785665) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (2785665) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (2796670) net_gsm: pulse reset[0m
+[0;32mI (2804170) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2804171) uart: queue free spaces: 30[0m
+[0;32mI (2804181) net_gsm: Signal quality OK: rssi=19 ber=99[0m
+[0;33mW (2810296) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (2822296) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (2822296) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (2822296) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (2833301) net_gsm: pulse reset[0m
+[0;32mI (2840801) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2840802) uart: queue free spaces: 30[0m
+[0;32mI (2842339) net_gsm: Signal quality OK: rssi=18 ber=99[0m
+[0;33mW (2848453) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (2860453) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (2860453) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (2860453) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (2871458) net_gsm: pulse reset[0m
+[0;32mI (2878958) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2878959) uart: queue free spaces: 30[0m
+[0;32mI (2880496) net_gsm: Signal quality OK: rssi=18 ber=99[0m
+[0;33mW (2886616) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (2898616) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (2898616) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (2898616) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (2909621) net_gsm: pulse reset[0m
+[0;32mI (2917121) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2917122) uart: queue free spaces: 30[0m
+[0;32mI (2917132) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (2923247) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (2935248) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (2935248) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (2935248) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (2946253) net_gsm: pulse reset[0m
+[0;32mI (2953753) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2953754) uart: queue free spaces: 30[0m
+[0;32mI (2953765) net_gsm: Signal quality OK: rssi=19 ber=99[0m
+[0;33mW (2959879) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (2971879) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (2971879) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (2971879) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (2982884) net_gsm: pulse reset[0m
+[0;32mI (2990385) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2990385) uart: queue free spaces: 30[0m
+[0;32mI (2990396) net_gsm: Signal quality OK: rssi=18 ber=99[0m
+[0;33mW (2996510) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (3008510) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (3008510) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (3008510) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (3019515) net_gsm: pulse reset[0m
+[0;32mI (3027015) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3027016) uart: queue free spaces: 30[0m
+[0;32mI (3028553) net_gsm: Signal quality OK: rssi=15 ber=99[0m
+[0;33mW (3034667) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (3046667) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (3046667) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (3046667) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (3057672) net_gsm: pulse reset[0m
+[0;32mI (3065172) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3065173) uart: queue free spaces: 30[0m
+[0;32mI (3065693) net_gsm: Signal quality OK: rssi=20 ber=99[0m
+[0;33mW (3071818) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (3083818) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (3083818) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (3083818) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (3094823) net_gsm: pulse reset[0m
+[0;32mI (3102323) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3102324) uart: queue free spaces: 30[0m
+[0;32mI (3102335) net_gsm: Signal quality OK: rssi=15 ber=99[0m
+[0;33mW (3108445) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (3120446) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (3120446) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (3120446) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (3131451) net_gsm: pulse reset[0m
+[0;32mI (3138951) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3138952) uart: queue free spaces: 30[0m
+[0;32mI (3138962) net_gsm: Signal quality OK: rssi=19 ber=99[0m
+[0;33mW (3145077) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (3157077) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (3157077) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (3157077) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (3168082) net_gsm: pulse reset[0m
+[0;32mI (3175582) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3175583) uart: queue free spaces: 30[0m
+[0;32mI (3175594) net_gsm: Signal quality OK: rssi=20 ber=99[0m
+[0;33mW (3181704) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (3193704) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (3193704) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (3193704) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (3204709) net_gsm: pulse reset[0m
+[0;32mI (3212209) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3212210) uart: queue free spaces: 30[0m
+[0;32mI (3212220) net_gsm: Signal quality OK: rssi=20 ber=99[0m
+[0;33mW (3218335) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (3230335) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (3230335) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (3230335) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (3241340) net_gsm: pulse reset[0m
+[0;32mI (3248840) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3248841) uart: queue free spaces: 30[0m
+[0;32mI (3248851) net_gsm: Signal quality OK: rssi=18 ber=99[0m
+[0;33mW (3254956) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (3266956) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (3266956) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (3266956) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (3277961) net_gsm: pulse reset[0m
+[0;32mI (3285461) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3285462) uart: queue free spaces: 30[0m
+[0;32mI (3288014) net_gsm: Signal quality OK: rssi=15 ber=99[0m
+[0;33mW (3294133) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (3306133) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (3306133) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (3306133) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (3317138) net_gsm: pulse reset[0m
+[0;32mI (3324638) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3324639) uart: queue free spaces: 30[0m
+[0;32mI (3327192) net_gsm: Signal quality OK: rssi=16 ber=99[0m
+[0;33mW (3333306) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (3345307) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (3345307) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (3345307) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (3356312) net_gsm: pulse reset[0m
+[0;32mI (3363812) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3363813) uart: queue free spaces: 30[0m
+[0;32mI (3363824) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (3369928) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (3381928) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (3381928) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (3381928) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (3392933) net_gsm: pulse reset[0m
+[0;32mI (3400433) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3400434) uart: queue free spaces: 30[0m
+[0;32mI (3400444) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (3406559) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (3418559) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (3418559) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (3418559) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (3429564) net_gsm: pulse reset[0m
+[0;32mI (3437064) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3437065) uart: queue free spaces: 30[0m
+[0;32mI (3439625) net_gsm: Signal quality OK: rssi=19 ber=99[0m
+[0;33mW (3445745) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (3457745) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (3457745) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (3457745) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (3468750) net_gsm: pulse reset[0m
+[0;32mI (3476250) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3476251) uart: queue free spaces: 30[0m
+[0;32mI (3476261) net_gsm: Signal quality OK: rssi=18 ber=99[0m
+[0;33mW (3482371) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (3494371) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (3494371) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (3494371) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (3505376) net_gsm: pulse reset[0m
+[0;32mI (3512876) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3512877) uart: queue free spaces: 30[0m
+[0;32mI (3512887) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (3518992) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (3530992) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (3530992) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (3530992) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (3541997) net_gsm: pulse reset[0m
+[0;32mI (3549497) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3549498) uart: queue free spaces: 30[0m
+[0;32mI (3550017) net_gsm: Signal quality OK: rssi=18 ber=99[0m
+[0;33mW (3556126) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (3568126) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (3568126) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (3568126) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (3579131) net_gsm: pulse reset[0m
+[0;32mI (3586631) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3586632) uart: queue free spaces: 30[0m
+[0;32mI (3586642) net_gsm: Signal quality OK: rssi=19 ber=99[0m
+[0;33mW (3592752) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (3604752) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (3604752) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (3604752) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (3615757) net_gsm: pulse reset[0m
+[0;32mI (3623257) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3623258) uart: queue free spaces: 30[0m
+[0;32mI (3623268) net_gsm: Signal quality OK: rssi=18 ber=99[0m
+[0;33mW (3629373) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (3632923) ntp_time: SNTP dong bo thanh cong: 2026-10-19 12:17:27[0m
+[0;32mI (3632925) ntp_time: Da ghi gio he thong xuong RTC[0m
+[0;32mI (3641374) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (3641374) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (3641374) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (3652379) net_gsm: pulse reset[0m
+[0;32mI (3659879) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3659880) uart: queue free spaces: 30[0m
+[0;32mI (3661925) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (3668035) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (3680035) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (3680035) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (3680035) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (3691040) net_gsm: pulse reset[0m
+[0;32mI (3698540) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3698541) uart: queue free spaces: 30[0m
+[0;32mI (3698551) net_gsm: Signal quality OK: rssi=20 ber=99[0m
+[0;33mW (3704655) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (3716655) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (3716655) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (3716655) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (3727660) net_gsm: pulse reset[0m
+[0;32mI (3735160) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3735161) uart: queue free spaces: 30[0m
+[0;32mI (3736188) net_gsm: Signal quality OK: rssi=16 ber=99[0m
+[0;33mW (3742308) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (3754308) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (3754308) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (3754308) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (3765313) net_gsm: pulse reset[0m
+[0;32mI (3772813) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3772814) uart: queue free spaces: 30[0m
+[0;32mI (3773841) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (3779951) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (3791951) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (3791951) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (3791951) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (3802956) net_gsm: pulse reset[0m
+[0;32mI (3810456) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3810457) uart: queue free spaces: 30[0m
+[0;32mI (3810467) net_gsm: Signal quality OK: rssi=16 ber=99[0m
+[0;33mW (3816572) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (3828572) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (3828572) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (3828572) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (3839577) net_gsm: pulse reset[0m
+[0;32mI (3847077) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3847078) uart: queue free spaces: 30[0m
+[0;32mI (3847088) net_gsm: Signal quality OK: rssi=16 ber=99[0m
+[0;33mW (3853193) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (3865193) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (3865193) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (3865193) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (3876198) net_gsm: pulse reset[0m
+[0;32mI (3883698) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3883699) uart: queue free spaces: 30[0m
+[0;32mI (3883710) net_gsm: Signal quality OK: rssi=19 ber=99[0m
+[0;33mW (3889819) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (3901819) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (3901819) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (3901819) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (3912824) net_gsm: pulse reset[0m
+[0;32mI (3920324) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3920325) uart: queue free spaces: 30[0m
+[0;32mI (3920336) net_gsm: Signal quality OK: rssi=18 ber=99[0m
+[0;33mW (3926445) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (3938445) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (3938445) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (3938445) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (3949450) net_gsm: pulse reset[0m
+[0;32mI (3956950) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3956951) uart: queue free spaces: 30[0m
+[0;32mI (3956962) net_gsm: Signal quality OK: rssi=16 ber=99[0m
+[0;33mW (3963071) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (3975071) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (3975071) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (3975071) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (3986076) net_gsm: pulse reset[0m
+[0;32mI (3993576) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3993577) uart: queue free spaces: 30[0m
+[0;32mI (3993588) net_gsm: Signal quality OK: rssi=15 ber=99[0m
+[0;33mW (3999696) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (4011696) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (4011696) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (4011696) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (4022701) net_gsm: pulse reset[0m
+[0;32mI (4030201) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (4030202) uart: queue free spaces: 30[0m
+[0;32mI (4030212) net_gsm: Signal quality OK: rssi=19 ber=99[0m
+[0;33mW (4036321) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (4048321) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (4048321) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (4048321) esp_modem_netif: PPP state changed event 5[0m

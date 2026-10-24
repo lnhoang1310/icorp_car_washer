@@ -1,0 +1,40 @@
+Change Component Footprint: Designator=C22 Old Footprint=CAP-CER0805-1.4H New Footprint=CAP-CER_0805_L2W1.25H0.6_Wave
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C22 0.22uF/25V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C24 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C25 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C26 10uF 25V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C28 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C29 6.8nF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C31 22pF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C33 22pF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C36 1nF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C38 100pF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C39 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C42 15pF 25V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C44 10uF 16V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C45 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C46 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C49 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C51 CAP_ALU_470uF_35V_SMD
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C53 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C54 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C56 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C59 10uF 25V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C61 220pF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C64 220uF_16V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C66 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C68 10uF 25V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C69 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C71 1nF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C72 470pF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C74 10uF 25V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C76 10uF 16V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C78 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C80 10uF 25V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C81 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C82 10uF 25V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C84 220uF_16V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C86 220uF_16V
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component GND TP_1MM
+Added Room: Name=MCU_WASH_MACHINE
+Added Room: Name=POWER_CAR_WASH_MACHINE

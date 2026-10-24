@@ -1,0 +1,31 @@
+Command: ninja flash
+[1/18] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build/bootloader/bootloader.bin"
+Bootloader binary size 0x57f0 bytes. 0x2810 bytes (31%) free.
+[2/18] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\esp-idf\main && D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\littlefs_py_venv\Scripts\littlefs-python.exe create D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/assets/audio D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build/storage.bin -v --fs-size=0x400000 --name-max=64 --block-size=4096"
+LittleFS Configuration:
+  Block Size:       4096  /  0x1000
+  Image Size:    4194304  /  0x400000
+  Block Count:      1024
+  Name Max:           64
+  Image:       D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\storage.bin
+[3/18] No install step for 'bootloader'
+[4/18] Completed 'bootloader'
+[5/18] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/__/component/io_expander/io_expander.c.obj
+[6/18] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/__/component/network_manager/net_gsm.c.obj
+[7/18] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/__/component/audio/audio_player.c.obj
+[8/18] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/peripheral_test.c.obj
+D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/main/peripheral_test.c:224:13: warning: 'test_relay' defined but not used [-Wunused-function]
+  224 | static bool test_relay(void)
+      |             ^~~~~~~~~~
+[9/18] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/__/component/application/app_fsm.c.obj
+[10/18] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/__/component/ui/ui_manager.c.obj
+[11/18] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/car_washer.c.obj
+D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/main/car_washer.c:115:13: warning: 'led_task' defined but not used [-Wunused-function]
+  115 | static void led_task(void* arg){
+      |             ^~~~~~~~
+D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/main/car_washer.c:69:13: warning: 'init_network' defined but not used [-Wunused-function]
+   69 | static void init_network(void)
+      |             ^~~~~~~~~~~~
+[12/18] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/__/component/ui/display_driver.c.obj
+[13/18] Linking C static library esp-idf\main\libmain.a

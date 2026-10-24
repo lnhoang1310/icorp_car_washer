@@ -1,0 +1,381 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM19 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\car_washer.elf D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM19'
+ESP-ROM:esp32s3-20210327
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1658
+load:0x403c8700,len:0xd98
+load:0x403cb700,len:0x33a4
+entry 0x403c899c
+[0;32mI (25) boot: ESP-IDF v5.5.1-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Sep 28 2026 18:07:58[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.4[0m
+[0;32mI (32) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (36) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00080000[0m
+[0;32mI (63) boot:  1 otadata          OTA data         01 00 00089000 00002000[0m
+[0;32mI (70) boot:  2 phy_init         RF data          01 01 0008b000 00001000[0m
+[0;32mI (76) boot:  3 ota_0            OTA app          00 10 00090000 002ee000[0m
+[0;32mI (83) boot:  4 ota_1            OTA app          00 11 00380000 002ee000[0m
+[0;32mI (89) boot:  5 storage          Unknown data     01 82 0066e000 00400000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00090020 vaddr=3c110020 size=49908h (301320) map[0m
+[0;32mI (157) esp_image: segment 1: paddr=000d9930 vaddr=3fc9ee00 size=0531ch ( 21276) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=000dec54 vaddr=40374000 size=013c4h (  5060) load[0m
+[0;32mI (163) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=10354ch (1062220) map[0m
+[0;32mI (346) esp_image: segment 4: paddr=001e3574 vaddr=403753c4 size=19960h (104800) load[0m
+[0;32mI (366) esp_image: segment 5: paddr=001fcedc vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (377) boot: Loaded app from partition at offset 0x90000[0m
+[0;32mI (377) boot: Disabling RNG early entropy source...[0m
+[0;32mI (387) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (387) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (387) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (389) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (394) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (398) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (402) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (407) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (412) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (416) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (421) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (426) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (430) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (434) esp_psram: Speed: 80MHz[0m
+[0;32mI (437) cpu_start: Multicore app[0m
+[0;32mI (853) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (862) cpu_start: Pro cpu start user code[0m
+[0;32mI (862) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (862) app_init: Application information:[0m
+[0;32mI (862) app_init: Project name:     car_washer[0m
+[0;32mI (866) app_init: App version:      1.0.0[0m
+[0;32mI (870) app_init: Compile time:     Sep 30 2026 10:19:40[0m
+[0;32mI (875) app_init: ELF file SHA256:  9dba9ffc0...[0m
+[0;32mI (879) app_init: ESP-IDF:          v5.5.1-dirty[0m
+[0;32mI (883) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (887) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (891) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (895) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (901) heap_init: At 3FCA9B28 len 0003FBE8 (254 KiB): RAM[0m
+[0;32mI (906) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (912) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (917) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (922) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (929) spi_flash: detected chip: generic[0m
+[0;32mI (932) spi_flash: flash io: dio[0m
+[0;32mI (936) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (942) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (948) main_task: Started on CPU0[0m
+[0;32mI (951) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (959) main_task: Calling app_main()[0m
+[0;32mI (1075) device_id: device_id = 80456B281774[0m
+[0;32mI (1076) main: device_id = 80456B281774[0m
+[0;32mI (1076) i2c_bus: i2c_bus_init OK (port=1 sda=1 scl=2)[0m
+[0;32mI (1078) io_exp: init OK (out=0x39 in=0x38 int=GPIO15)[0m
+[0;32mI (1082) peripheral_test: [0m
+[0;32mI (1084) peripheral_test: ########## BAT DAU TEST NGOAI VI ##########[0m
+[0;32mI (1088) io_exp: PCF input 0x38 OK[0m
+[0;32mI (1094) peripheral_test: ===== TEST FRAM =====[0m
+[0;32mI (1098) fram: fram_init OK (port=1 sda=1 scl=2 addr=0x50 cap=32768 byte)[0m
+[0;32mI (1105) fram: self_test OK[0m
+[0;32mI (1107) peripheral_test: fram_self_test OK[0m
+[0;32mI (1111) peripheral_test: Ghi/doc pattern tai 0x0100 khop -> FRAM (cap=32768 byte): PASS[0m
+[0;32mI (1119) peripheral_test: [0m
+[0;32mI (1121) peripheral_test: ===== TEST DS3231 =====[0m
+[0;32mI (1126) rtc_ds3231: DS3231 connected (port=1 sda=1 scl=2)[0m
+[0;32mI (1131) peripheral_test: DS3231 connected[0m
+[0;33mW (1135) peripheral_test: DS3231 bao mat dien (bit OSF) -- gio hien tai trong chip co the KHONG dang tin cay[0m
+[0;32mI (1145) peripheral_test: Gio dang luu trong RTC: 2000-01-01 00:08:04[0m
+[0;32mI (2352) peripheral_test: Set 2025-01-01 12:00:00 -> doc lai 2025-01-01 12:00:01 (lech 1 giay) -> DS3231: PASS[0m
+[0;32mI (2353) peripheral_test: Da khoi phuc lai gio RTC nhu truoc luc test[0m
+[0;32mI (2357) peripheral_test: [0m
+[0;32mI (2359) peripheral_test: ===== TEST RELAY =====[0m
+[0;33mW (2364) peripheral_test: Bat TAT CA relay 1000 ms / tat 1000 ms, lap co gioi han -- thao bom hoac cat nguon bom truoc khi test![0m
+[0;33mW (2425) peripheral_test: [1] BAT: chi relay DEN -- relay bom bi chan: nut dung khan dang tac dong (xem IN_ESTOP_ACTIVE_LOW trong app_config.h)[0m
+[0;32mI (3426) peripheral_test: [1] TAT[0m
+[0;33mW (4426) peripheral_test: [2] BAT: chi relay DEN -- relay bom bi chan: nut dung khan dang tac dong (xem IN_ESTOP_ACTIVE_LOW trong app_config.h)[0m
+[0;32mI (5427) peripheral_test: [2] TAT[0m
+[0;33mW (6427) peripheral_test: [3] BAT: chi relay DEN -- relay bom bi chan: nut dung khan dang tac dong (xem IN_ESTOP_ACTIVE_LOW trong app_config.h)[0m
+[0;32mI (7428) peripheral_test: [3] TAT[0m
+[0;33mW (8428) peripheral_test: [4] BAT: chi relay DEN -- relay bom bi chan: nut dung khan dang tac dong (xem IN_ESTOP_ACTIVE_LOW trong app_config.h)[0m
+[0;32mI (9429) peripheral_test: [4] TAT[0m
+[0;33mW (10429) peripheral_test: [5] BAT: chi relay DEN -- relay bom bi chan: nut dung khan dang tac dong (xem IN_ESTOP_ACTIVE_LOW trong app_config.h)[0m
+[0;32mI (11430) peripheral_test: [5] TAT[0m
+[0;33mW (12430) peripheral_test: [6] BAT: chi relay DEN -- relay bom bi chan: nut dung khan dang tac dong (xem IN_ESTOP_ACTIVE_LOW trong app_config.h)[0m
+[0;32mI (13431) peripheral_test: [6] TAT[0m
+[0;33mW (14431) peripheral_test: [7] BAT: chi relay DEN -- relay bom bi chan: nut dung khan dang tac dong (xem IN_ESTOP_ACTIVE_LOW trong app_config.h)[0m
+[0;32mI (15432) peripheral_test: [7] TAT[0m
+[0;33mW (16432) peripheral_test: [8] BAT: chi relay DEN -- relay bom bi chan: nut dung khan dang tac dong (xem IN_ESTOP_ACTIVE_LOW trong app_config.h)[0m
+[0;32mI (17433) peripheral_test: [8] TAT[0m
+[0;33mW (18433) peripheral_test: [9] BAT: chi relay DEN -- relay bom bi chan: nut dung khan dang tac dong (xem IN_ESTOP_ACTIVE_LOW trong app_config.h)[0m
+[0;32mI (19434) peripheral_test: [9] TAT[0m
+[0;33mW (20434) peripheral_test: [10] BAT: chi relay DEN -- relay bom bi chan: nut dung khan dang tac dong (xem IN_ESTOP_ACTIVE_LOW trong app_config.h)[0m
+[0;32mI (21435) peripheral_test: [10] TAT[0m
+[0;32mI (22435) peripheral_test: Test relay xong -> FAIL (PASS = ESP32 ghi duoc lenh; con relay co dong that hay khong thi nghe/nhin tren bo)[0m
+[0;32mI (22435) peripheral_test: [0m
+[0;32mI (22438) peripheral_test: ########## KET QUA TEST NGOAI VI ##########[0m
+[0;32mI (22444) peripheral_test: FRAM    : PASS[0m
+[0;32mI (22448) peripheral_test: DS3231  : PASS[0m
+[0;32mI (22452) peripheral_test: RELAY   : FAIL[0m
+[0;32mI (22455) peripheral_test: ############################################[0m
+[0;33mW (22462) fram: fram_init da goi roi, bo qua[0m
+[0;32mI (22466) rtc_ds3231: DS3231 connected (port=1 sda=1 scl=2)[0m
+[0;33mW (22471) ntp_time: Dong ho he thong chua hop le (vua boot/reset)[0m
+[0;33mW (22478) ntp_time: Gio doc tu RTC khong hop le (co the do nhieu I2C lam sai lech du lieu) -- bo qua, cho SNTP[0m
+[0;33mW (22487) devcfg: khong co / hong cau hinh trong NVS -> dung mac dinh[0m
+[0;32mI (22494) ili9488: Configuring for BGR color order[0m
+[0;32mI (22497) ili9488: new ili9488 panel @0x3fcbb7d4[0m
+[0;32mI (22501) ili9488: Setting GPIO:20 to 0[0m
+[0;32mI (22515) ili9488: Setting GPIO:20 to 1[0m
+[0;32mI (22525) ili9488: Initializing ILI9488[0m
+[0;32mI (22725) ili9488: Initialization complete[0m
+[0;32mI (22825) LVGL: Starting LVGL task[0m
+[1;31mE (22829) gpio: gpio_install_isr_service(526): GPIO isr service already installed[0m
+[0;32mI (22878) display: display OK 320x240, SPI 40 MHz[0m
+[0;32mI (22887) audio: phan vung am thanh: dung 8/4096 KB[0m
+[0;33mW (22902) audio: thieu 22/22 file am thanh trong assets/audio[0m
+[0;32mI (22902) audio: audio OK (I2S 16000 Hz, BCLK=6 WS=7 DIN=5 SD=4)[0m
+[1;31mE (22903) gpio: gpio_install_isr_service(526): GPIO isr service already installed[0m
+[0;33mW (22910) net_ethernet: GPIO ISR handler already installed, bo qua[0m
+[0;32mI (22937) esp_eth.netif.netif_glue: 80:45:6b:28:17:77[0m
+[0;32mI (22938) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+[0;32mI (22938) net_ethernet: net_ethernet_init OK (spi_host=2 cs=9 int=10)[0m
+[0;32mI (22953) net_ethernet: Driver started[0m
+[0;32mI (22954) pp: pp rom version: e7ae62f[0m
+[0;32mI (22955) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (22956) wifi:wifi driver task: 3fcd0604, prio:23, stack:6656, core=0[0m
+[0;32mI (22966) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (22966) wifi:wifi certification version: v7.0[0m
+[0;32mI (22969) wifi:config NVS flash: enabled[0m
+[0;32mI (22972) wifi:config nano formatting: disabled[0m
+[0;32mI (22977) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (22982) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (22986) wifi:Init management short buffer num: 32[0m
+[0;32mI (22991) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (22995) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (22999) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (23003) wifi:Init static rx buffer num: 10[0m
+[0;32mI (23007) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (23012) wifi_init: rx ba win: 6[0m
+[0;32mI (23014) wifi_init: accept mbox: 6[0m
+[0;32mI (23017) wifi_init: tcpip mbox: 32[0m
+[0;32mI (23021) wifi_init: udp mbox: 6[0m
+[0;32mI (23024) wifi_init: tcp mbox: 6[0m
+[0;32mI (23027) wifi_init: tcp tx win: 5760[0m
+[0;32mI (23030) wifi_init: tcp rx win: 5760[0m
+[0;32mI (23033) wifi_init: tcp mss: 1440[0m
+[0;32mI (23036) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (23040) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (23044) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (23052) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (23089) wifi:mode : sta (80:45:6b:28:17:74) + softAP (80:45:6b:28:17:75)[0m
+[0;32mI (23089) wifi:enable tsf[0m
+[0;32mI (23092) wifi:Total power save buffer number: 16[0m
+[0;32mI (23092) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (23096) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (23101) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;33mW (23104) net_wifi: Khong co SSID da luu -> chua ket noi duoc[0m
+[0;32mI (23110) net_wifi: Schedule next scan in 10000 ms[0m
+[0;32mI (23115) net_wifi: AP SSID=XTECH - 281774 IP:192.168.4.1[0m
+[0;32mI (23115) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (23128) net_gsm: net_gsm_init OK (uart=2 tx=47 rx=48 apn=v-internet)[0m
+[0;32mI (23134) net_gsm: pulse reset[0m
+[0;32mI (23135) net_manager: net_manager_init[0m
+[0;32mI (23140) ntp_time: SNTP started[0m
+[0;33mW (23143) cloud: chua co giao thuc server -> tram o trang thai tam ngung phuc vu[0m
+[0;32mI (23150) main: khoi dong xong[0m
+[0;32mI (23153) main_task: Returned from app_main()[0m
+[0;32mI (23205) app_fsm: BOOT -> OUT_OF_SERVICE[0m
+[0;32mI (30636) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (30637) uart: queue free spaces: 30[0m
+[0;32mI (30648) net_gsm: Signal quality OK: rssi=16 ber=99[0m
+[0;32mI (33114) net_wifi: Auto scan fired (retry=1)[0m
+[0;32mI (36348) net_wifi: ===== SCAN RESULT (11 APs) =====[0m
+[0;32mI (36348) net_wifi: 1) SSID:TP-Link_FF1E RSSI:-84 CH:13[0m
+[0;32mI (36348) net_wifi: 2) SSID:Hanoi Office RSSI:-90 CH:1[0m
+[0;32mI (36352) net_wifi: 3) SSID:Hanoi Office RSSI:-93 CH:1[0m
+[0;32mI (36356) net_wifi: 4) SSID:HNO T4 RSSI:-93 CH:6[0m
+[0;32mI (36361) net_wifi: 5) SSID:VANTUNG_2.4G RSSI:-93 CH:6[0m
+[0;32mI (36366) net_wifi: 6) SSID:ICORP - P Ky Thuat RSSI:-94 CH:4[0m
+[0;32mI (36371) net_wifi: 7) SSID:ICORP PKD01 RSSI:-94 CH:10[0m
+[0;32mI (36376) net_wifi: 8) SSID:HNO T4 RSSI:-95 CH:1[0m
+[0;32mI (36380) net_wifi: 9) SSID:ICORP - P Ky Thuat RSSI:-96 CH:4[0m
+[0;32mI (36386) net_wifi: 10) SSID:Hanoi Office RSSI:-96 CH:6[0m
+[0;32mI (36391) net_wifi: 11) SSID:Hanoi Office RSSI:-97 CH:1[0m
+[0;33mW (36396) net_wifi: Khong tim thay SSID da luu nao trong ket qua quet[0m
+[0;32mI (36402) net_wifi: Schedule next scan in 30000 ms[0m
+[0;33mW (36757) net_gsm: PPP handshake timeout -> restart modem, cho 5000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (48757) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (48757) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (48757) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (54762) net_gsm: pulse reset[0m
+[0;32mI (62262) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (62263) uart: queue free spaces: 30[0m
+[0;32mI (62775) net_gsm: Signal quality OK: rssi=19 ber=99[0m
+[0;32mI (66406) net_wifi: Auto scan fired (retry=2)[0m
+[0;33mW (68890) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (69640) net_wifi: ===== SCAN RESULT (9 APs) =====[0m
+[0;32mI (69640) net_wifi: 1) SSID:TP-Link_FF1E RSSI:-84 CH:13[0m
+[0;32mI (69640) net_wifi: 2) SSID:Hanoi Office RSSI:-89 CH:1[0m
+[0;32mI (69643) net_wifi: 3) SSID:VANTUNG_2.4G RSSI:-91 CH:6[0m
+[0;32mI (69648) net_wifi: 4) SSID:Hanoi Office RSSI:-93 CH:1[0m
+[0;32mI (69653) net_wifi: 5) SSID:ICORP PKD01 RSSI:-93 CH:10[0m
+[0;32mI (69658) net_wifi: 6) SSID:Hanoi Office RSSI:-94 CH:1[0m
+[0;32mI (69663) net_wifi: 7) SSID:HNO T4 RSSI:-94 CH:6[0m
+[0;32mI (69667) net_wifi: 8) SSID:HNO T4 RSSI:-95 CH:1[0m
+[0;32mI (69671) net_wifi: 9) SSID:Hanoi Office RSSI:-95 CH:6[0m
+[0;33mW (69676) net_wifi: Khong tim thay SSID da luu nao trong ket qua quet[0m
+[0;32mI (69682) net_wifi: Schedule next scan in 60000 ms[0m
+[0;32mI (80890) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (80890) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (80890) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (91895) net_gsm: pulse reset[0m
+[0;32mI (99395) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (99396) uart: queue free spaces: 30[0m
+[0;32mI (99407) net_gsm: Signal quality OK: rssi=21 ber=99[0m
+[0;33mW (105521) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (117521) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (117521) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (117521) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (128526) net_gsm: pulse reset[0m
+[0;32mI (129687) net_wifi: Auto scan fired (retry=3)[0m
+[0;32mI (132920) net_wifi: ===== SCAN RESULT (9 APs) =====[0m
+[0;32mI (132920) net_wifi: 1) SSID:TP-Link_FF1E RSSI:-85 CH:13[0m
+[0;32mI (132920) net_wifi: 2) SSID:Hanoi Office RSSI:-89 CH:1[0m
+[0;32mI (132924) net_wifi: 3) SSID:Hanoi Office RSSI:-93 CH:1[0m
+[0;32mI (132929) net_wifi: 4) SSID:HNO T4 RSSI:-93 CH:1[0m
+[0;32mI (132933) net_wifi: 5) SSID:Hanoi Office RSSI:-93 CH:6[0m
+[0;32mI (132938) net_wifi: 6) SSID:VANTUNG_2.4G RSSI:-93 CH:6[0m
+[0;32mI (132943) net_wifi: 7) SSID:ICORP PKD01 RSSI:-93 CH:10[0m
+[0;32mI (132948) net_wifi: 8) SSID:HNO T4 RSSI:-94 CH:6[0m
+[0;32mI (132952) net_wifi: 9) SSID:Hanoi Office RSSI:-95 CH:1[0m
+[0;33mW (132958) net_wifi: Khong tim thay SSID da luu nao trong ket qua quet[0m
+[0;32mI (132964) net_wifi: Schedule next scan in 120000 ms[0m
+[0;32mI (136026) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (136027) uart: queue free spaces: 30[0m
+[0;32mI (136037) net_gsm: Signal quality OK: rssi=21 ber=99[0m
+[0;33mW (142142) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (154142) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (154142) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (154142) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (165147) net_gsm: pulse reset[0m
+[0;32mI (172647) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (172648) uart: queue free spaces: 30[0m
+[0;32mI (172658) net_gsm: Signal quality OK: rssi=18 ber=99[0m
+[0;33mW (178763) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (190763) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (190763) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (190763) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (201768) net_gsm: pulse reset[0m
+[0;32mI (209268) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (209269) uart: queue free spaces: 30[0m
+[0;32mI (209279) net_gsm: Signal quality OK: rssi=20 ber=99[0m
+[0;33mW (215389) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (227389) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (227389) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (227389) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (238394) net_gsm: pulse reset[0m
+[0;32mI (245894) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (245895) uart: queue free spaces: 30[0m
+[0;32mI (245906) net_gsm: Signal quality OK: rssi=19 ber=99[0m
+[0;33mW (252010) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (252968) net_wifi: Auto scan fired (retry=4)[0m
+[0;32mI (256201) net_wifi: ===== SCAN RESULT (9 APs) =====[0m
+[0;32mI (256202) net_wifi: 1) SSID:TP-Link_FF1E RSSI:-82 CH:13[0m
+[0;32mI (256202) net_wifi: 2) SSID:Hanoi Office RSSI:-92 CH:1[0m
+[0;32mI (256205) net_wifi: 3) SSID:HNO T4 RSSI:-92 CH:6[0m
+[0;32mI (256210) net_wifi: 4) SSID:VANTUNG_2.4G RSSI:-92 CH:6[0m
+[0;32mI (256215) net_wifi: 5) SSID:HNO T4 RSSI:-94 CH:1[0m
+[0;32mI (256219) net_wifi: 6) SSID:ICORP PKD01 RSSI:-94 CH:10[0m
+[0;32mI (256224) net_wifi: 7) SSID:Hanoi Office RSSI:-95 CH:6[0m
+[0;32mI (256229) net_wifi: 8) SSID:Hanoi Office RSSI:-96 CH:1[0m
+[0;32mI (256234) net_wifi: 9) SSID:Hanoi Office RSSI:-96 CH:1[0m
+[0;33mW (256239) net_wifi: Khong tim thay SSID da luu nao trong ket qua quet[0m
+[0;32mI (256245) net_wifi: Schedule next scan in 300000 ms[0m
+[0;32mI (264010) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (264010) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (264010) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (275015) net_gsm: pulse reset[0m
+[0;32mI (282515) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (282516) uart: queue free spaces: 30[0m
+[0;32mI (282527) net_gsm: Signal quality OK: rssi=21 ber=99[0m
+[0;33mW (288641) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (300641) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (300641) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (300641) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (311646) net_gsm: pulse reset[0m
+[0;32mI (319146) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (319147) uart: queue free spaces: 30[0m
+[0;32mI (319157) net_gsm: Signal quality OK: rssi=20 ber=99[0m
+[0;33mW (325262) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (337262) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (337262) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (337262) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (348267) net_gsm: pulse reset[0m
+[0;32mI (355767) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (355768) uart: queue free spaces: 30[0m
+[0;32mI (355778) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (361903) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (373903) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (373903) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (373903) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (384908) net_gsm: pulse reset[0m
+[0;32mI (392408) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (392409) uart: queue free spaces: 30[0m
+[0;32mI (392419) net_gsm: Signal quality OK: rssi=20 ber=99[0m
+[0;33mW (398529) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (410529) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (410529) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (410529) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (421534) net_gsm: pulse reset[0m
+[0;32mI (429034) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (429035) uart: queue free spaces: 30[0m
+[0;32mI (429046) net_gsm: Signal quality OK: rssi=21 ber=99[0m
+[0;33mW (435155) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (447155) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (447155) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (447155) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (458160) net_gsm: pulse reset[0m
+[0;32mI (465660) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (465661) uart: queue free spaces: 30[0m
+[0;32mI (465671) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (471781) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (483781) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (483781) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (483781) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (494786) net_gsm: pulse reset[0m
+[0;32mI (502286) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (502287) uart: queue free spaces: 30[0m
+[0;32mI (503825) net_gsm: Signal quality OK: rssi=15 ber=99[0m
+[0;33mW (509940) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (521940) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (521940) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (521940) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (532945) net_gsm: pulse reset[0m
+[0;32mI (540445) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (540446) uart: queue free spaces: 30[0m
+[0;32mI (540457) net_gsm: Signal quality OK: rssi=15 ber=99[0m
+[0;33mW (546561) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (556250) net_wifi: Auto scan fired (retry=5)[0m
+[0;32mI (558561) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (558561) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (558561) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (559483) net_wifi: ===== SCAN RESULT (8 APs) =====[0m
+[0;32mI (559484) net_wifi: 1) SSID:TP-Link_FF1E RSSI:-81 CH:13[0m
+[0;32mI (559484) net_wifi: 2) SSID:HNO T4 RSSI:-90 CH:6[0m
+[0;32mI (559487) net_wifi: 3) SSID:Hanoi Office RSSI:-91 CH:6[0m
+[0;32mI (559492) net_wifi: 4) SSID:VANTUNG_2.4G RSSI:-92 CH:6[0m
+[0;32mI (559496) net_wifi: 5) SSID:Hanoi Office RSSI:-93 CH:1[0m
+[0;32mI (559501) net_wifi: 6) SSID:Hanoi Office RSSI:-95 CH:1[0m
+[0;32mI (559506) net_wifi: 7) SSID:Hanoi Office RSSI:-96 CH:1[0m
+[0;32mI (559511) net_wifi: 8) SSID:HNO T4 RSSI:-96 CH:1[0m
+[0;33mW (559516) net_wifi: Khong tim thay SSID da luu nao trong ket qua quet[0m
+[0;32mI (559522) net_wifi: Schedule next scan in 600000 ms[0m

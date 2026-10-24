@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=TFT_GND Pin=U9-8
+Removed Pin From Net: NetName=TFT_SCK Pin=U9-11
+Removed Pin From Net: NetName=INT Pin=U9-15
+Added Pin To Net: NetName=INT Pin=U9-8
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component GND TP_1MM

@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build/CMakeFiles/bootloader
+D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build/CMakeFiles/bootloader.rule
+D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build/CMakeFiles/bootloader-complete.rule
+D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

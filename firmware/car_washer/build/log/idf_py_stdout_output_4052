@@ -1,0 +1,8 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM19 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\car_washer.elf D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM19'
+ESP32 Base MAC: 80:45:6B:28:17:74
+
+=== W5500 test ===
+[1;31mE (624) w5500.mac: W5500 version mismatched, expected 0x04, got 0x00[0m
+[1;31mE (624) w5500.mac: emac_w5500_init(883): verify chip ID failed[0m
+[1;31mE (625) esp_eth: esp_eth_driver_install(250): init mac failed[0m
+LOI: khong khoi tao duoc W5500 (kiem tra day SPI / chan CS, RST)

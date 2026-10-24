@@ -1,0 +1,1050 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM10 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\car_washer.elf D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM10'
+ESP-ROM:esp32s3-20210327
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1658
+load:0x403c8700,len:0xd98
+load:0x403cb700,len:0x33a4
+entry 0x403c899c
+[0;32mI (25) boot: ESP-IDF v5.5.1-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Sep 28 2026 18:07:58[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.4[0m
+[0;32mI (32) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (36) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00080000[0m
+[0;32mI (63) boot:  1 otadata          OTA data         01 00 00089000 00002000[0m
+[0;32mI (70) boot:  2 phy_init         RF data          01 01 0008b000 00001000[0m
+[0;32mI (76) boot:  3 ota_0            OTA app          00 10 00090000 002ee000[0m
+[0;32mI (83) boot:  4 ota_1            OTA app          00 11 00380000 002ee000[0m
+[0;32mI (89) boot:  5 storage          Unknown data     01 82 0066e000 00400000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00090020 vaddr=3c110020 size=4a110h (303376) map[0m
+[0;32mI (157) esp_image: segment 1: paddr=000da138 vaddr=3fc9ec00 size=05334h ( 21300) load[0m
+[0;32mI (162) esp_image: segment 2: paddr=000df474 vaddr=40374000 size=00ba4h (  2980) load[0m
+[0;32mI (162) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=104584h (1066372) map[0m
+[0;32mI (347) esp_image: segment 4: paddr=001e45ac vaddr=40374ba4 size=19ff0h (106480) load[0m
+[0;32mI (368) esp_image: segment 5: paddr=001fe5a4 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (378) boot: Loaded app from partition at offset 0x90000[0m
+[0;32mI (378) boot: Disabling RNG early entropy source...[0m
+[0;32mI (388) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (388) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (389) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (391) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (395) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (399) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (403) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (408) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (413) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (418) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (423) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (428) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (431) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (435) esp_psram: Speed: 80MHz[0m
+[0;32mI (438) cpu_start: Multicore app[0m
+[0;32mI (854) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (863) cpu_start: Pro cpu start user code[0m
+[0;32mI (863) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (863) app_init: Application information:[0m
+[0;32mI (863) app_init: Project name:     car_washer[0m
+[0;32mI (867) app_init: App version:      1.0.0[0m
+[0;32mI (871) app_init: Compile time:     Oct  2 2026 02:09:03[0m
+[0;32mI (876) app_init: ELF file SHA256:  3e4ad87e4...[0m
+[0;32mI (880) app_init: ESP-IDF:          v5.5.1-dirty[0m
+[0;32mI (885) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (889) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (893) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (896) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (903) heap_init: At 3FCA9B00 len 0003FC10 (255 KiB): RAM[0m
+[0;32mI (908) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (913) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (918) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (924) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (931) spi_flash: detected chip: generic[0m
+[0;32mI (934) spi_flash: flash io: dio[0m
+[0;32mI (937) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (943) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (950) main_task: Started on CPU0[0m
+[0;32mI (953) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (961) main_task: Calling app_main()[0m
+[0;32mI (1082) main: led_debug_task running[0m
+[0;32mI (1082) device_id: device_id = 80456B281774[0m
+[0;32mI (1082) main: device_id = 80456B281774[0m
+[0;32mI (1083) i2c_bus: i2c_bus_init OK (port=1 sda=1 scl=2)[0m
+[0;32mI (1088) io_exp: init OK (out=0x38 in=0x39 int=GPIO15)[0m
+[0;32mI (1092) peripheral_test: [0m
+[0;32mI (1094) peripheral_test: ########## BAT DAU TEST NGOAI VI ##########[0m
+[0;32mI (1098) io_exp: PCF input 0x39 OK[0m
+[0;32mI (1104) peripheral_test: ===== TEST FRAM =====[0m
+[0;32mI (1108) fram: fram_init OK (port=1 sda=1 scl=2 addr=0x50 cap=32768 byte)[0m
+[0;32mI (1115) fram: self_test OK[0m
+[0;32mI (1117) peripheral_test: fram_self_test OK[0m
+[0;32mI (1121) peripheral_test: Ghi/doc pattern tai 0x0100 khop -> FRAM (cap=32768 byte): PASS[0m
+[0;32mI (1128) peripheral_test: [0m
+[0;32mI (1131) peripheral_test: ===== TEST DS3231 =====[0m
+[0;32mI (1136) rtc_ds3231: DS3231 connected (port=1 sda=1 scl=2)[0m
+[0;32mI (1141) peripheral_test: DS3231 connected[0m
+[0;33mW (1145) peripheral_test: DS3231 bao mat dien (bit OSF) -- gio hien tai trong chip co the KHONG dang tin cay[0m
+[0;33mW (1154) io_exp: DUNG KHAN DA NHA[0m
+[0;32mI (1158) peripheral_test: Gio dang luu trong RTC: 2000-01-01 00:01:53[0m
+[0;32mI (2365) peripheral_test: Set 2025-01-01 12:00:00 -> doc lai 2025-01-01 12:00:01 (lech 1 giay) -> DS3231: PASS[0m
+[0;32mI (2366) peripheral_test: Da khoi phuc lai gio RTC nhu truoc luc test[0m
+[0;32mI (2370) peripheral_test: [0m
+[0;32mI (2372) peripheral_test: [0m
+[0;32mI (2375) peripheral_test: ########## KET QUA TEST NGOAI VI ##########[0m
+[0;32mI (2381) peripheral_test: FRAM    : PASS[0m
+[0;32mI (2385) peripheral_test: DS3231  : PASS[0m
+[0;32mI (2388) peripheral_test: RELAY   : bo qua[0m
+[0;32mI (2392) peripheral_test: ############################################[0m
+[0;33mW (2398) fram: fram_init da goi roi, bo qua[0m
+[0;32mI (2403) rtc_ds3231: DS3231 connected (port=1 sda=1 scl=2)[0m
+[0;33mW (2408) ntp_time: Dong ho he thong chua hop le (vua boot/reset)[0m
+[0;33mW (2414) ntp_time: Gio doc tu RTC khong hop le (co the do nhieu I2C lam sai lech du lieu) -- bo qua, cho SNTP[0m
+[0;33mW (2423) devcfg: khong co / hong cau hinh trong NVS -> dung mac dinh[0m
+[0;32mI (2600) display: doc ID man hinh (0xD3): 00 00 00 00 00[0m
+[0;33mW (2601) display: man hinh khong tra loi: chan SDO/MISO chua noi, hoac chip chua nhan duoc lenh (kiem tra day CS/DC/RST/SCK/SDI va nguon man hinh)[0m
+[0;32mI (2608) ili9341: LCD panel create success, version: 2.1.0[0m
+[0;32mI (2734) LVGL: Starting LVGL task[0m
+[0;33mW (2738) lcd_panel.io.spi: Callback on_color_trans_done was already set and now it was overwritten![0m
+[0;32mI (2794) display: cam ung: dung hieu chinh da luu (swap=1 inv_x=1 inv_y=1 x=149..4095 y=0..4095)[0m
+[0;32mI (2794) display: cam ung XPT2046 OK (doc dinh ky, CS=GPIO21)[0m
+[0;32mI (2797) display: display OK ILI9341 320x240, SPI 15 MHz[0m
+[0;32mI (2805) peripheral_test: cam ung da co hieu chinh trong NVS (muon lam lai: dat PT_TOUCH_CALIB = 2)[0m
+[0;32mI (2841) audio: phan vung am thanh: dung 1080/4096 KB[0m
+[0;33mW (2870) audio: thieu 5/21 file am thanh trong assets/audio[0m
+[0;32mI (2870) audio: audio OK (I2S 16000 Hz, BCLK=6 WS=7 DIN=5 SD=4)[0m
+[1;31mE (2870) gpio: gpio_install_isr_service(526): GPIO isr service already installed[0m
+[0;33mW (2877) net_ethernet: GPIO ISR handler already installed, bo qua[0m
+[1;31mE (2984) w5500.mac: W5500 version mismatched, expected 0x04, got 0x00[0m
+[1;31mE (2984) w5500.mac: emac_w5500_init(895): verify chip ID failed[0m
+[1;31mE (2985) esp_eth: esp_eth_driver_install(250): init mac failed[0m
+[1;31mE (2990) net_ethernet: driver install failed: ESP_ERR_INVALID_VERSION[0m
+[1;31mE (2996) net_ethernet: net_ethernet_init(136): eth_init_spi failed[0m
+[0;32mI (4002) pp: pp rom version: e7ae62f[0m
+[0;32mI (4003) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (4005) wifi:wifi driver task: 3fcde804, prio:23, stack:6656, core=0[0m
+[0;32mI (4015) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (4016) wifi:wifi certification version: v7.0[0m
+[0;32mI (4016) wifi:config NVS flash: enabled[0m
+[0;32mI (4017) wifi:config nano formatting: disabled[0m
+[0;32mI (4021) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (4026) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (4030) wifi:Init management short buffer num: 32[0m
+[0;32mI (4035) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (4039) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (4043) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (4047) wifi:Init static rx buffer num: 10[0m
+[0;32mI (4051) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (4056) wifi_init: rx ba win: 6[0m
+[0;32mI (4058) wifi_init: accept mbox: 6[0m
+[0;32mI (4061) wifi_init: tcpip mbox: 32[0m
+[0;32mI (4064) wifi_init: udp mbox: 6[0m
+[0;32mI (4067) wifi_init: tcp mbox: 6[0m
+[0;32mI (4070) wifi_init: tcp tx win: 5760[0m
+[0;32mI (4073) wifi_init: tcp rx win: 5760[0m
+[0;32mI (4077) wifi_init: tcp mss: 1440[0m
+[0;32mI (4080) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (4084) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (4087) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (4095) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (4130) wifi:mode : sta (80:45:6b:28:17:74) + softAP (80:45:6b:28:17:75)[0m
+[0;32mI (4130) wifi:enable tsf[0m
+[0;32mI (4133) wifi:Total power save buffer number: 16[0m
+[0;32mI (4133) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (4137) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (4142) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (4145) net_wifi: STA fallback used -> auto-connect[0m
+[0;32mI (4150) net_wifi: AP SSID=XTECH - 281774 IP:192.168.4.1[0m
+[0;32mI (4151) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (4163) net_gsm: net_gsm_init OK (uart=2 tx=47 rx=48 apn=v-internet)[0m
+[0;32mI (4169) net_gsm: pulse reset[0m
+[0;32mI (4169) net_manager: net_manager_init[0m
+[0;32mI (4175) ntp_time: SNTP started[0m
+[0;33mW (4178) cloud: !!! CHE DO THU (PT_DEMO_PAYMENT = 1): thanh toan GIA LAP, khong co tien that !!![0m
+[0;32mI (4186) main: khoi dong xong[0m
+[0;32mI (4189) main_task: Returned from app_main()[0m
+[0;32mI (4261) app_fsm: BOOT -> IDLE[0m
+[0;32mI (5152) net_wifi: STA fallback used -> auto-connect[0m
+[0;33mW (7989) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (7990) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (7991) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (10827) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (10828) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (10829) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (11671) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (11672) uart: queue free spaces: 30[0m
+[0;33mW (13666) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (13667) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (13668) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (16505) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (16505) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (16506) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (18290) display: touch nghi ngo: adc x=889 y=1114 luc=1915 (mau 1/2)[0m
+[0;32mI (18324) display: cam ung: nhan duoc cham dau tien tai x=242 y=186 (luc 2037)[0m
+[0;32mI (18325) display: touch adc x=909 y=1107 luc=2037 -> man hinh x=242 y=186[0m
+[0;32mI (18362) display: touch adc x=893 y=1106 luc=2043 -> man hinh x=242 y=187[0m
+[0;32mI (18436) app_fsm: IDLE -> SELECT[0m
+[0;33mW (19343) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (19343) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (19344) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (22181) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (22181) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (22182) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (25019) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (25019) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (25020) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (27857) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (27858) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (27859) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (28649) display: touch nghi ngo: adc x=2440 y=2648 luc=1212 (mau 1/2)[0m
+[0;32mI (28685) display: touch adc x=2451 y=2688 luc=1955 -> man hinh x=114 y=96[0m
+[0;32mI (28756) display: touch adc x=2447 y=2648 luc=1369 -> man hinh x=117 y=97[0m
+[0;32mI (28835) app_fsm: tao don 80456B281774-0-0042: Gói 5 phút 5 phut 10000 d[0m
+[0;32mI (28836) app_fsm: SELECT -> CREATING_QR[0m
+[0;33mW (28841) peripheral_test: [DEMO] tao don 80456B281774-0-0042, 10000 d[0m
+[0;33mW (30698) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (30699) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (30700) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (30842) peripheral_test: [DEMO] don 80456B281774-0-0042: da gui ma QR thu[0m
+[0;33mW (30842) peripheral_test: [DEMO] tu bao thanh toan sau 8 s[0m
+[0;32mI (30843) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (30895) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[1;31mE (31674) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (32675) net_gsm: Modem/song chua san sang, thu lai sau 5000 ms (fail_count=1)[0m
+[0;33mW (33538) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (33538) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (33539) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (36376) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (36376) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (36377) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (37675) net_gsm: pulse reset[0m
+[0;33mW (38842) peripheral_test: [DEMO] don 80456B281774-0-0042: gia lap ket qua thanh toan = 0[0m
+[0;33mW (38846) cloud: [DEMO] report_session(80456B281774-0-0042, start): bo qua[0m
+[0;32mI (38846) app_fsm: WAIT_PAYMENT -> PAID[0m
+[0;32mI (38856) audio: phat: "Thanh toán thành công. Cảm ơn quý khách."[0m
+[0;33mW (39214) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (39214) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (39215) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (39299) app_fsm: den BAT (troi toi)[0m
+[0;32mI (41899) app_fsm: PAID -> WASHING[0m
+[0;32mI (41921) audio: phat: "Bắt đầu rửa xe. Nhấn nút bọt, nước hoặc xịt khô để sử dụng."[0m
+[0;33mW (41933) audio: thieu file /audio/wash_guide.wav[0m
+[0;33mW (42053) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (42053) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (42054) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (44891) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (44892) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (44893) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (45175) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (45176) uart: queue free spaces: 30[0m
+[0;33mW (47731) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (47731) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (47732) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (50570) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (50570) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (50571) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (53409) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (53409) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (53410) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (56248) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (56248) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (56249) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (59086) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (59086) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (59087) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (61924) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (61925) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (61926) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (64763) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (64764) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (64765) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (65177) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (66178) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (67602) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (67602) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (67603) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (70440) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (70440) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (70441) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (73279) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (73279) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (73280) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (76117) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (76117) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (76119) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (76178) net_gsm: pulse reset[0m
+[0;33mW (78955) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (78956) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (78957) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (81794) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (81795) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (81796) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (83678) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (83679) uart: queue free spaces: 30[0m
+[0;33mW (84633) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (84633) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (84634) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (87472) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (87472) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (87473) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (90311) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (90311) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (90312) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (93150) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (93150) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (93151) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (95988) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (95988) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (95989) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (98826) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (98827) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (98828) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (101665) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (101665) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (101666) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (103681) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (104504) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (104505) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (104506) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (104682) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (107344) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (107345) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (107347) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (110184) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (110185) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (110186) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (110774) audio: phat: "Phun bọt."[0m
+[0;33mW (113023) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (113023) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (113024) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (114682) net_gsm: pulse reset[0m
+[0;33mW (115862) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (115862) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (115863) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (118700) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (118700) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (118701) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (121538) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (121539) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (121540) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (122182) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (122183) uart: queue free spaces: 30[0m
+[0;33mW (124378) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (124379) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (124380) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (127217) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (127217) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (127218) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (130056) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (130057) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (130058) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (132895) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (132896) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (132897) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (135735) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (135735) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (135736) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (136163) audio: phat: "Phun nước."[0m
+[0;33mW (136174) audio: thieu file /audio/water_on.wav[0m
+[0;32mI (136370) app_fsm: bo qua nut 1: bam lai sau 207 ms (< 1000 ms)[0m
+[0;33mW (138574) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (138575) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (138576) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (141413) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (141413) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (141415) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (142184) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (143185) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (144252) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (144253) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (144254) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (147090) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (147091) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (147092) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (149929) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (149929) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (149930) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (152657) audio: phat: "Tạm dừng."[0m
+[0;33mW (152768) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (152768) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (152769) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (153185) net_gsm: pulse reset[0m
+[0;32mI (154611) audio: phat: "Xịt khô."[0m
+[0;33mW (155608) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (155608) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (155609) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (158447) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (158447) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (158448) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (160685) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (160686) uart: queue free spaces: 30[0m
+[0;33mW (161286) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (161287) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (161288) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (162487) display: touch nghi ngo: adc x=3563 y=575 luc=1596 (mau 1/2)[0m
+[0;32mI (162523) display: touch adc x=3608 y=561 luc=2276 -> man hinh x=286 y=29[0m
+[0;32mI (162558) display: touch adc x=3612 y=546 luc=2483 -> man hinh x=287 y=29[0m
+[0;32mI (162593) display: touch adc x=3615 y=540 luc=2456 -> man hinh x=288 y=29[0m
+[0;32mI (162628) display: touch adc x=3455 y=662 luc=1214 -> man hinh x=278 y=38[0m
+[0;33mW (164126) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (164127) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (164128) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (164592) display: touch nghi ngo: adc x=3444 y=694 luc=2087 (mau 1/2)[0m
+[0;32mI (164628) display: touch adc x=3427 y=684 luc=2475 -> man hinh x=276 y=39[0m
+[0;32mI (164660) display: touch adc x=3447 y=708 luc=2331 -> man hinh x=274 y=38[0m
+[0;32mI (164695) display: touch adc x=3426 y=700 luc=1760 -> man hinh x=275 y=40[0m
+[0;33mW (166965) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (166965) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (166967) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (169804) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (169805) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (169806) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (172643) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (172643) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (172644) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (174942) display: touch nghi ngo: adc x=3514 y=628 luc=1718 (mau 1/2)[0m
+[0;32mI (174977) display: touch adc x=3560 y=619 luc=1961 -> man hinh x=282 y=32[0m
+[0;32mI (175012) display: touch adc x=3583 y=597 luc=2312 -> man hinh x=283 y=30[0m
+[0;32mI (175047) display: touch adc x=3592 y=583 luc=2476 -> man hinh x=284 y=30[0m
+[0;32mI (175083) display: touch adc x=3600 y=571 luc=2538 -> man hinh x=285 y=29[0m
+[0;32mI (175118) display: touch adc x=3592 y=569 luc=2467 -> man hinh x=286 y=30[0m
+[0;32mI (175153) display: touch adc x=3571 y=589 luc=2179 -> man hinh x=284 y=31[0m
+[0;32mI (175187) display: touch adc x=3455 y=642 luc=1448 -> man hinh x=280 y=38[0m
+[0;33mW (175482) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (175483) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (175484) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (176947) display: touch nghi ngo: adc x=944 y=2654 luc=756 (mau 1/2)[0m
+[0;32mI (176982) display: touch adc x=969 y=2624 luc=1287 -> man hinh x=119 y=183[0m
+[0;32mI (177017) display: touch adc x=976 y=2613 luc=1437 -> man hinh x=120 y=183[0m
+[0;32mI (177052) display: touch adc x=988 y=2607 luc=1257 -> man hinh x=121 y=182[0m
+[0;32mI (177127) app_fsm: khach ket thuc som phien 80456B281774-0-0042, con 184s chua dung[0m
+[0;32mI (177127) app_fsm: ket thuc phien 80456B281774-0-0042 (ly do 4): bom thuc bot 25s nuoc 16s kho 22s, con 184s su dung, 764s do xe[0m
+[0;33mW (177137) cloud: [DEMO] report_session(80456B281774-0-0042, end): bo qua[0m
+[0;32mI (177146) app_fsm: WASHING -> FINISHED[0m
+[0;32mI (177164) audio: phat: "Đã kết thúc phiên rửa xe. Cảm ơn quý khách, hẹn gặp lại."[0m
+[0;33mW (178321) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (178322) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (178323) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (180688) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (181160) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (181160) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (181161) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (181689) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (183998) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (183998) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (184000) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (185221) app_fsm: FINISHED -> IDLE[0m
+[0;33mW (186837) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (186837) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (186838) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (189674) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (189675) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (189676) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (191689) net_gsm: pulse reset[0m
+[0;33mW (192512) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (192513) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (192514) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (195085) display: touch nghi ngo: adc x=707 y=1158 luc=2364 (mau 1/2)[0m
+[0;32mI (195121) display: touch adc x=701 y=1153 luc=2301 -> man hinh x=238 y=199[0m
+[0;32mI (195157) display: touch adc x=700 y=1154 luc=2186 -> man hinh x=238 y=199[0m
+[0;32mI (195191) display: touch adc x=717 y=1123 luc=1576 -> man hinh x=241 y=198[0m
+[0;32mI (195265) app_fsm: IDLE -> SELECT[0m
+[0;33mW (195351) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (195351) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (195352) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (198189) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (198189) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (198191) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (198937) display: touch nghi ngo: adc x=949 y=1124 luc=1767 (mau 1/2)[0m
+[0;32mI (198972) display: touch adc x=1018 y=1117 luc=2330 -> man hinh x=241 y=180[0m
+[0;32mI (199043) display: touch adc x=997 y=1137 luc=2401 -> man hinh x=240 y=181[0m
+[0;32mI (199077) display: touch adc x=1001 y=1137 luc=2186 -> man hinh x=240 y=181[0m
+[0;32mI (199113) display: touch adc x=916 y=1130 luc=1366 -> man hinh x=240 y=186[0m
+[0;32mI (199190) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (199191) app_fsm: tao don 80456B281774-0-0043: Gói 20 phút 20 phut 40000 d[0m
+[0;32mI (199192) uart: queue free spaces: 30[0m
+[0;32mI (199192) app_fsm: SELECT -> CREATING_QR[0m
+[0;33mW (199204) peripheral_test: [DEMO] tao don 80456B281774-0-0043, 40000 d[0m
+[0;33mW (201032) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (201032) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (201033) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (201205) peripheral_test: [DEMO] don 80456B281774-0-0043: da gui ma QR thu[0m
+[0;33mW (201206) peripheral_test: [DEMO] tu bao thanh toan sau 8 s[0m
+[0;32mI (201207) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (201258) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[0;32mI (203744) display: touch nghi ngo: adc x=633 y=786 luc=2005 (mau 1/2)[0m
+[0;32mI (203779) display: touch adc x=620 y=808 luc=2293 -> man hinh x=266 y=203[0m
+[0;32mI (203815) display: touch adc x=623 y=810 luc=2340 -> man hinh x=266 y=203[0m
+[0;32mI (203852) display: touch adc x=624 y=816 luc=2277 -> man hinh x=266 y=203[0m
+[0;33mW (203871) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (203871) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (203872) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (203887) display: touch adc x=656 y=794 luc=1752 -> man hinh x=267 y=201[0m
+[0;33mW (203956) peripheral_test: [DEMO] huy don 80456B281774-0-0043[0m
+[0;32mI (203957) app_fsm: WAIT_PAYMENT -> NOTICE[0m
+[0;33mW (206709) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (206709) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (206710) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (207967) app_fsm: NOTICE -> IDLE[0m
+[0;33mW (209547) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (209548) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (209549) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (212385) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (212386) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (212387) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (215223) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (215224) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (215225) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (218061) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (218062) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (218063) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (219196) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (220197) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (220899) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (220900) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (220901) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (223737) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (223737) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (223738) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (226575) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (226575) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (226576) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (229413) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (229413) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (229414) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (230197) net_gsm: pulse reset[0m
+[0;33mW (232251) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (232251) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (232252) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (235088) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (235089) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (235090) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (237697) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (237698) uart: queue free spaces: 30[0m
+[0;33mW (237926) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (237927) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (237928) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (240765) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (240765) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (240766) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (243602) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (243603) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (243604) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (246441) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (246441) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (246442) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (249278) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (249279) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (249280) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (252117) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (252117) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (252118) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (254955) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (254955) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (254956) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (257699) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (257793) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (257793) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (257795) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (258700) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (260631) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (260632) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (260633) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (263469) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (263469) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (263470) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (266307) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (266307) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (266308) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (268700) net_gsm: pulse reset[0m
+[0;33mW (269145) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (269146) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (269147) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (271983) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (271983) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (271984) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (274821) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (274821) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (274822) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (276200) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (276201) uart: queue free spaces: 30[0m
+[0;33mW (277659) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (277659) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (277660) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (280497) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (280498) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (280499) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (283335) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (283336) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (283337) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (286173) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (286174) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (286175) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (289011) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (289011) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (289012) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (291849) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (291850) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (291851) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (294687) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (294688) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (294689) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (296202) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;32mI (296383) app_fsm: den TAT (troi toi)[0m
+[0;33mW (297203) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (297525) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (297526) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (297527) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (300363) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (300364) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (300365) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (303201) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (303201) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (303202) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (306039) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (306039) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (306040) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (307203) net_gsm: pulse reset[0m
+[0;33mW (308877) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (308877) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (308878) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (311715) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (311715) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (311716) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (314553) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (314553) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (314554) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (314703) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (314704) uart: queue free spaces: 30[0m
+[0;33mW (317391) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (317391) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (317392) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (320229) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (320229) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (320230) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (323067) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (323067) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (323068) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (325905) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (325906) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (325907) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (328743) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (328743) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (328744) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (331581) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (331582) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (331583) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (334419) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (334420) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (334421) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (334705) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (335706) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (337257) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (337257) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (337258) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (340095) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (340096) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (340097) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (342933) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (342933) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (342934) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (345706) net_gsm: pulse reset[0m
+[0;33mW (345771) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (345772) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (345773) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (348609) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (348609) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (348610) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (351447) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (351447) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (351448) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (353206) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (353207) uart: queue free spaces: 30[0m
+[0;33mW (354285) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (354285) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (354286) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (357123) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (357123) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (357124) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (359961) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (359961) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (359962) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (362799) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (362799) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (362800) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (365637) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (365637) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (365638) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (368475) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (368476) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (368477) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (371313) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (371313) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (371315) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (373208) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (374151) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (374151) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (374152) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (374209) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (376989) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (376989) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (376990) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (379827) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (379827) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (379828) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (382665) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (382665) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (382666) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (384209) net_gsm: pulse reset[0m
+[0;33mW (385503) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (385503) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (385505) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (388341) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (388341) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (388342) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (391179) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (391179) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (391180) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (391709) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (391710) uart: queue free spaces: 30[0m
+[0;33mW (394017) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (394017) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (394018) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (396855) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (396856) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (396857) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (399693) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (399694) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (399695) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (402532) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (402532) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (402533) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (405370) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (405370) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (405371) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (408208) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (408208) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (408209) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (411046) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (411046) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (411047) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (411711) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (412712) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (413884) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (413884) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (413885) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (416722) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (416722) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (416723) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (419560) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (419560) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (419561) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (422397) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (422398) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (422399) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (422712) net_gsm: pulse reset[0m
+[0;33mW (425236) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (425236) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (425237) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (428074) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (428074) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (428075) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (430212) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (430213) uart: queue free spaces: 30[0m
+[0;33mW (430911) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (430912) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (430913) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (433749) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (433750) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (433751) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (436587) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (436588) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (436589) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (439425) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (439426) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (439427) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (442263) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (442264) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (442265) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (445102) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (445102) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (445103) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (447940) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (447940) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (447941) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (450214) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (450778) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (450778) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (450779) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (451215) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (453615) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (453616) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (453617) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (456453) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (456454) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (456455) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (459291) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (459292) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (459293) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (461215) net_gsm: pulse reset[0m
+[0;33mW (462129) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (462129) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (462130) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (464967) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (464967) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (464968) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (467805) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (467805) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (467806) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (468715) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (468716) uart: queue free spaces: 30[0m
+[0;33mW (470643) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (470644) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (470645) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (473481) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (473481) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (473482) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (476319) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (476320) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (476321) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (479158) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (479158) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (479159) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (481996) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (481996) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (481997) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (484834) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (484834) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (484835) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (487671) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (487672) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (487673) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (488718) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (489719) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (490510) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (490510) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (490511) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (493348) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (493348) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (493349) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (496186) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (496186) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (496188) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (499024) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (499025) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (499026) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (499719) net_gsm: pulse reset[0m
+[0;33mW (501862) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (501862) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (501863) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (504700) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (504700) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (504701) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (507219) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (507220) uart: queue free spaces: 30[0m
+[0;33mW (507538) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (507538) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (507539) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (510376) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (510376) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (510377) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (513214) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (513214) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (513215) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (516052) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (516052) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (516053) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (518890) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (518890) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (518891) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (521728) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (521729) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (521730) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (524566) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (524567) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (524568) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (527221) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (527404) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (527405) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (527406) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (528222) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (530242) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (530243) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (530244) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (533080) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (533080) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (533082) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (535918) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (535919) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (535920) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (538222) net_gsm: pulse reset[0m
+[0;33mW (538756) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (538757) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (538758) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (541594) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (541594) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (541595) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (544432) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (544432) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (544433) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (545722) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (545723) uart: queue free spaces: 30[0m
+[0;33mW (547270) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (547270) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (547271) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (550108) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (550109) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (550110) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (552946) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (552947) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (552948) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (555784) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (555785) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (555786) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (558622) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (558623) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (558624) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (561460) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (561461) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (561462) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (564299) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (564299) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (564300) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (565724) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (566725) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (567137) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (567137) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (567139) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (569975) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (569976) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (569977) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (572813) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (572813) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (572814) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (575651) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (575651) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (575652) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (576725) net_gsm: pulse reset[0m
+[0;33mW (578489) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (578489) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (578490) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (581327) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (581327) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (581328) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (584165) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (584165) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (584166) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (584225) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (584226) uart: queue free spaces: 30[0m
+[0;33mW (587003) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (587003) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (587005) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (589841) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (589842) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (589843) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (592679) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (592680) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (592681) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (595518) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (595518) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (595519) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (598356) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (598356) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (598357) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (601194) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (601194) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (601195) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (604032) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (604032) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (604033) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (604227) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (605228) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (606869) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (606870) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (606871) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (609708) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (609708) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (609709) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (612546) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (612546) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (612547) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (615228) net_gsm: pulse reset[0m
+[0;33mW (615384) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (615384) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (615385) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (618222) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (618222) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (618223) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (621060) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (621060) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (621061) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (622728) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (622729) uart: queue free spaces: 30[0m
+[0;33mW (623897) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (623898) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (623899) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (626735) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (626736) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (626737) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (629574) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (629574) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (629575) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (632412) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (632412) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (632413) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (635250) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (635250) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (635252) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (638088) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (638089) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (638090) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (640926) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (640927) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (640928) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (642730) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (643731) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (643764) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (643765) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (643766) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (646602) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (646603) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (646604) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (649440) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (649440) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (649442) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (652278) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (652279) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (652280) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (653731) net_gsm: pulse reset[0m
+[0;33mW (655116) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (655117) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (655118) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (657954) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (657954) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (657955) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (660792) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (660793) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (660794) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (661231) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (661232) uart: queue free spaces: 30[0m
+[0;33mW (663630) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (663631) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (663632) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (666468) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (666469) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (666470) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (669306) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (669307) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (669308) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (672144) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (672144) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (672145) net_manager: WIFI STA DISCONNECTED[0m

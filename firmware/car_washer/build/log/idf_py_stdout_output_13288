@@ -1,0 +1,80 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM19 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\car_washer.elf D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM19'
+ESP-ROM:esp32s3-20210327
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x10cc
+load:0x403c8700,len:0xc2c
+load:0x403cb700,len:0x30c0
+entry 0x403c88b8
+
+======================================
+ A7680C SIM module UART test
+ ESP32-S3: TX=GPIO47, RX=GPIO48
+======================================
+[SIM] Hardware reset skipped (SIM_RESET_ENABLED = 0).
+
+>> AT
+
+OK
+
+
+>> ATE0
+
+OK
+
+
+>> ATI
+
+Manufacturer: SIMCOM INCORPORATED
+Model: A7680C-LNNV
+Revision: V11.0.01
+IMEI: 862057075470382
+
+OK
+
+
+>> AT+CPIN?
+
++CME ERROR: SIM not inserted
+
+
+>> AT+CSQ
+
++CSQ: 16,99
+
+OK
+
+
+>> AT+CEREG?
+
++CEREG: 0,0
+
+OK
+
+
+>> AT+CREG?
+
++CREG: 0,0
+
+OK
+
+
+>> AT+CGATT?
+
++CGATT: 0
+
+OK
+
+
+>> AT+COPS?
+
++COPS: 0
+
+OK
+
+
+Ready. Type AT commands in Serial Monitor.
+Serial Monitor: 115200 baud, line ending Both NL & CR.

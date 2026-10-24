@@ -1,0 +1,52 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM19 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\car_washer.elf D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM19'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM19 instead...[0m
+[0;33m--- esp-idf-monitor 1.8.0 on \\.\COM19 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c899c: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42030b84: [0;33mprint_value[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/json/cJSON/cJSON.c[0m[0m:[1;31m1427[0m
+[0m--- 0x403770f4: [0;33m_xt_handle_exc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m739[0m
+[0m--- 0x40377100: [0;33m_xt_handle_exc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m748[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x42030b81: [0;33mprint_value[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/json/cJSON/cJSON.c[0m[0m:[1;31m1422[0m
+[0m--- 0x42030f18: [0;33mprint_object[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/json/cJSON/cJSON.c[0m[0m:[1;31m1835[0m
+[0m--- (inlined by) [0;33mprint_value[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/json/cJSON/cJSON.c[0m[0m:[1;31m1484[0m
+[0m--- 0x42030ff7: [0;33mprint[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/json/cJSON/cJSON.c[0m[0m:[1;31m1253[0m
+[0m--- 0x42031651: [0;33mcJSON_PrintUnformatted[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/json/cJSON/cJSON.c[0m[0m:[1;31m1309[0m
+[0m--- 0x42010f96: [0;33msend_json[0m[0m at [0;32mD:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/component/network_manager/net_wifi_portal.c[0m[0m:[1;31m37[0m
+[0m--- 0x42011067: [0;33mh_forget[0m[0m at [0;32mD:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/component/network_manager/net_wifi_portal.c[0m[0m:[1;31m269[0m
+[0m--- 0x420ab57b: [0;33mhttpd_uri[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_http_server/src/httpd_uri.c[0m[0m:[1;31m337[0m
+[0m--- 0x420abe39: [0;33mhttpd_parse_req[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_http_server/src/httpd_parse.c[0m[0m:[1;31m685[0m
+[0m--- (inlined by) [0;33mhttpd_req_new[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_http_server/src/httpd_parse.c[0m[0m:[1;31m821[0m
+[0m--- 0x420aacf4: [0;33mhttpd_sess_process[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_http_server/src/httpd_sess.c[0m[0m:[1;31m427[0m
+[0m--- 0x420a9f6e: [0;33mhttpd_process_session[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_http_server/src/httpd_main.c[0m[0m:[1;31m267[0m
+[0m--- (inlined by) [0;33mhttpd_process_session[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_http_server/src/httpd_main.c[0m[0m:[1;31m247[0m
+[0m--- 0x421214b6: [0;33mhttpd_sess_enum[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_http_server/src/httpd_sess.c[0m[0m:[1;31m50[0m
+[0m--- 0x420aa182: [0;33mhttpd_server[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_http_server/src/httpd_main.c[0m[0m:[1;31m317[0m
+[0m--- (inlined by) [0;33mhttpd_thread[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_http_server/src/httpd_main.c[0m[0m:[1;31m339[0m
+[0m--- 0x4038692d: [0;33mremove_free_block[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/heap/tlsf/tlsf_control_functions.h[0m[0m:[1;31m374[0m
+[0m--- (inlined by) [0;33mblock_locate_free[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/heap/tlsf/tlsf_control_functions.h[0m[0m:[1;31m619[0m
+[0m--- (inlined by) [0;33mtlsf_malloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/heap/tlsf/tlsf.c[0m[0m:[1;31m444[0m
+[0m--- 0x400554b9: [0;33mstrcmp[0m[0m in [0;32mROM[0m
+[0m--- 0x4038692a: [0;33mremove_free_block[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/heap/tlsf/tlsf_control_functions.h[0m[0m:[1;31m373[0m
+[0m--- (inlined by) [0;33mblock_locate_free[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/heap/tlsf/tlsf_control_functions.h[0m[0m:[1;31m619[0m
+[0m--- (inlined by) [0;33mtlsf_malloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/heap/tlsf/tlsf.c[0m[0m:[1;31m444[0m
+[0m--- 0x4038635b: [0;33mmulti_heap_malloc_impl[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/heap/multi_heap.c[0m[0m:[1;31m216[0m
+[0m--- 0x40376523: [0;33maligned_or_unaligned_alloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/heap/heap_caps_base.c[0m[0m:[1;31m93[0m
+[0m--- (inlined by) [0;33mheap_caps_aligned_alloc_base[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/heap/heap_caps_base.c[0m[0m:[1;31m175[0m
+[0m--- 0x40376545: [0;33mheap_caps_malloc_base[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/heap/heap_caps_base.c[0m[0m:[1;31m202[0m
+[0m--- 0x403760c4: [0;33mheap_caps_malloc_default[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/heap/heap_caps.c[0m[0m:[1;31m118[0m
+[0m--- 0x4038875d: [0;33mmalloc[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/newlib/src/heap.c[0m[0m:[1;31m24[0m
+[0m--- 0x4207c23d: [0;33mExceptionlessAllocatable::operator new(unsigned int, std::nothrow_t const&)[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/nvs_flash/src/nvs_memory_management.hpp[0m[0m:[1;31m62[0m
+[0m--- (inlined by) [0;33mnvs_open_from_partition[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/nvs_flash/src/nvs_api.cpp[0m[0m:[1;31m280[0m
+[0m--- 0x4207c44b: [0;33mnvs_open[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/nvs_flash/src/nvs_api.cpp[0m[0m:[1;31m271[0m
+[0m--- (inlined by) [0;33mnvs_open[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/nvs_flash/src/nvs_api.cpp[0m[0m:[1;31m295[0m
+[0m--- 0x420104e1: [0;33mnet_wifi_store_load[0m[0m at [0;32mD:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/component/network_manager/net_wifi_store.c[0m[0m:[1;31m14[0m
+[0m--- 0x4201066c: [0;33mnet_wifi_store_remove[0m[0m at [0;32mD:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/component/network_manager/net_wifi_store.c[0m[0m:[1;31m97[0m
+[0m--- 0x4200f903: [0;33mapi_forget_task[0m[0m at [0;32mD:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/component/network_manager/net_wifi.c[0m[0m:[1;31m496[0m
+[0m--- 0x4037f910: [0;33mesp_restart_noos[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c899c: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m

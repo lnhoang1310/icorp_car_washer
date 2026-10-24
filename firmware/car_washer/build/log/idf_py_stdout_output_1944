@@ -1,0 +1,269 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM10 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\car_washer.elf D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM10'
+ESP-ROM:esp32s3-20210327
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1658
+load:0x403c8700,len:0xd98
+load:0x403cb700,len:0x33a4
+entry 0x403c899c
+[0;32mI (25) boot: ESP-IDF v5.5.1-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Sep 28 2026 18:07:58[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.4[0m
+[0;32mI (32) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (36) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00080000[0m
+[0;32mI (63) boot:  1 otadata          OTA data         01 00 00089000 00002000[0m
+[0;32mI (70) boot:  2 phy_init         RF data          01 01 0008b000 00001000[0m
+[0;32mI (76) boot:  3 ota_0            OTA app          00 10 00090000 002ee000[0m
+[0;32mI (83) boot:  4 ota_1            OTA app          00 11 00380000 002ee000[0m
+[0;32mI (89) boot:  5 storage          Unknown data     01 82 0066e000 00400000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00090020 vaddr=3c110020 size=49708h (300808) map[0m
+[0;32mI (157) esp_image: segment 1: paddr=000d9730 vaddr=3fc9ee00 size=0538ch ( 21388) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=000deac4 vaddr=40374000 size=01554h (  5460) load[0m
+[0;32mI (163) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=103964h (1063268) map[0m
+[0;32mI (346) esp_image: segment 4: paddr=001e398c vaddr=40375554 size=197b8h (104376) load[0m
+[0;32mI (367) esp_image: segment 5: paddr=001fd14c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (377) boot: Loaded app from partition at offset 0x90000[0m
+[0;32mI (377) boot: Disabling RNG early entropy source...[0m
+[0;32mI (387) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (387) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (387) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (389) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (394) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (398) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (402) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (407) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (412) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (416) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (421) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (426) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (430) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (434) esp_psram: Speed: 80MHz[0m
+[0;32mI (437) cpu_start: Multicore app[0m
+[0;32mI (853) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (862) cpu_start: Pro cpu start user code[0m
+[0;32mI (862) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (862) app_init: Application information:[0m
+[0;32mI (862) app_init: Project name:     car_washer[0m
+[0;32mI (866) app_init: App version:      1.0.0[0m
+[0;32mI (870) app_init: Compile time:     Oct  1 2026 17:06:12[0m
+[0;32mI (875) app_init: ELF file SHA256:  7d0ec6ec8...[0m
+[0;32mI (879) app_init: ESP-IDF:          v5.5.1-dirty[0m
+[0;32mI (883) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (887) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (891) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (895) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (901) heap_init: At 3FCA9BE8 len 0003FB28 (254 KiB): RAM[0m
+[0;32mI (906) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (912) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (917) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (922) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (929) spi_flash: detected chip: generic[0m
+[0;32mI (932) spi_flash: flash io: dio[0m
+[0;32mI (936) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (942) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (948) main_task: Started on CPU0[0m
+[0;32mI (951) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (959) main_task: Calling app_main()[0m
+[0;32mI (1076) main: led_debug_task running[0m
+[0;32mI (1076) device_id: device_id = 80456B281774[0m
+[0;32mI (1076) main: device_id = 80456B281774[0m
+[0;32mI (1077) i2c_bus: i2c_bus_init OK (port=1 sda=1 scl=2)[0m
+[0;32mI (1082) io_exp: init OK (out=0x38 in=0x39 int=GPIO15)[0m
+[0;32mI (1086) peripheral_test: [0m
+[0;32mI (1088) peripheral_test: ########## BAT DAU TEST NGOAI VI ##########[0m
+[0;32mI (1092) io_exp: PCF input 0x39 OK[0m
+[0;32mI (1097) peripheral_test: ===== TEST FRAM =====[0m
+[0;32mI (1102) fram: fram_init OK (port=1 sda=1 scl=2 addr=0x50 cap=32768 byte)[0m
+[0;32mI (1109) fram: self_test OK[0m
+[0;32mI (1111) peripheral_test: fram_self_test OK[0m
+[0;32mI (1115) peripheral_test: Ghi/doc pattern tai 0x0100 khop -> FRAM (cap=32768 byte): PASS[0m
+[0;32mI (1122) peripheral_test: [0m
+[0;32mI (1125) peripheral_test: ===== TEST DS3231 =====[0m
+[0;33mW (1127) io_exp: DUNG KHAN DA NHA[0m
+[0;32mI (1133) rtc_ds3231: DS3231 connected (port=1 sda=1 scl=2)[0m
+[0;32mI (1137) peripheral_test: DS3231 connected[0m
+[0;33mW (1142) peripheral_test: DS3231 bao mat dien (bit OSF) -- gio hien tai trong chip co the KHONG dang tin cay[0m
+[0;32mI (1152) peripheral_test: Gio dang luu trong RTC: 2000-01-01 02:13:32[0m
+[0;32mI (2359) peripheral_test: Set 2025-01-01 12:00:00 -> doc lai 2025-01-01 12:00:01 (lech 1 giay) -> DS3231: PASS[0m
+[0;32mI (2360) peripheral_test: Da khoi phuc lai gio RTC nhu truoc luc test[0m
+[0;32mI (2364) peripheral_test: [0m
+[0;32mI (2366) peripheral_test: [0m
+[0;32mI (2369) peripheral_test: ########## KET QUA TEST NGOAI VI ##########[0m
+[0;32mI (2375) peripheral_test: FRAM    : PASS[0m
+[0;32mI (2379) peripheral_test: DS3231  : PASS[0m
+[0;32mI (2382) peripheral_test: RELAY   : bo qua[0m
+[0;32mI (2386) peripheral_test: ############################################[0m
+[0;33mW (2392) fram: fram_init da goi roi, bo qua[0m
+[0;32mI (2397) rtc_ds3231: DS3231 connected (port=1 sda=1 scl=2)[0m
+[0;33mW (2402) ntp_time: Dong ho he thong chua hop le (vua boot/reset)[0m
+[0;33mW (2408) ntp_time: Gio doc tu RTC khong hop le (co the do nhieu I2C lam sai lech du lieu) -- bo qua, cho SNTP[0m
+[0;33mW (2417) devcfg: khong co / hong cau hinh trong NVS -> dung mac dinh[0m
+[0;32mI (2594) display: doc ID man hinh (0xD3): FF FF FF FF FF[0m
+[0;33mW (2595) display: man hinh khong tra loi: chan SDO/MISO chua noi, hoac chip chua nhan duoc lenh (kiem tra day CS/DC/RST/SCK/SDI va nguon man hinh)[0m
+[0;32mI (2602) ili9341: LCD panel create success, version: 2.1.0[0m
+[0;32mI (2728) LVGL: Starting LVGL task[0m
+[0;33mW (2731) lcd_panel.io.spi: Callback on_color_trans_done was already set and now it was overwritten![0m
+[0;32mI (2801) display: cam ung XPT2046 OK (doc dinh ky, CS=GPIO21)[0m
+[0;32mI (2801) display: display OK ILI9341 320x240, SPI 15 MHz[0m
+[0;32mI (2810) audio: phan vung am thanh: dung 8/4096 KB[0m
+[0;33mW (2825) audio: thieu 22/22 file am thanh trong assets/audio[0m
+[0;32mI (2825) audio: audio OK (I2S 16000 Hz, BCLK=6 WS=7 DIN=5 SD=4)[0m
+[1;31mE (2826) gpio: gpio_install_isr_service(526): GPIO isr service already installed[0m
+[0;33mW (2832) net_ethernet: GPIO ISR handler already installed, bo qua[0m
+[0;32mI (2860) esp_eth.netif.netif_glue: 80:45:6b:28:17:77[0m
+[0;32mI (2861) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+[0;32mI (2861) net_ethernet: net_ethernet_init OK (spi_host=2 cs=9 int=10)[0m
+[0;32mI (2876) net_ethernet: Driver started[0m
+[0;32mI (2877) pp: pp rom version: e7ae62f[0m
+[0;32mI (2878) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (2879) wifi:wifi driver task: 3fcd4054, prio:23, stack:6656, core=0[0m
+[0;32mI (2888) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (2888) wifi:wifi certification version: v7.0[0m
+[0;32mI (2891) wifi:config NVS flash: enabled[0m
+[0;32mI (2895) wifi:config nano formatting: disabled[0m
+[0;32mI (2899) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (2904) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (2908) wifi:Init management short buffer num: 32[0m
+[0;32mI (2912) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (2916) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (2921) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (2925) wifi:Init static rx buffer num: 10[0m
+[0;32mI (2929) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (2933) wifi_init: rx ba win: 6[0m
+[0;32mI (2936) wifi_init: accept mbox: 6[0m
+[0;32mI (2939) wifi_init: tcpip mbox: 32[0m
+[0;32mI (2942) wifi_init: udp mbox: 6[0m
+[0;32mI (2945) wifi_init: tcp mbox: 6[0m
+[0;32mI (2947) wifi_init: tcp tx win: 5760[0m
+[0;32mI (2951) wifi_init: tcp rx win: 5760[0m
+[0;32mI (2954) wifi_init: tcp mss: 1440[0m
+[0;32mI (2957) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (2961) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (2965) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (2973) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (3006) wifi:mode : sta (80:45:6b:28:17:74) + softAP (80:45:6b:28:17:75)[0m
+[0;32mI (3007) wifi:enable tsf[0m
+[0;32mI (3009) wifi:Total power save buffer number: 16[0m
+[0;32mI (3010) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (3013) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (3018) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;33mW (3022) net_wifi: Khong co SSID da luu -> chua ket noi duoc[0m
+[0;32mI (3027) net_wifi: Schedule next scan in 10000 ms[0m
+[0;32mI (3032) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (3032) net_wifi: AP SSID=XTECH - 281774 IP:192.168.4.1[0m
+[0;32mI (3044) net_gsm: net_gsm_init OK (uart=2 tx=47 rx=48 apn=v-internet)[0m
+[0;32mI (3050) net_gsm: pulse reset[0m
+[0;32mI (3051) net_manager: net_manager_init[0m
+[0;32mI (3057) ntp_time: SNTP started[0m
+[0;33mW (3059) cloud: !!! CHE DO THU (PT_DEMO_PAYMENT = 1): thanh toan GIA LAP, khong co tien that !!![0m
+[0;32mI (3068) main: khoi dong xong[0m
+[0;32mI (3071) main_task: Returned from app_main()[0m
+[0;32mI (3123) app_fsm: BOOT -> IDLE[0m
+[0;32mI (10146) display: cam ung: nhan duoc cham dau tien tai x=205 y=169 (luc 1436)[0m
+[0;32mI (10310) app_fsm: tao don 80456B281774-0-0002: Gói 20 phút 20 phut 40000 d[0m
+[0;32mI (10311) app_fsm: IDLE -> CREATING_QR[0m
+[0;33mW (10318) peripheral_test: [DEMO] tao don 80456B281774-0-0002, 40000 d[0m
+[0;32mI (10554) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (10554) uart: queue free spaces: 30[0m
+[0;33mW (12319) peripheral_test: [DEMO] don 80456B281774-0-0002: da gui ma QR thu[0m
+[0;33mW (12319) peripheral_test: [DEMO] tu bao thanh toan sau 8 s[0m
+[0;32mI (12320) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (12382) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[0;33mW (12393) audio: thieu file /audio/scan_qr.wav[0m
+[0;32mI (13031) net_wifi: Auto scan fired (retry=1)[0m
+[0;33mW (15702) peripheral_test: [DEMO] huy don 80456B281774-0-0002[0m
+[0;32mI (15703) app_fsm: WAIT_PAYMENT -> NOTICE[0m
+[0;32mI (16268) net_wifi: ===== SCAN RESULT (15 APs) =====[0m
+[0;32mI (16268) net_wifi: 1) SSID:P402 RSSI:-53 CH:11[0m
+[0;32mI (16268) net_wifi: 2) SSID:Subabi RSSI:-87 CH:13[0m
+[0;32mI (16271) net_wifi: 3) SSID:P62 RSSI:-88 CH:7[0m
+[0;32mI (16275) net_wifi: 4) SSID:601 RSSI:-89 CH:10[0m
+[0;32mI (16279) net_wifi: 5) SSID:FPT Telecom-2F71-IOT RSSI:-91 CH:6[0m
+[0;32mI (16284) net_wifi: 6) SSID:TRAN THU RSSI:-91 CH:7[0m
+[0;32mI (16289) net_wifi: 7) SSID:LAN THANG RSSI:-92 CH:10[0m
+[0;32mI (16294) net_wifi: 8) SSID:QUYNH ANH RSSI:-92 CH:10[0m
+[0;32mI (16298) net_wifi: 9) SSID:ELBULL RSSI:-92 CH:11[0m
+[0;32mI (16303) net_wifi: 10) SSID:Nhim va Soc T1 RSSI:-93 CH:2[0m
+[0;32mI (16308) net_wifi: 11) SSID:Bong Bill RSSI:-94 CH:2[0m
+[0;32mI (16313) net_wifi: 12) SSID:Mai Linh RSSI:-94 CH:3[0m
+[0;32mI (16317) net_wifi: 13) SSID:Dao Tuan 5G RSSI:-94 CH:4[0m
+[0;32mI (16322) net_wifi: 14) SSID:FPT Telecom-1F51 RSSI:-94 CH:9[0m
+[0;32mI (16327) net_wifi: 15) SSID:NamNH RSSI:-95 CH:1[0m
+[0;33mW (16332) net_wifi: Khong tim thay SSID da luu nao trong ket qua quet[0m
+[0;32mI (16338) net_wifi: Schedule next scan in 30000 ms[0m
+[0;32mI (19744) app_fsm: NOTICE -> IDLE[0m
+[1;31mE (30556) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (31557) net_gsm: Modem/song chua san sang, thu lai sau 5000 ms (fail_count=1)[0m
+[0;32mI (36557) net_gsm: pulse reset[0m
+[0;32mI (44057) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (44058) uart: queue free spaces: 30[0m
+[0;32mI (46342) net_wifi: Auto scan fired (retry=2)[0m
+[0;32mI (49578) net_wifi: ===== SCAN RESULT (15 APs) =====[0m
+[0;32mI (49578) net_wifi: 1) SSID:P402 RSSI:-51 CH:11[0m
+[0;32mI (49578) net_wifi: 2) SSID:Subabi RSSI:-87 CH:13[0m
+[0;32mI (49580) net_wifi: 3) SSID:P62 RSSI:-88 CH:7[0m
+[0;32mI (49585) net_wifi: 4) SSID:601 RSSI:-89 CH:10[0m
+[0;32mI (49589) net_wifi: 5) SSID:TRAN THU RSSI:-91 CH:7[0m
+[0;32mI (49593) net_wifi: 6) SSID:Bong Bill RSSI:-92 CH:2[0m
+[0;32mI (49598) net_wifi: 7) SSID:Anh Khoa RSSI:-92 CH:4[0m
+[0;32mI (49602) net_wifi: 8) SSID:LAN THANG RSSI:-92 CH:10[0m
+[0;32mI (49607) net_wifi: 9) SSID:ELBULL RSSI:-92 CH:11[0m
+[0;32mI (49611) net_wifi: 10) SSID:NamNH RSSI:-93 CH:1[0m
+[0;32mI (49616) net_wifi: 11) SSID:Bong Bill RSSI:-93 CH:2[0m
+[0;32mI (49621) net_wifi: 12) SSID:FPT Telecom-F4B9-IOT RSSI:-93 CH:11[0m
+[0;32mI (49626) net_wifi: 13) SSID:Mai Linh RSSI:-94 CH:3[0m
+[0;32mI (49631) net_wifi: 14) SSID:FPT Telecom-2F71-IOT RSSI:-94 CH:6[0m
+[0;32mI (49636) net_wifi: 15) SSID:Huy RSSI:-95 CH:6[0m
+[0;33mW (49641) net_wifi: Khong tim thay SSID da luu nao trong ket qua quet[0m
+[0;32mI (49647) net_wifi: Schedule next scan in 60000 ms[0m
+[1;31mE (64059) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (65060) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (75060) net_gsm: pulse reset[0m
+[0;32mI (82560) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (82561) uart: queue free spaces: 30[0m
+[1;31mE (102562) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (103563) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (109651) net_wifi: Auto scan fired (retry=3)[0m
+[0;32mI (112887) net_wifi: ===== SCAN RESULT (15 APs) =====[0m
+[0;32mI (112887) net_wifi: 1) SSID:P402 RSSI:-52 CH:11[0m
+[0;32mI (112887) net_wifi: 2) SSID:Subabi RSSI:-85 CH:13[0m
+[0;32mI (112890) net_wifi: 3) SSID:P62 RSSI:-88 CH:7[0m
+[0;32mI (112894) net_wifi: 4) SSID:QUYNH ANH RSSI:-88 CH:10[0m
+[0;32mI (112899) net_wifi: 5) SSID:601 RSSI:-89 CH:10[0m
+[0;32mI (112903) net_wifi: 6) SSID:Anh Khoa RSSI:-90 CH:4[0m
+[0;32mI (112908) net_wifi: 7) SSID:TRAN THU RSSI:-90 CH:7[0m
+[0;32mI (112912) net_wifi: 8) SSID:Bong Bill RSSI:-91 CH:2[0m
+[0;32mI (112917) net_wifi: 9) SSID:Huy RSSI:-91 CH:6[0m
+[0;32mI (112921) net_wifi: 10) SSID:LAN THANG RSSI:-91 CH:10[0m
+[0;32mI (112926) net_wifi: 11) SSID:Tang 4 RSSI:-92 CH:5[0m
+[0;32mI (112930) net_wifi: 12) SSID:FPT Telecom-2F71-IOT RSSI:-92 CH:6[0m
+[0;32mI (112936) net_wifi: 13) SSID:ELBULL RSSI:-92 CH:11[0m
+[0;32mI (112941) net_wifi: 14) SSID:NamNH RSSI:-93 CH:1[0m
+[0;32mI (112945) net_wifi: 15) SSID:Mai Linh RSSI:-93 CH:3[0m
+[0;33mW (112950) net_wifi: Khong tim thay SSID da luu nao trong ket qua quet[0m
+[0;32mI (112956) net_wifi: Schedule next scan in 120000 ms[0m
+[0;32mI (113563) net_gsm: pulse reset[0m
+[0;32mI (121063) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (121064) uart: queue free spaces: 30[0m
+[1;31mE (141065) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (142066) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (152066) net_gsm: pulse reset[0m
+[0;32mI (159566) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (159567) uart: queue free spaces: 30[0m
+[1;31mE (179568) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (180569) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (190569) net_gsm: pulse reset[0m
+[0;32mI (198069) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (198070) uart: queue free spaces: 30[0m

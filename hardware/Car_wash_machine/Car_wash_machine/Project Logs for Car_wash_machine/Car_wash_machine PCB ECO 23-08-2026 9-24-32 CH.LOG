@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=TFT_SCK Pin=U9-8
+Added Pin To Net: NetName=TFT_MISO Pin=U9-9
+Added Pin To Net: NetName=TFT_MISO Pin=U9-10
+Added Pin To Net: NetName=TFT_SCK Pin=U9-11
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component GND TP_1MM

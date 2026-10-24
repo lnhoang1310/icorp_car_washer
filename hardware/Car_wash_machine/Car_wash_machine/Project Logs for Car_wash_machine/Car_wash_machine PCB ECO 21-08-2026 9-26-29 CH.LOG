@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=TX1_ESP Pin=U9-4
+Removed Pin From Net: NetName=RX1_ESP Pin=U9-5
+Change Component Description : Designator=D6 Old Description=9V (Typ) Clamp 1A (8/20 New Description=9V (Typ) Clamp 1A (8/20|Ìs) Ipp Tvs Diode Surface Mount SOD-923
+Change Component Description : Designator=D8 Old Description=9V (Typ) Clamp 1A (8/20 New Description=9V (Typ) Clamp 1A (8/20|Ìs) Ipp Tvs Diode Surface Mount SOD-923
+Change Component Description : Designator=BH1 Old Description=Battery Holder, SMT, 1 Coin Cell, 12mm, Plastic, UL94V-0 New Description=Battery Holder, SMT, 1 Coin Cell, 12mm, Plastic, UL94V-0 | Keystone Electronics 1056
+Change Component Description : Designator=C28 Old Description=Capacitor; Ceramic; Cap; 6.8nF; Tol 5%; SMT; Vol-Rtg 50V; C0G; Tape and Reel New Description=Capacitor; Ceramic; Cap; 6.8nF; Tol 5%; SMT; Vol-Rtg 50V; C0G; Tape and Reel | KEMET C0805C220J5GACTU
+Change Component Description : Designator=C29 Old Description=Capacitor; Ceramic; Cap; 6.8nF; Tol 5%; SMT; Vol-Rtg 50V; C0G; Tape and Reel New Description=Capacitor; Ceramic; Cap; 6.8nF; Tol 5%; SMT; Vol-Rtg 50V; C0G; Tape and Reel | KEMET C0805C220J5GACTU
+Change Component Description : Designator=C34 Old Description=Capacitor; Ceramic; Cap; 22.0nF; Tol 5%; SMT; Vol-Rtg 50V; C0G; Tape and Reel New Description=Capacitor; Ceramic; Cap; 22.0nF; Tol 5%; SMT; Vol-Rtg 50V; C0G; Tape and Reel | KEMET C0805C220J5GACTU
+Change Component Description : Designator=C30 Old Description=Capacitor; Ceramic; Cap; 22.0pF; Tol 5%; SMT; Vol-Rtg 50V; C0G; Tape and Reel New Description=Capacitor; Ceramic; Cap; 22.0pF; Tol 5%; SMT; Vol-Rtg 50V; C0G; Tape and Reel | KEMET C0805C220J5GACTU
+Change Component Description : Designator=C31 Old Description=Capacitor; Ceramic; Cap; 22.0pF; Tol 5%; SMT; Vol-Rtg 50V; C0G; Tape and Reel New Description=Capacitor; Ceramic; Cap; 22.0pF; Tol 5%; SMT; Vol-Rtg 50V; C0G; Tape and Reel | KEMET C0805C220J5GACTU
+Change Component Description : Designator=C32 Old Description=Capacitor; Ceramic; Cap; 22.0pF; Tol 5%; SMT; Vol-Rtg 50V; C0G; Tape and Reel New Description=Capacitor; Ceramic; Cap; 22.0pF; Tol 5%; SMT; Vol-Rtg 50V; C0G; Tape and Reel | KEMET C0805C220J5GACTU
+Added Pin To Net: NetName=RX1_ESP Pin=U9-4
+Added Pin To Net: NetName=TX1_ESP Pin=U9-5
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component GND TP_1MM

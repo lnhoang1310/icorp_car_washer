@@ -1,0 +1,25 @@
+Removed Pin From Net: NetName=A0_ROM Pin=R72-1
+Removed Pin From Net: NetName=A1_ROM Pin=R73-1
+Removed Pin From Net: NetName=A2_ROM Pin=R74-1
+Removed Pin From Net: NetName=A0_IN Pin=R75-1
+Removed Pin From Net: NetName=A1_IN Pin=R76-1
+Removed Pin From Net: NetName=A2_IN Pin=R77-1
+Removed Pin From Net: NetName=A0_ROM Pin=SD1-4B
+Removed Pin From Net: NetName=A1_ROM Pin=SD1-5B
+Removed Pin From Net: NetName=A2_ROM Pin=SD1-6B
+Removed Pin From Net: NetName=A0_IN Pin=SD1-7B
+Removed Pin From Net: NetName=A1_IN Pin=SD1-8B
+Removed Pin From Net: NetName=A2_IN Pin=SD1-9B
+Added Pin To Net: NetName=A0_IN Pin=R72-1
+Added Pin To Net: NetName=A1_IN Pin=R73-1
+Added Pin To Net: NetName=A2_IN Pin=R74-1
+Added Pin To Net: NetName=A0_ROM Pin=R75-1
+Added Pin To Net: NetName=A1_ROM Pin=R76-1
+Added Pin To Net: NetName=A2_ROM Pin=R77-1
+Added Pin To Net: NetName=A0_IN Pin=SD1-4B
+Added Pin To Net: NetName=A1_IN Pin=SD1-5B
+Added Pin To Net: NetName=A2_IN Pin=SD1-6B
+Added Pin To Net: NetName=A0_ROM Pin=SD1-7B
+Added Pin To Net: NetName=A1_ROM Pin=SD1-8B
+Added Pin To Net: NetName=A2_ROM Pin=SD1-9B
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component GND TP_1MM

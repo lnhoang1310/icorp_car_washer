@@ -1,0 +1,9 @@
+CMake Error at D:/Work/Filiot/Wifi2/sdk/esp-idf-v5.1.1/tools/cmake/build.cmake:266 (message):
+  Failed to resolve component 'espressif__esp_modem'.
+Call Stack (most recent call first):
+  D:/Work/Filiot/Wifi2/sdk/esp-idf-v5.1.1/tools/cmake/build.cmake:308 (__build_resolve_and_add_req)
+  D:/Work/Filiot/Wifi2/sdk/esp-idf-v5.1.1/tools/cmake/build.cmake:595 (__build_expand_requirements)
+  D:/Work/Filiot/Wifi2/sdk/esp-idf-v5.1.1/tools/cmake/project.cmake:547 (idf_build_process)
+  CMakeLists.txt:6 (project)
+
+

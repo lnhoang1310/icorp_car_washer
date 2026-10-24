@@ -1,0 +1,1167 @@
+Removed Pin From Net: NetName=GND Pin=C?-1
+Removed Pin From Net: NetName=+12V Pin=C?-2
+Removed Pin From Net: NetName=GND Pin=D?-1
+Removed Pin From Net: NetName=+3V3_STM8 Pin=DEBUG?-1
+Removed Pin From Net: NetName=GND Pin=DEBUG?-3
+Removed Pin From Net: NetName=TX1_ESP Pin=Q?-2
+Removed Pin From Net: NetName=+3V3 Pin=R50-2
+Removed Pin From Net: NetName=+3V3 Pin=R51-2
+Removed Pin From Net: NetName=+3V3 Pin=R53-2
+Removed Pin From Net: NetName=GND Pin=SW?-2
+Removed Pin From Net: NetName=RL1_MCU Pin=U?-1
+Removed Pin From Net: NetName=RL4_MCU Pin=U?-4
+Removed Pin From Net: NetName=RL5_MCU Pin=U?-5
+Removed Pin From Net: NetName=GND Pin=U?-6
+Removed Pin From Net: NetName=GND Pin=U?-7
+Removed Pin From Net: NetName=IN5 Pin=U?-8
+Removed Pin From Net: NetName=+12V Pin=U?-9
+Removed Pin From Net: NetName=GND Pin=U?-10
+Removed Pin From Net: NetName=IN4 Pin=U?-13
+Removed Pin From Net: NetName=IN3 Pin=U?-14
+Removed Pin From Net: NetName=IN2 Pin=U?-15
+Removed Pin From Net: NetName=IN1 Pin=U?-16
+Removed Pin From Net: NetName=RL1_MCU Pin=U?-18
+Removed Pin From Net: NetName=RL2_MCU Pin=U?-19
+Removed Pin From Net: NetName=RL3_MCU Pin=U?-20
+Removed Pin From Net: NetName=RL4_MCU Pin=U?-21
+Removed Pin From Net: NetName=RL5_MCU Pin=U?-25
+Removed Member From Class: ClassName=POWER_CAR_WASH_MACHINE Member=C?
+Removed Member From Class: ClassName=POWER_CAR_WASH_MACHINE Member=D?
+Removed Member From Class: ClassName=MCU_WASH_MACHINE Member=DEBUG?
+Removed Member From Class: ClassName=POWER_CAR_WASH_MACHINE Member=IC?
+Removed Member From Class: ClassName=MCU_WASH_MACHINE Member=Q?
+Removed Member From Class: ClassName=MCU_WASH_MACHINE Member=R?
+Removed Member From Class: ClassName=MCU_WASH_MACHINE Member=SW?
+Removed Member From Class: ClassName=MCU_WASH_MACHINE Member=U?
+Removed Member From Class: ClassName=MCU_WASH_MACHINE Member=Y?
+Change Component Designator: OldDesignator=+3V3_ESP NewDesignator=+5
+Change Component Designator: OldDesignator=+3V3_STM8 NewDesignator=+4
+Change Component Designator: OldDesignator=+3V9_SIM NewDesignator=+3
+Change Component Designator: OldDesignator=+5V NewDesignator=+1
+Change Component Designator: OldDesignator=+12V NewDesignator=+2
+Change Component Designator: OldDesignator=C19 NewDesignator=C23
+Change Component Designator: OldDesignator=C20 NewDesignator=C24
+Change Component Designator: OldDesignator=C21 NewDesignator=C25
+Change Component Designator: OldDesignator=C22 NewDesignator=C26
+Change Component Designator: OldDesignator=C23 NewDesignator=C27
+Change Component Designator: OldDesignator=C24 NewDesignator=C28
+Change Component Designator: OldDesignator=C25 NewDesignator=C29
+Change Component Designator: OldDesignator=C26 NewDesignator=C30
+Change Component Designator: OldDesignator=C27 NewDesignator=C31
+Change Component Designator: OldDesignator=C34 NewDesignator=C41
+Change Component Designator: OldDesignator=C35 NewDesignator=C42
+Change Component Designator: OldDesignator=C36 NewDesignator=C43
+Change Component Designator: OldDesignator=C42 NewDesignator=C57
+Change Component Designator: OldDesignator=C46 NewDesignator=C62
+Change Component Designator: OldDesignator=C47 NewDesignator=C63
+Change Component Designator: OldDesignator=C48 NewDesignator=C64
+Change Component Designator: OldDesignator=C49 NewDesignator=C65
+Change Component Designator: OldDesignator=C51 NewDesignator=C70
+Change Component Designator: OldDesignator=C52 NewDesignator=C71
+Change Component Designator: OldDesignator=C56 NewDesignator=C76
+Change Component Designator: OldDesignator=C57 NewDesignator=C77
+Change Component Designator: OldDesignator=C58 NewDesignator=C78
+Change Component Designator: OldDesignator=C59 NewDesignator=C79
+Change Component Designator: OldDesignator=C60 NewDesignator=C80
+Change Component Designator: OldDesignator=C? NewDesignator=C1
+Change Component Designator: OldDesignator=C? NewDesignator=C2
+Change Component Designator: OldDesignator=C? NewDesignator=C3
+Change Component Designator: OldDesignator=C? NewDesignator=C4
+Change Component Designator: OldDesignator=C? NewDesignator=C5
+Change Component Designator: OldDesignator=C? NewDesignator=C6
+Change Component Designator: OldDesignator=C? NewDesignator=C7
+Change Component Designator: OldDesignator=C? NewDesignator=C8
+Change Component Designator: OldDesignator=C? NewDesignator=C9
+Change Component Designator: OldDesignator=C? NewDesignator=C10
+Change Component Designator: OldDesignator=C? NewDesignator=C11
+Change Component Designator: OldDesignator=C? NewDesignator=C12
+Change Component Designator: OldDesignator=C? NewDesignator=C13
+Change Component Designator: OldDesignator=C? NewDesignator=C14
+Change Component Designator: OldDesignator=C? NewDesignator=C17
+Change Component Designator: OldDesignator=C? NewDesignator=C18
+Change Component Designator: OldDesignator=C? NewDesignator=C21
+Change Component Designator: OldDesignator=C? NewDesignator=C22
+Change Component Designator: OldDesignator=C? NewDesignator=C32
+Change Component Designator: OldDesignator=C? NewDesignator=C33
+Change Component Designator: OldDesignator=C? NewDesignator=C34
+Change Component Designator: OldDesignator=C? NewDesignator=C35
+Change Component Designator: OldDesignator=C? NewDesignator=C39
+Change Component Designator: OldDesignator=C? NewDesignator=C40
+Change Component Designator: OldDesignator=C? NewDesignator=C44
+Change Component Designator: OldDesignator=C? NewDesignator=C45
+Change Component Designator: OldDesignator=C? NewDesignator=C46
+Change Component Designator: OldDesignator=C? NewDesignator=C47
+Change Component Designator: OldDesignator=C? NewDesignator=C48
+Change Component Designator: OldDesignator=C? NewDesignator=C49
+Change Component Designator: OldDesignator=C? NewDesignator=C50
+Change Component Designator: OldDesignator=C? NewDesignator=C51
+Change Component Designator: OldDesignator=C? NewDesignator=C52
+Change Component Designator: OldDesignator=C? NewDesignator=C53
+Change Component Designator: OldDesignator=C? NewDesignator=C54
+Change Component Designator: OldDesignator=C? NewDesignator=C55
+Change Component Designator: OldDesignator=C? NewDesignator=C56
+Change Component Designator: OldDesignator=C? NewDesignator=C66
+Change Component Designator: OldDesignator=C? NewDesignator=C67
+Change Component Designator: OldDesignator=C? NewDesignator=C68
+Change Component Designator: OldDesignator=C? NewDesignator=C69
+Change Component Designator: OldDesignator=C? NewDesignator=C72
+Change Component Designator: OldDesignator=C? NewDesignator=C73
+Change Component Designator: OldDesignator=C? NewDesignator=C74
+Change Component Designator: OldDesignator=C? NewDesignator=C75
+Change Component Designator: OldDesignator=C? NewDesignator=C81
+Change Component Designator: OldDesignator=C? NewDesignator=C82
+Change Component Designator: OldDesignator=C? NewDesignator=C83
+Change Component Designator: OldDesignator=C? NewDesignator=C84
+Change Component Designator: OldDesignator=C? NewDesignator=C85
+Change Component Designator: OldDesignator=C? NewDesignator=C86
+Change Component Designator: OldDesignator=C? NewDesignator=C87
+Change Component Designator: OldDesignator=CF? NewDesignator=CF1
+Change Component Designator: OldDesignator=CF? NewDesignator=CF2
+Change Component Designator: OldDesignator=CN2 NewDesignator=CN1
+Change Component Designator: OldDesignator=CN? NewDesignator=CN2
+Change Component Designator: OldDesignator=D? NewDesignator=D1
+Change Component Designator: OldDesignator=D? NewDesignator=D2
+Change Component Designator: OldDesignator=D? NewDesignator=D3
+Change Component Designator: OldDesignator=D? NewDesignator=D4
+Change Component Designator: OldDesignator=D? NewDesignator=D6
+Change Component Designator: OldDesignator=D? NewDesignator=D11
+Change Component Designator: OldDesignator=D? NewDesignator=D12
+Change Component Designator: OldDesignator=D? NewDesignator=D13
+Change Component Designator: OldDesignator=D? NewDesignator=D14
+Change Component Designator: OldDesignator=D? NewDesignator=D15
+Change Component Designator: OldDesignator=D? NewDesignator=D16
+Change Component Designator: OldDesignator=EC1 NewDesignator=EC4
+Change Component Designator: OldDesignator=EC2 NewDesignator=EC5
+Change Component Designator: OldDesignator=EC3 NewDesignator=EC6
+Change Component Designator: OldDesignator=EC? NewDesignator=EC1
+Change Component Designator: OldDesignator=EC? NewDesignator=EC2
+Change Component Designator: OldDesignator=EC? NewDesignator=EC3
+Change Component Designator: OldDesignator=F? NewDesignator=F1
+Change Component Designator: OldDesignator=GDT? NewDesignator=GDT1
+Change Component Designator: OldDesignator=GND NewDesignator=GND1
+Change Component Designator: OldDesignator=GND NewDesignator=GND2
+Change Component Designator: OldDesignator=H? NewDesignator=H1
+Change Component Designator: OldDesignator=H? NewDesignator=H2
+Change Component Designator: OldDesignator=H? NewDesignator=H3
+Change Component Designator: OldDesignator=H? NewDesignator=H4
+Change Component Designator: OldDesignator=IC? NewDesignator=IC1
+Change Component Designator: OldDesignator=IC? NewDesignator=IC2
+Change Component Designator: OldDesignator=J2 NewDesignator=J1
+Change Component Designator: OldDesignator=J? NewDesignator=J2
+Change Component Designator: OldDesignator=J? NewDesignator=J3
+Change Component Designator: OldDesignator=JP? NewDesignator=JP1
+Change Component Designator: OldDesignator=K? NewDesignator=K1
+Change Component Designator: OldDesignator=K? NewDesignator=K2
+Change Component Designator: OldDesignator=K? NewDesignator=K3
+Change Component Designator: OldDesignator=K? NewDesignator=K4
+Change Component Designator: OldDesignator=K? NewDesignator=K5
+Change Component Designator: OldDesignator=L9 NewDesignator=L7
+Change Component Designator: OldDesignator=L10 NewDesignator=L8
+Change Component Designator: OldDesignator=L11 NewDesignator=L9
+Change Component Designator: OldDesignator=L12 NewDesignator=L10
+Change Component Designator: OldDesignator=L? NewDesignator=L1
+Change Component Designator: OldDesignator=L? NewDesignator=L2
+Change Component Designator: OldDesignator=L? NewDesignator=L3
+Change Component Designator: OldDesignator=L? NewDesignator=L4
+Change Component Designator: OldDesignator=L? NewDesignator=L6
+Change Component Designator: OldDesignator=MOV? NewDesignator=MOV1
+Change Component Designator: OldDesignator=P? NewDesignator=P1
+Change Component Designator: OldDesignator=PS? NewDesignator=PS1
+Change Component Designator: OldDesignator=Q4 NewDesignator=Q1
+Change Component Designator: OldDesignator=Q5 NewDesignator=Q2
+Change Component Designator: OldDesignator=Q6 NewDesignator=Q3
+Change Component Designator: OldDesignator=Q7 NewDesignator=Q4
+Change Component Designator: OldDesignator=Q8 NewDesignator=Q5
+Change Component Designator: OldDesignator=Q10 NewDesignator=Q6
+Change Component Designator: OldDesignator=Q? NewDesignator=Q7
+Change Component Designator: OldDesignator=Q? NewDesignator=Q8
+Change Component Designator: OldDesignator=R21 NewDesignator=R18
+Change Component Designator: OldDesignator=R22 NewDesignator=R19
+Change Component Designator: OldDesignator=R27 NewDesignator=R29
+Change Component Designator: OldDesignator=R28 NewDesignator=R33
+Change Component Designator: OldDesignator=R29 NewDesignator=R35
+Change Component Designator: OldDesignator=R30 NewDesignator=R37
+Change Component Designator: OldDesignator=R31 NewDesignator=R39
+Change Component Designator: OldDesignator=R35 NewDesignator=R40
+Change Component Designator: OldDesignator=R36 NewDesignator=R42
+Change Component Designator: OldDesignator=R37 NewDesignator=R45
+Change Component Designator: OldDesignator=R38 NewDesignator=R46
+Change Component Designator: OldDesignator=R39 NewDesignator=R47
+Change Component Designator: OldDesignator=R40 NewDesignator=R48
+Change Component Designator: OldDesignator=R41 NewDesignator=R50
+Change Component Designator: OldDesignator=R45 NewDesignator=R51
+Change Component Designator: OldDesignator=R46 NewDesignator=R52
+Change Component Designator: OldDesignator=R47 NewDesignator=R55
+Change Component Designator: OldDesignator=R48 NewDesignator=R56
+Change Component Designator: OldDesignator=R54 NewDesignator=R59
+Change Component Designator: OldDesignator=R55 NewDesignator=R60
+Change Component Designator: OldDesignator=R57 NewDesignator=R62
+Change Component Designator: OldDesignator=R59 NewDesignator=R63
+Change Component Designator: OldDesignator=R75 NewDesignator=R83
+Change Component Designator: OldDesignator=R76 NewDesignator=R84
+Change Component Designator: OldDesignator=R77 NewDesignator=R85
+Change Component Designator: OldDesignator=R78 NewDesignator=R87
+Change Component Designator: OldDesignator=R? NewDesignator=R1
+Change Component Designator: OldDesignator=R? NewDesignator=R2
+Change Component Designator: OldDesignator=R? NewDesignator=R3
+Change Component Designator: OldDesignator=R? NewDesignator=R4
+Change Component Designator: OldDesignator=R? NewDesignator=R5
+Change Component Designator: OldDesignator=R? NewDesignator=R6
+Change Component Designator: OldDesignator=R? NewDesignator=R11
+Change Component Designator: OldDesignator=R? NewDesignator=R12
+Change Component Designator: OldDesignator=R? NewDesignator=R13
+Change Component Designator: OldDesignator=R? NewDesignator=R14
+Change Component Designator: OldDesignator=R? NewDesignator=R15
+Change Component Designator: OldDesignator=R? NewDesignator=R16
+Change Component Designator: OldDesignator=R? NewDesignator=R17
+Change Component Designator: OldDesignator=R? NewDesignator=R20
+Change Component Designator: OldDesignator=R? NewDesignator=R21
+Change Component Designator: OldDesignator=R? NewDesignator=R22
+Change Component Designator: OldDesignator=R? NewDesignator=R23
+Change Component Designator: OldDesignator=R? NewDesignator=R24
+Change Component Designator: OldDesignator=R? NewDesignator=R25
+Change Component Designator: OldDesignator=R? NewDesignator=R26
+Change Component Designator: OldDesignator=R? NewDesignator=R27
+Change Component Designator: OldDesignator=R? NewDesignator=R28
+Change Component Designator: OldDesignator=R? NewDesignator=R30
+Change Component Designator: OldDesignator=R? NewDesignator=R31
+Change Component Designator: OldDesignator=R? NewDesignator=R32
+Change Component Designator: OldDesignator=R? NewDesignator=R34
+Change Component Designator: OldDesignator=R? NewDesignator=R36
+Change Component Designator: OldDesignator=R? NewDesignator=R38
+Change Component Designator: OldDesignator=R? NewDesignator=R41
+Change Component Designator: OldDesignator=R? NewDesignator=R43
+Change Component Designator: OldDesignator=R? NewDesignator=R44
+Change Component Designator: OldDesignator=R? NewDesignator=R49
+Change Component Designator: OldDesignator=R? NewDesignator=R53
+Change Component Designator: OldDesignator=R? NewDesignator=R54
+Change Component Designator: OldDesignator=R? NewDesignator=R57
+Change Component Designator: OldDesignator=R? NewDesignator=R58
+Change Component Designator: OldDesignator=R? NewDesignator=R61
+Change Component Designator: OldDesignator=R? NewDesignator=R66
+Change Component Designator: OldDesignator=R? NewDesignator=R68
+Change Component Designator: OldDesignator=R? NewDesignator=R69
+Change Component Designator: OldDesignator=R? NewDesignator=R70
+Change Component Designator: OldDesignator=R? NewDesignator=R81
+Change Component Designator: OldDesignator=R? NewDesignator=R82
+Change Component Designator: OldDesignator=R? NewDesignator=R86
+Change Component Designator: OldDesignator=SW7 NewDesignator=SW1
+Change Component Designator: OldDesignator=SW8 NewDesignator=SW2
+Change Component Designator: OldDesignator=U? NewDesignator=U3
+Change Component Designator: OldDesignator=U? NewDesignator=U5
+Change Component Designator: OldDesignator=U? NewDesignator=U10
+Added Component: Designator=C58(CAP-CER_0805_L2W1.25H0.8_Wave)
+Add component (AddParameter): Name = "Capacitance"; Value = "10uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Imperial)"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Metric)"; Value = "2012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Ceramic Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/22774/1747469-22774396.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/22774/1747469-22774396.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.ciiva.com/28584/626718-28584288.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/28584/626718-28584288.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://datasheet.ciiva.com/5424/product-5424327.pdf?src-supplier=Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://datasheet.ciiva.com/5424/product-5424327.pdf?src-supplier=Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "https://datasheet.ciiva.com/29199/454623-da-01-en-vs-kondensator-0805-29199615.pdf?src-supplier=Conrad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://datasheet.ciiva.com/29199/454623-da-01-en-vs-kondensator-0805-29199615.pdf?src-supplier=Conrad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5Description"; Value = "https://datasheet.ciiva.com/14116/grmseries-highdielectrictype-eng-14116376.pdf?src-supplier=Distrelec"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5URL"; Value = "https://datasheet.ciiva.com/14116/grmseries-highdielectrictype-eng-14116376.pdf?src-supplier=Distrelec"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6Description"; Value = "https://datasheet.ciiva.com/7719/1747469-7719093.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6URL"; Value = "https://datasheet.ciiva.com/7719/1747469-7719093.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink7Description"; Value = "https://datasheet.ciiva.com/28584/626718-28584279.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink7URL"; Value = "https://datasheet.ciiva.com/28584/626718-28584279.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink8Description"; Value = "https://datasheet.ciiva.com/139/partnumbering-e-01-139183.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink8URL"; Value = "https://datasheet.ciiva.com/139/partnumbering-e-01-139183.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink9Description"; Value = "https://datasheet.ciiva.com/139/partnumbering-e-01-139182.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink9URL"; Value = "https://datasheet.ciiva.com/139/partnumbering-e-01-139182.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink10Description"; Value = "https://datasheet.ciiva.com/139/partnumbering-e-01-139184.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink10URL"; Value = "https://datasheet.ciiva.com/139/partnumbering-e-01-139184.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink11Description"; Value = "Link Viet Nam"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink11URL"; Value = "https://linhkien.cxt.vn/5861-tmk212bbj106mg-t-cap-cer-10uf-25v-x5r-0805.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink12Description"; Value = "Link Original"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink12URL"; Value = "https://www.digikey.com/en/products/detail/murata-electronics/GRM21BR61E106KA73L/2334874"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink13Description"; Value = "Link Cross"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink13URL"; Value = "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Murata-Electronics-GRM21BR61E106KA73L_C84416.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Construction"; Value = "Flat"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = "1.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "X5R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "5697LeadFree"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LIBRARY MADE BY"; Value = "MR. XUAN SIEU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Cross"; Value = "Murata"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "GRM21BR61E106KA73L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Material"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Quantity"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.2, 10=0.086, 50=0.0696, 100=0.0528, 500=0.0484, 1000=0.044 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Reach SVHC Compliant"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "GRM"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "1799838"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "490-5523-6-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Thickness"; Value = "0.053inch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "25V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating (DC)"; Value = "25V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "0.049inch"; VariantName = "[No Variations]"
+Added Component: Designator=C59(CAP-CER_0805_L2W1.25H0.6_Wave)
+Add component (AddParameter): Name = "Capacitance"; Value = "100nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Imperial)"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Metric)"; Value = "2012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Ceramic Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/46393/1734573-46393307.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/46393/1734573-46393307.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.ciiva.com/155/mlccorderingcode-155930.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/155/mlccorderingcode-155930.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://datasheet.ciiva.com/29242/445210-da-01-en-kerko-chip-0805-x7r-0-1uf-10proz-50vg-29242074.pdf?src-supplier=Conrad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://datasheet.ciiva.com/29242/445210-da-01-en-kerko-chip-0805-x7r-0-1uf-10proz-50vg-29242074.pdf?src-supplier=Conrad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "Link Cross"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0805KRX7R9BB104_C49678.html?s_z=n_CC0805KRX7R9BB104"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5Description"; Value = "Link Viet Nam"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5URL"; Value = "https://linhkien.cxtvn.com/1976-tu-khong-phan-cuc-0805.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6Description"; Value = "Link Original"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6URL"; Value = "https://www.digikey.com/en/products/detail/yageo/CC0805KRX7R9BB104/302874"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = "1.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Halogen Free"; Value = "5694HalogenFree"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.85mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Resistance"; Value = "100GR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "5697LeadFree"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LIBRARY MADE BY"; Value = "MR. XUAN SIEU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Cross"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "CC0805KRX7R9BB104"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Material"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Quantity"; Value = "4000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.08, 10=0.032, 100=0.026, 1000=0.02, 4000=0.0176, 8000=0.01595, 12000=0.01512, 20000=0.0142, 28000=0.01367, 40000=0.01315, 100000=0.01202, 200000=0.01134, 400000=0.01077 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Reach SVHC Compliant"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "CC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "3664790"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "311-1140-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "50V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "50V"; VariantName = "[No Variations]"
+Added Component: Designator=C60(CAP-CER_0805_L2W1.25H0.8_Wave)
+Add component (AddParameter): Name = "Capacitance"; Value = "10uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Imperial)"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Metric)"; Value = "2012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Ceramic Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/22774/1747469-22774396.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/22774/1747469-22774396.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.ciiva.com/28584/626718-28584288.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/28584/626718-28584288.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://datasheet.ciiva.com/5424/product-5424327.pdf?src-supplier=Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://datasheet.ciiva.com/5424/product-5424327.pdf?src-supplier=Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "https://datasheet.ciiva.com/29199/454623-da-01-en-vs-kondensator-0805-29199615.pdf?src-supplier=Conrad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://datasheet.ciiva.com/29199/454623-da-01-en-vs-kondensator-0805-29199615.pdf?src-supplier=Conrad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5Description"; Value = "https://datasheet.ciiva.com/14116/grmseries-highdielectrictype-eng-14116376.pdf?src-supplier=Distrelec"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5URL"; Value = "https://datasheet.ciiva.com/14116/grmseries-highdielectrictype-eng-14116376.pdf?src-supplier=Distrelec"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6Description"; Value = "https://datasheet.ciiva.com/7719/1747469-7719093.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6URL"; Value = "https://datasheet.ciiva.com/7719/1747469-7719093.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink7Description"; Value = "https://datasheet.ciiva.com/28584/626718-28584279.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink7URL"; Value = "https://datasheet.ciiva.com/28584/626718-28584279.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink8Description"; Value = "https://datasheet.ciiva.com/139/partnumbering-e-01-139183.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink8URL"; Value = "https://datasheet.ciiva.com/139/partnumbering-e-01-139183.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink9Description"; Value = "https://datasheet.ciiva.com/139/partnumbering-e-01-139182.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink9URL"; Value = "https://datasheet.ciiva.com/139/partnumbering-e-01-139182.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink10Description"; Value = "https://datasheet.ciiva.com/139/partnumbering-e-01-139184.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink10URL"; Value = "https://datasheet.ciiva.com/139/partnumbering-e-01-139184.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink11Description"; Value = "Link Viet Nam"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink11URL"; Value = "https://linhkien.cxt.vn/5861-tmk212bbj106mg-t-cap-cer-10uf-25v-x5r-0805.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink12Description"; Value = "Link Original"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink12URL"; Value = "https://www.digikey.com/en/products/detail/murata-electronics/GRM21BR61E106KA73L/2334874"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink13Description"; Value = "Link Cross"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink13URL"; Value = "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Murata-Electronics-GRM21BR61E106KA73L_C84416.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Construction"; Value = "Flat"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = "1.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "X5R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "5697LeadFree"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LIBRARY MADE BY"; Value = "MR. XUAN SIEU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Cross"; Value = "Murata"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "GRM21BR61E106KA73L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Material"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Quantity"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.2, 10=0.086, 50=0.0696, 100=0.0528, 500=0.0484, 1000=0.044 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Reach SVHC Compliant"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "GRM"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "1799838"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "490-5523-6-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Thickness"; Value = "0.053inch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "25V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating (DC)"; Value = "25V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "0.049inch"; VariantName = "[No Variations]"
+Added Component: Designator=C61(CAP-CER_0805_L2W1.25H0.6_Wave)
+Add component (AddParameter): Name = "Capacitance"; Value = "100nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Imperial)"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Metric)"; Value = "2012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Ceramic Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/46393/1734573-46393307.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/46393/1734573-46393307.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.ciiva.com/155/mlccorderingcode-155930.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/155/mlccorderingcode-155930.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://datasheet.ciiva.com/29242/445210-da-01-en-kerko-chip-0805-x7r-0-1uf-10proz-50vg-29242074.pdf?src-supplier=Conrad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://datasheet.ciiva.com/29242/445210-da-01-en-kerko-chip-0805-x7r-0-1uf-10proz-50vg-29242074.pdf?src-supplier=Conrad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "Link Cross"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0805KRX7R9BB104_C49678.html?s_z=n_CC0805KRX7R9BB104"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5Description"; Value = "Link Viet Nam"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5URL"; Value = "https://linhkien.cxtvn.com/1976-tu-khong-phan-cuc-0805.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6Description"; Value = "Link Original"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6URL"; Value = "https://www.digikey.com/en/products/detail/yageo/CC0805KRX7R9BB104/302874"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = "1.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Halogen Free"; Value = "5694HalogenFree"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.85mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Resistance"; Value = "100GR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "5697LeadFree"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LIBRARY MADE BY"; Value = "MR. XUAN SIEU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Cross"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "CC0805KRX7R9BB104"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Material"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Quantity"; Value = "4000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.08, 10=0.032, 100=0.026, 1000=0.02, 4000=0.0176, 8000=0.01595, 12000=0.01512, 20000=0.0142, 28000=0.01367, 40000=0.01315, 100000=0.01202, 200000=0.01134, 400000=0.01077 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Reach SVHC Compliant"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "CC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "3664790"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "311-1140-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "50V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "50V"; VariantName = "[No Variations]"
+Added Component: Designator=R64(RESISTOR_0805_Wave)
+Add component (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.vishay.com/docs/28773/crcwce3.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.vishay.com/docs/28773/crcwce3.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.octopart.com/CRCW08054K70FKEAC-Vishay-datasheet-100063072.pdf?src-supplier=Future+Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.octopart.com/CRCW08054K70FKEAC-Vishay-datasheet-100063072.pdf?src-supplier=Future+Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Link Original"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://www.digikey.com/en/products/detail/vishay-dale/CRCW08054K70FKEAC/7928553"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "Link Cross"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Vishay-Intertech-CRCW08054K70FKEAC_C844630.html?s_z=n_CRCW08054K70FKEAC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5Description"; Value = "Link Viet Nam"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5URL"; Value = "https://linhkien.cxtvn.com/11332-dien-tro-0805-1-thong-so-tu-1k-den-91k.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "600um"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "5697LeadFree"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LIBRARY MADE BY"; Value = "MR. XUAN SIEU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Cross"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "CRCW08054K70FKEAC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.1, 10=0.041, 100=0.0208, 1000=0.01059, 2500=0.00988, 5000=0.00661, 10000=0.00546, 15000=0.00542, 25000=0.00537, 35000=0.00535, 50000=0.00532, 125000=0.00526, 250000=0.00523, 500000=0.00519 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "866093"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "541-4131-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "150V"; VariantName = "[No Variations]"
+Added Component: Designator=R65(RESISTOR_0805_Wave)
+Add component (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.vishay.com/docs/28773/crcwce3.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.vishay.com/docs/28773/crcwce3.pdf?src-supplier=Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.octopart.com/CRCW08054K70FKEAC-Vishay-datasheet-100063072.pdf?src-supplier=Future+Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.octopart.com/CRCW08054K70FKEAC-Vishay-datasheet-100063072.pdf?src-supplier=Future+Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Link Original"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://www.digikey.com/en/products/detail/vishay-dale/CRCW08054K70FKEAC/7928553"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "Link Cross"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Vishay-Intertech-CRCW08054K70FKEAC_C844630.html?s_z=n_CRCW08054K70FKEAC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5Description"; Value = "Link Viet Nam"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5URL"; Value = "https://linhkien.cxtvn.com/11332-dien-tro-0805-1-thong-so-tu-1k-den-91k.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "600um"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "5697LeadFree"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LIBRARY MADE BY"; Value = "MR. XUAN SIEU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Cross"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "CRCW08054K70FKEAC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.1, 10=0.041, 100=0.0208, 1000=0.01059, 2500=0.00988, 5000=0.00661, 10000=0.00546, 15000=0.00542, 25000=0.00537, 35000=0.00535, 50000=0.00532, 125000=0.00526, 250000=0.00523, 500000=0.00519 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "866093"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "541-4131-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "150V"; VariantName = "[No Variations]"
+Added Component: Designator=R67(RESISTOR_0805_Wave)
+Add component (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/15193/getdatasheetpartid-362046-15193525.pdf?src-supplier=Verical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/15193/getdatasheetpartid-362046-15193525.pdf?src-supplier=Verical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Link Original"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0805FT10K0/1760676"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Link Cross"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_SEI-Stackpole-Elec-RMCF0805FT10K0_C237755.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "Link Viet Nam"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://linhkien.cxt.vn/8484-rc0805fr-0710kl-res-10k-ohm-1-18w-0805.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "5697LeadFree"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LIBRARY MADE BY"; Value = "MR. XUAN SIEU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Cross"; Value = "Stackpole Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RMCF0805FT10K0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.1, 10=0.02, 50=0.0124, 100=0.0103, 500=0.007, 1000=0.00601 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "1959497"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0805FT10K0CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "150V"; VariantName = "[No Variations]"
+Added Component: Designator=R71(RESISTOR_0805_Wave)
+Add component (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/15193/getdatasheetpartid-362046-15193525.pdf?src-supplier=Verical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/15193/getdatasheetpartid-362046-15193525.pdf?src-supplier=Verical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Link Original"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0805FT10K0/1760676"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Link Cross"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_SEI-Stackpole-Elec-RMCF0805FT10K0_C237755.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "Link Viet Nam"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://linhkien.cxt.vn/8484-rc0805fr-0710kl-res-10k-ohm-1-18w-0805.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "5697LeadFree"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LIBRARY MADE BY"; Value = "MR. XUAN SIEU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Cross"; Value = "Stackpole Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RMCF0805FT10K0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.1, 10=0.02, 50=0.0124, 100=0.0103, 500=0.007, 1000=0.00601 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "1959497"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0805FT10K0CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "150V"; VariantName = "[No Variations]"
+Added Component: Designator=R72(RESISTOR_0805_Wave)
+Add component (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/15193/getdatasheetpartid-362046-15193525.pdf?src-supplier=Verical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/15193/getdatasheetpartid-362046-15193525.pdf?src-supplier=Verical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Link Original"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0805FT10K0/1760676"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Link Cross"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_SEI-Stackpole-Elec-RMCF0805FT10K0_C237755.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "Link Viet Nam"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://linhkien.cxt.vn/8484-rc0805fr-0710kl-res-10k-ohm-1-18w-0805.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "5697LeadFree"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LIBRARY MADE BY"; Value = "MR. XUAN SIEU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Cross"; Value = "Stackpole Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RMCF0805FT10K0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.1, 10=0.02, 50=0.0124, 100=0.0103, 500=0.007, 1000=0.00601 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "1959497"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0805FT10K0CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "150V"; VariantName = "[No Variations]"
+Added Component: Designator=R73(RESISTOR_0805_Wave)
+Add component (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/15193/getdatasheetpartid-362046-15193525.pdf?src-supplier=Verical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/15193/getdatasheetpartid-362046-15193525.pdf?src-supplier=Verical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Link Original"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0805FT10K0/1760676"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Link Cross"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_SEI-Stackpole-Elec-RMCF0805FT10K0_C237755.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "Link Viet Nam"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://linhkien.cxt.vn/8484-rc0805fr-0710kl-res-10k-ohm-1-18w-0805.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "5697LeadFree"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LIBRARY MADE BY"; Value = "MR. XUAN SIEU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Cross"; Value = "Stackpole Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RMCF0805FT10K0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.1, 10=0.02, 50=0.0124, 100=0.0103, 500=0.007, 1000=0.00601 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "1959497"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0805FT10K0CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "150V"; VariantName = "[No Variations]"
+Added Component: Designator=R74(RESISTOR_0805_Wave)
+Add component (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/15193/getdatasheetpartid-362046-15193525.pdf?src-supplier=Verical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/15193/getdatasheetpartid-362046-15193525.pdf?src-supplier=Verical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Link Original"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0805FT10K0/1760676"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Link Cross"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_SEI-Stackpole-Elec-RMCF0805FT10K0_C237755.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "Link Viet Nam"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://linhkien.cxt.vn/8484-rc0805fr-0710kl-res-10k-ohm-1-18w-0805.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "5697LeadFree"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LIBRARY MADE BY"; Value = "MR. XUAN SIEU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Cross"; Value = "Stackpole Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RMCF0805FT10K0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.1, 10=0.02, 50=0.0124, 100=0.0103, 500=0.007, 1000=0.00601 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "1959497"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0805FT10K0CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "150V"; VariantName = "[No Variations]"
+Added Component: Designator=R75(RESISTOR_0805_Wave)
+Add component (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/15193/getdatasheetpartid-362046-15193525.pdf?src-supplier=Verical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/15193/getdatasheetpartid-362046-15193525.pdf?src-supplier=Verical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Link Original"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0805FT10K0/1760676"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Link Cross"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_SEI-Stackpole-Elec-RMCF0805FT10K0_C237755.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "Link Viet Nam"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://linhkien.cxt.vn/8484-rc0805fr-0710kl-res-10k-ohm-1-18w-0805.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "5697LeadFree"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LIBRARY MADE BY"; Value = "MR. XUAN SIEU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Cross"; Value = "Stackpole Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RMCF0805FT10K0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.1, 10=0.02, 50=0.0124, 100=0.0103, 500=0.007, 1000=0.00601 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "1959497"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0805FT10K0CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "150V"; VariantName = "[No Variations]"
+Added Component: Designator=R76(RESISTOR_0805_Wave)
+Add component (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/15193/getdatasheetpartid-362046-15193525.pdf?src-supplier=Verical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/15193/getdatasheetpartid-362046-15193525.pdf?src-supplier=Verical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Link Original"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0805FT10K0/1760676"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Link Cross"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_SEI-Stackpole-Elec-RMCF0805FT10K0_C237755.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "Link Viet Nam"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://linhkien.cxt.vn/8484-rc0805fr-0710kl-res-10k-ohm-1-18w-0805.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "5697LeadFree"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LIBRARY MADE BY"; Value = "MR. XUAN SIEU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Cross"; Value = "Stackpole Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RMCF0805FT10K0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.1, 10=0.02, 50=0.0124, 100=0.0103, 500=0.007, 1000=0.00601 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "1959497"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0805FT10K0CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "150V"; VariantName = "[No Variations]"
+Added Component: Designator=R77(RESISTOR_0805_Wave)
+Add component (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/15193/getdatasheetpartid-362046-15193525.pdf?src-supplier=Verical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/15193/getdatasheetpartid-362046-15193525.pdf?src-supplier=Verical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Link Original"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0805FT10K0/1760676"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Link Cross"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_SEI-Stackpole-Elec-RMCF0805FT10K0_C237755.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "Link Viet Nam"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://linhkien.cxt.vn/8484-rc0805fr-0710kl-res-10k-ohm-1-18w-0805.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "5697LeadFree"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LIBRARY MADE BY"; Value = "MR. XUAN SIEU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Cross"; Value = "Stackpole Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RMCF0805FT10K0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.1, 10=0.02, 50=0.0124, 100=0.0103, 500=0.007, 1000=0.00601 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "1959497"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0805FT10K0CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "150V"; VariantName = "[No Variations]"
+Added Component: Designator=R78(RESISTOR_0805_Wave)
+Add component (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/15193/getdatasheetpartid-362046-15193525.pdf?src-supplier=Verical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/15193/getdatasheetpartid-362046-15193525.pdf?src-supplier=Verical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Link Original"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0805FT10K0/1760676"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Link Cross"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_SEI-Stackpole-Elec-RMCF0805FT10K0_C237755.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "Link Viet Nam"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://linhkien.cxt.vn/8484-rc0805fr-0710kl-res-10k-ohm-1-18w-0805.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "5697LeadFree"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LIBRARY MADE BY"; Value = "MR. XUAN SIEU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Cross"; Value = "Stackpole Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RMCF0805FT10K0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.1, 10=0.02, 50=0.0124, 100=0.0103, 500=0.007, 1000=0.00601 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "1959497"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0805FT10K0CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "150V"; VariantName = "[No Variations]"
+Added Component: Designator=R79(RESISTOR_0805_Wave)
+Add component (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/15193/getdatasheetpartid-362046-15193525.pdf?src-supplier=Verical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/15193/getdatasheetpartid-362046-15193525.pdf?src-supplier=Verical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Link Original"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0805FT10K0/1760676"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Link Cross"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_SEI-Stackpole-Elec-RMCF0805FT10K0_C237755.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "Link Viet Nam"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://linhkien.cxt.vn/8484-rc0805fr-0710kl-res-10k-ohm-1-18w-0805.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "5697LeadFree"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LIBRARY MADE BY"; Value = "MR. XUAN SIEU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Cross"; Value = "Stackpole Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RMCF0805FT10K0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.1, 10=0.02, 50=0.0124, 100=0.0103, 500=0.007, 1000=0.00601 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "1959497"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0805FT10K0CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "150V"; VariantName = "[No Variations]"
+Added Component: Designator=R80(RESISTOR_0805_Wave)
+Add component (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/15193/getdatasheetpartid-362046-15193525.pdf?src-supplier=Verical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/15193/getdatasheetpartid-362046-15193525.pdf?src-supplier=Verical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Link Original"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0805FT10K0/1760676"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Link Cross"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_SEI-Stackpole-Elec-RMCF0805FT10K0_C237755.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "Link Viet Nam"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://linhkien.cxt.vn/8484-rc0805fr-0710kl-res-10k-ohm-1-18w-0805.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "5697LeadFree"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LIBRARY MADE BY"; Value = "MR. XUAN SIEU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Cross"; Value = "Stackpole Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RMCF0805FT10K0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.1, 10=0.02, 50=0.0124, 100=0.0103, 500=0.007, 1000=0.00601 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "1959497"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0805FT10K0CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "150V"; VariantName = "[No Variations]"
+Added Component: Designator=SD1(SW_DS01C-254-S-10BE)
+Add component (AddParameter): Name = "Value"; Value = "SW - DIP12"; VariantName = "[No Variations]"
+Added Component: Designator=U8(SOIC127P1032X265-16N)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/PCF8574AT/NXP+Semiconductors/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "NXP USA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "PCF8574AT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOIC-16 NXP Semiconductors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/PCF8574AT/NXP+Semiconductors/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U9(SOIC127P1032X265-16N)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/PCF8574AT/NXP+Semiconductors/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "NXP USA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "PCF8574AT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOIC-16 NXP Semiconductors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/PCF8574AT/NXP+Semiconductors/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+3V3 Pin=C58-1
+Added Pin To Net: NetName=GND Pin=C58-2
+Added Pin To Net: NetName=+3V3 Pin=C59-1
+Added Pin To Net: NetName=GND Pin=C59-2
+Added Pin To Net: NetName=+3V3 Pin=C60-1
+Added Pin To Net: NetName=GND Pin=C60-2
+Added Pin To Net: NetName=+3V3 Pin=C61-1
+Added Pin To Net: NetName=GND Pin=C61-2
+Added Pin To Net: NetName=SCL_ESP Pin=JP1-2
+Added Pin To Net: NetName=SDA_ESP Pin=JP1-3
+Added Pin To Net: NetName=SCL_ESP Pin=R64-1
+Added Pin To Net: NetName=+3V3 Pin=R64-2
+Added Pin To Net: NetName=SDA_ESP Pin=R65-1
+Added Pin To Net: NetName=+3V3 Pin=R65-2
+Added Pin To Net: NetName=+3.3V_1 Pin=R67-2
+Added Pin To Net: NetName=+3V3 Pin=R71-2
+Added Pin To Net: NetName=+3V3 Pin=R72-2
+Added Pin To Net: NetName=+3V3 Pin=R73-2
+Added Pin To Net: NetName=+3V3 Pin=R74-2
+Added Pin To Net: NetName=+3V3 Pin=R75-2
+Added Pin To Net: NetName=+3V3 Pin=R76-2
+Added Pin To Net: NetName=+3V3 Pin=R77-2
+Added Pin To Net: NetName=+3V3 Pin=R78-2
+Added Pin To Net: NetName=+3V3 Pin=R79-2
+Added Pin To Net: NetName=+3V3 Pin=R80-2
+Added Pin To Net: NetName=GND Pin=SD1-1A
+Added Pin To Net: NetName=GND Pin=SD1-2A
+Added Pin To Net: NetName=GND Pin=SD1-3A
+Added Pin To Net: NetName=GND Pin=SD1-4A
+Added Pin To Net: NetName=GND Pin=SD1-5A
+Added Pin To Net: NetName=GND Pin=SD1-6A
+Added Pin To Net: NetName=GND Pin=SD1-7A
+Added Pin To Net: NetName=GND Pin=SD1-8A
+Added Pin To Net: NetName=GND Pin=SD1-9A
+Added Pin To Net: NetName=GND Pin=SD1-10A
+Added Pin To Net: NetName=RL1_MCU Pin=U8-4
+Added Pin To Net: NetName=RL2_MCU Pin=U8-5
+Added Pin To Net: NetName=RL3_MCU Pin=U8-6
+Added Pin To Net: NetName=RL4_MCU Pin=U8-7
+Added Pin To Net: NetName=GND Pin=U8-8
+Added Pin To Net: NetName=RL5_MCU Pin=U8-9
+Added Pin To Net: NetName=SCL_ESP Pin=U8-14
+Added Pin To Net: NetName=SDA_ESP Pin=U8-15
+Added Pin To Net: NetName=+3V3 Pin=U8-16
+Added Pin To Net: NetName=IN1 Pin=U9-4
+Added Pin To Net: NetName=IN2 Pin=U9-5
+Added Pin To Net: NetName=IN3 Pin=U9-6
+Added Pin To Net: NetName=IN4 Pin=U9-7
+Added Pin To Net: NetName=GND Pin=U9-8
+Added Pin To Net: NetName=IN5 Pin=U9-9
+Added Pin To Net: NetName=SCL_ESP Pin=U9-14
+Added Pin To Net: NetName=SDA_ESP Pin=U9-15
+Added Pin To Net: NetName=+3V3 Pin=U9-16
+Change Net Name : Old Net Name=NetBH?_1 New Net Name=NetBH1_1
+Change Net Name : Old Net Name=NetC19_2 New Net Name=NetC23_2
+Change Net Name : Old Net Name=NetC24_2 New Net Name=NetC28_2
+Change Net Name : Old Net Name=NetC25_2 New Net Name=NetC29_2
+Change Net Name : Old Net Name=NetC34_2 New Net Name=NetC41_2
+Change Net Name : Old Net Name=NetC36_1 New Net Name=NetC43_1
+Change Net Name : Old Net Name=NetC48_1 New Net Name=NetC64_1
+Change Net Name : Old Net Name=NetC49_1 New Net Name=NetC65_1
+Change Net Name : Old Net Name=NetC?_1 New Net Name=NetC34_1
+Change Net Name : Old Net Name=NetC?_2 New Net Name=NetC33_2
+Change Net Name : Old Net Name=NetCF?_1 New Net Name=NetCF1_1
+Change Net Name : Old Net Name=NetCF?_1 New Net Name=NetCF2_1
+Change Net Name : Old Net Name=NetCF?_2 New Net Name=NetCF1_2
+Change Net Name : Old Net Name=NetCN?_1 New Net Name=NetCN2_1
+Change Net Name : Old Net Name=NetCN?_2 New Net Name=NetCN2_2
+Change Net Name : Old Net Name=NetD?_1 New Net Name=NetD3_1
+Change Net Name : Old Net Name=NetGDT?_B New Net Name=NetGDT1_B
+Change Net Name : Old Net Name=NetIC?_5 New Net Name=NetIC1_5
+Change Net Name : Old Net Name=NetJ?_13 New Net Name=NetJ2_13
+Change Net Name : Old Net Name=NetL10_1 New Net Name=NetL8_1
+Change Net Name : Old Net Name=NetL11_1 New Net Name=NetL9_1
+Change Net Name : Old Net Name=NetP?_12 New Net Name=NetP1_12
+Change Net Name : Old Net Name=NetP?_14 New Net Name=NetP1_14
+Change Net Name : Old Net Name=NetQ5_1 New Net Name=NetQ2_1
+Change Net Name : Old Net Name=NetQ5_3 New Net Name=NetQ2_3
+Change Net Name : Old Net Name=NetQ6_1 New Net Name=NetQ3_1
+Change Net Name : Old Net Name=NetQ8_1 New Net Name=NetQ5_1
+Change Net Name : Old Net Name=NetQ8_3 New Net Name=NetQ5_3
+Change Net Name : Old Net Name=NetQ10_1 New Net Name=NetQ6_1
+Change Net Name : Old Net Name=NetQ10_3 New Net Name=NetQ6_3
+Change Net Name : Old Net Name=NetQ?_1 New Net Name=NetQ7_1
+Change Net Name : Old Net Name=NetQ?_3 New Net Name=NetQ8_3
+Change Net Name : Old Net Name=NetR?_2 New Net Name=NetR21_2
+Added Pin To Net: NetName=A0_OUT Pin=U8-1
+Added Net: Name=A0_OUT
+Added Pin To Net: NetName=A0_ROM Pin=U7-1
+Added Net: Name=A0_ROM
+Added Pin To Net: NetName=A1_IN Pin=U9-2
+Added Net: Name=A1_IN
+Added Pin To Net: NetName=A1_OUT Pin=U8-2
+Added Net: Name=A1_OUT
+Added Pin To Net: NetName=A1_ROM Pin=U7-2
+Added Net: Name=A1_ROM
+Added Pin To Net: NetName=A2_IN Pin=U9-3
+Added Net: Name=A2_IN
+Added Pin To Net: NetName=A2_OUT Pin=U8-3
+Added Net: Name=A2_OUT
+Added Pin To Net: NetName=A2_ROM Pin=U7-3
+Added Net: Name=A2_ROM
+Added Pin To Net: NetName=AO_IN Pin=U9-1
+Added Net: Name=AO_IN
+Added Pin To Net: NetName=INT Pin=R67-1
+Added Pin To Net: NetName=INT Pin=U9-13
+Added Pin To Net: NetName=INT Pin=U10-11
+Added Net: Name=INT
+Added Pin To Net: NetName=NetC4_1 Pin=C4-1
+Added Pin To Net: NetName=NetC4_1 Pin=C5-1
+Added Pin To Net: NetName=NetC4_1 Pin=L1-2
+Added Pin To Net: NetName=NetC4_1 Pin=L2-1
+Added Net: Name=NetC4_1
+Added Pin To Net: NetName=NetC6_1 Pin=C6-1
+Added Pin To Net: NetName=NetC6_1 Pin=IC1-6
+Added Net: Name=NetC6_1
+Added Pin To Net: NetName=NetC6_2 Pin=C6-2
+Added Pin To Net: NetName=NetC6_2 Pin=IC1-2
+Added Pin To Net: NetName=NetC6_2 Pin=L4-1
+Added Net: Name=NetC6_2
+Added Pin To Net: NetName=NetC7_2 Pin=C7-2
+Added Pin To Net: NetName=NetC7_2 Pin=IC1-4
+Added Pin To Net: NetName=NetC7_2 Pin=R5-1
+Added Pin To Net: NetName=NetC7_2 Pin=R6-2
+Added Net: Name=NetC7_2
+Added Pin To Net: NetName=NetC15_1 Pin=L6-1
+Added Net: Name=NetC15_1
+Added Net: Name=NetC15_2
+Added Pin To Net: NetName=NetC32_2 Pin=C32-2
+Added Pin To Net: NetName=NetC32_2 Pin=U5-20
+Added Net: Name=NetC32_2
+Added Pin To Net: NetName=NetC35_1 Pin=C35-1
+Added Pin To Net: NetName=NetC35_1 Pin=P1-2
+Added Net: Name=NetC35_1
+Added Pin To Net: NetName=NetC36_1 Pin=J1-C7
+Added Pin To Net: NetName=NetC36_1 Pin=R37-1
+Added Net: Name=NetC36_1
+Added Pin To Net: NetName=NetC37_1 Pin=J1-C3
+Added Pin To Net: NetName=NetC37_1 Pin=R33-1
+Added Net: Name=NetC37_1
+Added Pin To Net: NetName=NetC38_1 Pin=J1-C2
+Added Pin To Net: NetName=NetC38_1 Pin=R29-1
+Added Net: Name=NetC38_1
+Added Pin To Net: NetName=NetC39_1 Pin=C39-1
+Added Pin To Net: NetName=NetC39_1 Pin=P1-4
+Added Pin To Net: NetName=NetC39_1 Pin=R26-2
+Added Net: Name=NetC39_1
+Added Pin To Net: NetName=NetC40_1 Pin=C40-1
+Added Pin To Net: NetName=NetC40_1 Pin=P1-3
+Added Net: Name=NetC40_1
+Added Pin To Net: NetName=NetC72_2 Pin=C72-2
+Added Pin To Net: NetName=NetC72_2 Pin=IC2-4
+Added Pin To Net: NetName=NetC72_2 Pin=R70-1
+Added Net: Name=NetC72_2
+Added Pin To Net: NetName=NetCF2_2 Pin=CF2-2
+Added Pin To Net: NetName=NetCF2_2 Pin=L3-1
+Added Pin To Net: NetName=NetCF2_2 Pin=PS1-1
+Added Net: Name=NetCF2_2
+Added Pin To Net: NetName=NetD1_2 Pin=D1-2
+Added Pin To Net: NetName=NetD1_2 Pin=L1-1
+Added Net: Name=NetD1_2
+Added Pin To Net: NetName=NetD2_1 Pin=D2-1
+Added Pin To Net: NetName=NetD2_1 Pin=R2-1
+Added Net: Name=NetD2_1
+Added Pin To Net: NetName=NetD4_1 Pin=D4-1
+Added Pin To Net: NetName=NetD4_1 Pin=R4-1
+Added Net: Name=NetD4_1
+Added Pin To Net: NetName=NetD6_1 Pin=D6-1
+Added Pin To Net: NetName=NetD6_1 Pin=R11-1
+Added Net: Name=NetD6_1
+Added Pin To Net: NetName=NetD11_1 Pin=D11-1
+Added Pin To Net: NetName=NetD11_1 Pin=R49-1
+Added Net: Name=NetD11_1
+Added Pin To Net: NetName=NetD12_1 Pin=D12-1
+Added Pin To Net: NetName=NetD12_1 Pin=R53-1
+Added Net: Name=NetD12_1
+Added Pin To Net: NetName=NetD13_1 Pin=D13-1
+Added Pin To Net: NetName=NetD13_1 Pin=R54-1
+Added Net: Name=NetD13_1
+Added Pin To Net: NetName=NetD14_1 Pin=D14-1
+Added Pin To Net: NetName=NetD14_1 Pin=R57-1
+Added Net: Name=NetD14_1
+Added Pin To Net: NetName=NetD15_1 Pin=D15-1
+Added Pin To Net: NetName=NetD15_1 Pin=R58-1
+Added Net: Name=NetD15_1
+Added Pin To Net: NetName=NetD16_1 Pin=D16-1
+Added Pin To Net: NetName=NetD16_1 Pin=R66-1
+Added Net: Name=NetD16_1
+Added Pin To Net: NetName=NetD16_2 Pin=D16-2
+Added Pin To Net: NetName=NetD16_2 Pin=Q7-3
+Added Net: Name=NetD16_2
+Added Pin To Net: NetName=NetL5_1 Pin=L6-2
+Added Net: Name=NetL5_1
+Added Net: Name=NetLED1_1
+Added Pin To Net: NetName=NetQ8_1 Pin=Q8-1
+Added Pin To Net: NetName=NetQ8_1 Pin=R82-2
+Added Pin To Net: NetName=NetQ8_1 Pin=R86-2
+Added Net: Name=NetQ8_1
+Added Net: Name=NetR7_1
+Added Net: Name=NetR8_1
+Added Pin To Net: NetName=NetR12_1 Pin=R12-1
+Added Pin To Net: NetName=NetR12_1 Pin=U5-45
+Added Net: Name=NetR12_1
+Added Pin To Net: NetName=NetR13_1 Pin=R13-1
+Added Pin To Net: NetName=NetR13_1 Pin=U5-44
+Added Net: Name=NetR13_1
+Added Pin To Net: NetName=NetR14_2 Pin=R14-2
+Added Pin To Net: NetName=NetR14_2 Pin=U5-1
+Added Net: Name=NetR14_2
+Added Pin To Net: NetName=NetR15_1 Pin=R15-1
+Added Pin To Net: NetName=NetR15_1 Pin=U5-43
+Added Net: Name=NetR15_1
+Added Pin To Net: NetName=NetR16_2 Pin=R16-2
+Added Pin To Net: NetName=NetR16_2 Pin=U5-2
+Added Net: Name=NetR16_2
+Added Pin To Net: NetName=NetR17_1 Pin=R17-1
+Added Pin To Net: NetName=NetR17_1 Pin=U5-42
+Added Net: Name=NetR17_1
+Added Pin To Net: NetName=NetR20_1 Pin=R20-1
+Added Pin To Net: NetName=NetR20_1 Pin=U5-41
+Added Net: Name=NetR20_1
+Added Pin To Net: NetName=NetR22_1 Pin=R22-1
+Added Pin To Net: NetName=NetR22_1 Pin=U5-40
+Added Net: Name=NetR22_1
+Added Pin To Net: NetName=NetR23_1 Pin=R23-1
+Added Pin To Net: NetName=NetR23_1 Pin=U5-39
+Added Net: Name=NetR23_1
+Added Pin To Net: NetName=NetR24_2 Pin=R24-2
+Added Pin To Net: NetName=NetR24_2 Pin=U5-6
+Added Net: Name=NetR24_2
+Added Pin To Net: NetName=NetR28_1 Pin=R28-1
+Added Pin To Net: NetName=NetR28_1 Pin=U5-38
+Added Net: Name=NetR28_1
+Added Pin To Net: NetName=NetR31_2 Pin=R31-2
+Added Pin To Net: NetName=NetR31_2 Pin=U5-10
+Added Net: Name=NetR31_2
+Added Pin To Net: NetName=NetR41_2 Pin=R41-2
+Added Pin To Net: NetName=NetR41_2 Pin=U5-23
+Added Net: Name=NetR41_2
+Added Pin To Net: NetName=NetR71_1 Pin=R71-1
+Added Pin To Net: NetName=NetR71_1 Pin=SD1-1B
+Added Net: Name=NetR71_1
+Added Pin To Net: NetName=NetR72_1 Pin=R72-1
+Added Pin To Net: NetName=NetR72_1 Pin=SD1-2B
+Added Net: Name=NetR72_1
+Added Pin To Net: NetName=NetR73_1 Pin=R73-1
+Added Pin To Net: NetName=NetR73_1 Pin=SD1-3B
+Added Net: Name=NetR73_1
+Added Pin To Net: NetName=NetR74_1 Pin=R74-1
+Added Pin To Net: NetName=NetR74_1 Pin=SD1-4B
+Added Net: Name=NetR74_1
+Added Pin To Net: NetName=NetR75_1 Pin=R75-1
+Added Pin To Net: NetName=NetR75_1 Pin=SD1-5B
+Added Net: Name=NetR75_1
+Added Pin To Net: NetName=NetR76_1 Pin=R76-1
+Added Pin To Net: NetName=NetR76_1 Pin=SD1-6B
+Added Net: Name=NetR76_1
+Added Pin To Net: NetName=NetR77_1 Pin=R77-1
+Added Pin To Net: NetName=NetR77_1 Pin=SD1-7B
+Added Net: Name=NetR77_1
+Added Pin To Net: NetName=NetR78_1 Pin=R78-1
+Added Pin To Net: NetName=NetR78_1 Pin=SD1-8B
+Added Net: Name=NetR78_1
+Added Pin To Net: NetName=NetR79_1 Pin=R79-1
+Added Pin To Net: NetName=NetR79_1 Pin=SD1-9B
+Added Net: Name=NetR79_1
+Added Pin To Net: NetName=NetR80_1 Pin=R80-1
+Added Pin To Net: NetName=NetR80_1 Pin=SD1-10B
+Added Net: Name=NetR80_1
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component C1 CAP ALUM 220UF 20% 35V SMD
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component C2 CAP_ALU_470uF_35V_SMD
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component C3 1uF 50V
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component C4 220uF_16V
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component C5 0.1uF 50V
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component C6 0.33uF 50V
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component C7 1nF 50V
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component C8 220uF_35V
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component C9 10uF 25V
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component C10 0.1uF 50V
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component C11 22uF 25V
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component C12 22uF 25V
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component C13 10uF 25V
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component C14 0.1uF 50V
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component C17 220uF_35V
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component C18 220uF_16V
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component C21 0.1uF 50V
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component C22 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C32 10uF 25V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C39 22nF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C40 103 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C41 1nF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C43 100pF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C44 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C45 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C50 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C53 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C54 CAP_ALU_470uF_35V_SMD
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C55 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C61 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C62 10uF 25V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C63 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C64 220pF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C65 220pF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C66 220uF_16V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C67 220uF_16V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C68 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C69 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C70 10uF 25V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C71 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C72 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C73 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C74 10uF 25V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C75 220uF_16V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C76 10uF 16V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C77 10uF 25V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C78 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C79 1nF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C80 10uF 25V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C81 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C82 10uF 25V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C83 1nF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C84 220uF_16V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C85 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C86 220uF_16V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C87 0.1uF 50V
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component CF2 0.1uF 275V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component CN2 TERMINAL 12P
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component D1 1N5822(SS34)-SM
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component D2 Red, 2V, 140°
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component D3 Red, 2V, 140°
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component D4 PWR SIM
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component D6 Red, 2V, 140°
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component D11 Red, 2V, 140°
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component D13 Red, 2V, 140°
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component D14 Red, 2V, 140°
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component D15 Red, 2V, 140°
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component D16 Red, 2V, 140°
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component EC1 100uF 16V
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component EC3 100uF 16V
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component GND1 TP_1MM
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component H1 HOLE_3M
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component H2 HOLE_3M
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component H3 HOLE_3M
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component IC1 AP62300
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component J2 14P_2.54MM
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component K2 Relay_4P_30A_1
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component K3 Relay_4P_30A_1
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component K4 Relay_4P_30A_1
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component K5 Relay_4P_30A_1
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component L1 68uH 3A
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component L2 BLM21PG300SN1D
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component L3 SU10VD-10020
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component L6 CD73R 22uH 1.23A 7345
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component Q7 NPN 25V 1.5A
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component Q8 N-CH 20V 2.8A
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component R1 1K 0805
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component R3 100K 1%
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component R4 330R 1%
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component R5 39K 1%
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component R6 10K 1%
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component R11 330R 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R12 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R13 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R14 33R 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R15 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R16 33R 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R17 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R20 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R21 33R 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R22 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R23 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R24 33R 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R25 49.9R 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R26 10R 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R32 330R 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R33 22R 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R34 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R42 47K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R43 49.9R 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R44 49.9R 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R49 1K 0805
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R52 47K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R56 100K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R58 1K 0805
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R60 4k7 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R61 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R62 1K 0805
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R63 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R64 4k7 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R65 4k7 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R66 330R 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R67 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R68 1K 0805
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R69 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R70 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R71 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R72 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R73 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R74 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R79 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R80 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R81 330R 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R82 1K 0805
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R83 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R84 0R 0805
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R85 0R 0805
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R86 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R87 0R 0805
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component SD1 SW - DIP10
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component U5 W5500
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component U8 PCF8574AT
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component U9 PCF8574AT
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component U10 ESP32-S3-WROOM-1(N16R8)

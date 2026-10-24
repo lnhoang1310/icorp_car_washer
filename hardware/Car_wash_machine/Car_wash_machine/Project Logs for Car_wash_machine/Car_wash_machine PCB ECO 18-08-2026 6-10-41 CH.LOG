@@ -1,0 +1,3 @@
+Change Component Footprint: Designator=L1 Old Footprint=68UH_12X12 New Footprint=12X12_68uH_2A
+Change Component Description : Designator=L1 Old Description=FIXED IND 68uH 3A 140mO SMD,12.3x12.3mm New Description=FIXED IND 68uH 2A 140mO SMD,12.3x12.3mm
+Change Component Library : Designator=L1 Old Library=LIBRARY2026.IntLib New Library=INDUCTOR.SchLib

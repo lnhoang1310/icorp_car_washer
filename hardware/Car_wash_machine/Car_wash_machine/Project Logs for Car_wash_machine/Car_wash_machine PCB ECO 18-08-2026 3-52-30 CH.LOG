@@ -1,0 +1,13 @@
+Change Component Comment : Designator=U3 Old Comment=Comment New Comment=ULN2003_SMD
+Added Pin To Net: NetName=RL1_MCU Pin=U3-1
+Added Pin To Net: NetName=RL2_MCU Pin=U3-2
+Added Pin To Net: NetName=RL3_MCU Pin=U3-3
+Added Pin To Net: NetName=RL4_MCU Pin=U3-4
+Added Pin To Net: NetName=RL5_MCU Pin=U3-5
+Added Pin To Net: NetName=GND Pin=U3-8
+Added Pin To Net: NetName=RELAY5 Pin=U3-12
+Added Pin To Net: NetName=RELAY4 Pin=U3-13
+Added Pin To Net: NetName=RELAY3 Pin=U3-14
+Added Pin To Net: NetName=RELAY2 Pin=U3-15
+Added Pin To Net: NetName=RELAY1 Pin=U3-16
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component U3 ULN2003_SMD

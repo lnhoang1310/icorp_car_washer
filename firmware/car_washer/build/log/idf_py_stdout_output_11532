@@ -1,0 +1,838 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM19 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\car_washer.elf D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM19'
+ESP-ROM:esp32s3-20210327
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1658
+load:0x403c8700,len:0xd98
+load:0x403cb700,len:0x33a4
+entry 0x403c899c
+[0;32mI (25) boot: ESP-IDF v5.5.1-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Sep 28 2026 18:07:58[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.4[0m
+[0;32mI (32) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (36) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00080000[0m
+[0;32mI (63) boot:  1 otadata          OTA data         01 00 00089000 00002000[0m
+[0;32mI (70) boot:  2 phy_init         RF data          01 01 0008b000 00001000[0m
+[0;32mI (76) boot:  3 ota_0            OTA app          00 10 00090000 002ee000[0m
+[0;32mI (83) boot:  4 ota_1            OTA app          00 11 00380000 002ee000[0m
+[0;32mI (89) boot:  5 storage          Unknown data     01 82 0066e000 00400000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00090020 vaddr=3c130020 size=4fe8ch (327308) map[0m
+[0;32mI (161) esp_image: segment 1: paddr=000dfeb4 vaddr=3fc9ed00 size=00164h (   356) load[0m
+[0;32mI (162) esp_image: segment 2: paddr=000e0020 vaddr=42000020 size=1238dch (1194204) map[0m
+[0;32mI (364) esp_image: segment 3: paddr=00203904 vaddr=3fc9ee64 size=051f0h ( 20976) load[0m
+[0;32mI (369) esp_image: segment 4: paddr=00208afc vaddr=40374000 size=1ac54h (109652) load[0m
+[0;32mI (390) esp_image: segment 5: paddr=00223758 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (401) boot: Loaded app from partition at offset 0x90000[0m
+[0;32mI (401) boot: Disabling RNG early entropy source...[0m
+[0;32mI (411) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (411) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (411) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (413) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (417) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (422) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (426) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (431) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (436) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (440) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (445) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (450) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (454) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (458) esp_psram: Speed: 80MHz[0m
+[0;32mI (461) cpu_start: Multicore app[0m
+[0;32mI (877) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (886) cpu_start: Pro cpu start user code[0m
+[0;32mI (886) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (886) app_init: Application information:[0m
+[0;32mI (886) app_init: Project name:     car_washer[0m
+[0;32mI (890) app_init: App version:      1.0.0[0m
+[0;32mI (894) app_init: Compile time:     Oct 14 2026 12:38:17[0m
+[0;32mI (899) app_init: ELF file SHA256:  9840e0da6...[0m
+[0;32mI (903) app_init: ESP-IDF:          v5.5.1-dirty[0m
+[0;32mI (907) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (911) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (915) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (919) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (925) heap_init: At 3FCAA8F8 len 0003EE18 (251 KiB): RAM[0m
+[0;32mI (930) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (935) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (941) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (946) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (953) spi_flash: detected chip: generic[0m
+[0;32mI (956) spi_flash: flash io: dio[0m
+[0;32mI (960) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (966) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (972) main_task: Started on CPU0[0m
+[0;32mI (975) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (983) main_task: Calling app_main()[0m
+[0;32mI (1011) main: led_debug_task running[0m
+[0;32mI (1011) device_id: device_id = 80456B281774[0m
+[0;32mI (1012) main: device_id = 80456B281774[0m
+[0;32mI (1012) i2c_bus: i2c_bus_init OK (port=1 sda=1 scl=2)[0m
+[0;32mI (1017) io_exp: init OK (out=0x38 in=0x39 int=GPIO15)[0m
+[0;32mI (1021) fram: fram_init OK (port=1 sda=1 scl=2 addr=0x50 cap=32768 byte)[0m
+[0;32mI (1027) io_exp: PCF input 0x39 OK[0m
+[0;32mI (1031) rtc_ds3231: DS3231 connected (port=1 sda=1 scl=2)[0m
+[0;33mW (1036) ntp_time: Dong ho he thong chua hop le (vua boot/reset)[0m
+[0;32mI (1043) ntp_time: Da dat gio he thong TAM THOI tu RTC: 2026-10-19 21:19:55 (cho SNTP xac nhan lai)[0m
+[0;33mW (1051) devcfg: khong co / hong cau hinh trong NVS -> dung mac dinh[0m
+[0;32mI (1227) display: doc ID man hinh (0xD3): 00 00 00 00 00[0m
+[0;33mW (1228) display: man hinh khong tra loi: chan SDO/MISO chua noi, hoac chip chua nhan duoc lenh (kiem tra day CS/DC/RST/SCK/SDI va nguon man hinh)[0m
+[0;32mI (1235) ili9341: LCD panel create success, version: 2.1.0[0m
+[0;32mI (1361) LVGL: Starting LVGL task[0m
+[0;33mW (1364) lcd_panel.io.spi: Callback on_color_trans_done was already set and now it was overwritten![0m
+[0;32mI (1420) display: cam ung: dung hieu chinh da luu (swap=1 inv_x=1 inv_y=1 x=241..3931 y=14..3949)[0m
+[0;32mI (1421) display: cam ung XPT2046 OK (doc dinh ky, CS=GPIO21)[0m
+[0;32mI (1424) display: display OK ILI9341 320x240, SPI 15 MHz[0m
+[0;33mW (1433) devcfg: ap dung cau hinh TAM (khong luu NVS)[0m
+[0;33mW (1434) peripheral_test: [DEMO] ep kich ban tinh thoi gian = 1: OK[0m
+[0;32mI (1440) peripheral_test: cam ung da co hieu chinh trong NVS (muon lam lai: dat PT_TOUCH_CALIB = 2)[0m
+[0;32mI (1480) audio: phan vung am thanh: dung 1176/4096 KB[0m
+[0;33mW (1510) audio: thieu 5/21 file am thanh trong assets/audio[0m
+[0;32mI (1510) audio: audio OK (I2S 16000 Hz, BCLK=6 WS=7 DIN=5 SD=4)[0m
+[0;32mI (1510) main: =========== Network init ==========[0m
+[1;31mE (1515) gpio: gpio_install_isr_service(526): GPIO isr service already installed[0m
+[0;33mW (1522) net_ethernet: GPIO ISR handler already installed, bo qua[0m
+[0;32mI (1549) esp_eth.netif.netif_glue: 80:45:6b:28:17:77[0m
+[0;32mI (1550) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+[0;32mI (1550) net_ethernet: net_ethernet_init OK (spi_host=2 cs=9 int=10)[0m
+[0;32mI (1565) net_ethernet: Driver started[0m
+[0;32mI (1566) pp: pp rom version: e7ae62f[0m
+[0;32mI (1566) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1568) wifi:wifi driver task: 3fce17c8, prio:23, stack:6656, core=0[0m
+[0;32mI (1582) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (1582) wifi:wifi certification version: v7.0[0m
+[0;32mI (1582) wifi:config NVS flash: enabled[0m
+[0;32mI (1584) wifi:config nano formatting: disabled[0m
+[0;32mI (1588) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1593) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1597) wifi:Init management short buffer num: 32[0m
+[0;32mI (1601) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1605) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1610) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1614) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1618) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1622) wifi_init: rx ba win: 6[0m
+[0;32mI (1625) wifi_init: accept mbox: 6[0m
+[0;32mI (1628) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1631) wifi_init: udp mbox: 6[0m
+[0;32mI (1634) wifi_init: tcp mbox: 6[0m
+[0;32mI (1636) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1640) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1643) wifi_init: tcp mss: 1440[0m
+[0;32mI (1646) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (1650) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1654) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1662) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (1695) wifi:mode : sta (80:45:6b:28:17:74) + softAP (80:45:6b:28:17:75)[0m
+[0;32mI (1696) wifi:enable tsf[0m
+[0;32mI (1698) wifi:Total power save buffer number: 16[0m
+[0;32mI (1699) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1702) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1707) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1710) net_wifi: STA fallback used -> auto-connect[0m
+[0;32mI (1716) net_wifi: AP SSID=XTECH - 281774 IP:192.168.4.1[0m
+[0;32mI (1716) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (1728) net_gsm: net_gsm_init OK (uart=2 tx=47 rx=48 apn=v-internet)[0m
+[0;32mI (1734) net_gsm: pulse reset[0m
+[0;32mI (1735) net_manager: net_manager_init[0m
+[0;32mI (1741) ntp_time: SNTP started[0m
+[1;31mE (1753) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;32mI (1753) cloud: broker broker.hivemq.com:1883, client carwash-80456b281774, bayMAC 80456b281774, khoang 1[0m
+[1;31mE (1753) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (1767) mqtt_client: Error transport connect[0m
+[0;33mW (1771) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (1776) main: khoi dong xong[0m
+[0;32mI (1777) main_task: Returned from app_main()[0m
+[0;32mI (1853) app_fsm: BOOT -> OUT_OF_SERVICE[0m
+[0;32mI (2716) net_wifi: STA fallback used -> auto-connect[0m
+[0;32mI (2725) wifi:ap channel adjust o:1,1 n:8,2[0m
+[0;32mI (2726) wifi:new:<8,0>, old:<1,1>, ap:<8,2>, sta:<8,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2726) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2736) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (2743) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (2755) wifi:connected with TP-Link_FF1E, aid = 1, channel 8, BW20, bssid = c0:c9:e3:1b:ff:1e[0m
+[0;32mI (2756) wifi:security: WPA2-PSK, phy: bgn, rssi: -41[0m
+[0;32mI (2759) wifi:pm start, type: 0[0m
+
+[0;32mI (2761) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2769) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (2778) net_manager: WIFI STA CONNECTED[0m
+[0;32mI (2782) wifi:<ba-add>idx:0 (ifx:0, c0:c9:e3:1b:ff:1e), tid:0, ssn:0, winSize:64[0m
+[0;32mI (2825) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (3792) esp_netif_handlers: sta ip: 192.168.0.144, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (3792) net_wifi: Got IP: 192.168.0.144[0m
+[0;32mI (3793) net_manager: WIFI GOT IP: 192.168.0.144[0m
+[0;32mI (3797) net_manager: Switch default interface -> WIFI_STA_DEF[0m
+[0;32mI (9237) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (9238) uart: queue free spaces: 30[0m
+[0;32mI (9249) net_gsm: Signal quality OK: rssi=16 ber=99[0m
+[0;32mI (9345) wifi:<ba-add>idx:1 (ifx:0, c0:c9:e3:1b:ff:1e), tid:1, ssn:0, winSize:64[0m
+[0;32mI (9889) cloud: da ket noi broker[0m
+[0;32mI (9893) cloud: -> {"type":"Boot","packageId":"c6c94480-c98e-4083-a1c3-6d23409bf220","timestamp":"2026-10-19T14:20:03Z","payload":{"mac":"80456b281774","firmwareVersion":"V1.0.0","hardwareVersion":"V1.0","operationMode":"SPEED"}}[0m
+[0;32mI (9904) cloud: -> {"type":"Meter","packageId":"6dba31f3-cb43-4338-b1e4-506677d36cc5","timestamp":"2026-10-19T14:20:03Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"NORMAL","transactionId":0,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false}}[0m
+[0;33mW (9926) app_fsm: server DA KET NOI (trang thai OUT_OF_SERVICE)[0m
+[0;32mI (9931) app_fsm: OUT_OF_SERVICE -> IDLE[0m
+[0;33mW (15373) net_gsm: PPP handshake timeout -> restart modem, cho 5000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (17478) ntp_time: SNTP dong bo thanh cong: 2026-10-19 21:20:12[0m
+[0;32mI (17480) ntp_time: Da ghi gio he thong xuong RTC[0m
+[0;32mI (27373) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (27373) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (27373) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (33378) net_gsm: pulse reset[0m
+[0;32mI (40878) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (40879) uart: queue free spaces: 30[0m
+[0;32mI (40890) net_gsm: Signal quality OK: rssi=16 ber=99[0m
+[0;33mW (47009) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (59009) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (59009) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (59009) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (70014) net_gsm: pulse reset[0m
+[0;32mI (77514) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (77515) uart: queue free spaces: 30[0m
+[0;32mI (77525) net_gsm: Signal quality OK: rssi=20 ber=99[0m
+[0;33mW (83645) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (95645) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (95645) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (95645) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (106650) net_gsm: pulse reset[0m
+[0;32mI (114150) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (114151) uart: queue free spaces: 30[0m
+[0;32mI (115706) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (121836) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (133091) display: touch nghi ngo: adc x=1197 y=1580 luc=1137 (mau 1/2)[0m
+[0;32mI (133127) display: cam ung: nhan duoc cham dau tien tai x=204 y=170 (luc 1269)[0m
+[0;32mI (133127) display: touch adc x=1166 y=1577 luc=1269 -> man hinh x=204 y=170[0m
+[0;32mI (133274) app_fsm: IDLE -> SELECT[0m
+[0;32mI (133836) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (133836) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (133836) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (136553) display: touch nghi ngo: adc x=2739 y=1432 luc=1264 (mau 1/2)[0m
+[0;32mI (136589) display: touch adc x=2847 y=1418 luc=2148 -> man hinh x=218 y=67[0m
+[0;32mI (136623) display: touch adc x=2815 y=1413 luc=2115 -> man hinh x=218 y=69[0m
+[0;32mI (136702) app_fsm: tao don 80456B281774-1792419731-0027: Gói 10 phút 10 phut 20000 d[0m
+[0;32mI (136703) app_fsm: SELECT -> CREATING_QR[0m
+[0;32mI (136710) cloud: -> {"type":"InitTransaction","packageId":"184acfc4-c585-4577-ad02-c17f138a4d7b","timestamp":"2026-10-19T14:22:11Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"packageDuration":600,"price":20000}}[0m
+[0;32mI (139134) cloud: <- carwash/v1/80456b281774/down: {[0m
+  "type": "ShowPaymentCode",
+  "packageId": "demo-qr-302",
+  "timestamp": "2026-10-19T14:22:00Z",
+  "payload": {
+    "bayMAC": "80456b281774",
+    "bayNumber": 1,
+    "code": "DEMO-QR-302",
+    "transactionId": 306,
+    "expireAt": "2026-10-19T14:24:00Z"
+  }
+}
+[0;32mI (139153) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (139179) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[0;32mI (144841) net_gsm: pulse reset[0m
+[0;32mI (152341) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (152342) uart: queue free spaces: 30[0m
+[0;32mI (152353) net_gsm: Signal quality OK: rssi=15 ber=99[0m
+[0;33mW (158467) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (160603) cloud: <- carwash/v1/80456b281774/down: {[0m
+  "type": "StartTransaction",
+  "packageId": "demo-start-302",
+  "timestamp": "2026-10-19T06:48:00Z",
+  "payload": {
+    "bayMAC": "80456b281774",
+    "bayNumber": 1,
+    "transactionId": 302,
+    "packageDuration": 300
+  }
+}
+[0;33mW (160620) app_fsm: Start cua phien 302 da ket thuc -> bo qua[0m
+[0;32mI (170467) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (170467) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (170467) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (181472) net_gsm: pulse reset[0m
+[0;32mI (187504) cloud: <- carwash/v1/80456b281774/down: {[0m
+  "type": "StartTransaction",
+  "packageId": "demo-start-302",
+  "timestamp": "2026-10-19T06:48:00Z",
+  "payload": {
+    "bayMAC": "80456b281774",
+    "bayNumber": 1,
+    "transactionId": 306,
+    "packageDuration": 300
+  }
+}
+[0;32mI (187520) app_fsm: don 306 da thanh toan[0m
+[0;32mI (187529) cloud: -> {"type":"Meter","packageId":"82165a88-a11e-47a8-8cc2-318182d3d4c1","timestamp":"2026-10-19T14:23:02Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":0,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (187554) app_fsm: WAIT_PAYMENT -> PAID[0m
+[0;32mI (187565) audio: phat: "Thanh toán thành công. Cảm ơn quý khách."[0m
+[0;32mI (187966) app_fsm: den BAT (troi toi)[0m
+[0;32mI (188972) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (188973) uart: queue free spaces: 30[0m
+[0;32mI (188983) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;32mI (190566) app_fsm: PAID -> WASHING[0m
+[0;32mI (190588) audio: phat: "Bắt đầu rửa xe. Nhấn nút bọt, nước hoặc xịt khô để sử dụng."[0m
+[0;33mW (190600) audio: thieu file /audio/wash_guide.wav[0m
+[0;33mW (195098) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (196722) audio: phat: "Phun bọt."[0m
+[0;32mI (196731) cloud: -> {"type":"Meter","packageId":"3d65a690-ab58-494d-80b5-ce16fc0773f1","timestamp":"2026-10-19T14:23:11Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":0,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (202523) audio: phat: "Xịt khô."[0m
+[0;32mI (202773) cloud: -> {"type":"Meter","packageId":"3b26823e-fdd1-447a-bb41-6c94eca8d13c","timestamp":"2026-10-19T14:23:17Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":5,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (204480) audio: phat: "Tạm dừng."[0m
+[0;32mI (204489) cloud: -> {"type":"Meter","packageId":"26782e44-ae04-4825-89b0-ab210830c781","timestamp":"2026-10-19T14:23:19Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":5,"waterSeconds":0,"airSeconds":1,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (206119) audio: phat: "Xịt khô."[0m
+[0;32mI (206128) cloud: -> {"type":"Meter","packageId":"a7b35cd8-6460-4bde-a5f1-c6bb33fc84e1","timestamp":"2026-10-19T14:23:20Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":5,"waterSeconds":0,"airSeconds":1,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (207098) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (207098) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (207098) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (207265) audio: phat: "Tạm dừng."[0m
+[0;32mI (207274) cloud: -> {"type":"Meter","packageId":"98c43a6d-d61d-4757-9fa9-ae3f3bb47b45","timestamp":"2026-10-19T14:23:22Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":5,"waterSeconds":0,"airSeconds":2,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (207592) app_fsm: bo qua nut 2: bam lai sau 327 ms (< 1000 ms)[0m
+[0;32mI (207977) app_fsm: bo qua nut 2: bam lai sau 712 ms (< 1000 ms)[0m
+[0;32mI (208297) audio: phat: "Xịt khô."[0m
+[0;32mI (208306) cloud: -> {"type":"Meter","packageId":"b668a1bf-b1e5-4407-879a-71aba94a0c1b","timestamp":"2026-10-19T14:23:23Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":5,"waterSeconds":0,"airSeconds":2,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (213927) audio: phat: "Tạm dừng."[0m
+[0;32mI (213936) cloud: -> {"type":"Meter","packageId":"e8e3f778-4904-4af2-9ae3-3ebaf8cf1677","timestamp":"2026-10-19T14:23:28Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":5,"waterSeconds":0,"airSeconds":8,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (215156) audio: phat: "Xịt khô."[0m
+[0;32mI (215165) cloud: -> {"type":"Meter","packageId":"c9816e01-a088-476d-b408-d25f87340ccc","timestamp":"2026-10-19T14:23:29Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":5,"waterSeconds":0,"airSeconds":8,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (216595) audio: phat: "Tạm dừng."[0m
+[0;32mI (216604) cloud: -> {"type":"Meter","packageId":"c7174abc-54dd-4a5b-9873-bcd279be0210","timestamp":"2026-10-19T14:23:31Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":5,"waterSeconds":0,"airSeconds":9,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (217861) audio: phat: "Xịt khô."[0m
+[0;32mI (217870) cloud: -> {"type":"Meter","packageId":"40eb2c0a-215c-4d56-b641-31371c59aebd","timestamp":"2026-10-19T14:23:32Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":5,"waterSeconds":0,"airSeconds":9,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (218103) net_gsm: pulse reset[0m
+[0;32mI (219102) audio: phat: "Tạm dừng."[0m
+[0;32mI (219111) cloud: -> {"type":"Meter","packageId":"739b5518-af52-4ccf-bf2c-346f12694c6a","timestamp":"2026-10-19T14:23:33Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":5,"waterSeconds":0,"airSeconds":11,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (219465) app_fsm: bo qua nut 2: bam lai sau 363 ms (< 1000 ms)[0m
+[0;32mI (219841) app_fsm: bo qua nut 2: bam lai sau 739 ms (< 1000 ms)[0m
+[0;32mI (220189) audio: phat: "Xịt khô."[0m
+[0;32mI (220198) cloud: -> {"type":"Meter","packageId":"61f9f3b1-c23c-4030-9b4c-73e90c94e5e3","timestamp":"2026-10-19T14:23:35Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":5,"waterSeconds":0,"airSeconds":11,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (220426) app_fsm: bo qua nut 2: bam lai sau 237 ms (< 1000 ms)[0m
+[0;32mI (220627) app_fsm: bo qua nut 2: bam lai sau 438 ms (< 1000 ms)[0m
+[0;32mI (220789) app_fsm: bo qua nut 2: bam lai sau 600 ms (< 1000 ms)[0m
+[0;32mI (220992) app_fsm: bo qua nut 2: bam lai sau 803 ms (< 1000 ms)[0m
+[0;32mI (221120) app_fsm: bo qua nut 2: bam lai sau 931 ms (< 1000 ms)[0m
+[0;32mI (221295) audio: phat: "Tạm dừng."[0m
+[0;32mI (221304) cloud: -> {"type":"Meter","packageId":"229db3b5-e1ba-43cd-88f4-da185e61a1ec","timestamp":"2026-10-19T14:23:36Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":5,"waterSeconds":0,"airSeconds":12,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (221458) app_fsm: bo qua nut 2: bam lai sau 163 ms (< 1000 ms)[0m
+[0;32mI (221614) app_fsm: bo qua nut 2: bam lai sau 319 ms (< 1000 ms)[0m
+[0;32mI (221792) app_fsm: bo qua nut 2: bam lai sau 497 ms (< 1000 ms)[0m
+[0;32mI (221937) app_fsm: bo qua nut 2: bam lai sau 642 ms (< 1000 ms)[0m
+[0;32mI (222110) app_fsm: bo qua nut 2: bam lai sau 815 ms (< 1000 ms)[0m
+[0;32mI (222255) app_fsm: bo qua nut 2: bam lai sau 960 ms (< 1000 ms)[0m
+[0;32mI (222421) audio: phat: "Xịt khô."[0m
+[0;32mI (222430) cloud: -> {"type":"Meter","packageId":"e8075cc5-c2e6-4376-b073-ee216c7a52a2","timestamp":"2026-10-19T14:23:37Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":5,"waterSeconds":0,"airSeconds":12,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (222711) app_fsm: bo qua nut 2: bam lai sau 290 ms (< 1000 ms)[0m
+[0;32mI (222891) app_fsm: bo qua nut 2: bam lai sau 470 ms (< 1000 ms)[0m
+[0;32mI (223033) app_fsm: bo qua nut 2: bam lai sau 612 ms (< 1000 ms)[0m
+[0;32mI (223206) app_fsm: bo qua nut 2: bam lai sau 785 ms (< 1000 ms)[0m
+[0;32mI (223349) app_fsm: bo qua nut 2: bam lai sau 928 ms (< 1000 ms)[0m
+[0;32mI (223515) audio: phat: "Tạm dừng."[0m
+[0;32mI (223524) cloud: -> {"type":"Meter","packageId":"8ae2b44b-e9b9-4aad-b031-f99933fb307d","timestamp":"2026-10-19T14:23:38Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":5,"waterSeconds":0,"airSeconds":13,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (223709) app_fsm: bo qua nut 2: bam lai sau 194 ms (< 1000 ms)[0m
+[0;32mI (225604) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (225605) uart: queue free spaces: 30[0m
+[0;32mI (225616) net_gsm: Signal quality OK: rssi=21 ber=99[0m
+[0;32mI (227643) audio: phat: "Phun nước."[0m
+[0;32mI (227652) cloud: -> {"type":"Meter","packageId":"3e9ad4b6-c78d-44e3-b1a8-29549158d7f6","timestamp":"2026-10-19T14:23:42Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":5,"waterSeconds":0,"airSeconds":13,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;33mW (227654) audio: thieu file /audio/water_on.wav[0m
+[0;32mI (230833) audio: phat: "Phun bọt."[0m
+[0;32mI (231085) cloud: -> {"type":"Meter","packageId":"48fc6560-130e-4acb-a819-ca3329a05cb0","timestamp":"2026-10-19T14:23:45Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":5,"waterSeconds":3,"airSeconds":13,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;33mW (231735) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (233855) audio: phat: "Tạm dừng."[0m
+[0;32mI (233864) cloud: -> {"type":"Meter","packageId":"a991c410-e960-48bb-bd75-bd894e245fad","timestamp":"2026-10-19T14:23:48Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":8,"waterSeconds":3,"airSeconds":13,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (233950) audio: phat: "Phun nước."[0m
+[0;33mW (233961) audio: thieu file /audio/water_on.wav[0m
+[0;32mI (234095) cloud: -> {"type":"Meter","packageId":"9c5ef061-676e-4245-bbd5-82e08701d326","timestamp":"2026-10-19T14:23:48Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":8,"waterSeconds":3,"airSeconds":13,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (237149) audio: phat: "Xịt khô."[0m
+[0;32mI (237390) cloud: -> {"type":"Meter","packageId":"c255c2ef-679a-468b-81a7-f203c9e93a7a","timestamp":"2026-10-19T14:23:52Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":8,"waterSeconds":6,"airSeconds":13,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (237682) audio: phat: "Phun bọt."[0m
+[0;32mI (237896) cloud: -> {"type":"Meter","packageId":"41dac647-c9b3-409b-84d0-2a21b1b2caad","timestamp":"2026-10-19T14:23:52Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":8,"waterSeconds":6,"airSeconds":13,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (238981) audio: phat: "Phun nước."[0m
+[0;33mW (238992) audio: thieu file /audio/water_on.wav[0m
+[0;32mI (239196) cloud: -> {"type":"Meter","packageId":"86fc92b7-e847-43e2-be3d-347870e650c0","timestamp":"2026-10-19T14:23:53Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":9,"waterSeconds":6,"airSeconds":13,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (239258) audio: phat: "Phun bọt."[0m
+[0;32mI (239496) cloud: -> {"type":"Meter","packageId":"b87e0581-14ac-4f7a-a598-8787b4381717","timestamp":"2026-10-19T14:23:54Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":9,"waterSeconds":6,"airSeconds":13,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (239600) audio: phat: "Xịt khô."[0m
+[0;32mI (239797) cloud: -> {"type":"Meter","packageId":"e32dcc4f-6176-41d9-b755-c6a514ed9486","timestamp":"2026-10-19T14:23:54Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":9,"waterSeconds":6,"airSeconds":13,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (239853) app_fsm: bo qua nut 0: bam lai sau 594 ms (< 1000 ms)[0m
+[0;32mI (240242) audio: phat: "Phun nước."[0m
+[0;33mW (240253) audio: thieu file /audio/water_on.wav[0m
+[0;32mI (240496) cloud: -> {"type":"Meter","packageId":"3d497f07-6bd7-42f7-b699-1b375f33622e","timestamp":"2026-10-19T14:23:55Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":9,"waterSeconds":6,"airSeconds":13,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (240586) audio: phat: "Phun bọt."[0m
+[0;32mI (240800) cloud: -> {"type":"Meter","packageId":"16f33bc4-819c-49ad-919f-df1542db7f6e","timestamp":"2026-10-19T14:23:55Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":9,"waterSeconds":6,"airSeconds":13,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (240895) audio: phat: "Xịt khô."[0m
+[0;32mI (241104) cloud: -> {"type":"Meter","packageId":"b04c8d90-3bfe-4b58-ba65-e29ee9c7584b","timestamp":"2026-10-19T14:23:55Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":9,"waterSeconds":6,"airSeconds":13,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (241326) app_fsm: bo qua nut 0: bam lai sau 740 ms (< 1000 ms)[0m
+[0;32mI (241653) audio: phat: "Phun nước."[0m
+[0;33mW (241665) audio: thieu file /audio/water_on.wav[0m
+[0;32mI (241900) cloud: -> {"type":"Meter","packageId":"c75bf147-057f-4432-a2be-6e6619db60df","timestamp":"2026-10-19T14:23:56Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":9,"waterSeconds":6,"airSeconds":14,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (242038) audio: phat: "Phun bọt."[0m
+[0;32mI (242300) cloud: -> {"type":"Meter","packageId":"2abe3dd9-0f5a-4d71-bc37-dc1370ef27db","timestamp":"2026-10-19T14:23:57Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":9,"waterSeconds":6,"airSeconds":14,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (242365) audio: phat: "Xịt khô."[0m
+[0;32mI (242660) cloud: -> {"type":"Meter","packageId":"542c1e5e-7b5f-46b2-8887-90cf574f47ca","timestamp":"2026-10-19T14:23:57Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":9,"waterSeconds":6,"airSeconds":14,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (242715) app_fsm: bo qua nut 0: bam lai sau 677 ms (< 1000 ms)[0m
+[0;32mI (242884) audio: phat: "Phun nước."[0m
+[0;33mW (242895) audio: thieu file /audio/water_on.wav[0m
+[0;32mI (243027) app_fsm: bo qua nut 0: bam lai sau 989 ms (< 1000 ms)[0m
+[0;32mI (243126) cloud: -> {"type":"Meter","packageId":"26ae34de-de50-4c3a-82ad-b4cb52ea7e5e","timestamp":"2026-10-19T14:23:57Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":9,"waterSeconds":6,"airSeconds":14,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (243735) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (243735) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (243735) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (244350) audio: phat: "Phun bọt."[0m
+[0;32mI (244630) audio: phat: "Phun nước."[0m
+[0;33mW (244641) audio: thieu file /audio/water_on.wav[0m
+[0;32mI (244739) cloud: -> {"type":"Meter","packageId":"e2f0cc50-a51e-48fc-9a22-6ca380e31d35","timestamp":"2026-10-19T14:23:59Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":9,"waterSeconds":7,"airSeconds":14,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (244954) app_fsm: bo qua nut 0: bam lai sau 604 ms (< 1000 ms)[0m
+[0;32mI (245239) app_fsm: bo qua nut 1: bam lai sau 630 ms (< 1000 ms)[0m
+[0;32mI (246342) audio: phat: "Tạm dừng."[0m
+[0;32mI (246351) cloud: -> {"type":"Meter","packageId":"49788349-1360-48e9-a8f1-3fdba7a0907b","timestamp":"2026-10-19T14:24:01Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":9,"waterSeconds":9,"airSeconds":14,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (247167) audio: phat: "Phun bọt."[0m
+[0;32mI (247176) cloud: -> {"type":"Meter","packageId":"eb868d62-2802-43cd-938b-1685c645cfd6","timestamp":"2026-10-19T14:24:01Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":9,"waterSeconds":9,"airSeconds":14,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (248029) audio: phat: "Xịt khô."[0m
+[0;32mI (248303) cloud: -> {"type":"Meter","packageId":"8346964c-6382-42cf-8e54-a4a0faeeb234","timestamp":"2026-10-19T14:24:03Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":10,"waterSeconds":9,"airSeconds":14,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (248697) audio: phat: "Phun nước."[0m
+[0;33mW (248708) audio: thieu file /audio/water_on.wav[0m
+[0;32mI (249004) cloud: -> {"type":"Meter","packageId":"f46ae010-9e53-41cc-8b45-859fb1fb8d14","timestamp":"2026-10-19T14:24:03Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":10,"waterSeconds":9,"airSeconds":14,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (249286) audio: phat: "Phun bọt."[0m
+[0;32mI (249506) cloud: -> {"type":"Meter","packageId":"d371a8d1-9b6f-400c-b596-459656075281","timestamp":"2026-10-19T14:24:04Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":10,"waterSeconds":9,"airSeconds":14,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (249827) audio: phat: "Xịt khô."[0m
+[0;32mI (250104) cloud: -> {"type":"Meter","packageId":"63e9dc1b-86b7-4d68-9273-e756558f65f0","timestamp":"2026-10-19T14:24:04Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":10,"waterSeconds":9,"airSeconds":14,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (250658) audio: phat: "Phun bọt."[0m
+[0;32mI (250904) cloud: -> {"type":"Meter","packageId":"197edb52-9cc1-4c50-a3d7-952943db1084","timestamp":"2026-10-19T14:24:05Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":10,"waterSeconds":9,"airSeconds":15,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (251157) audio: phat: "Phun nước."[0m
+[0;33mW (251169) audio: thieu file /audio/water_on.wav[0m
+[0;32mI (251404) cloud: -> {"type":"Meter","packageId":"b6b35d37-c376-4235-b986-23471a13fbaf","timestamp":"2026-10-19T14:24:06Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":10,"waterSeconds":9,"airSeconds":15,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (251766) audio: phat: "Xịt khô."[0m
+[0;32mI (252004) cloud: -> {"type":"Meter","packageId":"5e6a4a75-d598-438b-b667-e41978ced03d","timestamp":"2026-10-19T14:24:06Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":10,"waterSeconds":9,"airSeconds":15,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (252344) audio: phat: "Phun bọt."[0m
+[0;32mI (252664) cloud: -> {"type":"Meter","packageId":"92c2b4d2-db8f-4988-b58f-98ebdfcbd878","timestamp":"2026-10-19T14:24:07Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":10,"waterSeconds":9,"airSeconds":15,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (252976) audio: phat: "Phun nước."[0m
+[0;33mW (252987) audio: thieu file /audio/water_on.wav[0m
+[0;32mI (253209) cloud: -> {"type":"Meter","packageId":"42890f62-a39c-4a1d-95d8-12333c2ca69b","timestamp":"2026-10-19T14:24:08Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":11,"waterSeconds":9,"airSeconds":15,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (253658) audio: phat: "Xịt khô."[0m
+[0;32mI (253905) cloud: -> {"type":"Meter","packageId":"e44259b8-4ea5-4cd4-86b0-c5a60b0bc782","timestamp":"2026-10-19T14:24:08Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":11,"waterSeconds":10,"airSeconds":15,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (254174) audio: phat: "Phun bọt."[0m
+[0;32mI (254405) cloud: -> {"type":"Meter","packageId":"794c5617-9254-4f99-9448-84bf368ec316","timestamp":"2026-10-19T14:24:09Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":11,"waterSeconds":10,"airSeconds":15,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (254754) net_gsm: pulse reset[0m
+[0;32mI (255505) audio: phat: "Phun nước."[0m
+[0;33mW (255516) audio: thieu file /audio/water_on.wav[0m
+[0;32mI (255805) cloud: -> {"type":"Meter","packageId":"030872f6-11a0-40b1-b1a3-2f0e2d38c6a2","timestamp":"2026-10-19T14:24:10Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":12,"waterSeconds":10,"airSeconds":15,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (256306) audio: phat: "Xịt khô."[0m
+[0;32mI (256664) cloud: -> {"type":"Meter","packageId":"51f59c9b-b8e7-4585-95a4-989cd2aaca4a","timestamp":"2026-10-19T14:24:11Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":12,"waterSeconds":10,"airSeconds":15,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (262254) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (262255) uart: queue free spaces: 30[0m
+[0;32mI (262266) net_gsm: Signal quality OK: rssi=20 ber=99[0m
+[0;33mW (268375) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (276701) cloud: -> {"type":"Meter","packageId":"63e3c956-4fec-4c16-a053-1e8678a38c2a","timestamp":"2026-10-19T14:24:31Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":12,"waterSeconds":10,"airSeconds":36,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (280376) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (280376) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (280376) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (291381) net_gsm: pulse reset[0m
+[0;32mI (296702) cloud: -> {"type":"Meter","packageId":"5759456f-5d1b-47d0-a449-ad2735b59333","timestamp":"2026-10-19T14:24:51Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":12,"waterSeconds":10,"airSeconds":56,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (298881) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (298882) uart: queue free spaces: 30[0m
+[0;32mI (298889) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (305008) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (305462) audio: phat: "Phun bọt."[0m
+[0;32mI (305708) cloud: -> {"type":"Meter","packageId":"4193e624-a0d5-4b3c-aa61-17748dd01791","timestamp":"2026-10-19T14:25:00Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":12,"waterSeconds":10,"airSeconds":64,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (306837) audio: phat: "Xịt khô."[0m
+[0;32mI (307107) cloud: -> {"type":"Meter","packageId":"4b4bc894-a3e7-4e9c-8d9d-1720704842c2","timestamp":"2026-10-19T14:25:01Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":13,"waterSeconds":10,"airSeconds":64,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (308391) audio: phat: "Phun nước."[0m
+[0;33mW (308402) audio: thieu file /audio/water_on.wav[0m
+[0;32mI (308613) cloud: -> {"type":"Meter","packageId":"5b7d8237-2c0c-4dfc-9618-9f8e8e1496ad","timestamp":"2026-10-19T14:25:03Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":13,"waterSeconds":10,"airSeconds":65,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (9241) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (9242) uart: queue free spaces: 30[0m
+[0;32mI (9847) cloud: da ket noi broker[0m
+[0;32mI (9851) cloud: -> {"type":"Boot","packageId":"39dfa20d-51ae-4455-ae87-c8e42c8469ed","timestamp":"1970-01-01T00:00:08Z","payload":{"mac":"80456b281774","firmwareVersion":"V1.0.0","hardwareVersion":"V1.0","operationMode":"SPEED"}}[0m
+[0;32mI (9862) cloud: -> {"type":"Meter","packageId":"b5b74ee5-5045-40d0-9dda-7ca0382f5d6e","timestamp":"1970-01-01T00:00:08Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":13,"waterSeconds":24,"airSeconds":65,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;33mW (9892) app_fsm: server DA KET NOI (trang thai WASHING)[0m
+[0;32mI (10271) net_gsm: Signal quality OK: rssi=22 ber=99[0m
+[0;33mW (16375) net_gsm: PPP handshake timeout -> restart modem, cho 5000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (17106) ntp_time: SNTP dong bo thanh cong: 2026-10-19 21:25:46[0m
+[0;32mI (17108) ntp_time: Da ghi gio he thong xuong RTC[0m
+[0;32mI (21235) display: touch nghi ngo: adc x=664 y=1143 luc=1497 (mau 1/2)[0m
+[0;32mI (21271) display: cam ung: nhan duoc cham dau tien tai x=244 y=200 (luc 2066)[0m
+[0;32mI (21271) display: touch adc x=658 y=1117 luc=2066 -> man hinh x=244 y=200[0m
+[0;32mI (21304) display: touch adc x=660 y=1122 luc=2232 -> man hinh x=243 y=200[0m
+[0;32mI (21338) display: touch adc x=640 y=1124 luc=2252 -> man hinh x=243 y=201[0m
+[0;32mI (21374) display: touch adc x=629 y=1131 luc=2238 -> man hinh x=243 y=202[0m
+[0;32mI (21408) display: touch adc x=653 y=1114 luc=2008 -> man hinh x=244 y=201[0m
+[0;32mI (21509) audio: phat: "Tiếp tục rửa xe."[0m
+[0;32mI (21511) cloud: -> {"type":"Meter","packageId":"a808e141-063d-481a-992a-545c20722a75","timestamp":"2026-10-19T14:25:51Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":13,"waterSeconds":24,"airSeconds":65,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;33mW (21521) audio: thieu file /audio/resume.wav[0m
+[0;32mI (21534) app_fsm: khach tiep tuc phien 306, con 103s[0m
+[0;32mI (27231) audio: phat: "Xịt khô."[0m
+[0;32mI (27240) cloud: -> {"type":"Meter","packageId":"92e7d696-fefd-4d14-8ec0-0d99d46e0759","timestamp":"2026-10-19T14:25:57Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":13,"waterSeconds":24,"airSeconds":65,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (28375) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (28375) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (28375) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (30819) audio: phat: "Tạm dừng."[0m
+[0;32mI (30828) cloud: -> {"type":"Meter","packageId":"47cdafc0-439f-4878-bffd-dab6a9a18a0a","timestamp":"2026-10-19T14:26:00Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":13,"waterSeconds":24,"airSeconds":69,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (34380) net_gsm: pulse reset[0m
+[0;32mI (35899) audio: phat: "Phun bọt."[0m
+[0;32mI (35908) cloud: -> {"type":"Meter","packageId":"a07d262b-707b-43e8-a332-8d88b744f06a","timestamp":"2026-10-19T14:26:05Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":13,"waterSeconds":24,"airSeconds":69,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (39821) audio: phat: "Tạm dừng."[0m
+[0;32mI (39830) cloud: -> {"type":"Meter","packageId":"b4c16e77-ab22-492a-8699-84f4f4ce3025","timestamp":"2026-10-19T14:26:09Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":17,"waterSeconds":24,"airSeconds":69,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (41880) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (41881) uart: queue free spaces: 30[0m
+[0;32mI (42069) audio: phat: "Phun nước."[0m
+[0;32mI (42078) cloud: -> {"type":"Meter","packageId":"240a0823-5b93-4957-b366-9be15157e8e7","timestamp":"2026-10-19T14:26:11Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":17,"waterSeconds":24,"airSeconds":69,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;33mW (42080) audio: thieu file /audio/water_on.wav[0m
+[0;32mI (42911) net_gsm: Signal quality OK: rssi=19 ber=99[0m
+[0;33mW (49036) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (61036) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (61036) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (61036) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (61236) audio: phat: "Xịt khô."[0m
+[0;32mI (61468) cloud: -> {"type":"Meter","packageId":"9428a089-4d98-40f1-8824-e920440883f8","timestamp":"2026-10-19T14:26:31Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":17,"waterSeconds":43,"airSeconds":69,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (64362) audio: phat: "Thời gian sử dụng còn một phút."[0m
+[0;32mI (72041) net_gsm: pulse reset[0m
+[0;32mI (79541) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (79542) uart: queue free spaces: 30[0m
+[0;32mI (79553) net_gsm: Signal quality OK: rssi=16 ber=99[0m
+[0;32mI (81564) cloud: -> {"type":"Meter","packageId":"9d517f84-bc10-4106-81b1-6db8fe5a26e4","timestamp":"2026-10-19T14:26:51Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":306,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":17,"waterSeconds":43,"airSeconds":89,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;33mW (85672) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (94363) app_fsm: ket thuc phien 306 (kich ban 1, ly do 2): da tru bot 51s nuoc 43s kho 204s (bom thuc 17s/43s/102s), con 0s su dung, 395s do xe[0m
+[0;32mI (94386) cloud: -> [luu 0] {"type":"Meter","packageId":"353ed9ba-92df-46d0-9408-a2840fc3c468","timestamp":"2026-10-19T14:27:04Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"NORMAL","transactionId":306,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"reason":"NORMAL_FINISHED","foamSeconds":17,"waterSeconds":43,"airSeconds":102,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (94417) app_fsm: WASHING -> FINISHED[0m
+[0;32mI (94434) audio: phat: "Đã hết thời gian rửa xe. Cảm ơn quý khách, hẹn gặp lại."[0m
+[0;32mI (94736) cloud: server da nhan ban tin [0], con 0 cho gui[0m
+[0;32mI (97672) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (97672) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (97672) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (99463) app_fsm: FINISHED -> IDLE[0m
+[0;32mI (108677) net_gsm: pulse reset[0m
+[0;32mI (116177) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (116178) uart: queue free spaces: 30[0m
+[0;32mI (116189) net_gsm: Signal quality OK: rssi=18 ber=99[0m
+[0;33mW (122308) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (134308) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (134308) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (134308) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (145313) net_gsm: pulse reset[0m
+[0;32mI (152813) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (152814) uart: queue free spaces: 30[0m
+[0;32mI (152825) net_gsm: Signal quality OK: rssi=16 ber=99[0m
+[0;33mW (158939) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (170939) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (170939) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (170939) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (181944) net_gsm: pulse reset[0m
+[0;32mI (189444) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (189445) uart: queue free spaces: 30[0m
+[0;32mI (189455) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;32mI (195045) display: touch nghi ngo: adc x=944 y=1221 luc=1916 (mau 1/2)[0m
+[0;32mI (195080) display: touch adc x=937 y=1224 luc=2073 -> man hinh x=235 y=183[0m
+[0;32mI (195116) display: touch adc x=905 y=1248 luc=1450 -> man hinh x=232 y=185[0m
+[0;32mI (195189) app_fsm: IDLE -> SELECT[0m
+[0;33mW (195575) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (196591) display: touch nghi ngo: adc x=1036 y=1211 luc=1545 (mau 1/2)[0m
+[0;32mI (196625) display: touch adc x=1101 y=1216 luc=1426 -> man hinh x=235 y=173[0m
+[0;32mI (196658) display: touch adc x=1120 y=1132 luc=2016 -> man hinh x=242 y=172[0m
+[0;32mI (196694) display: touch adc x=1105 y=1156 luc=1558 -> man hinh x=240 y=173[0m
+[0;32mI (196729) display: touch adc x=1050 y=1221 luc=945 -> man hinh x=235 y=177[0m
+[0;32mI (196806) app_fsm: tao don 80456B281774-1792420126-0028: Gói 20 phút 20 phut 40000 d[0m
+[0;32mI (196807) app_fsm: SELECT -> CREATING_QR[0m
+[0;32mI (196813) cloud: -> {"type":"InitTransaction","packageId":"a3923997-8d78-4729-9f3f-af3398e7d1e7","timestamp":"2026-10-19T14:28:46Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"packageDuration":1200,"price":40000}}[0m
+[0;32mI (202362) cloud: <- carwash/v1/80456b281774/down: {[0m
+  "type": "ShowPaymentCode",
+  "packageId": "demo-qr-302",
+  "timestamp": "2026-10-19T14:22:00Z",
+  "payload": {
+    "bayMAC": "80456b281774",
+    "bayNumber": 1,
+    "code": "DEMO-QR-302",
+    "transactionId": 307,
+    "expireAt": "2026-10-19T14:50:00Z"
+  }
+}
+[0;32mI (202381) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (202409) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[0;32mI (207576) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (207576) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (207576) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (213969) app_fsm: den TAT (troi toi)[0m
+[0;32mI (218581) net_gsm: pulse reset[0m
+[0;32mI (226081) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (226082) uart: queue free spaces: 30[0m
+[0;32mI (227618) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;32mI (233697) cloud: <- carwash/v1/80456b281774/down: {[0m
+  "type": "StartTransaction",
+  "packageId": "demo-start-302",
+  "timestamp": "2026-10-19T06:48:00Z",
+  "payload": {
+    "bayMAC": "80456b281774",
+    "bayNumber": 1,
+    "transactionId": 307,
+    "packageDuration": 300
+  }
+}
+[0;32mI (233713) app_fsm: don 307 da thanh toan[0m
+[0;32mI (233722) cloud: -> {"type":"Meter","packageId":"678a53cc-980e-4ac7-bfcb-f7205a2efa22","timestamp":"2026-10-19T14:29:23Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":307,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":0,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;33mW (233742) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (233747) app_fsm: WAIT_PAYMENT -> PAID[0m
+[0;32mI (233767) audio: phat: "Thanh toán thành công. Cảm ơn quý khách."[0m
+[0;32mI (233969) app_fsm: den BAT (troi toi)[0m
+[0;32mI (236769) app_fsm: PAID -> WASHING[0m
+[0;32mI (236792) audio: phat: "Bắt đầu rửa xe. Nhấn nút bọt, nước hoặc xịt khô để sử dụng."[0m
+[0;33mW (236803) audio: thieu file /audio/wash_guide.wav[0m
+[0;32mI (245757) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (245757) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (245757) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (251583) audio: phat: "Phun bọt."[0m
+[0;32mI (251593) cloud: -> {"type":"Meter","packageId":"f3f53509-5562-4842-ac6c-9086a3c57c13","timestamp":"2026-10-19T14:29:41Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":307,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":0,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (253332) audio: phat: "Tạm dừng."[0m
+[0;32mI (253341) cloud: -> {"type":"Meter","packageId":"33d4e934-7447-4fc8-921e-737fdbef84e5","timestamp":"2026-10-19T14:29:43Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":307,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":1,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (255595) audio: phat: "Xịt khô."[0m
+[0;32mI (255604) cloud: -> {"type":"Meter","packageId":"4f801b80-415d-42ef-a51a-a568fcefeced","timestamp":"2026-10-19T14:29:45Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":307,"foamOn":false,"waterOn":false,"airOn":true,"vacuumOn":false,"foamSeconds":1,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (256727) audio: phat: "Tạm dừng."[0m
+[0;32mI (256736) cloud: -> {"type":"Meter","packageId":"ddb23d29-57a5-4a9b-8510-f6da580f4dc3","timestamp":"2026-10-19T14:29:46Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":307,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":1,"waterSeconds":0,"airSeconds":1,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (256762) net_gsm: pulse reset[0m
+[0;32mI (257832) audio: phat: "Phun nước."[0m
+[0;32mI (257841) cloud: -> {"type":"Meter","packageId":"642b2154-040e-4609-8586-ec0cbf0c5c09","timestamp":"2026-10-19T14:29:47Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":307,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":1,"waterSeconds":0,"airSeconds":1,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;33mW (257843) audio: thieu file /audio/water_on.wav[0m
+[0;32mI (264262) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (264263) uart: queue free spaces: 30[0m
+[0;32mI (264274) net_gsm: Signal quality OK: rssi=16 ber=99[0m
+[0;33mW (270393) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (277875) cloud: -> {"type":"Meter","packageId":"46455134-96fd-4a48-82c4-03885b591190","timestamp":"2026-10-19T14:30:07Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":307,"foamOn":false,"waterOn":true,"airOn":false,"vacuumOn":false,"foamSeconds":1,"waterSeconds":20,"airSeconds":1,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (282393) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (282393) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (282393) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (9239) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (9240) uart: queue free spaces: 30[0m
+[0;32mI (9250) net_gsm: Signal quality OK: rssi=21 ber=99[0m
+[0;32mI (9940) cloud: da ket noi broker[0m
+[0;32mI (9944) cloud: -> {"type":"Boot","packageId":"c1e5e152-f3da-411a-9fde-86901c5d232d","timestamp":"1970-01-01T00:00:09Z","payload":{"mac":"80456b281774","firmwareVersion":"V1.0.0","hardwareVersion":"V1.0","operationMode":"SPEED"}}[0m
+[0;32mI (9955) cloud: -> {"type":"Meter","packageId":"edc3d634-b2b6-4fb7-8481-a5a800692d89","timestamp":"1970-01-01T00:00:09Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":307,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":1,"waterSeconds":32,"airSeconds":1,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;33mW (9985) app_fsm: server DA KET NOI (trang thai WASHING)[0m
+[0;33mW (15360) net_gsm: PPP handshake timeout -> restart modem, cho 5000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (17629) ntp_time: SNTP dong bo thanh cong: 2026-10-19 21:30:53[0m
+[0;32mI (17630) ntp_time: Da ghi gio he thong xuong RTC[0m
+[0;32mI (21897) cloud: -> {"type":"Meter","packageId":"4c3ca424-b76d-4e69-beb7-66519ecd2c7c","timestamp":"2026-10-19T14:30:58Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"WASHING","transactionId":307,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":1,"waterSeconds":32,"airSeconds":1,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (27360) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (27360) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (27360) esp_modem_netif: PPP state changed event 5[0m
+[0;33mW (31993) app_fsm: khong ai tra loi man hoi tiep tuc sau 30s -> tu ket thuc phien 307, con 260s[0m
+[0;32mI (31993) app_fsm: ket thuc phien 307 (kich ban 1, ly do 4): da tru bot 5s nuoc 32s kho 2s (bom thuc 1s/32s/1s), con 260s su dung, 546s do xe[0m
+[0;32mI (32025) cloud: -> [luu 0] {"type":"Meter","packageId":"0ca4ab55-e9b4-4af0-abc8-5ea1243507f4","timestamp":"2026-10-19T14:31:08Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"NORMAL","transactionId":307,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"reason":"USER_STOP","foamSeconds":1,"waterSeconds":32,"airSeconds":1,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (32055) app_fsm: WASHING -> FINISHED[0m
+[0;32mI (32071) audio: phat: "Đã kết thúc phiên rửa xe. Cảm ơn quý khách, hẹn gặp lại."[0m
+[0;32mI (32542) cloud: server da nhan ban tin [0], con 0 cho gui[0m
+[0;32mI (33365) net_gsm: pulse reset[0m
+[0;32mI (37093) app_fsm: FINISHED -> IDLE[0m
+[0;32mI (40865) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (40866) uart: queue free spaces: 30[0m
+[0;32mI (40877) net_gsm: Signal quality OK: rssi=16 ber=99[0m
+[0;33mW (46987) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (58987) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (58987) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (58987) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (69992) net_gsm: pulse reset[0m
+[0;32mI (77492) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (77493) uart: queue free spaces: 30[0m
+[0;32mI (77504) net_gsm: Signal quality OK: rssi=15 ber=99[0m
+[0;33mW (83618) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (95618) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (95618) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (95618) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (106623) net_gsm: pulse reset[0m
+[0;32mI (114123) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (114124) uart: queue free spaces: 30[0m
+[0;32mI (114136) net_gsm: Signal quality OK: rssi=18 ber=99[0m
+[0;33mW (120250) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (132251) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (132251) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (132251) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (143256) net_gsm: pulse reset[0m
+[0;32mI (150756) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (150757) uart: queue free spaces: 30[0m
+[0;32mI (150768) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;32mI (151896) app_fsm: den TAT (troi toi)[0m
+[0;33mW (156877) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (168877) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (168877) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (168877) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (179882) net_gsm: pulse reset[0m
+[0;32mI (187382) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (187383) uart: queue free spaces: 30[0m
+[0;32mI (187393) net_gsm: Signal quality OK: rssi=18 ber=99[0m
+[0;33mW (193508) net_gsm: PPP handshake timeout -> restart modem, cho 10000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (205509) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (205509) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (205509) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (216514) net_gsm: pulse reset[0m
+[0;32mI (877) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (886) cpu_start: Pro cpu start user code[0m
+[0;32mI (886) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (886) app_init: Application information:[0m
+[0;32mI (886) app_init: Project name:     car_washer[0m
+[0;32mI (890) app_init: App version:      1.0.0[0m
+[0;32mI (894) app_init: Compile time:     Oct 14 2026 12:38:17[0m
+[0;32mI (899) app_init: ELF file SHA256:  9840e0da6...[0m
+[0;32mI (903) app_init: ESP-IDF:          v5.5.1-dirty[0m
+[0;32mI (907) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (911) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (915) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (919) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (925) heap_init: At 3FCAA8F8 len 0003EE18 (251 KiB): RAM[0m
+[0;32mI (930) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (935) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (941) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (946) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (953) spi_flash: detected chip: generic[0m
+[0;32mI (956) spi_flash: flash io: dio[0m
+[0;32mI (960) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (966) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (972) main_task: Started on CPU0[0m
+[0;32mI (975) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (983) main_task: Calling app_main()[0m
+[0;32mI (1010) main: led_debug_task running[0m
+[0;32mI (1011) device_id: device_id = 80456B281774[0m
+[0;32mI (1011) main: device_id = 80456B281774[0m
+[0;32mI (1011) i2c_bus: i2c_bus_init OK (port=1 sda=1 scl=2)[0m
+[0;32mI (1017) io_exp: init OK (out=0x38 in=0x39 int=GPIO15)[0m
+[0;32mI (1020) fram: fram_init OK (port=1 sda=1 scl=2 addr=0x50 cap=32768 byte)[0m
+[0;32mI (1027) io_exp: PCF input 0x39 OK[0m
+[0;32mI (1030) rtc_ds3231: DS3231 connected (port=1 sda=1 scl=2)[0m
+[0;33mW (1036) ntp_time: Dong ho he thong chua hop le (vua boot/reset)[0m
+[0;33mW (1042) ntp_time: Gio doc tu RTC khong hop le (co the do nhieu I2C lam sai lech du lieu) -- bo qua, cho SNTP[0m
+[0;33mW (1051) devcfg: khong co / hong cau hinh trong NVS -> dung mac dinh[0m
+[0;32mI (1227) display: doc ID man hinh (0xD3): 00 00 00 00 00[0m
+[0;33mW (1228) display: man hinh khong tra loi: chan SDO/MISO chua noi, hoac chip chua nhan duoc lenh (kiem tra day CS/DC/RST/SCK/SDI va nguon man hinh)[0m
+[0;32mI (1235) ili9341: LCD panel create success, version: 2.1.0[0m
+[0;32mI (1361) LVGL: Starting LVGL task[0m
+[0;33mW (1364) lcd_panel.io.spi: Callback on_color_trans_done was already set and now it was overwritten![0m
+[0;32mI (1421) display: cam ung: dung hieu chinh da luu (swap=1 inv_x=1 inv_y=1 x=241..3931 y=14..3949)[0m
+[0;32mI (1421) display: cam ung XPT2046 OK (doc dinh ky, CS=GPIO21)[0m
+[0;32mI (1424) display: display OK ILI9341 320x240, SPI 15 MHz[0m
+[0;33mW (1433) devcfg: ap dung cau hinh TAM (khong luu NVS)[0m
+[0;33mW (1434) peripheral_test: [DEMO] ep kich ban tinh thoi gian = 1: OK[0m
+[0;32mI (1440) peripheral_test: cam ung da co hieu chinh trong NVS (muon lam lai: dat PT_TOUCH_CALIB = 2)[0m
+[0;32mI (1480) audio: phan vung am thanh: dung 1176/4096 KB[0m
+[0;33mW (1510) audio: thieu 5/21 file am thanh trong assets/audio[0m
+[0;32mI (1511) audio: audio OK (I2S 16000 Hz, BCLK=6 WS=7 DIN=5 SD=4)[0m
+[0;32mI (1511) main: =========== Network init ==========[0m
+[1;31mE (1515) gpio: gpio_install_isr_service(526): GPIO isr service already installed[0m
+[0;33mW (1522) net_ethernet: GPIO ISR handler already installed, bo qua[0m
+[0;32mI (1549) esp_eth.netif.netif_glue: 80:45:6b:28:17:77[0m
+[0;32mI (1550) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+[0;32mI (1550) net_ethernet: net_ethernet_init OK (spi_host=2 cs=9 int=10)[0m
+[0;32mI (1565) net_ethernet: Driver started[0m
+[0;32mI (1566) pp: pp rom version: e7ae62f[0m
+[0;32mI (1566) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1568) wifi:wifi driver task: 3fce1850, prio:23, stack:6656, core=0[0m
+[0;32mI (1582) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (1583) wifi:wifi certification version: v7.0[0m
+[0;32mI (1583) wifi:config NVS flash: enabled[0m
+[0;32mI (1584) wifi:config nano formatting: disabled[0m
+[0;32mI (1588) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1593) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1597) wifi:Init management short buffer num: 32[0m
+[0;32mI (1602) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1606) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1610) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1614) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1618) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1623) wifi_init: rx ba win: 6[0m
+[0;32mI (1625) wifi_init: accept mbox: 6[0m
+[0;32mI (1628) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1631) wifi_init: udp mbox: 6[0m
+[0;32mI (1634) wifi_init: tcp mbox: 6[0m
+[0;32mI (1637) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1640) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1643) wifi_init: tcp mss: 1440[0m
+[0;32mI (1646) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (1650) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1654) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1662) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (1697) wifi:mode : sta (80:45:6b:28:17:74) + softAP (80:45:6b:28:17:75)[0m
+[0;32mI (1698) wifi:enable tsf[0m
+[0;32mI (1700) wifi:Total power save buffer number: 16[0m
+[0;32mI (1701) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1704) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1709) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1712) net_wifi: STA fallback used -> auto-connect[0m
+[0;32mI (1717) net_wifi: AP SSID=XTECH - 281774 IP:192.168.4.1[0m
+[0;32mI (1718) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (1730) net_gsm: net_gsm_init OK (uart=2 tx=47 rx=48 apn=v-internet)[0m
+[0;32mI (1736) net_gsm: pulse reset[0m
+[0;32mI (1736) net_manager: net_manager_init[0m
+[0;32mI (1742) ntp_time: SNTP started[0m
+[1;31mE (1755) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (1755) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (1760) mqtt_client: Error transport connect[0m
+[0;33mW (1764) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (1767) cloud: broker broker.hivemq.com:1883, client carwash-80456b281774, bayMAC 80456b281774, khoang 1[0m
+[0;32mI (1778) main: khoi dong xong[0m
+[0;32mI (1779) main_task: Returned from app_main()[0m
+[0;32mI (1855) app_fsm: BOOT -> OUT_OF_SERVICE[0m
+[0;32mI (2718) net_wifi: STA fallback used -> auto-connect[0m
+[0;32mI (2728) wifi:ap channel adjust o:1,1 n:8,2[0m
+[0;32mI (2728) wifi:new:<8,0>, old:<1,1>, ap:<8,2>, sta:<8,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2729) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2736) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (2747) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (2765) wifi:connected with TP-Link_FF1E, aid = 1, channel 8, BW20, bssid = c0:c9:e3:1b:ff:1e[0m
+[0;32mI (2765) wifi:security: WPA2-PSK, phy: bgn, rssi: -38[0m
+[0;32mI (2769) wifi:pm start, type: 0[0m
+
+[0;32mI (2770) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2778) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (2788) net_manager: WIFI STA CONNECTED[0m
+[0;32mI (2794) wifi:<ba-add>idx:0 (ifx:0, c0:c9:e3:1b:ff:1e), tid:0, ssn:0, winSize:64[0m
+[0;32mI (2864) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (3802) esp_netif_handlers: sta ip: 192.168.0.144, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (3802) net_wifi: Got IP: 192.168.0.144[0m
+[0;32mI (3803) net_manager: WIFI GOT IP: 192.168.0.144[0m
+[0;32mI (3807) net_manager: Switch default interface -> WIFI_STA_DEF[0m
+[0;32mI (5073) wifi:<ba-add>idx:1 (ifx:0, c0:c9:e3:1b:ff:1e), tid:1, ssn:0, winSize:64[0m
+[0;32mI (9238) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (9239) uart: queue free spaces: 30[0m
+[0;32mI (9875) cloud: da ket noi broker[0m
+[0;32mI (9880) cloud: -> {"type":"Boot","packageId":"0336457b-de62-47ef-a732-a1c4b77f1330","timestamp":"1970-01-01T00:00:08Z","payload":{"mac":"80456b281774","firmwareVersion":"V1.0.0","hardwareVersion":"V1.0","operationMode":"SPEED"}}[0m
+[0;32mI (9890) cloud: -> {"type":"Meter","packageId":"ec121112-12eb-47cb-9163-3a2bf8ae0ad2","timestamp":"1970-01-01T00:00:09Z","payload":{"bayMAC":"80456b281774","bayNumber":1,"status":"NORMAL","transactionId":0,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false}}[0m
+[0;33mW (9912) app_fsm: server DA KET NOI (trang thai OUT_OF_SERVICE)[0m
+[0;32mI (9918) app_fsm: OUT_OF_SERVICE -> IDLE[0m
+[0;32mI (20194) ntp_time: SNTP dong bo thanh cong: 2026-10-19 21:36:20[0m
+[0;32mI (20196) ntp_time: Da ghi gio he thong xuong RTC[0m
+[1;31mE (29240) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (30241) net_gsm: Modem/song chua san sang, thu lai sau 5000 ms (fail_count=1)[0m
+[0;32mI (35241) net_gsm: pulse reset[0m
+[0;32mI (42741) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (42742) uart: queue free spaces: 30[0m
+[1;31mE (62743) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (63744) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (73744) net_gsm: pulse reset[0m
+[0;32mI (81244) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (81245) uart: queue free spaces: 30[0m
+[1;31mE (101247) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (102248) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (112248) net_gsm: pulse reset[0m
+[0;32mI (119748) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (119749) uart: queue free spaces: 30[0m
+[1;31mE (139750) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (140751) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (150751) net_gsm: pulse reset[0m
+[0;32mI (158251) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (158252) uart: queue free spaces: 30[0m
+[1;31mE (178253) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (179254) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (189254) net_gsm: pulse reset[0m
+[0;32mI (196754) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (196755) uart: queue free spaces: 30[0m
+[1;31mE (216756) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (217757) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (227757) net_gsm: pulse reset[0m
+[0;32mI (235257) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (235258) uart: queue free spaces: 30[0m
+[1;31mE (255259) net_gsm: Khong bat duoc song sau 20 lan thu[0m

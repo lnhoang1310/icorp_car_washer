@@ -1,0 +1,277 @@
+Removed Member From Class: ClassName=MCU_WASH_MACHINE Member=C15
+Removed Member From Class: ClassName=MCU_WASH_MACHINE Member=C16
+Added Component: Designator=BH1(BATT_HOLDER_COIL12.5MM)
+Add component (AddParameter): Name = "Category"; Value = "Batteries and Accessories"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.octopart.com:443/1056-Keystone-datasheet-15715033.pdf?src-supplier=Future+Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.octopart.com:443/1056-Keystone-datasheet-15715033.pdf?src-supplier=Future+Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.octopart.com:443/1056-Keystone-datasheet-8326175.pdf?src-supplier=Future+Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.octopart.com:443/1056-Keystone-datasheet-8326175.pdf?src-supplier=Future+Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://datasheet.octopart.com:443/1056-Keystone-datasheet-137916583.pdf?src-supplier=LKR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://datasheet.octopart.com:443/1056-Keystone-datasheet-137916583.pdf?src-supplier=LKR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "https://datasheet.octopart.com:443/1056-Keystone-datasheet-137320296.pdf?src-supplier=Sager+Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://datasheet.octopart.com:443/1056-Keystone-datasheet-137320296.pdf?src-supplier=Sager+Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5Description"; Value = "https://datasheet.octopart.com:443/1056-Keystone-datasheet-62112666.pdf?src-supplier=RS+(Formerly+Allied+Electronics)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5URL"; Value = "https://datasheet.octopart.com:443/1056-Keystone-datasheet-62112666.pdf?src-supplier=RS+(Formerly+Allied+Electronics)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6Description"; Value = "https://datasheet.octopart.com:443/1056-Keystone-datasheet-21202752.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6URL"; Value = "https://datasheet.octopart.com:443/1056-Keystone-datasheet-21202752.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink7Description"; Value = "https://datasheet.octopart.com:443/1056-Keystone-datasheet-17577351.pdf?src-supplier=TME"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink7URL"; Value = "https://datasheet.octopart.com:443/1056-Keystone-datasheet-17577351.pdf?src-supplier=TME"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink8Description"; Value = "https://datasheet.octopart.com:443/1056-Keystone-datasheet-176783336.pdf?src-supplier=SOS+electronic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink8URL"; Value = "https://datasheet.octopart.com:443/1056-Keystone-datasheet-176783336.pdf?src-supplier=SOS+electronic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LIBRARY MADE BY"; Value = "MR. XUAN SIEU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lifecycle Status"; Value = "Production"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LINK ORIGINAL"; Value = "https://www.digikey.com/en/products/detail/keystone-electronics/1056/2020198"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LINK VIET NAM"; Value = "https://linhkien.cxtvn.com/1651-de-pin-cr1220-3v-han-dan.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Keystone"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "1056"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "145°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-50°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "PCB, Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Batteries"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Cells"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=1.1, 1000=0.41, 2500=0.38, 5000=0.35 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "79944"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "36-1056-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Added Component: Designator=C30(CAP-CER_0805_L2W1.25H0.6_Wave)
+Add component (AddParameter): Name = "Capacitance"; Value = "22pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Imperial)"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Metric)"; Value = "2012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Ceramic Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/7842/1732694-7842250.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/7842/1732694-7842250.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.ciiva.com/7842/1372242-7842570.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/7842/1372242-7842570.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://datasheet.ciiva.com/7842/1732694-7842251.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://datasheet.ciiva.com/7842/1732694-7842251.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "https://datasheet.ciiva.com/7842/kem-c1003-c0g-smd-7842569.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://datasheet.ciiva.com/7842/kem-c1003-c0g-smd-7842569.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5Description"; Value = "https://datasheet.ciiva.com/28668/1789732-28668761.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5URL"; Value = "https://datasheet.ciiva.com/28668/1789732-28668761.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6Description"; Value = "Link Cross"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6URL"; Value = "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_KEMET-C0805C220J2GACTU_C1620086.html?s_z=n_C0805C220J5GACTU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink7Description"; Value = "Link Viet Nam"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink7URL"; Value = "https://linhkien.cxtvn.com/1061-tu-220-22pf-0805-50v-5-10c.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink8Description"; Value = "Link Original"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink8URL"; Value = "https://www.digikey.com/en/products/detail/kemet/C0805C220J5GACTU/411112"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Construction"; Value = "Flat"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Tin,Matte"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = "1.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "C0G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.78mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LIBRARY MADE BY"; Value = "MR. XUAN SIEU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Cross"; Value = "KEMET"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "C0805C220J5GACTU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Material"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount,PCB"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.1, 10=0.042, 100=0.0243, 1000=0.0194, 4000=0.01203, 8000=0.01082, 12000=0.01022, 20000=0.01004, 28000=0.00958, 40000=0.00932, 100000=0.00858, 200000=0.00772 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Reach SVHC Compliant"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "SMD Comm C0G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "208649"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "399-C0805C220J5GACTUCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "50V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "50V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating (DC)"; Value = "50V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Weight"; Value = "0.000194oz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.25mm"; VariantName = "[No Variations]"
+Added Component: Designator=C31(CAP-CER_0805_L2W1.25H0.6_Wave)
+Add component (AddParameter): Name = "Capacitance"; Value = "22pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Imperial)"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Metric)"; Value = "2012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Ceramic Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/7842/1732694-7842250.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/7842/1732694-7842250.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.ciiva.com/7842/1372242-7842570.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/7842/1372242-7842570.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://datasheet.ciiva.com/7842/1732694-7842251.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://datasheet.ciiva.com/7842/1732694-7842251.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "https://datasheet.ciiva.com/7842/kem-c1003-c0g-smd-7842569.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://datasheet.ciiva.com/7842/kem-c1003-c0g-smd-7842569.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5Description"; Value = "https://datasheet.ciiva.com/28668/1789732-28668761.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5URL"; Value = "https://datasheet.ciiva.com/28668/1789732-28668761.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6Description"; Value = "Link Cross"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6URL"; Value = "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_KEMET-C0805C220J2GACTU_C1620086.html?s_z=n_C0805C220J5GACTU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink7Description"; Value = "Link Viet Nam"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink7URL"; Value = "https://linhkien.cxtvn.com/1061-tu-220-22pf-0805-50v-5-10c.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink8Description"; Value = "Link Original"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink8URL"; Value = "https://www.digikey.com/en/products/detail/kemet/C0805C220J5GACTU/411112"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Construction"; Value = "Flat"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Tin,Matte"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = "1.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "C0G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.78mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LIBRARY MADE BY"; Value = "MR. XUAN SIEU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Cross"; Value = "KEMET"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "C0805C220J5GACTU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Material"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount,PCB"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.1, 10=0.042, 100=0.0243, 1000=0.0194, 4000=0.01203, 8000=0.01082, 12000=0.01022, 20000=0.01004, 28000=0.00958, 40000=0.00932, 100000=0.00858, 200000=0.00772 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Reach SVHC Compliant"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "SMD Comm C0G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "208649"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "399-C0805C220J5GACTUCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "50V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "50V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating (DC)"; Value = "50V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Weight"; Value = "0.000194oz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.25mm"; VariantName = "[No Variations]"
+Added Component: Designator=C32(CAP-CER_0805_L2W1.25H0.6_Wave)
+Add component (AddParameter): Name = "Capacitance"; Value = "22pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Imperial)"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Metric)"; Value = "2012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Ceramic Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/7842/1732694-7842250.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/7842/1732694-7842250.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.ciiva.com/7842/1372242-7842570.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/7842/1372242-7842570.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://datasheet.ciiva.com/7842/1732694-7842251.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://datasheet.ciiva.com/7842/1732694-7842251.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "https://datasheet.ciiva.com/7842/kem-c1003-c0g-smd-7842569.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://datasheet.ciiva.com/7842/kem-c1003-c0g-smd-7842569.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5Description"; Value = "https://datasheet.ciiva.com/28668/1789732-28668761.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5URL"; Value = "https://datasheet.ciiva.com/28668/1789732-28668761.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6Description"; Value = "Link Cross"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6URL"; Value = "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_KEMET-C0805C220J2GACTU_C1620086.html?s_z=n_C0805C220J5GACTU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink7Description"; Value = "Link Viet Nam"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink7URL"; Value = "https://linhkien.cxtvn.com/1061-tu-220-22pf-0805-50v-5-10c.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink8Description"; Value = "Link Original"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink8URL"; Value = "https://www.digikey.com/en/products/detail/kemet/C0805C220J5GACTU/411112"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Construction"; Value = "Flat"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Tin,Matte"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = "1.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "C0G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.78mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LIBRARY MADE BY"; Value = "MR. XUAN SIEU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Cross"; Value = "KEMET"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "C0805C220J5GACTU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Material"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount,PCB"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.1, 10=0.042, 100=0.0243, 1000=0.0194, 4000=0.01203, 8000=0.01082, 12000=0.01022, 20000=0.01004, 28000=0.00958, 40000=0.00932, 100000=0.00858, 200000=0.00772 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Reach SVHC Compliant"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "SMD Comm C0G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "208649"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "399-C0805C220J5GACTUCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "50V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "50V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating (DC)"; Value = "50V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Weight"; Value = "0.000194oz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.25mm"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetBH1_1 Pin=BH1-1
+Added Pin To Net: NetName=GND Pin=BH1-2
+Added Pin To Net: NetName=NetC30_1 Pin=C30-1
+Added Pin To Net: NetName=GND Pin=C30-2
+Added Pin To Net: NetName=NetC31_1 Pin=C31-1
+Added Pin To Net: NetName=GND Pin=C31-2
+Added Pin To Net: NetName=NetC32_1 Pin=C32-1
+Added Pin To Net: NetName=GND Pin=C32-2
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component +4 TP_1MM
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component BH1 CR1220
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C17 10pF/50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C18 33pF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C22 1nF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C25 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C27 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C28 6.8nF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C30 22pF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C31 22pF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C32 22pF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C35 1nF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C41 10uF 16V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C42 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C43 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C44 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C45 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C46 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C53 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C54 10uF 25V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C55 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C56 10uF 25V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C58 220pF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C63 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C65 0.1uF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C68 10uF 25V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C73 1nF 50V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component C80 220uF_16V
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component D8 SMF5.0A
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component D11 Red, 2V, 140°
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component D13 Red, 2V, 140°
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component L6 BLM21PG300SN1D
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component R6 330R 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R17 33R 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R18 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R20 33R 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R24 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R26 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R27 12.1K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R29 22R 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R34 330R 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R36 22R 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R41 4k7 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R43 4k7 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R46 2K2
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R48 47K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R49 1K 0805
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R50 1K 0805
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R53 1K 0805
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R55 4k7 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R58 1K 0805
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R63 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R64 1K 0805
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R65 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R66 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R67 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R69 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R70 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R71 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R72 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R74 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R77 330R 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R79 10K 1%
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component R81 0R 0805
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component U5 MAX98357AETE+T
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component U7 PCF8574AT
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component U8 PCF8574AT

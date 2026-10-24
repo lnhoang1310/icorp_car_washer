@@ -1,0 +1,222 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM19 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\car_washer.elf D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM19'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1658
+load:0x403c8700,len:0xd98
+load:0x403cb700,len:0x33a4
+entry 0x403c899c
+[0;32mI (25) boot: ESP-IDF v5.5.1-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Sep 28 2026 18:07:58[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.4[0m
+[0;32mI (32) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (36) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00080000[0m
+[0;32mI (63) boot:  1 otadata          OTA data         01 00 00089000 00002000[0m
+[0;32mI (70) boot:  2 phy_init         RF data          01 01 0008b000 00001000[0m
+[0;32mI (76) boot:  3 ota_0            OTA app          00 10 00090000 002ee000[0m
+[0;32mI (83) boot:  4 ota_1            OTA app          00 11 00380000 002ee000[0m
+[0;32mI (89) boot:  5 storage          Unknown data     01 82 0066e000 00400000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00090020 vaddr=3c110020 size=49bd8h (302040) map[0m
+[0;32mI (157) esp_image: segment 1: paddr=000d9c00 vaddr=3fc9ee00 size=0531ch ( 21276) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=000def24 vaddr=40374000 size=010f4h (  4340) load[0m
+[0;32mI (162) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=10394ch (1063244) map[0m
+[0;32mI (346) esp_image: segment 4: paddr=001e3974 vaddr=403750f4 size=19c30h (105520) load[0m
+[0;32mI (367) esp_image: segment 5: paddr=001fd5ac vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (377) boot: Loaded app from partition at offset 0x90000[0m
+[0;32mI (377) boot: Disabling RNG early entropy source...[0m
+[0;32mI (387) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (388) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (388) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (390) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (394) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (398) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (402) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (407) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (412) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (417) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (422) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (427) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (431) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (434) esp_psram: Speed: 80MHz[0m
+[0;32mI (437) cpu_start: Multicore app[0m
+[0;32mI (853) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (862) cpu_start: Pro cpu start user code[0m
+[0;32mI (862) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (862) app_init: Application information:[0m
+[0;32mI (862) app_init: Project name:     car_washer[0m
+[0;32mI (866) app_init: App version:      1.0.0[0m
+[0;32mI (870) app_init: Compile time:     Oct  1 2026 17:06:12[0m
+[0;32mI (875) app_init: ELF file SHA256:  6f79be635...[0m
+[0;32mI (879) app_init: ESP-IDF:          v5.5.1-dirty[0m
+[0;32mI (884) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (888) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (892) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (895) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (902) heap_init: At 3FCA9B28 len 0003FBE8 (254 KiB): RAM[0m
+[0;32mI (907) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (912) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (917) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (923) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (930) spi_flash: detected chip: generic[0m
+[0;32mI (933) spi_flash: flash io: dio[0m
+[0;32mI (936) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (942) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (949) main_task: Started on CPU0[0m
+[0;32mI (952) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (960) main_task: Calling app_main()[0m
+[0;32mI (2074) device_id: device_id = 80456B281774[0m
+[0;32mI (2075) main: device_id = 80456B281774[0m
+[0;32mI (2075) i2c_bus: i2c_bus_init OK (port=1 sda=1 scl=2)[0m
+[0;32mI (2077) io_exp: init OK (out=0x38 in=0x39 int=GPIO15)[0m
+[0;32mI (2081) peripheral_test: [0m
+[0;32mI (2083) peripheral_test: ########## BAT DAU TEST NGOAI VI ##########[0m
+[0;32mI (2087) io_exp: PCF input 0x39 OK[0m
+[0;32mI (2092) peripheral_test: ===== TEST FRAM =====[0m
+[0;32mI (2097) fram: fram_init OK (port=1 sda=1 scl=2 addr=0x50 cap=32768 byte)[0m
+[0;32mI (2104) fram: self_test OK[0m
+[0;32mI (2106) peripheral_test: fram_self_test OK[0m
+[0;32mI (2110) peripheral_test: Ghi/doc pattern tai 0x0100 khop -> FRAM (cap=32768 byte): PASS[0m
+[0;32mI (2117) peripheral_test: [0m
+[0;32mI (2120) peripheral_test: ===== TEST DS3231 =====[0m
+[0;33mW (2122) io_exp: DUNG KHAN DA NHA[0m
+[0;32mI (2128) rtc_ds3231: DS3231 connected (port=1 sda=1 scl=2)[0m
+[0;32mI (2133) peripheral_test: DS3231 connected[0m
+[0;33mW (2137) peripheral_test: DS3231 bao mat dien (bit OSF) -- gio hien tai trong chip co the KHONG dang tin cay[0m
+[0;32mI (2147) peripheral_test: Gio dang luu trong RTC: 2000-01-01 00:35:58[0m
+[0;32mI (3354) peripheral_test: Set 2025-01-01 12:00:00 -> doc lai 2025-01-01 12:00:01 (lech 1 giay) -> DS3231: PASS[0m
+[0;32mI (3355) peripheral_test: Da khoi phuc lai gio RTC nhu truoc luc test[0m
+[0;32mI (3359) peripheral_test: [0m
+[0;32mI (3361) peripheral_test: ===== TEST RELAY =====[0m
+[0;33mW (3366) peripheral_test: Bat TAT CA relay 1000 ms / tat 1000 ms, lap co gioi han -- thao bom hoac cat nguon bom truoc khi test![0m
+[0;32mI (3427) peripheral_test: [1] BAT: bot + nuoc + kho + den[0m
+[0;32mI (4427) peripheral_test: [1] TAT[0m
+[0;32mI (5427) peripheral_test: [2] BAT: bot + nuoc + kho + den[0m
+[0;32mI (6427) peripheral_test: [2] TAT[0m
+[0;32mI (7427) peripheral_test: [3] BAT: bot + nuoc + kho + den[0m
+[0;32mI (8427) peripheral_test: [3] TAT[0m
+[0;32mI (9427) peripheral_test: [4] BAT: bot + nuoc + kho + den[0m
+[0;32mI (10427) peripheral_test: [4] TAT[0m
+[0;32mI (11427) peripheral_test: [5] BAT: bot + nuoc + kho + den[0m
+[0;32mI (12427) peripheral_test: [5] TAT[0m
+[0;32mI (13427) peripheral_test: [6] BAT: bot + nuoc + kho + den[0m
+[0;32mI (14427) peripheral_test: [6] TAT[0m
+[0;32mI (15427) peripheral_test: [7] BAT: bot + nuoc + kho + den[0m
+[0;32mI (16427) peripheral_test: [7] TAT[0m
+[0;32mI (17427) peripheral_test: [8] BAT: bot + nuoc + kho + den[0m
+[0;32mI (18427) peripheral_test: [8] TAT[0m
+[0;32mI (19427) peripheral_test: [9] BAT: bot + nuoc + kho + den[0m
+[0;32mI (20427) peripheral_test: [9] TAT[0m
+[0;32mI (21427) peripheral_test: [10] BAT: bot + nuoc + kho + den[0m
+[0;32mI (22427) peripheral_test: [10] TAT[0m
+[0;32mI (23427) peripheral_test: Test relay xong -> PASS (PASS = ESP32 ghi duoc lenh; con relay co dong that hay khong thi nghe/nhin tren bo)[0m
+[0;32mI (23427) peripheral_test: [0m
+[0;32mI (23430) peripheral_test: ########## KET QUA TEST NGOAI VI ##########[0m
+[0;32mI (23436) peripheral_test: FRAM    : PASS[0m
+[0;32mI (23440) peripheral_test: DS3231  : PASS[0m
+[0;32mI (23444) peripheral_test: RELAY   : PASS[0m
+[0;32mI (23447) peripheral_test: ############################################[0m
+[0;33mW (23454) fram: fram_init da goi roi, bo qua[0m
+[0;32mI (23458) rtc_ds3231: DS3231 connected (port=1 sda=1 scl=2)[0m
+[0;33mW (23463) ntp_time: Dong ho he thong chua hop le (vua boot/reset)[0m
+[0;33mW (23470) ntp_time: Gio doc tu RTC khong hop le (co the do nhieu I2C lam sai lech du lieu) -- bo qua, cho SNTP[0m
+[0;33mW (23479) devcfg: khong co / hong cau hinh trong NVS -> dung mac dinh[0m
+[0;32mI (23656) display: doc ID man hinh (0xD3): 00 00 00 00 00[0m
+[0;33mW (23657) display: man hinh khong tra loi: chan SDO/MISO chua noi, hoac chip chua nhan duoc lenh (kiem tra day CS/DC/RST/SCK/SDI va nguon man hinh)[0m
+[0;32mI (23664) ili9488: Configuring for BGR color order[0m
+[0;32mI (23668) ili9488: new ili9488 panel @0x3fcbb898[0m
+[0;32mI (23673) ili9488: Setting GPIO:20 to 0[0m
+[0;32mI (23686) ili9488: Setting GPIO:20 to 1[0m
+[0;32mI (23696) ili9488: Initializing ILI9488[0m
+[0;32mI (23896) ili9488: Initialization complete[0m
+[0;32mI (24080) display: self test: man hinh phai dang mau DO[0m
+[0;32mI (24864) display: self test: man hinh phai dang mau XANH LA[0m
+[0;32mI (25648) display: self test: man hinh phai dang mau XANH DUONG[0m
+[0;32mI (26432) display: self test: man hinh phai dang mau TRANG[0m
+[0;32mI (27216) display: self test: man hinh phai dang mau DEN[0m
+[0;32mI (27916) LVGL: Starting LVGL task[0m
+[1;31mE (27921) gpio: gpio_install_isr_service(526): GPIO isr service already installed[0m
+[0;32mI (28008) display: display OK ILI9488 320x240, SPI 20 MHz[0m
+[0;32mI (28016) audio: phan vung am thanh: dung 8/4096 KB[0m
+[0;33mW (28031) audio: thieu 22/22 file am thanh trong assets/audio[0m
+[0;32mI (28031) audio: audio OK (I2S 16000 Hz, BCLK=6 WS=7 DIN=5 SD=4)[0m
+[1;31mE (28032) gpio: gpio_install_isr_service(526): GPIO isr service already installed[0m
+[0;33mW (28039) net_ethernet: GPIO ISR handler already installed, bo qua[0m
+[0;32mI (28058) esp_eth.netif.netif_glue: 80:45:6b:28:17:77[0m
+[0;32mI (28059) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+[0;32mI (28059) net_ethernet: net_ethernet_init OK (spi_host=2 cs=9 int=10)[0m
+[0;32mI (28074) net_ethernet: Driver started[0m
+[0;32mI (28075) pp: pp rom version: e7ae62f[0m
+[0;32mI (28076) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (28077) wifi:wifi driver task: 3fcd069c, prio:23, stack:6656, core=0[0m
+[0;32mI (28087) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (28088) wifi:wifi certification version: v7.0[0m
+[0;32mI (28090) wifi:config NVS flash: enabled[0m
+[0;32mI (28093) wifi:config nano formatting: disabled[0m
+[0;32mI (28098) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (28103) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (28107) wifi:Init management short buffer num: 32[0m
+[0;32mI (28112) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (28116) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (28120) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (28124) wifi:Init static rx buffer num: 10[0m
+[0;32mI (28128) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (28133) wifi_init: rx ba win: 6[0m
+[0;32mI (28135) wifi_init: accept mbox: 6[0m
+[0;32mI (28138) wifi_init: tcpip mbox: 32[0m
+[0;32mI (28142) wifi_init: udp mbox: 6[0m
+[0;32mI (28145) wifi_init: tcp mbox: 6[0m
+[0;32mI (28148) wifi_init: tcp tx win: 5760[0m
+[0;32mI (28151) wifi_init: tcp rx win: 5760[0m
+[0;32mI (28154) wifi_init: tcp mss: 1440[0m
+[0;32mI (28157) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (28161) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (28165) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (28173) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (28211) wifi:mode : sta (80:45:6b:28:17:74) + softAP (80:45:6b:28:17:75)[0m
+[0;32mI (28212) wifi:enable tsf[0m
+[0;32mI (28214) wifi:Total power save buffer number: 16[0m
+[0;32mI (28214) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (28219) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (28223) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;33mW (28227) net_wifi: Khong co SSID da luu -> chua ket noi duoc[0m
+[0;32mI (28232) net_wifi: Schedule next scan in 10000 ms[0m
+[0;32mI (28237) net_wifi: AP SSID=XTECH - 281774 IP:192.168.4.1[0m
+[0;32mI (28237) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (28250) net_gsm: net_gsm_init OK (uart=2 tx=47 rx=48 apn=v-internet)[0m
+[0;32mI (28256) net_gsm: pulse reset[0m
+[0;32mI (28256) net_manager: net_manager_init[0m
+[0;32mI (28263) ntp_time: SNTP started[0m
+[0;33mW (28265) cloud: chua co giao thuc server -> tram o trang thai tam ngung phuc vu[0m
+[0;32mI (28272) main: khoi dong xong[0m
+[0;32mI (28275) main_task: Returned from app_main()[0m
+[0;32mI (28327) app_fsm: BOOT -> OUT_OF_SERVICE[0m
+[0;32mI (35759) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (35760) uart: queue free spaces: 30[0m
+[0;32mI (36788) net_gsm: Signal quality OK: rssi=20 ber=99[0m
+[0;32mI (38236) net_wifi: Auto scan fired (retry=1)[0m
+[0;32mI (41470) net_wifi: ===== SCAN RESULT (8 APs) =====[0m
+[0;32mI (41470) net_wifi: 1) SSID:TP-Link_FF1E RSSI:-84 CH:13[0m
+[0;32mI (41470) net_wifi: 2) SSID:Hanoi Office RSSI:-91 CH:1[0m
+[0;32mI (41473) net_wifi: 3) SSID:ICORP - P Ky Thuat RSSI:-93 CH:4[0m
+[0;32mI (41479) net_wifi: 4) SSID:ICORP - P Ky Thuat RSSI:-94 CH:4[0m
+[0;32mI (41484) net_wifi: 5) SSID:Hanoi Office RSSI:-95 CH:1[0m
+[0;32mI (41489) net_wifi: 6) SSID:ICORP PKD01 RSSI:-95 CH:10[0m
+[0;32mI (41494) net_wifi: 7) SSID:Hanoi Office RSSI:-96 CH:1[0m
+[0;32mI (41499) net_wifi: 8) SSID:HNO T4 RSSI:-96 CH:1[0m
+[0;33mW (41503) net_wifi: Khong tim thay SSID da luu nao trong ket qua quet[0m
+[0;32mI (41509) net_wifi: Schedule next scan in 30000 ms[0m
+[0;33mW (42902) net_gsm: PPP handshake timeout -> restart modem, cho 5000 ms truoc lan sau (fail_count=1)[0m
+[0;32mI (54902) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (54902) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (54902) esp_modem_netif: PPP state changed event 5[0m

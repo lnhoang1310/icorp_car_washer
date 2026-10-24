@@ -1,0 +1,1424 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM10 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\car_washer.elf D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM10'
+ESP-ROM:esp32s3-20210327
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1658
+load:0x403c8700,len:0xd98
+load:0x403cb700,len:0x33a4
+entry 0x403c899c
+[0;32mI (25) boot: ESP-IDF v5.5.1-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Sep 28 2026 18:07:58[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.4[0m
+[0;32mI (32) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (36) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00080000[0m
+[0;32mI (63) boot:  1 otadata          OTA data         01 00 00089000 00002000[0m
+[0;32mI (70) boot:  2 phy_init         RF data          01 01 0008b000 00001000[0m
+[0;32mI (76) boot:  3 ota_0            OTA app          00 10 00090000 002ee000[0m
+[0;32mI (83) boot:  4 ota_1            OTA app          00 11 00380000 002ee000[0m
+[0;32mI (89) boot:  5 storage          Unknown data     01 82 0066e000 00400000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00090020 vaddr=3c110020 size=49dd0h (302544) map[0m
+[0;32mI (157) esp_image: segment 1: paddr=000d9df8 vaddr=3fc9ec00 size=05334h ( 21300) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=000df134 vaddr=40374000 size=00ee4h (  3812) load[0m
+[0;32mI (162) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=104750h (1066832) map[0m
+[0;32mI (347) esp_image: segment 4: paddr=001e4778 vaddr=40374ee4 size=19cb0h (105648) load[0m
+[0;32mI (368) esp_image: segment 5: paddr=001fe430 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (378) boot: Loaded app from partition at offset 0x90000[0m
+[0;32mI (378) boot: Disabling RNG early entropy source...[0m
+[0;32mI (388) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (388) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (388) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (390) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (395) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (399) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (403) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (408) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (413) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (417) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (423) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (427) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (431) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (435) esp_psram: Speed: 80MHz[0m
+[0;32mI (438) cpu_start: Multicore app[0m
+[0;32mI (854) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (863) cpu_start: Pro cpu start user code[0m
+[0;32mI (863) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (863) app_init: Application information:[0m
+[0;32mI (863) app_init: Project name:     car_washer[0m
+[0;32mI (867) app_init: App version:      1.0.0[0m
+[0;32mI (871) app_init: Compile time:     Oct  2 2026 02:09:03[0m
+[0;32mI (876) app_init: ELF file SHA256:  a3c96990b...[0m
+[0;32mI (880) app_init: ESP-IDF:          v5.5.1-dirty[0m
+[0;32mI (884) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (888) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (892) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (896) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (902) heap_init: At 3FCA99C8 len 0003FD48 (255 KiB): RAM[0m
+[0;32mI (908) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (913) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (918) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (923) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (930) spi_flash: detected chip: generic[0m
+[0;32mI (933) spi_flash: flash io: dio[0m
+[0;32mI (937) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (943) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (950) main_task: Started on CPU0[0m
+[0;32mI (953) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (961) main_task: Calling app_main()[0m
+[0;32mI (1078) main: led_debug_task running[0m
+[0;32mI (1079) device_id: device_id = 80456B281774[0m
+[0;32mI (1079) main: device_id = 80456B281774[0m
+[0;32mI (1080) i2c_bus: i2c_bus_init OK (port=1 sda=1 scl=2)[0m
+[0;32mI (1085) io_exp: init OK (out=0x38 in=0x39 int=GPIO15)[0m
+[0;32mI (1088) peripheral_test: [0m
+[0;32mI (1091) peripheral_test: ########## BAT DAU TEST NGOAI VI ##########[0m
+[0;32mI (1095) io_exp: PCF input 0x39 OK[0m
+[0;32mI (1100) peripheral_test: ===== TEST FRAM =====[0m
+[0;32mI (1104) fram: fram_init OK (port=1 sda=1 scl=2 addr=0x50 cap=32768 byte)[0m
+[0;32mI (1111) fram: self_test OK[0m
+[0;32mI (1113) peripheral_test: fram_self_test OK[0m
+[0;32mI (1118) peripheral_test: Ghi/doc pattern tai 0x0100 khop -> FRAM (cap=32768 byte): PASS[0m
+[0;32mI (1125) peripheral_test: [0m
+[0;32mI (1127) peripheral_test: ===== TEST DS3231 =====[0m
+[0;32mI (1132) rtc_ds3231: DS3231 connected (port=1 sda=1 scl=2)[0m
+[0;32mI (1137) peripheral_test: DS3231 connected[0m
+[0;33mW (1141) peripheral_test: DS3231 bao mat dien (bit OSF) -- gio hien tai trong chip co the KHONG dang tin cay[0m
+[0;33mW (1150) io_exp: DUNG KHAN DA NHA[0m
+[0;32mI (1155) peripheral_test: Gio dang luu trong RTC: 2000-01-01 04:21:36[0m
+[0;32mI (2362) peripheral_test: Set 2025-01-01 12:00:00 -> doc lai 2025-01-01 12:00:01 (lech 1 giay) -> DS3231: PASS[0m
+[0;32mI (2363) peripheral_test: Da khoi phuc lai gio RTC nhu truoc luc test[0m
+[0;32mI (2367) peripheral_test: [0m
+[0;32mI (2369) peripheral_test: [0m
+[0;32mI (2372) peripheral_test: ########## KET QUA TEST NGOAI VI ##########[0m
+[0;32mI (2378) peripheral_test: FRAM    : PASS[0m
+[0;32mI (2382) peripheral_test: DS3231  : PASS[0m
+[0;32mI (2385) peripheral_test: RELAY   : bo qua[0m
+[0;32mI (2389) peripheral_test: ############################################[0m
+[0;33mW (2395) fram: fram_init da goi roi, bo qua[0m
+[0;32mI (2400) rtc_ds3231: DS3231 connected (port=1 sda=1 scl=2)[0m
+[0;33mW (2405) ntp_time: Dong ho he thong chua hop le (vua boot/reset)[0m
+[0;33mW (2411) ntp_time: Gio doc tu RTC khong hop le (co the do nhieu I2C lam sai lech du lieu) -- bo qua, cho SNTP[0m
+[0;33mW (2420) devcfg: khong co / hong cau hinh trong NVS -> dung mac dinh[0m
+[0;32mI (2597) display: doc ID man hinh (0xD3): FF FF FF FF FF[0m
+[0;33mW (2598) display: man hinh khong tra loi: chan SDO/MISO chua noi, hoac chip chua nhan duoc lenh (kiem tra day CS/DC/RST/SCK/SDI va nguon man hinh)[0m
+[0;32mI (2605) ili9341: LCD panel create success, version: 2.1.0[0m
+[0;32mI (2731) LVGL: Starting LVGL task[0m
+[0;33mW (2735) lcd_panel.io.spi: Callback on_color_trans_done was already set and now it was overwritten![0m
+[0;32mI (2791) display: cam ung: dung hieu chinh da luu (swap=1 inv_x=1 inv_y=1 x=149..4095 y=0..4095)[0m
+[0;32mI (2791) display: cam ung XPT2046 OK (doc dinh ky, CS=GPIO21)[0m
+[0;32mI (2794) display: display OK ILI9341 320x240, SPI 15 MHz[0m
+[0;32mI (2802) peripheral_test: cam ung da co hieu chinh trong NVS (muon lam lai: dat PT_TOUCH_CALIB = 2)[0m
+[0;32mI (2812) audio: phan vung am thanh: dung 8/4096 KB[0m
+[0;33mW (2828) audio: thieu 24/24 file am thanh trong assets/audio[0m
+[0;32mI (2829) audio: audio OK (I2S 16000 Hz, BCLK=6 WS=7 DIN=5 SD=4)[0m
+[1;31mE (2829) gpio: gpio_install_isr_service(526): GPIO isr service already installed[0m
+[0;33mW (2836) net_ethernet: GPIO ISR handler already installed, bo qua[0m
+[0;32mI (2864) esp_eth.netif.netif_glue: 80:45:6b:28:17:77[0m
+[0;32mI (2865) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+[0;32mI (2865) net_ethernet: net_ethernet_init OK (spi_host=2 cs=9 int=10)[0m
+[0;32mI (2880) net_ethernet: Driver started[0m
+[0;32mI (2881) pp: pp rom version: e7ae62f[0m
+[0;32mI (2882) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (2883) wifi:wifi driver task: 3fce0674, prio:23, stack:6656, core=0[0m
+[0;32mI (2892) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (2892) wifi:wifi certification version: v7.0[0m
+[0;32mI (2895) wifi:config NVS flash: enabled[0m
+[0;32mI (2898) wifi:config nano formatting: disabled[0m
+[0;32mI (2903) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (2908) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (2912) wifi:Init management short buffer num: 32[0m
+[0;32mI (2916) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (2920) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (2925) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (2929) wifi:Init static rx buffer num: 10[0m
+[0;32mI (2932) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (2937) wifi_init: rx ba win: 6[0m
+[0;32mI (2939) wifi_init: accept mbox: 6[0m
+[0;32mI (2943) wifi_init: tcpip mbox: 32[0m
+[0;32mI (2946) wifi_init: udp mbox: 6[0m
+[0;32mI (2949) wifi_init: tcp mbox: 6[0m
+[0;32mI (2951) wifi_init: tcp tx win: 5760[0m
+[0;32mI (2955) wifi_init: tcp rx win: 5760[0m
+[0;32mI (2958) wifi_init: tcp mss: 1440[0m
+[0;32mI (2961) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (2965) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (2969) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (2977) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (3010) wifi:mode : sta (80:45:6b:28:17:74) + softAP (80:45:6b:28:17:75)[0m
+[0;32mI (3011) wifi:enable tsf[0m
+[0;32mI (3014) wifi:Total power save buffer number: 16[0m
+[0;32mI (3014) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (3017) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (3022) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;33mW (3026) net_wifi: Khong co SSID da luu -> chua ket noi duoc[0m
+[0;32mI (3031) net_wifi: Schedule next scan in 10000 ms[0m
+[0;32mI (3036) net_wifi: AP SSID=XTECH - 281774 IP:192.168.4.1[0m
+[0;32mI (3036) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (3049) net_gsm: net_gsm_init OK (uart=2 tx=47 rx=48 apn=v-internet)[0m
+[0;32mI (3054) net_gsm: pulse reset[0m
+[0;32mI (3055) net_manager: net_manager_init[0m
+[0;32mI (3061) ntp_time: SNTP started[0m
+[0;33mW (3063) cloud: !!! CHE DO THU (PT_DEMO_PAYMENT = 1): thanh toan GIA LAP, khong co tien that !!![0m
+[0;32mI (3072) main: khoi dong xong[0m
+[0;32mI (3075) main_task: Returned from app_main()[0m
+[0;32mI (3147) session_store: khoi phuc phien order=80456B281774-0-0007 state=1 con 849472 ms (seq=379)[0m
+[0;33mW (3148) app_fsm: KHOI PHUC phien 80456B281774-0-0007: con 849s[0m
+[0;33mW (3151) cloud: report_event(session_restored, 80456B281774-0-0007): chua ho tro[0m
+[0;32mI (3158) app_fsm: BOOT -> WASHING[0m
+[0;32mI (3187) audio: phat: "Tiếp tục phiên rửa xe trước đó."[0m
+[0;33mW (3199) audio: thieu file /audio/restored.wav[0m
+[0;32mI (4195) app_fsm: den BAT (troi toi)[0m
+[0;32mI (10557) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (10558) uart: queue free spaces: 30[0m
+[0;32mI (13035) net_wifi: Auto scan fired (retry=1)[0m
+[0;32mI (14136) audio: phat: "Phun bọt."[0m
+[0;33mW (14147) audio: thieu file /audio/foam_on.wav[0m
+[0;32mI (16273) net_wifi: ===== SCAN RESULT (14 APs) =====[0m
+[0;32mI (16273) net_wifi: 1) SSID:P402 RSSI:-53 CH:11[0m
+[0;32mI (16273) net_wifi: 2) SSID:P62 RSSI:-89 CH:7[0m
+[0;32mI (16275) net_wifi: 3) SSID:TRAN THU RSSI:-90 CH:7[0m
+[0;32mI (16280) net_wifi: 4) SSID:Subabi RSSI:-91 CH:13[0m
+[0;32mI (16284) net_wifi: 5) SSID:Bong Bill RSSI:-92 CH:2[0m
+[0;32mI (16289) net_wifi: 6) SSID:Bong Bill RSSI:-93 CH:2[0m
+[0;32mI (16293) net_wifi: 7) SSID:Mai Linh RSSI:-93 CH:3[0m
+[0;32mI (16298) net_wifi: 8) SSID:VIETTEL_cMAm RSSI:-93 CH:4[0m
+[0;32mI (16303) net_wifi: 9) SSID:Tom RSSI:-93 CH:6[0m
+[0;32mI (16307) net_wifi: 10) SSID:FPT Telecom-1F51 RSSI:-93 CH:9[0m
+[0;32mI (16312) net_wifi: 11) SSID:Tenda_P51 RSSI:-94 CH:2[0m
+[0;32mI (16317) net_wifi: 12) SSID:Chuot RSSI:-95 CH:2[0m
+[0;32mI (16321) net_wifi: 13) SSID:BB 402 RSSI:-95 CH:8[0m
+[0;32mI (16325) net_wifi: 14) SSID:Tang 4 RSSI:-96 CH:5[0m
+[0;33mW (16330) net_wifi: Khong tim thay SSID da luu nao trong ket qua quet[0m
+[0;32mI (16336) net_wifi: Schedule next scan in 30000 ms[0m
+[0;32mI (27186) audio: phat: "Tạm dừng."[0m
+[0;33mW (27197) audio: thieu file /audio/pump_stop.wav[0m
+[0;32mI (29939) audio: phat: "Phun bọt."[0m
+[0;33mW (29950) audio: thieu file /audio/foam_on.wav[0m
+[0;32mI (30192) app_fsm: bo qua nut 0: bam lai sau 253 ms (< 1000 ms)[0m
+[1;31mE (30559) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (31560) net_gsm: Modem/song chua san sang, thu lai sau 5000 ms (fail_count=1)[0m
+[0;32mI (31959) audio: phat: "Tạm dừng."[0m
+[0;33mW (31970) audio: thieu file /audio/pump_stop.wav[0m
+[0;32mI (34199) audio: phat: "Phun bọt."[0m
+[0;33mW (34210) audio: thieu file /audio/foam_on.wav[0m
+[0;32mI (36560) net_gsm: pulse reset[0m
+[0;32mI (41720) audio: phat: "Phun nước."[0m
+[0;33mW (41731) audio: thieu file /audio/water_on.wav[0m
+[0;32mI (42763) audio: phat: "Tạm dừng."[0m
+[0;33mW (42774) audio: thieu file /audio/pump_stop.wav[0m
+[0;32mI (44060) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (44061) uart: queue free spaces: 30[0m
+[0;32mI (45792) audio: phat: "Xịt khô."[0m
+[0;33mW (45803) audio: thieu file /audio/dry_on.wav[0m
+[0;32mI (46341) net_wifi: Auto scan fired (retry=2)[0m
+[0;32mI (49308) audio: phat: "Tạm dừng."[0m
+[0;33mW (49319) audio: thieu file /audio/pump_stop.wav[0m
+[0;32mI (49577) net_wifi: ===== SCAN RESULT (15 APs) =====[0m
+[0;32mI (49578) net_wifi: 1) SSID:P402 RSSI:-61 CH:11[0m
+[0;32mI (49578) net_wifi: 2) SSID:P62 RSSI:-88 CH:7[0m
+[0;32mI (49580) net_wifi: 3) SSID:Subabi RSSI:-89 CH:13[0m
+[0;32mI (49584) net_wifi: 4) SSID:VIETTEL_cMAm RSSI:-92 CH:4[0m
+[0;32mI (49589) net_wifi: 5) SSID:Tenda_P51 RSSI:-93 CH:2[0m
+[0;32mI (49594) net_wifi: 6) SSID:Mai Linh RSSI:-93 CH:3[0m
+[0;32mI (49598) net_wifi: 7) SSID:Tom RSSI:-93 CH:6[0m
+[0;32mI (49602) net_wifi: 8) SSID:TRAN THU RSSI:-93 CH:7[0m
+[0;32mI (49607) net_wifi: 9) SSID:Anh Khoa RSSI:-94 CH:4[0m
+[0;32mI (49611) net_wifi: 10) SSID:601 RSSI:-94 CH:10[0m
+[0;32mI (49615) net_wifi: 11) SSID:Nhim va Soc T1 RSSI:-95 CH:2[0m
+[0;32mI (49621) net_wifi: 12) SSID:Chuot RSSI:-95 CH:2[0m
+[0;32mI (49625) net_wifi: 13) SSID:Tang 4 RSSI:-95 CH:5[0m
+[0;32mI (49629) net_wifi: 14) SSID:BB 402 RSSI:-95 CH:8[0m
+[0;32mI (49634) net_wifi: 15) SSID:Bong Bill RSSI:-96 CH:2[0m
+[0;33mW (49639) net_wifi: Khong tim thay SSID da luu nao trong ket qua quet[0m
+[0;32mI (49645) net_wifi: Schedule next scan in 60000 ms[0m
+[0;32mI (51722) audio: phat: "Xịt khô."[0m
+[0;33mW (51733) audio: thieu file /audio/dry_on.wav[0m
+[0;32mI (54414) audio: phat: "Tạm dừng."[0m
+[0;33mW (54425) audio: thieu file /audio/pump_stop.wav[0m
+[0;32mI (61366) audio: phat: "Xịt khô."[0m
+[0;33mW (61377) audio: thieu file /audio/dry_on.wav[0m
+[1;31mE (64063) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (65064) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (75064) net_gsm: pulse reset[0m
+[0;32mI (78552) audio: phat: "Tạm dừng."[0m
+[0;33mW (78563) audio: thieu file /audio/pump_stop.wav[0m
+[0;32mI (82564) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (82565) uart: queue free spaces: 30[0m
+[0;32mI (90162) audio: phat: "Xịt khô."[0m
+[0;33mW (90173) audio: thieu file /audio/dry_on.wav[0m
+[0;32mI (95349) audio: phat: "Tạm dừng."[0m
+[0;33mW (95360) audio: thieu file /audio/pump_stop.wav[0m
+[0;32mI (101588) audio: phat: "Xịt khô."[0m
+[0;33mW (101599) audio: thieu file /audio/dry_on.wav[0m
+[1;31mE (102566) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (103567) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (108464) audio: phat: "Tạm dừng."[0m
+[0;33mW (108475) audio: thieu file /audio/pump_stop.wav[0m
+[0;32mI (109649) net_wifi: Auto scan fired (retry=3)[0m
+[0;32mI (111690) audio: phat: "Xịt khô."[0m
+[0;33mW (111701) audio: thieu file /audio/dry_on.wav[0m
+[0;32mI (112886) net_wifi: ===== SCAN RESULT (15 APs) =====[0m
+[0;32mI (112886) net_wifi: 1) SSID:P402 RSSI:-51 CH:11[0m
+[0;32mI (112887) net_wifi: 2) SSID:P62 RSSI:-88 CH:7[0m
+[0;32mI (112889) net_wifi: 3) SSID:Subabi RSSI:-90 CH:13[0m
+[0;32mI (112893) net_wifi: 4) SSID:VIETTEL_cMAm RSSI:-92 CH:3[0m
+[0;32mI (112898) net_wifi: 5) SSID:Wifi  RSSI:-92 CH:10[0m
+[0;32mI (112902) net_wifi: 6) SSID:601 RSSI:-92 CH:10[0m
+[0;32mI (112907) net_wifi: 7) SSID:Chuot RSSI:-93 CH:2[0m
+[0;32mI (112911) net_wifi: 8) SSID:Tang 4 RSSI:-93 CH:5[0m
+[0;32mI (112915) net_wifi: 9) SSID:TRAN THU RSSI:-93 CH:7[0m
+[0;32mI (112920) net_wifi: 10) SSID:BB 402 RSSI:-93 CH:8[0m
+[0;32mI (112925) net_wifi: 11) SSID:Bong Bill RSSI:-94 CH:2[0m
+[0;32mI (112929) net_wifi: 12) SSID:Ntgt95 RSSI:-94 CH:9[0m
+[0;32mI (112934) net_wifi: 13) SSID:Tenda_P51 RSSI:-95 CH:2[0m
+[0;32mI (112939) net_wifi: 14) SSID:Dao Tuan 5G RSSI:-95 CH:4[0m
+[0;32mI (112944) net_wifi: 15) SSID:FPT Telecom-E221-IOT RSSI:-95 CH:11[0m
+[0;33mW (112950) net_wifi: Khong tim thay SSID da luu nao trong ket qua quet[0m
+[0;32mI (112956) net_wifi: Schedule next scan in 120000 ms[0m
+[0;32mI (113567) net_gsm: pulse reset[0m
+[0;32mI (115512) audio: phat: "Tạm dừng."[0m
+[0;33mW (115523) audio: thieu file /audio/pump_stop.wav[0m
+[0;32mI (119123) audio: phat: "Xịt khô."[0m
+[0;33mW (119134) audio: thieu file /audio/dry_on.wav[0m
+[0;32mI (121067) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (121068) uart: queue free spaces: 30[0m
+[0;32mI (127671) audio: phat: "Tạm dừng."[0m
+[0;33mW (127682) audio: thieu file /audio/pump_stop.wav[0m
+[0;32mI (129784) audio: phat: "Xịt khô."[0m
+[0;33mW (129795) audio: thieu file /audio/dry_on.wav[0m
+[0;32mI (132032) audio: phat: "Tạm dừng."[0m
+[0;33mW (132043) audio: thieu file /audio/pump_stop.wav[0m
+[0;32mI (134791) audio: phat: "Xịt khô."[0m
+[0;33mW (134802) audio: thieu file /audio/dry_on.wav[0m
+[0;32mI (136529) audio: phat: "Tạm dừng."[0m
+[0;33mW (136540) audio: thieu file /audio/pump_stop.wav[0m
+[0;32mI (138612) audio: phat: "Xịt khô."[0m
+[0;33mW (138623) audio: thieu file /audio/dry_on.wav[0m
+[0;32mI (140117) audio: phat: "Tạm dừng."[0m
+[0;33mW (140128) audio: thieu file /audio/pump_stop.wav[0m
+[1;31mE (141069) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;32mI (141657) audio: phat: "Xịt khô."[0m
+[0;33mW (141668) audio: thieu file /audio/dry_on.wav[0m
+[0;33mW (142070) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (142972) audio: phat: "Tạm dừng."[0m
+[0;33mW (142983) audio: thieu file /audio/pump_stop.wav[0m
+[0;32mI (145988) display: touch nghi ngo: adc x=3424 y=712 luc=1756 (mau 1/2)[0m
+[0;32mI (146023) display: cam ung: nhan duoc cham dau tien tai x=273 y=42 (luc 1587)[0m
+[0;32mI (146024) display: touch adc x=3380 y=725 luc=1587 -> man hinh x=273 y=42[0m
+[0;32mI (147588) display: touch nghi ngo: adc x=1085 y=1298 luc=1845 (mau 1/2)[0m
+[0;32mI (147624) display: touch adc x=1082 y=1299 luc=1936 -> man hinh x=227 y=176[0m
+[0;32mI (147659) display: touch adc x=1086 y=1292 luc=1911 -> man hinh x=227 y=176[0m
+[0;32mI (147790) app_fsm: khach ket thuc som phien 80456B281774-0-0007, con 704s chua dung[0m
+[0;32mI (147791) app_fsm: ket thuc phien 80456B281774-0-0007 (ly do 4): bot 175s nuoc 185s kho 54s[0m
+[0;33mW (147798) cloud: [DEMO] report_session(80456B281774-0-0007, end): bo qua[0m
+[0;32mI (147807) app_fsm: WASHING -> FINISHED[0m
+[0;32mI (147825) audio: phat: "Đã kết thúc phiên rửa xe. Cảm ơn quý khách, hẹn gặp lại."[0m
+[0;33mW (147836) audio: thieu file /audio/end_early.wav[0m
+[0;32mI (152070) net_gsm: pulse reset[0m
+[0;32mI (155826) app_fsm: FINISHED -> IDLE[0m
+[0;32mI (159570) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (159571) uart: queue free spaces: 30[0m
+[0;32mI (165404) display: touch nghi ngo: adc x=2587 y=2768 luc=634 (mau 1/2)[0m
+[0;32mI (166069) display: touch nghi ngo: adc x=2299 y=2664 luc=564 (mau 1/2)[0m
+[0;32mI (166105) display: touch adc x=2311 y=2706 luc=695 -> man hinh x=113 y=105[0m
+[0;32mI (166216) app_fsm: tao don 80456B281774-0-0008: Gói 5 phút 5 phut 10000 d[0m
+[0;32mI (166217) app_fsm: IDLE -> CREATING_QR[0m
+[0;33mW (166224) peripheral_test: [DEMO] tao don 80456B281774-0-0008, 10000 d[0m
+[0;33mW (168225) peripheral_test: [DEMO] don 80456B281774-0-0008: da gui ma QR thu[0m
+[0;33mW (168225) peripheral_test: [DEMO] tu bao thanh toan sau 8 s[0m
+[0;32mI (168226) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (168285) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[0;33mW (168296) audio: thieu file /audio/scan_qr.wav[0m
+[0;32mI (169346) display: touch nghi ngo: adc x=809 y=752 luc=1347 (mau 1/2)[0m
+[0;32mI (169381) display: touch adc x=920 y=780 luc=1216 -> man hinh x=268 y=186[0m
+[0;32mI (169418) display: touch adc x=890 y=741 luc=1252 -> man hinh x=272 y=188[0m
+[0;33mW (169489) peripheral_test: [DEMO] huy don 80456B281774-0-0008[0m
+[0;32mI (169490) app_fsm: WAIT_PAYMENT -> NOTICE[0m
+[0;32mI (173586) app_fsm: NOTICE -> IDLE[0m
+[0;32mI (175322) display: touch nghi ngo: adc x=1051 y=2619 luc=880 (mau 1/2)[0m
+[0;32mI (175357) display: touch adc x=1046 y=2627 luc=969 -> man hinh x=119 y=178[0m
+[0;32mI (175428) display: touch adc x=1101 y=2619 luc=825 -> man hinh x=120 y=175[0m
+[0;32mI (175505) app_fsm: tao don 80456B281774-0-0009: Gói 15 phút 15 phut 30000 d[0m
+[0;32mI (175506) app_fsm: IDLE -> CREATING_QR[0m
+[0;33mW (175513) peripheral_test: [DEMO] tao don 80456B281774-0-0009, 30000 d[0m
+[0;33mW (177514) peripheral_test: [DEMO] don 80456B281774-0-0009: da gui ma QR thu[0m
+[0;33mW (177515) peripheral_test: [DEMO] tu bao thanh toan sau 8 s[0m
+[0;32mI (177516) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (177574) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[0;33mW (177586) audio: thieu file /audio/scan_qr.wav[0m
+[0;32mI (178581) display: touch nghi ngo: adc x=706 y=684 luc=1897 (mau 1/2)[0m
+[0;32mI (178616) display: touch adc x=739 y=692 luc=2082 -> man hinh x=276 y=196[0m
+[0;32mI (178653) display: touch adc x=760 y=697 luc=1862 -> man hinh x=275 y=195[0m
+[0;32mI (178688) display: touch adc x=806 y=851 luc=1159 -> man hinh x=263 y=192[0m
+[0;33mW (178757) peripheral_test: [DEMO] huy don 80456B281774-0-0009[0m
+[0;32mI (178758) app_fsm: WAIT_PAYMENT -> NOTICE[0m
+[1;31mE (179572) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (180573) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (182786) app_fsm: NOTICE -> IDLE[0m
+[0;32mI (183684) display: touch nghi ngo: adc x=2693 y=1147 luc=1219 (mau 1/2)[0m
+[0;32mI (183719) display: touch adc x=2682 y=1144 luc=1680 -> man hinh x=239 y=83[0m
+[0;32mI (183831) app_fsm: tao don 80456B281774-0-0010: Gói 10 phút 10 phut 20000 d[0m
+[0;32mI (183832) app_fsm: IDLE -> CREATING_QR[0m
+[0;33mW (183839) peripheral_test: [DEMO] tao don 80456B281774-0-0010, 20000 d[0m
+[0;33mW (185840) peripheral_test: [DEMO] don 80456B281774-0-0010: da gui ma QR thu[0m
+[0;33mW (185841) peripheral_test: [DEMO] tu bao thanh toan sau 8 s[0m
+[0;32mI (185842) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (185900) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[0;33mW (185911) audio: thieu file /audio/scan_qr.wav[0m
+[0;32mI (186802) display: touch nghi ngo: adc x=1282 y=1164 luc=541 (mau 1/2)[0m
+[0;32mI (186906) display: touch nghi ngo: adc x=868 y=747 luc=1256 (mau 1/2)[0m
+[0;32mI (187537) display: touch nghi ngo: adc x=628 y=806 luc=1268 (mau 1/2)[0m
+[0;32mI (187573) display: touch adc x=584 y=736 luc=1822 -> man hinh x=272 y=205[0m
+[0;32mI (187608) display: touch adc x=593 y=734 luc=1957 -> man hinh x=272 y=205[0m
+[0;32mI (187643) display: touch adc x=677 y=797 luc=1344 -> man hinh x=267 y=200[0m
+[0;33mW (187713) peripheral_test: [DEMO] huy don 80456B281774-0-0010[0m
+[0;32mI (187714) app_fsm: WAIT_PAYMENT -> NOTICE[0m
+[0;32mI (190573) net_gsm: pulse reset[0m
+[0;32mI (191801) app_fsm: NOTICE -> IDLE[0m
+[0;33mW (197690) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (197690) app_fsm: DUNG KHAN: chot (giu nut 5 s de mo)[0m
+[0;32mI (197700) audio: phat: "Đã dừng khẩn cấp."[0m
+[0;33mW (197700) cloud: report_event(estop, ): chua ho tro[0m
+[0;33mW (197712) audio: thieu file /audio/estop.wav[0m
+[0;33mW (197766) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (197926) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (198002) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (198003) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (198013) audio: thieu file /audio/estop_hold.wav[0m
+[0;32mI (198073) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (198074) uart: queue free spaces: 30[0m
+[0;33mW (198088) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (198142) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (198146) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (198197) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (198227) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (198303) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (198314) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (198386) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (201460) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (201503) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (201514) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (201617) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (202711) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (202803) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (202814) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (202910) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (204108) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (204195) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (204990) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (205003) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (205014) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (205159) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (205566) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (205603) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (205614) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (205718) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (206002) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (206003) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (206014) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (206054) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (206503) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (206603) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (206612) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (206614) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (208412) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (208503) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (208514) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (208518) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (208835) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (208903) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (208906) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (208914) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (209234) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (209303) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (209314) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (209351) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (209431) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (209484) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (209509) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (209564) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (209826) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (209876) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (210009) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (210066) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (210390) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (210403) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (210414) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (210498) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (210951) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (211003) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (211014) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (211057) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (211186) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (211219) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (211230) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (211240) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (211430) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (211482) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (211484) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (211504) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (211515) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (211736) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (211802) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (212044) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (212064) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (212114) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (212383) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (212403) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (212414) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (212435) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (213064) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (213103) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (213114) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (213197) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (213415) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (213503) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (213514) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (213517) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (213556) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (213608) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (214737) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (214803) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (214814) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (214949) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (216069) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (216103) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (216114) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (216124) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (216547) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (216603) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (216614) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (216697) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (216867) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (216903) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (216914) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (216919) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (216927) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (217002) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (217027) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (217078) io_exp: DUNG KHAN DA NHA[0m
+[1;31mE (218075) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (219076) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (225322) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (225372) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (225561) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (225604) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (225612) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (225615) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (225621) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (225695) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (225960) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (226004) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (226015) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (226130) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (226319) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (226404) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (226415) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (226418) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (226419) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (226469) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (226540) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (226609) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (226620) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (226649) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (226658) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (226749) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (226798) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (226849) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (226898) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (226948) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (226997) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (227148) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (227157) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (227208) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (227297) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (227348) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (227357) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (227447) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (227496) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (227548) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (227576) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (227675) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (227796) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (227804) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (227815) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (227847) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (227935) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (228019) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (228030) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (228045) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (228075) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (228147) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (228155) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (228206) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (228294) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (228354) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (228434) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (228504) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (228515) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (228564) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (228574) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (228624) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (228673) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (228883) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (228893) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (228945) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (228973) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (229076) net_gsm: pulse reset[0m
+[0;33mW (229163) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (229172) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (229223) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (229232) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (229292) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (229452) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (229502) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (229571) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (229605) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (229616) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (229821) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (229871) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (229921) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (229970) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (230041) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (230070) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (230180) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (230270) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (230305) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (230316) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (230341) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (230369) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (230600) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (230609) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (230705) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (230716) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (230799) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (230828) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (230888) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (230908) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (230958) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (231008) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (231105) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (231116) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (231118) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (231168) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (231218) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (231227) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (231287) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (231287) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (231378) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (231387) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (231447) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (231546) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (231605) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (231616) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (231638) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (231646) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (231736) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (231746) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (231976) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (231985) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (232036) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (232329) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (232405) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (232416) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (232435) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (232444) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (232575) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (232584) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (232960) net_wifi: Auto scan fired (retry=4)[0m
+[0;33mW (232993) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (233063) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (233105) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (233116) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (233214) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (233282) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (233373) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (233382) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (233473) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (233561) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (233605) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (233616) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (233631) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (233661) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (233832) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (233860) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (233970) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (234020) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (234105) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (234110) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (234116) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (234120) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (234170) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (234180) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (234330) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (234340) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (234390) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (234459) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (234505) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (234516) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (234529) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (234558) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (234650) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (234678) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (234749) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (234758) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (234849) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (234858) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (235387) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (235397) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (235447) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (235496) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (235787) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (235796) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (235946) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (235995) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (236199) net_wifi: ===== SCAN RESULT (13 APs) =====[0m
+[0;32mI (236199) net_wifi: 1) SSID:P402 RSSI:-50 CH:11[0m
+[0;32mI (236199) net_wifi: 2) SSID:Subabi RSSI:-88 CH:13[0m
+[0;32mI (236201) net_wifi: 3) SSID:601 RSSI:-90 CH:10[0m
+[0;32mI (236206) net_wifi: 4) SSID:P62 RSSI:-91 CH:7[0m
+[0;32mI (236210) net_wifi: 5) SSID:TRAN THU RSSI:-92 CH:7[0m
+[0;32mI (236214) net_wifi: 6) SSID:BB 402 RSSI:-92 CH:8[0m
+[0;32mI (236219) net_wifi: 7) SSID:Bong Bill RSSI:-93 CH:2[0m
+[0;32mI (236224) net_wifi: 8) SSID:Mai Linh RSSI:-93 CH:3[0m
+[0;32mI (236228) net_wifi: 9) SSID:Anh Khoa RSSI:-93 CH:4[0m
+[0;32mI (236233) net_wifi: 10) SSID:Tenda_P51 RSSI:-94 CH:2[0m
+[0;32mI (236238) net_wifi: 11) SSID:VIETTEL_cMAm RSSI:-94 CH:3[0m
+[0;32mI (236243) net_wifi: 12) SSID:NGUYEN LAN RSSI:-94 CH:4[0m
+[0;32mI (236247) net_wifi: 13) SSID:Wifi  RSSI:-95 CH:10[0m
+[0;33mW (236252) net_wifi: Khong tim thay SSID da luu nao trong ket qua quet[0m
+[0;32mI (236258) net_wifi: Schedule next scan in 300000 ms[0m
+[0;33mW (236285) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (236333) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (236384) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (236393) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (236444) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (236493) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (236564) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (236575) audio: thieu file /audio/estop_hold.wav[0m
+[0;32mI (236576) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (236577) uart: queue free spaces: 30[0m
+[0;33mW (236844) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (236852) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (236964) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (236972) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (237084) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (237112) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (237302) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (237331) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (237581) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (237610) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (237861) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (237909) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (237964) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (237975) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (237999) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (238029) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (238499) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (238528) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (238578) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (238607) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (238897) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (238906) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (239097) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (239106) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (239196) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (239206) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (239276) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (239305) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (239365) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (239406) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (239496) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (239505) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (239596) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (239604) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (239755) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (239764) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (239864) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (239875) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (239934) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (239943) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (240094) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (240103) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (240213) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (240242) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (240353) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (240382) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (240441) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (240442) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (240464) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (240475) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (240512) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (240561) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (240672) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (240721) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (240811) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (240821) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (240911) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (240920) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (240971) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (241020) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (241399) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (241419) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (241510) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (241519) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (241589) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (241618) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (241669) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (241718) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (241808) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (241818) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (242067) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (242077) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (242207) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (242217) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (242468) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (242495) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (242546) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (242556) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (242606) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (242615) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (242707) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (242736) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (242794) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (242795) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (242865) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (242894) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (243014) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (243014) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (243085) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (243094) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (243184) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (243214) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (243443) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (243453) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (243543) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (243553) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (243643) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (243692) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (243765) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (243776) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (243883) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (243891) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (243942) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (243951) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (244082) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (244091) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (244361) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (244390) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (244465) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (244476) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (244739) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (244769) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (244828) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (244829) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (244865) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (244876) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (245039) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (245048) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (245159) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (245188) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (245265) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (245276) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (245298) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (245307) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (245377) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (245427) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (245486) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (245507) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (245777) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (245805) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (246005) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (246025) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (246255) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (246304) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (246355) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (246364) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (246365) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (246376) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (246654) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (246663) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (246794) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (246803) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (246914) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (246922) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (247072) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (247082) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (247452) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (247461) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (247532) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (247540) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (247591) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (247641) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (247890) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (247919) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (248588) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (248598) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (249108) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (249136) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (249186) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (249235) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (249375) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (249395) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (249526) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (249535) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (249586) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (249595) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (249684) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (249714) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (249913) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (249934) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (250264) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (250312) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (250366) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (250377) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (250543) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (250611) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (250666) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (250677) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (250702) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (250711) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (250801) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (250811) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (251141) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (251150) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (251440) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (251449) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (251560) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (251589) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (251660) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (251669) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (251720) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (251729) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (251766) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (251777) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (251899) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (251907) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (252038) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (252107) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (252166) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (252177) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (252437) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (252466) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (252566) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (252577) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (252636) io_exp: DUNG KHAN DA NHA[0m
+[1;31mE (256579) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (257580) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (263238) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (263268) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (263279) audio: thieu file /audio/estop_hold.wav[0m
+[0;32mI (267469) app_fsm: den TAT (troi toi)[0m
+[0;32mI (267580) net_gsm: pulse reset[0m
+[0;33mW (268268) app_fsm: DUNG KHAN: da giu 5 s -> mo chot[0m
+[0;33mW (268269) cloud: report_event(estop_reset, ): chua ho tro[0m
+[0;33mW (268742) io_exp: DUNG KHAN DA NHA[0m
+[0;32mI (271172) display: touch nghi ngo: adc x=984 y=1257 luc=928 (mau 1/2)[0m
+[0;32mI (271207) display: touch adc x=896 y=1097 luc=2012 -> man hinh x=243 y=187[0m
+[0;32mI (271278) display: touch adc x=912 y=1091 luc=1993 -> man hinh x=243 y=186[0m
+[0;32mI (271314) display: touch adc x=930 y=1088 luc=1777 -> man hinh x=244 y=185[0m
+[0;32mI (271348) display: touch adc x=932 y=1105 luc=1550 -> man hinh x=242 y=185[0m
+[0;32mI (271425) app_fsm: tao don 80456B281774-0-0011: Gói 20 phút 20 phut 40000 d[0m
+[0;32mI (271426) app_fsm: IDLE -> CREATING_QR[0m
+[0;33mW (271433) peripheral_test: [DEMO] tao don 80456B281774-0-0011, 40000 d[0m
+[0;33mW (273434) peripheral_test: [DEMO] don 80456B281774-0-0011: da gui ma QR thu[0m
+[0;33mW (273435) peripheral_test: [DEMO] tu bao thanh toan sau 8 s[0m
+[0;32mI (273436) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (273495) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[0;33mW (273524) audio: thieu file /audio/scan_qr.wav[0m
+[0;32mI (275080) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (275081) uart: queue free spaces: 30[0m
+[0;33mW (281435) peripheral_test: [DEMO] don 80456B281774-0-0011: gia lap ket qua thanh toan = 0[0m
+[0;33mW (281438) cloud: [DEMO] report_session(80456B281774-0-0011, start): bo qua[0m
+[0;32mI (281438) app_fsm: WAIT_PAYMENT -> PAID[0m
+[0;32mI (281449) audio: phat: "Thanh toán thành công. Cảm ơn quý khách."[0m
+[0;33mW (281461) audio: thieu file /audio/pay_ok.wav[0m
+[0;32mI (281496) app_fsm: den BAT (troi toi)[0m
+[0;32mI (284496) app_fsm: PAID -> WASHING[0m
+[0;32mI (284524) audio: phat: "Bắt đầu rửa xe. Nhấn nút bọt, nước hoặc xịt khô để sử dụng."[0m
+[0;33mW (284535) audio: thieu file /audio/wash_guide.wav[0m
+[0;32mI (292712) audio: phat: "Phun nước."[0m
+[0;33mW (292723) audio: thieu file /audio/water_on.wav[0m
+[1;31mE (295083) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (296084) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (297076) io_exp: TAT BOM KHAN CAP: nut dung khan[0m
+[0;33mW (297076) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (297076) app_fsm: DUNG KHAN: chot (giu nut 5 s de mo)[0m
+[0;32mI (297091) audio: phat: "Đã dừng khẩn cấp."[0m
+[0;33mW (297091) cloud: report_event(estop, 80456B281774-0-0011): chua ho tro[0m
+[0;33mW (297103) audio: thieu file /audio/estop.wav[0m
+[0;33mW (297348) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (304192) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (304196) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (304207) audio: thieu file /audio/estop_hold.wav[0m
+[0;32mI (306084) net_gsm: pulse reset[0m
+[0;33mW (309196) app_fsm: DUNG KHAN: da giu 5 s -> mo chot[0m
+[0;33mW (309197) cloud: report_event(estop_reset, 80456B281774-0-0011): chua ho tro[0m
+[0;32mI (309224) audio: phat: "Vui lòng bấm Tiếp tục rửa trên màn hình để tiếp tục phiên rửa xe."[0m
+[0;33mW (309235) audio: thieu file /audio/resume_ask.wav[0m
+[0;33mW (309621) io_exp: DUNG KHAN DA NHA[0m
+[0;32mI (313584) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (313585) uart: queue free spaces: 30[0m
+[0;32mI (315651) display: touch nghi ngo: adc x=681 y=1251 luc=1497 (mau 1/2)[0m
+[0;32mI (315687) display: touch adc x=768 y=1200 luc=2118 -> man hinh x=235 y=195[0m
+[0;32mI (315723) display: touch adc x=787 y=1197 luc=2092 -> man hinh x=235 y=194[0m
+[0;32mI (315759) display: touch adc x=810 y=1196 luc=2063 -> man hinh x=235 y=192[0m
+[0;32mI (315865) audio: phat: "Tiếp tục rửa xe."[0m
+[0;32mI (315865) app_fsm: khach tiep tuc phien 80456B281774-0-0011, con 1187s[0m
+[0;33mW (315876) audio: thieu file /audio/resume.wav[0m
+[0;32mI (319491) audio: phat: "Phun nước."[0m
+[0;33mW (319512) audio: thieu file /audio/water_on.wav[0m
+[1;31mE (333586) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (334587) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (344587) net_gsm: pulse reset[0m
+[0;32mI (352087) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (352088) uart: queue free spaces: 30[0m
+[0;33mW (365370) io_exp: TAT BOM KHAN CAP: nut dung khan[0m
+[0;33mW (365370) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (365370) app_fsm: DUNG KHAN: chot (giu nut 5 s de mo)[0m
+[0;32mI (365390) audio: phat: "Đã dừng khẩn cấp."[0m
+[0;33mW (365390) cloud: report_event(estop, 80456B281774-0-0011): chua ho tro[0m
+[0;33mW (365402) audio: thieu file /audio/estop.wav[0m
+[0;33mW (365440) io_exp: DUNG KHAN DA NHA[0m
+[1;31mE (372089) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (373090) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (377778) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (377802) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (377813) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (382802) app_fsm: DUNG KHAN: da giu 5 s -> mo chot[0m
+[0;33mW (382803) cloud: report_event(estop_reset, 80456B281774-0-0011): chua ho tro[0m
+[0;32mI (382830) audio: phat: "Vui lòng bấm Tiếp tục rửa trên màn hình để tiếp tục phiên rửa xe."[0m
+[0;33mW (382842) audio: thieu file /audio/resume_ask.wav[0m
+[0;32mI (383090) net_gsm: pulse reset[0m
+[0;33mW (383337) io_exp: DUNG KHAN DA NHA[0m
+[0;32mI (386698) display: touch nghi ngo: adc x=898 y=3047 luc=428 (mau 1/2)[0m
+[0;32mI (386734) display: touch adc x=905 y=2976 luc=1252 -> man hinh x=91 y=187[0m
+[0;32mI (386769) display: touch adc x=908 y=2975 luc=1296 -> man hinh x=91 y=187[0m
+[0;32mI (390590) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (390591) uart: queue free spaces: 30[0m
+[0;32mI (391368) display: touch nghi ngo: adc x=1115 y=2665 luc=1101 (mau 1/2)[0m
+[0;32mI (391403) display: touch adc x=1063 y=2673 luc=1677 -> man hinh x=115 y=177[0m
+[0;32mI (391440) display: touch adc x=1059 y=2663 luc=1828 -> man hinh x=116 y=178[0m
+[0;32mI (394899) display: touch nghi ngo: adc x=781 y=1228 luc=1253 (mau 1/2)[0m
+[0;32mI (394935) display: touch adc x=806 y=1178 luc=1972 -> man hinh x=236 y=192[0m
+[0;32mI (394966) display: touch adc x=797 y=1175 luc=2095 -> man hinh x=237 y=193[0m
+[0;32mI (395001) display: touch adc x=819 y=1168 luc=2098 -> man hinh x=237 y=192[0m
+[0;32mI (395038) display: touch adc x=824 y=1176 luc=1837 -> man hinh x=236 y=191[0m
+[0;32mI (395143) audio: phat: "Tiếp tục rửa xe."[0m
+[0;32mI (395143) app_fsm: khach tiep tuc phien 80456B281774-0-0011, con 1137s[0m
+[0;33mW (395154) audio: thieu file /audio/resume.wav[0m
+[0;32mI (397366) display: touch nghi ngo: adc x=3396 y=844 luc=2127 (mau 1/2)[0m
+[0;32mI (397401) display: touch adc x=3404 y=843 luc=2291 -> man hinh x=263 y=41[0m
+[0;32mI (397437) display: touch adc x=3419 y=842 luc=2370 -> man hinh x=263 y=40[0m
+[0;32mI (397473) display: touch adc x=3451 y=834 luc=2258 -> man hinh x=264 y=38[0m
+[0;32mI (397508) display: touch adc x=3397 y=865 luc=1619 -> man hinh x=262 y=41[0m
+[0;32mI (400248) display: touch nghi ngo: adc x=1152 y=1093 luc=1639 (mau 1/2)[0m
+[0;32mI (400283) display: touch adc x=1164 y=1094 luc=1602 -> man hinh x=243 y=172[0m
+[0;32mI (400319) display: touch adc x=1205 y=1111 luc=1318 -> man hinh x=242 y=169[0m
+[0;32mI (400355) display: touch adc x=1312 y=1149 luc=877 -> man hinh x=239 y=163[0m
+[0;32mI (400389) display: touch adc x=1289 y=1098 luc=1128 -> man hinh x=243 y=164[0m
+[0;32mI (400459) display: touch adc x=1218 y=1107 luc=1186 -> man hinh x=242 y=168[0m
+[0;32mI (400494) display: touch adc x=1226 y=1115 luc=1134 -> man hinh x=241 y=168[0m
+[0;32mI (400615) display: touch adc x=1216 y=1131 luc=1194 -> man hinh x=240 y=169[0m
+[0;32mI (400650) display: touch adc x=1162 y=1106 luc=1473 -> man hinh x=242 y=172[0m
+[0;32mI (400684) display: touch adc x=1148 y=1108 luc=1583 -> man hinh x=242 y=172[0m
+[0;32mI (400815) app_fsm: khach ket thuc som phien 80456B281774-0-0011, con 1132s chua dung[0m
+[0;32mI (400816) app_fsm: ket thuc phien 80456B281774-0-0011 (ly do 4): bot 0s nuoc 50s kho 0s[0m
+[0;33mW (400823) cloud: [DEMO] report_session(80456B281774-0-0011, end): bo qua[0m
+[0;32mI (400832) app_fsm: WASHING -> FINISHED[0m
+[0;32mI (400850) audio: phat: "Đã kết thúc phiên rửa xe. Cảm ơn quý khách, hẹn gặp lại."[0m
+[0;33mW (400861) audio: thieu file /audio/end_early.wav[0m
+[0;32mI (401005) display: touch nghi ngo: adc x=835 y=2277 luc=911 (mau 1/2)[0m
+[0;32mI (401039) display: touch adc x=923 y=2345 luc=608 -> man hinh x=142 y=186[0m
+[0;32mI (408851) app_fsm: FINISHED -> IDLE[0m
+[0;32mI (410552) display: touch nghi ngo: adc x=2664 y=1125 luc=2011 (mau 1/2)[0m
+[0;32mI (410588) display: touch adc x=2678 y=1122 luc=2288 -> man hinh x=241 y=83[0m
+[1;31mE (410592) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;32mI (410659) display: touch adc x=2651 y=1128 luc=1942 -> man hinh x=240 y=85[0m
+[0;32mI (410736) app_fsm: tao don 80456B281774-0-0012: Gói 10 phút 10 phut 20000 d[0m
+[0;32mI (410737) app_fsm: IDLE -> CREATING_QR[0m
+[0;33mW (410744) peripheral_test: [DEMO] tao don 80456B281774-0-0012, 20000 d[0m
+[0;33mW (411593) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (412745) peripheral_test: [DEMO] don 80456B281774-0-0012: da gui ma QR thu[0m
+[0;33mW (412745) peripheral_test: [DEMO] tu bao thanh toan sau 8 s[0m
+[0;32mI (412746) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (412805) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[0;33mW (412816) audio: thieu file /audio/scan_qr.wav[0m
+[0;33mW (420745) peripheral_test: [DEMO] don 80456B281774-0-0012: gia lap ket qua thanh toan = 0[0m
+[0;33mW (420749) cloud: [DEMO] report_session(80456B281774-0-0012, start): bo qua[0m
+[0;32mI (420749) app_fsm: WAIT_PAYMENT -> PAID[0m
+[0;32mI (420760) audio: phat: "Thanh toán thành công. Cảm ơn quý khách."[0m
+[0;33mW (420771) audio: thieu file /audio/pay_ok.wav[0m
+[0;32mI (421593) net_gsm: pulse reset[0m
+[0;32mI (423806) app_fsm: PAID -> WASHING[0m
+[0;32mI (423833) audio: phat: "Bắt đầu rửa xe. Nhấn nút bọt, nước hoặc xịt khô để sử dụng."[0m
+[0;33mW (423844) audio: thieu file /audio/wash_guide.wav[0m
+[0;32mI (426801) audio: phat: "Phun bọt."[0m
+[0;33mW (426812) audio: thieu file /audio/foam_on.wav[0m
+[0;32mI (429093) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (429094) uart: queue free spaces: 30[0m
+[0;32mI (441717) audio: phat: "Phun nước."[0m
+[0;33mW (441728) audio: thieu file /audio/water_on.wav[0m
+[1;31mE (449096) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;32mI (449169) audio: phat: "Xịt khô."[0m
+[0;33mW (449180) audio: thieu file /audio/dry_on.wav[0m
+[0;33mW (450097) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (460097) net_gsm: pulse reset[0m
+[0;32mI (463504) audio: phat: "Phun bọt."[0m
+[0;33mW (463515) audio: thieu file /audio/foam_on.wav[0m
+[0;32mI (467597) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (467598) uart: queue free spaces: 30[0m
+[0;32mI (468556) audio: phat: "Tạm dừng."[0m
+[0;33mW (468567) audio: thieu file /audio/pump_stop.wav[0m
+[0;32mI (468927) app_fsm: bo qua nut 0: bam lai sau 371 ms (< 1000 ms)[0m
+[0;32mI (470759) audio: phat: "Phun nước."[0m
+[0;33mW (470770) audio: thieu file /audio/water_on.wav[0m
+[0;33mW (473872) io_exp: TAT BOM KHAN CAP: nut dung khan[0m
+[0;33mW (473873) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (473873) app_fsm: DUNG KHAN: chot (giu nut 5 s de mo)[0m
+[0;32mI (473889) audio: phat: "Đã dừng khẩn cấp."[0m
+[0;33mW (473889) cloud: report_event(estop, 80456B281774-0-0012): chua ho tro[0m
+[0;33mW (473900) audio: thieu file /audio/estop.wav[0m
+[0;33mW (473932) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (474073) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (474124) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (474130) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (474135) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (475411) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (475413) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (475424) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (475472) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (477129) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (477182) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (477362) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (477413) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (477415) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (477424) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (477445) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (477516) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (478122) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (478176) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (478223) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (478278) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (478407) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (478413) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (478424) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (478462) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (478481) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (478597) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (478658) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (478713) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (478716) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (478724) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (484847) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (484913) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (484924) audio: thieu file /audio/estop_hold.wav[0m
+[1;31mE (487599) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (488600) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (489914) app_fsm: DUNG KHAN: da giu 5 s -> mo chot[0m
+[0;33mW (489915) cloud: report_event(estop_reset, 80456B281774-0-0012): chua ho tro[0m
+[0;32mI (489942) audio: phat: "Vui lòng bấm Tiếp tục rửa trên màn hình để tiếp tục phiên rửa xe."[0m
+[0;33mW (489953) audio: thieu file /audio/resume_ask.wav[0m
+[0;33mW (490438) io_exp: DUNG KHAN DA NHA[0m
+[0;32mI (494513) display: touch nghi ngo: adc x=1028 y=2883 luc=826 (mau 1/2)[0m
+[0;32mI (494549) display: touch adc x=1012 y=2879 luc=1012 -> man hinh x=99 y=180[0m
+[0;32mI (494584) display: touch adc x=1036 y=2868 luc=997 -> man hinh x=100 y=179[0m
+[0;32mI (494620) display: touch adc x=1040 y=2871 luc=959 -> man hinh x=99 y=179[0m
+[0;32mI (494655) display: touch adc x=1040 y=2879 luc=908 -> man hinh x=99 y=179[0m
+[0;32mI (494689) display: touch adc x=1088 y=2879 luc=736 -> man hinh x=99 y=176[0m
+[0;32mI (494724) display: touch adc x=1060 y=2891 luc=782 -> man hinh x=98 y=178[0m
+[0;32mI (494760) display: touch adc x=1060 y=2886 luc=703 -> man hinh x=98 y=178[0m
+[0;32mI (498600) net_gsm: pulse reset[0m
+[0;32mI (505039) display: touch nghi ngo: adc x=1166 y=1266 luc=1450 (mau 1/2)[0m
+[0;32mI (505106) display: touch nghi ngo: adc x=1190 y=1304 luc=1129 (mau 1/2)[0m
+[0;32mI (505141) display: touch adc x=1150 y=1291 luc=1274 -> man hinh x=227 y=172[0m
+[0;32mI (505247) audio: phat: "Tiếp tục rửa xe."[0m
+[0;32mI (505247) app_fsm: khach tiep tuc phien 80456B281774-0-0012, con 549s[0m
+[0;33mW (505258) audio: thieu file /audio/resume.wav[0m
+[0;32mI (505374) display: touch nghi ngo: adc x=1248 y=1344 luc=972 (mau 1/2)[0m
+[0;32mI (505478) display: touch nghi ngo: adc x=1168 y=1272 luc=1340 (mau 1/2)[0m
+[0;32mI (505514) display: touch adc x=1125 y=1283 luc=1289 -> man hinh x=228 y=174[0m
+[0;32mI (505549) display: touch adc x=1196 y=1283 luc=1157 -> man hinh x=228 y=170[0m
+[0;32mI (506100) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (506101) uart: queue free spaces: 30[0m
+[0;32mI (508238) display: touch nghi ngo: adc x=3508 y=642 luc=2068 (mau 1/2)[0m
+[0;32mI (508274) display: touch adc x=3539 y=626 luc=2473 -> man hinh x=281 y=33[0m
+[0;32mI (508309) display: touch adc x=3520 y=626 luc=2245 -> man hinh x=281 y=34[0m
+[0;32mI (509041) display: touch nghi ngo: adc x=1179 y=1184 luc=2191 (mau 1/2)[0m
+[0;32mI (509077) display: touch adc x=1342 y=1250 luc=1403 -> man hinh x=230 y=161[0m
+[0;32mI (509210) app_fsm: khach ket thuc som phien 80456B281774-0-0012, con 545s chua dung[0m
+[0;32mI (509211) app_fsm: ket thuc phien 80456B281774-0-0012 (ly do 4): bot 19s nuoc 10s kho 14s[0m
+[0;33mW (509218) cloud: [DEMO] report_session(80456B281774-0-0012, end): bo qua[0m
+[0;32mI (509227) app_fsm: WASHING -> FINISHED[0m
+[0;32mI (509245) audio: phat: "Đã kết thúc phiên rửa xe. Cảm ơn quý khách, hẹn gặp lại."[0m
+[0;33mW (509256) audio: thieu file /audio/end_early.wav[0m
+[0;32mI (513013) display: touch nghi ngo: adc x=1013 y=1658 luc=1451 (mau 1/2)[0m
+[0;32mI (513048) display: touch adc x=1102 y=1808 luc=694 -> man hinh x=185 y=175[0m
+[0;32mI (517248) app_fsm: FINISHED -> IDLE[0m
+[0;32mI (519263) display: touch nghi ngo: adc x=2490 y=2626 luc=1091 (mau 1/2)[0m
+[0;32mI (519298) display: touch adc x=2539 y=2611 luc=1472 -> man hinh x=120 y=91[0m
+[0;32mI (519411) app_fsm: tao don 80456B281774-0-0013: Gói 5 phút 5 phut 10000 d[0m
+[0;32mI (519411) app_fsm: IDLE -> CREATING_QR[0m
+[0;33mW (519418) peripheral_test: [DEMO] tao don 80456B281774-0-0013, 10000 d[0m
+[0;33mW (521419) peripheral_test: [DEMO] don 80456B281774-0-0013: da gui ma QR thu[0m
+[0;33mW (521419) peripheral_test: [DEMO] tu bao thanh toan sau 8 s[0m
+[0;32mI (521420) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (521481) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[0;33mW (521492) audio: thieu file /audio/scan_qr.wav[0m
+[1;31mE (526102) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (527103) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (529419) peripheral_test: [DEMO] don 80456B281774-0-0013: gia lap ket qua thanh toan = 0[0m
+[0;33mW (529423) cloud: [DEMO] report_session(80456B281774-0-0013, start): bo qua[0m
+[0;32mI (529423) app_fsm: WAIT_PAYMENT -> PAID[0m
+[0;32mI (529434) audio: phat: "Thanh toán thành công. Cảm ơn quý khách."[0m
+[0;33mW (529445) audio: thieu file /audio/pay_ok.wav[0m
+[0;32mI (532482) app_fsm: PAID -> WASHING[0m
+[0;32mI (532508) audio: phat: "Bắt đầu rửa xe. Nhấn nút bọt, nước hoặc xịt khô để sử dụng."[0m
+[0;33mW (532520) audio: thieu file /audio/wash_guide.wav[0m
+[0;32mI (536263) net_wifi: Auto scan fired (retry=5)[0m
+[0;32mI (537103) net_gsm: pulse reset[0m
+[0;32mI (539499) net_wifi: ===== SCAN RESULT (9 APs) =====[0m
+[0;32mI (539500) net_wifi: 1) SSID:P402 RSSI:-51 CH:11[0m
+[0;32mI (539500) net_wifi: 2) SSID:P62 RSSI:-89 CH:7[0m
+[0;32mI (539502) net_wifi: 3) SSID:Subabi RSSI:-89 CH:13[0m
+[0;32mI (539506) net_wifi: 4) SSID:Bong Bill RSSI:-92 CH:2[0m
+[0;32mI (539511) net_wifi: 5) SSID:BB 402 RSSI:-92 CH:8[0m
+[0;32mI (539515) net_wifi: 6) SSID:Wifi  RSSI:-93 CH:10[0m
+[0;32mI (539520) net_wifi: 7) SSID:Mai Linh RSSI:-94 CH:3[0m
+[0;32mI (539524) net_wifi: 8) SSID:VIETTEL_cMAm RSSI:-94 CH:3[0m
+[0;32mI (539529) net_wifi: 9) SSID:NamNH RSSI:-95 CH:1[0m
+[0;33mW (539534) net_wifi: Khong tim thay SSID da luu nao trong ket qua quet[0m
+[0;32mI (539540) net_wifi: Schedule next scan in 600000 ms[0m
+[0;32mI (543804) audio: phat: "Phun bọt."[0m
+[0;33mW (543815) audio: thieu file /audio/foam_on.wav[0m
+[0;32mI (544603) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (544604) uart: queue free spaces: 30[0m
+[0;32mI (546558) audio: phat: "Phun nước."[0m
+[0;33mW (546569) audio: thieu file /audio/water_on.wav[0m
+[0;32mI (548003) audio: phat: "Xịt khô."[0m
+[0;33mW (548014) audio: thieu file /audio/dry_on.wav[0m
+[0;32mI (549417) audio: phat: "Phun nước."[0m
+[0;33mW (549428) audio: thieu file /audio/water_on.wav[0m
+[0;32mI (551101) audio: phat: "Phun bọt."[0m
+[0;33mW (551112) audio: thieu file /audio/foam_on.wav[0m
+[0;32mI (552664) audio: phat: "Phun nước."[0m
+[0;33mW (552675) audio: thieu file /audio/water_on.wav[0m
+[0;32mI (553975) audio: phat: "Xịt khô."[0m
+[0;33mW (553986) audio: thieu file /audio/dry_on.wav[0m
+[0;33mW (561788) io_exp: TAT BOM KHAN CAP: nut dung khan[0m
+[0;33mW (561788) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (561789) app_fsm: DUNG KHAN: chot (giu nut 5 s de mo)[0m
+[0;32mI (561804) audio: phat: "Đã dừng khẩn cấp."[0m
+[0;33mW (561804) cloud: report_event(estop, 80456B281774-0-0013): chua ho tro[0m
+[0;33mW (561815) audio: thieu file /audio/estop.wav[0m
+[0;33mW (561866) io_exp: DUNG KHAN DA NHA[0m
+[1;31mE (564605) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (565606) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (567593) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (567688) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (567699) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (572689) app_fsm: DUNG KHAN: da giu 5 s -> mo chot[0m
+[0;33mW (572690) cloud: report_event(estop_reset, 80456B281774-0-0013): chua ho tro[0m
+[0;32mI (572716) audio: phat: "Vui lòng bấm Tiếp tục rửa trên màn hình để tiếp tục phiên rửa xe."[0m
+[0;33mW (572727) audio: thieu file /audio/resume_ask.wav[0m
+[0;33mW (572913) io_exp: DUNG KHAN DA NHA[0m
+[0;32mI (574663) display: touch nghi ngo: adc x=924 y=2968 luc=945 (mau 1/2)[0m
+[0;32mI (574699) display: touch adc x=1000 y=2944 luc=1655 -> man hinh x=94 y=181[0m
+[0;32mI (574735) display: touch adc x=990 y=2943 luc=1506 -> man hinh x=94 y=182[0m
+[0;32mI (574769) display: touch adc x=972 y=2959 luc=691 -> man hinh x=92 y=183[0m
+[0;32mI (575414) display: touch nghi ngo: adc x=1356 y=1200 luc=1807 (mau 1/2)[0m
+[0;32mI (575450) display: touch adc x=1350 y=1180 luc=2299 -> man hinh x=236 y=161[0m
+[0;32mI (575481) display: touch adc x=1360 y=1176 luc=2108 -> man hinh x=236 y=160[0m
+[0;32mI (575516) display: touch adc x=1362 y=1334 luc=731 -> man hinh x=224 y=160[0m
+[0;32mI (575595) app_fsm: khach huy phien 80456B281774-0-0013, con 270s chua dung[0m
+[0;32mI (575596) app_fsm: ket thuc phien 80456B281774-0-0013 (ly do 4): bot 3s nuoc 3s kho 8s[0m
+[0;33mW (575602) cloud: [DEMO] report_session(80456B281774-0-0013, end): bo qua[0m
+[0;32mI (575606) net_gsm: pulse reset[0m
+[0;32mI (575611) app_fsm: WASHING -> FINISHED[0m
+[0;32mI (575628) audio: phat: "Đã kết thúc phiên rửa xe. Cảm ơn quý khách, hẹn gặp lại."[0m
+[0;33mW (575640) audio: thieu file /audio/end_early.wav[0m
+[0;32mI (583108) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (583109) uart: queue free spaces: 30[0m
+[0;32mI (583691) app_fsm: FINISHED -> IDLE[0m
+[1;31mE (603110) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (604111) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (614111) net_gsm: pulse reset[0m
+[0;32mI (621611) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (621612) uart: queue free spaces: 30[0m
+[1;31mE (641614) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (642615) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (652615) net_gsm: pulse reset[0m
+[0;32mI (660115) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (660116) uart: queue free spaces: 30[0m
+[0;32mI (679507) display: touch nghi ngo: adc x=1200 y=1691 luc=1491 (mau 1/2)[0m
+[0;32mI (679894) display: touch nghi ngo: adc x=877 y=1678 luc=1292 (mau 1/2)[0m
+[0;32mI (679929) display: touch adc x=875 y=1675 luc=1584 -> man hinh x=196 y=188[0m
+[0;32mI (680042) app_fsm: tao don 80456B281774-0-0014: Gói 20 phút 20 phut 40000 d[0m
+[0;32mI (680043) app_fsm: IDLE -> CREATING_QR[0m
+[0;33mW (680050) peripheral_test: [DEMO] tao don 80456B281774-0-0014, 40000 d[0m
+[1;31mE (680117) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (681118) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (682051) peripheral_test: [DEMO] don 80456B281774-0-0014: da gui ma QR thu[0m
+[0;33mW (682051) peripheral_test: [DEMO] tu bao thanh toan sau 8 s[0m
+[0;32mI (682052) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (682112) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[0;33mW (682124) audio: thieu file /audio/scan_qr.wav[0m
+[0;33mW (690051) peripheral_test: [DEMO] don 80456B281774-0-0014: gia lap ket qua thanh toan = 0[0m
+[0;33mW (690055) cloud: [DEMO] report_session(80456B281774-0-0014, start): bo qua[0m
+[0;32mI (690055) app_fsm: WAIT_PAYMENT -> PAID[0m
+[0;32mI (690065) audio: phat: "Thanh toán thành công. Cảm ơn quý khách."[0m
+[0;33mW (690076) audio: thieu file /audio/pay_ok.wav[0m
+[0;32mI (691118) net_gsm: pulse reset[0m
+[0;33mW (692355) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (692355) app_fsm: DUNG KHAN: chot (giu nut 5 s de mo)[0m
+[0;32mI (692355) app_fsm: PAID -> WASHING[0m
+[0;32mI (692368) audio: phat: "Đã dừng khẩn cấp."[0m
+[0;33mW (692368) cloud: report_event(estop, 80456B281774-0-0014): chua ho tro[0m
+[0;33mW (692380) audio: thieu file /audio/estop.wav[0m
+[0;33mW (692405) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (693087) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (693114) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (693125) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (693138) io_exp: DUNG KHAN DA NHA[0m
+[0;32mI (698618) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (698619) uart: queue free spaces: 30[0m
+[0;33mW (717466) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (717514) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (717525) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (717557) io_exp: DUNG KHAN DA NHA[0m
+[1;31mE (718620) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (719621) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (721370) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (721414) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (721425) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (721430) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (721475) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (721525) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (721710) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (721714) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (721725) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (721806) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (723923) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (723976) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (725781) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (725814) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (725825) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (725832) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (727171) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (727214) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (727225) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (727248) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (727611) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (727614) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (727625) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (727665) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (727709) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (727784) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (727793) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (727846) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (727891) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (727943) io_exp: DUNG KHAN DA NHA[0m
+[0;32mI (729621) net_gsm: pulse reset[0m
+[0;33mW (730786) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (730814) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (730825) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (730836) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (730943) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (730994) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (731424) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (731515) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (731526) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (731669) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (731987) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (732015) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (732026) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (737015) app_fsm: DUNG KHAN: da giu 5 s -> mo chot[0m
+[0;33mW (737016) cloud: report_event(estop_reset, 80456B281774-0-0014): chua ho tro[0m
+[0;32mI (737043) audio: phat: "Vui lòng bấm Tiếp tục rửa trên màn hình để tiếp tục phiên rửa xe."[0m
+[0;33mW (737055) audio: thieu file /audio/resume_ask.wav[0m
+[0;32mI (737121) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (737122) uart: queue free spaces: 30[0m
+[0;33mW (737868) io_exp: DUNG KHAN DA NHA[0m
+[0;32mI (744279) display: touch nghi ngo: adc x=801 y=3093 luc=881 (mau 1/2)[0m
+[0;32mI (744315) display: touch adc x=822 y=3100 luc=1050 -> man hinh x=81 y=192[0m
+[0;32mI (744346) display: touch adc x=874 y=3098 luc=1248 -> man hinh x=81 y=188[0m
+[0;32mI (745691) display: touch nghi ngo: adc x=1121 y=1291 luc=1189 (mau 1/2)[0m
+[0;32mI (745727) display: touch adc x=1163 y=1262 luc=1477 -> man hinh x=230 y=172[0m
+[0;32mI (745764) display: touch adc x=1144 y=1256 luc=1699 -> man hinh x=230 y=173[0m
+[0;32mI (745799) display: touch adc x=1135 y=1254 luc=1712 -> man hinh x=230 y=173[0m
+[0;32mI (745835) display: touch adc x=1132 y=1247 luc=1813 -> man hinh x=231 y=173[0m
+[0;32mI (745870) display: touch adc x=1129 y=1250 luc=1798 -> man hinh x=230 y=174[0m
+[0;32mI (745904) display: touch adc x=1140 y=1262 luc=1494 -> man hinh x=230 y=173[0m
+[0;32mI (745979) app_fsm: khach huy phien 80456B281774-0-0014, con 1200s chua dung[0m
+[0;32mI (745980) app_fsm: ket thuc phien 80456B281774-0-0014 (ly do 4): bot 0s nuoc 0s kho 0s[0m
+[0;33mW (745986) cloud: [DEMO] report_session(80456B281774-0-0014, end): bo qua[0m
+[0;32mI (745995) app_fsm: WASHING -> FINISHED[0m
+[0;32mI (746012) audio: phat: "Đã kết thúc phiên rửa xe. Cảm ơn quý khách, hẹn gặp lại."[0m
+[0;33mW (746023) audio: thieu file /audio/end_early.wav[0m
+[0;32mI (754017) app_fsm: FINISHED -> IDLE[0m
+[0;32mI (755789) display: touch nghi ngo: adc x=984 y=1147 luc=1312 (mau 1/2)[0m
+[0;32mI (755824) display: touch adc x=971 y=1144 luc=1351 -> man hinh x=239 y=183[0m
+[0;32mI (755937) app_fsm: tao don 80456B281774-0-0015: Gói 20 phút 20 phut 40000 d[0m
+[0;32mI (755938) app_fsm: IDLE -> CREATING_QR[0m
+[0;33mW (755945) peripheral_test: [DEMO] tao don 80456B281774-0-0015, 40000 d[0m
+[1;31mE (757124) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (757946) peripheral_test: [DEMO] don 80456B281774-0-0015: da gui ma QR thu[0m
+[0;33mW (757946) peripheral_test: [DEMO] tu bao thanh toan sau 8 s[0m
+[0;32mI (757947) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (758010) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[0;33mW (758022) audio: thieu file /audio/scan_qr.wav[0m
+[0;33mW (758125) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (758991) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (758992) app_fsm: DUNG KHAN: chot (giu nut 5 s de mo)[0m
+[0;33mW (758992) app_fsm: dung khan khi dang thanh toan -> huy don 80456B281774-0-0015[0m
+[0;33mW (758996) peripheral_test: [DEMO] huy don 80456B281774-0-0015[0m
+[0;32mI (759001) app_fsm: WAIT_PAYMENT -> IDLE[0m
+[0;32mI (759014) audio: phat: "Đã dừng khẩn cấp."[0m
+[0;33mW (759014) cloud: report_event(estop, ): chua ho tro[0m
+[0;33mW (759025) audio: thieu file /audio/estop.wav[0m
+[0;33mW (759042) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (767119) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (767217) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (767227) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (767228) audio: thieu file /audio/estop_hold.wav[0m
+[0;32mI (768125) net_gsm: pulse reset[0m
+[0;33mW (769766) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (769817) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (769828) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (769829) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (769844) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (774817) app_fsm: DUNG KHAN: da giu 5 s -> mo chot[0m
+[0;33mW (774818) cloud: report_event(estop_reset, ): chua ho tro[0m
+[0;33mW (775289) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (775304) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (775304) app_fsm: DUNG KHAN: chot (giu nut 5 s de mo)[0m
+[0;32mI (775312) audio: phat: "Đã dừng khẩn cấp."[0m
+[0;33mW (775312) cloud: report_event(estop, ): chua ho tro[0m
+[0;33mW (775323) audio: thieu file /audio/estop.wav[0m
+[0;33mW (775456) io_exp: DUNG KHAN DA NHA[0m
+[0;32mI (775625) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (775626) uart: queue free spaces: 30[0m
+[0;33mW (778057) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (778117) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (778128) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (783117) app_fsm: DUNG KHAN: da giu 5 s -> mo chot[0m
+[0;33mW (783118) cloud: report_event(estop_reset, ): chua ho tro[0m
+[0;33mW (784663) io_exp: DUNG KHAN DA NHA[0m
+[1;31mE (795628) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (796629) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (806629) net_gsm: pulse reset[0m
+[0;32mI (814129) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (814130) uart: queue free spaces: 30[0m
+[1;31mE (834131) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (835132) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m

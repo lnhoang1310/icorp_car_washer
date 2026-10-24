@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=+3V3 Pin=U9-2
+Removed Pin From Net: NetName=ETH_INTN Pin=U9-18
+Added Pin To Net: NetName=+3.3V_1 Pin=U9-2
+Added Pin To Net: NetName=ETH_CLK Pin=U9-18
+Change Net Color : Old Net Color=RGB(0, 190, 0) New Net Color=RGB(253, 131, 0)
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component GND TP_1MM

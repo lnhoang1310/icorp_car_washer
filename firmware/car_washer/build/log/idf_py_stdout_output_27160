@@ -1,0 +1,166 @@
+Command: ninja flash
+[1/12] Generating ../../net_wifi_portal.html.S
+[2/12] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build/bootloader/bootloader.bin"
+Bootloader binary size 0x57f0 bytes. 0x2810 bytes (31%) free.
+[3/12] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\esp-idf\main && D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\littlefs_py_venv\Scripts\littlefs-python.exe create D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/assets/audio D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build/storage.bin -v --fs-size=0x400000 --name-max=64 --block-size=4096"
+LittleFS Configuration:
+  Block Size:       4096  /  0x1000
+  Image Size:    4194304  /  0x400000
+  Block Count:      1024
+  Name Max:           64
+  Image:       D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\storage.bin
+Adding File:      end_session.wav
+Adding File:      pay_error.wav
+Adding File:      pay_ok.wav
+Adding File:      qr_timeout.wav
+Adding File:      scan_qr.wav
+[4/12] No install step for 'bootloader'
+[5/12] Completed 'bootloader'
+[6/12] Building ASM object esp-idf/main/CMakeFiles/__idf_main.dir/__/__/net_wifi_portal.html.S.obj
+[7/12] Linking C static library esp-idf\main\libmain.a
+[8/12] Generating esp-idf/esp_system/ld/sections.ld
+[9/12] Linking CXX executable car_washer.elf
+[10/12] Generating binary image from built executable
+esptool.py v4.10.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build/car_washer.bin
+[11/12] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build/partition_table/partition-table.bin D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build/car_washer.bin"
+car_washer.bin binary size 0x1a1ca0 bytes. Smallest app partition is 0x2ee000 bytes. 0x14c360 bytes (44%) free.
+[11/12] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.5.1\components\esptool_py && C:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.5.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.5_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.5.1/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build -P C:/Espressif/frameworks/esp-idf-v5.5.1/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32s3 -p COM19 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size detect 0x0 bootloader/bootloader.bin 0x90000 car_washer.bin 0x8000 partition_table/partition-table.bin 0x89000 ota_data_initial.bin 0x66e000 storage.bin
+esptool.py v4.10.0
+Serial port COM19
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: 80:45:6b:28:17:74
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Auto-detected Flash size: 16MB
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00090000 to 0x00231fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x00089000 to 0x0008afff...
+Flash will be erased from 0x0066e000 to 0x00a6dfff...
+SHA digest in image updated
+Compressed 22512 bytes to 14397...
+Writing at 0x00000000... (100 %)
+Wrote 22512 bytes (14397 compressed) at 0x00000000 in 0.5 seconds (effective 363.2 kbit/s)...
+Hash of data verified.
+Compressed 1711264 bytes to 1089908...
+Writing at 0x00090000... (1 %)
+Writing at 0x0009b78c... (2 %)
+Writing at 0x000a960e... (4 %)
+Writing at 0x000b61d7... (5 %)
+Writing at 0x000c07d7... (7 %)
+Writing at 0x000cd908... (8 %)
+Writing at 0x000d623e... (10 %)
+Writing at 0x000de482... (11 %)
+Writing at 0x000ea246... (13 %)
+Writing at 0x000f048a... (14 %)
+Writing at 0x000f612c... (16 %)
+Writing at 0x000fbdde... (17 %)
+Writing at 0x00101713... (19 %)
+Writing at 0x00106c33... (20 %)
+Writing at 0x0010c556... (22 %)
+Writing at 0x001130b6... (23 %)
+Writing at 0x001193fb... (25 %)
+Writing at 0x0011efec... (26 %)
+Writing at 0x00124908... (28 %)
+Writing at 0x0012a586... (29 %)
+Writing at 0x0012f706... (31 %)
+Writing at 0x00134d1b... (32 %)
+Writing at 0x00139e1d... (34 %)
+Writing at 0x00140080... (35 %)
+Writing at 0x001452e4... (37 %)
+Writing at 0x0014a3e2... (38 %)
+Writing at 0x0014f758... (40 %)
+Writing at 0x00154f06... (41 %)
+Writing at 0x0015acb4... (43 %)
+Writing at 0x001602b6... (44 %)
+Writing at 0x00165480... (46 %)
+Writing at 0x0016ada1... (47 %)
+Writing at 0x001708c6... (49 %)
+Writing at 0x00175be5... (50 %)
+Writing at 0x0017ada0... (52 %)
+Writing at 0x001800ad... (53 %)
+Writing at 0x001851fb... (55 %)
+Writing at 0x0018ab95... (56 %)
+Writing at 0x0019029c... (58 %)
+Writing at 0x00195d67... (59 %)
+Writing at 0x0019b662... (61 %)
+Writing at 0x001a0895... (62 %)
+Writing at 0x001a5e45... (64 %)
+Writing at 0x001ab378... (65 %)
+Writing at 0x001b0869... (67 %)
+Writing at 0x001b5af5... (68 %)
+Writing at 0x001bacb9... (70 %)
+Writing at 0x001bfbf0... (71 %)
+Writing at 0x001c5556... (73 %)
+Writing at 0x001cad52... (74 %)
+Writing at 0x001d0263... (76 %)
+Writing at 0x001d577f... (77 %)
+Writing at 0x001db054... (79 %)
+Writing at 0x001e0b55... (80 %)
+Writing at 0x001e5b7a... (82 %)
+Writing at 0x001eadbe... (83 %)
+Writing at 0x001f05ab... (85 %)
+Writing at 0x001f600c... (86 %)
+Writing at 0x001fb5f6... (88 %)
+Writing at 0x0020259a... (89 %)
+Writing at 0x0020c73d... (91 %)
+Writing at 0x0021266e... (92 %)
+Writing at 0x00217d61... (94 %)
+Writing at 0x0021dcdd... (95 %)
+Writing at 0x002236b5... (97 %)
+Writing at 0x002298e0... (98 %)
+Writing at 0x0022e872... (100 %)
+Wrote 1711264 bytes (1089908 compressed) at 0x00090000 in 25.3 seconds (effective 540.1 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 146...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (146 compressed) at 0x00008000 in 0.0 seconds (effective 571.0 kbit/s)...
+Hash of data verified.
+Compressed 8192 bytes to 31...
+Writing at 0x00089000... (100 %)
+Wrote 8192 bytes (31 compressed) at 0x00089000 in 0.1 seconds (effective 1208.5 kbit/s)...
+Hash of data verified.
+Compressed 4194304 bytes to 409003...
+Writing at 0x0066e000... (4 %)
+Writing at 0x007db1c5... (8 %)
+Writing at 0x007e036b... (12 %)
+Writing at 0x007e4827... (16 %)
+Writing at 0x007e8a89... (20 %)
+Writing at 0x007ecfe1... (24 %)
+Writing at 0x007f31b3... (28 %)
+Writing at 0x007f7752... (32 %)
+Writing at 0x00803418... (36 %)
+Writing at 0x00807948... (40 %)
+Writing at 0x0080d367... (44 %)
+Writing at 0x00811609... (48 %)
+Writing at 0x0081d458... (52 %)
+Writing at 0x00821793... (56 %)
+Writing at 0x00826e9e... (60 %)
+Writing at 0x0082b1f2... (64 %)
+Writing at 0x0083754e... (68 %)
+Writing at 0x0083b6f7... (72 %)
+Writing at 0x0083fbe7... (76 %)
+Writing at 0x00845a8f... (80 %)
+Writing at 0x00851b65... (84 %)
+Writing at 0x00855daf... (88 %)
+Writing at 0x0085a2ff... (92 %)
+Writing at 0x0085e605... (96 %)
+Writing at 0x00862a05... (100 %)
+Wrote 4194304 bytes (409003 compressed) at 0x0066e000 in 17.8 seconds (effective 1887.3 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

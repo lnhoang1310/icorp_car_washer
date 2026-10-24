@@ -1,0 +1,1019 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM10 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\car_washer.elf D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM10'
+ESP-ROM:esp32s3-20210327
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1658
+load:0x403c8700,len:0xd98
+load:0x403cb700,len:0x33a4
+entry 0x403c899c
+[0;32mI (25) boot: ESP-IDF v5.5.1-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Sep 28 2026 18:07:58[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.4[0m
+[0;32mI (32) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (36) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00080000[0m
+[0;32mI (63) boot:  1 otadata          OTA data         01 00 00089000 00002000[0m
+[0;32mI (70) boot:  2 phy_init         RF data          01 01 0008b000 00001000[0m
+[0;32mI (76) boot:  3 ota_0            OTA app          00 10 00090000 002ee000[0m
+[0;32mI (83) boot:  4 ota_1            OTA app          00 11 00380000 002ee000[0m
+[0;32mI (89) boot:  5 storage          Unknown data     01 82 0066e000 00400000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00090020 vaddr=3c110020 size=493c0h (299968) map[0m
+[0;32mI (157) esp_image: segment 1: paddr=000d93e8 vaddr=3fc9ec00 size=05334h ( 21300) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=000de724 vaddr=40374000 size=018f4h (  6388) load[0m
+[0;32mI (163) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=103528h (1062184) map[0m
+[0;32mI (345) esp_image: segment 4: paddr=001e3550 vaddr=403758f4 size=192a0h (103072) load[0m
+[0;32mI (366) esp_image: segment 5: paddr=001fc7f8 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (376) boot: Loaded app from partition at offset 0x90000[0m
+[0;32mI (376) boot: Disabling RNG early entropy source...[0m
+[0;32mI (386) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (386) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (387) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (389) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (393) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (397) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (401) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (406) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (411) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (416) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (421) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (426) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (429) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (433) esp_psram: Speed: 80MHz[0m
+[0;32mI (436) cpu_start: Multicore app[0m
+[0;32mI (852) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (861) cpu_start: Pro cpu start user code[0m
+[0;32mI (861) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (861) app_init: Application information:[0m
+[0;32mI (861) app_init: Project name:     car_washer[0m
+[0;32mI (865) app_init: App version:      1.0.0[0m
+[0;32mI (869) app_init: Compile time:     Oct  1 2026 17:06:12[0m
+[0;32mI (874) app_init: ELF file SHA256:  79b1cf75b...[0m
+[0;32mI (878) app_init: ESP-IDF:          v5.5.1-dirty[0m
+[0;32mI (883) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (887) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (891) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (894) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (901) heap_init: At 3FCA9990 len 0003FD80 (255 KiB): RAM[0m
+[0;32mI (906) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (911) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (916) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (922) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (929) spi_flash: detected chip: generic[0m
+[0;32mI (932) spi_flash: flash io: dio[0m
+[0;32mI (935) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (941) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (948) main_task: Started on CPU0[0m
+[0;32mI (951) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (959) main_task: Calling app_main()[0m
+[0;32mI (1075) main: led_debug_task running[0m
+[0;32mI (1076) device_id: device_id = 80456B281774[0m
+[0;32mI (1076) main: device_id = 80456B281774[0m
+[0;32mI (1077) i2c_bus: i2c_bus_init OK (port=1 sda=1 scl=2)[0m
+[0;32mI (1082) io_exp: init OK (out=0x38 in=0x39 int=GPIO15)[0m
+[0;32mI (1085) peripheral_test: [0m
+[0;32mI (1088) peripheral_test: ########## BAT DAU TEST NGOAI VI ##########[0m
+[0;32mI (1092) io_exp: PCF input 0x39 OK[0m
+[0;32mI (1097) peripheral_test: ===== TEST FRAM =====[0m
+[0;32mI (1101) fram: fram_init OK (port=1 sda=1 scl=2 addr=0x50 cap=32768 byte)[0m
+[0;32mI (1108) fram: self_test OK[0m
+[0;32mI (1110) peripheral_test: fram_self_test OK[0m
+[0;32mI (1115) peripheral_test: Ghi/doc pattern tai 0x0100 khop -> FRAM (cap=32768 byte): PASS[0m
+[0;32mI (1122) peripheral_test: [0m
+[0;32mI (1124) peripheral_test: ===== TEST DS3231 =====[0m
+[0;33mW (1127) io_exp: DUNG KHAN DA NHA[0m
+[0;32mI (1132) rtc_ds3231: DS3231 connected (port=1 sda=1 scl=2)[0m
+[0;32mI (1137) peripheral_test: DS3231 connected[0m
+[0;33mW (1141) peripheral_test: DS3231 bao mat dien (bit OSF) -- gio hien tai trong chip co the KHONG dang tin cay[0m
+[0;32mI (1152) peripheral_test: Gio dang luu trong RTC: 2000-01-01 02:59:35[0m
+[0;32mI (2359) peripheral_test: Set 2025-01-01 12:00:00 -> doc lai 2025-01-01 12:00:01 (lech 1 giay) -> DS3231: PASS[0m
+[0;32mI (2360) peripheral_test: Da khoi phuc lai gio RTC nhu truoc luc test[0m
+[0;32mI (2364) peripheral_test: [0m
+[0;32mI (2366) peripheral_test: [0m
+[0;32mI (2369) peripheral_test: ########## KET QUA TEST NGOAI VI ##########[0m
+[0;32mI (2375) peripheral_test: FRAM    : PASS[0m
+[0;32mI (2379) peripheral_test: DS3231  : PASS[0m
+[0;32mI (2382) peripheral_test: RELAY   : bo qua[0m
+[0;32mI (2386) peripheral_test: ############################################[0m
+[0;33mW (2392) fram: fram_init da goi roi, bo qua[0m
+[0;32mI (2397) rtc_ds3231: DS3231 connected (port=1 sda=1 scl=2)[0m
+[0;33mW (2402) ntp_time: Dong ho he thong chua hop le (vua boot/reset)[0m
+[0;33mW (2408) ntp_time: Gio doc tu RTC khong hop le (co the do nhieu I2C lam sai lech du lieu) -- bo qua, cho SNTP[0m
+[0;33mW (2417) devcfg: khong co / hong cau hinh trong NVS -> dung mac dinh[0m
+[0;32mI (2594) display: doc ID man hinh (0xD3): FF FF FF FF FF[0m
+[0;33mW (2595) display: man hinh khong tra loi: chan SDO/MISO chua noi, hoac chip chua nhan duoc lenh (kiem tra day CS/DC/RST/SCK/SDI va nguon man hinh)[0m
+[0;32mI (2602) ili9341: LCD panel create success, version: 2.1.0[0m
+[0;32mI (2728) LVGL: Starting LVGL task[0m
+[0;33mW (2731) lcd_panel.io.spi: Callback on_color_trans_done was already set and now it was overwritten![0m
+[0;32mI (2787) display: cam ung XPT2046 OK (doc dinh ky, CS=GPIO21)[0m
+[0;32mI (2788) display: display OK ILI9341 320x240, SPI 15 MHz[0m
+[0;32mI (2796) audio: phan vung am thanh: dung 8/4096 KB[0m
+[0;33mW (2811) audio: thieu 24/24 file am thanh trong assets/audio[0m
+[0;32mI (2811) audio: audio OK (I2S 16000 Hz, BCLK=6 WS=7 DIN=5 SD=4)[0m
+[1;31mE (2811) gpio: gpio_install_isr_service(526): GPIO isr service already installed[0m
+[0;33mW (2818) net_ethernet: GPIO ISR handler already installed, bo qua[0m
+[0;32mI (2845) esp_eth.netif.netif_glue: 80:45:6b:28:17:77[0m
+[0;32mI (2846) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+[0;32mI (2846) net_ethernet: net_ethernet_init OK (spi_host=2 cs=9 int=10)[0m
+[0;32mI (2861) net_ethernet: Driver started[0m
+[0;32mI (2862) pp: pp rom version: e7ae62f[0m
+[0;32mI (2863) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (2864) wifi:wifi driver task: 3fce0614, prio:23, stack:6656, core=0[0m
+[0;32mI (2873) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (2873) wifi:wifi certification version: v7.0[0m
+[0;32mI (2876) wifi:config NVS flash: enabled[0m
+[0;32mI (2879) wifi:config nano formatting: disabled[0m
+[0;32mI (2884) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (2889) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (2893) wifi:Init management short buffer num: 32[0m
+[0;32mI (2897) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (2901) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (2906) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (2910) wifi:Init static rx buffer num: 10[0m
+[0;32mI (2914) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (2918) wifi_init: rx ba win: 6[0m
+[0;32mI (2920) wifi_init: accept mbox: 6[0m
+[0;32mI (2924) wifi_init: tcpip mbox: 32[0m
+[0;32mI (2927) wifi_init: udp mbox: 6[0m
+[0;32mI (2930) wifi_init: tcp mbox: 6[0m
+[0;32mI (2932) wifi_init: tcp tx win: 5760[0m
+[0;32mI (2936) wifi_init: tcp rx win: 5760[0m
+[0;32mI (2939) wifi_init: tcp mss: 1440[0m
+[0;32mI (2942) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (2946) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (2950) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (2958) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (2991) wifi:mode : sta (80:45:6b:28:17:74) + softAP (80:45:6b:28:17:75)[0m
+[0;32mI (2992) wifi:enable tsf[0m
+[0;32mI (2994) wifi:Total power save buffer number: 16[0m
+[0;32mI (2995) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (2998) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (3004) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;33mW (3006) net_wifi: Khong co SSID da luu -> chua ket noi duoc[0m
+[0;32mI (3012) net_wifi: Schedule next scan in 10000 ms[0m
+[0;32mI (3017) net_wifi: AP SSID=XTECH - 281774 IP:192.168.4.1[0m
+[0;32mI (3017) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (3030) net_gsm: net_gsm_init OK (uart=2 tx=47 rx=48 apn=v-internet)[0m
+[0;32mI (3035) net_gsm: pulse reset[0m
+[0;32mI (3036) net_manager: net_manager_init[0m
+[0;32mI (3042) ntp_time: SNTP started[0m
+[0;33mW (3044) cloud: !!! CHE DO THU (PT_DEMO_PAYMENT = 1): thanh toan GIA LAP, khong co tien that !!![0m
+[0;32mI (3053) main: khoi dong xong[0m
+[0;32mI (3055) main_task: Returned from app_main()[0m
+[0;32mI (3109) app_fsm: BOOT -> IDLE[0m
+[0;32mI (10538) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (10539) uart: queue free spaces: 30[0m
+[0;32mI (13016) net_wifi: Auto scan fired (retry=1)[0m
+[0;32mI (16252) net_wifi: ===== SCAN RESULT (15 APs) =====[0m
+[0;32mI (16252) net_wifi: 1) SSID:P402 RSSI:-55 CH:11[0m
+[0;32mI (16252) net_wifi: 2) SSID:Subabi RSSI:-89 CH:13[0m
+[0;32mI (16254) net_wifi: 3) SSID:Anh Khoa RSSI:-90 CH:4[0m
+[0;32mI (16259) net_wifi: 4) SSID:Tang 4 RSSI:-91 CH:5[0m
+[0;32mI (16263) net_wifi: 5) SSID:P62 RSSI:-91 CH:7[0m
+[0;32mI (16267) net_wifi: 6) SSID:TRAN THU RSSI:-91 CH:7[0m
+[0;32mI (16272) net_wifi: 7) SSID:FPT Telecom-2F71-IOT RSSI:-92 CH:6[0m
+[0;32mI (16277) net_wifi: 8) SSID:601 RSSI:-92 CH:10[0m
+[0;32mI (16281) net_wifi: 9) SSID:QUYNH ANH RSSI:-92 CH:10[0m
+[0;32mI (16286) net_wifi: 10) SSID:LAN THANG RSSI:-92 CH:10[0m
+[0;32mI (16291) net_wifi: 11) SSID:Bong Bill RSSI:-93 CH:2[0m
+[0;32mI (16296) net_wifi: 12) SSID:Quang Anh t3 RSSI:-93 CH:5[0m
+[0;32mI (16300) net_wifi: 13) SSID:Nhim va Soc T1 RSSI:-94 CH:2[0m
+[0;32mI (16306) net_wifi: 14) SSID:Mai Linh RSSI:-94 CH:3[0m
+[0;32mI (16310) net_wifi: 15) SSID:Tenda_P51 RSSI:-95 CH:2[0m
+[0;33mW (16315) net_wifi: Khong tim thay SSID da luu nao trong ket qua quet[0m
+[0;32mI (16321) net_wifi: Schedule next scan in 30000 ms[0m
+[0;32mI (21856) display: cam ung: nhan duoc cham dau tien tai x=87 y=81 (luc 716)[0m
+[0;32mI (21857) display: touch adc x=2584 y=2897 luc=716 -> man hinh x=87 y=81[0m
+[0;32mI (21960) display: touch adc x=2585 y=2909 luc=1279 -> man hinh x=86 y=81[0m
+[0;32mI (21996) display: touch adc x=2591 y=2926 luc=1348 -> man hinh x=84 y=81[0m
+[0;32mI (22107) app_fsm: tao don 80456B281774-0-0015: Gói 5 phút 5 phut 10000 d[0m
+[0;32mI (22108) app_fsm: IDLE -> CREATING_QR[0m
+[0;33mW (22116) peripheral_test: [DEMO] tao don 80456B281774-0-0015, 10000 d[0m
+[0;33mW (24116) peripheral_test: [DEMO] don 80456B281774-0-0015: da gui ma QR thu[0m
+[0;33mW (24117) peripheral_test: [DEMO] tu bao thanh toan sau 8 s[0m
+[0;32mI (24118) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (24176) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[0;33mW (24206) audio: thieu file /audio/scan_qr.wav[0m
+[0;32mI (25756) display: touch adc x=746 y=900 luc=1731 -> man hinh x=259 y=203[0m
+[0;32mI (25792) display: touch adc x=705 y=891 luc=2186 -> man hinh x=260 y=206[0m
+[0;32mI (25826) display: touch adc x=716 y=894 luc=2270 -> man hinh x=260 y=205[0m
+[0;32mI (25862) display: touch adc x=705 y=894 luc=2304 -> man hinh x=260 y=206[0m
+[0;33mW (25966) peripheral_test: [DEMO] huy don 80456B281774-0-0015[0m
+[0;32mI (25967) app_fsm: WAIT_PAYMENT -> NOTICE[0m
+[0;32mI (29983) app_fsm: NOTICE -> IDLE[0m
+[1;31mE (30540) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (31541) net_gsm: Modem/song chua san sang, thu lai sau 5000 ms (fail_count=1)[0m
+[0;32mI (35606) display: touch adc x=2557 y=1314 luc=946 -> man hinh x=223 y=83[0m
+[0;32mI (35754) app_fsm: tao don 80456B281774-0-0016: Gói 10 phút 10 phut 20000 d[0m
+[0;32mI (35755) app_fsm: IDLE -> CREATING_QR[0m
+[0;33mW (35762) peripheral_test: [DEMO] tao don 80456B281774-0-0016, 20000 d[0m
+[0;32mI (36541) net_gsm: pulse reset[0m
+[0;33mW (37763) peripheral_test: [DEMO] don 80456B281774-0-0016: da gui ma QR thu[0m
+[0;33mW (37763) peripheral_test: [DEMO] tu bao thanh toan sau 8 s[0m
+[0;32mI (37764) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (37828) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[0;33mW (37840) audio: thieu file /audio/scan_qr.wav[0m
+[0;32mI (39073) display: touch adc x=722 y=904 luc=1784 -> man hinh x=259 y=205[0m
+[0;32mI (39110) display: touch adc x=729 y=896 luc=1953 -> man hinh x=259 y=204[0m
+[0;33mW (39215) peripheral_test: [DEMO] huy don 80456B281774-0-0016[0m
+[0;32mI (39216) app_fsm: WAIT_PAYMENT -> NOTICE[0m
+[0;32mI (43232) app_fsm: NOTICE -> IDLE[0m
+[0;32mI (44041) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (44042) uart: queue free spaces: 30[0m
+[0;32mI (44619) display: touch adc x=1145 y=1408 luc=763 -> man hinh x=215 y=177[0m
+[0;32mI (44767) app_fsm: tao don 80456B281774-0-0017: Gói 20 phút 20 phut 40000 d[0m
+[0;32mI (44767) app_fsm: IDLE -> CREATING_QR[0m
+[0;33mW (44774) peripheral_test: [DEMO] tao don 80456B281774-0-0017, 40000 d[0m
+[0;32mI (46326) net_wifi: Auto scan fired (retry=2)[0m
+[0;33mW (46775) peripheral_test: [DEMO] don 80456B281774-0-0017: da gui ma QR thu[0m
+[0;33mW (46775) peripheral_test: [DEMO] tu bao thanh toan sau 8 s[0m
+[0;32mI (46776) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (46836) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[0;33mW (46848) audio: thieu file /audio/scan_qr.wav[0m
+[0;32mI (48260) display: touch adc x=640 y=997 luc=1610 -> man hinh x=251 y=210[0m
+[0;33mW (48365) peripheral_test: [DEMO] huy don 80456B281774-0-0017[0m
+[0;32mI (48366) app_fsm: WAIT_PAYMENT -> NOTICE[0m
+[0;32mI (49562) net_wifi: ===== SCAN RESULT (14 APs) =====[0m
+[0;32mI (49563) net_wifi: 1) SSID:P402 RSSI:-62 CH:11[0m
+[0;32mI (49563) net_wifi: 2) SSID:P62 RSSI:-88 CH:7[0m
+[0;32mI (49564) net_wifi: 3) SSID:601 RSSI:-88 CH:10[0m
+[0;32mI (49569) net_wifi: 4) SSID:Subabi RSSI:-89 CH:13[0m
+[0;32mI (49573) net_wifi: 5) SSID:Anh Khoa RSSI:-91 CH:4[0m
+[0;32mI (49578) net_wifi: 6) SSID:HungPhat RSSI:-91 CH:5[0m
+[0;32mI (49582) net_wifi: 7) SSID:FPT Telecom-2F71-IOT RSSI:-92 CH:6[0m
+[0;32mI (49588) net_wifi: 8) SSID:QUYNH ANH RSSI:-92 CH:10[0m
+[0;32mI (49592) net_wifi: 9) SSID:Tenda_P51 RSSI:-93 CH:2[0m
+[0;32mI (49597) net_wifi: 10) SSID:LA House 5 RSSI:-93 CH:10[0m
+[0;32mI (49602) net_wifi: 11) SSID:Chuot RSSI:-94 CH:2[0m
+[0;32mI (49606) net_wifi: 12) SSID:Bong Bill RSSI:-94 CH:2[0m
+[0;32mI (49611) net_wifi: 13) SSID:Nhim va Soc T1 RSSI:-94 CH:2[0m
+[0;32mI (49616) net_wifi: 14) SSID:BB 402 RSSI:-95 CH:8[0m
+[0;33mW (49620) net_wifi: Khong tim thay SSID da luu nao trong ket qua quet[0m
+[0;32mI (49627) net_wifi: Schedule next scan in 60000 ms[0m
+[0;32mI (52439) app_fsm: NOTICE -> IDLE[0m
+[1;31mE (64043) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (65044) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (68315) display: touch adc x=1082 y=2858 luc=1043 -> man hinh x=90 y=181[0m
+[0;32mI (68464) app_fsm: tao don 80456B281774-0-0018: Gói 15 phút 15 phut 30000 d[0m
+[0;32mI (68465) app_fsm: IDLE -> CREATING_QR[0m
+[0;33mW (68472) peripheral_test: [DEMO] tao don 80456B281774-0-0018, 30000 d[0m
+[0;33mW (70473) peripheral_test: [DEMO] don 80456B281774-0-0018: da gui ma QR thu[0m
+[0;33mW (70474) peripheral_test: [DEMO] tu bao thanh toan sau 8 s[0m
+[0;32mI (70475) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (70534) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[0;33mW (70545) audio: thieu file /audio/scan_qr.wav[0m
+[0;32mI (73638) display: touch adc x=672 y=917 luc=1407 -> man hinh x=258 y=208[0m
+[0;32mI (73675) display: touch adc x=686 y=886 luc=1792 -> man hinh x=260 y=207[0m
+[0;32mI (73744) display: touch adc x=679 y=890 luc=2332 -> man hinh x=260 y=208[0m
+[0;32mI (73780) display: touch adc x=681 y=881 luc=2267 -> man hinh x=261 y=208[0m
+[0;32mI (73814) display: touch adc x=661 y=914 luc=1276 -> man hinh x=258 y=209[0m
+[0;33mW (73922) peripheral_test: [DEMO] huy don 80456B281774-0-0018[0m
+[0;32mI (73923) app_fsm: WAIT_PAYMENT -> NOTICE[0m
+[0;32mI (75044) net_gsm: pulse reset[0m
+[0;32mI (77939) app_fsm: NOTICE -> IDLE[0m
+[0;32mI (82544) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (82545) uart: queue free spaces: 30[0m
+[1;31mE (102546) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;32mI (103166) wifi:new:<1,0>, old:<1,1>, ap:<1,0>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (103167) wifi:station: 72:19:59:22:76:ff join, AID=1, bgn, 20[0m
+[0;32mI (103189) net_wifi: Station 72:19:59:22:76:ff joined AP, AID=1[0m
+[0;32mI (103223) wifi:<ba-add>idx:2 (ifx:1, 72:19:59:22:76:ff), tid:0, ssn:2, winSize:64[0m
+[0;33mW (103547) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (104339) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (109631) net_wifi: Auto scan fired (retry=3)[0m
+[0;32mI (112867) net_wifi: ===== SCAN RESULT (15 APs) =====[0m
+[0;32mI (112868) net_wifi: 1) SSID:P402 RSSI:-56 CH:11[0m
+[0;32mI (112868) net_wifi: 2) SSID:Subabi RSSI:-88 CH:13[0m
+[0;32mI (112870) net_wifi: 3) SSID:TRAN THU RSSI:-90 CH:7[0m
+[0;32mI (112875) net_wifi: 4) SSID:601 RSSI:-90 CH:10[0m
+[0;32mI (112879) net_wifi: 5) SSID:P62 RSSI:-91 CH:7[0m
+[0;32mI (112883) net_wifi: 6) SSID:FPT Telecom-1F51 RSSI:-91 CH:9[0m
+[0;32mI (112888) net_wifi: 7) SSID:LAN THANG RSSI:-91 CH:10[0m
+[0;32mI (112893) net_wifi: 8) SSID:NamNH RSSI:-92 CH:1[0m
+[0;32mI (112897) net_wifi: 9) SSID:Chuot RSSI:-92 CH:2[0m
+[0;32mI (112902) net_wifi: 10) SSID:Anh Khoa RSSI:-92 CH:4[0m
+[0;32mI (112906) net_wifi: 11) SSID:Nhim va Soc T1 RSSI:-93 CH:2[0m
+[0;32mI (112912) net_wifi: 12) SSID:QUANG ANH 94 RSSI:-93 CH:11[0m
+[0;32mI (112917) net_wifi: 13) SSID:Tenda_P51 RSSI:-94 CH:2[0m
+[0;32mI (112922) net_wifi: 14) SSID:Mai Linh RSSI:-94 CH:3[0m
+[0;32mI (112926) net_wifi: 15) SSID:FPT Telecom-2F71-IOT RSSI:-94 CH:6[0m
+[0;33mW (112932) net_wifi: Khong tim thay SSID da luu nao trong ket qua quet[0m
+[0;32mI (112938) net_wifi: Schedule next scan in 120000 ms[0m
+[0;32mI (113547) net_gsm: pulse reset[0m
+[0;32mI (114134) wifi:<ba-add>idx:3 (ifx:1, 72:19:59:22:76:ff), tid:1, ssn:0, winSize:64[0m
+[0;32mI (114219) wifi:<ba-add>idx:4 (ifx:1, 72:19:59:22:76:ff), tid:5, ssn:0, winSize:64[0m
+[0;32mI (121047) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (121048) uart: queue free spaces: 30[0m
+[0;32mI (122163) wifi:station: 72:19:59:22:76:ff leave, AID = 1, reason = 8, bss_flags is 691315, bss:0x3c164020[0m
+[0;32mI (122163) wifi:new:<1,0>, old:<1,0>, ap:<1,0>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (122169) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (122172) wifi:<ba-del>idx:3, tid:1[0m
+[0;32mI (122175) wifi:<ba-del>idx:4, tid:5[0m
+[0;32mI (122179) net_wifi: Station 72:19:59:22:76:ff left AP, AID=1[0m
+[0;32mI (122180) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (123191) wifi:new:<1,0>, old:<1,1>, ap:<1,0>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (123193) wifi:station: 72:19:59:22:76:ff join, AID=1, bgn, 20[0m
+[0;32mI (123210) net_wifi: Station 72:19:59:22:76:ff joined AP, AID=1[0m
+[0;32mI (123355) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (123355) wifi:<ba-add>idx:2 (ifx:1, 72:19:59:22:76:ff), tid:0, ssn:2, winSize:64[0m
+[0;32mI (126829) wifi:<ba-add>idx:3 (ifx:1, 72:19:59:22:76:ff), tid:5, ssn:0, winSize:64[0m
+[0;32mI (128207) wifi:<ba-add>idx:4 (ifx:1, 72:19:59:22:76:ff), tid:1, ssn:0, winSize:64[0m
+[1;31mE (141049) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (142050) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (146562) wifi:station: 72:19:59:22:76:ff leave, AID = 1, reason = 8, bss_flags is 691299, bss:0x3c164020[0m
+[0;32mI (146563) wifi:new:<1,0>, old:<1,0>, ap:<1,0>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (146568) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (146571) wifi:<ba-del>idx:4, tid:1[0m
+[0;32mI (146575) wifi:<ba-del>idx:3, tid:5[0m
+[0;32mI (146579) net_wifi: Station 72:19:59:22:76:ff left AP, AID=1[0m
+[0;32mI (146580) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (152050) net_gsm: pulse reset[0m
+[0;32mI (159550) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (159551) uart: queue free spaces: 30[0m
+[0;32mI (161564) display: touch adc x=2467 y=1428 luc=1978 -> man hinh x=214 y=89[0m
+[0;32mI (161636) display: touch adc x=2488 y=1450 luc=2193 -> man hinh x=212 y=88[0m
+[0;32mI (161705) display: touch adc x=2488 y=1440 luc=2220 -> man hinh x=213 y=88[0m
+[0;32mI (161741) display: touch adc x=2486 y=1446 luc=2220 -> man hinh x=212 y=88[0m
+[0;32mI (161852) app_fsm: tao don 80456B281774-0-0019: Gói 10 phút 10 phut 20000 d[0m
+[0;32mI (161852) app_fsm: IDLE -> CREATING_QR[0m
+[0;33mW (161859) peripheral_test: [DEMO] tao don 80456B281774-0-0019, 20000 d[0m
+[0;33mW (163860) peripheral_test: [DEMO] don 80456B281774-0-0019: da gui ma QR thu[0m
+[0;33mW (163860) peripheral_test: [DEMO] tu bao thanh toan sau 8 s[0m
+[0;32mI (163861) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (163921) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[0;33mW (163932) audio: thieu file /audio/scan_qr.wav[0m
+[0;32mI (165415) display: touch adc x=781 y=1038 luc=1925 -> man hinh x=247 y=201[0m
+[0;32mI (165451) display: touch adc x=773 y=1037 luc=1976 -> man hinh x=247 y=201[0m
+[0;32mI (165486) display: touch adc x=775 y=1041 luc=2009 -> man hinh x=247 y=201[0m
+[0;32mI (165556) display: touch adc x=778 y=1035 luc=2031 -> man hinh x=248 y=201[0m
+[0;32mI (165592) display: touch adc x=781 y=1047 luc=2069 -> man hinh x=246 y=201[0m
+[0;32mI (165627) display: touch adc x=780 y=1040 luc=2068 -> man hinh x=247 y=201[0m
+[0;32mI (165661) display: touch adc x=784 y=1041 luc=2083 -> man hinh x=247 y=201[0m
+[0;32mI (165696) display: touch adc x=784 y=1042 luc=2072 -> man hinh x=247 y=201[0m
+[0;32mI (165732) display: touch adc x=784 y=1040 luc=2056 -> man hinh x=247 y=201[0m
+[0;33mW (165835) peripheral_test: [DEMO] huy don 80456B281774-0-0019[0m
+[0;32mI (165836) app_fsm: WAIT_PAYMENT -> NOTICE[0m
+[0;32mI (169922) app_fsm: NOTICE -> IDLE[0m
+[1;31mE (179552) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (180553) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (184318) audio: phat: "Vui lòng chọn gói dịch vụ trên màn hình trước."[0m
+[0;33mW (184329) audio: thieu file /audio/select_pkg.wav[0m
+[0;32mI (190553) net_gsm: pulse reset[0m
+[0;33mW (197614) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (197615) app_fsm: DUNG KHAN: chot (giu nut 5 s de mo)[0m
+[0;33mW (197623) cloud: report_event(estop, ): chua ho tro[0m
+[0;32mI (197623) audio: phat: "Đã dừng khẩn cấp."[0m
+[0;33mW (197634) audio: thieu file /audio/estop.wav[0m
+[0;33mW (197976) io_exp: DUNG KHAN DA NHA[0m
+[0;32mI (198053) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (198054) uart: queue free spaces: 30[0m
+[0;33mW (204444) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (204527) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (204538) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (209527) app_fsm: DUNG KHAN: da giu 5 s -> mo chot[0m
+[0;33mW (209528) cloud: report_event(estop_reset, ): chua ho tro[0m
+[0;33mW (210078) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (210083) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (210084) app_fsm: DUNG KHAN: chot (giu nut 5 s de mo)[0m
+[0;33mW (210093) cloud: report_event(estop, ): chua ho tro[0m
+[0;32mI (210093) audio: phat: "Đã dừng khẩn cấp."[0m
+[0;33mW (210105) audio: thieu file /audio/estop.wav[0m
+[0;33mW (210118) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (214476) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (214527) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (214538) audio: thieu file /audio/estop_hold.wav[0m
+[1;31mE (218055) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (219056) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (219528) app_fsm: DUNG KHAN: da giu 5 s -> mo chot[0m
+[0;33mW (219529) cloud: report_event(estop_reset, ): chua ho tro[0m
+[0;33mW (220861) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (220952) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (220952) app_fsm: DUNG KHAN: chot (giu nut 5 s de mo)[0m
+[0;33mW (220961) cloud: report_event(estop, ): chua ho tro[0m
+[0;32mI (220961) audio: phat: "Đã dừng khẩn cấp."[0m
+[0;33mW (220973) audio: thieu file /audio/estop.wav[0m
+[0;33mW (221006) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (222836) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (222868) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (223033) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (223106) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (223194) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (223228) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (223231) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (223239) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (223433) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (223473) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (223989) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (224026) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (225022) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (225028) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (225039) audio: thieu file /audio/estop_hold.wav[0m
+[0;32mI (229056) net_gsm: pulse reset[0m
+[0;33mW (230028) app_fsm: DUNG KHAN: da giu 5 s -> mo chot[0m
+[0;33mW (230029) cloud: report_event(estop_reset, ): chua ho tro[0m
+[0;33mW (230369) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (230372) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (230372) app_fsm: DUNG KHAN: chot (giu nut 5 s de mo)[0m
+[0;33mW (230380) cloud: report_event(estop, ): chua ho tro[0m
+[0;32mI (230380) audio: phat: "Đã dừng khẩn cấp."[0m
+[0;33mW (230392) audio: thieu file /audio/estop.wav[0m
+[0;33mW (230473) io_exp: DUNG KHAN DA NHA[0m
+[0;32mI (232943) net_wifi: Auto scan fired (retry=4)[0m
+[0;33mW (234067) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (234128) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (234139) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (236012) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (236070) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (236129) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (236140) audio: thieu file /audio/estop_hold.wav[0m
+[0;32mI (236180) net_wifi: ===== SCAN RESULT (15 APs) =====[0m
+[0;32mI (236181) net_wifi: 1) SSID:P402 RSSI:-57 CH:11[0m
+[0;32mI (236181) net_wifi: 2) SSID:Subabi RSSI:-87 CH:13[0m
+[0;32mI (236183) net_wifi: 3) SSID:601 RSSI:-89 CH:10[0m
+[0;32mI (236188) net_wifi: 4) SSID:LAN THANG RSSI:-89 CH:10[0m
+[0;32mI (236192) net_wifi: 5) SSID:P62 RSSI:-90 CH:7[0m
+[0;32mI (236197) net_wifi: 6) SSID:Anh Khoa RSSI:-92 CH:4[0m
+[0;32mI (236201) net_wifi: 7) SSID:TRAN THU RSSI:-92 CH:7[0m
+[0;32mI (236206) net_wifi: 8) SSID:FPT Telecom-1F51 RSSI:-92 CH:9[0m
+[0;32mI (236211) net_wifi: 9) SSID:Nhim va Soc T1 RSSI:-93 CH:2[0m
+[0;32mI (236216) net_wifi: 10) SSID:Mai Linh RSSI:-93 CH:3[0m
+[0;32mI (236221) net_wifi: 11) SSID:Tang 4 RSSI:-93 CH:5[0m
+[0;32mI (236225) net_wifi: 12) SSID:QUYNH ANH RSSI:-93 CH:10[0m
+[0;32mI (236230) net_wifi: 13) SSID:VIETTEL_cMAm RSSI:-94 CH:4[0m
+[0;32mI (236235) net_wifi: 14) SSID:Tenda_P51 RSSI:-95 CH:2[0m
+[0;32mI (236240) net_wifi: 15) SSID:Quang Anh t3 RSSI:-95 CH:5[0m
+[0;33mW (236245) net_wifi: Khong tim thay SSID da luu nao trong ket qua quet[0m
+[0;32mI (236251) net_wifi: Schedule next scan in 300000 ms[0m
+[0;32mI (236556) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (236557) uart: queue free spaces: 30[0m
+[0;33mW (241158) app_fsm: DUNG KHAN: da giu 5 s -> mo chot[0m
+[0;33mW (241159) cloud: report_event(estop_reset, ): chua ho tro[0m
+[0;33mW (246176) io_exp: DUNG KHAN DA NHA[0m
+[1;31mE (256560) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;32mI (256735) display: touch adc x=2348 y=1086 luc=1050 -> man hinh x=243 y=97[0m
+[0;32mI (256841) display: touch adc x=2392 y=1118 luc=1454 -> man hinh x=240 y=94[0m
+[0;32mI (256953) app_fsm: tao don 80456B281774-0-0020: Gói 10 phút 10 phut 20000 d[0m
+[0;32mI (256954) app_fsm: IDLE -> CREATING_QR[0m
+[0;33mW (256962) peripheral_test: [DEMO] tao don 80456B281774-0-0020, 20000 d[0m
+[0;33mW (257561) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (258963) peripheral_test: [DEMO] don 80456B281774-0-0020: da gui ma QR thu[0m
+[0;33mW (258963) peripheral_test: [DEMO] tu bao thanh toan sau 8 s[0m
+[0;32mI (258964) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (259026) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[0;33mW (259038) audio: thieu file /audio/scan_qr.wav[0m
+[0;33mW (266963) peripheral_test: [DEMO] don 80456B281774-0-0020: gia lap ket qua thanh toan = 0[0m
+[0;33mW (266966) cloud: [DEMO] report_session(80456B281774-0-0020, start): bo qua[0m
+[0;32mI (266967) app_fsm: WAIT_PAYMENT -> PAID[0m
+[0;32mI (266977) audio: phat: "Thanh toán thành công. Cảm ơn quý khách."[0m
+[0;33mW (266989) audio: thieu file /audio/pay_ok.wav[0m
+[0;32mI (267427) app_fsm: den BAT (troi toi)[0m
+[0;32mI (267561) net_gsm: pulse reset[0m
+[0;32mI (270027) app_fsm: PAID -> WASHING[0m
+[0;32mI (270052) audio: phat: "Bắt đầu rửa xe. Nhấn nút bọt, nước hoặc xịt khô để sử dụng."[0m
+[0;33mW (270064) audio: thieu file /audio/wash_guide.wav[0m
+[0;32mI (275061) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (275062) uart: queue free spaces: 30[0m
+[0;32mI (283152) audio: phat: "Phun nước."[0m
+[0;33mW (283163) audio: thieu file /audio/water_on.wav[0m
+[1;31mE (295063) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (296064) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (306064) net_gsm: pulse reset[0m
+[0;33mW (309715) io_exp: TAT BOM KHAN CAP: nut dung khan[0m
+[0;33mW (309716) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (309716) app_fsm: DUNG KHAN: chot (giu nut 5 s de mo)[0m
+[0;33mW (309731) cloud: report_event(estop, 80456B281774-0-0020): chua ho tro[0m
+[0;32mI (309731) audio: phat: "Đã dừng khẩn cấp."[0m
+[0;33mW (309742) audio: thieu file /audio/estop.wav[0m
+[0;33mW (309752) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (309753) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (309784) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (311294) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (311325) io_exp: DUNG KHAN DA NHA[0m
+[0;32mI (313564) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (313565) uart: queue free spaces: 30[0m
+[0;33mW (316115) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (316132) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (316143) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (316146) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (317175) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (317208) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (323223) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (323233) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (323244) audio: thieu file /audio/estop_hold.wav[0m
+[0;33mW (323254) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (323311) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (328233) app_fsm: DUNG KHAN: da giu 5 s -> mo chot[0m
+[0;33mW (328234) cloud: report_event(estop_reset, 80456B281774-0-0020): chua ho tro[0m
+[0;32mI (328260) audio: phat: "Vui lòng bấm Tiếp tục rửa trên màn hình để tiếp tục phiên rửa xe."[0m
+[0;33mW (328272) audio: thieu file /audio/resume_ask.wav[0m
+[0;33mW (328883) io_exp: DUNG KHAN DA NHA[0m
+[1;31mE (333567) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (334568) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (335149) display: touch adc x=874 y=1148 luc=1424 -> man hinh x=238 y=195[0m
+[0;32mI (335186) display: touch adc x=899 y=1193 luc=1151 -> man hinh x=234 y=193[0m
+[0;32mI (335325) app_fsm: khach tiep tuc phien 80456B281774-0-0020, con 560s[0m
+[0;32mI (335325) audio: phat: "Tiếp tục rửa xe."[0m
+[0;33mW (335336) audio: thieu file /audio/resume.wav[0m
+[0;32mI (344568) net_gsm: pulse reset[0m
+[0;32mI (352068) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (352069) uart: queue free spaces: 30[0m
+[0;33mW (358166) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (358167) app_fsm: DUNG KHAN: chot (giu nut 5 s de mo)[0m
+[0;33mW (358182) cloud: report_event(estop, 80456B281774-0-0020): chua ho tro[0m
+[0;32mI (358182) audio: phat: "Đã dừng khẩn cấp."[0m
+[0;33mW (358194) audio: thieu file /audio/estop.wav[0m
+[0;33mW (358198) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (358659) io_exp: DUNG KHAN TAC DONG[0m
+[0;33mW (358699) io_exp: DUNG KHAN DA NHA[0m
+[0;33mW (368655) io_exp: DUNG KHAN TAC DONG[0m
+[0;32mI (368735) audio: phat: "Giữ nút dừng khẩn cấp năm giây để mở lại hệ thống."[0m
+[0;33mW (368746) audio: thieu file /audio/estop_hold.wav[0m
+[1;31mE (372070) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (373071) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (373736) app_fsm: DUNG KHAN: da giu 5 s -> mo chot[0m
+[0;33mW (373737) cloud: report_event(estop_reset, 80456B281774-0-0020): chua ho tro[0m
+[0;32mI (373763) audio: phat: "Vui lòng bấm Tiếp tục rửa trên màn hình để tiếp tục phiên rửa xe."[0m
+[0;33mW (373774) audio: thieu file /audio/resume_ask.wav[0m
+[0;33mW (374247) io_exp: DUNG KHAN DA NHA[0m
+[0;32mI (378125) display: touch adc x=979 y=3111 luc=444 -> man hinh x=69 y=188[0m
+[0;32mI (383071) net_gsm: pulse reset[0m
+[0;32mI (390571) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (390572) uart: queue free spaces: 30[0m
+[0;32mI (390685) display: touch adc x=923 y=3094 luc=459 -> man hinh x=70 y=192[0m
+[0;32mI (391853) display: touch adc x=1268 y=1535 luc=2013 -> man hinh x=204 y=169[0m
+[0;32mI (391890) display: touch adc x=1272 y=1541 luc=2020 -> man hinh x=204 y=168[0m
+[0;32mI (392000) app_fsm: khach huy phien 80456B281774-0-0020, con 537s chua dung[0m
+[0;32mI (392001) app_fsm: ket thuc phien 80456B281774-0-0020 (ly do 4): bot 0s nuoc 26s kho 0s[0m
+[0;33mW (392007) cloud: [DEMO] report_session(80456B281774-0-0020, end): bo qua[0m
+[0;32mI (392016) app_fsm: WASHING -> FINISHED[0m
+[0;32mI (392034) audio: phat: "Đã kết thúc phiên rửa xe. Cảm ơn quý khách, hẹn gặp lại."[0m
+[0;33mW (392045) audio: thieu file /audio/end_early.wav[0m
+[0;32mI (400038) app_fsm: FINISHED -> IDLE[0m
+[1;31mE (410573) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (411574) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (421574) net_gsm: pulse reset[0m
+[0;32mI (429074) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (429075) uart: queue free spaces: 30[0m
+[1;31mE (449077) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (450078) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (457985) display: touch adc x=2696 y=1170 luc=1896 -> man hinh x=236 y=74[0m
+[0;32mI (458134) app_fsm: tao don 80456B281774-0-0021: Gói 10 phút 10 phut 20000 d[0m
+[0;32mI (458135) app_fsm: IDLE -> CREATING_QR[0m
+[0;33mW (458142) peripheral_test: [DEMO] tao don 80456B281774-0-0021, 20000 d[0m
+[0;32mI (460078) net_gsm: pulse reset[0m
+[0;33mW (460143) peripheral_test: [DEMO] don 80456B281774-0-0021: da gui ma QR thu[0m
+[0;33mW (460144) peripheral_test: [DEMO] tu bao thanh toan sau 8 s[0m
+[0;32mI (460145) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (460209) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[0;33mW (460220) audio: thieu file /audio/scan_qr.wav[0m
+[0;32mI (462400) display: touch adc x=756 y=834 luc=1408 -> man hinh x=265 y=203[0m
+[0;32mI (462471) display: touch adc x=710 y=790 luc=1839 -> man hinh x=269 y=206[0m
+[0;32mI (462507) display: touch adc x=692 y=792 luc=1915 -> man hinh x=268 y=207[0m
+[0;32mI (462541) display: touch adc x=717 y=808 luc=1634 -> man hinh x=267 y=205[0m
+[0;33mW (462645) peripheral_test: [DEMO] huy don 80456B281774-0-0021[0m
+[0;32mI (462646) app_fsm: WAIT_PAYMENT -> NOTICE[0m
+[0;32mI (466710) app_fsm: NOTICE -> IDLE[0m
+[0;32mI (467578) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (467579) uart: queue free spaces: 30[0m
+[0;32mI (467918) display: touch adc x=2556 y=1080 luc=1139 -> man hinh x=244 y=83[0m
+[0;32mI (467990) display: touch adc x=2530 y=1034 luc=1682 -> man hinh x=248 y=85[0m
+[0;32mI (468026) display: touch adc x=2547 y=1032 luc=1684 -> man hinh x=248 y=84[0m
+[0;32mI (468095) display: touch adc x=2513 y=1070 luc=478 -> man hinh x=244 y=86[0m
+[0;32mI (468206) app_fsm: tao don 80456B281774-0-0022: Gói 10 phút 10 phut 20000 d[0m
+[0;32mI (468207) app_fsm: IDLE -> CREATING_QR[0m
+[0;33mW (468215) peripheral_test: [DEMO] tao don 80456B281774-0-0022, 20000 d[0m
+[0;33mW (470216) peripheral_test: [DEMO] don 80456B281774-0-0022: da gui ma QR thu[0m
+[0;33mW (470216) peripheral_test: [DEMO] tu bao thanh toan sau 8 s[0m
+[0;32mI (470217) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (470276) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[0;33mW (470288) audio: thieu file /audio/scan_qr.wav[0m
+[0;32mI (472360) display: touch adc x=3311 y=1017 luc=1227 -> man hinh x=249 y=33[0m
+[0;32mI (472430) display: touch adc x=3312 y=952 luc=1195 -> man hinh x=255 y=33[0m
+[0;32mI (474076) display: touch adc x=707 y=1040 luc=1279 -> man hinh x=247 y=206[0m
+[0;32mI (474143) display: touch adc x=818 y=1004 luc=1068 -> man hinh x=250 y=198[0m
+[0;33mW (474252) peripheral_test: [DEMO] huy don 80456B281774-0-0022[0m
+[0;32mI (474253) app_fsm: WAIT_PAYMENT -> NOTICE[0m
+[0;32mI (475953) display: touch adc x=2571 y=1152 luc=1104 -> man hinh x=237 y=82[0m
+[0;32mI (478278) app_fsm: NOTICE -> IDLE[0m
+[1;31mE (487580) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (488581) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (489710) display: touch adc x=3608 y=1252 luc=2314 -> man hinh x=229 y=13[0m
+[0;32mI (489780) display: touch adc x=3488 y=1192 luc=1100 -> man hinh x=234 y=21[0m
+[0;32mI (494015) display: touch adc x=3519 y=1349 luc=1245 -> man hinh x=220 y=19[0m
+[0;32mI (494085) display: touch adc x=3523 y=1337 luc=1219 -> man hinh x=221 y=19[0m
+[0;32mI (496464) display: touch adc x=3490 y=1341 luc=1166 -> man hinh x=221 y=21[0m
+[0;32mI (498581) net_gsm: pulse reset[0m
+[0;32mI (502626) display: touch adc x=3431 y=1444 luc=966 -> man hinh x=212 y=25[0m
+[0;32mI (506081) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (506082) uart: queue free spaces: 30[0m
+[0;32mI (510360) display: touch adc x=3519 y=1096 luc=1473 -> man hinh x=242 y=19[0m
+[0;32mI (511579) app_fsm: den TAT (troi toi)[0m
+[0;32mI (513581) display: touch adc x=3496 y=1084 luc=1502 -> man hinh x=243 y=21[0m
+[0;32mI (513616) display: touch adc x=3568 y=1044 luc=1930 -> man hinh x=247 y=16[0m
+[0;32mI (513651) display: touch adc x=3575 y=1011 luc=2188 -> man hinh x=250 y=15[0m
+[0;32mI (513687) display: touch adc x=3459 y=994 luc=1198 -> man hinh x=251 y=23[0m
+[0;32mI (519424) display: touch adc x=3238 y=1353 luc=869 -> man hinh x=220 y=38[0m
+[0;32mI (523413) display: touch adc x=3434 y=1142 luc=1213 -> man hinh x=238 y=25[0m
+[0;32mI (523448) display: touch adc x=3535 y=1122 luc=1849 -> man hinh x=240 y=18[0m
+[0;32mI (523483) display: touch adc x=3547 y=1167 luc=2184 -> man hinh x=236 y=17[0m
+[0;32mI (523519) display: touch adc x=3551 y=1187 luc=2451 -> man hinh x=234 y=17[0m
+[0;32mI (523554) display: touch adc x=3534 y=1179 luc=2479 -> man hinh x=235 y=18[0m
+[0;32mI (524429) display: touch adc x=3616 y=1164 luc=1994 -> man hinh x=236 y=13[0m
+[0;32mI (524465) display: touch adc x=3584 y=1192 luc=2473 -> man hinh x=234 y=15[0m
+[0;32mI (524500) display: touch adc x=3578 y=1192 luc=2512 -> man hinh x=234 y=15[0m
+[0;32mI (524535) display: touch adc x=3583 y=1204 luc=2609 -> man hinh x=233 y=15[0m
+[0;32mI (524604) display: touch adc x=3592 y=1197 luc=2739 -> man hinh x=234 y=14[0m
+[0;32mI (524640) display: touch adc x=3574 y=1209 luc=2792 -> man hinh x=233 y=16[0m
+[0;32mI (524675) display: touch adc x=3562 y=1215 luc=2857 -> man hinh x=232 y=16[0m
+[0;32mI (524710) display: touch adc x=3576 y=1210 luc=2897 -> man hinh x=232 y=15[0m
+[0;32mI (524745) display: touch adc x=3564 y=1214 luc=2892 -> man hinh x=232 y=16[0m
+[0;32mI (524780) display: touch adc x=3575 y=1220 luc=2916 -> man hinh x=232 y=15[0m
+[0;32mI (524815) display: touch adc x=3576 y=1216 luc=2969 -> man hinh x=232 y=15[0m
+[0;32mI (524850) display: touch adc x=3559 y=1223 luc=2965 -> man hinh x=231 y=16[0m
+[0;32mI (524885) display: touch adc x=3563 y=1229 luc=2971 -> man hinh x=231 y=16[0m
+[0;32mI (524919) display: touch adc x=3555 y=1226 luc=3002 -> man hinh x=231 y=17[0m
+[0;32mI (524955) display: touch adc x=3560 y=1232 luc=2973 -> man hinh x=231 y=16[0m
+[0;32mI (524990) display: touch adc x=3564 y=1227 luc=3011 -> man hinh x=231 y=16[0m
+[0;32mI (525025) display: touch adc x=3571 y=1232 luc=3020 -> man hinh x=231 y=16[0m
+[0;32mI (525060) display: touch adc x=3551 y=1232 luc=3016 -> man hinh x=231 y=17[0m
+[0;32mI (525095) display: touch adc x=3552 y=1248 luc=3042 -> man hinh x=229 y=17[0m
+[0;32mI (525130) display: touch adc x=3552 y=1240 luc=3049 -> man hinh x=230 y=17[0m
+[0;32mI (525165) display: touch adc x=3548 y=1243 luc=3053 -> man hinh x=230 y=17[0m
+[0;32mI (525199) display: touch adc x=3557 y=1241 luc=3062 -> man hinh x=230 y=17[0m
+[0;32mI (525235) display: touch adc x=3567 y=1238 luc=3055 -> man hinh x=230 y=16[0m
+[0;32mI (525271) display: touch adc x=3543 y=1239 luc=3096 -> man hinh x=230 y=18[0m
+[0;32mI (525376) display: touch adc x=3543 y=1241 luc=3090 -> man hinh x=230 y=18[0m
+[0;32mI (525410) display: touch adc x=3536 y=1240 luc=3064 -> man hinh x=230 y=18[0m
+[0;32mI (525445) display: touch adc x=3551 y=1240 luc=3088 -> man hinh x=230 y=17[0m
+[0;32mI (525481) display: touch adc x=3546 y=1246 luc=3094 -> man hinh x=229 y=17[0m
+[0;32mI (525516) display: touch adc x=3536 y=1243 luc=3102 -> man hinh x=230 y=18[0m
+[0;32mI (525551) display: touch adc x=3553 y=1240 luc=3086 -> man hinh x=230 y=17[0m
+[0;32mI (525586) display: touch adc x=3560 y=1236 luc=3082 -> man hinh x=230 y=16[0m
+[0;32mI (525621) display: touch adc x=3544 y=1241 luc=3038 -> man hinh x=230 y=17[0m
+[0;32mI (525690) display: touch adc x=3585 y=1239 luc=2930 -> man hinh x=230 y=15[0m
+[0;32mI (525726) display: touch adc x=3739 y=1209 luc=2576 -> man hinh x=233 y=5[0m
+[0;32mI (525761) display: touch adc x=3790 y=1216 luc=2140 -> man hinh x=232 y=1[0m
+[0;32mI (525796) display: touch adc x=3647 y=1184 luc=2220 -> man hinh x=235 y=11[0m
+[1;31mE (526083) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (527084) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (528418) display: touch adc x=3571 y=1346 luc=1427 -> man hinh x=221 y=16[0m
+[0;32mI (528454) display: touch adc x=3653 y=1395 luc=1602 -> man hinh x=216 y=10[0m
+[0;32mI (528489) display: touch adc x=3671 y=1391 luc=1846 -> man hinh x=217 y=9[0m
+[0;32mI (528524) display: touch adc x=3665 y=1392 luc=2060 -> man hinh x=217 y=9[0m
+[0;32mI (528558) display: touch adc x=3673 y=1393 luc=2271 -> man hinh x=217 y=9[0m
+[0;32mI (528594) display: touch adc x=3708 y=1396 luc=2368 -> man hinh x=216 y=7[0m
+[0;32mI (528629) display: touch adc x=3685 y=1403 luc=2447 -> man hinh x=216 y=8[0m
+[0;32mI (528664) display: touch adc x=3686 y=1396 luc=2473 -> man hinh x=216 y=8[0m
+[0;32mI (528698) display: touch adc x=3680 y=1404 luc=2498 -> man hinh x=216 y=8[0m
+[0;32mI (528768) display: touch adc x=3703 y=1399 luc=2473 -> man hinh x=216 y=7[0m
+[0;32mI (528804) display: touch adc x=3667 y=1392 luc=2323 -> man hinh x=217 y=9[0m
+[0;32mI (528839) display: touch adc x=3681 y=1379 luc=2224 -> man hinh x=218 y=8[0m
+[0;32mI (528874) display: touch adc x=3693 y=1383 luc=2207 -> man hinh x=218 y=8[0m
+[0;32mI (528908) display: touch adc x=3675 y=1373 luc=2100 -> man hinh x=218 y=9[0m
+[0;32mI (528944) display: touch adc x=3685 y=1379 luc=2323 -> man hinh x=218 y=8[0m
+[0;32mI (528979) display: touch adc x=3694 y=1391 luc=2317 -> man hinh x=217 y=8[0m
+[0;32mI (529014) display: touch adc x=3675 y=1375 luc=2144 -> man hinh x=218 y=9[0m
+[0;32mI (529049) display: touch adc x=3694 y=1384 luc=2305 -> man hinh x=217 y=8[0m
+[0;32mI (529084) display: touch adc x=3684 y=1382 luc=2318 -> man hinh x=218 y=8[0m
+[0;32mI (529119) display: touch adc x=3680 y=1384 luc=2365 -> man hinh x=217 y=8[0m
+[0;32mI (529154) display: touch adc x=3676 y=1394 luc=2447 -> man hinh x=217 y=9[0m
+[0;32mI (529189) display: touch adc x=3703 y=1393 luc=2478 -> man hinh x=217 y=7[0m
+[0;32mI (529259) display: touch adc x=3680 y=1402 luc=2488 -> man hinh x=216 y=8[0m
+[0;32mI (529295) display: touch adc x=3680 y=1392 luc=2482 -> man hinh x=217 y=8[0m
+[0;32mI (529329) display: touch adc x=3679 y=1399 luc=2513 -> man hinh x=216 y=9[0m
+[0;32mI (529399) display: touch adc x=3667 y=1403 luc=2481 -> man hinh x=216 y=9[0m
+[0;32mI (529434) display: touch adc x=3687 y=1397 luc=2510 -> man hinh x=216 y=8[0m
+[0;32mI (529470) display: touch adc x=3675 y=1403 luc=2540 -> man hinh x=216 y=9[0m
+[0;32mI (529505) display: touch adc x=3678 y=1396 luc=2491 -> man hinh x=216 y=9[0m
+[0;32mI (529539) display: touch adc x=3679 y=1398 luc=2498 -> man hinh x=216 y=9[0m
+[0;32mI (529575) display: touch adc x=3679 y=1398 luc=2546 -> man hinh x=216 y=9[0m
+[0;32mI (529610) display: touch adc x=3679 y=1397 luc=2548 -> man hinh x=216 y=9[0m
+[0;32mI (529644) display: touch adc x=3699 y=1396 luc=2570 -> man hinh x=216 y=7[0m
+[0;32mI (529680) display: touch adc x=3680 y=1396 luc=2567 -> man hinh x=216 y=8[0m
+[0;32mI (529715) display: touch adc x=3675 y=1400 luc=2556 -> man hinh x=216 y=9[0m
+[0;32mI (529784) display: touch adc x=3696 y=1398 luc=2560 -> man hinh x=216 y=7[0m
+[0;32mI (529820) display: touch adc x=3680 y=1396 luc=2528 -> man hinh x=216 y=8[0m
+[0;32mI (529924) display: touch adc x=3682 y=1394 luc=2502 -> man hinh x=217 y=8[0m
+[0;32mI (529960) display: touch adc x=3680 y=1396 luc=2505 -> man hinh x=216 y=8[0m
+[0;32mI (529995) display: touch adc x=3684 y=1396 luc=2534 -> man hinh x=216 y=8[0m
+[0;32mI (530030) display: touch adc x=3695 y=1391 luc=2497 -> man hinh x=217 y=7[0m
+[0;32mI (530099) display: touch adc x=3687 y=1401 luc=2475 -> man hinh x=216 y=8[0m
+[0;32mI (530135) display: touch adc x=3695 y=1397 luc=2464 -> man hinh x=216 y=7[0m
+[0;32mI (530170) display: touch adc x=3703 y=1393 luc=2498 -> man hinh x=217 y=7[0m
+[0;32mI (530205) display: touch adc x=3676 y=1395 luc=2415 -> man hinh x=216 y=9[0m
+[0;32mI (530240) display: touch adc x=3678 y=1387 luc=2418 -> man hinh x=217 y=9[0m
+[0;32mI (530276) display: touch adc x=3679 y=1390 luc=2426 -> man hinh x=217 y=9[0m
+[0;32mI (530310) display: touch adc x=3681 y=1386 luc=2292 -> man hinh x=217 y=8[0m
+[0;32mI (530346) display: touch adc x=3615 y=1363 luc=1391 -> man hinh x=219 y=13[0m
+[0;32mI (534545) display: touch adc x=3512 y=1444 luc=1141 -> man hinh x=212 y=20[0m
+[0;32mI (535176) display: touch adc x=3576 y=1489 luc=1575 -> man hinh x=208 y=15[0m
+[0;32mI (535212) display: touch adc x=3626 y=1476 luc=1501 -> man hinh x=209 y=12[0m
+[0;32mI (535246) display: touch adc x=3569 y=1486 luc=1472 -> man hinh x=209 y=16[0m
+[0;32mI (535387) display: touch adc x=3638 y=1510 luc=1792 -> man hinh x=207 y=11[0m
+[0;32mI (535421) display: touch adc x=3592 y=1486 luc=1655 -> man hinh x=209 y=14[0m
+[0;32mI (535526) display: touch adc x=3579 y=1482 luc=1124 -> man hinh x=209 y=15[0m
+[0;32mI (535561) display: touch adc x=3539 y=1473 luc=1190 -> man hinh x=210 y=18[0m
+[0;32mI (536256) net_wifi: Auto scan fired (retry=5)[0m
+[0;32mI (537084) net_gsm: pulse reset[0m
+[0;32mI (539491) net_wifi: ===== SCAN RESULT (14 APs) =====[0m
+[0;32mI (539492) net_wifi: 1) SSID:P402 RSSI:-51 CH:11[0m
+[0;32mI (539492) net_wifi: 2) SSID:601 RSSI:-90 CH:10[0m
+[0;32mI (539494) net_wifi: 3) SSID:Subabi RSSI:-90 CH:13[0m
+[0;32mI (539498) net_wifi: 4) SSID:Bong Bill RSSI:-91 CH:2[0m
+[0;32mI (539503) net_wifi: 5) SSID:TRAN THU RSSI:-91 CH:7[0m
+[0;32mI (539508) net_wifi: 6) SSID:Tom RSSI:-92 CH:6[0m
+[0;32mI (539512) net_wifi: 7) SSID:P62 RSSI:-92 CH:7[0m
+[0;32mI (539516) net_wifi: 8) SSID:Mai Linh RSSI:-94 CH:3[0m
+[0;32mI (539521) net_wifi: 9) SSID:Wifi  RSSI:-94 CH:10[0m
+[0;32mI (539525) net_wifi: 10) SSID:NamNH RSSI:-95 CH:1[0m
+[0;32mI (539529) net_wifi: 11) SSID:Ntgt95 RSSI:-95 CH:9[0m
+[0;32mI (539534) net_wifi: 12) SSID:Nhim va Soc T1 RSSI:-96 CH:2[0m
+[0;32mI (539539) net_wifi: 13) SSID:Chuot RSSI:-96 CH:2[0m
+[0;32mI (539544) net_wifi: 14) SSID:Anh Khoa RSSI:-96 CH:4[0m
+[0;33mW (539548) net_wifi: Khong tim thay SSID da luu nao trong ket qua quet[0m
+[0;32mI (539555) net_wifi: Schedule next scan in 600000 ms[0m
+[0;32mI (544584) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (544585) uart: queue free spaces: 30[0m
+[0;32mI (549208) display: touch adc x=1157 y=1320 luc=1048 -> man hinh x=223 y=176[0m
+[0;32mI (549356) app_fsm: tao don 80456B281774-0-0023: Gói 20 phút 20 phut 40000 d[0m
+[0;32mI (549357) app_fsm: IDLE -> CREATING_QR[0m
+[0;33mW (549364) peripheral_test: [DEMO] tao don 80456B281774-0-0023, 40000 d[0m
+[0;33mW (551365) peripheral_test: [DEMO] don 80456B281774-0-0023: da gui ma QR thu[0m
+[0;33mW (551365) peripheral_test: [DEMO] tu bao thanh toan sau 8 s[0m
+[0;32mI (551366) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (551425) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[0;33mW (551436) audio: thieu file /audio/scan_qr.wav[0m
+[0;32mI (553965) display: touch adc x=856 y=784 luc=1405 -> man hinh x=269 y=196[0m
+[0;33mW (554071) peripheral_test: [DEMO] huy don 80456B281774-0-0023[0m
+[0;32mI (554072) app_fsm: WAIT_PAYMENT -> NOTICE[0m
+[0;32mI (558126) app_fsm: NOTICE -> IDLE[0m
+[1;31mE (564586) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (565587) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (575587) net_gsm: pulse reset[0m
+[0;32mI (583087) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (583088) uart: queue free spaces: 30[0m
+[0;32mI (586528) display: touch adc x=3607 y=1372 luc=1843 -> man hinh x=218 y=13[0m
+[0;32mI (586563) display: touch adc x=3614 y=1382 luc=2188 -> man hinh x=218 y=13[0m
+[0;32mI (586633) display: touch adc x=3628 y=1402 luc=2402 -> man hinh x=216 y=12[0m
+[0;32mI (586669) display: touch adc x=3627 y=1400 luc=2462 -> man hinh x=216 y=12[0m
+[0;32mI (586704) display: touch adc x=3623 y=1404 luc=2519 -> man hinh x=216 y=12[0m
+[0;32mI (586738) display: touch adc x=3627 y=1407 luc=2530 -> man hinh x=215 y=12[0m
+[0;32mI (586808) display: touch adc x=3647 y=1404 luc=2473 -> man hinh x=216 y=11[0m
+[0;32mI (586844) display: touch adc x=3632 y=1407 luc=2538 -> man hinh x=215 y=12[0m
+[0;32mI (586948) display: touch adc x=3658 y=1404 luc=2556 -> man hinh x=216 y=10[0m
+[0;32mI (586984) display: touch adc x=3626 y=1407 luc=2553 -> man hinh x=215 y=12[0m
+[0;32mI (587019) display: touch adc x=3631 y=1409 luc=2551 -> man hinh x=215 y=12[0m
+[0;32mI (587053) display: touch adc x=3630 y=1407 luc=2581 -> man hinh x=215 y=12[0m
+[0;32mI (587089) display: touch adc x=3636 y=1407 luc=2582 -> man hinh x=215 y=11[0m
+[0;32mI (587124) display: touch adc x=3651 y=1408 luc=2579 -> man hinh x=215 y=10[0m
+[0;32mI (587159) display: touch adc x=3646 y=1411 luc=2561 -> man hinh x=215 y=11[0m
+[0;32mI (587193) display: touch adc x=3638 y=1410 luc=2595 -> man hinh x=215 y=11[0m
+[0;32mI (587264) display: touch adc x=3646 y=1408 luc=2592 -> man hinh x=215 y=11[0m
+[0;32mI (587300) display: touch adc x=3648 y=1400 luc=2641 -> man hinh x=216 y=11[0m
+[0;32mI (587335) display: touch adc x=3662 y=1415 luc=2613 -> man hinh x=215 y=10[0m
+[0;32mI (587370) display: touch adc x=3634 y=1411 luc=2609 -> man hinh x=215 y=12[0m
+[0;32mI (587405) display: touch adc x=3648 y=1408 luc=2652 -> man hinh x=215 y=11[0m
+[0;32mI (587440) display: touch adc x=3644 y=1408 luc=2664 -> man hinh x=215 y=11[0m
+[0;32mI (587474) display: touch adc x=3643 y=1415 luc=2624 -> man hinh x=215 y=11[0m
+[0;32mI (587510) display: touch adc x=3647 y=1412 luc=2606 -> man hinh x=215 y=11[0m
+[0;32mI (587544) display: touch adc x=3659 y=1408 luc=2618 -> man hinh x=215 y=10[0m
+[0;32mI (587580) display: touch adc x=3647 y=1414 luc=2606 -> man hinh x=215 y=11[0m
+[0;32mI (587615) display: touch adc x=3639 y=1414 luc=2625 -> man hinh x=215 y=11[0m
+[0;32mI (587684) display: touch adc x=3636 y=1412 luc=2634 -> man hinh x=215 y=11[0m
+[0;32mI (587720) display: touch adc x=3640 y=1416 luc=2659 -> man hinh x=215 y=11[0m
+[0;32mI (587754) display: touch adc x=3647 y=1418 luc=2647 -> man hinh x=214 y=11[0m
+[0;32mI (587790) display: touch adc x=3648 y=1413 luc=2674 -> man hinh x=215 y=11[0m
+[0;32mI (587825) display: touch adc x=3638 y=1419 luc=2689 -> man hinh x=214 y=11[0m
+[0;32mI (587860) display: touch adc x=3647 y=1419 luc=2673 -> man hinh x=214 y=11[0m
+[0;32mI (587894) display: touch adc x=3644 y=1420 luc=2741 -> man hinh x=214 y=11[0m
+[0;32mI (587930) display: touch adc x=3639 y=1430 luc=2743 -> man hinh x=213 y=11[0m
+[0;32mI (587964) display: touch adc x=3642 y=1432 luc=2780 -> man hinh x=213 y=11[0m
+[0;32mI (587999) display: touch adc x=3624 y=1432 luc=2771 -> man hinh x=213 y=12[0m
+[0;32mI (588035) display: touch adc x=3631 y=1440 luc=2815 -> man hinh x=213 y=12[0m
+[0;32mI (588069) display: touch adc x=3628 y=1444 luc=2852 -> man hinh x=212 y=12[0m
+[0;32mI (588105) display: touch adc x=3635 y=1440 luc=2853 -> man hinh x=213 y=11[0m
+[0;32mI (588140) display: touch adc x=3636 y=1435 luc=2882 -> man hinh x=213 y=11[0m
+[0;32mI (588174) display: touch adc x=3627 y=1439 luc=2858 -> man hinh x=213 y=12[0m
+[0;32mI (588209) display: touch adc x=3618 y=1436 luc=2859 -> man hinh x=213 y=13[0m
+[0;32mI (588279) display: touch adc x=3617 y=1444 luc=2896 -> man hinh x=212 y=13[0m
+[0;32mI (588314) display: touch adc x=3628 y=1444 luc=2895 -> man hinh x=212 y=12[0m
+[0;32mI (588350) display: touch adc x=3614 y=1442 luc=2935 -> man hinh x=212 y=13[0m
+[0;32mI (588384) display: touch adc x=3612 y=1445 luc=2914 -> man hinh x=212 y=13[0m
+[0;32mI (588419) display: touch adc x=3627 y=1441 luc=2913 -> man hinh x=213 y=12[0m
+[0;32mI (588489) display: touch adc x=3616 y=1433 luc=2965 -> man hinh x=213 y=13[0m
+[0;32mI (588524) display: touch adc x=3624 y=1443 luc=2947 -> man hinh x=212 y=12[0m
+[0;32mI (588560) display: touch adc x=3609 y=1436 luc=2967 -> man hinh x=213 y=13[0m
+[0;32mI (588594) display: touch adc x=3613 y=1443 luc=2971 -> man hinh x=212 y=13[0m
+[0;32mI (588630) display: touch adc x=3631 y=1440 luc=2986 -> man hinh x=213 y=12[0m
+[0;32mI (588665) display: touch adc x=3604 y=1441 luc=2977 -> man hinh x=213 y=14[0m
+[0;32mI (588699) display: touch adc x=3614 y=1437 luc=2967 -> man hinh x=213 y=13[0m
+[0;32mI (588735) display: touch adc x=3605 y=1444 luc=2970 -> man hinh x=212 y=13[0m
+[0;32mI (588770) display: touch adc x=3609 y=1432 luc=2981 -> man hinh x=213 y=13[0m
+[0;32mI (588804) display: touch adc x=3605 y=1440 luc=2989 -> man hinh x=213 y=13[0m
+[0;32mI (588840) display: touch adc x=3612 y=1441 luc=2973 -> man hinh x=213 y=13[0m
+[0;32mI (588874) display: touch adc x=3615 y=1438 luc=2985 -> man hinh x=213 y=13[0m
+[0;32mI (588909) display: touch adc x=3631 y=1439 luc=2871 -> man hinh x=213 y=12[0m
+[0;32mI (588945) display: touch adc x=3628 y=1448 luc=2983 -> man hinh x=212 y=12[0m
+[0;32mI (588979) display: touch adc x=3619 y=1442 luc=3000 -> man hinh x=212 y=13[0m
+[0;32mI (589015) display: touch adc x=3607 y=1440 luc=2983 -> man hinh x=213 y=13[0m
+[0;32mI (589050) display: touch adc x=3603 y=1436 luc=3003 -> man hinh x=213 y=14[0m
+[0;32mI (589085) display: touch adc x=3616 y=1440 luc=3007 -> man hinh x=213 y=13[0m
+[0;32mI (589120) display: touch adc x=3611 y=1436 luc=3015 -> man hinh x=213 y=13[0m
+[0;32mI (589155) display: touch adc x=3599 y=1435 luc=3031 -> man hinh x=213 y=14[0m
+[0;32mI (589190) display: touch adc x=3606 y=1437 luc=2996 -> man hinh x=213 y=13[0m
+[0;32mI (589224) display: touch adc x=3591 y=1435 luc=2997 -> man hinh x=213 y=14[0m
+[0;32mI (589260) display: touch adc x=3605 y=1444 luc=3002 -> man hinh x=212 y=13[0m
+[0;32mI (589295) display: touch adc x=3627 y=1439 luc=3000 -> man hinh x=213 y=12[0m
+[0;32mI (589330) display: touch adc x=3604 y=1440 luc=2989 -> man hinh x=213 y=14[0m
+[0;32mI (589366) display: touch adc x=3614 y=1448 luc=2982 -> man hinh x=212 y=13[0m
+[0;32mI (589401) display: touch adc x=3639 y=1447 luc=2976 -> man hinh x=212 y=11[0m
+[0;32mI (589436) display: touch adc x=3644 y=1444 luc=2965 -> man hinh x=212 y=11[0m
+[0;32mI (589471) display: touch adc x=3627 y=1443 luc=2918 -> man hinh x=212 y=12[0m
+[0;32mI (589506) display: touch adc x=3639 y=1442 luc=2899 -> man hinh x=212 y=11[0m
+[0;32mI (589541) display: touch adc x=3636 y=1433 luc=2905 -> man hinh x=213 y=11[0m
+[0;32mI (589610) display: touch adc x=3657 y=1431 luc=2871 -> man hinh x=213 y=10[0m
+[0;32mI (589681) display: touch adc x=3641 y=1432 luc=2861 -> man hinh x=213 y=11[0m
+[0;32mI (589716) display: touch adc x=3648 y=1426 luc=2797 -> man hinh x=214 y=11[0m
+[0;32mI (589751) display: touch adc x=3655 y=1419 luc=2827 -> man hinh x=214 y=10[0m
+[0;32mI (589820) display: touch adc x=3678 y=1412 luc=2749 -> man hinh x=215 y=9[0m
+[0;32mI (589856) display: touch adc x=3679 y=1418 luc=2716 -> man hinh x=214 y=9[0m
+[0;32mI (589891) display: touch adc x=3665 y=1423 luc=2690 -> man hinh x=214 y=9[0m
+[0;32mI (589925) display: touch adc x=3664 y=1419 luc=2636 -> man hinh x=214 y=10[0m
+[0;32mI (589961) display: touch adc x=3673 y=1424 luc=2484 -> man hinh x=214 y=9[0m
+[0;32mI (589996) display: touch adc x=3644 y=1396 luc=1864 -> man hinh x=216 y=11[0m
+[0;32mI (594091) display: touch adc x=3596 y=2489 luc=1624 -> man hinh x=122 y=14[0m
+[0;32mI (594126) display: touch adc x=3617 y=2517 luc=1970 -> man hinh x=120 y=13[0m
+[0;32mI (594162) display: touch adc x=3638 y=2496 luc=2234 -> man hinh x=122 y=11[0m
+[0;32mI (594196) display: touch adc x=3624 y=2507 luc=2239 -> man hinh x=121 y=12[0m
+[0;32mI (594266) display: touch adc x=3643 y=2520 luc=2465 -> man hinh x=119 y=11[0m
+[0;32mI (594301) display: touch adc x=3631 y=2519 luc=2482 -> man hinh x=120 y=12[0m
+[0;32mI (594336) display: touch adc x=3634 y=2523 luc=2481 -> man hinh x=119 y=12[0m
+[0;32mI (594372) display: touch adc x=3630 y=2534 luc=2481 -> man hinh x=118 y=12[0m
+[0;32mI (594406) display: touch adc x=3623 y=2521 luc=2477 -> man hinh x=119 y=12[0m
+[0;32mI (594442) display: touch adc x=3639 y=2523 luc=2458 -> man hinh x=119 y=11[0m
+[0;32mI (594477) display: touch adc x=3635 y=2524 luc=2475 -> man hinh x=119 y=11[0m
+[0;32mI (594511) display: touch adc x=3638 y=2522 luc=2459 -> man hinh x=119 y=11[0m
+[0;32mI (594546) display: touch adc x=3631 y=2527 luc=2488 -> man hinh x=119 y=12[0m
+[0;32mI (594582) display: touch adc x=3636 y=2520 luc=2468 -> man hinh x=119 y=11[0m
+[0;32mI (594616) display: touch adc x=3633 y=2515 luc=2453 -> man hinh x=120 y=12[0m
+[0;32mI (594652) display: touch adc x=3641 y=2521 luc=2477 -> man hinh x=119 y=11[0m
+[0;32mI (594687) display: touch adc x=3635 y=2515 luc=2446 -> man hinh x=120 y=11[0m
+[0;32mI (594721) display: touch adc x=3651 y=2516 luc=2473 -> man hinh x=120 y=10[0m
+[0;32mI (594757) display: touch adc x=3639 y=2527 luc=2473 -> man hinh x=119 y=11[0m
+[0;32mI (594792) display: touch adc x=3645 y=2527 luc=2496 -> man hinh x=119 y=11[0m
+[0;32mI (594826) display: touch adc x=3647 y=2534 luc=2499 -> man hinh x=118 y=11[0m
+[0;32mI (594862) display: touch adc x=3639 y=2516 luc=2492 -> man hinh x=120 y=11[0m
+[0;32mI (594897) display: touch adc x=3666 y=2525 luc=2483 -> man hinh x=119 y=9[0m
+[0;32mI (594932) display: touch adc x=3644 y=2526 luc=2447 -> man hinh x=119 y=11[0m
+[0;32mI (594966) display: touch adc x=3649 y=2524 luc=2461 -> man hinh x=119 y=11[0m
+[0;32mI (595002) display: touch adc x=3647 y=2526 luc=2479 -> man hinh x=119 y=11[0m
+[0;32mI (595037) display: touch adc x=3652 y=2523 luc=2479 -> man hinh x=119 y=10[0m
+[0;32mI (595072) display: touch adc x=3639 y=2519 luc=2493 -> man hinh x=120 y=11[0m
+[0;32mI (595107) display: touch adc x=3664 y=2520 luc=2493 -> man hinh x=119 y=10[0m
+[0;32mI (595142) display: touch adc x=3639 y=2527 luc=2500 -> man hinh x=119 y=11[0m
+[0;32mI (595177) display: touch adc x=3647 y=2536 luc=2501 -> man hinh x=118 y=11[0m
+[0;32mI (595212) display: touch adc x=3639 y=2529 luc=2487 -> man hinh x=119 y=11[0m
+[0;32mI (595247) display: touch adc x=3640 y=2521 luc=2500 -> man hinh x=119 y=11[0m
+[0;32mI (595281) display: touch adc x=3636 y=2520 luc=2504 -> man hinh x=119 y=11[0m
+[0;32mI (595317) display: touch adc x=3644 y=2532 luc=2512 -> man hinh x=118 y=11[0m
+[0;32mI (595352) display: touch adc x=3617 y=2528 luc=2505 -> man hinh x=119 y=13[0m
+[0;32mI (595387) display: touch adc x=3636 y=2527 luc=2497 -> man hinh x=119 y=11[0m
+[0;32mI (595422) display: touch adc x=3651 y=2515 luc=2498 -> man hinh x=120 y=10[0m
+[0;32mI (595457) display: touch adc x=3647 y=2527 luc=2477 -> man hinh x=119 y=11[0m
+[0;32mI (595492) display: touch adc x=3647 y=2531 luc=2487 -> man hinh x=119 y=11[0m
+[0;32mI (595527) display: touch adc x=3663 y=2521 luc=2521 -> man hinh x=119 y=10[0m
+[0;32mI (595561) display: touch adc x=3655 y=2522 luc=2508 -> man hinh x=119 y=10[0m
+[0;32mI (595631) display: touch adc x=3649 y=2522 luc=2467 -> man hinh x=119 y=11[0m
+[0;32mI (595667) display: touch adc x=3647 y=2527 luc=2463 -> man hinh x=119 y=11[0m
+[0;32mI (595702) display: touch adc x=3638 y=2527 luc=2487 -> man hinh x=119 y=11[0m
+[0;32mI (595736) display: touch adc x=3647 y=2532 luc=2490 -> man hinh x=118 y=11[0m
+[0;32mI (595772) display: touch adc x=3655 y=2535 luc=2500 -> man hinh x=118 y=10[0m
+[0;32mI (595807) display: touch adc x=3655 y=2519 luc=2497 -> man hinh x=120 y=10[0m
+[0;32mI (595842) display: touch adc x=3642 y=2531 luc=2514 -> man hinh x=119 y=11[0m
+[0;32mI (595911) display: touch adc x=3636 y=2532 luc=2505 -> man hinh x=118 y=11[0m
+[0;32mI (595947) display: touch adc x=3635 y=2524 luc=2513 -> man hinh x=119 y=11[0m
+[0;32mI (595981) display: touch adc x=3636 y=2528 luc=2500 -> man hinh x=119 y=11[0m
+[0;32mI (596017) display: touch adc x=3635 y=2531 luc=2528 -> man hinh x=119 y=11[0m
+[0;32mI (596052) display: touch adc x=3656 y=2537 luc=2537 -> man hinh x=118 y=10[0m
+[0;32mI (596087) display: touch adc x=3640 y=2525 luc=2529 -> man hinh x=119 y=11[0m
+[0;32mI (596122) display: touch adc x=3638 y=2527 luc=2505 -> man hinh x=119 y=11[0m
+[0;32mI (596156) display: touch adc x=3653 y=2528 luc=2520 -> man hinh x=119 y=10[0m
+[0;32mI (596192) display: touch adc x=3647 y=2533 luc=2504 -> man hinh x=118 y=11[0m
+[0;32mI (596227) display: touch adc x=3657 y=2520 luc=2521 -> man hinh x=119 y=10[0m
+[0;32mI (596259) display: touch adc x=3648 y=2524 luc=2544 -> man hinh x=119 y=11[0m
+[0;32mI (596293) display: touch adc x=3647 y=2536 luc=2483 -> man hinh x=118 y=11[0m
+[0;32mI (596329) display: touch adc x=3647 y=2529 luc=2497 -> man hinh x=119 y=11[0m
+[0;32mI (596363) display: touch adc x=3657 y=2526 luc=2493 -> man hinh x=119 y=10[0m
+[0;32mI (596398) display: touch adc x=3637 y=2528 luc=2412 -> man hinh x=119 y=11[0m
+[0;32mI (596434) display: touch adc x=3673 y=2526 luc=2323 -> man hinh x=119 y=9[0m
+[0;32mI (596468) display: touch adc x=3685 y=2528 luc=2227 -> man hinh x=119 y=8[0m
+[0;32mI (596503) display: touch adc x=3675 y=2523 luc=2318 -> man hinh x=119 y=9[0m
+[0;32mI (596539) display: touch adc x=3679 y=2522 luc=2261 -> man hinh x=119 y=9[0m
+[0;32mI (596573) display: touch adc x=3691 y=2510 luc=2005 -> man hinh x=120 y=8[0m
+[0;32mI (598640) display: touch adc x=1806 y=2182 luc=769 -> man hinh x=149 y=133[0m
+[0;32mI (598711) display: touch adc x=1817 y=2184 luc=753 -> man hinh x=148 y=132[0m
+[0;32mI (598782) display: touch adc x=1727 y=2177 luc=1699 -> man hinh x=149 y=138[0m
+[0;32mI (598817) display: touch adc x=1811 y=2178 luc=870 -> man hinh x=149 y=133[0m
+[0;32mI (598887) display: touch adc x=1772 y=2177 luc=1565 -> man hinh x=149 y=135[0m
+[0;32mI (598956) display: touch adc x=1995 y=2245 luc=1692 -> man hinh x=143 y=120[0m
+[0;32mI (598992) display: touch adc x=2000 y=2241 luc=1745 -> man hinh x=144 y=120[0m
+[0;32mI (599061) display: touch adc x=2020 y=2256 luc=1747 -> man hinh x=142 y=119[0m
+[0;32mI (599097) display: touch adc x=2013 y=2260 luc=1747 -> man hinh x=142 y=119[0m
+[0;32mI (599131) display: touch adc x=2012 y=2265 luc=1769 -> man hinh x=141 y=119[0m
+[0;32mI (599167) display: touch adc x=2018 y=2256 luc=1782 -> man hinh x=142 y=119[0m
+[0;32mI (599202) display: touch adc x=2027 y=2267 luc=1728 -> man hinh x=141 y=118[0m
+[0;32mI (599237) display: touch adc x=2015 y=2271 luc=1670 -> man hinh x=141 y=119[0m
+[0;32mI (599271) display: touch adc x=2019 y=2258 luc=1661 -> man hinh x=142 y=119[0m
+[0;32mI (599307) display: touch adc x=2015 y=2256 luc=1277 -> man hinh x=142 y=119[0m
+[0;32mI (599376) display: touch adc x=1916 y=2164 luc=1407 -> man hinh x=150 y=126[0m
+[0;32mI (599490) app_fsm: tao don 80456B281774-0-0024: Gói 5 phút 5 phut 10000 d[0m
+[0;32mI (599491) app_fsm: IDLE -> CREATING_QR[0m
+[0;33mW (599498) peripheral_test: [DEMO] tao don 80456B281774-0-0024, 10000 d[0m
+[0;32mI (599515) display: touch adc x=1979 y=2239 luc=651 -> man hinh x=144 y=121[0m
+[0;32mI (599608) display: touch adc x=2023 y=2259 luc=1727 -> man hinh x=142 y=118[0m
+[0;32mI (599716) display: touch adc x=2030 y=2278 luc=1777 -> man hinh x=140 y=118[0m
+[0;32mI (599749) display: touch adc x=2025 y=2272 luc=1821 -> man hinh x=141 y=118[0m
+[0;32mI (599821) display: touch adc x=2027 y=2287 luc=1748 -> man hinh x=140 y=118[0m
+[0;32mI (599854) display: touch adc x=2031 y=2276 luc=1720 -> man hinh x=141 y=118[0m
+[0;33mW (601499) peripheral_test: [DEMO] don 80456B281774-0-0024: da gui ma QR thu[0m
+[0;33mW (601500) peripheral_test: [DEMO] tu bao thanh toan sau 8 s[0m
+[0;32mI (601501) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (601564) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[0;33mW (601575) audio: thieu file /audio/scan_qr.wav[0m
+[1;31mE (603090) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;32mI (603128) display: touch adc x=935 y=1110 luc=898 -> man hinh x=241 y=191[0m
+[0;32mI (603200) display: touch adc x=803 y=901 luc=1451 -> man hinh x=259 y=199[0m
+[0;32mI (603234) display: touch adc x=718 y=923 luc=1672 -> man hinh x=257 y=205[0m
+[0;32mI (603270) display: touch adc x=722 y=897 luc=1794 -> man hinh x=259 y=205[0m
+[0;32mI (603306) display: touch adc x=778 y=872 luc=1525 -> man hinh x=262 y=201[0m
+[0;32mI (603340) display: touch adc x=832 y=896 luc=1396 -> man hinh x=259 y=198[0m
+[0;32mI (603410) display: touch adc x=887 y=981 luc=1464 -> man hinh x=252 y=194[0m
+[0;32mI (603446) display: touch adc x=715 y=909 luc=1648 -> man hinh x=258 y=205[0m
+[0;32mI (603481) display: touch adc x=674 y=925 luc=1863 -> man hinh x=257 y=208[0m
+[0;32mI (603550) display: touch adc x=776 y=958 luc=1391 -> man hinh x=254 y=201[0m
+[0;32mI (603620) display: touch adc x=951 y=1006 luc=1182 -> man hinh x=250 y=190[0m
+[0;32mI (603726) display: touch adc x=725 y=913 luc=1613 -> man hinh x=258 y=205[0m
+[0;32mI (603797) display: touch adc x=722 y=922 luc=1678 -> man hinh x=257 y=205[0m
+[0;32mI (603902) display: touch adc x=717 y=924 luc=1675 -> man hinh x=257 y=205[0m
+[0;32mI (603936) display: touch adc x=708 y=910 luc=1716 -> man hinh x=258 y=206[0m
+[0;32mI (603971) display: touch adc x=707 y=910 luc=1626 -> man hinh x=258 y=206[0m
+[0;33mW (604077) peripheral_test: [DEMO] huy don 80456B281774-0-0024[0m
+[0;32mI (604078) app_fsm: WAIT_PAYMENT -> NOTICE[0m
+[0;33mW (604091) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (604204) display: touch adc x=768 y=953 luc=1291 -> man hinh x=255 y=202[0m
+[0;32mI (604238) display: touch adc x=705 y=946 luc=1652 -> man hinh x=255 y=206[0m
+[0;32mI (604274) display: touch adc x=704 y=932 luc=1674 -> man hinh x=256 y=206[0m
+[0;32mI (605324) display: touch adc x=1032 y=1027 luc=1546 -> man hinh x=248 y=184[0m
+[0;32mI (605359) display: touch adc x=1008 y=1024 luc=1757 -> man hinh x=248 y=186[0m
+[0;32mI (605395) display: touch adc x=992 y=1010 luc=1840 -> man hinh x=250 y=187[0m
+[0;32mI (605430) display: touch adc x=999 y=1014 luc=1927 -> man hinh x=249 y=186[0m
+[0;32mI (605499) display: touch adc x=1003 y=1009 luc=1888 -> man hinh x=250 y=186[0m
+[0;32mI (605535) display: touch adc x=1010 y=1006 luc=1849 -> man hinh x=250 y=186[0m
+[0;32mI (605674) display: touch adc x=651 y=951 luc=1626 -> man hinh x=255 y=210[0m
+[0;32mI (605709) display: touch adc x=728 y=947 luc=1445 -> man hinh x=255 y=204[0m
+[0;32mI (605745) display: touch adc x=689 y=948 luc=1602 -> man hinh x=255 y=207[0m
+[0;32mI (605814) display: touch adc x=1011 y=1008 luc=1878 -> man hinh x=250 y=186[0m
+[0;32mI (605884) display: touch adc x=932 y=997 luc=2043 -> man hinh x=251 y=191[0m
+[0;32mI (605920) display: touch adc x=992 y=1004 luc=1947 -> man hinh x=250 y=187[0m
+[0;32mI (605955) display: touch adc x=995 y=1012 luc=1966 -> man hinh x=249 y=187[0m
+[0;32mI (605990) display: touch adc x=1011 y=1011 luc=1984 -> man hinh x=250 y=186[0m
+[0;32mI (606025) display: touch adc x=1000 y=1024 luc=2006 -> man hinh x=248 y=186[0m
+[0;32mI (606060) display: touch adc x=1002 y=1024 luc=2003 -> man hinh x=248 y=186[0m
+[0;32mI (606095) display: touch adc x=996 y=1006 luc=2025 -> man hinh x=250 y=187[0m
+[0;32mI (606130) display: touch adc x=994 y=1024 luc=2019 -> man hinh x=248 y=187[0m
+[0;32mI (606165) display: touch adc x=1008 y=1024 luc=2004 -> man hinh x=248 y=186[0m
+[0;32mI (606234) display: touch adc x=996 y=1024 luc=2004 -> man hinh x=248 y=187[0m
+[0;32mI (606270) display: touch adc x=1008 y=1025 luc=1966 -> man hinh x=248 y=186[0m
+[0;32mI (608165) app_fsm: NOTICE -> IDLE[0m
+[0;32mI (614092) net_gsm: pulse reset[0m
+[0;32mI (621592) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (621593) uart: queue free spaces: 30[0m
+[0;32mI (622883) display: touch adc x=1005 y=1309 luc=1083 -> man hinh x=224 y=186[0m
+[0;32mI (623032) app_fsm: tao don 80456B281774-0-0025: Gói 20 phút 20 phut 40000 d[0m
+[0;32mI (623033) app_fsm: IDLE -> CREATING_QR[0m
+[0;33mW (623041) peripheral_test: [DEMO] tao don 80456B281774-0-0025, 40000 d[0m
+[0;33mW (625042) peripheral_test: [DEMO] don 80456B281774-0-0025: da gui ma QR thu[0m
+[0;33mW (625042) peripheral_test: [DEMO] tu bao thanh toan sau 8 s[0m
+[0;32mI (625044) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (625104) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[0;33mW (625115) audio: thieu file /audio/scan_qr.wav[0m
+[0;32mI (631284) display: touch adc x=863 y=731 luc=1567 -> man hinh x=274 y=195[0m
+[0;32mI (631357) display: touch adc x=786 y=772 luc=1728 -> man hinh x=270 y=201[0m
+W (631462) peripheral_test: [DEMO] huy don 80456B281774-0-0025
+[0;32mI (631463) app_fsm: WAIT_PAYMENT -> NOTICE[0m
+[0;32mI (635505) app_fsm: NOTICE -> IDLE[0m
+[1;31mE (641594) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (642595) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (652595) net_gsm: pulse reset[0m
+[0;32mI (660095) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (660096) uart: queue free spaces: 30[0m

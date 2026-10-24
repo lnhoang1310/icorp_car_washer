@@ -1,0 +1,133 @@
+Command: ninja flash
+[1/13] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build/bootloader/bootloader.bin"
+Bootloader binary size 0x57f0 bytes. 0x2810 bytes (31%) free.
+[2/13] No install step for 'bootloader'
+[3/13] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\esp-idf\main && D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\littlefs_py_venv\Scripts\littlefs-python.exe create D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/assets/audio D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build/storage.bin -v --fs-size=0x400000 --name-max=64 --block-size=4096"
+LittleFS Configuration:
+  Block Size:       4096  /  0x1000
+  Image Size:    4194304  /  0x400000
+  Block Count:      1024
+  Name Max:           64
+  Image:       D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\storage.bin
+[4/13] Completed 'bootloader'
+[5/13] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/__/component/cloud_manager/cloud_manager.c.obj
+[6/13] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/peripheral_test.c.obj
+D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/main/peripheral_test.c:224:13: warning: 'test_relay' defined but not used [-Wunused-function]
+  224 | static bool test_relay(void)
+      |             ^~~~~~~~~~
+[7/13] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/car_washer.c.obj
+[8/13] Linking C static library esp-idf\main\libmain.a
+[9/13] Generating esp-idf/esp_system/ld/sections.ld
+[10/13] Linking CXX executable car_washer.elf
+[11/13] Generating binary image from built executable
+esptool.py v4.10.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build/car_washer.bin
+[12/13] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build/partition_table/partition-table.bin D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build/car_washer.bin"
+car_washer.bin binary size 0x16d4f0 bytes. Smallest app partition is 0x2ee000 bytes. 0x180b10 bytes (51%) free.
+[12/13] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.5.1\components\esptool_py && C:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.5.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.5_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.5.1/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build -P C:/Espressif/frameworks/esp-idf-v5.5.1/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32s3 -p COM10 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size detect 0x0 bootloader/bootloader.bin 0x90000 car_washer.bin 0x8000 partition_table/partition-table.bin 0x89000 ota_data_initial.bin 0x66e000 storage.bin
+esptool.py v4.10.0
+Serial port COM10
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: 80:45:6b:28:17:74
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Auto-detected Flash size: 16MB
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00090000 to 0x001fdfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x00089000 to 0x0008afff...
+Flash will be erased from 0x0066e000 to 0x00a6dfff...
+SHA digest in image updated
+Compressed 22512 bytes to 14397...
+Writing at 0x00000000... (100 %)
+Wrote 22512 bytes (14397 compressed) at 0x00000000 in 0.5 seconds (effective 377.4 kbit/s)...
+Hash of data verified.
+Compressed 1496304 bytes to 951879...
+Writing at 0x00090000... (1 %)
+Writing at 0x0009c877... (3 %)
+Writing at 0x000aa59c... (5 %)
+Writing at 0x000b4796... (6 %)
+Writing at 0x000c1467... (8 %)
+Writing at 0x000cb1ec... (10 %)
+Writing at 0x000d2fa9... (11 %)
+Writing at 0x000def62... (13 %)
+Writing at 0x000e4e6e... (15 %)
+Writing at 0x000ea90d... (16 %)
+Writing at 0x000f04eb... (18 %)
+Writing at 0x000f5ca3... (20 %)
+Writing at 0x000fc7d1... (22 %)
+Writing at 0x00102bc6... (23 %)
+Writing at 0x00108674... (25 %)
+Writing at 0x0010e01e... (27 %)
+Writing at 0x0011310b... (28 %)
+Writing at 0x001184e3... (30 %)
+Writing at 0x0011e868... (32 %)
+Writing at 0x00123cef... (33 %)
+Writing at 0x00128ff9... (35 %)
+Writing at 0x0012e206... (37 %)
+Writing at 0x001334aa... (38 %)
+Writing at 0x00138da4... (40 %)
+Writing at 0x0013ec2c... (42 %)
+Writing at 0x001440aa... (44 %)
+Writing at 0x001491cd... (45 %)
+Writing at 0x0014eceb... (47 %)
+Writing at 0x001540e4... (49 %)
+Writing at 0x001592d4... (50 %)
+Writing at 0x0015e57f... (52 %)
+Writing at 0x00163924... (54 %)
+Writing at 0x00168fe3... (55 %)
+Writing at 0x0016e57e... (57 %)
+Writing at 0x00173f3e... (59 %)
+Writing at 0x001797c9... (61 %)
+Writing at 0x0017eb94... (62 %)
+Writing at 0x00183ce8... (64 %)
+Writing at 0x00188ea1... (66 %)
+Writing at 0x0018e454... (67 %)
+Writing at 0x00193c91... (69 %)
+Writing at 0x00199186... (71 %)
+Writing at 0x0019e551... (72 %)
+Writing at 0x001a3ba3... (74 %)
+Writing at 0x001a9c85... (76 %)
+Writing at 0x001aee40... (77 %)
+Writing at 0x001b3fc8... (79 %)
+Writing at 0x001b9165... (81 %)
+Writing at 0x001be92e... (83 %)
+Writing at 0x001c434a... (84 %)
+Writing at 0x001ca91c... (86 %)
+Writing at 0x001d4eaf... (88 %)
+Writing at 0x001dab45... (89 %)
+Writing at 0x001e01ea... (91 %)
+Writing at 0x001e5fab... (93 %)
+Writing at 0x001ebc61... (94 %)
+Writing at 0x001f16c4... (96 %)
+Writing at 0x001f71fb... (98 %)
+Writing at 0x001fca7c... (100 %)
+Wrote 1496304 bytes (951879 compressed) at 0x00090000 in 22.1 seconds (effective 540.5 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 146...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (146 compressed) at 0x00008000 in 0.0 seconds (effective 595.7 kbit/s)...
+Hash of data verified.
+Compressed 8192 bytes to 31...
+Writing at 0x00089000... (100 %)
+Wrote 8192 bytes (31 compressed) at 0x00089000 in 0.0 seconds (effective 1344.0 kbit/s)...
+Hash of data verified.
+Compressed 4194304 bytes to 4194...
+Writing at 0x0066e000... (100 %)
+Wrote 4194304 bytes (4194 compressed) at 0x0066e000 in 9.3 seconds (effective 3605.8 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

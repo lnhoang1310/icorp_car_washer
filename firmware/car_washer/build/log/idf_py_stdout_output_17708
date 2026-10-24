@@ -1,0 +1,565 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM19 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\car_washer.elf D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM19'
+ESP-ROM:esp32s3-20210327
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1658
+load:0x403c8700,len:0xd98
+load:0x403cb700,len:0x33a4
+entry 0x403c899c
+[0;32mI (25) boot: ESP-IDF v5.5.1-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Sep 28 2026 18:07:58[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.4[0m
+[0;32mI (32) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (36) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00080000[0m
+[0;32mI (63) boot:  1 otadata          OTA data         01 00 00089000 00002000[0m
+[0;32mI (70) boot:  2 phy_init         RF data          01 01 0008b000 00001000[0m
+[0;32mI (76) boot:  3 ota_0            OTA app          00 10 00090000 002ee000[0m
+[0;32mI (83) boot:  4 ota_1            OTA app          00 11 00380000 002ee000[0m
+[0;32mI (89) boot:  5 storage          Unknown data     01 82 0066e000 00400000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00090020 vaddr=3c130020 size=556b8h (349880) map[0m
+[0;32mI (165) esp_image: segment 1: paddr=000e56e0 vaddr=3fc9ed00 size=05354h ( 21332) load[0m
+[0;32mI (169) esp_image: segment 2: paddr=000eaa3c vaddr=40374000 size=055dch ( 21980) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=000f0020 vaddr=42000020 size=12acf0h (1223920) map[0m
+[0;32mI (381) esp_image: segment 4: paddr=0021ad18 vaddr=403795dc size=15678h ( 87672) load[0m
+[0;32mI (398) esp_image: segment 5: paddr=00230398 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (408) boot: Loaded app from partition at offset 0x90000[0m
+[0;32mI (408) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (419) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (419) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (421) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (425) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (430) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (434) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (439) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (443) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (448) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (453) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (458) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (462) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (466) esp_psram: Speed: 80MHz[0m
+[0;32mI (469) cpu_start: Multicore app[0m
+[0;32mI (884) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (893) cpu_start: Pro cpu start user code[0m
+[0;32mI (893) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (893) app_init: Application information:[0m
+[0;32mI (893) app_init: Project name:     car_washer[0m
+[0;32mI (898) app_init: App version:      1.0.0[0m
+[0;32mI (901) app_init: Compile time:     Oct 19 2026 21:51:30[0m
+[0;32mI (906) app_init: ELF file SHA256:  3d5364d37...[0m
+[0;32mI (911) app_init: ESP-IDF:          v5.5.1-dirty[0m
+[0;32mI (915) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (919) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (923) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (927) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (933) heap_init: At 3FCAACA0 len 0003EA70 (250 KiB): RAM[0m
+[0;32mI (938) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (943) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (948) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (954) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (961) spi_flash: detected chip: generic[0m
+[0;32mI (964) spi_flash: flash io: dio[0m
+[0;32mI (967) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (973) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (980) main_task: Started on CPU0[0m
+[0;32mI (983) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (991) main_task: Calling app_main()[0m
+[0;32mI (1109) device_id: device_id = 80456B281774[0m
+[0;32mI (1109) main: device_id = 80456B281774[0m
+[0;32mI (1110) i2c_bus: i2c_bus_init OK (port=1 sda=1 scl=2)[0m
+[0;32mI (1111) io_exp: init OK (out=0x38 in=0x39 int=GPIO15)[0m
+[0;32mI (1115) fram: fram_init OK (port=1 sda=1 scl=2 addr=0x50 cap=32768 byte)[0m
+[0;32mI (1121) io_exp: PCF input 0x39 OK[0m
+[0;32mI (1125) rtc_ds3231: DS3231 connected (port=1 sda=1 scl=2)[0m
+[0;33mW (1130) ntp_time: Dong ho he thong chua hop le (vua boot/reset)[0m
+[0;33mW (1137) ntp_time: Gio doc tu RTC khong hop le (co the do nhieu I2C lam sai lech du lieu) -- bo qua, cho SNTP[0m
+[0;33mW (1145) devcfg: khong co / hong cau hinh trong NVS -> dung mac dinh[0m
+[0;32mI (1322) display: doc ID man hinh (0xD3): 00 00 00 00 00[0m
+[0;33mW (1323) display: man hinh khong tra loi: chan SDO/MISO chua noi, hoac chip chua nhan duoc lenh (kiem tra day CS/DC/RST/SCK/SDI va nguon man hinh)[0m
+[0;32mI (1330) ili9341: LCD panel create success, version: 2.1.0[0m
+[0;32mI (1456) LVGL: Starting LVGL task[0m
+[0;33mW (1459) lcd_panel.io.spi: Callback on_color_trans_done was already set and now it was overwritten![0m
+[0;32mI (1515) display: cam ung: dung hieu chinh da luu (swap=1 inv_x=1 inv_y=1 x=379..3978 y=131..3888)[0m
+[0;32mI (1516) display: cam ung XPT2046 OK (doc dinh ky, CS=GPIO21)[0m
+[0;32mI (1519) display: display OK ILI9341 320x240, SPI 15 MHz[0m
+[0;32mI (1527) peripheral_test: cam ung da co hieu chinh trong NVS (muon lam lai: dat PT_TOUCH_CALIB = 2)[0m
+[0;32mI (1537) audio: phan vung am thanh: dung 8/4096 KB[0m
+[0;33mW (1552) audio: thieu 21/21 file am thanh trong assets/audio[0m
+[0;32mI (1552) audio: audio OK (I2S 16000 Hz, BCLK=6 WS=7 DIN=5 SD=4)[0m
+[0;32mI (1552) main: =========== Network init ==========[0m
+[1;31mE (1556) gpio: gpio_install_isr_service(526): GPIO isr service already installed[0m
+[0;33mW (1563) net_ethernet: GPIO ISR handler already installed, bo qua[0m
+[0;32mI (1591) esp_eth.netif.netif_glue: 80:45:6b:28:17:77[0m
+[0;32mI (1592) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+[0;32mI (1592) net_ethernet: net_ethernet_init OK (spi_host=2 cs=9 int=10)[0m
+[0;32mI (1607) net_ethernet: Driver started[0m
+[0;32mI (1608) pp: pp rom version: e7ae62f[0m
+[0;32mI (1609) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1610) wifi:wifi driver task: 3fce1674, prio:23, stack:6656, core=0[0m
+[0;32mI (1621) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (1621) wifi:wifi certification version: v7.0[0m
+[0;32mI (1622) wifi:config NVS flash: enabled[0m
+[0;32mI (1626) wifi:config nano formatting: disabled[0m
+[0;32mI (1630) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1635) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1639) wifi:Init management short buffer num: 32[0m
+[0;32mI (1643) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1647) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1652) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1656) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1660) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1664) wifi_init: rx ba win: 6[0m
+[0;32mI (1667) wifi_init: accept mbox: 6[0m
+[0;32mI (1670) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1673) wifi_init: udp mbox: 6[0m
+[0;32mI (1676) wifi_init: tcp mbox: 6[0m
+[0;32mI (1679) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1682) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1685) wifi_init: tcp mss: 1440[0m
+[0;32mI (1688) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (1692) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1696) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1774) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (1810) wifi:mode : sta (80:45:6b:28:17:74) + softAP (80:45:6b:28:17:75)[0m
+[0;32mI (1811) wifi:enable tsf[0m
+[0;32mI (1813) wifi:Total power save buffer number: 16[0m
+[0;32mI (1814) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1818) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1822) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1825) net_wifi: STA fallback used -> auto-connect[0m
+[0;32mI (1831) net_wifi: AP SSID=XTECH - 281774 IP:192.168.4.1[0m
+[0;32mI (1831) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (1843) net_gsm: net_gsm_init OK (uart=2 tx=47 rx=48 apn=v-internet)[0m
+[0;32mI (1849) net_gsm: pulse reset[0m
+[0;32mI (1850) net_manager: net_manager_init[0m
+[0;32mI (1856) ntp_time: SNTP started[0m
+[1;31mE (1868) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (1868) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (1874) mqtt_client: Error transport connect[0m
+[0;33mW (1878) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (1881) cloud: broker uat-mqtt-carwash.icorp.vn:1883, client carwash-80456b281774, bayMac 80456b281774, khoang 0[0m
+[0;32mI (1894) wifi_portal: trang cau hinh WiFi: http://192.168.4.1/[0m
+[0;32mI (1898) main: khoi dong xong[0m
+[0;32mI (1899) main_task: Returned from app_main()[0m
+[0;32mI (1975) app_fsm: BOOT -> OUT_OF_SERVICE[0m
+[0;32mI (2831) net_wifi: STA fallback used -> auto-connect[0m
+[0;32mI (2982) app_fsm: den BAT (troi toi)[0m
+[0;33mW (5669) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (5669) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (5670) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (8506) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (8507) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (8508) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (9352) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (9353) uart: queue free spaces: 30[0m
+[1;31mE (9381) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (9382) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (9386) mqtt_client: Error transport connect[0m
+[0;33mW (9390) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (11344) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (11345) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (11346) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (14182) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (14182) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (14184) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (16894) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (16894) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (16899) mqtt_client: Error transport connect[0m
+[0;33mW (16903) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (17020) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (17020) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (17021) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (19857) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (19858) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (19859) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (22695) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (22695) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (22697) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (24407) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (24408) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (24412) mqtt_client: Error transport connect[0m
+[0;33mW (24416) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (25533) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (25534) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (25535) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (28370) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (28371) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (28373) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (29354) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (30355) net_gsm: Modem/song chua san sang, thu lai sau 5000 ms (fail_count=1)[0m
+[0;33mW (31208) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (31209) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (31210) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (31920) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (31920) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (31925) mqtt_client: Error transport connect[0m
+[0;33mW (31929) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (34046) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (34046) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (34048) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (35355) net_gsm: pulse reset[0m
+[0;33mW (36883) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (36884) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (36885) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (39433) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (39433) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (39438) mqtt_client: Error transport connect[0m
+[0;33mW (39442) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (39721) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (39721) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (39723) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (42558) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (42559) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (42560) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (42855) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (42856) uart: queue free spaces: 30[0m
+[0;33mW (45396) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (45397) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (45398) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (46946) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (46947) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (46951) mqtt_client: Error transport connect[0m
+[0;33mW (46955) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (48234) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (48234) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (48235) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (51071) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (51072) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (51073) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (53892) wifi:new:<1,0>, old:<1,1>, ap:<1,0>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (53893) wifi:scan in process, ignore set current channel[0m
+[0;32mI (53894) wifi:station: 72:19:59:22:76:ff join, AID=1, bgn, 20[0m
+[0;33mW (53910) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (53910) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (53912) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (54459) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (54459) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (54464) mqtt_client: Error transport connect[0m
+[0;33mW (54468) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (54952) net_wifi: Station 72:19:59:22:76:ff joined AP, AID=1[0m
+[0;32mI (55270) wifi:<ba-add>idx:2 (ifx:1, 72:19:59:22:76:ff), tid:0, ssn:13, winSize:64[0m
+[0;33mW (56748) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (56748) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (56750) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (59586) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (59587) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (59588) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (61972) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (61972) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (61977) mqtt_client: Error transport connect[0m
+[0;33mW (61981) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (62424) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (62424) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (62425) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (62857) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (63858) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (65261) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (65262) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (65263) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (66449) net_wifi: Station 72:19:59:22:76:ff left AP, AID=1[0m
+[0;32mI (66452) wifi:starting SA query procedure with STA(72:19:59:22:76:ff)[0m
+[0;32mI (66452) wifi:Send SA Query req with transaction id b832[0m
+[0;32mI (66652) wifi:Send SA Query req with transaction id b833[0m
+[0;32mI (66852) wifi:Send SA Query req with transaction id b834[0m
+[0;32mI (67052) wifi:Send SA Query req with transaction id b835[0m
+[0;32mI (67252) wifi:Send SA Query req with transaction id b836[0m
+[0;32mI (67452) wifi:Send SA Query req with transaction id b837[0m
+[0;32mI (67476) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (67678) wifi:station: 72:19:59:22:76:ff leave, AID = 1, reason = 209, bss_flags is 691299, bss:0x3c1966f4[0m
+[0;32mI (67679) wifi:new:<1,0>, old:<1,0>, ap:<1,0>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (67684) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (67688) net_wifi: Station 72:19:59:22:76:ff left AP, AID=1[0m
+[0;32mI (67689) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (67700) wifi:scan in process, ignore set current channel[0m
+[0;33mW (68099) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (68100) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (68101) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (68244) wifi:new:<1,0>, old:<1,1>, ap:<1,0>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (68245) wifi:scan in process, ignore set current channel[0m
+[0;32mI (68246) wifi:station: 72:19:59:22:76:ff join, AID=1, bgn, 20[0m
+[0;32mI (68279) net_wifi: Station 72:19:59:22:76:ff joined AP, AID=1[0m
+[1;31mE (69485) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (69485) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (69490) mqtt_client: Error transport connect[0m
+[0;33mW (69494) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (70939) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (70939) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (70941) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (73776) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (73777) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (73778) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (73858) net_gsm: pulse reset[0m
+[0;33mW (76614) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (76615) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (76616) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (76998) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (76998) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (77003) mqtt_client: Error transport connect[0m
+[0;33mW (77007) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (77809) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;33mW (79452) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (79453) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (79454) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (80641) wifi:<ba-add>idx:2 (ifx:1, 72:19:59:22:76:ff), tid:0, ssn:22, winSize:64[0m
+[0;32mI (81358) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (81359) uart: queue free spaces: 30[0m
+[0;33mW (82291) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (82292) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (82293) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (82525) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (82558) net_wifi: Bo qua scan: STA dang connecting[0m
+[1;31mE (84511) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (84512) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (84516) mqtt_client: Error transport connect[0m
+[0;33mW (84520) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (85129) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (85130) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (85131) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (87569) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (87967) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (87967) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (87969) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (90805) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (90806) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (90807) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (92024) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (92024) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (92029) mqtt_client: Error transport connect[0m
+[0;33mW (92033) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (92857) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (93643) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (93644) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (93645) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (96481) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (96481) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (96483) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (97839) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (98904) wifi:[ADDBA]RX DELBA, reason:1, delete tid:0, initiator:0(recipient)[0m
+[0;33mW (99320) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (99320) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (99321) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (99537) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (99537) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (99542) mqtt_client: Error transport connect[0m
+[0;33mW (99546) cloud: loi MQTT (sock errno 0)[0m
+[1;31mE (101361) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (102158) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (102159) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (102160) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (102363) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (102746) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (104996) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (104996) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (104998) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (107050) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (107051) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (107055) mqtt_client: Error transport connect[0m
+[0;33mW (107059) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (107833) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (107834) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (107835) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (108260) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (110671) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (110672) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (110673) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (112363) net_gsm: pulse reset[0m
+[0;33mW (112707) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (113509) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (113510) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (113512) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (114563) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (114563) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (114568) mqtt_client: Error transport connect[0m
+[0;33mW (114572) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (116347) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (116348) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (116349) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (117551) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (119185) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (119186) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (119187) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (119863) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (119864) uart: queue free spaces: 30[0m
+[0;33mW (122023) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (122024) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (122025) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (122076) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (122077) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (122081) mqtt_client: Error transport connect[0m
+[0;33mW (122086) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (122617) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (124861) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (124862) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (124863) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (127699) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (127699) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (127701) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (129589) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (129589) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (129594) mqtt_client: Error transport connect[0m
+[0;33mW (129598) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (129731) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (130537) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (130538) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (130539) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (132567) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (133349) net_wifi: Bo qua scan: STA dang connecting[0m
+[0;33mW (133375) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (133376) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (133377) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (136213) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (136213) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (136215) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (136645) net_wifi: Bo qua scan: STA dang connecting[0m
+[1;31mE (137102) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (137102) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (137107) mqtt_client: Error transport connect[0m
+[0;33mW (137111) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (137548) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (139023) net_wifi: Bo qua scan: STA dang connecting[0m
+[0;33mW (139051) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (139052) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (139053) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (139491) wifi:<ba-add>idx:3 (ifx:1, 72:19:59:22:76:ff), tid:1, ssn:0, winSize:64[0m
+[1;31mE (139866) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (140386) net_wifi: Bo qua scan: STA dang connecting[0m
+[0;33mW (140867) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (141889) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (141890) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (141891) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (142625) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (144615) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (144616) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (144620) mqtt_client: Error transport connect[0m
+[0;33mW (144624) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (144727) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (144728) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (144729) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (147543) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (147565) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (147565) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (147567) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (150403) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (150403) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (150405) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (150867) net_gsm: pulse reset[0m
+[1;31mE (152128) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (152128) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (152133) mqtt_client: Error transport connect[0m
+[0;33mW (152137) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (153229) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (153241) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (153242) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (153243) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (156079) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (156079) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (156081) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (157574) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (158367) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (158368) uart: queue free spaces: 30[0m
+[0;33mW (158917) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (158917) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (158919) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (159641) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (159641) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (159646) mqtt_client: Error transport connect[0m
+[0;33mW (159650) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (161755) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (161755) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (161757) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (162640) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (164593) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (164594) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (164595) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (167154) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (167155) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (167159) mqtt_client: Error transport connect[0m
+[0;33mW (167164) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (167431) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (167431) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (167433) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (167564) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (170269) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (170269) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (170270) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (173100) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (173106) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (173107) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (173109) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (174667) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (174667) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (174672) mqtt_client: Error transport connect[0m
+[0;33mW (174676) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (175945) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (175945) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (175947) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (178369) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (178783) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (178783) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (178785) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (179053) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (179370) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (181621) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (181621) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (181623) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (182180) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (182180) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (182185) mqtt_client: Error transport connect[0m
+[0;33mW (182189) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (183125) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (184459) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (184460) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (184461) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (187297) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (187297) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (187299) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (187550) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (189370) net_gsm: pulse reset[0m
+[1;31mE (189693) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (189693) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (189698) mqtt_client: Error transport connect[0m
+[0;33mW (189702) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (190135) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (190136) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (190137) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (192557) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (192973) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (192974) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (192975) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (195811) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (195811) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (195813) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (196871) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (196872) uart: queue free spaces: 30[0m
+[1;31mE (197206) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (197206) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (197211) mqtt_client: Error transport connect[0m
+[0;33mW (197215) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (197850) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (198649) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (198650) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (198651) net_manager: WIFI STA DISCONNECTED[0m
+[0;32mI (200285) wifi:[ADDBA]RX DELBA, reason:1, delete tid:0, initiator:0(recipient)[0m
+[0;33mW (201487) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (201487) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (201489) net_manager: WIFI STA DISCONNECTED[0m
+[0;33mW (202677) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (204325) net_wifi: Wi-Fi disconnected, reason=201[0m
+[0;32mI (204325) net_wifi: Mat ket noi, thu lai fallback SSID[0m
+[0;33mW (204327) net_manager: WIFI STA DISCONNECTED[0m
+[1;31mE (204719) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (204719) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (204724) mqtt_client: Error transport connect[0m
+[0;33mW (204728) cloud: loi MQTT (sock errno 0)[0m

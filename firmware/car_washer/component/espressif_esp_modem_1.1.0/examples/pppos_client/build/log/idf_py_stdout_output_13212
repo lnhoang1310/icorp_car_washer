@@ -1,0 +1,33 @@
+-- IDF_TARGET not set, using default target: esp32
+-- Found Git: C:/Program Files/Git/cmd/git.exe (found version "2.31.1.windows.1") 
+-- ccache will be used for faster recompilation
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: C:/Users/NgocTuan/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Users/NgocTuan/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Users/NgocTuan/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+NOTICE: Skipping optional dependency: espressif/esp_modem_usb_dte
+Manifest files have changed, solving dependencies.
+Using component placed at C:\Users\NgocTuan\OneDrive\Desktop\espressif_esp_modem_1.1.0 for dependency espressif/esp_modem(^1.0.0), specified in C:/Users/NgocTuan/OneDrive/Desktop/espressif_esp_modem_1.1.0/examples/pppos_client/main\idf_component.yml
+...Updating lock file at C:\Users\NgocTuan\OneDrive\Desktop\espressif_esp_modem_1.1.0\examples\pppos_client\dependencies.lock
+Deleting 2 unused components
+ espressif__esp_modem_usb_dte
+ espressif__usb_host_cdc_acm
+Processing 2 dependencies:
+[1/2] espressif/esp_modem (1.1.0)
+[2/2] idf (5.1.1)
+NOTICE: Skipping optional dependency: espressif/esp_modem_usb_dte
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/NgocTuan/OneDrive/Desktop/espressif_esp_modem_1.1.0/examples/pppos_client/build/CMakeFiles/CMakeOutput.log".

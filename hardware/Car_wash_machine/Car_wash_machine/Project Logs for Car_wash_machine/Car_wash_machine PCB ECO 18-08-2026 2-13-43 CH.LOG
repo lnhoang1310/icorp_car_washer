@@ -1,0 +1,54 @@
+Change Component Description : Designator=D6 Old Description=9V (Typ) Clamp 1A (8/20 New Description=9V (Typ) Clamp 1A (8/20|Ìs) Ipp Tvs Diode Surface Mount SOD-923
+Change Component Description : Designator=D8 Old Description=9V (Typ) Clamp 1A (8/20 New Description=9V (Typ) Clamp 1A (8/20|Ìs) Ipp Tvs Diode Surface Mount SOD-923
+Change Component Description : Designator=BH1 Old Description=Battery Holder, SMT, 1 Coin Cell, 12mm, Plastic, UL94V-0 New Description=Battery Holder, SMT, 1 Coin Cell, 12mm, Plastic, UL94V-0 | Keystone Electronics 1056
+Change Component Description : Designator=C28 Old Description=Capacitor; Ceramic; Cap; 6.8nF; Tol 5%; SMT; Vol-Rtg 50V; C0G; Tape and Reel New Description=Capacitor; Ceramic; Cap; 6.8nF; Tol 5%; SMT; Vol-Rtg 50V; C0G; Tape and Reel | KEMET C0805C220J5GACTU
+Change Component Description : Designator=C29 Old Description=Capacitor; Ceramic; Cap; 6.8nF; Tol 5%; SMT; Vol-Rtg 50V; C0G; Tape and Reel New Description=Capacitor; Ceramic; Cap; 6.8nF; Tol 5%; SMT; Vol-Rtg 50V; C0G; Tape and Reel | KEMET C0805C220J5GACTU
+Change Component Description : Designator=C33 Old Description=Capacitor; Ceramic; Cap; 22.0nF; Tol 5%; SMT; Vol-Rtg 50V; C0G; Tape and Reel New Description=Capacitor; Ceramic; Cap; 22.0nF; Tol 5%; SMT; Vol-Rtg 50V; C0G; Tape and Reel | KEMET C0805C220J5GACTU
+Change Component Description : Designator=C30 Old Description=Capacitor; Ceramic; Cap; 22.0pF; Tol 5%; SMT; Vol-Rtg 50V; C0G; Tape and Reel New Description=Capacitor; Ceramic; Cap; 22.0pF; Tol 5%; SMT; Vol-Rtg 50V; C0G; Tape and Reel | KEMET C0805C220J5GACTU
+Change Component Description : Designator=C31 Old Description=Capacitor; Ceramic; Cap; 22.0pF; Tol 5%; SMT; Vol-Rtg 50V; C0G; Tape and Reel New Description=Capacitor; Ceramic; Cap; 22.0pF; Tol 5%; SMT; Vol-Rtg 50V; C0G; Tape and Reel | KEMET C0805C220J5GACTU
+Change Component Description : Designator=C32 Old Description=Capacitor; Ceramic; Cap; 22.0pF; Tol 5%; SMT; Vol-Rtg 50V; C0G; Tape and Reel New Description=Capacitor; Ceramic; Cap; 22.0pF; Tol 5%; SMT; Vol-Rtg 50V; C0G; Tape and Reel | KEMET C0805C220J5GACTU
+Change Component Description : Designator=F1 Old Description=Fuse, TE5 369 Series, Through Hole, Slow Blow, 300VAC, 1A, Radial New Description=Fuse, TE5 369 Series, Through Hole, Slow Blow, 300VAC, 1A, Radial | Littelfuse 36911000000
+Added Component: Designator=M1(IC_SIM_A7682S/A7680C - duplicate)
+Add component (AddParameter): Name = "Availability"; Value = "Not in stock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/SIM868/MikroElektronika/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LIBRARY MADE BY"; Value = "MR. XUAN SIEU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LINK ORIGINAL"; Value = "https://cn.simcom.com/product/A7680C.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LINK VIET NAM"; Value = "https://www.lazada.vn/products/bo-dieu-khien-simcom-a7680c-cat1-kich-thuoc-nho-tuong-thich-voi-sim800c-toan-cau-4g-lte-ho-tro-giao-thuc-tcpip-co-the-goi-dien-thoai-i2831789045.html?srsltid=AfmBOoosQrxJde6jj3jMc_vCVE_fzO6UQJ8IH7P6YqoQoCxdnF-xPq5n"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "MikroElektronika"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "SIM868"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/SIM868/MikroElektronika/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=TXD_MODULE_SIM Pin=M1-1
+Added Pin To Net: NetName=RXD_MODULE_SIM Pin=M1-2
+Added Pin To Net: NetName=GND Pin=M1-8
+Added Pin To Net: NetName=GND Pin=M1-13
+Added Pin To Net: NetName=NetM1_14 Pin=M1-14
+Added Pin To Net: NetName=NetM1_15 Pin=M1-15
+Added Pin To Net: NetName=NetM1_16 Pin=M1-16
+Added Pin To Net: NetName=NetM1_17 Pin=M1-17
+Added Pin To Net: NetName=NetC23_1 Pin=M1-18
+Added Pin To Net: NetName=GND Pin=M1-19
+Added Pin To Net: NetName=GND Pin=M1-21
+Added Pin To Net: NetName=GND Pin=M1-27
+Added Pin To Net: NetName=NetC37_1 Pin=M1-29
+Added Pin To Net: NetName=GND Pin=M1-30
+Added Pin To Net: NetName=GND Pin=M1-31
+Added Pin To Net: NetName=NetAT1_1 Pin=M1-32
+Added Pin To Net: NetName=GND Pin=M1-33
+Added Pin To Net: NetName=NetC17_2 Pin=M1-34
+Added Pin To Net: NetName=NetC17_2 Pin=M1-35
+Added Pin To Net: NetName=GND Pin=M1-36
+Added Pin To Net: NetName=GND Pin=M1-37
+Added Pin To Net: NetName=NetM1_39 Pin=M1-39
+Added Pin To Net: NetName=+1V8 Pin=M1-40
+Added Pin To Net: NetName=NetM1_41 Pin=M1-41
+Added Pin To Net: NetName=NetM1_42 Pin=M1-42
+Added Pin To Net: NetName=GND Pin=M1-87
+Added Pin To Net: NetName=GND Pin=M1-88
+Added Pin To Net: NetName=GND Pin=M1-89
+Added Pin To Net: NetName=GND Pin=M1-90
+Added Pin To Net: NetName=GND Pin=M1-91
+Added Pin To Net: NetName=GND Pin=M1-92
+Added Member To Class: ClassName=MCU_WASH_MACHINE Member=Component M1 SIM A7680C

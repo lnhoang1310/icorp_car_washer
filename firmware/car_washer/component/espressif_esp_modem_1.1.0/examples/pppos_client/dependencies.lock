@@ -1,0 +1,15 @@
+dependencies:
+  espressif/esp_modem:
+    component_hash: null
+    source:
+      path: C:\Users\NgocTuan\OneDrive\Desktop\espressif_esp_modem_1.1.0
+      type: local
+    version: 1.1.0
+  idf:
+    component_hash: null
+    source:
+      type: idf
+    version: 5.1.1
+manifest_hash: 6169217868a3d63b4c0cdabfbe2c73279eb8d65f17c521befbaaee813fc6f3b0
+target: esp32
+version: 1.0.0

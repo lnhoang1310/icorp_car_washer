@@ -1,0 +1,1919 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM10 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\car_washer.elf D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM10'
+ESP-ROM:esp32s3-20210327
+�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1658
+load:0x403c8700,len:0xd98
+load:0x403cb700,len:0x33a4
+entry 0x403c899c
+[0;32mI (25) boot: ESP-IDF v5.5.1-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Sep 28 2026 18:07:58[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.4[0m
+[0;32mI (32) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (36) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00080000[0m
+[0;32mI (63) boot:  1 otadata          OTA data         01 00 00089000 00002000[0m
+[0;32mI (70) boot:  2 phy_init         RF data          01 01 0008b000 00001000[0m
+[0;32mI (76) boot:  3 ota_0            OTA app          00 10 00090000 002ee000[0m
+[0;32mI (83) boot:  4 ota_1            OTA app          00 11 00380000 002ee000[0m
+[0;32mI (89) boot:  5 storage          Unknown data     01 82 0066e000 00400000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00090020 vaddr=3c110020 size=49d90h (302480) map[0m
+[0;32mI (157) esp_image: segment 1: paddr=000d9db8 vaddr=3fc9ec00 size=05334h ( 21300) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=000df0f4 vaddr=40374000 size=00f24h (  3876) load[0m
+[0;32mI (163) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=10469ch (1066652) map[0m
+[0;32mI (347) esp_image: segment 4: paddr=001e46c4 vaddr=40374f24 size=19c70h (105584) load[0m
+[0;32mI (368) esp_image: segment 5: paddr=001fe33c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (378) boot: Loaded app from partition at offset 0x90000[0m
+[0;32mI (378) boot: Disabling RNG early entropy source...[0m
+[0;32mI (388) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (388) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (388) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (390) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (395) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (399) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (403) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (408) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (413) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (417) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (423) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (427) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (431) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (435) esp_psram: Speed: 80MHz[0m
+[0;32mI (438) cpu_start: Multicore app[0m
+[0;32mI (854) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (863) cpu_start: Pro cpu start user code[0m
+[0;32mI (863) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (863) app_init: Application information:[0m
+[0;32mI (863) app_init: Project name:     car_washer[0m
+[0;32mI (867) app_init: App version:      1.0.0[0m
+[0;32mI (871) app_init: Compile time:     Oct  1 2026 17:06:12[0m
+[0;32mI (876) app_init: ELF file SHA256:  88f0b74df...[0m
+[0;32mI (880) app_init: ESP-IDF:          v5.5.1-dirty[0m
+[0;32mI (884) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (888) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (892) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (896) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (902) heap_init: At 3FCA99B0 len 0003FD60 (255 KiB): RAM[0m
+[0;32mI (907) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (913) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (918) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (923) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (930) spi_flash: detected chip: generic[0m
+[0;32mI (933) spi_flash: flash io: dio[0m
+[0;32mI (937) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (943) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (950) main_task: Started on CPU0[0m
+[0;32mI (953) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (961) main_task: Calling app_main()[0m
+[0;32mI (1075) main: led_debug_task running[0m
+[0;32mI (1076) device_id: device_id = 80456B281774[0m
+[0;32mI (1076) main: device_id = 80456B281774[0m
+[0;32mI (1076) i2c_bus: i2c_bus_init OK (port=1 sda=1 scl=2)[0m
+[0;32mI (1081) io_exp: init OK (out=0x38 in=0x39 int=GPIO15)[0m
+[0;32mI (1085) peripheral_test: [0m
+[0;32mI (1087) peripheral_test: ########## BAT DAU TEST NGOAI VI ##########[0m
+[0;32mI (1091) io_exp: PCF input 0x39 OK[0m
+[0;32mI (1097) peripheral_test: ===== TEST FRAM =====[0m
+[0;32mI (1101) fram: fram_init OK (port=1 sda=1 scl=2 addr=0x50 cap=32768 byte)[0m
+[0;32mI (1108) fram: self_test OK[0m
+[0;32mI (1110) peripheral_test: fram_self_test OK[0m
+[0;32mI (1114) peripheral_test: Ghi/doc pattern tai 0x0100 khop -> FRAM (cap=32768 byte): PASS[0m
+[0;32mI (1122) peripheral_test: [0m
+[0;32mI (1124) peripheral_test: ===== TEST DS3231 =====[0m
+[0;33mW (1127) io_exp: DUNG KHAN DA NHA[0m
+[0;32mI (1132) rtc_ds3231: DS3231 connected (port=1 sda=1 scl=2)[0m
+[0;32mI (1137) peripheral_test: DS3231 connected[0m
+[0;33mW (1141) peripheral_test: DS3231 bao mat dien (bit OSF) -- gio hien tai trong chip co the KHONG dang tin cay[0m
+[0;32mI (1151) peripheral_test: Gio dang luu trong RTC: 2000-01-01 03:27:10[0m
+[0;32mI (2358) peripheral_test: Set 2025-01-01 12:00:00 -> doc lai 2025-01-01 12:00:01 (lech 1 giay) -> DS3231: PASS[0m
+[0;32mI (2359) peripheral_test: Da khoi phuc lai gio RTC nhu truoc luc test[0m
+[0;32mI (2363) peripheral_test: [0m
+[0;32mI (2365) peripheral_test: [0m
+[0;32mI (2368) peripheral_test: ########## KET QUA TEST NGOAI VI ##########[0m
+[0;32mI (2374) peripheral_test: FRAM    : PASS[0m
+[0;32mI (2378) peripheral_test: DS3231  : PASS[0m
+[0;32mI (2381) peripheral_test: RELAY   : bo qua[0m
+[0;32mI (2385) peripheral_test: ############################################[0m
+[0;33mW (2391) fram: fram_init da goi roi, bo qua[0m
+[0;32mI (2396) rtc_ds3231: DS3231 connected (port=1 sda=1 scl=2)[0m
+[0;33mW (2401) ntp_time: Dong ho he thong chua hop le (vua boot/reset)[0m
+[0;33mW (2407) ntp_time: Gio doc tu RTC khong hop le (co the do nhieu I2C lam sai lech du lieu) -- bo qua, cho SNTP[0m
+[0;33mW (2416) devcfg: khong co / hong cau hinh trong NVS -> dung mac dinh[0m
+[0;32mI (2593) display: doc ID man hinh (0xD3): 7F F8 00 00 00[0m
+[0;33mW (2594) display: khong nhan ra ID -- gui dong log nay de doi chieu[0m
+[0;32mI (2594) ili9341: LCD panel create success, version: 2.1.0[0m
+[0;32mI (2720) LVGL: Starting LVGL task[0m
+[0;33mW (2724) lcd_panel.io.spi: Callback on_color_trans_done was already set and now it was overwritten![0m
+[0;32mI (2779) display: cam ung XPT2046 OK (doc dinh ky, CS=GPIO21)[0m
+[0;32mI (2780) display: display OK ILI9341 320x240, SPI 15 MHz[0m
+[0;32mI (2783) peripheral_test: ===== HIEU CHINH CAM UNG =====[0m
+[0;32mI (2887) display: XPT2046 (MISO keo LEN):  z1=1 z2=4068 x=4095 y=3849[0m
+[0;32mI (2887) display: XPT2046 (MISO keo XUONG): z1=3 z2=4079 x=4095 y=3330[0m
+[0;32mI (2888) display: => chip cam ung CO tra loi (so lieu thay doi hop ly)[0m
+[0;32mI (2953) peripheral_test: cho cham diem 1/4 (trên trái) tai man hinh x=24 y=24[0m
+[0;32mI (6036) display: XPT2046 tho: z1=1 z2=4060 x=4095 y=3839 -> luc z=37 (nguong 400)[0m
+[0;32mI (7056) peripheral_test:   cham: adc x=3446 y=3583 luc=718[0m
+[0;32mI (9056) display: XPT2046 tho: z1=1 z2=4079 x=4095 y=3693 -> luc z=18 (nguong 400)[0m
+[0;32mI (12076) display: XPT2046 tho: z1=1 z2=4084 x=4095 y=3862 -> luc z=13 (nguong 400)[0m
+[0;32mI (15096) display: XPT2046 tho: z1=0 z2=4080 x=4095 y=3852 -> luc z=16 (nguong 400)[0m
+[0;32mI (18116) display: XPT2046 tho: z1=1 z2=4055 x=4095 y=3841 -> luc z=42 (nguong 400)[0m
+[0;32mI (21136) display: XPT2046 tho: z1=1 z2=4067 x=4095 y=3929 -> luc z=30 (nguong 400)[0m
+[0;32mI (21716) peripheral_test:   cham: adc x=3303 y=3579 luc=793[0m
+[0;32mI (21956) peripheral_test: diem 1: adc x=3412 y=3658[0m
+[0;32mI (21957) peripheral_test: cho cham diem 2/4 (trên phải) tai man hinh x=295 y=24[0m
+[0;32mI (25019) display: XPT2046 tho: z1=1 z2=4047 x=4095 y=3863 -> luc z=50 (nguong 400)[0m
+[0;32mI (27199) peripheral_test:   cham: adc x=3414 y=738 luc=747[0m
+[0;32mI (27819) peripheral_test: diem 2: adc x=3497 y=658[0m
+[0;32mI (27820) peripheral_test: cho cham diem 3/4 (dưới phải) tai man hinh x=295 y=215[0m
+[0;32mI (30142) peripheral_test:   cham: adc x=517 y=756 luc=987[0m
+[0;32mI (30662) peripheral_test:   cham: adc x=515 y=658 luc=1833[0m
+[0;32mI (30822) peripheral_test: diem 3: adc x=526 y=659[0m
+[0;32mI (30823) peripheral_test: cho cham diem 4/4 (dưới trái) tai man hinh x=24 y=215[0m
+[0;32mI (30965) peripheral_test:   cham: adc x=618 y=699 luc=1235[0m
+[0;32mI (33885) display: XPT2046 tho: z1=1 z2=4075 x=4095 y=3839 -> luc z=22 (nguong 400)[0m
+[0;32mI (35325) peripheral_test:   cham: adc x=549 y=3653 luc=300[0m
+[0;32mI (36565) peripheral_test:   cham: adc x=624 y=3656 luc=186[0m
+[0;32mI (36905) display: XPT2046 tho: z1=0 z2=4048 x=4095 y=3892 -> luc z=48 (nguong 400)[0m
+[0;32mI (38885) peripheral_test:   cham: adc x=550 y=3662 luc=326[0m
+[0;32mI (41085) peripheral_test: diem 4: adc x=525 y=3665[0m
+[0;32mI (41085) peripheral_test: kenh ngang: thay doi 86 (kenh X chip) / 6006 (kenh Y chip) -> swap_xy=1[0m
+[0;32mI (41089) peripheral_test: hieu chinh xong, da luu NVS. Neu muon lam mac dinh, chep vao app_config.h:[0m
+[0;32mI (41096) peripheral_test: #define TOUCH_SWAP_XY          (1)[0m
+[0;32mI (41101) peripheral_test: #define TOUCH_INVERT_X         (1)[0m
+[0;32mI (41107) peripheral_test: #define TOUCH_INVERT_Y         (1)[0m
+[0;32mI (41112) peripheral_test: #define TOUCH_RAW_X_MIN        (392)[0m
+[0;32mI (41118) peripheral_test: #define TOUCH_RAW_X_MAX        (3926)[0m
+[0;32mI (41124) peripheral_test: #define TOUCH_RAW_Y_MIN        (156)[0m
+[0;32mI (41129) peripheral_test: #define TOUCH_RAW_Y_MAX        (3822)[0m
+[0;32mI (56153) audio: phan vung am thanh: dung 8/4096 KB[0m
+[0;33mW (56169) audio: thieu 24/24 file am thanh trong assets/audio[0m
+[0;32mI (56169) audio: audio OK (I2S 16000 Hz, BCLK=6 WS=7 DIN=5 SD=4)[0m
+[1;31mE (56169) gpio: gpio_install_isr_service(526): GPIO isr service already installed[0m
+[0;33mW (56176) net_ethernet: GPIO ISR handler already installed, bo qua[0m
+[0;32mI (56204) esp_eth.netif.netif_glue: 80:45:6b:28:17:77[0m
+[0;32mI (56205) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+[0;32mI (56205) net_ethernet: net_ethernet_init OK (spi_host=2 cs=9 int=10)[0m
+[0;32mI (56220) net_ethernet: Driver started[0m
+[0;32mI (56221) pp: pp rom version: e7ae62f[0m
+[0;32mI (56222) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (56223) wifi:wifi driver task: 3fce06dc, prio:23, stack:6656, core=0[0m
+[0;32mI (56233) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (56233) wifi:wifi certification version: v7.0[0m
+[0;32mI (56236) wifi:config NVS flash: enabled[0m
+[0;32mI (56239) wifi:config nano formatting: disabled[0m
+[0;32mI (56244) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (56249) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (56253) wifi:Init management short buffer num: 32[0m
+[0;32mI (56258) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (56262) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (56266) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (56270) wifi:Init static rx buffer num: 10[0m
+[0;32mI (56274) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (56279) wifi_init: rx ba win: 6[0m
+[0;32mI (56281) wifi_init: accept mbox: 6[0m
+[0;32mI (56284) wifi_init: tcpip mbox: 32[0m
+[0;32mI (56288) wifi_init: udp mbox: 6[0m
+[0;32mI (56291) wifi_init: tcp mbox: 6[0m
+[0;32mI (56294) wifi_init: tcp tx win: 5760[0m
+[0;32mI (56297) wifi_init: tcp rx win: 5760[0m
+[0;32mI (56300) wifi_init: tcp mss: 1440[0m
+[0;32mI (56303) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (56307) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (56311) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (56319) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (56354) wifi:mode : sta (80:45:6b:28:17:74) + softAP (80:45:6b:28:17:75)[0m
+[0;32mI (56354) wifi:enable tsf[0m
+[0;32mI (56357) wifi:Total power save buffer number: 16[0m
+[0;32mI (56357) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (56361) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (56366) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;33mW (56369) net_wifi: Khong co SSID da luu -> chua ket noi duoc[0m
+[0;32mI (56375) net_wifi: Schedule next scan in 10000 ms[0m
+[0;32mI (56380) net_wifi: AP SSID=XTECH - 281774 IP:192.168.4.1[0m
+[0;32mI (56380) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (56393) net_gsm: net_gsm_init OK (uart=2 tx=47 rx=48 apn=v-internet)[0m
+[0;32mI (56399) net_gsm: pulse reset[0m
+[0;32mI (56400) net_manager: net_manager_init[0m
+[0;32mI (56405) ntp_time: SNTP started[0m
+[0;33mW (56408) cloud: !!! CHE DO THU (PT_DEMO_PAYMENT = 1): thanh toan GIA LAP, khong co tien that !!![0m
+[0;32mI (56416) main: khoi dong xong[0m
+[0;32mI (56419) main_task: Returned from app_main()[0m
+[0;32mI (56472) app_fsm: BOOT -> IDLE[0m
+[0;32mI (59116) display: touch nghi ngo: adc x=1396 y=1654 luc=555 (mau 1/2)[0m
+[0;32mI (59152) display: cam ung: nhan duoc cham dau tien tai x=223 y=177 (luc 1073)[0m
+[0;32mI (59152) display: touch adc x=1113 y=1463 luc=1073 -> man hinh x=223 y=177[0m
+[0;32mI (59266) app_fsm: tao don 80456B281774-0-0044: Gói 20 phút 20 phut 40000 d[0m
+[0;32mI (59267) app_fsm: IDLE -> CREATING_QR[0m
+[0;33mW (59274) peripheral_test: [DEMO] tao don 80456B281774-0-0044, 40000 d[0m
+[0;33mW (61275) peripheral_test: [DEMO] don 80456B281774-0-0044: da gui ma QR thu[0m
+[0;33mW (61275) peripheral_test: [DEMO] tu bao thanh toan sau 8 s[0m
+[0;32mI (61276) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (61338) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[0;33mW (61350) audio: thieu file /audio/scan_qr.wav[0m
+[0;32mI (62651) display: touch nghi ngo: adc x=1153 y=933 luc=645 (mau 1/2)[0m
+[0;32mI (63073) display: touch nghi ngo: adc x=1008 y=959 luc=782 (mau 1/2)[0m
+[0;32mI (63560) display: touch nghi ngo: adc x=875 y=1031 luc=932 (mau 1/2)[0m
+[0;32mI (63901) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (63902) uart: queue free spaces: 30[0m
+[0;32mI (64050) display: touch nghi ngo: adc x=817 y=896 luc=1376 (mau 1/2)[0m
+[0;32mI (64086) display: touch adc x=791 y=880 luc=1584 -> man hinh x=275 y=198[0m
+[0;33mW (64156) peripheral_test: [DEMO] huy don 80456B281774-0-0044[0m
+[0;32mI (64157) app_fsm: WAIT_PAYMENT -> NOTICE[0m
+[0;32mI (66379) net_wifi: Auto scan fired (retry=1)[0m
+[0;32mI (68239) app_fsm: NOTICE -> IDLE[0m
+[0;32mI (69615) net_wifi: ===== SCAN RESULT (15 APs) =====[0m
+[0;32mI (69615) net_wifi: 1) SSID:P402 RSSI:-62 CH:11[0m
+[0;32mI (69616) net_wifi: 2) SSID:P62 RSSI:-86 CH:7[0m
+[0;32mI (69617) net_wifi: 3) SSID:BB 402 RSSI:-90 CH:8[0m
+[0;32mI (69622) net_wifi: 4) SSID:601 RSSI:-90 CH:10[0m
+[0;32mI (69626) net_wifi: 5) SSID:Subabi RSSI:-90 CH:13[0m
+[0;32mI (69630) net_wifi: 6) SSID:TRAN THU RSSI:-91 CH:7[0m
+[0;32mI (69635) net_wifi: 7) SSID:Tom RSSI:-92 CH:6[0m
+[0;32mI (69639) net_wifi: 8) SSID:ELBULL RSSI:-92 CH:11[0m
+[0;32mI (69643) net_wifi: 9) SSID:Nhim va Soc T1 RSSI:-93 CH:2[0m
+[0;32mI (69648) net_wifi: 10) SSID:Chuot RSSI:-93 CH:2[0m
+[0;32mI (69653) net_wifi: 11) SSID:Mai Linh RSSI:-93 CH:3[0m
+[0;32mI (69657) net_wifi: 12) SSID:Tang 4 RSSI:-93 CH:5[0m
+[0;32mI (69662) net_wifi: 13) SSID:Tenda_P51 RSSI:-94 CH:2[0m
+[0;32mI (69666) net_wifi: 14) SSID:Bong Bill RSSI:-95 CH:2[0m
+[0;32mI (69671) net_wifi: 15) SSID:Wifi  RSSI:-95 CH:10[0m
+[0;33mW (69676) net_wifi: Khong tim thay SSID da luu nao trong ket qua quet[0m
+[0;32mI (69682) net_wifi: Schedule next scan in 30000 ms[0m
+[1;31mE (83903) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (84904) net_gsm: Modem/song chua san sang, thu lai sau 5000 ms (fail_count=1)[0m
+[0;32mI (89904) net_gsm: pulse reset[0m
+[0;32mI (97404) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (97405) uart: queue free spaces: 30[0m
+[0;32mI (99686) net_wifi: Auto scan fired (retry=2)[0m
+[0;32mI (102922) net_wifi: ===== SCAN RESULT (14 APs) =====[0m
+[0;32mI (102922) net_wifi: 1) SSID:P402 RSSI:-55 CH:11[0m
+[0;32mI (102922) net_wifi: 2) SSID:P62 RSSI:-88 CH:7[0m
+[0;32mI (102925) net_wifi: 3) SSID:Bong Bill RSSI:-89 CH:2[0m
+[0;32mI (102929) net_wifi: 4) SSID:Anh Khoa RSSI:-90 CH:4[0m
+[0;32mI (102934) net_wifi: 5) SSID:601 RSSI:-90 CH:10[0m
+[0;32mI (102938) net_wifi: 6) SSID:Subabi RSSI:-90 CH:13[0m
+[0;32mI (102943) net_wifi: 7) SSID:Tom RSSI:-92 CH:6[0m
+[0;32mI (102947) net_wifi: 8) SSID:ELBULL RSSI:-93 CH:11[0m
+[0;32mI (102951) net_wifi: 9) SSID:Tang 4 RSSI:-94 CH:5[0m
+[0;32mI (102956) net_wifi: 10) SSID:Wifi  RSSI:-94 CH:10[0m
+[0;32mI (102960) net_wifi: 11) SSID:Chuot RSSI:-95 CH:2[0m
+[0;32mI (102965) net_wifi: 12) SSID:FPT Telecom-F4B9-IOT RSSI:-95 CH:11[0m
+[0;32mI (102970) net_wifi: 13) SSID:VIETTEL_cMAm RSSI:-96 CH:1[0m
+[0;32mI (102975) net_wifi: 14) SSID:Mai Linh RSSI:-96 CH:3[0m
+[0;33mW (102980) net_wifi: Khong tim thay SSID da luu nao trong ket qua quet[0m
+[0;32mI (102986) net_wifi: Schedule next scan in 60000 ms[0m
+[1;31mE (117406) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (118407) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (128407) net_gsm: pulse reset[0m
+[0;32mI (135907) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (135908) uart: queue free spaces: 30[0m
+[1;31mE (155909) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (156910) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (158383) display: touch nghi ngo: adc x=2580 y=2783 luc=933 (mau 1/2)[0m
+[0;32mI (158418) display: touch adc x=2636 y=2792 luc=933 -> man hinh x=103 y=78[0m
+[0;32mI (158488) display: touch adc x=2551 y=2757 luc=776 -> man hinh x=106 y=83[0m
+[0;32mI (158565) app_fsm: tao don 80456B281774-0-0045: Gói 5 phút 5 phut 10000 d[0m
+[0;32mI (158565) app_fsm: IDLE -> CREATING_QR[0m
+[0;33mW (158572) peripheral_test: [DEMO] tao don 80456B281774-0-0045, 10000 d[0m
+[0;33mW (160573) peripheral_test: [DEMO] don 80456B281774-0-0045: da gui ma QR thu[0m
+[0;33mW (160573) peripheral_test: [DEMO] tu bao thanh toan sau 8 s[0m
+[0;32mI (160574) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (160633) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[0;33mW (160660) audio: thieu file /audio/scan_qr.wav[0m
+[0;32mI (162003) display: touch nghi ngo: adc x=784 y=883 luc=1055 (mau 1/2)[0m
+[0;32mI (162038) display: touch adc x=768 y=801 luc=1426 -> man hinh x=283 y=200[0m
+[0;32mI (162071) display: touch adc x=704 y=788 luc=1664 -> man hinh x=284 y=204[0m
+[0;33mW (162141) peripheral_test: [DEMO] huy don 80456B281774-0-0045[0m
+[0;32mI (162142) app_fsm: WAIT_PAYMENT -> NOTICE[0m
+[0;32mI (162991) net_wifi: Auto scan fired (retry=3)[0m
+[0;32mI (166227) net_wifi: ===== SCAN RESULT (14 APs) =====[0m
+[0;32mI (166227) net_wifi: 1) SSID:P402 RSSI:-62 CH:11[0m
+[0;32mI (166227) net_wifi: 2) SSID:P62 RSSI:-89 CH:7[0m
+[0;32mI (166229) net_wifi: 3) SSID:Subabi RSSI:-90 CH:13[0m
+[0;32mI (166234) net_wifi: 4) SSID:Tom RSSI:-91 CH:6[0m
+[0;32mI (166238) net_wifi: 5) SSID:601 RSSI:-91 CH:10[0m
+[0;32mI (166242) net_wifi: 6) SSID:Bong Bill RSSI:-92 CH:2[0m
+[0;32mI (166247) net_wifi: 7) SSID:Tenda_P51 RSSI:-93 CH:2[0m
+[0;32mI (166251) net_wifi: 8) SSID:Mai Linh RSSI:-93 CH:3[0m
+[0;32mI (166256) net_wifi: 9) SSID:Tang 4 RSSI:-94 CH:5[0m
+[0;32mI (166260) net_wifi: 10) SSID:TRAN THU RSSI:-94 CH:7[0m
+[0;32mI (166265) net_wifi: 11) SSID:BB 402 RSSI:-94 CH:8[0m
+[0;32mI (166270) net_wifi: 12) SSID:Wifi  RSSI:-94 CH:10[0m
+[0;32mI (166274) net_wifi: 13) SSID:Nhim va Soc T1 RSSI:-95 CH:2[0m
+[0;32mI (166279) net_wifi: 14) SSID:FPT Telecom-F4B9-IOT RSSI:-96 CH:11[0m
+[0;33mW (166285) net_wifi: Khong tim thay SSID da luu nao trong ket qua quet[0m
+[0;32mI (166291) net_wifi: Schedule next scan in 120000 ms[0m
+[0;32mI (166296) app_fsm: NOTICE -> IDLE[0m
+[0;32mI (166910) net_gsm: pulse reset[0m
+[0;32mI (168380) display: touch nghi ngo: adc x=2557 y=1195 luc=1625 (mau 1/2)[0m
+[0;32mI (168416) display: touch adc x=2562 y=1173 luc=1875 -> man hinh x=249 y=83[0m
+[0;32mI (168529) app_fsm: tao don 80456B281774-0-0046: Gói 10 phút 10 phut 20000 d[0m
+[0;32mI (168530) app_fsm: IDLE -> CREATING_QR[0m
+[0;33mW (168537) peripheral_test: [DEMO] tao don 80456B281774-0-0046, 20000 d[0m
+[0;33mW (170538) peripheral_test: [DEMO] don 80456B281774-0-0046: da gui ma QR thu[0m
+[0;33mW (170538) peripheral_test: [DEMO] tu bao thanh toan sau 8 s[0m
+[0;32mI (170539) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (170598) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[0;33mW (170609) audio: thieu file /audio/scan_qr.wav[0m
+[0;32mI (171486) display: touch nghi ngo: adc x=704 y=810 luc=1738 (mau 1/2)[0m
+[0;32mI (171521) display: touch adc x=717 y=801 luc=1953 -> man hinh x=283 y=203[0m
+[0;32mI (171558) display: touch adc x=701 y=806 luc=2018 -> man hinh x=282 y=204[0m
+[0;32mI (171593) display: touch adc x=706 y=802 luc=1722 -> man hinh x=282 y=204[0m
+[0;33mW (171662) peripheral_test: [DEMO] huy don 80456B281774-0-0046[0m
+[0;32mI (171663) app_fsm: WAIT_PAYMENT -> NOTICE[0m
+[0;32mI (174410) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (174411) uart: queue free spaces: 30[0m
+[0;32mI (175699) app_fsm: NOTICE -> IDLE[0m
+[0;32mI (177085) display: touch nghi ngo: adc x=1057 y=2752 luc=889 (mau 1/2)[0m
+[0;32mI (177121) display: touch adc x=1147 y=2736 luc=486 -> man hinh x=108 y=175[0m
+[0;32mI (177235) app_fsm: tao don 80456B281774-0-0047: Gói 15 phút 15 phut 30000 d[0m
+[0;32mI (177235) app_fsm: IDLE -> CREATING_QR[0m
+[0;33mW (177242) peripheral_test: [DEMO] tao don 80456B281774-0-0047, 30000 d[0m
+[0;33mW (179243) peripheral_test: [DEMO] don 80456B281774-0-0047: da gui ma QR thu[0m
+[0;33mW (179243) peripheral_test: [DEMO] tu bao thanh toan sau 8 s[0m
+[0;32mI (179244) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (179302) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[0;33mW (179314) audio: thieu file /audio/scan_qr.wav[0m
+[0;32mI (180960) display: touch nghi ngo: adc x=1023 y=1000 luc=811 (mau 1/2)[0m
+[0;32mI (181627) display: touch nghi ngo: adc x=930 y=925 luc=1202 (mau 1/2)[0m
+[0;32mI (181663) display: touch adc x=820 y=915 luc=1195 -> man hinh x=272 y=196[0m
+[0;32mI (181699) display: touch adc x=869 y=907 luc=1355 -> man hinh x=273 y=193[0m
+[0;32mI (181734) display: touch adc x=869 y=897 luc=1363 -> man hinh x=274 y=193[0m
+[0;32mI (181768) display: touch adc x=873 y=901 luc=1343 -> man hinh x=274 y=193[0m
+[0;32mI (181800) display: touch adc x=806 y=924 luc=1244 -> man hinh x=271 y=197[0m
+[0;32mI (181836) display: touch adc x=891 y=915 luc=1228 -> man hinh x=272 y=192[0m
+[0;33mW (181909) peripheral_test: [DEMO] huy don 80456B281774-0-0047[0m
+[0;32mI (181910) app_fsm: WAIT_PAYMENT -> NOTICE[0m
+[0;32mI (186003) app_fsm: NOTICE -> IDLE[0m
+[0;32mI (189067) display: touch nghi ngo: adc x=2496 y=2549 luc=356 (mau 1/2)[0m
+[0;32mI (189103) display: touch adc x=2673 y=2664 luc=1170 -> man hinh x=114 y=75[0m
+[0;32mI (189172) display: touch adc x=2656 y=2674 luc=1327 -> man hinh x=114 y=77[0m
+[0;32mI (189208) display: touch adc x=2680 y=2674 luc=1387 -> man hinh x=114 y=75[0m
+[0;32mI (189284) app_fsm: tao don 80456B281774-0-0048: Gói 5 phút 5 phut 10000 d[0m
+[0;32mI (189285) app_fsm: IDLE -> CREATING_QR[0m
+[0;33mW (189292) peripheral_test: [DEMO] tao don 80456B281774-0-0048, 10000 d[0m
+[0;33mW (191293) peripheral_test: [DEMO] don 80456B281774-0-0048: da gui ma QR thu[0m
+[0;33mW (191293) peripheral_test: [DEMO] tu bao thanh toan sau 8 s[0m
+[0;32mI (191294) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (191353) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[0;33mW (191364) audio: thieu file /audio/scan_qr.wav[0m
+[1;31mE (194412) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (195413) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (196810) display: touch nghi ngo: adc x=624 y=756 luc=1398 (mau 1/2)[0m
+[0;32mI (196845) display: touch adc x=612 y=738 luc=1807 -> man hinh x=288 y=210[0m
+[0;32mI (196882) display: touch adc x=592 y=733 luc=1945 -> man hinh x=289 y=211[0m
+[0;32mI (196916) display: touch adc x=592 y=724 luc=2049 -> man hinh x=290 y=211[0m
+[0;32mI (196951) display: touch adc x=598 y=738 luc=2080 -> man hinh x=288 y=211[0m
+[0;32mI (196987) display: touch adc x=597 y=735 luc=2041 -> man hinh x=289 y=211[0m
+[0;32mI (197021) display: touch adc x=594 y=731 luc=1847 -> man hinh x=289 y=211[0m
+[0;33mW (197091) peripheral_test: [DEMO] huy don 80456B281774-0-0048[0m
+[0;32mI (197092) app_fsm: WAIT_PAYMENT -> NOTICE[0m
+[0;32mI (198896) display: touch nghi ngo: adc x=918 y=835 luc=1263 (mau 1/2)[0m
+[0;32mI (198932) display: touch adc x=954 y=837 luc=1304 -> man hinh x=279 y=187[0m
+[0;32mI (198967) display: touch adc x=946 y=812 luc=1415 -> man hinh x=282 y=188[0m
+[0;32mI (199001) display: touch adc x=950 y=800 luc=1440 -> man hinh x=283 y=188[0m
+[0;32mI (199037) display: touch adc x=945 y=806 luc=1494 -> man hinh x=282 y=188[0m
+[0;32mI (199072) display: touch adc x=928 y=803 luc=1528 -> man hinh x=282 y=189[0m
+[0;32mI (199107) display: touch adc x=927 y=803 luc=1566 -> man hinh x=282 y=189[0m
+[0;32mI (199142) display: touch adc x=924 y=798 luc=1610 -> man hinh x=283 y=189[0m
+[0;32mI (199177) display: touch adc x=890 y=801 luc=1563 -> man hinh x=283 y=192[0m
+[0;32mI (199212) display: touch adc x=938 y=800 luc=1580 -> man hinh x=283 y=189[0m
+[0;32mI (199247) display: touch adc x=941 y=807 luc=1543 -> man hinh x=282 y=188[0m
+[0;32mI (199282) display: touch adc x=935 y=795 luc=1517 -> man hinh x=283 y=189[0m
+[0;32mI (199317) display: touch adc x=940 y=800 luc=1552 -> man hinh x=283 y=188[0m
+[0;32mI (199352) display: touch adc x=929 y=800 luc=1596 -> man hinh x=283 y=189[0m
+[0;32mI (199387) display: touch adc x=895 y=793 luc=1653 -> man hinh x=283 y=191[0m
+[0;32mI (199422) display: touch adc x=925 y=800 luc=1647 -> man hinh x=283 y=189[0m
+[0;32mI (199457) display: touch adc x=924 y=797 luc=1659 -> man hinh x=283 y=189[0m
+[0;32mI (199491) display: touch adc x=895 y=807 luc=1567 -> man hinh x=282 y=191[0m
+[0;32mI (199527) display: touch adc x=921 y=804 luc=1630 -> man hinh x=282 y=190[0m
+[0;32mI (199562) display: touch adc x=923 y=796 luc=1667 -> man hinh x=283 y=189[0m
+[0;32mI (199597) display: touch adc x=932 y=797 luc=1671 -> man hinh x=283 y=189[0m
+[0;32mI (199632) display: touch adc x=920 y=788 luc=1693 -> man hinh x=284 y=190[0m
+[0;32mI (199667) display: touch adc x=895 y=800 luc=1661 -> man hinh x=283 y=191[0m
+[0;32mI (199702) display: touch adc x=896 y=791 luc=1652 -> man hinh x=283 y=191[0m
+[0;32mI (199737) display: touch adc x=923 y=795 luc=1669 -> man hinh x=283 y=189[0m
+[0;32mI (199772) display: touch adc x=917 y=797 luc=1672 -> man hinh x=283 y=190[0m
+[0;32mI (199807) display: touch adc x=930 y=800 luc=1599 -> man hinh x=283 y=189[0m
+[0;32mI (199843) display: touch adc x=936 y=810 luc=1566 -> man hinh x=282 y=189[0m
+[0;32mI (199878) display: touch adc x=901 y=798 luc=1634 -> man hinh x=283 y=191[0m
+[0;32mI (199913) display: touch adc x=925 y=795 luc=1695 -> man hinh x=283 y=189[0m
+[0;32mI (199948) display: touch adc x=931 y=796 luc=1626 -> man hinh x=283 y=189[0m
+[0;32mI (199983) display: touch adc x=925 y=800 luc=1595 -> man hinh x=283 y=189[0m
+[0;32mI (200017) display: touch adc x=923 y=793 luc=1596 -> man hinh x=283 y=189[0m
+[0;32mI (200053) display: touch adc x=886 y=800 luc=1592 -> man hinh x=283 y=192[0m
+[0;32mI (200088) display: touch adc x=932 y=800 luc=1547 -> man hinh x=283 y=189[0m
+[0;32mI (200123) display: touch adc x=919 y=800 luc=1605 -> man hinh x=283 y=190[0m
+[0;32mI (200158) display: touch adc x=922 y=793 luc=1676 -> man hinh x=283 y=190[0m
+[0;32mI (200192) display: touch adc x=894 y=794 luc=1671 -> man hinh x=283 y=191[0m
+[0;32mI (200228) display: touch adc x=920 y=793 luc=1685 -> man hinh x=283 y=190[0m
+[0;32mI (200263) display: touch adc x=921 y=796 luc=1611 -> man hinh x=283 y=190[0m
+[0;32mI (200297) display: touch adc x=944 y=803 luc=1523 -> man hinh x=282 y=188[0m
+[0;32mI (200332) display: touch adc x=953 y=801 luc=1539 -> man hinh x=283 y=188[0m
+[0;32mI (200368) display: touch adc x=946 y=799 luc=1532 -> man hinh x=283 y=188[0m
+[0;32mI (200403) display: touch adc x=939 y=800 luc=1636 -> man hinh x=283 y=188[0m
+[0;32mI (200437) display: touch adc x=912 y=794 luc=1645 -> man hinh x=283 y=190[0m
+[0;32mI (200473) display: touch adc x=908 y=794 luc=1762 -> man hinh x=283 y=190[0m
+[0;32mI (200508) display: touch adc x=919 y=789 luc=1769 -> man hinh x=284 y=190[0m
+[0;32mI (200543) display: touch adc x=893 y=790 luc=1754 -> man hinh x=284 y=191[0m
+[0;32mI (200578) display: touch adc x=909 y=788 luc=1764 -> man hinh x=284 y=190[0m
+[0;32mI (200613) display: touch adc x=906 y=787 luc=1848 -> man hinh x=284 y=191[0m
+[0;32mI (200648) display: touch adc x=928 y=785 luc=1804 -> man hinh x=284 y=189[0m
+[0;32mI (200683) display: touch adc x=919 y=793 luc=1736 -> man hinh x=283 y=190[0m
+[0;32mI (200718) display: touch adc x=916 y=794 luc=1752 -> man hinh x=283 y=190[0m
+[0;32mI (200753) display: touch adc x=896 y=796 luc=1729 -> man hinh x=283 y=191[0m
+[0;32mI (200788) display: touch adc x=920 y=786 luc=1761 -> man hinh x=284 y=190[0m
+[0;32mI (200823) display: touch adc x=921 y=792 luc=1717 -> man hinh x=283 y=190[0m
+[0;32mI (200859) display: touch adc x=900 y=788 luc=1740 -> man hinh x=284 y=191[0m
+[0;32mI (200894) display: touch adc x=922 y=792 luc=1689 -> man hinh x=283 y=190[0m
+[0;32mI (200928) display: touch adc x=924 y=791 luc=1674 -> man hinh x=283 y=189[0m
+[0;32mI (200964) display: touch adc x=916 y=787 luc=1783 -> man hinh x=284 y=190[0m
+[0;32mI (200999) display: touch adc x=916 y=790 luc=1699 -> man hinh x=284 y=190[0m
+[0;32mI (201033) display: touch adc x=916 y=792 luc=1679 -> man hinh x=283 y=190[0m
+[0;32mI (201069) display: touch adc x=936 y=795 luc=1630 -> man hinh x=283 y=189[0m
+[0;32mI (201104) display: touch adc x=925 y=795 luc=1623 -> man hinh x=283 y=189[0m
+[0;32mI (201138) display: touch adc x=923 y=793 luc=1669 -> man hinh x=283 y=189[0m
+[0;32mI (201154) app_fsm: NOTICE -> IDLE[0m
+[0;32mI (201174) display: touch adc x=888 y=792 luc=1625 -> man hinh x=283 y=192[0m
+[0;32mI (201281) display: touch adc x=892 y=788 luc=1843 -> man hinh x=284 y=192[0m
+[0;32mI (201316) display: touch adc x=893 y=787 luc=1875 -> man hinh x=284 y=191[0m
+[0;32mI (201350) display: touch adc x=896 y=793 luc=1880 -> man hinh x=283 y=191[0m
+[0;32mI (201386) display: touch adc x=906 y=786 luc=1867 -> man hinh x=284 y=191[0m
+[0;32mI (201421) display: touch adc x=901 y=785 luc=1827 -> man hinh x=284 y=191[0m
+[0;32mI (201456) display: touch adc x=891 y=791 luc=1833 -> man hinh x=283 y=192[0m
+[0;32mI (201491) display: touch adc x=914 y=792 luc=1815 -> man hinh x=283 y=190[0m
+[0;32mI (201526) display: touch adc x=923 y=789 luc=1892 -> man hinh x=284 y=189[0m
+[0;32mI (201561) display: touch adc x=909 y=788 luc=1926 -> man hinh x=284 y=190[0m
+[0;32mI (201596) display: touch adc x=910 y=794 luc=1871 -> man hinh x=283 y=190[0m
+[0;32mI (201630) display: touch adc x=908 y=788 luc=1908 -> man hinh x=284 y=190[0m
+[0;32mI (201666) display: touch adc x=905 y=785 luc=1926 -> man hinh x=284 y=191[0m
+[0;32mI (201701) display: touch adc x=896 y=788 luc=1927 -> man hinh x=284 y=191[0m
+[0;32mI (201735) display: touch adc x=904 y=787 luc=1959 -> man hinh x=284 y=191[0m
+[0;32mI (201771) display: touch adc x=902 y=794 luc=1956 -> man hinh x=283 y=191[0m
+[0;32mI (201807) display: touch adc x=904 y=786 luc=1954 -> man hinh x=284 y=191[0m
+[0;32mI (201842) display: touch adc x=903 y=787 luc=1916 -> man hinh x=284 y=191[0m
+[0;32mI (201877) display: touch adc x=909 y=788 luc=1913 -> man hinh x=284 y=190[0m
+[0;32mI (201912) display: touch adc x=893 y=800 luc=1640 -> man hinh x=283 y=191[0m
+[0;32mI (201946) display: touch adc x=934 y=826 luc=1269 -> man hinh x=280 y=189[0m
+[0;32mI (201982) display: touch adc x=946 y=803 luc=1481 -> man hinh x=282 y=188[0m
+[0;32mI (202017) display: touch adc x=896 y=796 luc=1613 -> man hinh x=283 y=191[0m
+[0;32mI (202051) display: touch adc x=917 y=805 luc=1559 -> man hinh x=282 y=190[0m
+[0;32mI (202087) display: touch adc x=888 y=801 luc=1602 -> man hinh x=283 y=192[0m
+[0;32mI (202122) display: touch adc x=924 y=792 luc=1643 -> man hinh x=283 y=189[0m
+[0;32mI (202157) display: touch adc x=884 y=794 luc=1734 -> man hinh x=283 y=192[0m
+[0;32mI (202192) display: touch adc x=913 y=796 luc=1668 -> man hinh x=283 y=190[0m
+[0;32mI (202227) display: touch adc x=932 y=800 luc=1506 -> man hinh x=283 y=189[0m
+[0;32mI (202262) display: touch adc x=901 y=802 luc=1565 -> man hinh x=282 y=191[0m
+[0;32mI (202297) display: touch adc x=940 y=808 luc=1474 -> man hinh x=282 y=188[0m
+[0;32mI (202366) display: touch adc x=1092 y=912 luc=1017 -> man hinh x=273 y=178[0m
+[0;32mI (202402) display: touch adc x=908 y=887 luc=1037 -> man hinh x=275 y=190[0m
+[0;32mI (202437) display: touch adc x=1060 y=873 luc=1087 -> man hinh x=276 y=181[0m
+[0;32mI (202472) display: touch adc x=978 y=874 luc=1124 -> man hinh x=276 y=186[0m
+[0;32mI (202507) display: touch adc x=1055 y=875 luc=1100 -> man hinh x=276 y=181[0m
+[0;32mI (202542) display: touch adc x=975 y=815 luc=1282 -> man hinh x=281 y=186[0m
+[0;32mI (202577) display: touch adc x=1095 y=907 luc=972 -> man hinh x=273 y=178[0m
+[0;32mI (202612) display: touch adc x=1116 y=920 luc=947 -> man hinh x=272 y=177[0m
+[0;32mI (202647) display: touch adc x=1111 y=916 luc=948 -> man hinh x=272 y=177[0m
+[0;32mI (202682) display: touch adc x=915 y=922 luc=959 -> man hinh x=272 y=190[0m
+[0;32mI (202717) display: touch adc x=957 y=939 luc=911 -> man hinh x=270 y=187[0m
+[0;32mI (202785) display: touch adc x=1024 y=843 luc=1220 -> man hinh x=279 y=183[0m
+[0;32mI (202822) display: touch adc x=1004 y=830 luc=1251 -> man hinh x=280 y=184[0m
+[0;32mI (202891) display: touch adc x=1114 y=922 luc=952 -> man hinh x=272 y=177[0m
+[0;32mI (202927) display: touch adc x=1007 y=840 luc=1264 -> man hinh x=279 y=184[0m
+[0;32mI (202962) display: touch adc x=906 y=835 luc=1206 -> man hinh x=280 y=191[0m
+[0;32mI (202996) display: touch adc x=956 y=812 luc=1389 -> man hinh x=282 y=187[0m
+[0;32mI (203032) display: touch adc x=976 y=817 luc=1434 -> man hinh x=281 y=186[0m
+[0;32mI (203067) display: touch adc x=969 y=816 luc=1436 -> man hinh x=281 y=186[0m
+[0;32mI (203102) display: touch adc x=956 y=810 luc=1476 -> man hinh x=282 y=187[0m
+[0;32mI (203137) display: touch adc x=945 y=800 luc=1538 -> man hinh x=283 y=188[0m
+[0;32mI (203172) display: touch adc x=935 y=813 luc=1478 -> man hinh x=281 y=189[0m
+[0;32mI (203206) display: touch adc x=885 y=805 luc=1497 -> man hinh x=282 y=192[0m
+[0;32mI (203242) display: touch adc x=940 y=807 luc=1505 -> man hinh x=282 y=188[0m
+[0;32mI (203277) display: touch adc x=944 y=808 luc=1458 -> man hinh x=282 y=188[0m
+[0;32mI (203345) display: touch adc x=980 y=827 luc=1293 -> man hinh x=280 y=186[0m
+[0;32mI (203381) display: touch adc x=976 y=820 luc=1312 -> man hinh x=281 y=186[0m
+[0;32mI (203416) display: touch adc x=980 y=824 luc=1331 -> man hinh x=281 y=186[0m
+[0;32mI (203450) display: touch adc x=961 y=826 luc=1352 -> man hinh x=280 y=187[0m
+[0;32mI (203485) display: touch adc x=982 y=824 luc=1299 -> man hinh x=281 y=186[0m
+[0;32mI (203521) display: touch adc x=904 y=825 luc=1338 -> man hinh x=280 y=191[0m
+[0;32mI (203556) display: touch adc x=940 y=848 luc=1203 -> man hinh x=278 y=188[0m
+[0;32mI (203591) display: touch adc x=1008 y=841 luc=1231 -> man hinh x=279 y=184[0m
+[0;32mI (203626) display: touch adc x=986 y=832 luc=1249 -> man hinh x=280 y=185[0m
+[0;32mI (203661) display: touch adc x=896 y=810 luc=1285 -> man hinh x=282 y=191[0m
+[0;32mI (203695) display: touch adc x=952 y=804 luc=1444 -> man hinh x=282 y=188[0m
+[0;32mI (203731) display: touch adc x=954 y=818 luc=1331 -> man hinh x=281 y=187[0m
+[0;32mI (203766) display: touch adc x=960 y=806 luc=1432 -> man hinh x=282 y=187[0m
+[0;32mI (203801) display: touch adc x=955 y=806 luc=1456 -> man hinh x=282 y=187[0m
+[0;32mI (203836) display: touch adc x=904 y=809 luc=1460 -> man hinh x=282 y=191[0m
+[0;32mI (203871) display: touch adc x=898 y=805 luc=1487 -> man hinh x=282 y=191[0m
+[0;32mI (203905) display: touch adc x=896 y=801 luc=1514 -> man hinh x=283 y=191[0m
+[0;32mI (203941) display: touch adc x=932 y=805 luc=1533 -> man hinh x=282 y=189[0m
+[0;32mI (203976) display: touch adc x=938 y=795 luc=1538 -> man hinh x=283 y=189[0m
+[0;32mI (204010) display: touch adc x=964 y=842 luc=1208 -> man hinh x=279 y=187[0m
+[0;32mI (204046) display: touch adc x=953 y=816 luc=1443 -> man hinh x=281 y=188[0m
+[0;32mI (204081) display: touch adc x=944 y=806 luc=1500 -> man hinh x=282 y=188[0m
+[0;32mI (204115) display: touch adc x=896 y=813 luc=1474 -> man hinh x=281 y=191[0m
+[0;32mI (204151) display: touch adc x=961 y=807 luc=1391 -> man hinh x=282 y=187[0m
+[0;32mI (204186) display: touch adc x=934 y=804 luc=1593 -> man hinh x=282 y=189[0m
+[0;32mI (204221) display: touch adc x=975 y=815 luc=1339 -> man hinh x=281 y=186[0m
+[0;32mI (204256) display: touch adc x=904 y=816 luc=1389 -> man hinh x=281 y=191[0m
+[0;32mI (204291) display: touch adc x=957 y=813 luc=1442 -> man hinh x=281 y=187[0m
+[0;32mI (204325) display: touch adc x=945 y=810 luc=1515 -> man hinh x=282 y=188[0m
+[0;32mI (204361) display: touch adc x=957 y=818 luc=1465 -> man hinh x=281 y=187[0m
+[0;32mI (204396) display: touch adc x=945 y=803 luc=1511 -> man hinh x=282 y=188[0m
+[0;32mI (204430) display: touch adc x=940 y=811 luc=1487 -> man hinh x=282 y=188[0m
+[0;32mI (204466) display: touch adc x=935 y=809 luc=1503 -> man hinh x=282 y=189[0m
+[0;32mI (204500) display: touch adc x=954 y=816 luc=1438 -> man hinh x=281 y=187[0m
+[0;32mI (204535) display: touch adc x=916 y=818 luc=1440 -> man hinh x=281 y=190[0m
+[0;32mI (204571) display: touch adc x=962 y=809 luc=1445 -> man hinh x=282 y=187[0m
+[0;32mI (204606) display: touch adc x=939 y=819 luc=1483 -> man hinh x=281 y=188[0m
+[0;32mI (204640) display: touch adc x=951 y=814 luc=1481 -> man hinh x=281 y=188[0m
+[0;32mI (204676) display: touch adc x=940 y=803 luc=1534 -> man hinh x=282 y=188[0m
+[0;32mI (204711) display: touch adc x=952 y=810 luc=1448 -> man hinh x=282 y=188[0m
+[0;32mI (204746) display: touch adc x=937 y=809 luc=1517 -> man hinh x=282 y=189[0m
+[0;32mI (204781) display: touch adc x=924 y=808 luc=1481 -> man hinh x=282 y=189[0m
+[0;32mI (204816) display: touch adc x=948 y=809 luc=1524 -> man hinh x=282 y=188[0m
+[0;32mI (204852) display: touch adc x=936 y=794 luc=1533 -> man hinh x=283 y=189[0m
+[0;32mI (204887) display: touch adc x=951 y=811 luc=1445 -> man hinh x=282 y=188[0m
+[0;32mI (204921) display: touch adc x=894 y=804 luc=1591 -> man hinh x=282 y=191[0m
+[0;32mI (204957) display: touch adc x=1108 y=910 luc=1030 -> man hinh x=273 y=177[0m
+[0;32mI (204992) display: touch adc x=982 y=826 luc=1315 -> man hinh x=280 y=186[0m
+[0;32mI (205026) display: touch adc x=1109 y=922 luc=977 -> man hinh x=272 y=177[0m
+[0;32mI (205062) display: touch adc x=1128 y=904 luc=1017 -> man hinh x=273 y=176[0m
+[0;32mI (205097) display: touch adc x=1106 y=915 luc=993 -> man hinh x=272 y=178[0m
+[0;32mI (205167) display: touch adc x=1098 y=901 luc=1012 -> man hinh x=274 y=178[0m
+[0;32mI (205201) display: touch adc x=1087 y=906 luc=1010 -> man hinh x=273 y=179[0m
+[0;32mI (205236) display: touch adc x=898 y=824 luc=1270 -> man hinh x=281 y=191[0m
+[0;32mI (205272) display: touch adc x=918 y=820 luc=1413 -> man hinh x=281 y=190[0m
+[0;32mI (205306) display: touch adc x=953 y=816 luc=1443 -> man hinh x=281 y=188[0m
+[0;32mI (205341) display: touch adc x=952 y=813 luc=1509 -> man hinh x=281 y=188[0m
+[0;32mI (205377) display: touch adc x=944 y=808 luc=1521 -> man hinh x=282 y=188[0m
+[0;32mI (205412) display: touch adc x=972 y=822 luc=1402 -> man hinh x=281 y=186[0m
+[0;32mI (205413) net_gsm: pulse reset[0m
+[0;32mI (205447) display: touch adc x=961 y=814 luc=1424 -> man hinh x=281 y=187[0m
+[0;32mI (205482) display: touch adc x=915 y=913 luc=1005 -> man hinh x=272 y=190[0m
+[0;32mI (205516) display: touch adc x=1092 y=905 luc=1044 -> man hinh x=273 y=178[0m
+[0;32mI (205551) display: touch adc x=980 y=822 luc=1330 -> man hinh x=281 y=186[0m
+[0;32mI (205587) display: touch adc x=993 y=836 luc=1265 -> man hinh x=279 y=185[0m
+[0;32mI (205621) display: touch adc x=974 y=831 luc=1347 -> man hinh x=280 y=186[0m
+[0;32mI (205657) display: touch adc x=959 y=812 luc=1436 -> man hinh x=282 y=187[0m
+[0;32mI (205692) display: touch adc x=942 y=803 luc=1504 -> man hinh x=282 y=188[0m
+[0;32mI (205726) display: touch adc x=939 y=817 luc=1432 -> man hinh x=281 y=188[0m
+[0;32mI (205762) display: touch adc x=962 y=840 luc=1260 -> man hinh x=279 y=187[0m
+[0;32mI (205797) display: touch adc x=1024 y=924 luc=973 -> man hinh x=271 y=183[0m
+[0;32mI (205833) display: touch adc x=1103 y=918 luc=986 -> man hinh x=272 y=178[0m
+[0;32mI (205903) display: touch adc x=1011 y=914 luc=1017 -> man hinh x=272 y=184[0m
+[0;32mI (205937) display: touch adc x=1124 y=900 luc=1041 -> man hinh x=274 y=176[0m
+[0;32mI (205973) display: touch adc x=936 y=818 luc=1399 -> man hinh x=281 y=189[0m
+[0;32mI (206008) display: touch adc x=1007 y=851 luc=1225 -> man hinh x=278 y=184[0m
+[0;32mI (206042) display: touch adc x=892 y=827 luc=1412 -> man hinh x=280 y=192[0m
+[0;32mI (206078) display: touch adc x=953 y=817 luc=1408 -> man hinh x=281 y=188[0m
+[0;32mI (212913) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (212914) uart: queue free spaces: 30[0m
+[0;32mI (227008) display: touch nghi ngo: adc x=1741 y=2192 luc=865 (mau 1/2)[0m
+[0;32mI (227043) display: touch adc x=1755 y=2204 luc=724 -> man hinh x=156 y=135[0m
+[0;32mI (227079) display: touch adc x=1717 y=2197 luc=1075 -> man hinh x=157 y=138[0m
+[0;32mI (227114) display: touch adc x=1701 y=2186 luc=1514 -> man hinh x=158 y=139[0m
+[0;32mI (227149) display: touch adc x=1719 y=2176 luc=1628 -> man hinh x=158 y=138[0m
+[0;32mI (227184) display: touch adc x=1706 y=2177 luc=1557 -> man hinh x=158 y=138[0m
+[0;32mI (227219) display: touch adc x=1704 y=2176 luc=1599 -> man hinh x=158 y=139[0m
+[0;32mI (227254) display: touch adc x=1713 y=2176 luc=1601 -> man hinh x=158 y=138[0m
+[0;32mI (227289) display: touch adc x=1696 y=2178 luc=1610 -> man hinh x=158 y=139[0m
+[0;32mI (227324) display: touch adc x=1701 y=2170 luc=1665 -> man hinh x=159 y=139[0m
+[0;32mI (227359) display: touch adc x=1708 y=2176 luc=1648 -> man hinh x=158 y=138[0m
+[0;32mI (227394) display: touch adc x=1706 y=2184 luc=1667 -> man hinh x=158 y=138[0m
+[0;32mI (227429) display: touch adc x=1701 y=2176 luc=1652 -> man hinh x=158 y=139[0m
+[0;32mI (227464) display: touch adc x=1702 y=2176 luc=1670 -> man hinh x=158 y=139[0m
+[0;32mI (227499) display: touch adc x=1707 y=2180 luc=1669 -> man hinh x=158 y=138[0m
+[0;32mI (227534) display: touch adc x=1704 y=2178 luc=1672 -> man hinh x=158 y=139[0m
+[0;32mI (227569) display: touch adc x=1715 y=2175 luc=1690 -> man hinh x=159 y=138[0m
+[0;32mI (227604) display: touch adc x=1705 y=2177 luc=1673 -> man hinh x=158 y=139[0m
+[0;32mI (227639) display: touch adc x=1706 y=2170 luc=1661 -> man hinh x=159 y=138[0m
+[0;32mI (227674) display: touch adc x=1713 y=2179 luc=1683 -> man hinh x=158 y=138[0m
+[0;32mI (227709) display: touch adc x=1720 y=2175 luc=1702 -> man hinh x=159 y=138[0m
+[0;32mI (227744) display: touch adc x=1726 y=2179 luc=1706 -> man hinh x=158 y=137[0m
+[0;32mI (227779) display: touch adc x=1721 y=2176 luc=1723 -> man hinh x=158 y=137[0m
+[0;32mI (227814) display: touch adc x=1720 y=2185 luc=1717 -> man hinh x=158 y=138[0m
+[0;32mI (227849) display: touch adc x=1727 y=2172 luc=1722 -> man hinh x=159 y=137[0m
+[0;32mI (227884) display: touch adc x=1723 y=2184 luc=1712 -> man hinh x=158 y=137[0m
+[0;32mI (227919) display: touch adc x=1718 y=2180 luc=1698 -> man hinh x=158 y=138[0m
+[0;32mI (227954) display: touch adc x=1732 y=2180 luc=1699 -> man hinh x=158 y=137[0m
+[0;32mI (227989) display: touch adc x=1736 y=2191 luc=1697 -> man hinh x=157 y=136[0m
+[0;32mI (228024) display: touch adc x=1728 y=2191 luc=1707 -> man hinh x=157 y=137[0m
+[0;32mI (228059) display: touch adc x=1738 y=2193 luc=1726 -> man hinh x=157 y=136[0m
+[0;32mI (228094) display: touch adc x=1743 y=2191 luc=1721 -> man hinh x=157 y=136[0m
+[0;32mI (228129) display: touch adc x=1730 y=2188 luc=1690 -> man hinh x=157 y=137[0m
+[0;32mI (228164) display: touch adc x=1747 y=2184 luc=1711 -> man hinh x=158 y=136[0m
+[0;32mI (228199) display: touch adc x=1748 y=2186 luc=1693 -> man hinh x=158 y=136[0m
+[0;32mI (228234) display: touch adc x=1744 y=2193 luc=1715 -> man hinh x=157 y=136[0m
+[0;32mI (228269) display: touch adc x=1744 y=2184 luc=1713 -> man hinh x=158 y=136[0m
+[0;32mI (228304) display: touch adc x=1730 y=2192 luc=1702 -> man hinh x=157 y=137[0m
+[0;32mI (228339) display: touch adc x=1744 y=2194 luc=1716 -> man hinh x=157 y=136[0m
+[0;32mI (228374) display: touch adc x=1744 y=2185 luc=1714 -> man hinh x=158 y=136[0m
+[0;32mI (228409) display: touch adc x=1745 y=2185 luc=1689 -> man hinh x=158 y=136[0m
+[0;32mI (228444) display: touch adc x=1736 y=2196 luc=1712 -> man hinh x=157 y=136[0m
+[0;32mI (228479) display: touch adc x=1736 y=2184 luc=1712 -> man hinh x=158 y=136[0m
+[0;32mI (228514) display: touch adc x=1747 y=2189 luc=1712 -> man hinh x=157 y=136[0m
+[0;32mI (228549) display: touch adc x=1740 y=2186 luc=1709 -> man hinh x=158 y=136[0m
+[0;32mI (228584) display: touch adc x=1738 y=2188 luc=1696 -> man hinh x=157 y=136[0m
+[0;32mI (228619) display: touch adc x=1738 y=2193 luc=1706 -> man hinh x=157 y=136[0m
+[0;32mI (228654) display: touch adc x=1744 y=2192 luc=1679 -> man hinh x=157 y=136[0m
+[0;32mI (228689) display: touch adc x=1742 y=2196 luc=1705 -> man hinh x=157 y=136[0m
+[0;32mI (228724) display: touch adc x=1735 y=2192 luc=1698 -> man hinh x=157 y=137[0m
+[0;32mI (228759) display: touch adc x=1752 y=2190 luc=1721 -> man hinh x=157 y=135[0m
+[0;32mI (228794) display: touch adc x=1749 y=2198 luc=1717 -> man hinh x=156 y=136[0m
+[0;32mI (228829) display: touch adc x=1760 y=2200 luc=1732 -> man hinh x=156 y=135[0m
+[0;32mI (228864) display: touch adc x=1752 y=2196 luc=1744 -> man hinh x=157 y=135[0m
+[0;32mI (228899) display: touch adc x=1760 y=2208 luc=1750 -> man hinh x=156 y=135[0m
+[0;32mI (228934) display: touch adc x=1755 y=2207 luc=1728 -> man hinh x=156 y=135[0m
+[0;32mI (228969) display: touch adc x=1756 y=2209 luc=1726 -> man hinh x=155 y=135[0m
+[0;32mI (229004) display: touch adc x=1762 y=2209 luc=1726 -> man hinh x=155 y=135[0m
+[0;32mI (229039) display: touch adc x=1760 y=2211 luc=1737 -> man hinh x=155 y=135[0m
+[0;32mI (229074) display: touch adc x=1765 y=2203 luc=1741 -> man hinh x=156 y=135[0m
+[0;32mI (229109) display: touch adc x=1764 y=2193 luc=1754 -> man hinh x=157 y=135[0m
+[0;32mI (229144) display: touch adc x=1755 y=2202 luc=1752 -> man hinh x=156 y=135[0m
+[0;32mI (229179) display: touch adc x=1756 y=2211 luc=1736 -> man hinh x=155 y=135[0m
+[0;32mI (229214) display: touch adc x=1771 y=2200 luc=1744 -> man hinh x=156 y=134[0m
+[0;32mI (229249) display: touch adc x=1766 y=2214 luc=1740 -> man hinh x=155 y=135[0m
+[0;32mI (229284) display: touch adc x=1767 y=2207 luc=1714 -> man hinh x=156 y=134[0m
+[0;32mI (229319) display: touch adc x=1771 y=2197 luc=1744 -> man hinh x=157 y=134[0m
+[0;32mI (229354) display: touch adc x=1763 y=2213 luc=1741 -> man hinh x=155 y=135[0m
+[0;32mI (229389) display: touch adc x=1760 y=2211 luc=1740 -> man hinh x=155 y=135[0m
+[0;32mI (229424) display: touch adc x=1771 y=2212 luc=1765 -> man hinh x=155 y=134[0m
+[0;32mI (229459) display: touch adc x=1763 y=2208 luc=1736 -> man hinh x=156 y=135[0m
+[0;32mI (229494) display: touch adc x=1755 y=2207 luc=1723 -> man hinh x=156 y=135[0m
+[0;32mI (229529) display: touch adc x=1766 y=2204 luc=1745 -> man hinh x=156 y=135[0m
+[0;32mI (229564) display: touch adc x=1761 y=2210 luc=1740 -> man hinh x=155 y=135[0m
+[0;32mI (229599) display: touch adc x=1764 y=2207 luc=1732 -> man hinh x=156 y=135[0m
+[0;32mI (229634) display: touch adc x=1760 y=2202 luc=1744 -> man hinh x=156 y=135[0m
+[0;32mI (229669) display: touch adc x=1760 y=2208 luc=1728 -> man hinh x=156 y=135[0m
+[0;32mI (229703) display: touch adc x=1768 y=2205 luc=1708 -> man hinh x=156 y=134[0m
+[0;32mI (229739) display: touch adc x=1784 y=2210 luc=1698 -> man hinh x=155 y=133[0m
+[0;32mI (229774) display: touch adc x=1792 y=2208 luc=1738 -> man hinh x=156 y=133[0m
+[0;32mI (229808) display: touch adc x=1781 y=2212 luc=1715 -> man hinh x=155 y=134[0m
+[0;32mI (229844) display: touch adc x=1783 y=2227 luc=1729 -> man hinh x=154 y=133[0m
+[0;32mI (229878) display: touch adc x=1780 y=2221 luc=1727 -> man hinh x=154 y=134[0m
+[0;32mI (229913) display: touch adc x=1790 y=2219 luc=1734 -> man hinh x=155 y=133[0m
+[0;32mI (229949) display: touch adc x=1781 y=2216 luc=1725 -> man hinh x=155 y=134[0m
+[0;32mI (229984) display: touch adc x=1789 y=2216 luc=1732 -> man hinh x=155 y=133[0m
+[0;32mI (230018) display: touch adc x=1784 y=2227 luc=1731 -> man hinh x=154 y=133[0m
+[0;32mI (230054) display: touch adc x=1779 y=2221 luc=1719 -> man hinh x=154 y=134[0m
+[0;32mI (230089) display: touch adc x=1787 y=2229 luc=1707 -> man hinh x=154 y=133[0m
+[0;32mI (230123) display: touch adc x=1789 y=2219 luc=1697 -> man hinh x=155 y=133[0m
+[0;32mI (230159) display: touch adc x=1790 y=2216 luc=1717 -> man hinh x=155 y=133[0m
+[0;32mI (230193) display: touch adc x=1793 y=2217 luc=1696 -> man hinh x=155 y=133[0m
+[0;32mI (230228) display: touch adc x=1792 y=2219 luc=1724 -> man hinh x=155 y=133[0m
+[0;32mI (230264) display: touch adc x=1778 y=2224 luc=1716 -> man hinh x=154 y=134[0m
+[0;32mI (230299) display: touch adc x=1786 y=2217 luc=1701 -> man hinh x=155 y=133[0m
+[0;32mI (230334) display: touch adc x=1792 y=2218 luc=1715 -> man hinh x=155 y=133[0m
+[0;32mI (230369) display: touch adc x=1778 y=2238 luc=1590 -> man hinh x=153 y=134[0m
+[0;32mI (230404) display: touch adc x=1774 y=2241 luc=1562 -> man hinh x=153 y=134[0m
+[0;32mI (232676) display: touch nghi ngo: adc x=3272 y=1397 luc=443 (mau 1/2)[0m
+[0;32mI (232712) display: touch nghi ngo: adc x=3579 y=1384 luc=1799 (mau 1/2)[0m
+[0;32mI (232746) display: touch adc x=3575 y=1384 luc=1928 -> man hinh x=230 y=17[0m
+[0;32mI (232782) display: touch adc x=3567 y=1387 luc=2001 -> man hinh x=230 y=17[0m
+[0;32mI (232817) display: touch adc x=3567 y=1384 luc=2159 -> man hinh x=230 y=17[0m
+[0;32mI (232852) display: touch adc x=3583 y=1381 luc=2176 -> man hinh x=230 y=16[0m
+[0;32mI (232887) display: touch adc x=3576 y=1376 luc=2165 -> man hinh x=231 y=17[0m
+[1;31mE (232915) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;32mI (232922) display: touch adc x=3583 y=1386 luc=2202 -> man hinh x=230 y=16[0m
+[0;32mI (232957) display: touch adc x=3567 y=1387 luc=2181 -> man hinh x=230 y=17[0m
+[0;32mI (232992) display: touch adc x=3577 y=1383 luc=2178 -> man hinh x=230 y=16[0m
+[0;32mI (233027) display: touch adc x=3583 y=1382 luc=2187 -> man hinh x=230 y=16[0m
+[0;32mI (233062) display: touch adc x=3567 y=1387 luc=2219 -> man hinh x=230 y=17[0m
+[0;32mI (233097) display: touch adc x=3567 y=1387 luc=2213 -> man hinh x=230 y=17[0m
+[0;32mI (233132) display: touch adc x=3566 y=1384 luc=2181 -> man hinh x=230 y=17[0m
+[0;32mI (233167) display: touch adc x=3561 y=1384 luc=2257 -> man hinh x=230 y=18[0m
+[0;32mI (233202) display: touch adc x=3559 y=1387 luc=2223 -> man hinh x=230 y=18[0m
+[0;32mI (233237) display: touch adc x=3566 y=1381 luc=2193 -> man hinh x=230 y=17[0m
+[0;32mI (233272) display: touch adc x=3569 y=1382 luc=2192 -> man hinh x=230 y=17[0m
+[0;32mI (233307) display: touch adc x=3563 y=1384 luc=2201 -> man hinh x=230 y=17[0m
+[0;32mI (233342) display: touch adc x=3583 y=1384 luc=2208 -> man hinh x=230 y=16[0m
+[0;32mI (233377) display: touch adc x=3591 y=1387 luc=2210 -> man hinh x=230 y=16[0m
+[0;32mI (233412) display: touch adc x=3582 y=1384 luc=2208 -> man hinh x=230 y=16[0m
+[0;32mI (233447) display: touch adc x=3583 y=1388 luc=2219 -> man hinh x=230 y=16[0m
+[0;32mI (233482) display: touch adc x=3567 y=1390 luc=2169 -> man hinh x=229 y=17[0m
+[0;32mI (233517) display: touch adc x=3583 y=1385 luc=2171 -> man hinh x=230 y=16[0m
+[0;32mI (233552) display: touch adc x=3569 y=1384 luc=2189 -> man hinh x=230 y=17[0m
+[0;32mI (233587) display: touch adc x=3579 y=1385 luc=2085 -> man hinh x=230 y=16[0m
+[0;32mI (233622) display: touch adc x=3582 y=1384 luc=2206 -> man hinh x=230 y=16[0m
+[0;32mI (233657) display: touch adc x=3583 y=1387 luc=2229 -> man hinh x=230 y=16[0m
+[0;32mI (233692) display: touch adc x=3570 y=1389 luc=2246 -> man hinh x=230 y=17[0m
+[0;32mI (233727) display: touch adc x=3575 y=1398 luc=2249 -> man hinh x=229 y=17[0m
+[0;32mI (233762) display: touch adc x=3587 y=1399 luc=2248 -> man hinh x=229 y=16[0m
+[0;32mI (233797) display: touch adc x=3572 y=1402 luc=2254 -> man hinh x=228 y=17[0m
+[0;32mI (233833) display: touch adc x=3599 y=1407 luc=2303 -> man hinh x=228 y=15[0m
+[0;32mI (233868) display: touch adc x=3591 y=1415 luc=2298 -> man hinh x=227 y=16[0m
+[0;32mI (233903) display: touch adc x=3579 y=1423 luc=2296 -> man hinh x=226 y=16[0m
+[0;33mW (233916) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (233938) display: touch adc x=3587 y=1418 luc=2291 -> man hinh x=227 y=16[0m
+[0;32mI (233973) display: touch adc x=3595 y=1419 luc=2285 -> man hinh x=227 y=15[0m
+[0;32mI (234008) display: touch adc x=3603 y=1419 luc=2309 -> man hinh x=227 y=15[0m
+[0;32mI (234043) display: touch adc x=3599 y=1422 luc=2309 -> man hinh x=227 y=15[0m
+[0;32mI (234078) display: touch adc x=3576 y=1417 luc=2295 -> man hinh x=227 y=17[0m
+[0;32mI (234113) display: touch adc x=3582 y=1424 luc=2302 -> man hinh x=226 y=16[0m
+[0;32mI (234148) display: touch adc x=3583 y=1428 luc=2306 -> man hinh x=226 y=16[0m
+[0;32mI (234183) display: touch adc x=3579 y=1430 luc=2288 -> man hinh x=226 y=16[0m
+[0;32mI (234217) display: touch adc x=3587 y=1428 luc=2282 -> man hinh x=226 y=16[0m
+[0;32mI (234253) display: touch adc x=3569 y=1424 luc=2291 -> man hinh x=226 y=17[0m
+[0;32mI (234288) display: touch adc x=3583 y=1432 luc=2241 -> man hinh x=226 y=16[0m
+[0;32mI (234323) display: touch adc x=3569 y=1428 luc=2294 -> man hinh x=226 y=17[0m
+[0;32mI (234358) display: touch adc x=3583 y=1430 luc=2317 -> man hinh x=226 y=16[0m
+[0;32mI (234393) display: touch adc x=3583 y=1427 luc=2290 -> man hinh x=226 y=16[0m
+[0;32mI (234427) display: touch adc x=3573 y=1429 luc=2238 -> man hinh x=226 y=17[0m
+[0;32mI (234463) display: touch adc x=3535 y=1435 luc=2221 -> man hinh x=225 y=19[0m
+[0;32mI (234498) display: touch adc x=3564 y=1432 luc=2227 -> man hinh x=226 y=17[0m
+[0;32mI (234533) display: touch adc x=3545 y=1438 luc=2253 -> man hinh x=225 y=19[0m
+[0;32mI (234568) display: touch adc x=3560 y=1433 luc=2260 -> man hinh x=226 y=18[0m
+[0;32mI (234603) display: touch adc x=3560 y=1432 luc=2277 -> man hinh x=226 y=18[0m
+[0;32mI (234637) display: touch adc x=3540 y=1434 luc=2244 -> man hinh x=225 y=19[0m
+[0;32mI (234673) display: touch adc x=3544 y=1436 luc=2244 -> man hinh x=225 y=19[0m
+[0;32mI (234707) display: touch adc x=3536 y=1441 luc=2240 -> man hinh x=225 y=19[0m
+[0;32mI (234742) display: touch adc x=3528 y=1436 luc=2237 -> man hinh x=225 y=20[0m
+[0;32mI (234778) display: touch adc x=3536 y=1440 luc=2245 -> man hinh x=225 y=19[0m
+[0;32mI (234813) display: touch adc x=3532 y=1441 luc=2210 -> man hinh x=225 y=19[0m
+[0;32mI (234848) display: touch adc x=3521 y=1441 luc=2245 -> man hinh x=225 y=20[0m
+[0;32mI (234884) display: touch adc x=3534 y=1444 luc=2253 -> man hinh x=225 y=19[0m
+[0;32mI (234919) display: touch adc x=3528 y=1440 luc=2226 -> man hinh x=225 y=20[0m
+[0;32mI (234954) display: touch adc x=3539 y=1439 luc=2264 -> man hinh x=225 y=19[0m
+[0;32mI (234989) display: touch adc x=3524 y=1436 luc=2242 -> man hinh x=225 y=20[0m
+[0;32mI (235023) display: touch adc x=3519 y=1441 luc=2256 -> man hinh x=225 y=20[0m
+[0;32mI (235059) display: touch adc x=3523 y=1439 luc=2212 -> man hinh x=225 y=20[0m
+[0;32mI (235094) display: touch adc x=3537 y=1440 luc=2207 -> man hinh x=225 y=19[0m
+[0;32mI (235129) display: touch adc x=3532 y=1435 luc=2228 -> man hinh x=225 y=19[0m
+[0;32mI (235164) display: touch adc x=3537 y=1435 luc=2227 -> man hinh x=225 y=19[0m
+[0;32mI (235199) display: touch adc x=3507 y=1440 luc=2212 -> man hinh x=225 y=21[0m
+[0;32mI (235234) display: touch adc x=3512 y=1436 luc=1964 -> man hinh x=225 y=21[0m
+[0;32mI (235790) display: touch nghi ngo: adc x=3500 y=1124 luc=1541 (mau 1/2)[0m
+[0;32mI (235860) display: touch nghi ngo: adc x=3403 y=1152 luc=915 (mau 1/2)[0m
+[0;32mI (235896) display: touch adc x=3495 y=1133 luc=1449 -> man hinh x=253 y=22[0m
+[0;32mI (235931) display: touch adc x=3523 y=1125 luc=1594 -> man hinh x=253 y=20[0m
+[0;32mI (235966) display: touch adc x=3531 y=1128 luc=1607 -> man hinh x=253 y=19[0m
+[0;32mI (236001) display: touch adc x=3527 y=1126 luc=1768 -> man hinh x=253 y=20[0m
+[0;32mI (236035) display: touch adc x=3520 y=1127 luc=1598 -> man hinh x=253 y=20[0m
+[0;32mI (236071) display: touch adc x=3563 y=1116 luc=1919 -> man hinh x=254 y=17[0m
+[0;32mI (236106) display: touch adc x=3552 y=1115 luc=1995 -> man hinh x=254 y=18[0m
+[0;32mI (236141) display: touch adc x=3538 y=1114 luc=2034 -> man hinh x=254 y=19[0m
+[0;32mI (236176) display: touch adc x=3544 y=1113 luc=2041 -> man hinh x=254 y=19[0m
+[0;32mI (236211) display: touch adc x=3528 y=1120 luc=1733 -> man hinh x=254 y=20[0m
+[0;32mI (236246) display: touch adc x=3535 y=1122 luc=1761 -> man hinh x=254 y=19[0m
+[0;32mI (236281) display: touch adc x=3521 y=1109 luc=1586 -> man hinh x=255 y=20[0m
+[0;32mI (236316) display: touch adc x=3544 y=1105 luc=1772 -> man hinh x=255 y=19[0m
+[0;32mI (236385) display: touch adc x=3536 y=1104 luc=2046 -> man hinh x=255 y=19[0m
+[0;32mI (236421) display: touch adc x=3575 y=1099 luc=2133 -> man hinh x=256 y=17[0m
+[0;32mI (236455) display: touch adc x=3536 y=1104 luc=2152 -> man hinh x=255 y=19[0m
+[0;32mI (236491) display: touch adc x=3565 y=1101 luc=2146 -> man hinh x=256 y=17[0m
+[0;32mI (236526) display: touch adc x=3565 y=1102 luc=2143 -> man hinh x=255 y=17[0m
+[0;32mI (236560) display: touch adc x=3551 y=1106 luc=2180 -> man hinh x=255 y=18[0m
+[0;32mI (236596) display: touch adc x=3567 y=1100 luc=2130 -> man hinh x=256 y=17[0m
+[0;32mI (236630) display: touch adc x=3553 y=1103 luc=2225 -> man hinh x=255 y=18[0m
+[0;32mI (236665) display: touch adc x=3567 y=1101 luc=2240 -> man hinh x=256 y=17[0m
+[0;32mI (236701) display: touch adc x=3567 y=1104 luc=2252 -> man hinh x=255 y=17[0m
+[0;32mI (236736) display: touch adc x=3567 y=1106 luc=2275 -> man hinh x=255 y=17[0m
+[0;32mI (236771) display: touch adc x=3553 y=1104 luc=2267 -> man hinh x=255 y=18[0m
+[0;32mI (236806) display: touch adc x=3567 y=1103 luc=2264 -> man hinh x=255 y=17[0m
+[0;32mI (236841) display: touch adc x=3556 y=1104 luc=2243 -> man hinh x=255 y=18[0m
+[0;32mI (236876) display: touch adc x=3579 y=1108 luc=2304 -> man hinh x=255 y=16[0m
+[0;32mI (236912) display: touch adc x=3577 y=1106 luc=2336 -> man hinh x=255 y=16[0m
+[0;32mI (236946) display: touch adc x=3571 y=1103 luc=2217 -> man hinh x=255 y=17[0m
+[0;32mI (236981) display: touch adc x=3592 y=1096 luc=2209 -> man hinh x=256 y=15[0m
+[0;32mI (237017) display: touch adc x=3564 y=1094 luc=2186 -> man hinh x=256 y=17[0m
+[0;32mI (237052) display: touch adc x=3607 y=1082 luc=2081 -> man hinh x=257 y=15[0m
+[0;32mI (237087) display: touch adc x=3596 y=1070 luc=2082 -> man hinh x=258 y=15[0m
+[0;32mI (237122) display: touch adc x=3623 y=1047 luc=2023 -> man hinh x=260 y=13[0m
+[0;32mI (237157) display: touch adc x=3614 y=1040 luc=2050 -> man hinh x=261 y=14[0m
+[0;32mI (237191) display: touch adc x=3611 y=1025 luc=2090 -> man hinh x=262 y=14[0m
+[0;32mI (237227) display: touch adc x=3613 y=990 luc=2112 -> man hinh x=266 y=14[0m
+[0;32mI (237262) display: touch adc x=3568 y=970 luc=1608 -> man hinh x=267 y=17[0m
+[0;32mI (237330) display: touch adc x=3626 y=888 luc=1968 -> man hinh x=275 y=13[0m
+[0;32mI (237366) display: touch adc x=3644 y=865 luc=1942 -> man hinh x=277 y=12[0m
+[0;32mI (237401) display: touch adc x=3631 y=861 luc=2114 -> man hinh x=277 y=13[0m
+[0;32mI (237436) display: touch adc x=3630 y=844 luc=2074 -> man hinh x=279 y=13[0m
+[0;32mI (237471) display: touch adc x=3613 y=843 luc=2142 -> man hinh x=279 y=14[0m
+[0;32mI (237505) display: touch adc x=3614 y=833 luc=2108 -> man hinh x=280 y=14[0m
+[0;32mI (237541) display: touch adc x=3609 y=817 luc=1841 -> man hinh x=281 y=14[0m
+[0;32mI (237576) display: touch adc x=3583 y=813 luc=1624 -> man hinh x=281 y=16[0m
+[0;32mI (237682) display: touch nghi ngo: adc x=3556 y=758 luc=1468 (mau 1/2)[0m
+[0;32mI (237718) display: touch adc x=3616 y=737 luc=2216 -> man hinh x=288 y=14[0m
+[0;32mI (237753) display: touch adc x=3635 y=714 luc=2246 -> man hinh x=290 y=13[0m
+[0;32mI (237788) display: touch adc x=3615 y=705 luc=2267 -> man hinh x=291 y=14[0m
+[0;32mI (237824) display: touch adc x=3637 y=688 luc=2213 -> man hinh x=293 y=13[0m
+[0;32mI (237859) display: touch adc x=3642 y=682 luc=2296 -> man hinh x=293 y=12[0m
+[0;32mI (237893) display: touch adc x=3617 y=680 luc=2275 -> man hinh x=294 y=14[0m
+[0;32mI (237929) display: touch adc x=3623 y=676 luc=2283 -> man hinh x=294 y=13[0m
+[0;32mI (237964) display: touch adc x=3620 y=674 luc=2273 -> man hinh x=294 y=14[0m
+[0;32mI (237998) display: touch adc x=3624 y=669 luc=2104 -> man hinh x=294 y=13[0m
+[0;32mI (238034) display: touch adc x=3583 y=676 luc=1721 -> man hinh x=294 y=16[0m
+[0;32mI (238310) display: touch nghi ngo: adc x=3600 y=611 luc=1539 (mau 1/2)[0m
+[0;32mI (238346) display: touch adc x=3624 y=576 luc=2214 -> man hinh x=303 y=13[0m
+[0;32mI (238381) display: touch adc x=3643 y=565 luc=2140 -> man hinh x=304 y=12[0m
+[0;32mI (238416) display: touch adc x=3635 y=559 luc=2170 -> man hinh x=304 y=13[0m
+[0;32mI (238451) display: touch adc x=3639 y=558 luc=2258 -> man hinh x=305 y=12[0m
+[0;32mI (238486) display: touch adc x=3635 y=560 luc=2321 -> man hinh x=304 y=13[0m
+[0;32mI (238521) display: touch adc x=3621 y=562 luc=2309 -> man hinh x=304 y=14[0m
+[0;32mI (238556) display: touch adc x=3639 y=566 luc=2222 -> man hinh x=304 y=12[0m
+[0;32mI (238591) display: touch adc x=3632 y=561 luc=2302 -> man hinh x=304 y=13[0m
+[0;32mI (238626) display: touch adc x=3620 y=557 luc=2078 -> man hinh x=305 y=14[0m
+[0;32mI (238661) display: touch adc x=3626 y=550 luc=2068 -> man hinh x=305 y=13[0m
+[0;32mI (238696) display: touch adc x=3626 y=547 luc=2295 -> man hinh x=306 y=13[0m
+[0;32mI (238731) display: touch adc x=3624 y=548 luc=2209 -> man hinh x=305 y=13[0m
+[0;32mI (238766) display: touch adc x=3648 y=547 luc=2335 -> man hinh x=306 y=12[0m
+[0;32mI (238801) display: touch adc x=3638 y=554 luc=2344 -> man hinh x=305 y=12[0m
+[0;32mI (238836) display: touch adc x=3634 y=552 luc=2352 -> man hinh x=305 y=13[0m
+[0;32mI (238872) display: touch adc x=3641 y=558 luc=2394 -> man hinh x=305 y=12[0m
+[0;32mI (238907) display: touch adc x=3651 y=576 luc=2390 -> man hinh x=303 y=12[0m
+[0;32mI (238942) display: touch adc x=3623 y=592 luc=2327 -> man hinh x=301 y=13[0m
+[0;32mI (239010) display: touch adc x=3618 y=656 luc=2175 -> man hinh x=296 y=14[0m
+[0;32mI (239045) display: touch adc x=3647 y=681 luc=2361 -> man hinh x=293 y=12[0m
+[0;32mI (239081) display: touch adc x=3640 y=712 luc=2305 -> man hinh x=291 y=12[0m
+[0;32mI (239116) display: touch adc x=3615 y=750 luc=2340 -> man hinh x=287 y=14[0m
+[0;32mI (239151) display: touch adc x=3586 y=779 luc=2320 -> man hinh x=285 y=16[0m
+[0;32mI (239186) display: touch adc x=3599 y=816 luc=2377 -> man hinh x=281 y=15[0m
+[0;32mI (239220) display: touch adc x=3596 y=840 luc=2308 -> man hinh x=279 y=15[0m
+[0;32mI (239256) display: touch adc x=3615 y=883 luc=2225 -> man hinh x=275 y=14[0m
+[0;32mI (239291) display: touch adc x=3591 y=917 luc=2299 -> man hinh x=272 y=16[0m
+[0;32mI (239325) display: touch adc x=3579 y=939 luc=2347 -> man hinh x=270 y=16[0m
+[0;32mI (239361) display: touch adc x=3567 y=970 luc=2356 -> man hinh x=267 y=17[0m
+[0;32mI (239396) display: touch adc x=3567 y=1011 luc=2248 -> man hinh x=264 y=17[0m
+[0;32mI (239430) display: touch adc x=3575 y=1049 luc=2142 -> man hinh x=260 y=17[0m
+[0;32mI (239466) display: touch adc x=3550 y=1083 luc=2290 -> man hinh x=257 y=18[0m
+[0;32mI (239501) display: touch adc x=3552 y=1116 luc=2304 -> man hinh x=254 y=18[0m
+[0;32mI (239536) display: touch adc x=3536 y=1168 luc=2221 -> man hinh x=249 y=19[0m
+[0;32mI (239571) display: touch adc x=3541 y=1228 luc=2136 -> man hinh x=244 y=19[0m
+[0;32mI (239606) display: touch adc x=3535 y=1273 luc=2205 -> man hinh x=240 y=19[0m
+[0;32mI (239641) display: touch adc x=3490 y=1328 luc=2115 -> man hinh x=235 y=22[0m
+[0;32mI (239676) display: touch adc x=3491 y=1384 luc=2219 -> man hinh x=230 y=22[0m
+[0;32mI (239711) display: touch adc x=3492 y=1443 luc=2140 -> man hinh x=225 y=22[0m
+[0;32mI (239746) display: touch adc x=3504 y=1480 luc=2195 -> man hinh x=221 y=21[0m
+[0;32mI (239781) display: touch adc x=3484 y=1513 luc=2204 -> man hinh x=218 y=23[0m
+[0;32mI (239816) display: touch adc x=3503 y=1545 luc=2196 -> man hinh x=215 y=21[0m
+[0;32mI (239851) display: touch adc x=3515 y=1579 luc=2130 -> man hinh x=212 y=21[0m
+[0;32mI (239886) display: touch adc x=3467 y=1617 luc=2098 -> man hinh x=209 y=24[0m
+[0;32mI (239921) display: touch adc x=3483 y=1658 luc=2164 -> man hinh x=205 y=23[0m
+[0;32mI (239956) display: touch adc x=3478 y=1692 luc=2148 -> man hinh x=202 y=23[0m
+[0;32mI (239991) display: touch adc x=3496 y=1724 luc=2037 -> man hinh x=199 y=22[0m
+[0;32mI (240026) display: touch adc x=3490 y=1770 luc=2088 -> man hinh x=195 y=22[0m
+[0;32mI (240061) display: touch adc x=3493 y=1795 luc=2104 -> man hinh x=193 y=22[0m
+[0;32mI (240096) display: touch adc x=3499 y=1836 luc=2110 -> man hinh x=189 y=22[0m
+[0;32mI (240131) display: touch adc x=3501 y=1865 luc=2046 -> man hinh x=187 y=21[0m
+[0;32mI (240166) display: touch adc x=3472 y=1907 luc=2028 -> man hinh x=183 y=23[0m
+[0;32mI (240201) display: touch adc x=3494 y=1934 luc=2052 -> man hinh x=180 y=22[0m
+[0;32mI (240236) display: touch adc x=3484 y=1971 luc=2089 -> man hinh x=177 y=23[0m
+[0;32mI (240271) display: touch adc x=3507 y=2015 luc=1971 -> man hinh x=173 y=21[0m
+[0;32mI (240306) display: touch adc x=3509 y=2054 luc=1977 -> man hinh x=169 y=21[0m
+[0;32mI (240341) display: touch adc x=3495 y=2093 luc=2009 -> man hinh x=166 y=22[0m
+[0;32mI (240376) display: touch adc x=3502 y=2129 luc=2061 -> man hinh x=163 y=21[0m
+[0;32mI (240411) display: touch adc x=3494 y=2175 luc=1988 -> man hinh x=159 y=22[0m
+[0;32mI (240446) display: touch adc x=3503 y=2227 luc=1929 -> man hinh x=154 y=21[0m
+[0;32mI (240481) display: touch adc x=3503 y=2264 luc=2001 -> man hinh x=151 y=21[0m
+[0;32mI (240516) display: touch adc x=3488 y=2310 luc=1946 -> man hinh x=146 y=22[0m
+[0;32mI (240551) display: touch adc x=3491 y=2352 luc=1923 -> man hinh x=143 y=22[0m
+[0;32mI (240586) display: touch adc x=3484 y=2400 luc=1927 -> man hinh x=138 y=23[0m
+[0;32mI (240621) display: touch adc x=3491 y=2441 luc=1893 -> man hinh x=135 y=22[0m
+[0;32mI (240656) display: touch adc x=3470 y=2494 luc=1896 -> man hinh x=130 y=23[0m
+[0;32mI (240691) display: touch adc x=3471 y=2547 luc=1819 -> man hinh x=125 y=23[0m
+[0;32mI (240726) display: touch adc x=3471 y=2592 luc=1876 -> man hinh x=121 y=23[0m
+[0;32mI (240761) display: touch adc x=3466 y=2637 luc=1794 -> man hinh x=117 y=24[0m
+[0;32mI (240796) display: touch adc x=3450 y=2680 luc=1766 -> man hinh x=113 y=25[0m
+[0;32mI (240831) display: touch adc x=3454 y=2715 luc=1811 -> man hinh x=110 y=24[0m
+[0;32mI (240867) display: touch adc x=3439 y=2735 luc=1870 -> man hinh x=108 y=25[0m
+[0;32mI (240902) display: touch adc x=3456 y=2754 luc=1818 -> man hinh x=106 y=24[0m
+[0;32mI (240937) display: touch adc x=3451 y=2794 luc=1744 -> man hinh x=103 y=25[0m
+[0;32mI (240972) display: touch adc x=3432 y=2832 luc=1716 -> man hinh x=99 y=26[0m
+[0;32mI (241007) display: touch adc x=3439 y=2858 luc=1774 -> man hinh x=97 y=25[0m
+[0;32mI (241042) display: touch adc x=3435 y=2895 luc=1800 -> man hinh x=94 y=26[0m
+[0;32mI (241077) display: touch adc x=3435 y=2903 luc=1665 -> man hinh x=93 y=26[0m
+[0;32mI (241112) display: touch adc x=3422 y=2927 luc=1802 -> man hinh x=91 y=27[0m
+[0;32mI (241147) display: touch adc x=3415 y=2943 luc=1764 -> man hinh x=89 y=27[0m
+[0;32mI (241182) display: touch adc x=3408 y=2941 luc=1772 -> man hinh x=89 y=27[0m
+[0;32mI (241217) display: touch adc x=3379 y=2957 luc=1145 -> man hinh x=88 y=29[0m
+[0;32mI (241252) display: touch adc x=3391 y=3007 luc=1800 -> man hinh x=83 y=29[0m
+[0;32mI (241287) display: touch adc x=3396 y=3031 luc=1733 -> man hinh x=81 y=28[0m
+[0;32mI (241322) display: touch adc x=3384 y=3045 luc=1676 -> man hinh x=80 y=29[0m
+[0;32mI (241357) display: touch adc x=3383 y=3079 luc=1728 -> man hinh x=77 y=29[0m
+[0;32mI (241392) display: touch adc x=3391 y=3100 luc=1656 -> man hinh x=75 y=29[0m
+[0;32mI (241427) display: touch adc x=3368 y=3100 luc=1734 -> man hinh x=75 y=30[0m
+[0;32mI (241462) display: touch adc x=3368 y=3135 luc=1767 -> man hinh x=72 y=30[0m
+[0;32mI (241497) display: touch adc x=3372 y=3152 luc=1708 -> man hinh x=70 y=30[0m
+[0;32mI (241532) display: touch adc x=3372 y=3199 luc=1663 -> man hinh x=66 y=30[0m
+[0;32mI (241567) display: touch adc x=3383 y=3225 luc=1653 -> man hinh x=64 y=29[0m
+[0;32mI (241602) display: touch adc x=3368 y=3263 luc=1672 -> man hinh x=60 y=30[0m
+[0;32mI (241637) display: touch adc x=3375 y=3293 luc=1690 -> man hinh x=58 y=30[0m
+[0;32mI (241672) display: touch adc x=3391 y=3304 luc=1698 -> man hinh x=57 y=29[0m
+[0;32mI (241707) display: touch adc x=3391 y=3349 luc=1682 -> man hinh x=53 y=29[0m
+[0;32mI (241742) display: touch adc x=3402 y=3388 luc=1589 -> man hinh x=49 y=28[0m
+[0;32mI (241777) display: touch adc x=3393 y=3423 luc=1672 -> man hinh x=46 y=28[0m
+[0;32mI (241812) display: touch adc x=3400 y=3463 luc=1637 -> man hinh x=42 y=28[0m
+[0;32mI (241848) display: touch adc x=3403 y=3497 luc=1619 -> man hinh x=39 y=28[0m
+[0;32mI (241883) display: touch adc x=3423 y=3519 luc=1589 -> man hinh x=37 y=27[0m
+[0;32mI (241918) display: touch adc x=3408 y=3544 luc=1532 -> man hinh x=35 y=27[0m
+[0;32mI (241953) display: touch adc x=3416 y=3560 luc=1613 -> man hinh x=34 y=27[0m
+[0;32mI (241988) display: touch adc x=3427 y=3592 luc=1542 -> man hinh x=31 y=26[0m
+[0;32mI (242023) display: touch adc x=3423 y=3615 luc=1454 -> man hinh x=29 y=27[0m
+[0;32mI (242058) display: touch adc x=3419 y=3632 luc=1507 -> man hinh x=27 y=27[0m
+[0;32mI (242093) display: touch adc x=3420 y=3647 luc=1531 -> man hinh x=26 y=27[0m
+[0;32mI (242128) display: touch adc x=3423 y=3656 luc=1554 -> man hinh x=25 y=27[0m
+[0;32mI (242163) display: touch adc x=3431 y=3667 luc=1592 -> man hinh x=24 y=26[0m
+[0;32mI (242198) display: touch adc x=3437 y=3657 luc=1573 -> man hinh x=25 y=26[0m
+[0;32mI (242233) display: touch adc x=3435 y=3679 luc=1599 -> man hinh x=23 y=26[0m
+[0;32mI (242268) display: touch adc x=3451 y=3671 luc=1591 -> man hinh x=24 y=25[0m
+[0;32mI (242303) display: touch adc x=3440 y=3675 luc=1574 -> man hinh x=23 y=25[0m
+[0;32mI (242338) display: touch adc x=3444 y=3680 luc=1616 -> man hinh x=23 y=25[0m
+[0;32mI (242373) display: touch adc x=3455 y=3679 luc=1601 -> man hinh x=23 y=24[0m
+[0;32mI (242408) display: touch adc x=3444 y=3694 luc=1648 -> man hinh x=21 y=25[0m
+[0;32mI (242443) display: touch adc x=3467 y=3695 luc=1638 -> man hinh x=21 y=24[0m
+[0;32mI (242478) display: touch adc x=3455 y=3687 luc=1594 -> man hinh x=22 y=24[0m
+[0;32mI (242513) display: touch adc x=3479 y=3687 luc=1618 -> man hinh x=22 y=23[0m
+[0;32mI (242548) display: touch adc x=3475 y=3693 luc=1598 -> man hinh x=22 y=23[0m
+[0;32mI (242583) display: touch adc x=3480 y=3694 luc=1613 -> man hinh x=21 y=23[0m
+[0;32mI (242618) display: touch adc x=3456 y=3696 luc=1588 -> man hinh x=21 y=24[0m
+[0;32mI (242653) display: touch adc x=3471 y=3694 luc=1606 -> man hinh x=21 y=23[0m
+[0;32mI (242688) display: touch adc x=3457 y=3709 luc=1587 -> man hinh x=20 y=24[0m
+[0;32mI (242723) display: touch adc x=3455 y=3679 luc=1508 -> man hinh x=23 y=24[0m
+[0;32mI (242758) display: touch adc x=3475 y=3620 luc=1497 -> man hinh x=28 y=23[0m
+[0;32mI (242793) display: touch adc x=3483 y=3540 luc=1616 -> man hinh x=35 y=23[0m
+[0;32mI (242828) display: touch adc x=3508 y=3471 luc=1585 -> man hinh x=42 y=21[0m
+[0;32mI (242864) display: touch adc x=3491 y=3385 luc=1698 -> man hinh x=49 y=22[0m
+[0;32mI (242899) display: touch adc x=3542 y=3295 luc=1646 -> man hinh x=57 y=19[0m
+[0;32mI (242934) display: touch adc x=3531 y=3199 luc=1620 -> man hinh x=66 y=19[0m
+[0;32mI (242969) display: touch adc x=3553 y=3104 luc=1757 -> man hinh x=75 y=18[0m
+[0;32mI (243004) display: touch adc x=3571 y=3020 luc=1787 -> man hinh x=82 y=17[0m
+[0;32mI (243039) display: touch adc x=3550 y=2955 luc=1898 -> man hinh x=88 y=18[0m
+[0;32mI (243074) display: touch adc x=3558 y=2879 luc=1693 -> man hinh x=95 y=18[0m
+[0;32mI (243109) display: touch adc x=3549 y=2809 luc=1880 -> man hinh x=101 y=18[0m
+[0;32mI (243144) display: touch adc x=3570 y=2752 luc=1748 -> man hinh x=106 y=17[0m
+[0;32mI (243179) display: touch adc x=3566 y=2683 luc=1943 -> man hinh x=113 y=17[0m
+[0;32mI (243214) display: touch adc x=3611 y=2592 luc=1900 -> man hinh x=121 y=14[0m
+[0;32mI (243249) display: touch adc x=3593 y=2529 luc=2021 -> man hinh x=127 y=15[0m
+[0;32mI (243284) display: touch adc x=3616 y=2448 luc=1948 -> man hinh x=134 y=14[0m
+[0;32mI (243319) display: touch adc x=3631 y=2388 luc=1989 -> man hinh x=139 y=13[0m
+[0;32mI (243354) display: touch adc x=3623 y=2327 luc=1982 -> man hinh x=145 y=13[0m
+[0;32mI (243389) display: touch adc x=3631 y=2269 luc=2017 -> man hinh x=150 y=13[0m
+[0;32mI (243458) display: touch adc x=3661 y=2148 luc=2019 -> man hinh x=161 y=11[0m
+[0;32mI (243493) display: touch adc x=3655 y=2083 luc=2062 -> man hinh x=167 y=11[0m
+[0;32mI (243527) display: touch adc x=3672 y=2007 luc=2063 -> man hinh x=174 y=10[0m
+[0;32mI (243563) display: touch adc x=3659 y=1947 luc=2171 -> man hinh x=179 y=11[0m
+[0;32mI (243598) display: touch adc x=3704 y=1872 luc=1970 -> man hinh x=186 y=8[0m
+[0;32mI (243632) display: touch adc x=3691 y=1804 luc=2168 -> man hinh x=192 y=9[0m
+[0;32mI (243668) display: touch adc x=3694 y=1748 luc=1937 -> man hinh x=197 y=9[0m
+[0;32mI (243703) display: touch adc x=3703 y=1685 luc=2198 -> man hinh x=203 y=8[0m
+[0;32mI (243738) display: touch adc x=3715 y=1615 luc=2156 -> man hinh x=209 y=7[0m
+[0;32mI (243773) display: touch adc x=3735 y=1552 luc=2083 -> man hinh x=215 y=6[0m
+[0;32mI (243808) display: touch adc x=3576 y=1492 luc=1137 -> man hinh x=220 y=17[0m
+[0;32mI (243843) display: touch adc x=3728 y=1442 luc=2151 -> man hinh x=225 y=7[0m
+[0;32mI (243879) display: touch adc x=3744 y=1379 luc=2151 -> man hinh x=230 y=6[0m
+[0;32mI (243916) net_gsm: pulse reset[0m
+[0;32mI (243947) display: touch adc x=3731 y=1283 luc=2218 -> man hinh x=239 y=6[0m
+[0;32mI (243983) display: touch adc x=3727 y=1227 luc=1999 -> man hinh x=244 y=7[0m
+[0;32mI (244051) display: touch adc x=3744 y=1106 luc=2189 -> man hinh x=255 y=6[0m
+[0;32mI (244087) display: touch adc x=3492 y=1083 luc=1374 -> man hinh x=257 y=22[0m
+[0;32mI (244155) display: touch adc x=3739 y=965 luc=2184 -> man hinh x=268 y=6[0m
+[0;32mI (244191) display: touch adc x=3743 y=928 luc=2039 -> man hinh x=271 y=6[0m
+[0;32mI (244298) display: touch nghi ngo: adc x=3748 y=796 luc=1792 (mau 1/2)[0m
+[0;32mI (244540) display: touch nghi ngo: adc x=3752 y=654 luc=1639 (mau 1/2)[0m
+[0;32mI (244575) display: touch adc x=3775 y=643 luc=1520 -> man hinh x=297 y=4[0m
+[0;32mI (244611) display: touch adc x=3743 y=637 luc=1493 -> man hinh x=297 y=6[0m
+[0;32mI (244646) display: touch adc x=3749 y=626 luc=1664 -> man hinh x=298 y=5[0m
+[0;32mI (244681) display: touch adc x=3752 y=632 luc=1702 -> man hinh x=298 y=5[0m
+[0;32mI (244716) display: touch adc x=3706 y=630 luc=1530 -> man hinh x=298 y=8[0m
+[0;32mI (244751) display: touch adc x=3735 y=624 luc=1712 -> man hinh x=299 y=6[0m
+[0;32mI (244786) display: touch adc x=3695 y=627 luc=1720 -> man hinh x=298 y=9[0m
+[0;32mI (244821) display: touch adc x=3752 y=632 luc=1504 -> man hinh x=298 y=5[0m
+[0;32mI (244857) display: touch adc x=3735 y=624 luc=1548 -> man hinh x=299 y=6[0m
+[0;32mI (244892) display: touch adc x=3729 y=627 luc=1525 -> man hinh x=298 y=7[0m
+[0;32mI (244927) display: touch adc x=3740 y=629 luc=1690 -> man hinh x=298 y=6[0m
+[0;32mI (244962) display: touch adc x=3735 y=628 luc=1761 -> man hinh x=298 y=6[0m
+[0;32mI (245348) display: touch nghi ngo: adc x=3754 y=473 luc=1904 (mau 1/2)[0m
+[0;32mI (245384) display: touch adc x=3743 y=453 luc=2198 -> man hinh x=314 y=6[0m
+[0;32mI (245419) display: touch adc x=3735 y=444 luc=2282 -> man hinh x=315 y=6[0m
+[0;32mI (245454) display: touch adc x=3729 y=443 luc=2235 -> man hinh x=315 y=7[0m
+[0;32mI (245488) display: touch adc x=3727 y=442 luc=2224 -> man hinh x=315 y=7[0m
+[0;32mI (245524) display: touch adc x=3703 y=443 luc=2238 -> man hinh x=315 y=8[0m
+[0;32mI (245559) display: touch adc x=3675 y=434 luc=2190 -> man hinh x=316 y=10[0m
+[0;32mI (245594) display: touch adc x=3671 y=422 luc=2204 -> man hinh x=317 y=10[0m
+[0;32mI (245629) display: touch adc x=3644 y=418 luc=2230 -> man hinh x=317 y=12[0m
+[0;32mI (245664) display: touch adc x=3624 y=409 luc=2246 -> man hinh x=318 y=13[0m
+[0;32mI (245699) display: touch adc x=3599 y=405 luc=2245 -> man hinh x=318 y=15[0m
+[0;32mI (245734) display: touch adc x=3623 y=403 luc=2289 -> man hinh x=319 y=13[0m
+[0;32mI (245769) display: touch adc x=3606 y=397 luc=2303 -> man hinh x=319 y=15[0m
+[0;32mI (245804) display: touch adc x=3592 y=384 luc=2273 -> man hinh x=319 y=15[0m
+[0;32mI (245839) display: touch adc x=3594 y=374 luc=2242 -> man hinh x=319 y=15[0m
+[0;32mI (245874) display: touch adc x=3616 y=370 luc=2255 -> man hinh x=319 y=14[0m
+[0;32mI (245909) display: touch adc x=3603 y=371 luc=2234 -> man hinh x=319 y=15[0m
+[0;32mI (245944) display: touch adc x=3603 y=370 luc=2229 -> man hinh x=319 y=15[0m
+[0;32mI (245979) display: touch adc x=3593 y=371 luc=2246 -> man hinh x=319 y=15[0m
+[0;32mI (246014) display: touch adc x=3601 y=370 luc=2248 -> man hinh x=319 y=15[0m
+[0;32mI (246049) display: touch adc x=3605 y=370 luc=2236 -> man hinh x=319 y=15[0m
+[0;32mI (246084) display: touch adc x=3593 y=370 luc=2235 -> man hinh x=319 y=15[0m
+[0;32mI (246119) display: touch adc x=3593 y=371 luc=2261 -> man hinh x=319 y=15[0m
+[0;32mI (246153) display: touch adc x=3592 y=370 luc=2221 -> man hinh x=319 y=15[0m
+[0;32mI (246189) display: touch adc x=3611 y=369 luc=2250 -> man hinh x=319 y=14[0m
+[0;32mI (246224) display: touch adc x=3607 y=371 luc=2275 -> man hinh x=319 y=15[0m
+[0;32mI (246259) display: touch adc x=3616 y=369 luc=2287 -> man hinh x=319 y=14[0m
+[0;32mI (246293) display: touch adc x=3594 y=369 luc=2261 -> man hinh x=319 y=15[0m
+[0;32mI (246329) display: touch adc x=3599 y=371 luc=2259 -> man hinh x=319 y=15[0m
+[0;32mI (246364) display: touch adc x=3591 y=373 luc=2276 -> man hinh x=319 y=16[0m
+[0;32mI (246399) display: touch adc x=3608 y=370 luc=2267 -> man hinh x=319 y=14[0m
+[0;32mI (246434) display: touch adc x=3607 y=371 luc=2284 -> man hinh x=319 y=15[0m
+[0;32mI (246469) display: touch adc x=3587 y=376 luc=2202 -> man hinh x=319 y=16[0m
+[0;32mI (246504) display: touch adc x=3583 y=389 luc=2217 -> man hinh x=319 y=16[0m
+[0;32mI (246539) display: touch adc x=3596 y=418 luc=2248 -> man hinh x=317 y=15[0m
+[0;32mI (246574) display: touch adc x=3595 y=469 luc=2371 -> man hinh x=313 y=15[0m
+[0;32mI (246609) display: touch adc x=3600 y=531 luc=2298 -> man hinh x=307 y=15[0m
+[0;32mI (246644) display: touch adc x=3612 y=608 luc=2366 -> man hinh x=300 y=14[0m
+[0;32mI (246679) display: touch adc x=3604 y=688 luc=2313 -> man hinh x=293 y=15[0m
+[0;32mI (246714) display: touch adc x=3587 y=771 luc=2379 -> man hinh x=285 y=16[0m
+[0;32mI (246749) display: touch adc x=3630 y=844 luc=2331 -> man hinh x=279 y=13[0m
+[0;32mI (246784) display: touch adc x=3617 y=925 luc=2353 -> man hinh x=271 y=14[0m
+[0;32mI (246819) display: touch adc x=3632 y=1001 luc=2405 -> man hinh x=265 y=13[0m
+[0;32mI (246854) display: touch adc x=3663 y=1095 luc=2220 -> man hinh x=256 y=11[0m
+[0;32mI (246888) display: touch adc x=3663 y=1181 luc=2340 -> man hinh x=248 y=11[0m
+[0;32mI (246923) display: touch adc x=3670 y=1274 luc=2174 -> man hinh x=240 y=10[0m
+[0;32mI (246959) display: touch adc x=3649 y=1357 luc=2285 -> man hinh x=232 y=12[0m
+[0;32mI (246993) display: touch adc x=3669 y=1447 luc=2216 -> man hinh x=224 y=10[0m
+[0;32mI (247028) display: touch adc x=3647 y=1527 luc=2287 -> man hinh x=217 y=12[0m
+[0;32mI (247064) display: touch adc x=3636 y=1626 luc=2251 -> man hinh x=208 y=13[0m
+[0;32mI (247099) display: touch adc x=3639 y=1703 luc=2209 -> man hinh x=201 y=12[0m
+[0;32mI (247133) display: touch adc x=3630 y=1785 luc=2181 -> man hinh x=194 y=13[0m
+[0;32mI (247169) display: touch adc x=3629 y=1851 luc=2148 -> man hinh x=188 y=13[0m
+[0;32mI (247203) display: touch adc x=3628 y=1923 luc=2171 -> man hinh x=181 y=13[0m
+[0;32mI (247238) display: touch adc x=3631 y=1985 luc=2136 -> man hinh x=176 y=13[0m
+[0;32mI (247274) display: touch adc x=3640 y=2064 luc=2178 -> man hinh x=169 y=12[0m
+[0;32mI (247308) display: touch adc x=3647 y=2129 luc=2048 -> man hinh x=163 y=12[0m
+[0;32mI (247344) display: touch adc x=3605 y=2200 luc=2060 -> man hinh x=156 y=15[0m
+[0;32mI (247379) display: touch adc x=3611 y=2267 luc=1976 -> man hinh x=150 y=14[0m
+[0;32mI (247414) display: touch adc x=3588 y=2336 luc=2006 -> man hinh x=144 y=16[0m
+[0;32mI (247449) display: touch adc x=3593 y=2413 luc=1925 -> man hinh x=137 y=15[0m
+[0;32mI (247484) display: touch adc x=3552 y=2511 luc=1994 -> man hinh x=128 y=18[0m
+[0;32mI (247518) display: touch adc x=3521 y=2616 luc=1884 -> man hinh x=119 y=20[0m
+[0;32mI (247554) display: touch adc x=3518 y=2734 luc=1871 -> man hinh x=108 y=20[0m
+[0;32mI (247589) display: touch adc x=3495 y=2829 luc=1758 -> man hinh x=100 y=22[0m
+[0;32mI (247623) display: touch adc x=3471 y=2925 luc=1824 -> man hinh x=91 y=23[0m
+[0;32mI (247659) display: touch adc x=3487 y=2992 luc=1752 -> man hinh x=85 y=22[0m
+[0;32mI (247693) display: touch adc x=3469 y=3060 luc=1797 -> man hinh x=79 y=24[0m
+[0;32mI (247728) display: touch adc x=3480 y=3116 luc=1733 -> man hinh x=74 y=23[0m
+[0;32mI (247764) display: touch adc x=3479 y=3184 luc=1768 -> man hinh x=67 y=23[0m
+[0;32mI (247799) display: touch adc x=3500 y=3260 luc=1703 -> man hinh x=61 y=21[0m
+[0;32mI (247831) display: touch adc x=3519 y=3328 luc=1691 -> man hinh x=54 y=20[0m
+[0;32mI (247866) display: touch adc x=3516 y=3419 luc=1625 -> man hinh x=46 y=20[0m
+[0;32mI (247901) display: touch adc x=3483 y=3512 luc=1664 -> man hinh x=38 y=23[0m
+[0;32mI (247935) display: touch adc x=3492 y=3583 luc=1592 -> man hinh x=31 y=22[0m
+[0;32mI (247971) display: touch adc x=3488 y=3671 luc=1574 -> man hinh x=24 y=22[0m
+[0;32mI (248006) display: touch adc x=3468 y=3711 luc=1606 -> man hinh x=20 y=24[0m
+[0;32mI (248040) display: touch adc x=3471 y=3747 luc=1631 -> man hinh x=17 y=23[0m
+[0;32mI (248076) display: touch adc x=3468 y=3760 luc=1619 -> man hinh x=15 y=24[0m
+[0;32mI (248111) display: touch adc x=3486 y=3776 luc=1562 -> man hinh x=14 y=22[0m
+[0;32mI (248146) display: touch adc x=3475 y=3807 luc=1583 -> man hinh x=11 y=23[0m
+[0;32mI (248181) display: touch adc x=3475 y=3807 luc=1559 -> man hinh x=11 y=23[0m
+[0;32mI (248216) display: touch adc x=3492 y=3838 luc=1623 -> man hinh x=8 y=22[0m
+[0;32mI (248251) display: touch adc x=3488 y=3820 luc=1613 -> man hinh x=10 y=22[0m
+[0;32mI (248286) display: touch adc x=3484 y=3828 luc=1620 -> man hinh x=9 y=23[0m
+[0;32mI (248321) display: touch adc x=3482 y=3831 luc=1592 -> man hinh x=9 y=23[0m
+[0;32mI (248356) display: touch adc x=3475 y=3843 luc=1628 -> man hinh x=8 y=23[0m
+[0;32mI (248391) display: touch adc x=3472 y=3827 luc=1624 -> man hinh x=9 y=23[0m
+[0;32mI (248426) display: touch adc x=3492 y=3831 luc=1628 -> man hinh x=9 y=22[0m
+[0;32mI (248460) display: touch adc x=3487 y=3848 luc=1613 -> man hinh x=8 y=22[0m
+[0;32mI (248496) display: touch adc x=3473 y=3839 luc=1612 -> man hinh x=8 y=23[0m
+[0;32mI (248531) display: touch adc x=3467 y=3827 luc=1562 -> man hinh x=9 y=24[0m
+[0;32mI (248566) display: touch adc x=3476 y=3838 luc=1571 -> man hinh x=8 y=23[0m
+[0;32mI (248601) display: touch adc x=3458 y=3829 luc=1504 -> man hinh x=9 y=24[0m
+[0;32mI (248636) display: touch adc x=3460 y=3836 luc=1428 -> man hinh x=9 y=24[0m
+[0;32mI (248671) display: touch adc x=3446 y=3839 luc=1369 -> man hinh x=8 y=25[0m
+[0;32mI (248706) display: touch adc x=3435 y=3835 luc=1365 -> man hinh x=9 y=26[0m
+[0;32mI (248741) display: touch adc x=3423 y=3823 luc=1352 -> man hinh x=10 y=27[0m
+[0;32mI (248776) display: touch adc x=3416 y=3819 luc=1074 -> man hinh x=10 y=27[0m
+[0;32mI (248811) display: touch adc x=3425 y=3807 luc=1129 -> man hinh x=11 y=26[0m
+[0;32mI (248846) display: touch adc x=3403 y=3808 luc=1164 -> man hinh x=11 y=28[0m
+[0;32mI (248882) display: touch adc x=3425 y=3801 luc=1168 -> man hinh x=12 y=26[0m
+[0;32mI (248917) display: touch adc x=3424 y=3814 luc=1223 -> man hinh x=11 y=26[0m
+[0;32mI (248951) display: touch adc x=3418 y=3811 luc=1300 -> man hinh x=11 y=27[0m
+[0;32mI (248987) display: touch adc x=3427 y=3831 luc=1249 -> man hinh x=9 y=26[0m
+[0;32mI (249022) display: touch adc x=3422 y=3823 luc=1168 -> man hinh x=10 y=27[0m
+[0;32mI (249057) display: touch adc x=3451 y=3801 luc=1014 -> man hinh x=12 y=25[0m
+[0;32mI (249898) display: touch nghi ngo: adc x=3497 y=3861 luc=1182 (mau 1/2)[0m
+[0;32mI (249934) display: touch adc x=3519 y=3811 luc=1381 -> man hinh x=11 y=20[0m
+[0;32mI (249968) display: touch adc x=3520 y=3784 luc=1576 -> man hinh x=13 y=20[0m
+[0;32mI (250003) display: touch adc x=3496 y=3728 luc=1481 -> man hinh x=18 y=22[0m
+[0;32mI (250039) display: touch adc x=3516 y=3640 luc=1535 -> man hinh x=26 y=20[0m
+[0;32mI (250074) display: touch adc x=3524 y=3568 luc=1644 -> man hinh x=33 y=20[0m
+[0;32mI (250109) display: touch adc x=3528 y=3460 luc=1683 -> man hinh x=43 y=20[0m
+[0;32mI (250144) display: touch adc x=3561 y=3369 luc=1573 -> man hinh x=51 y=18[0m
+[0;32mI (250179) display: touch adc x=3552 y=3279 luc=1760 -> man hinh x=59 y=18[0m
+[0;32mI (250214) display: touch adc x=3567 y=3177 luc=1759 -> man hinh x=68 y=17[0m
+[0;32mI (250249) display: touch adc x=3577 y=3085 luc=1780 -> man hinh x=76 y=16[0m
+[0;32mI (250284) display: touch adc x=3600 y=2997 luc=1901 -> man hinh x=84 y=15[0m
+[0;32mI (250319) display: touch adc x=3588 y=2902 luc=1782 -> man hinh x=93 y=16[0m
+[0;32mI (250354) display: touch adc x=3611 y=2817 luc=1939 -> man hinh x=101 y=14[0m
+[0;32mI (250389) display: touch adc x=3602 y=2745 luc=1852 -> man hinh x=107 y=15[0m
+[0;32mI (250424) display: touch adc x=3608 y=2656 luc=1968 -> man hinh x=115 y=14[0m
+[0;32mI (250459) display: touch adc x=3625 y=2576 luc=1903 -> man hinh x=122 y=13[0m
+[0;32mI (250493) display: touch adc x=3555 y=2495 luc=1373 -> man hinh x=130 y=18[0m
+[0;32mI (250529) display: touch adc x=3636 y=2443 luc=1956 -> man hinh x=134 y=13[0m
+[0;32mI (250564) display: touch adc x=3643 y=2379 luc=2008 -> man hinh x=140 y=12[0m
+[0;32mI (250599) display: touch adc x=3637 y=2320 luc=1976 -> man hinh x=145 y=13[0m
+[0;32mI (250634) display: touch adc x=3655 y=2271 luc=2024 -> man hinh x=150 y=11[0m
+[0;32mI (250669) display: touch adc x=3659 y=2236 luc=1985 -> man hinh x=153 y=11[0m
+[0;32mI (250704) display: touch adc x=3656 y=2181 luc=1939 -> man hinh x=158 y=11[0m
+[0;32mI (250739) display: touch adc x=3660 y=2126 luc=2093 -> man hinh x=163 y=11[0m
+[0;32mI (250774) display: touch adc x=3662 y=2082 luc=2115 -> man hinh x=167 y=11[0m
+[0;32mI (250808) display: touch adc x=3678 y=2028 luc=1898 -> man hinh x=172 y=10[0m
+[0;32mI (250844) display: touch adc x=3649 y=1983 luc=2131 -> man hinh x=176 y=12[0m
+[0;32mI (250879) display: touch adc x=3656 y=1936 luc=2160 -> man hinh x=180 y=11[0m
+[0;32mI (250914) display: touch adc x=3682 y=1889 luc=1989 -> man hinh x=184 y=10[0m
+[0;32mI (250949) display: touch adc x=3689 y=1832 luc=2196 -> man hinh x=190 y=9[0m
+[0;32mI (250984) display: touch adc x=3691 y=1795 luc=2226 -> man hinh x=193 y=9[0m
+[0;32mI (251018) display: touch adc x=3700 y=1759 luc=2133 -> man hinh x=196 y=8[0m
+[0;32mI (251054) display: touch adc x=3695 y=1716 luc=2075 -> man hinh x=200 y=9[0m
+[0;32mI (251089) display: touch adc x=3697 y=1683 luc=2221 -> man hinh x=203 y=9[0m
+[0;32mI (251124) display: touch adc x=3694 y=1659 luc=2253 -> man hinh x=205 y=9[0m
+[0;32mI (251159) display: touch adc x=3700 y=1624 luc=2246 -> man hinh x=208 y=8[0m
+[0;32mI (251194) display: touch adc x=3695 y=1607 luc=2173 -> man hinh x=210 y=9[0m
+[0;32mI (251228) display: touch adc x=3723 y=1559 luc=2187 -> man hinh x=214 y=7[0m
+[0;32mI (251264) display: touch adc x=3708 y=1516 luc=2272 -> man hinh x=218 y=8[0m
+[0;32mI (251299) display: touch adc x=3703 y=1477 luc=2274 -> man hinh x=222 y=8[0m
+[0;32mI (251334) display: touch adc x=3740 y=1436 luc=2239 -> man hinh x=225 y=6[0m
+[0;32mI (251369) display: touch adc x=3743 y=1399 luc=2251 -> man hinh x=229 y=6[0m
+[0;32mI (251404) display: touch adc x=3726 y=1373 luc=2341 -> man hinh x=231 y=7[0m
+[0;32mI (251416) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (251417) uart: queue free spaces: 30[0m
+[0;32mI (251439) display: touch adc x=3680 y=1347 luc=1761 -> man hinh x=233 y=10[0m
+[0;32mI (251474) display: touch adc x=3739 y=1315 luc=2309 -> man hinh x=236 y=6[0m
+[0;32mI (251509) display: touch adc x=3740 y=1289 luc=2318 -> man hinh x=239 y=6[0m
+[0;32mI (251544) display: touch adc x=3738 y=1266 luc=2296 -> man hinh x=241 y=6[0m
+[0;32mI (251579) display: touch adc x=3752 y=1241 luc=2325 -> man hinh x=243 y=5[0m
+[0;32mI (251614) display: touch adc x=3760 y=1222 luc=2371 -> man hinh x=245 y=5[0m
+[0;32mI (251649) display: touch adc x=3713 y=1206 luc=2286 -> man hinh x=246 y=8[0m
+[0;32mI (251684) display: touch adc x=3631 y=1167 luc=1238 -> man hinh x=250 y=13[0m
+[0;32mI (251719) display: touch adc x=3775 y=1134 luc=2356 -> man hinh x=253 y=4[0m
+[0;32mI (251754) display: touch adc x=3759 y=1091 luc=2344 -> man hinh x=256 y=5[0m
+[0;32mI (251789) display: touch adc x=3783 y=1055 luc=2081 -> man hinh x=260 y=3[0m
+[0;32mI (251824) display: touch adc x=3743 y=983 luc=2274 -> man hinh x=266 y=6[0m
+[0;32mI (251859) display: touch adc x=3771 y=951 luc=2375 -> man hinh x=269 y=4[0m
+[0;32mI (251894) display: touch adc x=3772 y=922 luc=2366 -> man hinh x=272 y=4[0m
+[0;32mI (251929) display: touch adc x=3729 y=904 luc=2149 -> man hinh x=273 y=7[0m
+[0;32mI (252765) display: touch nghi ngo: adc x=3584 y=2156 luc=1781 (mau 1/2)[0m
+[0;32mI (252801) display: touch adc x=3599 y=2159 luc=1922 -> man hinh x=160 y=15[0m
+[0;32mI (252836) display: touch adc x=3580 y=2156 luc=1935 -> man hinh x=160 y=16[0m
+[0;32mI (252872) display: touch adc x=3579 y=2147 luc=1877 -> man hinh x=161 y=16[0m
+[0;32mI (252907) display: touch adc x=3543 y=2143 luc=1941 -> man hinh x=161 y=19[0m
+[0;32mI (252942) display: touch adc x=3501 y=2133 luc=2001 -> man hinh x=162 y=21[0m
+[0;32mI (252977) display: touch adc x=3488 y=2117 luc=2022 -> man hinh x=164 y=22[0m
+[0;32mI (253012) display: touch adc x=3436 y=2120 luc=1952 -> man hinh x=164 y=26[0m
+[0;32mI (253047) display: touch adc x=3390 y=2124 luc=1987 -> man hinh x=163 y=29[0m
+[0;32mI (253082) display: touch adc x=3347 y=2104 luc=1979 -> man hinh x=165 y=31[0m
+[0;32mI (253117) display: touch adc x=3311 y=2091 luc=1980 -> man hinh x=166 y=34[0m
+[0;32mI (253152) display: touch adc x=3246 y=2100 luc=1995 -> man hinh x=165 y=38[0m
+[0;32mI (253187) display: touch adc x=3214 y=2092 luc=2016 -> man hinh x=166 y=40[0m
+[0;32mI (253222) display: touch adc x=3184 y=2075 luc=1992 -> man hinh x=168 y=42[0m
+[0;32mI (253257) display: touch adc x=3139 y=2074 luc=1996 -> man hinh x=168 y=45[0m
+[0;32mI (253292) display: touch adc x=3098 y=2071 luc=2018 -> man hinh x=168 y=48[0m
+[0;32mI (253327) display: touch adc x=3066 y=2064 luc=2032 -> man hinh x=169 y=50[0m
+[0;32mI (253362) display: touch adc x=3022 y=2071 luc=2024 -> man hinh x=168 y=53[0m
+[0;32mI (253397) display: touch adc x=2971 y=2067 luc=1980 -> man hinh x=168 y=56[0m
+[0;32mI (253432) display: touch adc x=2940 y=2072 luc=2007 -> man hinh x=168 y=58[0m
+[0;32mI (253467) display: touch adc x=2896 y=2067 luc=2001 -> man hinh x=168 y=61[0m
+[0;32mI (253502) display: touch adc x=2867 y=2054 luc=2069 -> man hinh x=169 y=63[0m
+[0;32mI (253536) display: touch adc x=2863 y=2031 luc=2095 -> man hinh x=172 y=63[0m
+[0;32mI (253572) display: touch adc x=2820 y=2035 luc=2065 -> man hinh x=171 y=66[0m
+[0;32mI (253607) display: touch adc x=2799 y=2023 luc=2065 -> man hinh x=172 y=67[0m
+[0;32mI (253641) display: touch adc x=2760 y=2026 luc=2064 -> man hinh x=172 y=70[0m
+[0;32mI (253677) display: touch adc x=2739 y=2020 luc=2072 -> man hinh x=173 y=71[0m
+[0;32mI (253712) display: touch adc x=2728 y=2020 luc=2074 -> man hinh x=173 y=72[0m
+[0;32mI (253746) display: touch adc x=2707 y=2017 luc=2072 -> man hinh x=173 y=73[0m
+[0;32mI (253782) display: touch adc x=2696 y=2019 luc=2094 -> man hinh x=173 y=74[0m
+[0;32mI (253817) display: touch adc x=2672 y=2019 luc=2064 -> man hinh x=173 y=75[0m
+[0;32mI (253852) display: touch adc x=2660 y=2031 luc=2082 -> man hinh x=172 y=76[0m
+[0;32mI (253888) display: touch adc x=2648 y=2031 luc=2069 -> man hinh x=172 y=77[0m
+[0;32mI (253923) display: touch adc x=2620 y=2033 luc=2040 -> man hinh x=171 y=79[0m
+[0;32mI (253958) display: touch adc x=2599 y=2039 luc=2050 -> man hinh x=171 y=80[0m
+[0;32mI (253992) display: touch adc x=2592 y=2039 luc=2065 -> man hinh x=171 y=81[0m
+[0;32mI (254028) display: touch adc x=2579 y=2025 luc=2043 -> man hinh x=172 y=82[0m
+[0;32mI (254063) display: touch adc x=2527 y=2031 luc=1814 -> man hinh x=172 y=85[0m
+[0;32mI (254098) display: touch adc x=2525 y=2040 luc=1850 -> man hinh x=171 y=85[0m
+[0;32mI (254133) display: touch adc x=2503 y=2038 luc=1866 -> man hinh x=171 y=86[0m
+[0;32mI (254168) display: touch adc x=2483 y=2043 luc=1898 -> man hinh x=170 y=88[0m
+[0;32mI (254203) display: touch adc x=2449 y=2056 luc=1939 -> man hinh x=169 y=90[0m
+[0;32mI (254238) display: touch adc x=2395 y=2066 luc=1955 -> man hinh x=168 y=94[0m
+[0;32mI (254273) display: touch adc x=2370 y=2074 luc=1937 -> man hinh x=168 y=95[0m
+[0;32mI (254308) display: touch adc x=2337 y=2080 luc=1928 -> man hinh x=167 y=97[0m
+[0;32mI (254343) display: touch adc x=2315 y=2083 luc=1920 -> man hinh x=167 y=99[0m
+[0;32mI (254378) display: touch adc x=2268 y=2089 luc=1923 -> man hinh x=166 y=102[0m
+[0;32mI (254413) display: touch adc x=2236 y=2088 luc=1849 -> man hinh x=166 y=104[0m
+[0;32mI (254448) display: touch adc x=2172 y=2088 luc=1778 -> man hinh x=166 y=108[0m
+[0;32mI (254483) display: touch adc x=2143 y=2094 luc=1832 -> man hinh x=166 y=110[0m
+[0;32mI (254518) display: touch adc x=2082 y=2097 luc=1803 -> man hinh x=166 y=114[0m
+[0;32mI (254552) display: touch adc x=2015 y=2103 luc=1788 -> man hinh x=165 y=118[0m
+[0;32mI (254588) display: touch adc x=1943 y=2099 luc=1753 -> man hinh x=165 y=123[0m
+[0;32mI (254623) display: touch adc x=1914 y=2106 luc=1783 -> man hinh x=165 y=125[0m
+[0;32mI (254658) display: touch adc x=1865 y=2112 luc=1779 -> man hinh x=164 y=128[0m
+[0;32mI (254692) display: touch adc x=1849 y=2118 luc=1744 -> man hinh x=164 y=129[0m
+[0;32mI (254728) display: touch adc x=1816 y=2120 luc=1704 -> man hinh x=164 y=131[0m
+[0;32mI (254763) display: touch adc x=1767 y=2128 luc=1697 -> man hinh x=163 y=134[0m
+[0;32mI (254798) display: touch adc x=1739 y=2131 luc=1745 -> man hinh x=163 y=136[0m
+[0;32mI (254833) display: touch adc x=1686 y=2137 luc=1719 -> man hinh x=162 y=140[0m
+[0;32mI (254868) display: touch adc x=1625 y=2146 luc=1698 -> man hinh x=161 y=144[0m
+[0;32mI (254904) display: touch adc x=1575 y=2149 luc=1700 -> man hinh x=161 y=147[0m
+[0;32mI (254939) display: touch adc x=1552 y=2156 luc=1741 -> man hinh x=160 y=148[0m
+[0;32mI (254974) display: touch adc x=1528 y=2145 luc=1707 -> man hinh x=161 y=150[0m
+[0;32mI (255009) display: touch adc x=1484 y=2145 luc=1652 -> man hinh x=161 y=153[0m
+[0;32mI (255044) display: touch adc x=1440 y=2142 luc=1680 -> man hinh x=162 y=156[0m
+[0;32mI (255079) display: touch adc x=1396 y=2140 luc=1639 -> man hinh x=162 y=159[0m
+[0;32mI (255114) display: touch adc x=1356 y=2153 luc=1699 -> man hinh x=161 y=161[0m
+[0;32mI (255149) display: touch adc x=1307 y=2151 luc=1694 -> man hinh x=161 y=164[0m
+[0;32mI (255184) display: touch adc x=1263 y=2141 luc=1652 -> man hinh x=162 y=167[0m
+[0;32mI (255219) display: touch adc x=1217 y=2144 luc=1620 -> man hinh x=161 y=170[0m
+[0;32mI (255254) display: touch adc x=1148 y=2155 luc=1565 -> man hinh x=160 y=175[0m
+[0;32mI (255289) display: touch adc x=1091 y=2158 luc=1602 -> man hinh x=160 y=179[0m
+[0;32mI (255324) display: touch adc x=1036 y=2160 luc=1565 -> man hinh x=160 y=182[0m
+[0;32mI (255359) display: touch adc x=1009 y=2156 luc=1558 -> man hinh x=160 y=184[0m
+[0;32mI (255394) display: touch adc x=969 y=2162 luc=1579 -> man hinh x=160 y=186[0m
+[0;32mI (255429) display: touch adc x=916 y=2170 luc=1494 -> man hinh x=159 y=190[0m
+[0;32mI (255464) display: touch adc x=876 y=2162 luc=1524 -> man hinh x=160 y=193[0m
+[0;32mI (255499) display: touch adc x=842 y=2156 luc=1512 -> man hinh x=160 y=195[0m
+[0;32mI (255534) display: touch adc x=796 y=2167 luc=1453 -> man hinh x=159 y=198[0m
+[0;32mI (255569) display: touch adc x=768 y=2155 luc=1482 -> man hinh x=160 y=200[0m
+[0;32mI (255604) display: touch adc x=745 y=2159 luc=1475 -> man hinh x=160 y=201[0m
+[0;32mI (255639) display: touch adc x=719 y=2163 luc=1460 -> man hinh x=160 y=203[0m
+[0;32mI (255674) display: touch adc x=666 y=2168 luc=1436 -> man hinh x=159 y=206[0m
+[0;32mI (255708) display: touch adc x=639 y=2162 luc=1452 -> man hinh x=160 y=208[0m
+[0;32mI (255744) display: touch adc x=613 y=2173 luc=1456 -> man hinh x=159 y=210[0m
+[0;32mI (255779) display: touch adc x=588 y=2172 luc=1424 -> man hinh x=159 y=211[0m
+[0;32mI (255813) display: touch adc x=560 y=2163 luc=1381 -> man hinh x=160 y=213[0m
+[0;32mI (255846) display: touch adc x=529 y=2173 luc=1385 -> man hinh x=159 y=215[0m
+[0;32mI (255881) display: touch adc x=520 y=2164 luc=1433 -> man hinh x=160 y=216[0m
+[0;32mI (255916) display: touch adc x=485 y=2179 luc=1456 -> man hinh x=158 y=218[0m
+[0;32mI (255951) display: touch adc x=456 y=2171 luc=1426 -> man hinh x=159 y=220[0m
+[0;32mI (255986) display: touch adc x=454 y=2170 luc=1435 -> man hinh x=159 y=220[0m
+[0;32mI (256020) display: touch adc x=427 y=2173 luc=1446 -> man hinh x=159 y=222[0m
+[0;32mI (256056) display: touch adc x=416 y=2160 luc=1461 -> man hinh x=160 y=223[0m
+[0;32mI (256091) display: touch adc x=402 y=2165 luc=1467 -> man hinh x=159 y=223[0m
+[0;32mI (256125) display: touch adc x=384 y=2155 luc=1450 -> man hinh x=160 y=225[0m
+[0;32mI (256161) display: touch adc x=356 y=2159 luc=1461 -> man hinh x=160 y=226[0m
+[0;32mI (256195) display: touch adc x=360 y=2159 luc=1449 -> man hinh x=160 y=226[0m
+[0;32mI (256230) display: touch adc x=336 y=2160 luc=1354 -> man hinh x=160 y=228[0m
+[0;32mI (256266) display: touch adc x=336 y=2145 luc=1350 -> man hinh x=161 y=228[0m
+[0;32mI (256301) display: touch adc x=333 y=2154 luc=1290 -> man hinh x=160 y=228[0m
+[0;32mI (256336) display: touch adc x=343 y=2155 luc=1113 -> man hinh x=160 y=227[0m
+[0;32mI (256371) display: touch adc x=325 y=2150 luc=1223 -> man hinh x=161 y=228[0m
+[0;32mI (256406) display: touch adc x=346 y=2153 luc=1046 -> man hinh x=161 y=227[0m
+[0;32mI (256441) display: touch adc x=338 y=2155 luc=1072 -> man hinh x=160 y=228[0m
+[0;32mI (256476) display: touch adc x=342 y=2158 luc=979 -> man hinh x=160 y=227[0m
+[0;32mI (256511) display: touch adc x=368 y=2160 luc=884 -> man hinh x=160 y=226[0m
+[0;32mI (256546) display: touch adc x=332 y=2151 luc=1067 -> man hinh x=161 y=228[0m
+[0;32mI (270092) display: touch nghi ngo: adc x=3360 y=483 luc=1276 (mau 1/2)[0m
+[0;32mI (270127) display: touch adc x=3393 y=460 luc=1350 -> man hinh x=313 y=28[0m
+[0;32mI (270163) display: touch adc x=3447 y=453 luc=1807 -> man hinh x=314 y=25[0m
+[0;32mI (270198) display: touch adc x=3455 y=461 luc=2180 -> man hinh x=313 y=24[0m
+[0;32mI (270233) display: touch adc x=3458 y=464 luc=2213 -> man hinh x=313 y=24[0m
+[0;32mI (270268) display: touch adc x=3469 y=465 luc=2217 -> man hinh x=313 y=24[0m
+[0;32mI (270303) display: touch adc x=3469 y=464 luc=2225 -> man hinh x=313 y=24[0m
+[0;32mI (270338) display: touch adc x=3455 y=467 luc=2236 -> man hinh x=313 y=24[0m
+[0;32mI (270373) display: touch adc x=3487 y=467 luc=2264 -> man hinh x=313 y=22[0m
+[0;32mI (270408) display: touch adc x=3472 y=474 luc=2262 -> man hinh x=312 y=23[0m
+[0;32mI (270443) display: touch adc x=3461 y=475 luc=2261 -> man hinh x=312 y=24[0m
+[0;32mI (270478) display: touch adc x=3432 y=476 luc=2062 -> man hinh x=312 y=26[0m
+[0;32mI (270513) display: touch adc x=3388 y=475 luc=2284 -> man hinh x=312 y=29[0m
+[0;32mI (270548) display: touch adc x=3365 y=472 luc=2280 -> man hinh x=312 y=30[0m
+[0;32mI (270583) display: touch adc x=3363 y=470 luc=2284 -> man hinh x=312 y=30[0m
+[0;32mI (270618) display: touch adc x=3314 y=467 luc=2285 -> man hinh x=313 y=34[0m
+[0;32mI (270653) display: touch adc x=3264 y=465 luc=2286 -> man hinh x=313 y=37[0m
+[0;32mI (270688) display: touch adc x=3254 y=459 luc=2226 -> man hinh x=313 y=38[0m
+[0;32mI (270723) display: touch adc x=3207 y=451 luc=1979 -> man hinh x=314 y=41[0m
+[0;32mI (270758) display: touch adc x=3162 y=449 luc=2096 -> man hinh x=314 y=44[0m
+[0;32mI (270793) display: touch adc x=3131 y=450 luc=2202 -> man hinh x=314 y=46[0m
+[0;32mI (270828) display: touch adc x=3106 y=454 luc=2263 -> man hinh x=314 y=47[0m
+[0;32mI (270863) display: touch adc x=3071 y=452 luc=2286 -> man hinh x=314 y=49[0m
+[0;32mI (270899) display: touch adc x=3040 y=453 luc=2213 -> man hinh x=314 y=51[0m
+[0;32mI (270934) display: touch adc x=3003 y=457 luc=2022 -> man hinh x=314 y=54[0m
+[0;32mI (270969) display: touch adc x=2963 y=457 luc=1908 -> man hinh x=314 y=57[0m
+[0;32mI (271004) display: touch adc x=2936 y=458 luc=2138 -> man hinh x=314 y=58[0m
+[0;32mI (271039) display: touch adc x=2890 y=462 luc=2183 -> man hinh x=313 y=61[0m
+[0;32mI (271074) display: touch adc x=2852 y=469 luc=2214 -> man hinh x=313 y=64[0m
+[0;32mI (271109) display: touch adc x=2825 y=475 luc=2194 -> man hinh x=312 y=65[0m
+[0;32mI (271144) display: touch adc x=2792 y=482 luc=2204 -> man hinh x=311 y=68[0m
+[0;32mI (271179) display: touch adc x=2720 y=489 luc=2207 -> man hinh x=311 y=72[0m
+[0;32mI (271214) display: touch adc x=2678 y=490 luc=2157 -> man hinh x=311 y=75[0m
+[0;32mI (271248) display: touch adc x=2634 y=490 luc=2086 -> man hinh x=311 y=78[0m
+[0;32mI (271284) display: touch adc x=2561 y=500 luc=2157 -> man hinh x=310 y=83[0m
+[0;32mI (271319) display: touch adc x=2539 y=502 luc=2199 -> man hinh x=310 y=84[0m
+[0;32mI (271354) display: touch adc x=2504 y=489 luc=2153 -> man hinh x=311 y=86[0m
+[0;32mI (271389) display: touch adc x=2470 y=480 luc=2110 -> man hinh x=312 y=89[0m
+[1;31mE (271418) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;32mI (271424) display: touch adc x=2419 y=477 luc=2113 -> man hinh x=312 y=92[0m
+[0;32mI (271458) display: touch adc x=2397 y=472 luc=2123 -> man hinh x=312 y=93[0m
+[0;32mI (271494) display: touch adc x=2352 y=468 luc=1991 -> man hinh x=313 y=96[0m
+[0;32mI (271529) display: touch adc x=2288 y=468 luc=2074 -> man hinh x=313 y=101[0m
+[0;32mI (271564) display: touch adc x=2257 y=466 luc=2140 -> man hinh x=313 y=103[0m
+[0;32mI (271599) display: touch adc x=2216 y=462 luc=2114 -> man hinh x=313 y=105[0m
+[0;32mI (271634) display: touch adc x=2144 y=457 luc=2050 -> man hinh x=314 y=110[0m
+[0;32mI (271669) display: touch adc x=2063 y=467 luc=2080 -> man hinh x=313 y=115[0m
+[0;32mI (271703) display: touch adc x=1987 y=465 luc=2000 -> man hinh x=313 y=120[0m
+[0;32mI (271739) display: touch adc x=1909 y=453 luc=1882 -> man hinh x=314 y=125[0m
+[0;32mI (271774) display: touch adc x=1829 y=452 luc=2024 -> man hinh x=314 y=130[0m
+[0;32mI (271809) display: touch adc x=1784 y=449 luc=2008 -> man hinh x=314 y=133[0m
+[0;32mI (271844) display: touch adc x=1732 y=442 luc=1990 -> man hinh x=315 y=137[0m
+[0;32mI (271878) display: touch adc x=1710 y=437 luc=1938 -> man hinh x=315 y=138[0m
+[0;32mI (271914) display: touch adc x=1664 y=432 luc=1905 -> man hinh x=316 y=141[0m
+[0;32mI (271949) display: touch adc x=1619 y=434 luc=1934 -> man hinh x=316 y=144[0m
+[0;32mI (271984) display: touch adc x=1584 y=434 luc=2016 -> man hinh x=316 y=146[0m
+[0;32mI (272018) display: touch adc x=1546 y=435 luc=1976 -> man hinh x=316 y=149[0m
+[0;32mI (272054) display: touch adc x=1495 y=434 luc=1958 -> man hinh x=316 y=152[0m
+[0;32mI (272089) display: touch adc x=1442 y=432 luc=1892 -> man hinh x=316 y=156[0m
+[0;32mI (272124) display: touch adc x=1420 y=434 luc=1946 -> man hinh x=316 y=157[0m
+[0;32mI (272159) display: touch adc x=1387 y=440 luc=1995 -> man hinh x=315 y=159[0m
+[0;32mI (272193) display: touch adc x=1316 y=440 luc=1969 -> man hinh x=315 y=164[0m
+[0;32mI (272229) display: touch adc x=1300 y=434 luc=1960 -> man hinh x=316 y=165[0m
+[0;32mI (272264) display: touch adc x=1269 y=436 luc=1860 -> man hinh x=316 y=167[0m
+[0;32mI (272298) display: touch adc x=1194 y=438 luc=1852 -> man hinh x=315 y=172[0m
+[0;32mI (272334) display: touch adc x=1170 y=442 luc=1973 -> man hinh x=315 y=173[0m
+[0;32mI (272369) display: touch adc x=1131 y=444 luc=1981 -> man hinh x=315 y=176[0m
+[0;32mI (272404) display: touch adc x=1083 y=441 luc=1908 -> man hinh x=315 y=179[0m
+[0;33mW (272419) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (272439) display: touch adc x=1000 y=443 luc=1836 -> man hinh x=315 y=184[0m
+[0;32mI (272474) display: touch adc x=971 y=449 luc=1943 -> man hinh x=314 y=186[0m
+[0;32mI (272508) display: touch adc x=924 y=452 luc=2004 -> man hinh x=314 y=189[0m
+[0;32mI (272544) display: touch adc x=856 y=452 luc=1947 -> man hinh x=314 y=194[0m
+[0;32mI (272579) display: touch adc x=800 y=454 luc=1769 -> man hinh x=314 y=198[0m
+[0;32mI (272614) display: touch adc x=744 y=456 luc=1897 -> man hinh x=314 y=201[0m
+[0;32mI (272649) display: touch adc x=715 y=457 luc=1960 -> man hinh x=314 y=203[0m
+[0;32mI (272684) display: touch adc x=658 y=458 luc=1964 -> man hinh x=314 y=207[0m
+[0;32mI (272718) display: touch adc x=652 y=458 luc=2017 -> man hinh x=314 y=207[0m
+[0;32mI (272754) display: touch adc x=627 y=458 luc=2001 -> man hinh x=314 y=209[0m
+[0;32mI (272789) display: touch adc x=612 y=456 luc=1951 -> man hinh x=314 y=210[0m
+[0;32mI (272823) display: touch adc x=562 y=457 luc=1802 -> man hinh x=314 y=213[0m
+[0;32mI (272856) display: touch adc x=550 y=455 luc=1835 -> man hinh x=314 y=214[0m
+[0;32mI (272891) display: touch adc x=528 y=460 luc=1868 -> man hinh x=313 y=215[0m
+[0;32mI (272925) display: touch adc x=489 y=464 luc=1943 -> man hinh x=313 y=218[0m
+[0;32mI (272961) display: touch adc x=496 y=465 luc=1957 -> man hinh x=313 y=217[0m
+[0;32mI (272996) display: touch adc x=483 y=466 luc=1996 -> man hinh x=313 y=218[0m
+[0;32mI (273030) display: touch adc x=481 y=467 luc=1978 -> man hinh x=313 y=218[0m
+[0;32mI (273066) display: touch adc x=464 y=474 luc=2001 -> man hinh x=312 y=219[0m
+[0;32mI (273101) display: touch adc x=463 y=479 luc=1969 -> man hinh x=312 y=219[0m
+[0;32mI (273135) display: touch adc x=442 y=483 luc=1944 -> man hinh x=311 y=221[0m
+[0;32mI (273171) display: touch adc x=426 y=486 luc=1915 -> man hinh x=311 y=222[0m
+[0;32mI (273206) display: touch adc x=457 y=493 luc=1689 -> man hinh x=310 y=220[0m
+[0;32mI (278561) display: touch nghi ngo: adc x=248 y=3868 luc=258 (mau 1/2)[0m
+[0;32mI (278597) display: touch adc x=242 y=3864 luc=291 -> man hinh x=6 y=234[0m
+[0;32mI (278632) display: touch adc x=240 y=3878 luc=320 -> man hinh x=5 y=234[0m
+[0;32mI (278667) display: touch adc x=246 y=3879 luc=339 -> man hinh x=5 y=234[0m
+[0;32mI (278702) display: touch adc x=233 y=3872 luc=286 -> man hinh x=5 y=234[0m
+[0;32mI (278737) display: touch adc x=228 y=3871 luc=367 -> man hinh x=5 y=235[0m
+[0;32mI (278772) display: touch adc x=229 y=3856 luc=337 -> man hinh x=7 y=235[0m
+[0;32mI (278807) display: touch adc x=228 y=3856 luc=355 -> man hinh x=7 y=235[0m
+[0;32mI (278842) display: touch adc x=230 y=3864 luc=352 -> man hinh x=6 y=235[0m
+[0;32mI (278877) display: touch adc x=229 y=3871 luc=343 -> man hinh x=5 y=235[0m
+[0;32mI (278913) display: touch adc x=230 y=3863 luc=354 -> man hinh x=6 y=235[0m
+[0;32mI (278948) display: touch adc x=228 y=3860 luc=319 -> man hinh x=6 y=235[0m
+[0;32mI (278983) display: touch adc x=225 y=3860 luc=335 -> man hinh x=6 y=235[0m
+[0;32mI (279018) display: touch adc x=220 y=3857 luc=330 -> man hinh x=7 y=235[0m
+[0;32mI (279053) display: touch adc x=226 y=3856 luc=345 -> man hinh x=7 y=235[0m
+[0;32mI (279088) display: touch adc x=232 y=3854 luc=336 -> man hinh x=7 y=235[0m
+[0;32mI (279123) display: touch adc x=229 y=3867 luc=315 -> man hinh x=6 y=235[0m
+[0;32mI (279158) display: touch adc x=229 y=3856 luc=316 -> man hinh x=7 y=235[0m
+[0;32mI (279193) display: touch adc x=226 y=3856 luc=321 -> man hinh x=7 y=235[0m
+[0;32mI (279228) display: touch adc x=240 y=3855 luc=342 -> man hinh x=7 y=234[0m
+[0;32mI (279263) display: touch adc x=230 y=3863 luc=320 -> man hinh x=6 y=235[0m
+[0;32mI (279298) display: touch adc x=228 y=3870 luc=356 -> man hinh x=6 y=235[0m
+[0;32mI (279333) display: touch adc x=228 y=3855 luc=347 -> man hinh x=7 y=235[0m
+[0;32mI (279368) display: touch adc x=227 y=3854 luc=342 -> man hinh x=7 y=235[0m
+[0;32mI (279403) display: touch adc x=228 y=3863 luc=345 -> man hinh x=6 y=235[0m
+[0;32mI (279438) display: touch adc x=220 y=3871 luc=337 -> man hinh x=5 y=235[0m
+[0;32mI (279473) display: touch adc x=228 y=3868 luc=268 -> man hinh x=6 y=235[0m
+[0;32mI (279508) display: touch adc x=227 y=3850 luc=322 -> man hinh x=7 y=235[0m
+[0;32mI (279543) display: touch adc x=226 y=3871 luc=334 -> man hinh x=5 y=235[0m
+[0;32mI (279578) display: touch adc x=225 y=3865 luc=312 -> man hinh x=6 y=235[0m
+[0;32mI (279613) display: touch adc x=225 y=3871 luc=322 -> man hinh x=5 y=235[0m
+[0;32mI (279648) display: touch adc x=220 y=3879 luc=342 -> man hinh x=5 y=235[0m
+[0;32mI (279683) display: touch adc x=224 y=3858 luc=324 -> man hinh x=7 y=235[0m
+[0;32mI (279718) display: touch adc x=227 y=3867 luc=320 -> man hinh x=6 y=235[0m
+[0;32mI (279753) display: touch adc x=219 y=3871 luc=336 -> man hinh x=5 y=235[0m
+[0;32mI (279788) display: touch adc x=224 y=3858 luc=343 -> man hinh x=7 y=235[0m
+[0;32mI (279823) display: touch adc x=227 y=3859 luc=335 -> man hinh x=7 y=235[0m
+[0;32mI (279858) display: touch adc x=225 y=3883 luc=330 -> man hinh x=4 y=235[0m
+[0;32mI (279893) display: touch adc x=214 y=3887 luc=323 -> man hinh x=4 y=236[0m
+[0;32mI (279928) display: touch adc x=221 y=3863 luc=336 -> man hinh x=6 y=235[0m
+[0;32mI (279963) display: touch adc x=217 y=3876 luc=355 -> man hinh x=5 y=236[0m
+[0;32mI (279998) display: touch adc x=218 y=3877 luc=323 -> man hinh x=5 y=235[0m
+[0;32mI (280033) display: touch adc x=216 y=3883 luc=340 -> man hinh x=4 y=236[0m
+[0;32mI (280068) display: touch adc x=217 y=3885 luc=406 -> man hinh x=4 y=236[0m
+[0;32mI (280103) display: touch adc x=210 y=3876 luc=338 -> man hinh x=5 y=236[0m
+[0;32mI (280138) display: touch adc x=211 y=3887 luc=361 -> man hinh x=4 y=236[0m
+[0;32mI (280173) display: touch adc x=218 y=3872 luc=359 -> man hinh x=5 y=235[0m
+[0;32mI (280208) display: touch adc x=217 y=3887 luc=357 -> man hinh x=4 y=236[0m
+[0;32mI (280243) display: touch adc x=210 y=3878 luc=358 -> man hinh x=5 y=236[0m
+[0;32mI (280278) display: touch adc x=226 y=3876 luc=336 -> man hinh x=5 y=235[0m
+[0;32mI (280313) display: touch adc x=211 y=3876 luc=338 -> man hinh x=5 y=236[0m
+[0;32mI (280348) display: touch adc x=213 y=3891 luc=350 -> man hinh x=4 y=236[0m
+[0;32mI (280383) display: touch adc x=214 y=3880 luc=317 -> man hinh x=5 y=236[0m
+[0;32mI (280418) display: touch adc x=216 y=3894 luc=344 -> man hinh x=3 y=236[0m
+[0;32mI (280453) display: touch adc x=205 y=3872 luc=347 -> man hinh x=5 y=236[0m
+[0;32mI (280488) display: touch adc x=214 y=3866 luc=346 -> man hinh x=6 y=236[0m
+[0;32mI (280523) display: touch adc x=213 y=3879 luc=343 -> man hinh x=5 y=236[0m
+[0;32mI (280558) display: touch adc x=216 y=3901 luc=327 -> man hinh x=3 y=236[0m
+[0;32mI (280593) display: touch adc x=217 y=3877 luc=324 -> man hinh x=5 y=236[0m
+[0;32mI (280628) display: touch adc x=212 y=3895 luc=329 -> man hinh x=3 y=236[0m
+[0;32mI (280663) display: touch adc x=210 y=3899 luc=345 -> man hinh x=3 y=236[0m
+[0;32mI (280698) display: touch adc x=209 y=3882 luc=296 -> man hinh x=4 y=236[0m
+[0;32mI (280733) display: touch adc x=216 y=3876 luc=324 -> man hinh x=5 y=236[0m
+[0;32mI (280768) display: touch adc x=217 y=3895 luc=338 -> man hinh x=3 y=236[0m
+[0;32mI (280803) display: touch adc x=213 y=3891 luc=325 -> man hinh x=4 y=236[0m
+[0;32mI (280838) display: touch adc x=213 y=3880 luc=328 -> man hinh x=5 y=236[0m
+[0;32mI (280873) display: touch adc x=217 y=3899 luc=338 -> man hinh x=3 y=236[0m
+[0;32mI (280909) display: touch adc x=225 y=3878 luc=337 -> man hinh x=5 y=235[0m
+[0;32mI (280944) display: touch adc x=216 y=3887 luc=337 -> man hinh x=4 y=236[0m
+[0;32mI (280979) display: touch adc x=209 y=3900 luc=349 -> man hinh x=3 y=236[0m
+[0;32mI (281014) display: touch adc x=214 y=3890 luc=357 -> man hinh x=4 y=236[0m
+[0;32mI (281049) display: touch adc x=209 y=3895 luc=347 -> man hinh x=3 y=236[0m
+[0;32mI (281084) display: touch adc x=215 y=3895 luc=330 -> man hinh x=3 y=236[0m
+[0;32mI (281119) display: touch adc x=214 y=3903 luc=338 -> man hinh x=3 y=236[0m
+[0;32mI (281154) display: touch adc x=214 y=3881 luc=323 -> man hinh x=5 y=236[0m
+[0;32mI (281189) display: touch adc x=217 y=3880 luc=342 -> man hinh x=5 y=236[0m
+[0;32mI (281224) display: touch adc x=216 y=3883 luc=324 -> man hinh x=4 y=236[0m
+[0;32mI (281259) display: touch adc x=216 y=3899 luc=327 -> man hinh x=3 y=236[0m
+[0;32mI (281294) display: touch adc x=209 y=3876 luc=341 -> man hinh x=5 y=236[0m
+[0;32mI (281329) display: touch adc x=214 y=3880 luc=347 -> man hinh x=5 y=236[0m
+[0;32mI (281364) display: touch adc x=214 y=3884 luc=343 -> man hinh x=4 y=236[0m
+[0;32mI (281399) display: touch adc x=216 y=3887 luc=285 -> man hinh x=4 y=236[0m
+[0;32mI (281433) display: touch adc x=219 y=3876 luc=352 -> man hinh x=5 y=235[0m
+[0;32mI (281469) display: touch adc x=216 y=3880 luc=352 -> man hinh x=5 y=236[0m
+[0;32mI (281504) display: touch adc x=210 y=3875 luc=313 -> man hinh x=5 y=236[0m
+[0;32mI (281539) display: touch adc x=218 y=3894 luc=371 -> man hinh x=3 y=235[0m
+[0;32mI (281574) display: touch adc x=216 y=3886 luc=307 -> man hinh x=4 y=236[0m
+[0;32mI (281609) display: touch adc x=212 y=3884 luc=316 -> man hinh x=4 y=236[0m
+[0;32mI (281644) display: touch adc x=215 y=3885 luc=310 -> man hinh x=4 y=236[0m
+[0;32mI (281679) display: touch adc x=208 y=3876 luc=408 -> man hinh x=5 y=236[0m
+[0;32mI (281714) display: touch adc x=212 y=3875 luc=314 -> man hinh x=5 y=236[0m
+[0;32mI (281749) display: touch adc x=213 y=3881 luc=339 -> man hinh x=5 y=236[0m
+[0;32mI (281784) display: touch adc x=214 y=3883 luc=306 -> man hinh x=4 y=236[0m
+[0;32mI (281819) display: touch adc x=217 y=3869 luc=324 -> man hinh x=6 y=236[0m
+[0;32mI (281854) display: touch adc x=210 y=3887 luc=357 -> man hinh x=4 y=236[0m
+[0;32mI (281888) display: touch adc x=217 y=3898 luc=281 -> man hinh x=3 y=236[0m
+[0;32mI (281924) display: touch adc x=214 y=3887 luc=340 -> man hinh x=4 y=236[0m
+[0;32mI (281959) display: touch adc x=216 y=3888 luc=291 -> man hinh x=4 y=236[0m
+[0;32mI (281993) display: touch adc x=212 y=3896 luc=348 -> man hinh x=3 y=236[0m
+[0;32mI (282029) display: touch adc x=214 y=3869 luc=332 -> man hinh x=6 y=236[0m
+[0;32mI (282064) display: touch adc x=212 y=3882 luc=320 -> man hinh x=4 y=236[0m
+[0;32mI (282099) display: touch adc x=215 y=3883 luc=339 -> man hinh x=4 y=236[0m
+[0;32mI (282133) display: touch adc x=216 y=3869 luc=336 -> man hinh x=6 y=236[0m
+[0;32mI (282169) display: touch adc x=208 y=3874 luc=338 -> man hinh x=5 y=236[0m
+[0;32mI (282204) display: touch adc x=214 y=3871 luc=340 -> man hinh x=5 y=236[0m
+[0;32mI (282239) display: touch adc x=216 y=3872 luc=356 -> man hinh x=5 y=236[0m
+[0;32mI (282274) display: touch adc x=216 y=3868 luc=329 -> man hinh x=6 y=236[0m
+[0;32mI (282309) display: touch adc x=216 y=3883 luc=327 -> man hinh x=4 y=236[0m
+[0;32mI (282344) display: touch adc x=209 y=3887 luc=351 -> man hinh x=4 y=236[0m
+[0;32mI (282379) display: touch adc x=214 y=3870 luc=336 -> man hinh x=6 y=236[0m
+[0;32mI (282414) display: touch adc x=214 y=3888 luc=347 -> man hinh x=4 y=236[0m
+[0;32mI (282419) net_gsm: pulse reset[0m
+[0;32mI (282449) display: touch adc x=213 y=3872 luc=332 -> man hinh x=5 y=236[0m
+[0;32mI (282484) display: touch adc x=213 y=3867 luc=323 -> man hinh x=6 y=236[0m
+[0;32mI (282519) display: touch adc x=214 y=3872 luc=330 -> man hinh x=5 y=236[0m
+[0;32mI (282554) display: touch adc x=208 y=3871 luc=333 -> man hinh x=5 y=236[0m
+[0;32mI (282589) display: touch adc x=206 y=3864 luc=321 -> man hinh x=6 y=236[0m
+[0;32mI (282624) display: touch adc x=211 y=3863 luc=317 -> man hinh x=6 y=236[0m
+[0;32mI (282658) display: touch adc x=212 y=3871 luc=326 -> man hinh x=5 y=236[0m
+[0;32mI (282694) display: touch adc x=209 y=3883 luc=334 -> man hinh x=4 y=236[0m
+[0;32mI (282728) display: touch adc x=202 y=3865 luc=361 -> man hinh x=6 y=237[0m
+[0;32mI (282764) display: touch adc x=210 y=3868 luc=362 -> man hinh x=6 y=236[0m
+[0;32mI (282799) display: touch adc x=210 y=3875 luc=367 -> man hinh x=5 y=236[0m
+[0;32mI (282833) display: touch adc x=205 y=3870 luc=348 -> man hinh x=6 y=236[0m
+[0;32mI (282866) display: touch adc x=211 y=3868 luc=361 -> man hinh x=6 y=236[0m
+[0;32mI (282901) display: touch adc x=204 y=3879 luc=344 -> man hinh x=5 y=236[0m
+[0;32mI (282935) display: touch adc x=206 y=3887 luc=345 -> man hinh x=4 y=236[0m
+[0;32mI (282971) display: touch adc x=213 y=3871 luc=329 -> man hinh x=5 y=236[0m
+[0;32mI (283006) display: touch adc x=205 y=3861 luc=348 -> man hinh x=6 y=236[0m
+[0;32mI (283040) display: touch adc x=210 y=3863 luc=326 -> man hinh x=6 y=236[0m
+[0;32mI (283076) display: touch adc x=204 y=3864 luc=349 -> man hinh x=6 y=236[0m
+[0;32mI (283111) display: touch adc x=211 y=3875 luc=317 -> man hinh x=5 y=236[0m
+[0;32mI (283146) display: touch adc x=203 y=3882 luc=344 -> man hinh x=4 y=236[0m
+[0;32mI (283181) display: touch adc x=210 y=3863 luc=327 -> man hinh x=6 y=236[0m
+[0;32mI (283216) display: touch adc x=210 y=3867 luc=325 -> man hinh x=6 y=236[0m
+[0;32mI (283250) display: touch adc x=209 y=3864 luc=342 -> man hinh x=6 y=236[0m
+[0;32mI (283286) display: touch adc x=209 y=3879 luc=357 -> man hinh x=5 y=236[0m
+[0;32mI (283321) display: touch adc x=210 y=3866 luc=330 -> man hinh x=6 y=236[0m
+[0;32mI (283356) display: touch adc x=209 y=3879 luc=360 -> man hinh x=5 y=236[0m
+[0;32mI (283391) display: touch adc x=205 y=3866 luc=334 -> man hinh x=6 y=236[0m
+[0;32mI (283426) display: touch adc x=202 y=3884 luc=351 -> man hinh x=4 y=237[0m
+[0;32mI (283461) display: touch adc x=205 y=3872 luc=353 -> man hinh x=5 y=236[0m
+[0;32mI (283496) display: touch adc x=209 y=3871 luc=339 -> man hinh x=5 y=236[0m
+[0;32mI (283530) display: touch adc x=210 y=3886 luc=339 -> man hinh x=4 y=236[0m
+[0;32mI (283566) display: touch adc x=202 y=3876 luc=404 -> man hinh x=5 y=237[0m
+[0;32mI (283601) display: touch adc x=211 y=3877 luc=328 -> man hinh x=5 y=236[0m
+[0;32mI (283635) display: touch adc x=202 y=3888 luc=296 -> man hinh x=4 y=237[0m
+[0;32mI (283671) display: touch adc x=209 y=3875 luc=340 -> man hinh x=5 y=236[0m
+[0;32mI (283706) display: touch adc x=209 y=3883 luc=357 -> man hinh x=4 y=236[0m
+[0;32mI (283741) display: touch adc x=205 y=3879 luc=359 -> man hinh x=5 y=236[0m
+[0;32mI (283776) display: touch adc x=211 y=3889 luc=362 -> man hinh x=4 y=236[0m
+[0;32mI (283811) display: touch adc x=211 y=3875 luc=340 -> man hinh x=5 y=236[0m
+[0;32mI (283846) display: touch adc x=209 y=3885 luc=357 -> man hinh x=4 y=236[0m
+[0;32mI (283881) display: touch adc x=205 y=3882 luc=357 -> man hinh x=4 y=236[0m
+[0;32mI (283917) display: touch adc x=206 y=3888 luc=361 -> man hinh x=4 y=236[0m
+[0;32mI (283951) display: touch adc x=212 y=3887 luc=356 -> man hinh x=4 y=236[0m
+[0;32mI (283987) display: touch adc x=211 y=3880 luc=332 -> man hinh x=5 y=236[0m
+[0;32mI (284022) display: touch adc x=225 y=3891 luc=341 -> man hinh x=4 y=235[0m
+[0;32mI (284057) display: touch adc x=222 y=3871 luc=272 -> man hinh x=5 y=235[0m
+[0;32mI (286227) display: touch nghi ngo: adc x=286 y=462 luc=1425 (mau 1/2)[0m
+[0;32mI (286263) display: touch adc x=229 y=444 luc=1915 -> man hinh x=315 y=235[0m
+[0;32mI (286296) net_wifi: Auto scan fired (retry=4)[0m
+[0;32mI (286298) display: touch adc x=220 y=448 luc=1947 -> man hinh x=314 y=235[0m
+[0;32mI (286333) display: touch adc x=218 y=446 luc=1968 -> man hinh x=315 y=235[0m
+[0;32mI (286368) display: touch adc x=213 y=448 luc=1976 -> man hinh x=314 y=236[0m
+[0;32mI (286403) display: touch adc x=217 y=448 luc=1950 -> man hinh x=314 y=236[0m
+[0;32mI (286438) display: touch adc x=198 y=447 luc=1979 -> man hinh x=315 y=237[0m
+[0;32mI (286473) display: touch adc x=196 y=446 luc=1994 -> man hinh x=315 y=237[0m
+[0;32mI (286508) display: touch adc x=217 y=449 luc=1972 -> man hinh x=314 y=236[0m
+[0;32mI (286543) display: touch adc x=197 y=448 luc=1987 -> man hinh x=314 y=237[0m
+[0;32mI (286578) display: touch adc x=218 y=451 luc=1964 -> man hinh x=314 y=235[0m
+[0;32mI (286613) display: touch adc x=234 y=448 luc=1871 -> man hinh x=314 y=234[0m
+[0;32mI (286648) display: touch adc x=210 y=448 luc=1890 -> man hinh x=314 y=236[0m
+[0;32mI (286683) display: touch adc x=242 y=451 luc=1735 -> man hinh x=314 y=234[0m
+[0;32mI (289025) display: touch nghi ngo: adc x=298 y=630 luc=1233 (mau 1/2)[0m
+[0;32mI (289098) display: touch nghi ngo: adc x=194 y=579 luc=1769 (mau 1/2)[0m
+[0;32mI (289134) display: touch adc x=174 y=581 luc=1829 -> man hinh x=302 y=238[0m
+[0;32mI (289169) display: touch adc x=172 y=578 luc=1881 -> man hinh x=303 y=238[0m
+[0;32mI (289204) display: touch adc x=171 y=578 luc=1879 -> man hinh x=303 y=239[0m
+[0;32mI (289239) display: touch adc x=192 y=580 luc=1874 -> man hinh x=303 y=237[0m
+[0;32mI (289274) display: touch adc x=172 y=578 luc=1892 -> man hinh x=303 y=238[0m
+[0;32mI (289309) display: touch adc x=192 y=579 luc=1803 -> man hinh x=303 y=237[0m
+[0;32mI (289344) display: touch adc x=174 y=580 luc=1799 -> man hinh x=303 y=238[0m
+[0;32mI (289379) display: touch adc x=198 y=577 luc=1813 -> man hinh x=303 y=237[0m
+[0;32mI (289532) net_wifi: ===== SCAN RESULT (15 APs) =====[0m
+[0;32mI (289532) net_wifi: 1) SSID:P402 RSSI:-61 CH:11[0m
+[0;32mI (289532) net_wifi: 2) SSID:P62 RSSI:-88 CH:7[0m
+[0;32mI (289534) net_wifi: 3) SSID:601 RSSI:-90 CH:10[0m
+[0;32mI (289539) net_wifi: 4) SSID:Bong Bill RSSI:-91 CH:2[0m
+[0;32mI (289543) net_wifi: 5) SSID:BB 402 RSSI:-91 CH:8[0m
+[0;32mI (289548) net_wifi: 6) SSID:TRAN THU RSSI:-92 CH:7[0m
+[0;32mI (289552) net_wifi: 7) SSID:Subabi RSSI:-92 CH:13[0m
+[0;32mI (289557) net_wifi: 8) SSID:Bong Bill RSSI:-93 CH:2[0m
+[0;32mI (289562) net_wifi: 9) SSID:Mai Linh RSSI:-93 CH:3[0m
+[0;32mI (289566) net_wifi: 10) SSID:Tom RSSI:-93 CH:6[0m
+[0;32mI (289571) net_wifi: 11) SSID:Wifi  RSSI:-93 CH:10[0m
+[0;32mI (289575) net_wifi: 12) SSID:Tang 4 RSSI:-94 CH:5[0m
+[0;32mI (289580) net_wifi: 13) SSID:ELBULL RSSI:-94 CH:11[0m
+[0;32mI (289584) net_wifi: 14) SSID:VIETTEL_cMAm RSSI:-95 CH:1[0m
+[0;32mI (289589) net_wifi: 15) SSID:Chuot RSSI:-95 CH:2[0m
+[0;33mW (289594) net_wifi: Khong tim thay SSID da luu nao trong ket qua quet[0m
+[0;32mI (289600) net_wifi: Schedule next scan in 300000 ms[0m
+[0;32mI (289919) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (289920) uart: queue free spaces: 30[0m
+[0;32mI (292843) display: touch nghi ngo: adc x=267 y=593 luc=1379 (mau 1/2)[0m
+[0;32mI (292878) display: touch adc x=169 y=570 luc=1788 -> man hinh x=303 y=239[0m
+[0;32mI (292914) display: touch adc x=181 y=566 luc=1899 -> man hinh x=304 y=238[0m
+[0;32mI (292949) display: touch adc x=176 y=569 luc=1926 -> man hinh x=304 y=238[0m
+[0;32mI (292983) display: touch adc x=160 y=568 luc=1951 -> man hinh x=304 y=239[0m
+[0;32mI (293019) display: touch adc x=168 y=570 luc=1984 -> man hinh x=303 y=239[0m
+[0;32mI (293054) display: touch adc x=171 y=565 luc=1969 -> man hinh x=304 y=239[0m
+[0;32mI (293089) display: touch adc x=170 y=565 luc=1973 -> man hinh x=304 y=239[0m
+[0;32mI (293124) display: touch adc x=172 y=566 luc=1959 -> man hinh x=304 y=238[0m
+[0;32mI (293159) display: touch adc x=172 y=569 luc=1961 -> man hinh x=304 y=238[0m
+[0;32mI (293193) display: touch adc x=172 y=569 luc=1953 -> man hinh x=304 y=238[0m
+[0;32mI (293229) display: touch adc x=162 y=568 luc=1915 -> man hinh x=304 y=239[0m
+[0;32mI (293264) display: touch adc x=179 y=569 luc=1912 -> man hinh x=304 y=238[0m
+[0;32mI (293299) display: touch adc x=181 y=571 luc=1920 -> man hinh x=303 y=238[0m
+[0;32mI (293334) display: touch adc x=168 y=571 luc=1927 -> man hinh x=303 y=239[0m
+[0;32mI (293369) display: touch adc x=178 y=568 luc=1915 -> man hinh x=304 y=238[0m
+[0;32mI (293404) display: touch adc x=184 y=571 luc=1913 -> man hinh x=303 y=238[0m
+[0;32mI (293439) display: touch adc x=180 y=571 luc=1928 -> man hinh x=303 y=238[0m
+[0;32mI (293473) display: touch adc x=168 y=569 luc=1922 -> man hinh x=304 y=239[0m
+[0;32mI (293509) display: touch adc x=181 y=568 luc=1910 -> man hinh x=304 y=238[0m
+[0;32mI (293544) display: touch adc x=179 y=571 luc=1939 -> man hinh x=303 y=238[0m
+[0;32mI (293579) display: touch adc x=180 y=568 luc=1911 -> man hinh x=304 y=238[0m
+[0;32mI (293614) display: touch adc x=164 y=568 luc=1903 -> man hinh x=304 y=239[0m
+[0;32mI (293649) display: touch adc x=178 y=568 luc=1915 -> man hinh x=304 y=238[0m
+[0;32mI (293684) display: touch adc x=178 y=566 luc=1917 -> man hinh x=304 y=238[0m
+[0;32mI (293719) display: touch adc x=186 y=568 luc=1842 -> man hinh x=304 y=238[0m
+[0;32mI (293754) display: touch adc x=181 y=568 luc=1896 -> man hinh x=304 y=238[0m
+[0;32mI (293788) display: touch adc x=184 y=569 luc=1885 -> man hinh x=304 y=238[0m
+[0;32mI (293824) display: touch adc x=184 y=570 luc=1888 -> man hinh x=303 y=238[0m
+[0;32mI (293859) display: touch adc x=166 y=570 luc=1878 -> man hinh x=303 y=239[0m
+[0;32mI (293893) display: touch adc x=185 y=568 luc=1882 -> man hinh x=304 y=238[0m
+[0;32mI (293929) display: touch adc x=201 y=568 luc=1885 -> man hinh x=304 y=237[0m
+[0;32mI (293964) display: touch adc x=170 y=572 luc=1740 -> man hinh x=303 y=239[0m
+[0;32mI (293999) display: touch adc x=189 y=568 luc=1854 -> man hinh x=304 y=237[0m
+[0;32mI (294034) display: touch adc x=192 y=570 luc=1813 -> man hinh x=303 y=237[0m
+[0;32mI (294069) display: touch adc x=202 y=572 luc=1724 -> man hinh x=303 y=237[0m
+[0;32mI (302958) display: touch nghi ngo: adc x=218 y=405 luc=1902 (mau 1/2)[0m
+[0;32mI (302993) display: touch adc x=224 y=414 luc=2004 -> man hinh x=318 y=235[0m
+[0;32mI (303029) display: touch adc x=226 y=416 luc=2011 -> man hinh x=317 y=235[0m
+[0;32mI (303064) display: touch adc x=227 y=416 luc=2002 -> man hinh x=317 y=235[0m
+[0;32mI (303099) display: touch adc x=225 y=416 luc=2006 -> man hinh x=317 y=235[0m
+[0;32mI (303134) display: touch adc x=225 y=416 luc=2007 -> man hinh x=317 y=235[0m
+[0;32mI (303169) display: touch adc x=224 y=416 luc=2015 -> man hinh x=317 y=235[0m
+[0;32mI (303204) display: touch adc x=224 y=416 luc=2018 -> man hinh x=317 y=235[0m
+[0;32mI (303239) display: touch adc x=222 y=416 luc=2024 -> man hinh x=317 y=235[0m
+[0;32mI (303274) display: touch adc x=208 y=416 luc=2014 -> man hinh x=317 y=236[0m
+[0;32mI (303309) display: touch adc x=211 y=412 luc=2031 -> man hinh x=318 y=236[0m
+[0;32mI (303344) display: touch adc x=224 y=416 luc=2041 -> man hinh x=317 y=235[0m
+[0;32mI (303379) display: touch adc x=219 y=416 luc=2004 -> man hinh x=317 y=235[0m
+[0;32mI (303414) display: touch adc x=227 y=416 luc=2006 -> man hinh x=317 y=235[0m
+[0;32mI (303449) display: touch adc x=224 y=415 luc=1987 -> man hinh x=317 y=235[0m
+[0;32mI (303484) display: touch adc x=209 y=419 luc=1935 -> man hinh x=317 y=236[0m
+[0;32mI (303519) display: touch adc x=232 y=421 luc=1919 -> man hinh x=317 y=235[0m
+[0;32mI (303554) display: touch adc x=238 y=426 luc=1850 -> man hinh x=316 y=234[0m
+[0;32mI (303589) display: touch adc x=240 y=429 luc=1920 -> man hinh x=316 y=234[0m
+[0;32mI (303624) display: touch adc x=225 y=432 luc=1858 -> man hinh x=316 y=235[0m
+[0;32mI (303727) display: touch nghi ngo: adc x=360 y=480 luc=1255 (mau 1/2)[0m
+[0;32mI (304285) display: touch nghi ngo: adc x=380 y=513 luc=1140 (mau 1/2)[0m
+[0;32mI (304320) display: touch adc x=245 y=450 luc=1630 -> man hinh x=314 y=234[0m
+[0;32mI (304355) display: touch adc x=227 y=443 luc=1798 -> man hinh x=315 y=235[0m
+[0;32mI (304391) display: touch adc x=195 y=442 luc=1946 -> man hinh x=315 y=237[0m
+[0;32mI (304426) display: touch adc x=201 y=443 luc=1966 -> man hinh x=315 y=237[0m
+[0;32mI (304461) display: touch adc x=206 y=457 luc=1539 -> man hinh x=314 y=236[0m
+[0;32mI (304496) display: touch adc x=225 y=452 luc=1599 -> man hinh x=314 y=235[0m
+[0;32mI (306633) display: touch nghi ngo: adc x=318 y=994 luc=877 (mau 1/2)[0m
+[0;32mI (306736) display: touch nghi ngo: adc x=201 y=883 luc=1559 (mau 1/2)[0m
+[0;32mI (306772) display: touch adc x=192 y=876 luc=1660 -> man hinh x=276 y=237[0m
+[0;32mI (306806) display: touch adc x=180 y=871 luc=1737 -> man hinh x=276 y=238[0m
+[0;32mI (306842) display: touch adc x=180 y=875 luc=1747 -> man hinh x=276 y=238[0m
+[0;32mI (306877) display: touch adc x=164 y=875 luc=1753 -> man hinh x=276 y=239[0m
+[0;32mI (306912) display: touch adc x=166 y=878 luc=1782 -> man hinh x=276 y=239[0m
+[0;32mI (306947) display: touch adc x=182 y=873 luc=1744 -> man hinh x=276 y=238[0m
+[0;32mI (306982) display: touch adc x=170 y=874 luc=1690 -> man hinh x=276 y=239[0m
+[0;32mI (307017) display: touch adc x=184 y=876 luc=1693 -> man hinh x=276 y=238[0m
+[0;32mI (307052) display: touch adc x=196 y=875 luc=1618 -> man hinh x=276 y=237[0m
+[0;32mI (307087) display: touch adc x=169 y=873 luc=1655 -> man hinh x=276 y=239[0m
+[0;32mI (307122) display: touch adc x=200 y=881 luc=1496 -> man hinh x=275 y=237[0m
+[0;32mI (307190) display: touch adc x=245 y=897 luc=1262 -> man hinh x=274 y=234[0m
+[0;32mI (307225) display: touch adc x=182 y=899 luc=1205 -> man hinh x=274 y=238[0m
+[0;32mI (307473) display: touch nghi ngo: adc x=186 y=927 luc=1062 (mau 1/2)[0m
+[0;32mI (307507) display: touch adc x=172 y=889 luc=1281 -> man hinh x=275 y=238[0m
+[0;32mI (307543) display: touch adc x=262 y=904 luc=1161 -> man hinh x=273 y=233[0m
+[0;32mI (307578) display: touch adc x=334 y=935 luc=1012 -> man hinh x=270 y=228[0m
+[0;32mI (307613) display: touch adc x=400 y=979 luc=871 -> man hinh x=267 y=224[0m
+[1;31mE (309921) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (310922) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (320876) display: touch nghi ngo: adc x=212 y=3880 luc=296 (mau 1/2)[0m
+[0;32mI (320911) display: touch adc x=208 y=3875 luc=330 -> man hinh x=5 y=236[0m
+[0;32mI (320922) net_gsm: pulse reset[0m
+[0;32mI (320946) display: touch adc x=210 y=3887 luc=306 -> man hinh x=4 y=236[0m
+[0;32mI (320981) display: touch adc x=211 y=3869 luc=330 -> man hinh x=6 y=236[0m
+[0;32mI (321016) display: touch adc x=212 y=3865 luc=316 -> man hinh x=6 y=236[0m
+[0;32mI (321050) display: touch adc x=207 y=3879 luc=345 -> man hinh x=5 y=236[0m
+[0;32mI (321086) display: touch adc x=216 y=3849 luc=281 -> man hinh x=7 y=236[0m
+[0;32mI (321121) display: touch adc x=218 y=3847 luc=336 -> man hinh x=8 y=235[0m
+[0;32mI (321156) display: touch adc x=213 y=3854 luc=344 -> man hinh x=7 y=236[0m
+[0;32mI (321191) display: touch adc x=211 y=3857 luc=359 -> man hinh x=7 y=236[0m
+[0;32mI (321226) display: touch adc x=218 y=3858 luc=345 -> man hinh x=7 y=235[0m
+[0;32mI (321261) display: touch adc x=216 y=3868 luc=356 -> man hinh x=6 y=236[0m
+[0;32mI (321296) display: touch adc x=217 y=3850 luc=327 -> man hinh x=7 y=236[0m
+[0;32mI (321331) display: touch adc x=218 y=3852 luc=336 -> man hinh x=7 y=235[0m
+[0;32mI (321366) display: touch adc x=218 y=3859 luc=343 -> man hinh x=7 y=235[0m
+[0;32mI (321401) display: touch adc x=211 y=3863 luc=352 -> man hinh x=6 y=236[0m
+[0;32mI (321436) display: touch adc x=219 y=3870 luc=276 -> man hinh x=6 y=235[0m
+[0;32mI (321471) display: touch adc x=218 y=3848 luc=360 -> man hinh x=8 y=235[0m
+[0;32mI (321506) display: touch adc x=219 y=3855 luc=357 -> man hinh x=7 y=235[0m
+[0;32mI (321541) display: touch adc x=219 y=3844 luc=339 -> man hinh x=8 y=235[0m
+[0;32mI (321576) display: touch adc x=219 y=3848 luc=334 -> man hinh x=8 y=235[0m
+[0;32mI (321611) display: touch adc x=212 y=3864 luc=347 -> man hinh x=6 y=236[0m
+[0;32mI (321646) display: touch adc x=220 y=3865 luc=340 -> man hinh x=6 y=235[0m
+[0;32mI (321681) display: touch adc x=212 y=3863 luc=357 -> man hinh x=6 y=236[0m
+[0;32mI (321716) display: touch adc x=220 y=3842 luc=336 -> man hinh x=8 y=235[0m
+[0;32mI (321751) display: touch adc x=220 y=3848 luc=346 -> man hinh x=8 y=235[0m
+[0;32mI (321786) display: touch adc x=218 y=3861 luc=313 -> man hinh x=6 y=235[0m
+[0;32mI (321821) display: touch adc x=218 y=3839 luc=320 -> man hinh x=8 y=235[0m
+[0;32mI (321856) display: touch adc x=224 y=3848 luc=294 -> man hinh x=8 y=235[0m
+[0;32mI (321963) display: touch nghi ngo: adc x=228 y=3840 luc=220 (mau 1/2)[0m
+[0;32mI (322066) display: touch nghi ngo: adc x=221 y=3849 luc=289 (mau 1/2)[0m
+[0;32mI (322102) display: touch adc x=282 y=3847 luc=147 -> man hinh x=8 y=231[0m
+[0;32mI (322207) display: touch adc x=232 y=3848 luc=244 -> man hinh x=8 y=235[0m
+[0;32mI (322242) display: touch adc x=225 y=3865 luc=291 -> man hinh x=6 y=235[0m
+[0;32mI (322276) display: touch adc x=237 y=3847 luc=193 -> man hinh x=8 y=234[0m
+[0;32mI (322312) display: touch adc x=217 y=3862 luc=330 -> man hinh x=6 y=236[0m
+[0;32mI (322347) display: touch adc x=260 y=3842 luc=168 -> man hinh x=8 y=233[0m
+[0;32mI (322382) display: touch adc x=211 y=3870 luc=302 -> man hinh x=6 y=236[0m
+[0;32mI (322417) display: touch adc x=208 y=3856 luc=338 -> man hinh x=7 y=236[0m
+[0;32mI (322452) display: touch adc x=217 y=3871 luc=327 -> man hinh x=5 y=236[0m
+[0;32mI (322487) display: touch adc x=216 y=3861 luc=329 -> man hinh x=6 y=236[0m
+[0;32mI (322522) display: touch adc x=210 y=3860 luc=339 -> man hinh x=6 y=236[0m
+[0;32mI (322556) display: touch adc x=217 y=3860 luc=324 -> man hinh x=6 y=236[0m
+[0;32mI (322591) display: touch adc x=217 y=3870 luc=340 -> man hinh x=6 y=236[0m
+[0;32mI (322627) display: touch adc x=213 y=3882 luc=341 -> man hinh x=4 y=236[0m
+[0;32mI (322662) display: touch adc x=209 y=3871 luc=340 -> man hinh x=5 y=236[0m
+[0;32mI (322696) display: touch adc x=210 y=3875 luc=344 -> man hinh x=5 y=236[0m
+[0;32mI (322732) display: touch adc x=214 y=3871 luc=325 -> man hinh x=5 y=236[0m
+[0;32mI (322766) display: touch adc x=217 y=3867 luc=344 -> man hinh x=6 y=236[0m
+[0;32mI (322802) display: touch adc x=214 y=3871 luc=348 -> man hinh x=5 y=236[0m
+[0;32mI (322837) display: touch adc x=208 y=3857 luc=336 -> man hinh x=7 y=236[0m
+[0;32mI (322872) display: touch adc x=210 y=3860 luc=344 -> man hinh x=6 y=236[0m
+[0;32mI (322907) display: touch adc x=203 y=3879 luc=347 -> man hinh x=5 y=236[0m
+[0;32mI (322943) display: touch adc x=210 y=3875 luc=327 -> man hinh x=5 y=236[0m
+[0;32mI (322977) display: touch adc x=206 y=3866 luc=347 -> man hinh x=6 y=236[0m
+[0;32mI (323013) display: touch adc x=209 y=3872 luc=339 -> man hinh x=5 y=236[0m
+[0;32mI (323048) display: touch adc x=200 y=3887 luc=331 -> man hinh x=4 y=237[0m
+[0;32mI (323083) display: touch adc x=195 y=3876 luc=390 -> man hinh x=5 y=237[0m
+[0;32mI (323118) display: touch adc x=204 y=3897 luc=323 -> man hinh x=3 y=236[0m
+[0;32mI (323153) display: touch adc x=204 y=3876 luc=315 -> man hinh x=5 y=236[0m
+[0;32mI (323187) display: touch adc x=200 y=3880 luc=316 -> man hinh x=5 y=237[0m
+[0;32mI (323223) display: touch adc x=195 y=3881 luc=305 -> man hinh x=5 y=237[0m
+[0;32mI (323257) display: touch adc x=202 y=3888 luc=289 -> man hinh x=4 y=237[0m
+[0;32mI (323292) display: touch adc x=206 y=3881 luc=282 -> man hinh x=5 y=236[0m
+[0;32mI (323328) display: touch adc x=202 y=3887 luc=318 -> man hinh x=4 y=237[0m
+[0;32mI (323363) display: touch adc x=204 y=3887 luc=317 -> man hinh x=4 y=236[0m
+[0;32mI (323398) display: touch adc x=205 y=3888 luc=298 -> man hinh x=4 y=236[0m
+[0;32mI (323433) display: touch adc x=203 y=3888 luc=321 -> man hinh x=4 y=236[0m
+[0;32mI (323467) display: touch adc x=203 y=3888 luc=305 -> man hinh x=4 y=236[0m
+[0;32mI (323502) display: touch adc x=212 y=3891 luc=312 -> man hinh x=4 y=236[0m
+[0;32mI (323579) app_fsm: tao don 80456B281774-0-0049: Gói 15 phút 15 phut 30000 d[0m
+[0;32mI (323580) app_fsm: IDLE -> CREATING_QR[0m
+[0;33mW (323587) peripheral_test: [DEMO] tao don 80456B281774-0-0049, 30000 d[0m
+[0;32mI (323609) display: touch nghi ngo: adc x=205 y=3903 luc=222 (mau 1/2)[0m
+[0;32mI (323709) display: touch adc x=194 y=3903 luc=272 -> man hinh x=3 y=237[0m
+[0;32mI (323741) display: touch adc x=187 y=3884 luc=285 -> man hinh x=4 y=237[0m
+[0;32mI (323778) display: touch adc x=203 y=3903 luc=237 -> man hinh x=3 y=236[0m
+[0;32mI (323811) display: touch adc x=202 y=3888 luc=263 -> man hinh x=4 y=237[0m
+[0;33mW (325588) peripheral_test: [DEMO] don 80456B281774-0-0049: da gui ma QR thu[0m
+[0;33mW (325588) peripheral_test: [DEMO] tu bao thanh toan sau 8 s[0m
+[0;32mI (325589) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (325648) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[0;33mW (325659) audio: thieu file /audio/scan_qr.wav[0m
+[0;32mI (327522) display: touch nghi ngo: adc x=627 y=803 luc=1908 (mau 1/2)[0m
+[0;32mI (327558) display: touch adc x=602 y=808 luc=1958 -> man hinh x=282 y=210[0m
+[0;32mI (327594) display: touch adc x=601 y=808 luc=1970 -> man hinh x=282 y=210[0m
+[0;32mI (327629) display: touch adc x=610 y=805 luc=1979 -> man hinh x=282 y=210[0m
+[0;33mW (327698) peripheral_test: [DEMO] huy don 80456B281774-0-0049[0m
+[0;32mI (327699) app_fsm: WAIT_PAYMENT -> NOTICE[0m
+[0;32mI (328422) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (328423) uart: queue free spaces: 30[0m
+[0;32mI (331749) app_fsm: NOTICE -> IDLE[0m
+[0;32mI (334146) display: touch nghi ngo: adc x=226 y=3900 luc=349 (mau 1/2)[0m
+[0;32mI (334182) display: touch adc x=228 y=3895 luc=345 -> man hinh x=3 y=235[0m
+[0;32mI (334217) display: touch adc x=232 y=3904 luc=338 -> man hinh x=2 y=235[0m
+[0;32mI (334251) display: touch adc x=244 y=3895 luc=322 -> man hinh x=3 y=234[0m
+[0;32mI (334287) display: touch adc x=242 y=3903 luc=341 -> man hinh x=3 y=234[0m
+[0;32mI (334321) display: touch adc x=242 y=3903 luc=360 -> man hinh x=3 y=234[0m
+[0;32mI (334357) display: touch adc x=243 y=3902 luc=364 -> man hinh x=3 y=234[0m
+[0;32mI (334392) display: touch adc x=241 y=3896 luc=345 -> man hinh x=3 y=234[0m
+[0;32mI (334427) display: touch adc x=242 y=3903 luc=364 -> man hinh x=3 y=234[0m
+[0;32mI (334462) display: touch adc x=233 y=3888 luc=341 -> man hinh x=4 y=234[0m
+[0;32mI (334497) display: touch adc x=240 y=3896 luc=376 -> man hinh x=3 y=234[0m
+[0;32mI (334532) display: touch adc x=242 y=3911 luc=349 -> man hinh x=2 y=234[0m
+[0;32mI (334567) display: touch adc x=241 y=3903 luc=391 -> man hinh x=3 y=234[0m
+[0;32mI (334602) display: touch adc x=243 y=3891 luc=346 -> man hinh x=4 y=234[0m
+[0;32mI (334636) display: touch adc x=235 y=3903 luc=362 -> man hinh x=3 y=234[0m
+[0;32mI (334672) display: touch adc x=234 y=3896 luc=349 -> man hinh x=3 y=234[0m
+[0;32mI (334707) display: touch adc x=238 y=3891 luc=361 -> man hinh x=4 y=234[0m
+[0;32mI (334742) display: touch adc x=241 y=3889 luc=342 -> man hinh x=4 y=234[0m
+[0;32mI (334777) display: touch adc x=241 y=3889 luc=349 -> man hinh x=4 y=234[0m
+[0;32mI (334812) display: touch adc x=243 y=3891 luc=346 -> man hinh x=4 y=234[0m
+[0;32mI (334846) display: touch adc x=235 y=3892 luc=364 -> man hinh x=4 y=234[0m
+[0;32mI (334882) display: touch adc x=239 y=3891 luc=350 -> man hinh x=4 y=234[0m
+[0;32mI (334918) display: touch adc x=237 y=3899 luc=354 -> man hinh x=3 y=234[0m
+[0;32mI (334953) display: touch adc x=243 y=3891 luc=359 -> man hinh x=4 y=234[0m
+[0;32mI (334988) display: touch adc x=235 y=3913 luc=358 -> man hinh x=2 y=234[0m
+[0;32mI (335023) display: touch adc x=240 y=3903 luc=341 -> man hinh x=3 y=234[0m
+[0;32mI (335058) display: touch adc x=235 y=3900 luc=359 -> man hinh x=3 y=234[0m
+[0;32mI (335093) display: touch adc x=242 y=3919 luc=301 -> man hinh x=1 y=234[0m
+[0;32mI (335128) display: touch adc x=242 y=3903 luc=366 -> man hinh x=3 y=234[0m
+[0;32mI (335163) display: touch adc x=243 y=3891 luc=360 -> man hinh x=4 y=234[0m
+[0;32mI (335198) display: touch adc x=235 y=3911 luc=362 -> man hinh x=2 y=234[0m
+[0;32mI (335233) display: touch adc x=240 y=3898 luc=365 -> man hinh x=3 y=234[0m
+[0;32mI (335268) display: touch adc x=242 y=3903 luc=367 -> man hinh x=3 y=234[0m
+[0;32mI (335303) display: touch adc x=236 y=3903 luc=366 -> man hinh x=3 y=234[0m
+[0;32mI (335338) display: touch adc x=244 y=3896 luc=342 -> man hinh x=3 y=234[0m
+[0;32mI (335373) display: touch adc x=242 y=3919 luc=342 -> man hinh x=1 y=234[0m
+[0;32mI (335408) display: touch adc x=247 y=3899 luc=344 -> man hinh x=3 y=234[0m
+[0;32mI (335443) display: touch adc x=250 y=3897 luc=344 -> man hinh x=3 y=233[0m
+[0;32mI (335478) display: touch adc x=248 y=3906 luc=353 -> man hinh x=2 y=234[0m
+[0;32mI (335513) display: touch adc x=252 y=3918 luc=383 -> man hinh x=1 y=233[0m
+[0;32mI (335548) display: touch adc x=245 y=3903 luc=367 -> man hinh x=3 y=234[0m
+[0;32mI (335583) display: touch adc x=256 y=3904 luc=347 -> man hinh x=2 y=233[0m
+[0;32mI (335618) display: touch adc x=256 y=3916 luc=302 -> man hinh x=1 y=233[0m
+[0;32mI (335653) display: touch adc x=246 y=3904 luc=360 -> man hinh x=2 y=234[0m
+[0;32mI (335687) display: touch adc x=256 y=3909 luc=349 -> man hinh x=2 y=233[0m
+[0;32mI (335723) display: touch adc x=246 y=3908 luc=356 -> man hinh x=2 y=234[0m
+[0;32mI (335758) display: touch adc x=256 y=3904 luc=344 -> man hinh x=2 y=233[0m
+[0;32mI (335792) display: touch adc x=257 y=3923 luc=349 -> man hinh x=1 y=233[0m
+[0;32mI (335828) display: touch adc x=257 y=3902 luc=339 -> man hinh x=3 y=233[0m
+[0;32mI (335863) display: touch adc x=256 y=3912 luc=303 -> man hinh x=2 y=233[0m
+[0;32mI (335898) display: touch adc x=248 y=3912 luc=300 -> man hinh x=2 y=234[0m
+[0;32mI (335934) display: touch adc x=256 y=3900 luc=359 -> man hinh x=3 y=233[0m
+[0;32mI (335969) display: touch adc x=256 y=3915 luc=324 -> man hinh x=1 y=233[0m
+[0;32mI (336003) display: touch adc x=257 y=3899 luc=339 -> man hinh x=3 y=233[0m
+[0;32mI (336039) display: touch adc x=256 y=3912 luc=342 -> man hinh x=2 y=233[0m
+[0;32mI (336074) display: touch adc x=256 y=3919 luc=355 -> man hinh x=1 y=233[0m
+[0;32mI (336109) display: touch adc x=256 y=3900 luc=353 -> man hinh x=3 y=233[0m
+[0;32mI (336144) display: touch adc x=256 y=3912 luc=330 -> man hinh x=2 y=233[0m
+[0;32mI (336179) display: touch adc x=248 y=3921 luc=347 -> man hinh x=1 y=234[0m
+[0;32mI (336214) display: touch adc x=248 y=3900 luc=353 -> man hinh x=3 y=234[0m
+[0;32mI (336249) display: touch adc x=248 y=3904 luc=346 -> man hinh x=2 y=234[0m
+[0;32mI (336284) display: touch adc x=256 y=3914 luc=364 -> man hinh x=2 y=233[0m
+[0;32mI (336318) display: touch adc x=256 y=3904 luc=347 -> man hinh x=2 y=233[0m
+[0;32mI (336354) display: touch adc x=244 y=3904 luc=359 -> man hinh x=2 y=234[0m
+[0;32mI (336389) display: touch adc x=256 y=3908 luc=341 -> man hinh x=2 y=233[0m
+[0;32mI (336424) display: touch adc x=256 y=3904 luc=341 -> man hinh x=2 y=233[0m
+[0;32mI (336459) display: touch adc x=248 y=3928 luc=335 -> man hinh x=0 y=234[0m
+[0;32mI (336494) display: touch adc x=239 y=3911 luc=340 -> man hinh x=2 y=234[0m
+[0;32mI (336529) display: touch adc x=245 y=3904 luc=312 -> man hinh x=2 y=234[0m
+[0;32mI (336564) display: touch adc x=242 y=3918 luc=306 -> man hinh x=1 y=234[0m
+[0;32mI (336599) display: touch adc x=244 y=3923 luc=321 -> man hinh x=1 y=234[0m
+[0;32mI (336634) display: touch adc x=241 y=3918 luc=305 -> man hinh x=1 y=234[0m
+[0;32mI (336669) display: touch adc x=245 y=3914 luc=317 -> man hinh x=2 y=234[0m
+[0;32mI (336704) display: touch adc x=244 y=3904 luc=317 -> man hinh x=2 y=234[0m
+[0;32mI (336739) display: touch adc x=243 y=3932 luc=332 -> man hinh x=0 y=234[0m
+[0;32mI (336774) display: touch adc x=241 y=3921 luc=306 -> man hinh x=1 y=234[0m
+[0;32mI (336808) display: touch adc x=242 y=3904 luc=337 -> man hinh x=2 y=234[0m
+[0;32mI (336844) display: touch adc x=256 y=3917 luc=342 -> man hinh x=1 y=233[0m
+[0;32mI (336879) display: touch adc x=246 y=3935 luc=255 -> man hinh x=0 y=234[0m
+[0;32mI (336914) display: touch adc x=240 y=3927 luc=285 -> man hinh x=0 y=234[0m
+[0;32mI (336949) display: touch adc x=243 y=3907 luc=292 -> man hinh x=2 y=234[0m
+[0;32mI (336984) display: touch adc x=245 y=3903 luc=282 -> man hinh x=3 y=234[0m
+[0;32mI (337019) display: touch adc x=248 y=3932 luc=205 -> man hinh x=0 y=234[0m
+[0;32mI (337054) display: touch adc x=245 y=3904 luc=277 -> man hinh x=2 y=234[0m
+[0;32mI (337089) display: touch adc x=261 y=3903 luc=264 -> man hinh x=3 y=233[0m
+[0;32mI (337124) display: touch adc x=238 y=3909 luc=251 -> man hinh x=2 y=234[0m
+[0;32mI (337159) display: touch adc x=245 y=3912 luc=282 -> man hinh x=2 y=234[0m
+[0;32mI (337194) display: touch adc x=237 y=3925 luc=239 -> man hinh x=1 y=234[0m
+[0;32mI (337229) display: touch adc x=236 y=3929 luc=271 -> man hinh x=0 y=234[0m
+[0;32mI (337264) display: touch adc x=246 y=3926 luc=302 -> man hinh x=0 y=234[0m
+[0;32mI (337299) display: touch adc x=245 y=3929 luc=261 -> man hinh x=0 y=234[0m
+[0;32mI (337334) display: touch adc x=244 y=3907 luc=252 -> man hinh x=2 y=234[0m
+[0;32mI (337369) display: touch adc x=236 y=3925 luc=278 -> man hinh x=1 y=234[0m
+[0;32mI (337404) display: touch adc x=238 y=3927 luc=279 -> man hinh x=0 y=234[0m
+[0;32mI (338067) display: touch nghi ngo: adc x=250 y=3919 luc=243 (mau 1/2)[0m
+[0;32mI (338103) display: touch adc x=247 y=3916 luc=238 -> man hinh x=1 y=234[0m
+[0;32mI (338138) display: touch adc x=248 y=3911 luc=264 -> man hinh x=2 y=234[0m
+[0;32mI (338173) display: touch adc x=235 y=3920 luc=297 -> man hinh x=1 y=234[0m
+[0;32mI (338208) display: touch adc x=234 y=3927 luc=304 -> man hinh x=0 y=234[0m
+[0;32mI (338243) display: touch adc x=241 y=3927 luc=319 -> man hinh x=0 y=234[0m
+[0;32mI (338278) display: touch adc x=242 y=3935 luc=256 -> man hinh x=0 y=234[0m
+[0;32mI (338313) display: touch adc x=238 y=3925 luc=335 -> man hinh x=1 y=234[0m
+[0;32mI (338348) display: touch adc x=236 y=3920 luc=307 -> man hinh x=1 y=234[0m
+[0;32mI (338383) display: touch adc x=235 y=3923 luc=329 -> man hinh x=1 y=234[0m
+[0;32mI (338418) display: touch adc x=234 y=3929 luc=317 -> man hinh x=0 y=234[0m
+[0;32mI (338453) display: touch adc x=241 y=3907 luc=308 -> man hinh x=2 y=234[0m
+[0;32mI (338488) display: touch adc x=238 y=3914 luc=294 -> man hinh x=2 y=234[0m
+[0;32mI (338523) display: touch adc x=238 y=3935 luc=321 -> man hinh x=0 y=234[0m
+[0;32mI (338558) display: touch adc x=240 y=3932 luc=320 -> man hinh x=0 y=234[0m
+[0;32mI (338593) display: touch adc x=233 y=3911 luc=290 -> man hinh x=2 y=234[0m
+[0;32mI (338628) display: touch adc x=235 y=3909 luc=294 -> man hinh x=2 y=234[0m
+[0;32mI (338663) display: touch adc x=236 y=3930 luc=327 -> man hinh x=0 y=234[0m
+[0;32mI (338698) display: touch adc x=232 y=3920 luc=251 -> man hinh x=1 y=235[0m
+[0;32mI (338733) display: touch adc x=242 y=3927 luc=328 -> man hinh x=0 y=234[0m
+[0;32mI (338768) display: touch adc x=242 y=3922 luc=345 -> man hinh x=1 y=234[0m
+[0;32mI (338803) display: touch adc x=240 y=3928 luc=320 -> man hinh x=0 y=234[0m
+[0;32mI (338838) display: touch adc x=240 y=3915 luc=310 -> man hinh x=1 y=234[0m
+[0;32mI (338873) display: touch adc x=237 y=3914 luc=308 -> man hinh x=2 y=234[0m
+[0;32mI (338909) display: touch adc x=242 y=3924 luc=325 -> man hinh x=1 y=234[0m
+[0;32mI (338944) display: touch adc x=242 y=3931 luc=319 -> man hinh x=0 y=234[0m
+[0;32mI (338979) display: touch adc x=237 y=3916 luc=296 -> man hinh x=1 y=234[0m
+[0;32mI (339014) display: touch adc x=243 y=3912 luc=340 -> man hinh x=2 y=234[0m
+[0;32mI (339049) display: touch adc x=241 y=3924 luc=276 -> man hinh x=1 y=234[0m
+[0;32mI (339084) display: touch adc x=240 y=3927 luc=298 -> man hinh x=0 y=234[0m
+[0;32mI (339119) display: touch adc x=243 y=3923 luc=278 -> man hinh x=1 y=234[0m
+[0;32mI (339154) display: touch adc x=245 y=3911 luc=294 -> man hinh x=2 y=234[0m
+[0;32mI (339189) display: touch adc x=244 y=3912 luc=305 -> man hinh x=2 y=234[0m
+[0;32mI (339224) display: touch adc x=246 y=3919 luc=269 -> man hinh x=1 y=234[0m
+[0;32mI (339259) display: touch adc x=244 y=3912 luc=288 -> man hinh x=2 y=234[0m
+[0;32mI (339294) display: touch adc x=244 y=3935 luc=296 -> man hinh x=0 y=234[0m
+[0;32mI (339329) display: touch adc x=237 y=3930 luc=288 -> man hinh x=0 y=234[0m
+[0;32mI (339364) display: touch adc x=242 y=3935 luc=296 -> man hinh x=0 y=234[0m
+[0;32mI (339399) display: touch adc x=242 y=3931 luc=320 -> man hinh x=0 y=234[0m
+[0;32mI (339434) display: touch adc x=240 y=3917 luc=320 -> man hinh x=1 y=234[0m
+[0;32mI (339469) display: touch adc x=240 y=3927 luc=325 -> man hinh x=0 y=234[0m
+[0;32mI (339504) display: touch adc x=243 y=3913 luc=315 -> man hinh x=2 y=234[0m
+[0;32mI (339539) display: touch adc x=242 y=3933 luc=318 -> man hinh x=0 y=234[0m
+[0;32mI (339574) display: touch adc x=256 y=3927 luc=308 -> man hinh x=0 y=233[0m
+[0;32mI (339609) display: touch adc x=256 y=3915 luc=313 -> man hinh x=1 y=233[0m
+[0;32mI (339644) display: touch adc x=256 y=3915 luc=308 -> man hinh x=1 y=233[0m
+[0;32mI (339679) display: touch adc x=236 y=3920 luc=290 -> man hinh x=1 y=234[0m
+[0;32mI (339714) display: touch adc x=241 y=3913 luc=317 -> man hinh x=2 y=234[0m
+[0;32mI (339749) display: touch adc x=240 y=3935 luc=298 -> man hinh x=0 y=234[0m
+[0;32mI (339784) display: touch adc x=244 y=3919 luc=298 -> man hinh x=1 y=234[0m
+[0;32mI (339819) display: touch adc x=243 y=3931 luc=297 -> man hinh x=0 y=234[0m
+[0;32mI (339854) display: touch adc x=240 y=3925 luc=280 -> man hinh x=1 y=234[0m
+[1;31mE (348424) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (349425) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (359425) net_gsm: pulse reset[0m
+[0;32mI (366925) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (366926) uart: queue free spaces: 30[0m
+[1;31mE (386927) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (387928) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (397928) net_gsm: pulse reset[0m
+[0;32mI (405428) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (405429) uart: queue free spaces: 30[0m
+[1;31mE (425430) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (426431) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (436431) net_gsm: pulse reset[0m
+[0;32mI (443931) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (443932) uart: queue free spaces: 30[0m
+[1;31mE (463933) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (464934) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (474934) net_gsm: pulse reset[0m
+[0;32mI (482434) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (482435) uart: queue free spaces: 30[0m
+[1;31mE (502436) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (503437) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (513437) net_gsm: pulse reset[0m
+[0;32mI (520937) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (520938) uart: queue free spaces: 30[0m

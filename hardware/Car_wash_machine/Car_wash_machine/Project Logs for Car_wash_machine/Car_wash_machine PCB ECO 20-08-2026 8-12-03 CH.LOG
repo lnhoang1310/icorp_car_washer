@@ -1,0 +1,2 @@
+Added Pin To Net: NetName=A0_IN Pin=U8-1
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component GND TP_1MM

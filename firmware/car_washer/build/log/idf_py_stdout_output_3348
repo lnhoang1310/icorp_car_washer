@@ -1,0 +1,859 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM19 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\car_washer.elf D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM19'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1658
+load:0x403c8700,len:0xd98
+load:0x403cb700,len:0x33a4
+entry 0x403c899c
+[0;32mI (25) boot: ESP-IDF v5.5.1-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Sep 28 2026 18:07:58[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.4[0m
+[0;32mI (32) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (36) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00080000[0m
+[0;32mI (63) boot:  1 otadata          OTA data         01 00 00089000 00002000[0m
+[0;32mI (70) boot:  2 phy_init         RF data          01 01 0008b000 00001000[0m
+[0;32mI (76) boot:  3 ota_0            OTA app          00 10 00090000 002ee000[0m
+[0;32mI (83) boot:  4 ota_1            OTA app          00 11 00380000 002ee000[0m
+[0;32mI (89) boot:  5 storage          Unknown data     01 82 0066e000 00400000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00090020 vaddr=3c110020 size=4a0e0h (303328) map[0m
+[0;32mI (157) esp_image: segment 1: paddr=000da108 vaddr=3fc9ec00 size=05334h ( 21300) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=000df444 vaddr=40374000 size=00bd4h (  3028) load[0m
+[0;32mI (162) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=104594h (1066388) map[0m
+[0;32mI (347) esp_image: segment 4: paddr=001e45bc vaddr=40374bd4 size=19fc0h (106432) load[0m
+[0;32mI (368) esp_image: segment 5: paddr=001fe584 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (378) boot: Loaded app from partition at offset 0x90000[0m
+[0;32mI (378) boot: Disabling RNG early entropy source...[0m
+[0;32mI (388) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (388) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (389) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (391) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (395) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (399) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (403) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (408) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (413) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (418) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (423) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (428) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (431) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (435) esp_psram: Speed: 80MHz[0m
+[0;32mI (438) cpu_start: Multicore app[0m
+[0;32mI (854) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (863) cpu_start: Pro cpu start user code[0m
+[0;32mI (863) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (863) app_init: Application information:[0m
+[0;32mI (863) app_init: Project name:     car_washer[0m
+[0;32mI (867) app_init: App version:      1.0.0[0m
+[0;32mI (871) app_init: Compile time:     Oct  2 2026 02:09:03[0m
+[0;32mI (876) app_init: ELF file SHA256:  e2eb0e171...[0m
+[0;32mI (880) app_init: ESP-IDF:          v5.5.1-dirty[0m
+[0;32mI (885) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (889) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (893) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (896) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (903) heap_init: At 3FCA9B00 len 0003FC10 (255 KiB): RAM[0m
+[0;32mI (908) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (913) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (918) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (924) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (931) spi_flash: detected chip: generic[0m
+[0;32mI (934) spi_flash: flash io: dio[0m
+[0;32mI (937) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (943) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (950) main_task: Started on CPU0[0m
+[0;32mI (953) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (961) main_task: Calling app_main()[0m
+[0;32mI (990) main: led_debug_task running[0m
+[0;32mI (991) device_id: device_id = 80456B281774[0m
+[0;32mI (991) main: device_id = 80456B281774[0m
+[0;32mI (991) i2c_bus: i2c_bus_init OK (port=1 sda=1 scl=2)[0m
+[0;32mI (996) io_exp: init OK (out=0x38 in=0x39 int=GPIO15)[0m
+[0;32mI (1000) peripheral_test: [0m
+[0;32mI (1002) peripheral_test: ########## BAT DAU TEST NGOAI VI ##########[0m
+[0;32mI (1006) io_exp: PCF input 0x39 OK[0m
+[0;32mI (1011) peripheral_test: ===== TEST FRAM =====[0m
+[0;32mI (1016) fram: fram_init OK (port=1 sda=1 scl=2 addr=0x50 cap=32768 byte)[0m
+[0;32mI (1023) fram: self_test OK[0m
+[0;32mI (1025) peripheral_test: fram_self_test OK[0m
+[0;32mI (1029) peripheral_test: Ghi/doc pattern tai 0x0100 khop -> FRAM (cap=32768 byte): PASS[0m
+[0;32mI (1036) peripheral_test: [0m
+[0;32mI (1039) peripheral_test: ===== TEST DS3231 =====[0m
+[0;32mI (1044) rtc_ds3231: DS3231 connected (port=1 sda=1 scl=2)[0m
+[0;32mI (1048) peripheral_test: DS3231 connected[0m
+[0;33mW (1053) peripheral_test: DS3231 bao mat dien (bit OSF) -- gio hien tai trong chip co the KHONG dang tin cay[0m
+[0;33mW (1061) io_exp: DUNG KHAN DA NHA[0m
+[0;32mI (1066) peripheral_test: Gio dang luu trong RTC: 2026-10-05 16:36:54[0m
+[0;32mI (2273) peripheral_test: Set 2025-01-01 12:00:00 -> doc lai 2025-01-01 12:00:01 (lech 1 giay) -> DS3231: PASS[0m
+[0;32mI (2274) peripheral_test: Da khoi phuc lai gio RTC nhu truoc luc test[0m
+[0;32mI (2278) peripheral_test: [0m
+[0;32mI (2280) peripheral_test: [0m
+[0;32mI (2283) peripheral_test: ########## KET QUA TEST NGOAI VI ##########[0m
+[0;32mI (2289) peripheral_test: FRAM    : PASS[0m
+[0;32mI (2293) peripheral_test: DS3231  : PASS[0m
+[0;32mI (2296) peripheral_test: RELAY   : bo qua[0m
+[0;32mI (2300) peripheral_test: ############################################[0m
+[0;33mW (2306) fram: fram_init da goi roi, bo qua[0m
+[0;32mI (2311) rtc_ds3231: DS3231 connected (port=1 sda=1 scl=2)[0m
+[0;33mW (2316) ntp_time: Dong ho he thong chua hop le (vua boot/reset)[0m
+[0;32mI (2323) ntp_time: Da dat gio he thong TAM THOI tu RTC: 2026-10-05 16:36:54 (cho SNTP xac nhan lai)[0m
+[0;33mW (2330) devcfg: khong co / hong cau hinh trong NVS -> dung mac dinh[0m
+[0;32mI (2507) display: doc ID man hinh (0xD3): 00 00 00 00 00[0m
+[0;33mW (2508) display: man hinh khong tra loi: chan SDO/MISO chua noi, hoac chip chua nhan duoc lenh (kiem tra day CS/DC/RST/SCK/SDI va nguon man hinh)[0m
+[0;32mI (2515) ili9341: LCD panel create success, version: 2.1.0[0m
+[0;32mI (2641) LVGL: Starting LVGL task[0m
+[0;33mW (2644) lcd_panel.io.spi: Callback on_color_trans_done was already set and now it was overwritten![0m
+[0;32mI (2701) display: cam ung: dung hieu chinh da luu (swap=1 inv_x=1 inv_y=1 x=350..3920 y=216..3913)[0m
+[0;32mI (2701) display: cam ung XPT2046 OK (doc dinh ky, CS=GPIO21)[0m
+[0;32mI (2704) display: display OK ILI9341 320x240, SPI 15 MHz[0m
+[0;32mI (2712) peripheral_test: cam ung da co hieu chinh trong NVS (muon lam lai: dat PT_TOUCH_CALIB = 2)[0m
+[0;32mI (2748) audio: phan vung am thanh: dung 1080/4096 KB[0m
+[0;33mW (2774) audio: thieu 8/21 file am thanh trong assets/audio[0m
+[0;32mI (2774) audio: audio OK (I2S 16000 Hz, BCLK=6 WS=7 DIN=5 SD=4)[0m
+[1;31mE (2775) gpio: gpio_install_isr_service(526): GPIO isr service already installed[0m
+[0;33mW (2781) net_ethernet: GPIO ISR handler already installed, bo qua[0m
+[0;32mI (2809) esp_eth.netif.netif_glue: 80:45:6b:28:17:77[0m
+[0;32mI (2810) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+[0;32mI (2810) net_ethernet: net_ethernet_init OK (spi_host=2 cs=9 int=10)[0m
+[0;32mI (2825) net_ethernet: Driver started[0m
+[0;32mI (2826) pp: pp rom version: e7ae62f[0m
+[0;32mI (2827) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (2828) wifi:wifi driver task: 3fce088c, prio:23, stack:6656, core=0[0m
+[0;32mI (2842) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (2842) wifi:wifi certification version: v7.0[0m
+[0;32mI (2842) wifi:config NVS flash: enabled[0m
+[0;32mI (2843) wifi:config nano formatting: disabled[0m
+[0;32mI (2848) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (2853) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (2857) wifi:Init management short buffer num: 32[0m
+[0;32mI (2861) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (2865) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (2870) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (2874) wifi:Init static rx buffer num: 10[0m
+[0;32mI (2878) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (2882) wifi_init: rx ba win: 6[0m
+[0;32mI (2884) wifi_init: accept mbox: 6[0m
+[0;32mI (2888) wifi_init: tcpip mbox: 32[0m
+[0;32mI (2891) wifi_init: udp mbox: 6[0m
+[0;32mI (2894) wifi_init: tcp mbox: 6[0m
+[0;32mI (2896) wifi_init: tcp tx win: 5760[0m
+[0;32mI (2900) wifi_init: tcp rx win: 5760[0m
+[0;32mI (2903) wifi_init: tcp mss: 1440[0m
+[0;32mI (2906) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (2910) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (2914) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (2922) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (2957) wifi:mode : sta (80:45:6b:28:17:74) + softAP (80:45:6b:28:17:75)[0m
+[0;32mI (2958) wifi:enable tsf[0m
+[0;32mI (2960) wifi:Total power save buffer number: 16[0m
+[0;32mI (2961) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (2964) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (2969) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (2972) net_wifi: STA fallback used -> auto-connect[0m
+[0;32mI (2978) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (2978) net_wifi: AP SSID=XTECH - 281774 IP:192.168.4.1[0m
+[0;32mI (2990) net_gsm: net_gsm_init OK (uart=2 tx=47 rx=48 apn=v-internet)[0m
+[0;32mI (2996) net_gsm: pulse reset[0m
+[0;32mI (2997) net_manager: net_manager_init[0m
+[0;32mI (3003) ntp_time: SNTP started[0m
+[0;33mW (3005) cloud: !!! CHE DO THU (PT_DEMO_PAYMENT = 1): thanh toan GIA LAP, khong co tien that !!![0m
+[0;32mI (3014) main: khoi dong xong[0m
+[0;32mI (3016) main_task: Returned from app_main()[0m
+[0;32mI (3089) session_store: khoi phuc phien order=80456B281774-1791192834-0007 state=1 con 256594 ms (seq=372)[0m
+[0;33mW (3089) app_fsm: KHOI PHUC phien 80456B281774-1791192834-0007: con 256s su dung, 734s do xe[0m
+[0;33mW (3096) cloud: report_event(session_restored, 80456B281774-1791192834-0007): chua ho tro[0m
+[0;32mI (3104) app_fsm: BOOT -> WASHING[0m
+[0;32mI (3134) audio: phat: "Tiếp tục phiên rửa xe trước đó."[0m
+[0;32mI (3978) net_wifi: STA fallback used -> auto-connect[0m
+[0;32mI (4021) wifi:ap channel adjust o:1,1 n:13,2[0m
+[0;32mI (4022) wifi:new:<13,0>, old:<1,1>, ap:<13,2>, sta:<13,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (4023) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (4030) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (4039) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (4052) wifi:connected with TP-Link_FF1E, aid = 1, channel 13, BW20, bssid = c0:c9:e3:1b:ff:1e[0m
+[0;32mI (4053) wifi:security: WPA2-PSK, phy: bgn, rssi: -41[0m
+[0;32mI (4056) wifi:pm start, type: 0[0m
+
+[0;32mI (4058) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4066) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (4075) net_manager: WIFI STA CONNECTED[0m
+[0;32mI (4080) wifi:<ba-add>idx:0 (ifx:0, c0:c9:e3:1b:ff:1e), tid:0, ssn:0, winSize:64[0m
+[0;32mI (4121) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (5090) esp_netif_handlers: sta ip: 192.168.0.144, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (5090) net_wifi: Got IP: 192.168.0.144[0m
+[0;32mI (5091) net_manager: WIFI GOT IP: 192.168.0.144[0m
+[0;32mI (5095) net_manager: Switch default interface -> WIFI_STA_DEF[0m
+[0;32mI (5270) wifi:<ba-add>idx:1 (ifx:0, c0:c9:e3:1b:ff:1e), tid:1, ssn:0, winSize:64[0m
+[0;32mI (10499) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (10500) uart: queue free spaces: 30[0m
+[0;32mI (20388) ntp_time: SNTP dong bo thanh cong: 2026-10-05 16:37:14[0m
+[0;32mI (20389) ntp_time: Da ghi gio he thong xuong RTC[0m
+[1;31mE (30502) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (31503) net_gsm: Modem/song chua san sang, thu lai sau 5000 ms (fail_count=1)[0m
+[0;32mI (36503) net_gsm: pulse reset[0m
+[0;32mI (44003) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (44004) uart: queue free spaces: 30[0m
+[1;31mE (64005) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (65006) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (75006) net_gsm: pulse reset[0m
+[0;32mI (82506) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (82507) uart: queue free spaces: 30[0m
+[1;31mE (102508) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (103509) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (113509) net_gsm: pulse reset[0m
+[0;32mI (121009) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (121010) uart: queue free spaces: 30[0m
+[1;31mE (141011) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (142012) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (152012) net_gsm: pulse reset[0m
+[0;32mI (159512) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (159513) uart: queue free spaces: 30[0m
+[1;31mE (179515) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (180516) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (190516) net_gsm: pulse reset[0m
+[0;32mI (198016) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (198017) uart: queue free spaces: 30[0m
+[1;31mE (218018) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (219019) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (229019) net_gsm: pulse reset[0m
+[0;32mI (236519) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (236520) uart: queue free spaces: 30[0m
+[1;31mE (256522) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (257523) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (267523) net_gsm: pulse reset[0m
+[0;32mI (275023) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (275024) uart: queue free spaces: 30[0m
+[1;31mE (295025) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (296026) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (306026) net_gsm: pulse reset[0m
+[0;32mI (313526) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (313527) uart: queue free spaces: 30[0m
+[1;31mE (333528) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (334529) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (344529) net_gsm: pulse reset[0m
+[0;32mI (352029) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (352030) uart: queue free spaces: 30[0m
+[1;31mE (372031) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (373032) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (383032) net_gsm: pulse reset[0m
+[0;32mI (390532) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (390533) uart: queue free spaces: 30[0m
+[1;31mE (410534) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (411535) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (421535) net_gsm: pulse reset[0m
+[0;32mI (429035) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (429036) uart: queue free spaces: 30[0m
+[1;31mE (449037) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (450038) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (460038) net_gsm: pulse reset[0m
+[0;32mI (467538) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (467539) uart: queue free spaces: 30[0m
+[1;31mE (487540) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (488541) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (498541) net_gsm: pulse reset[0m
+[0;32mI (506041) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (506042) uart: queue free spaces: 30[0m
+[1;31mE (526043) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (527044) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (537044) net_gsm: pulse reset[0m
+[0;32mI (544544) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (544545) uart: queue free spaces: 30[0m
+[1;31mE (564546) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (565547) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (575547) net_gsm: pulse reset[0m
+[0;32mI (583047) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (583048) uart: queue free spaces: 30[0m
+[1;31mE (603049) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (604050) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (614050) net_gsm: pulse reset[0m
+[0;32mI (621550) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (621551) uart: queue free spaces: 30[0m
+[1;31mE (641552) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (642553) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (652553) net_gsm: pulse reset[0m
+[0;32mI (660053) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (660054) uart: queue free spaces: 30[0m
+[0;32mI (677482) audio: phat: "Thời gian đỗ xe còn một phút."[0m
+[0;33mW (677493) audio: thieu file /audio/park_one_min.wav[0m
+[1;31mE (680055) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (681056) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (691056) net_gsm: pulse reset[0m
+[0;32mI (698556) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (698557) uart: queue free spaces: 30[0m
+[1;31mE (718558) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (719559) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (729559) net_gsm: pulse reset[0m
+[0;32mI (737059) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (737060) uart: queue free spaces: 30[0m
+[0;32mI (737491) app_fsm: ket thuc phien 80456B281774-1791192834-0007 (ly do 1): bom thuc bot 4s nuoc 3s kho 25s, con 256s su dung, 0s do xe[0m
+[0;33mW (737494) cloud: [DEMO] report_session(80456B281774-1791192834-0007, end): bo qua[0m
+[0;32mI (737504) app_fsm: WASHING -> FINISHED[0m
+[0;32mI (737521) audio: phat: "Đã hết thời gian rửa xe. Cảm ơn quý khách, hẹn gặp lại."[0m
+[0;32mI (745591) app_fsm: FINISHED -> IDLE[0m
+[0;32mI (747179) audio: phat: "Vui lòng chọn gói dịch vụ trên màn hình trước."[0m
+[0;32mI (750591) display: touch nghi ngo: adc x=867 y=1336 luc=1753 (mau 1/2)[0m
+[0;32mI (750627) display: cam ung: nhan duoc cham dau tien tai x=238 y=196 (luc 2037)[0m
+[0;32mI (750627) display: touch adc x=882 y=1263 luc=2037 -> man hinh x=238 y=196[0m
+[0;32mI (750664) display: touch adc x=886 y=1217 luc=2284 -> man hinh x=242 y=196[0m
+[0;32mI (750700) display: touch adc x=886 y=1208 luc=2309 -> man hinh x=243 y=196[0m
+[0;32mI (750734) display: touch adc x=901 y=1202 luc=2286 -> man hinh x=243 y=195[0m
+[0;32mI (750770) display: touch adc x=900 y=1200 luc=2276 -> man hinh x=244 y=195[0m
+[0;32mI (750805) display: touch adc x=880 y=1224 luc=2057 -> man hinh x=241 y=197[0m
+[0;32mI (750840) display: touch adc x=869 y=1359 luc=1236 -> man hinh x=229 y=197[0m
+[0;32mI (750914) app_fsm: IDLE -> SELECT[0m
+[0;32mI (751782) display: touch nghi ngo: adc x=2519 y=2885 luc=741 (mau 1/2)[0m
+[0;32mI (751854) display: touch nghi ngo: adc x=2491 y=2696 luc=340 (mau 1/2)[0m
+[0;32mI (752343) display: touch nghi ngo: adc x=2144 y=3308 luc=1346 (mau 1/2)[0m
+[0;32mI (752378) display: touch adc x=2160 y=3308 luc=1042 -> man hinh x=55 y=114[0m
+[0;32mI (752449) display: touch adc x=2187 y=3073 luc=653 -> man hinh x=76 y=112[0m
+[0;32mI (752519) display: touch adc x=2168 y=3101 luc=902 -> man hinh x=74 y=113[0m
+[0;32mI (752555) display: touch adc x=2195 y=3248 luc=1048 -> man hinh x=61 y=112[0m
+[0;32mI (752631) app_fsm: tao don 80456B281774-1791193766-0008: Gói 5 phút 5 phut 10000 d[0m
+[0;32mI (752632) app_fsm: SELECT -> CREATING_QR[0m
+[0;33mW (752637) peripheral_test: [DEMO] tao don 80456B281774-1791193766-0008, 10000 d[0m
+[0;33mW (754639) peripheral_test: [DEMO] don 80456B281774-1791193766-0008: da gui ma QR thu[0m
+[0;33mW (754639) peripheral_test: [DEMO] tu bao thanh toan sau 8 s[0m
+[0;32mI (754641) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (754696) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[1;31mE (757061) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (758062) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;33mW (762639) peripheral_test: [DEMO] don 80456B281774-1791193766-0008: gia lap ket qua thanh toan = 0[0m
+[0;33mW (762643) cloud: [DEMO] report_session(80456B281774-1791193766-0008, start): bo qua[0m
+[0;32mI (762645) app_fsm: WAIT_PAYMENT -> PAID[0m
+[0;32mI (762655) audio: phat: "Thanh toán thành công. Cảm ơn quý khách."[0m
+[0;32mI (765697) app_fsm: PAID -> WASHING[0m
+[0;32mI (765719) audio: phat: "Bắt đầu rửa xe. Nhấn nút bọt, nước hoặc xịt khô để sử dụng."[0m
+[0;33mW (765731) audio: thieu file /audio/wash_guide.wav[0m
+[0;32mI (767673) audio: phat: "Phun nước."[0m
+[0;33mW (767684) audio: thieu file /audio/water_on.wav[0m
+[0;32mI (768062) net_gsm: pulse reset[0m
+[0;32mI (775562) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (775563) uart: queue free spaces: 30[0m
+[1;31mE (795565) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (796566) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (806566) net_gsm: pulse reset[0m
+[0;32mI (814066) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (814067) uart: queue free spaces: 30[0m
+[1;31mE (834068) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (835069) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (845069) net_gsm: pulse reset[0m
+[0;32mI (852569) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (852570) uart: queue free spaces: 30[0m
+[1;31mE (872571) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (873572) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (883572) net_gsm: pulse reset[0m
+[0;32mI (891072) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (891073) uart: queue free spaces: 30[0m
+[1;31mE (911074) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (912075) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (920451) ntp_time: SNTP dong bo thanh cong: 2026-10-05 16:52:14[0m
+[0;32mI (920452) ntp_time: Da ghi gio he thong xuong RTC[0m
+[0;32mI (922075) net_gsm: pulse reset[0m
+[0;32mI (929575) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (929576) uart: queue free spaces: 30[0m
+[1;31mE (949577) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (950578) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (960578) net_gsm: pulse reset[0m
+[0;32mI (968078) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (968079) uart: queue free spaces: 30[0m
+[1;31mE (988080) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (989081) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (999081) net_gsm: pulse reset[0m
+[0;32mI (1006581) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1006582) uart: queue free spaces: 30[0m
+[0;32mI (1007613) audio: phat: "Thời gian sử dụng còn một phút."[0m
+[1;31mE (1026584) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1027585) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1037585) net_gsm: pulse reset[0m
+[0;32mI (1045085) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1045086) uart: queue free spaces: 30[0m
+[1;31mE (1065087) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1066088) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1067621) app_fsm: ket thuc phien 80456B281774-1791193766-0008 (ly do 2): bom thuc bot 0s nuoc 300s kho 0s, con 0s su dung, 598s do xe[0m
+[0;33mW (1067625) cloud: [DEMO] report_session(80456B281774-1791193766-0008, end): bo qua[0m
+[0;32mI (1067634) app_fsm: WASHING -> FINISHED[0m
+[0;32mI (1067651) audio: phat: "Đã hết thời gian rửa xe. Cảm ơn quý khách, hẹn gặp lại."[0m
+[0;32mI (1075722) app_fsm: FINISHED -> IDLE[0m
+[0;32mI (1076088) net_gsm: pulse reset[0m
+[0;32mI (1083588) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1083589) uart: queue free spaces: 30[0m
+[1;31mE (1103590) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1104591) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1114591) net_gsm: pulse reset[0m
+[0;32mI (1122091) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1122092) uart: queue free spaces: 30[0m
+[1;31mE (1142093) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1143094) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1153094) net_gsm: pulse reset[0m
+[0;32mI (1160594) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1160595) uart: queue free spaces: 30[0m
+[1;31mE (1180596) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1181597) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1191597) net_gsm: pulse reset[0m
+[0;32mI (1199097) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1199098) uart: queue free spaces: 30[0m
+[1;31mE (1219099) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1220100) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1230100) net_gsm: pulse reset[0m
+[0;32mI (1237600) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1237601) uart: queue free spaces: 30[0m
+[1;31mE (1257602) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1258603) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1268603) net_gsm: pulse reset[0m
+[0;32mI (1276103) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1276104) uart: queue free spaces: 30[0m
+[1;31mE (1296105) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1297106) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1307106) net_gsm: pulse reset[0m
+[0;32mI (1314606) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1314607) uart: queue free spaces: 30[0m
+[1;31mE (1334608) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1335609) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1345609) net_gsm: pulse reset[0m
+[0;32mI (1353109) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1353110) uart: queue free spaces: 30[0m
+[1;31mE (1373111) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1374112) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1384112) net_gsm: pulse reset[0m
+[0;32mI (1391612) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1391613) uart: queue free spaces: 30[0m
+[1;31mE (1411614) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1412615) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1422615) net_gsm: pulse reset[0m
+[0;32mI (1430115) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1430116) uart: queue free spaces: 30[0m
+[1;31mE (1450117) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1451118) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1461118) net_gsm: pulse reset[0m
+[0;32mI (1468618) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1468619) uart: queue free spaces: 30[0m
+[1;31mE (1488621) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1489622) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1499622) net_gsm: pulse reset[0m
+[0;32mI (1507122) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1507123) uart: queue free spaces: 30[0m
+[1;31mE (1527124) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1528125) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1538125) net_gsm: pulse reset[0m
+[0;32mI (1545626) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1545626) uart: queue free spaces: 30[0m
+[1;31mE (1565628) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1566629) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1576629) net_gsm: pulse reset[0m
+[0;32mI (1584129) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1584130) uart: queue free spaces: 30[0m
+[1;31mE (1604131) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1605132) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1615132) net_gsm: pulse reset[0m
+[0;32mI (1622632) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1622633) uart: queue free spaces: 30[0m
+[1;31mE (1642634) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1643635) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1653635) net_gsm: pulse reset[0m
+[0;32mI (1661135) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1661136) uart: queue free spaces: 30[0m
+[1;31mE (1681137) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1682138) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1692138) net_gsm: pulse reset[0m
+[0;32mI (1699638) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1699639) uart: queue free spaces: 30[0m
+[1;31mE (1719640) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1720641) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1730641) net_gsm: pulse reset[0m
+[0;32mI (1738141) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1738142) uart: queue free spaces: 30[0m
+[1;31mE (1758143) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1759144) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1769144) net_gsm: pulse reset[0m
+[0;32mI (1776644) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1776645) uart: queue free spaces: 30[0m
+[1;31mE (1796646) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1797647) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1807647) net_gsm: pulse reset[0m
+[0;32mI (1815147) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1815148) uart: queue free spaces: 30[0m
+[0;32mI (1820568) ntp_time: SNTP dong bo thanh cong: 2026-10-05 17:07:14[0m
+[0;32mI (1820570) ntp_time: Da ghi gio he thong xuong RTC[0m
+[1;31mE (1835149) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1836150) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1846150) net_gsm: pulse reset[0m
+[0;32mI (1853650) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1853651) uart: queue free spaces: 30[0m
+[1;31mE (1873652) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1874653) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1884653) net_gsm: pulse reset[0m
+[0;32mI (1892153) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1892154) uart: queue free spaces: 30[0m
+[1;31mE (1912155) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1913156) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1923156) net_gsm: pulse reset[0m
+[0;32mI (1930656) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1930657) uart: queue free spaces: 30[0m
+[1;31mE (1950658) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1951659) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (1961659) net_gsm: pulse reset[0m
+[0;32mI (1969159) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (1969160) uart: queue free spaces: 30[0m
+[1;31mE (1989161) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (1990162) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (2000162) net_gsm: pulse reset[0m
+[0;32mI (2007662) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2007663) uart: queue free spaces: 30[0m
+[1;31mE (2027664) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (2028665) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (2038665) net_gsm: pulse reset[0m
+[0;32mI (2046165) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2046166) uart: queue free spaces: 30[0m
+[1;31mE (2066167) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (2067168) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (2077168) net_gsm: pulse reset[0m
+[0;32mI (2084668) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2084669) uart: queue free spaces: 30[0m
+[1;31mE (2104670) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (2105671) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (2115671) net_gsm: pulse reset[0m
+[0;32mI (2123171) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2123172) uart: queue free spaces: 30[0m
+[1;31mE (2143173) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (2144174) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (2154174) net_gsm: pulse reset[0m
+[0;32mI (2161674) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2161675) uart: queue free spaces: 30[0m
+[1;31mE (2181676) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (2182677) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (2192677) net_gsm: pulse reset[0m
+[0;32mI (2200177) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2200178) uart: queue free spaces: 30[0m
+[1;31mE (2220179) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (2221180) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (2231180) net_gsm: pulse reset[0m
+[0;32mI (2238680) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2238681) uart: queue free spaces: 30[0m
+[1;31mE (2258682) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (2259683) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (2269683) net_gsm: pulse reset[0m
+[0;32mI (2277183) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2277184) uart: queue free spaces: 30[0m
+[1;31mE (2297185) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (2298186) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (2308186) net_gsm: pulse reset[0m
+[0;32mI (2315686) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2315687) uart: queue free spaces: 30[0m
+[1;31mE (2335688) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (2336689) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (2346689) net_gsm: pulse reset[0m
+[0;32mI (2354189) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2354190) uart: queue free spaces: 30[0m
+[1;31mE (2374191) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (2375192) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (2385192) net_gsm: pulse reset[0m
+[0;32mI (2392692) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2392693) uart: queue free spaces: 30[0m
+[1;31mE (2412694) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (2413695) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (2423695) net_gsm: pulse reset[0m
+[0;32mI (2431195) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2431196) uart: queue free spaces: 30[0m
+[1;31mE (2451197) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (2452198) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (2462198) net_gsm: pulse reset[0m
+[0;32mI (2469698) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2469699) uart: queue free spaces: 30[0m
+[1;31mE (2489700) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (2490701) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (2500701) net_gsm: pulse reset[0m
+[0;32mI (2508201) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2508202) uart: queue free spaces: 30[0m
+[1;31mE (2528203) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (2529204) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (2539204) net_gsm: pulse reset[0m
+[0;32mI (2546704) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2546705) uart: queue free spaces: 30[0m
+[1;31mE (2566706) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (2567707) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (2577707) net_gsm: pulse reset[0m
+[0;32mI (2585207) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2585208) uart: queue free spaces: 30[0m
+[1;31mE (2605209) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (2606210) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (2616210) net_gsm: pulse reset[0m
+[0;32mI (2623710) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2623711) uart: queue free spaces: 30[0m
+[1;31mE (2643712) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (2644713) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (2654713) net_gsm: pulse reset[0m
+[0;32mI (2662213) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2662214) uart: queue free spaces: 30[0m
+[1;31mE (2682215) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (2683216) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (2693216) net_gsm: pulse reset[0m
+[0;32mI (2700716) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2700717) uart: queue free spaces: 30[0m
+[0;32mI (2720633) ntp_time: SNTP dong bo thanh cong: 2026-10-05 17:22:14[0m
+[0;32mI (2720634) ntp_time: Da ghi gio he thong xuong RTC[0m
+[1;31mE (2720718) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (2721719) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (2731719) net_gsm: pulse reset[0m
+[0;32mI (2739219) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2739220) uart: queue free spaces: 30[0m
+[1;31mE (2759221) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (2760222) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (2770222) net_gsm: pulse reset[0m
+[0;32mI (2777722) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2777723) uart: queue free spaces: 30[0m
+[1;31mE (2797724) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (2798725) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (2808725) net_gsm: pulse reset[0m
+[0;32mI (2816225) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2816226) uart: queue free spaces: 30[0m
+[1;31mE (2836227) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (2837228) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (2847228) net_gsm: pulse reset[0m
+[0;32mI (2854728) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2854729) uart: queue free spaces: 30[0m
+[1;31mE (2874730) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (2875731) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (2885731) net_gsm: pulse reset[0m
+[0;32mI (2893231) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2893232) uart: queue free spaces: 30[0m
+[1;31mE (2913233) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (2914234) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (2924234) net_gsm: pulse reset[0m
+[0;32mI (2931734) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2931735) uart: queue free spaces: 30[0m
+[1;31mE (2951736) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (2952737) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (2962737) net_gsm: pulse reset[0m
+[0;32mI (2970237) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (2970238) uart: queue free spaces: 30[0m
+[1;31mE (2990239) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (2991240) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (3001240) net_gsm: pulse reset[0m
+[0;32mI (3008740) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3008741) uart: queue free spaces: 30[0m
+[1;31mE (3028742) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (3029743) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (3039743) net_gsm: pulse reset[0m
+[0;32mI (3047243) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3047244) uart: queue free spaces: 30[0m
+[1;31mE (3067245) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (3068246) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (3078246) net_gsm: pulse reset[0m
+[0;32mI (3085746) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3085747) uart: queue free spaces: 30[0m
+[1;31mE (3105748) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (3106749) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (3116749) net_gsm: pulse reset[0m
+[0;32mI (3124249) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3124250) uart: queue free spaces: 30[0m
+[1;31mE (3144251) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (3145252) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (3155252) net_gsm: pulse reset[0m
+[0;32mI (3162752) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3162753) uart: queue free spaces: 30[0m
+[1;31mE (3182754) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (3183755) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (3193755) net_gsm: pulse reset[0m
+[0;32mI (3201255) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3201256) uart: queue free spaces: 30[0m
+[1;31mE (3221257) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (3222258) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (3232258) net_gsm: pulse reset[0m
+[0;32mI (3239758) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3239759) uart: queue free spaces: 30[0m
+[1;31mE (3259760) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (3260761) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (3270761) net_gsm: pulse reset[0m
+[0;32mI (3278261) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3278262) uart: queue free spaces: 30[0m
+[1;31mE (3298263) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (3299264) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (3309264) net_gsm: pulse reset[0m
+[0;32mI (3316764) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3316765) uart: queue free spaces: 30[0m
+[1;31mE (3336766) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (3337767) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (3347767) net_gsm: pulse reset[0m
+[0;32mI (3355267) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3355268) uart: queue free spaces: 30[0m
+[1;31mE (3375269) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (3376270) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (3386270) net_gsm: pulse reset[0m
+[0;32mI (3393770) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3393771) uart: queue free spaces: 30[0m
+[1;31mE (3413772) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (3414773) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (3424773) net_gsm: pulse reset[0m
+[0;32mI (3432273) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3432274) uart: queue free spaces: 30[0m
+[1;31mE (3452275) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (3453276) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (3463276) net_gsm: pulse reset[0m
+[0;32mI (3470776) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3470777) uart: queue free spaces: 30[0m
+[1;31mE (3490778) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (3491779) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (3501779) net_gsm: pulse reset[0m
+[0;32mI (3509279) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3509280) uart: queue free spaces: 30[0m
+[1;31mE (3529282) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (3530283) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (3540283) net_gsm: pulse reset[0m
+[0;32mI (3547783) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3547784) uart: queue free spaces: 30[0m
+[1;31mE (3567785) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (3568786) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (3578786) net_gsm: pulse reset[0m
+[0;32mI (3586286) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3586287) uart: queue free spaces: 30[0m
+[1;31mE (3606288) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (3607289) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (3617289) net_gsm: pulse reset[0m
+[0;32mI (3620702) ntp_time: SNTP dong bo thanh cong: 2026-10-05 17:37:14[0m
+[0;32mI (3620703) ntp_time: Da ghi gio he thong xuong RTC[0m
+[0;32mI (3624789) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3624790) uart: queue free spaces: 30[0m
+[1;31mE (3644791) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (3645792) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (3655792) net_gsm: pulse reset[0m
+[0;32mI (3663292) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3663293) uart: queue free spaces: 30[0m
+[1;31mE (3683294) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (3684295) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (3694295) net_gsm: pulse reset[0m
+[0;32mI (3701795) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3701796) uart: queue free spaces: 30[0m
+[1;31mE (3721797) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (3722798) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (3732798) net_gsm: pulse reset[0m
+[0;32mI (3740298) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3740299) uart: queue free spaces: 30[0m
+[1;31mE (3760300) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (3761301) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (3771301) net_gsm: pulse reset[0m
+[0;32mI (3778801) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3778802) uart: queue free spaces: 30[0m
+[1;31mE (3798803) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (3799804) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (3809804) net_gsm: pulse reset[0m
+[0;32mI (3817304) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3817305) uart: queue free spaces: 30[0m
+[1;31mE (3837306) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (3838307) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (3848307) net_gsm: pulse reset[0m
+[0;32mI (3855807) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3855808) uart: queue free spaces: 30[0m
+[1;31mE (3875809) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (3876810) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (3886810) net_gsm: pulse reset[0m
+[0;32mI (3894310) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3894311) uart: queue free spaces: 30[0m
+[1;31mE (3914312) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (3915313) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (3925313) net_gsm: pulse reset[0m
+[0;32mI (3932813) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3932814) uart: queue free spaces: 30[0m
+[1;31mE (3952815) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (3953816) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (3963816) net_gsm: pulse reset[0m
+[0;32mI (3971316) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (3971317) uart: queue free spaces: 30[0m
+[1;31mE (3991318) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (3992319) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (4002319) net_gsm: pulse reset[0m
+[0;32mI (4009819) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (4009820) uart: queue free spaces: 30[0m
+[1;31mE (4029821) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (4030822) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (4040822) net_gsm: pulse reset[0m
+[0;32mI (4048322) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (4048323) uart: queue free spaces: 30[0m
+[1;31mE (4068324) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (4069325) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (4079325) net_gsm: pulse reset[0m
+[0;32mI (4086825) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (4086826) uart: queue free spaces: 30[0m
+[1;31mE (4106827) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (4107828) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (4117828) net_gsm: pulse reset[0m
+[0;32mI (4125328) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (4125329) uart: queue free spaces: 30[0m
+[1;31mE (4145330) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (4146331) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (4156331) net_gsm: pulse reset[0m
+[0;32mI (4163831) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (4163832) uart: queue free spaces: 30[0m
+[1;31mE (4183833) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (4184834) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (4194834) net_gsm: pulse reset[0m
+[0;32mI (4202334) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (4202335) uart: queue free spaces: 30[0m
+[1;31mE (4222336) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (4223337) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (4233337) net_gsm: pulse reset[0m
+[0;32mI (4240837) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (4240838) uart: queue free spaces: 30[0m
+[1;31mE (4260839) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (4261840) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (4271840) net_gsm: pulse reset[0m
+[0;32mI (4279340) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (4279341) uart: queue free spaces: 30[0m
+[1;31mE (4299342) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (4300343) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (4304152) display: touch nghi ngo: adc x=1024 y=1052 luc=1104 (mau 1/2)[0m
+[0;32mI (4304188) display: touch adc x=1043 y=1035 luc=1332 -> man hinh x=258 y=186[0m
+[0;32mI (4304223) display: touch adc x=1041 y=1056 luc=1104 -> man hinh x=256 y=186[0m
+[0;32mI (4304299) app_fsm: IDLE -> SELECT[0m
+[0;32mI (4310343) net_gsm: pulse reset[0m
+[0;32mI (4317843) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (4317844) uart: queue free spaces: 30[0m
+[0;32mI (4327954) display: touch nghi ngo: adc x=2523 y=1338 luc=2348 (mau 1/2)[0m
+[0;32mI (4327990) display: touch adc x=2523 y=1336 luc=2649 -> man hinh x=231 y=90[0m
+[0;32mI (4328101) app_fsm: tao don 80456B281774-1791197341-0009: Gói 10 phút 10 phut 20000 d[0m
+[0;32mI (4328102) app_fsm: SELECT -> CREATING_QR[0m
+[0;33mW (4328108) peripheral_test: [DEMO] tao don 80456B281774-1791197341-0009, 20000 d[0m
+[0;33mW (4330110) peripheral_test: [DEMO] don 80456B281774-1791197341-0009: da gui ma QR thu[0m
+[0;33mW (4330110) peripheral_test: [DEMO] tu bao thanh toan sau 8 s[0m
+[0;32mI (4330112) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (4330169) audio: phat: "Vui lòng quét mã QR để thanh toán."[0m
+[0;32mI (4331539) display: touch nghi ngo: adc x=797 y=1184 luc=1081 (mau 1/2)[0m
+[0;32mI (4331575) display: touch adc x=853 y=1201 luc=1069 -> man hinh x=243 y=198[0m
+[0;33mW (4331644) peripheral_test: [DEMO] huy don 80456B281774-1791197341-0009[0m
+[0;32mI (4331645) app_fsm: WAIT_PAYMENT -> NOTICE[0m
+[0;32mI (4335671) app_fsm: NOTICE -> IDLE[0m
+[1;31mE (4337845) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (4338846) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (4348846) net_gsm: pulse reset[0m
+[0;32mI (4356346) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (4356347) uart: queue free spaces: 30[0m
+[1;31mE (4376349) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (4377350) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (4387350) net_gsm: pulse reset[0m
+[0;32mI (4394850) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (4394851) uart: queue free spaces: 30[0m
+[1;31mE (4414852) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (4415853) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (4425853) net_gsm: pulse reset[0m
+[0;32mI (4433353) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (4433354) uart: queue free spaces: 30[0m
+[1;31mE (4453355) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (4454356) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (4464356) net_gsm: pulse reset[0m
+[0;32mI (4471856) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (4471857) uart: queue free spaces: 30[0m
+[1;31mE (4491858) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (4492859) net_gsm: Modem/song chua san sang, thu lai sau 10000 ms (fail_count=1)[0m
+[0;32mI (4502859) net_gsm: pulse reset[0m
+[0;32mI (4510359) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (4510360) uart: queue free spaces: 30[0m

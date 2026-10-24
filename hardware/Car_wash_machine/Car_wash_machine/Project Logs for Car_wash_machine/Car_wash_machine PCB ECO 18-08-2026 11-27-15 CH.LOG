@@ -1,0 +1,25 @@
+Change Component Designator: OldDesignator=+2 NewDesignator=+12V
+Change Component Designator: OldDesignator=+3 NewDesignator=+3V9
+Change Component Designator: OldDesignator=+4 NewDesignator=+3V3
+Change Component Designator: OldDesignator=GND1 NewDesignator=GND
+Change Component Designator: OldDesignator=GND2 NewDesignator=GND
+Added Component: Designator=+5V(PAD_SMD_D1.2MM - duplicate1)
+Add component (AddParameter): Name = "Description 1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Description 2"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "EOL Type"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height(mm)"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LIBRARY MADE BY"; Value = "MR. XUAN SIEU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Line Type"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Link"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer PN"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Type"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "order code"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Type"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "MHT"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+5V Pin=+5V-0
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component +5V TP_1MM

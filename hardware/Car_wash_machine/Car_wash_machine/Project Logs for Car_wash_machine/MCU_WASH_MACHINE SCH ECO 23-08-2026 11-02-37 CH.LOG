@@ -1,0 +1,6 @@
+Remove Pin=U9-9 From Net=RX1_ESP
+Remove Pin=U9-10 From Net=TX1_ESP
+Change Component Footprint: Designator=U3 Old Footprint=SOP_16_ULN2003 New Footprint=ULN2003
+Add Pin To Net: Pin=U9-8 Old Net=NetU9_8 New Net=TFT_GND
+Add Pin To Net: Pin=U9-9 Old Net=RX1_ESP New Net=TFT_MOSI
+Add Pin To Net: Pin=U9-10 Old Net=TX1_ESP New Net=TFT_MISO

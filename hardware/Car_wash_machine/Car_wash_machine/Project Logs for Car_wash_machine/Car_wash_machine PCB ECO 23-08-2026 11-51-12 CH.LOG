@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=RX1_ESP Pin=U9-9
+Removed Pin From Net: NetName=TX1_ESP Pin=U9-10
+Added Pin To Net: NetName=TX1_ESP Pin=U9-9
+Added Pin To Net: NetName=RX1_ESP Pin=U9-10
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component GND TP_1MM

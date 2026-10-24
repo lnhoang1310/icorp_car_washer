@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=ETH_SCSN Pin=U9-17
+Removed Pin From Net: NetName=ETH_CLK Pin=U9-18
+Removed Pin From Net: NetName=ETH_MISO Pin=U9-19
+Removed Pin From Net: NetName=ETH_RST Pin=U9-20
+Removed Pin From Net: NetName=ETH_MOSI Pin=U9-21
+Removed Pin From Net: NetName=ETH_CLK Pin=U9-22
+Removed Pin From Net: NetName=RESET_SIM Pin=U9-26
+Removed Pin From Net: NetName=TFT_MOSI Pin=U9-28
+Removed Pin From Net: NetName=TFT_MISO Pin=U9-30
+Removed Pin From Net: NetName=TFT_CS Pin=U9-31
+Removed Pin From Net: NetName=TFT_DC Pin=U9-32
+Added Pin To Net: NetName=ETH_SCSN Pin=U9-26
+Added Pin To Net: NetName=ETH_INTN Pin=U9-28
+Added Pin To Net: NetName=ETH_RST Pin=U9-30
+Added Pin To Net: NetName=ETH_MOSI Pin=U9-31
+Added Pin To Net: NetName=ETH_CLK Pin=U9-32
+Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component GND TP_1MM

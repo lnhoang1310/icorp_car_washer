@@ -1,0 +1,32 @@
+Command: ninja storage-flash
+[1/2] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\esp-idf\main && D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\littlefs_py_venv\Scripts\littlefs-python.exe create D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/assets/audio D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build/storage.bin -v --fs-size=0x400000 --name-max=64 --block-size=4096"
+LittleFS Configuration:
+  Block Size:       4096  /  0x1000
+  Image Size:    4194304  /  0x400000
+  Block Count:      1024
+  Name Max:           64
+  Image:       D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\storage.bin
+Adding File:      dry_empty.wav
+Adding File:      dry_on.wav
+Adding File:      end.wav
+Adding File:      end_early.wav
+Adding File:      error.wav
+Adding File:      estop.wav
+Adding File:      estop_hold.wav
+Adding File:      foam_empty.wav
+Adding File:      foam_on.wav
+Adding File:      offline.wav
+Adding File:      one_min.wav
+Adding File:      pay_ok.wav
+Adding File:      pump_stop.wav
+Adding File:      qr_expired.wav
+Adding File:      restored.wav
+Adding File:      resume_ask.wav
+Adding File:      scan_qr.wav
+Adding File:      select_pkg.wav
+Adding File:      too_fast.wav
+[1/2] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\main && C:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.5.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.5_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.5.1/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@storage-flash_args -D WORKING_DIRECTORY=D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build -P C:/Espressif/frameworks/esp-idf-v5.5.1/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32s3 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size detect 0x66e000 storage.bin
+esptool.py v4.10.0
+Found 5 serial ports
+Serial port COM8
