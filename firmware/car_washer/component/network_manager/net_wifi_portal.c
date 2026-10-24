@@ -15,9 +15,17 @@
 
 static const char *TAG = "wifi_portal";
 
-/* trang web nhung vao firmware (main/CMakeLists.txt: EMBED_TXTFILES) */
-extern const char portal_html_start[] asm("_binary_net_wifi_portal_html_start");
-extern const char portal_html_end[] asm("_binary_net_wifi_portal_html_end");
+/* Trang web nhung vao firmware (main/CMakeLists.txt: EMBED_TXTFILES), tach 3 file:
+ *   component/embedded_files/wifi_portal.html  khung trang      -> GET /
+ *   component/embedded_files/wifi_portal.css   giao dien        -> GET /wifi_portal.css
+ *   component/embedded_files/wifi_portal.js    xu ly, goi /api  -> GET /wifi_portal.js
+ * Ten duong dan trung ten file -> mo file .html tren may tinh van xem thu duoc. */
+extern const char portal_html_start[] asm("_binary_wifi_portal_html_start");
+extern const char portal_html_end[] asm("_binary_wifi_portal_html_end");
+extern const char portal_css_start[] asm("_binary_wifi_portal_css_start");
+extern const char portal_css_end[] asm("_binary_wifi_portal_css_end");
+extern const char portal_js_start[] asm("_binary_wifi_portal_js_start");
+extern const char portal_js_end[] asm("_binary_wifi_portal_js_end");
 
 #define PORTAL_SCAN_WAIT_MS  8000
 #define PORTAL_SCAN_MAX      NET_WIFI_MAX_SAVED
@@ -94,12 +102,27 @@ static const char *connect_error(void)
 
 /* ================= HTTP ================= */
 
+/* Gui 1 file nhung. EMBED_TXTFILES them '\0' o cuoi -> tru 1 */
+static esp_err_t send_embedded(httpd_req_t *req, const char *type, const char *start, const char *end)
+{
+    httpd_resp_set_type(req, type);
+    httpd_resp_set_hdr(req, "Cache-Control", "no-store");
+    return httpd_resp_send(req, start, end - start - 1);
+}
+
 static esp_err_t h_root(httpd_req_t *req)
 {
-    httpd_resp_set_type(req, "text/html; charset=utf-8");
-    httpd_resp_set_hdr(req, "Cache-Control", "no-store");
-    /* EMBED_TXTFILES them '\0' o cuoi -> tru 1 */
-    return httpd_resp_send(req, portal_html_start, portal_html_end - portal_html_start - 1);
+    return send_embedded(req, "text/html; charset=utf-8", portal_html_start, portal_html_end);
+}
+
+static esp_err_t h_css(httpd_req_t *req)
+{
+    return send_embedded(req, "text/css; charset=utf-8", portal_css_start, portal_css_end);
+}
+
+static esp_err_t h_js(httpd_req_t *req)
+{
+    return send_embedded(req, "application/javascript; charset=utf-8", portal_js_start, portal_js_end);
 }
 
 static esp_err_t h_status(httpd_req_t *req)
@@ -112,6 +135,13 @@ static esp_err_t h_status(httpd_req_t *req)
     snprintf(buf, sizeof(buf), "%02x%02x%02x%02x%02x%02x", mac[0], mac[1], mac[2], mac[3], mac[4], mac[5]);
     cJSON_AddStringToObject(r, "mac", buf);
     cJSON_AddStringToObject(r, "fw", s_cfg.fw_version ? s_cfg.fw_version : "");
+    cJSON_AddStringToObject(r, "hw", s_cfg.hw_version ? s_cfg.hw_version : "");
+
+    /* Trang thai Internet tung mang (cham xanh / do tren trang) */
+    cJSON *links = cJSON_AddObjectToObject(r, "links");
+    cJSON_AddBoolToObject(links, "eth", net_manager_type_ready(NM_IF_ETH));
+    cJSON_AddBoolToObject(links, "4g", net_manager_type_ready(NM_IF_PPP));
+    cJSON_AddBoolToObject(links, "wifi", net_manager_type_ready(NM_IF_WIFI));
     cJSON_AddStringToObject(r, "net", active_net());
 
     /* WiFi STA: dang ket noi thi lay ten AP that, chua thi lay ten dang cau hinh */
@@ -285,6 +315,7 @@ static esp_err_t start_http(void)
     c.stack_size = 6144;
     c.max_open_sockets = 5; /* lwip chi co 16 socket, con cho MQTT/DNS/SNTP */
     c.lru_purge_enable = true;
+    c.max_uri_handlers = 12; /* 7 duong dan + du phong */
     c.core_id = 0;
     c.recv_wait_timeout = 5;
     c.send_wait_timeout = 5;
@@ -297,6 +328,8 @@ static esp_err_t start_http(void)
     }
     static const httpd_uri_t uris[] = {
         {.uri = "/", .method = HTTP_GET, .handler = h_root},
+        {.uri = "/wifi_portal.css", .method = HTTP_GET, .handler = h_css},
+        {.uri = "/wifi_portal.js", .method = HTTP_GET, .handler = h_js},
         {.uri = "/api/status", .method = HTTP_GET, .handler = h_status},
         {.uri = "/api/scan", .method = HTTP_GET, .handler = h_scan},
         {.uri = "/api/connect", .method = HTTP_POST, .handler = h_connect},

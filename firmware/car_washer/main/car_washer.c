@@ -172,7 +172,7 @@ void app_main(void)
     init_network();
     ntp_time_start_sync();
     cloud_init();
-    wifi_portal_config_t portal = {.fw_version = FW_VERSION, .server_ready = cloud_is_ready};
+    wifi_portal_config_t portal = {.fw_version = FW_VERSION, .hw_version = HW_VERSION, .server_ready = cloud_is_ready};
     wifi_portal_start(&portal);
 
     /* 5. Chay may trang thai (tu khoi phuc phien neu mat dien giua chung) */

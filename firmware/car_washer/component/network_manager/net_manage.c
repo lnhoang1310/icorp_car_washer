@@ -293,3 +293,8 @@ const char *net_manager_ready_other_name(esp_netif_t *exclude)
     }
     return NULL;
 }
+
+bool net_manager_type_ready(nm_if_t t)
+{
+    return t < NM_IF_MAX && if_ready(t);
+}

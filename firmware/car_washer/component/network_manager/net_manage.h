@@ -35,6 +35,9 @@ void net_manager_evaluate(void);
 esp_netif_t *net_manager_get_default_netif(void);
 bool net_manager_is_primary_available(void);
 
+/* Loai mang t (Ethernet / WiFi / 4G) dang co ket noi Internet dung duoc */
+bool net_manager_type_ready(nm_if_t t);
+
 /* Mang n dang dung duoc (co link + co IP; Ethernet: da on dinh) */
 bool net_manager_netif_ready(esp_netif_t *n);
 

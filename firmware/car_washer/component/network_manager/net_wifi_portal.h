@@ -17,7 +17,8 @@
 
 typedef struct
 {
-    const char *fw_version;    /* hien o chan trang */
+    const char *fw_version;    /* hien duoi dong MAC */
+    const char *hw_version;
     bool (*server_ready)(void); /* tu da ket noi may chu chua (NULL = khong bao) */
 } wifi_portal_config_t;
 

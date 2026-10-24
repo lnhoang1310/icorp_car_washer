@@ -12,8 +12,10 @@ if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "")
   "ldgen_libraries"
   "ldgen_libraries.in"
   "littlefs_py_venv"
-  "net_wifi_portal.html.S"
   "project_elf_src_esp32s3.c"
+  "wifi_portal.css.S"
+  "wifi_portal.html.S"
+  "wifi_portal.js.S"
   "x509_crt_bundle.S"
   )
 endif()

@@ -72,7 +72,9 @@ INCLUDE_DIRS
 "../component/audio"
 
 EMBED_TXTFILES
-"../component/network_manager/net_wifi_portal.html"
+"../component/embedded_files/wifi_portal.html"
+"../component/embedded_files/wifi_portal.css"
+"../component/embedded_files/wifi_portal.js"
 )
 
 littlefs_create_partition_image(storage ../assets/audio FLASH_IN_PROJECT)

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Cấu hình WiFi</title>
+  <link rel="stylesheet" href="wifi_portal.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Cấu hình WiFi</h1>
+      <div class="sub">Tủ điều khiển rửa xe · <span id="mac">—</span></div>
+      <div class="sub">HW Version <span id="hw">—</span></div>
+      <div class="sub">FW Version <span id="fw">—</span></div>
+    </header>
+
+    <!-- Thong bao ket qua (thanh cong / loi / dang xu ly) -->
+    <div class="msg" id="msg"></div>
+
+    <!-- Trang thai tu -->
+    <section class="card">
+      <!-- Trang thai Internet tung mang: cham xanh = dang co ket noi, do = khong -->
+      <div class="links">
+        <span><span class="dot" id="l-eth"></span>Ethernet</span>
+        <span><span class="dot" id="l-4g"></span>4G</span>
+        <span><span class="dot" id="l-wifi"></span>WiFi</span>
+      </div>
+      <dl class="st">
+        <dt>Mạng đang dùng</dt><dd id="s-net">—</dd>
+        <dt>WiFi</dt><dd id="s-wifi">—</dd>
+        <dt>Địa chỉ IP</dt><dd id="s-ip">—</dd>
+        <dt>Máy chủ</dt><dd id="s-srv">—</dd>
+      </dl>
+    </section>
+
+    <!-- Danh sach WiFi quet duoc (do wifi_portal.js ve) -->
+    <section class="card">
+      <div class="hd">
+        <h2>Mạng WiFi xung quanh</h2>
+        <button class="btn gh" id="scan">Quét lại</button>
+      </div>
+      <ul id="list">
+        <li class="empty"><span class="spin"></span>&nbsp; Đang quét…</li>
+      </ul>
+    </section>
+
+    <!-- Nhap tay mang an -->
+    <section class="card">
+      <div class="hd"><h2>Mạng ẩn</h2></div>
+      <div class="hid">
+        <div class="fm">
+          <label for="h-ssid">Tên WiFi (SSID)</label>
+          <div class="pw">
+            <input id="h-ssid" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="32">
+          </div>
+          <label for="h-pw">Mật khẩu</label>
+          <div class="pw">
+            <input id="h-pw" type="password" autocomplete="off" maxlength="64">
+            <button class="eye" type="button" data-for="h-pw">Hiện</button>
+          </div>
+          <button class="btn full" id="h-go">Kết nối</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="foot">Trục trặc xin liên hệ 19001900</div>
+  </div>
+
+  <script src="wifi_portal.js"></script>
+</body>
+</html>
