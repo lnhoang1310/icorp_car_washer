@@ -29,6 +29,8 @@ void scr_resume_build(lv_obj_t *scr, const ws_session_t *s);
 void scr_finished_build(lv_obj_t *scr, const ws_session_t *s);
 void scr_notice_build(lv_obj_t *scr, const char *title, const char *message);
 void scr_offline_build(lv_obj_t *scr, const char *phone);
+/* Vua khoi dong, dang ket noi server lan dau (trong scr_offline.c) */
+void scr_connecting_build(lv_obj_t *scr);
 
 /* Thao tac nguoi dung -- trien khai trong ui_manager.c */
 void ui_on_manual(void);            /* bam "Bam vao day" o man dau */

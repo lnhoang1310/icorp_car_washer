@@ -1,3 +1,0 @@
-Added Pin To Net: NetName=T_CS Pin=U9-23
-Added Pin To Net: NetName=TFT_DC Pin=U9-31
-Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component GND TP_1MM

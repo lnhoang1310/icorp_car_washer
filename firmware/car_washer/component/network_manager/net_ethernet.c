@@ -8,6 +8,13 @@
 
 static const char *TAG = "net_ethernet";
 
+/* 1 = TAT tu dam phan toc do, ep 10 Mbit/s half-duplex (THU khi link Ethernet chap chon: den RJ45
+ * doi mau lien tuc, Link up/down lien tuc, khong xin duoc IP). 10 Mbit/s du thua cho MQTT.
+ * Half-duplex de khop voi switch dang tu dam phan (switch se tu nhan 10M half). 0 = binh thuong. */
+#ifndef NET_ETH_FORCE_10M
+#define NET_ETH_FORCE_10M 0
+#endif
+
 static esp_eth_handle_t s_eth_handle = NULL;
 static esp_eth_netif_glue_handle_t s_eth_glue = NULL;
 static esp_netif_t *s_eth_netif = NULL;
@@ -70,6 +77,19 @@ static esp_err_t eth_init_spi(esp_eth_handle_t *out_handle)
         return err;
     }
 
+#if NET_ETH_FORCE_10M
+    {
+        bool autoneg = false;
+        eth_speed_t speed = ETH_SPEED_10M;
+        eth_duplex_t duplex = ETH_DUPLEX_HALF;
+        esp_err_t e1 = esp_eth_ioctl(eth_handle, ETH_CMD_S_AUTONEGO, &autoneg);
+        esp_err_t e2 = esp_eth_ioctl(eth_handle, ETH_CMD_S_SPEED, &speed);
+        esp_err_t e3 = esp_eth_ioctl(eth_handle, ETH_CMD_S_DUPLEX_MODE, &duplex);
+        ESP_LOGW(TAG, "EP 10 Mbit/s half-duplex (NET_ETH_FORCE_10M): %s / %s / %s",
+                 esp_err_to_name(e1), esp_err_to_name(e2), esp_err_to_name(e3));
+    }
+#endif
+
     uint8_t mac_addr[ETH_ADDR_LEN];
     esp_read_mac(mac_addr, ESP_MAC_ETH);
     err = esp_eth_ioctl(eth_handle, ETH_CMD_S_MAC_ADDR, mac_addr);
@@ -92,9 +112,14 @@ static void eth_event_handler(void *arg, esp_event_base_t base, int32_t event_id
     case ETHERNET_EVENT_CONNECTED:
     {
         uint8_t mac_addr[6] = {0};
+        eth_speed_t speed = ETH_SPEED_10M;
+        eth_duplex_t duplex = ETH_DUPLEX_HALF;
         esp_eth_handle_t eth_handle = *(esp_eth_handle_t *)event_data;
         esp_eth_ioctl(eth_handle, ETH_CMD_G_MAC_ADDR, mac_addr);
-        ESP_LOGI(TAG, "Link up, MAC " MACSTR, MAC2STR(mac_addr));
+        esp_eth_ioctl(eth_handle, ETH_CMD_G_SPEED, &speed);
+        esp_eth_ioctl(eth_handle, ETH_CMD_G_DUPLEX_MODE, &duplex);
+        ESP_LOGI(TAG, "Link up %s %s-duplex, MAC " MACSTR, speed == ETH_SPEED_100M ? "100M" : "10M",
+                 duplex == ETH_DUPLEX_FULL ? "full" : "half", MAC2STR(mac_addr));
         break;
     }
     case ETHERNET_EVENT_DISCONNECTED:

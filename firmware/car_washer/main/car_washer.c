@@ -134,9 +134,19 @@ static void led_debug_task(void *arg)
 
 void app_main(void)
 {
+    /* NVS truoc: app_fsm_init() doc danh sach phien da ket thuc (done_ids) tu NVS */
     init_nvs();
+
+    /* Tat relay cang som cang tot */
+    ESP_ERROR_CHECK(app_fsm_init());
+    if (io_expander_init(app_fsm_on_input, NULL) != ESP_OK)
+        ESP_LOGE(TAG, "io_expander loi -- khong dieu khien duoc bom/den");
+
     ESP_ERROR_CHECK(esp_netif_init());
     ESP_ERROR_CHECK(esp_event_loop_create_default());
+
+    device_id_init();
+    ESP_LOGI(TAG, "device_id = %s", device_id_get());
 
     gpio_config_t io_conf = {
         .pin_bit_mask = (1ULL << LED_DEBUG_GPIO),
@@ -149,31 +159,28 @@ void app_main(void)
     gpio_set_level(LED_DEBUG_GPIO, 0);
     xTaskCreatePinnedToCore(led_debug_task, "led_debug_task", 1024, NULL, 1, NULL, 1);
 
-    device_id_init();
-    ESP_LOGI(TAG, "device_id = %s", device_id_get());
-
-    /* Off all relay */
-    ESP_ERROR_CHECK(app_fsm_init());
-    if (io_expander_init(app_fsm_on_input, NULL) != ESP_OK)
-        ESP_LOGE(TAG, "io_expander loi -- khong dieu khien duoc bom/den");
-
 #if APP_RUN_PERIPHERAL_TEST
     peripheral_test_run();
 #endif
 
     init_storage_and_time();
-
     device_config_init();
-    ui_init();
-    peripheral_test_after_ui(); /* hieu chinh cam ung neu chua co (xem PT_TOUCH_CALIB) */
-    audio_init();
 
-    /* 4. Mang + server */
+    /* Man hinh TRUOC mang: 2 buffer ve LVGL phai nam trong RAM noi co DMA. Khoi tao mang truoc
+     * thi WiFi/Ethernet/4G chiem mat vung RAM nay -> "Not enough memory for LVGL buffer" -> mat man hinh.
+     * Chi mat ~0,4 giay; hien "Dang ket noi..." som hon. */
+    ui_init();
+
+    /* Mang + server truoc cam ung / am thanh: Ethernet can ~2 giay dam phan link, WiFi ket noi, 4G dang ky
+     * mang... chay nen song song voi phan con lai -> co Internet som hon */
     init_network();
     ntp_time_start_sync();
     cloud_init();
     wifi_portal_config_t portal = {.fw_version = FW_VERSION, .hw_version = HW_VERSION, .server_ready = cloud_is_ready};
     wifi_portal_start(&portal);
+
+    peripheral_test_after_ui(); /* hieu chinh cam ung neu chua co (xem PT_TOUCH_CALIB) */
+    audio_init();
 
     /* 5. Chay may trang thai (tu khoi phuc phien neu mat dien giua chung) */
     ESP_ERROR_CHECK(app_fsm_start());

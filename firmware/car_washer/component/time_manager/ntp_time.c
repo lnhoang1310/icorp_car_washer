@@ -3,6 +3,9 @@
 #include "esp_netif_sntp.h"
 #include "esp_sntp.h"
 #include "esp_log.h"
+#include "esp_event.h"
+#include "esp_netif.h"
+#include "esp_timer.h"
 #include <time.h>
 #include <sys/time.h>
 #include <string.h>
@@ -12,7 +15,13 @@ static const char *TAG = "ntp_time";
 #define VALID_TIME_THRESHOLD 1672531200
 #define MAX_VALID_TIME 2051222400UL /* ~01/01/2035 -- gioi han TREN hop ly, tranh nhan gio loi (vd RTC doc glitch, SNTP loi) nhay vao tuong lai xa nhu 2070 */
 
-static bool s_sntp_synced = false;
+static volatile bool s_sntp_synced = false;
+static void (*s_on_sync)(void) = NULL;
+static esp_timer_handle_t s_notify_timer = NULL; /* chay s_on_sync trong task esp_timer (khong chay trong task lwIP) */
+static esp_timer_handle_t s_retry_timer = NULL;  /* chua dong bo -> thu lai moi NTP_RETRY_MS */
+
+/* Chua dong bo duoc: thu lai sau chung nay ms (lwIP mac dinh doi 15 s roi gian dan len vai phut) */
+#define NTP_RETRY_MS 10000
 
 static bool system_time_valid(void)
 {
@@ -73,7 +82,12 @@ static void time_sync_notification_cb(struct timeval *tv)
         return;
     }
 
+    bool first = !s_sntp_synced;
     s_sntp_synced = true;
+    if (first && s_retry_timer)
+        esp_timer_stop(s_retry_timer);
+    if (s_notify_timer)
+        esp_timer_start_once(s_notify_timer, 1000); /* bao cloud_manager ngoai task lwIP */
 
     struct tm tm_now;
     localtime_r(&now, &tm_now);
@@ -104,8 +118,59 @@ void ntp_time_init(void)
     }
 }
 
+static void notify_timer_cb(void *arg)
+{
+    (void)arg;
+    if (s_on_sync)
+        s_on_sync();
+}
+
+/* Chua dong bo: bat dau lai ngay (xoa thoi gian cho tang dan cua lwIP) */
+static void sntp_kick(const char *why)
+{
+    if (s_sntp_synced)
+        return;
+    if (esp_sntp_restart())
+        ESP_LOGI(TAG, "SNTP chua dong bo -> thu lai ngay (%s)", why);
+}
+
+static void retry_timer_cb(void *arg)
+{
+    (void)arg;
+    sntp_kick("dinh ky");
+}
+
+/* Vua co mang (Ethernet / WiFi / 4G nhan IP) -> dong bo gio ngay, khong doi lich thu lai cua lwIP */
+static void on_got_ip(void *arg, esp_event_base_t base, int32_t id, void *data)
+{
+    (void)arg;
+    (void)base;
+    (void)data;
+    sntp_kick(id == IP_EVENT_ETH_GOT_IP ? "Ethernet co IP" : id == IP_EVENT_STA_GOT_IP ? "WiFi co IP" : "4G co IP");
+}
+
+void ntp_time_on_sync(void (*cb)(void))
+{
+    s_on_sync = cb;
+}
+
 void ntp_time_start_sync(void)
 {
+    if (!s_notify_timer)
+    {
+        esp_timer_create_args_t a = {.callback = notify_timer_cb, .name = "ntp_notify"};
+        esp_timer_create(&a, &s_notify_timer);
+    }
+    if (!s_retry_timer)
+    {
+        esp_timer_create_args_t a = {.callback = retry_timer_cb, .name = "ntp_retry"};
+        if (esp_timer_create(&a, &s_retry_timer) == ESP_OK)
+            esp_timer_start_periodic(s_retry_timer, (uint64_t)NTP_RETRY_MS * 1000ULL);
+    }
+    esp_event_handler_register(IP_EVENT, IP_EVENT_ETH_GOT_IP, on_got_ip, NULL);
+    esp_event_handler_register(IP_EVENT, IP_EVENT_STA_GOT_IP, on_got_ip, NULL);
+    esp_event_handler_register(IP_EVENT, IP_EVENT_PPP_GOT_IP, on_got_ip, NULL);
+
     esp_sntp_config_t config = ESP_NETIF_SNTP_DEFAULT_CONFIG_MULTIPLE(
         3, ESP_SNTP_SERVER_LIST("vn.pool.ntp.org", "time.google.com", "pool.ntp.org"));
 

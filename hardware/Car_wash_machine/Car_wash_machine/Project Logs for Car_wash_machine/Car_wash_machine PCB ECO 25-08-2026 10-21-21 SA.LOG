@@ -1,7 +1,0 @@
-Change Component Footprint: Designator=PS1 Old Footprint=MODULE_POWER_HLK-20M05 New Footprint=HILINK 5V/3W
-Change Component Designator: OldDesignator=+1 NewDesignator=+5V
-Change Component Designator: OldDesignator=+2 NewDesignator=+12V
-Change Component Designator: OldDesignator=+3 NewDesignator=+3V9
-Change Component Designator: OldDesignator=+4 NewDesignator=+3V3
-Change Component Designator: OldDesignator=GND1 NewDesignator=GND
-Change Component Designator: OldDesignator=GND2 NewDesignator=GND

@@ -1,0 +1,218 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM19 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\car_washer.elf D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM19'
+ESP-ROM:esp32s3-20210327
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1658
+load:0x403c8700,len:0xd98
+load:0x403cb700,len:0x33a4
+entry 0x403c899c
+[0;32mI (25) boot: ESP-IDF v5.5.1-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Sep 28 2026 18:07:58[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.4[0m
+[0;32mI (32) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (36) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00080000[0m
+[0;32mI (63) boot:  1 otadata          OTA data         01 00 00089000 00002000[0m
+[0;32mI (70) boot:  2 phy_init         RF data          01 01 0008b000 00001000[0m
+[0;32mI (76) boot:  3 ota_0            OTA app          00 10 00090000 002ee000[0m
+[0;32mI (83) boot:  4 ota_1            OTA app          00 11 00380000 002ee000[0m
+[0;32mI (89) boot:  5 storage          Unknown data     01 82 0066e000 00400000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00090020 vaddr=3c130020 size=58040h (360512) map[0m
+[0;32mI (167) esp_image: segment 1: paddr=000e8068 vaddr=3fc9ed00 size=05354h ( 21332) load[0m
+[0;32mI (171) esp_image: segment 2: paddr=000ed3c4 vaddr=40374000 size=02c54h ( 11348) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=000f0020 vaddr=42000020 size=12d320h (1233696) map[0m
+[0;32mI (384) esp_image: segment 4: paddr=0021d348 vaddr=40376c54 size=18000h ( 98304) load[0m
+[0;32mI (404) esp_image: segment 5: paddr=00235350 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (414) boot: Loaded app from partition at offset 0x90000[0m
+[0;32mI (414) boot: Disabling RNG early entropy source...[0m
+[0;32mI (424) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (424) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (424) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (427) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (431) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (435) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (439) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (444) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (449) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (454) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (459) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (464) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (467) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (471) esp_psram: Speed: 80MHz[0m
+[0;32mI (474) cpu_start: Multicore app[0m
+[0;32mI (890) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (899) cpu_start: Pro cpu start user code[0m
+[0;32mI (899) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (899) app_init: Application information:[0m
+[0;32mI (899) app_init: Project name:     car_washer[0m
+[0;32mI (903) app_init: App version:      1.0.0[0m
+[0;32mI (907) app_init: Compile time:     Oct 26 2026 19:48:47[0m
+[0;32mI (912) app_init: ELF file SHA256:  58b79f544...[0m
+[0;32mI (916) app_init: ESP-IDF:          v5.5.1-dirty[0m
+[0;32mI (921) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (924) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (928) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (932) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (939) heap_init: At 3FCAAE18 len 0003E8F8 (250 KiB): RAM[0m
+[0;32mI (944) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (949) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (954) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (959) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (967) spi_flash: detected chip: generic[0m
+[0;32mI (970) spi_flash: flash io: dio[0m
+[0;32mI (973) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (979) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (986) main_task: Started on CPU0[0m
+[0;32mI (989) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (997) main_task: Calling app_main()[0m
+[0;32mI (1027) i2c_bus: i2c_bus_init OK (port=1 sda=1 scl=2)[0m
+[0;32mI (1029) io_exp: init OK (out=0x38 in=0x39 int=GPIO15)[0m
+[0;32mI (1030) device_id: device_id = 80456B281774[0m
+[0;32mI (1030) main: device_id = 80456B281774[0m
+[0;32mI (1034) fram: fram_init OK (port=1 sda=1 scl=2 addr=0x50 cap=32768 byte)[0m
+[0;32mI (1039) io_exp: PCF input 0x39 OK[0m
+[0;32mI (1044) rtc_ds3231: DS3231 connected (port=1 sda=1 scl=2)[0m
+[0;33mW (1049) ntp_time: Dong ho he thong chua hop le (vua boot/reset)[0m
+[0;32mI (1055) ntp_time: Da dat gio he thong TAM THOI tu RTC: 2026-10-27 20:01:02 (cho SNTP xac nhan lai)[0m
+[0;32mI (1065) devcfg: doc cau hinh NVS OK (config_ver=0, 4 goi)[0m
+[0;32mI (1068) main: =========== Network init ==========[0m
+[1;31mE (1073) gpio: gpio_install_isr_service(526): GPIO isr service already installed[0m
+[0;33mW (1080) net_ethernet: GPIO ISR handler already installed, bo qua[0m
+[0;32mI (1107) esp_eth.netif.netif_glue: 80:45:6b:28:17:77[0m
+[0;32mI (1108) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+[0;32mI (1108) net_ethernet: net_ethernet_init OK (spi_host=2 cs=9 int=10)[0m
+[0;32mI (1123) net_ethernet: Driver started[0m
+[0;32mI (1124) pp: pp rom version: e7ae62f[0m
+[0;32mI (1125) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1126) wifi:wifi driver task: 3fcc1d10, prio:23, stack:6656, core=0[0m
+[0;32mI (1145) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (1145) wifi:wifi certification version: v7.0[0m
+[0;32mI (1146) wifi:config NVS flash: enabled[0m
+[0;32mI (1146) wifi:config nano formatting: disabled[0m
+[0;32mI (1150) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1155) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1159) wifi:Init management short buffer num: 32[0m
+[0;32mI (1164) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1168) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1172) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1176) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1180) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1185) wifi_init: rx ba win: 6[0m
+[0;32mI (1187) wifi_init: accept mbox: 6[0m
+[0;32mI (1190) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1193) wifi_init: udp mbox: 6[0m
+[0;32mI (1196) wifi_init: tcp mbox: 6[0m
+[0;32mI (1199) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1202) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1206) wifi_init: tcp mss: 1440[0m
+[0;32mI (1209) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (1212) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1216) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1224) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (1259) wifi:mode : sta (80:45:6b:28:17:74) + softAP (80:45:6b:28:17:75)[0m
+[0;32mI (1259) wifi:enable tsf[0m
+[0;32mI (1262) wifi:Total power save buffer number: 16[0m
+[0;32mI (1262) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1266) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1270) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1278) net_wifi: AP SSID=XTECH - 281774 IP:192.168.4.1[0m
+[0;32mI (1278) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (1287) net_gsm: net_gsm_init OK (uart=2 tx=47 rx=48 apn=v-internet)[0m
+[0;32mI (1293) net_manager: net_manager_init[0m
+[0;32mI (1294) net_gsm: pulse reset[0m
+[0;32mI (1299) ntp_time: SNTP started[0m
+[1;31mE (1312) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (1312) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (1317) mqtt_client: Error transport connect[0m
+[0;33mW (1321) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (1325) cloud: broker uat-mqtt-carwash.icorp.vn:1883, client carwash-80456b281774, bayMac 80456b281774, khoang 0[0m
+[0;32mI (1338) wifi_portal: trang cau hinh WiFi: http://192.168.4.1/[0m
+[0;32mI (1511) display: doc ID man hinh (0xD3): 00 00 00 00 00[0m
+[0;33mW (1512) display: man hinh khong tra loi: chan SDO/MISO chua noi, hoac chip chua nhan duoc lenh (kiem tra day CS/DC/RST/SCK/SDI va nguon man hinh)[0m
+[0;32mI (1519) ili9341: LCD panel create success, version: 2.1.0[0m
+[0;32mI (1645) LVGL: Starting LVGL task[0m
+[1;31mE (1645) LVGL: lvgl_port_add_disp_priv(389): Not enough memory for LVGL buffer (buf2) allocation![0m
+[1;31mE (1646) display: display_init(709): lvgl_port_add_disp[0m
+[1;31mE (1651) ui: display_init loi: ESP_FAIL -- chay khong man hinh[0m
+[0;33mW (1656) peripheral_test: cam ung chua khoi tao duoc -> bo qua hieu chinh[0m
+[0;32mI (1678) audio: phan vung am thanh: dung 620/4096 KB[0m
+[0;33mW (1687) audio: thieu 1/7 file am thanh trong assets/audio[0m
+[0;32mI (1688) audio: audio OK (I2S 16000 Hz, BCLK=6 WS=7 DIN=5 SD=4)[0m
+[0;32mI (1689) main: khoi dong xong[0m
+[0;32mI (1690) main_task: Returned from app_main()[0m
+[0;32mI (1766) app_fsm: BOOT -> OUT_OF_SERVICE[0m
+[0;32mI (2767) app_fsm: den BAT (20:01, troi toi)[0m
+[0;32mI (3123) net_ethernet: Link up 100M full-duplex, MAC 80:45:6b:28:17:77[0m
+[0;32mI (3126) net_manager: ETH LINK UP[0m
+[0;32mI (4131) net_ethernet: Got IP: 192.168.0.147 mask:255.255.255.0 gw:192.168.0.1[0m
+[0;32mI (4131) esp_netif_handlers: eth ip: 192.168.0.147, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (4135) net_manager: ETH GOT IP[0m
+[0;32mI (4138) net_manager: Switch default interface -> ETH_DEF (DNS 192.168.0.1)[0m
+[0;32mI (4145) ntp_time: SNTP chua dong bo -> thu lai ngay (Ethernet co IP)[0m
+[0;32mI (4151) mqtt_client: Client force reconnect requested[0m
+[0;32mI (4156) cloud: co mang -> ket noi broker ngay[0m
+[0;32mI (4277) ntp_time: SNTP dong bo thanh cong: 2026-10-27 20:01:06[0m
+[0;32mI (4278) ntp_time: Da ghi gio he thong xuong RTC[0m
+[0;32mI (4403) cloud: da ket noi broker (qua ETH_DEF)[0m
+[0;32mI (4408) cloud: -> {"type":"Boot","packageId":"3c3f9db9-5531-4e28-a5e2-509c02e52aaf","timestamp":"2026-10-27T13:01:06Z","payload":{"mac":"80456b281774","firmwareVersion":"V1.0.0","hardwareVersion":"V1.0","operationMode":{"mode":"SPEED","foam":3,"water":1,"air":2,"vacuum":1}}}[0m
+[0;32mI (4423) cloud: -> {"type":"Meter","packageId":"f4ad358f-6f61-4b3f-83c3-0684cbb0ac85","timestamp":"2026-10-27T13:01:06Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"NORMAL","transactionId":0,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false}}[0m
+[0;33mW (4445) app_fsm: server DA KET NOI (trang thai OUT_OF_SERVICE)[0m
+[0;32mI (4451) app_fsm: OUT_OF_SERVICE -> IDLE[0m
+[0;32mI (4468) cloud: <- carwash/v1/80456b281774/config: {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400","hotline":"0987654321"}[0m
+[0;32mI (4473) cloud: <- config {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400","hotline":"0987654321"}[0m
+[0;32mI (4489) cloud: <- carwash/v1/server/status: ONLINE[0m
+[0;33mW (4489) cloud: SERVER ONLINE[0m
+[0;32mI (4512) net_wifi: ===== SCAN RESULT (15 APs) =====[0m
+[0;32mI (4512) net_wifi: 1) SSID:TP-Link_FF1E RSSI:-46 CH:13[0m
+[0;32mI (4512) net_wifi: 2) SSID:KTIC RSSI:-62 CH:11[0m
+[0;32mI (4514) net_wifi: 3) SSID:VANTUNG_2.4G RSSI:-65 CH:6[0m
+[0;32mI (4519) net_wifi: 4) SSID:Hanoi Office RSSI:-70 CH:11[0m
+[0;32mI (4524) net_wifi: 5) SSID:FPT Telecom-5C21-IOT RSSI:-75 CH:1[0m
+[0;32mI (4529) net_wifi: 6) SSID:HNO T4 RSSI:-76 CH:1[0m
+[0;32mI (4534) net_wifi: 7) SSID:Vu Huy RSSI:-76 CH:1[0m
+[0;32mI (4538) net_wifi: 8) SSID:Hanoi Office RSSI:-76 CH:1[0m
+[0;32mI (4543) net_wifi: 9) SSID:Hanoi Office RSSI:-77 CH:6[0m
+[0;32mI (4548) net_wifi: 10) SSID:HNO T4 RSSI:-78 CH:6[0m
+[0;32mI (4552) net_wifi: 11) SSID:ICORP PKD02 RSSI:-80 CH:11[0m
+[0;32mI (4557) net_wifi: 12) SSID:Hanoi Office RSSI:-83 CH:1[0m
+[0;32mI (4562) net_wifi: 13) SSID:New Wifi CMC RSSI:-86 CH:3[0m
+[0;32mI (4566) net_wifi: 14) SSID:ICORP PKD01 RSSI:-86 CH:9[0m
+[0;32mI (4571) net_wifi: 15) SSID:Hanoi Office RSSI:-87 CH:1[0m
+[0;32mI (4579) net_wifi: Auto-connect -> TP-Link_FF1E[0m
+[0;32mI (4584) cloud: <- carwash/v1/80456b281774/config: {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400","hotline":"0987654321"}[0m
+[0;32mI (4595) cloud: <- config {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400","hotline":"0987654321"}[0m
+[0;32mI (4666) wifi:ap channel adjust o:1,1 n:13,2[0m
+[0;32mI (4666) wifi:new:<13,0>, old:<1,1>, ap:<13,2>, sta:<13,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (4667) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (4675) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (4681) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (4693) wifi:connected with TP-Link_FF1E, aid = 1, channel 13, BW20, bssid = c0:c9:e3:1b:ff:1e[0m
+[0;32mI (4693) wifi:security: WPA2-PSK, phy: bgn, rssi: -47[0m
+[0;32mI (4697) wifi:pm start, type: 0[0m
+
+[0;32mI (4698) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4706) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (4716) net_manager: WIFI STA CONNECTED[0m
+[0;32mI (4720) wifi:<ba-add>idx:0 (ifx:0, c0:c9:e3:1b:ff:1e), tid:0, ssn:0, winSize:64[0m
+[0;32mI (4766) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (5730) esp_netif_handlers: sta ip: 192.168.0.144, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (5730) net_wifi: Got IP: 192.168.0.144[0m
+[0;32mI (5734) net_manager: WIFI GOT IP: 192.168.0.144[0m
+[0;32mI (8799) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (8800) uart: queue free spaces: 30[0m
+[0;32mI (8808) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;32mI (8885) net_gsm: PPP connected, IP:9.84.57.251[0m
+[0;32mI (8886) esp-netif_lwip-ppp: ppp: Connected[0m
+[0;32mI (8886) net_manager: PPP netif duoc cap nhat runtime[0m
+[0;32mI (8888) net_manager: PPP GOT IP[0m

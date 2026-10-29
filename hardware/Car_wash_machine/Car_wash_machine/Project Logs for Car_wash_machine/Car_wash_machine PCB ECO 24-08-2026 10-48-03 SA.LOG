@@ -1,4 +1,0 @@
-Removed Pin From Net: NetName=T_IRQ Pin=U9-16
-Added Pin To Net: NetName=LED Pin=U9-16
-Added Pin To Net: NetName=T_IRQ Pin=U9-35
-Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component GND TP_1MM

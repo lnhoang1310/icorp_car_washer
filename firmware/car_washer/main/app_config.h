@@ -6,7 +6,7 @@
 /* =====================================================================
  *  ETHERNET W5500 (SPI3)
  * ===================================================================== */
-#define CLOCK_SPI_MHZ          (40)
+#define CLOCK_SPI_MHZ          (10)
 #define ETH_SPI_HOST           (SPI3_HOST)
 #define ETH_SPI_SCLK_GPIO      (14)
 #define ETH_SPI_MOSI_GPIO      (13)

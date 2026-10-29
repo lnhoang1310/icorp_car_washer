@@ -107,7 +107,7 @@ const char *ui_kind_name(ws_kind_t k)
 {
     switch (k)
     {
-    case WS_FOAM:  return "Bọt";
+    case WS_FOAM:  return "Bọt tuyết";
     case WS_WATER: return "Nước";
     case WS_DRY:   return "Xì khô";
     default:       return "";

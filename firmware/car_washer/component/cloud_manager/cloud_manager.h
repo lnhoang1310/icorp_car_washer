@@ -29,8 +29,11 @@
 #define CLOUD_ORDER_ID_LEN  WS_ORDER_ID_LEN
 #define CLOUD_QR_MAX_LEN    384
 
-/* Chu ky gui Meter khi chuong dang WASHING (giay) -- theo tai lieu giao tiep */
+/* Chu ky gui Meter khi chuong dang WASHING (giay): MAC DINH khi server chua gui "meterInterval"
+ * trong topic config. Gioi han gia tri server gui: */
 #define CLOUD_METER_INTERVAL_S 20
+#define CLOUD_METER_INTERVAL_MIN_S 1
+#define CLOUD_METER_INTERVAL_MAX_S 3600
 
 /* Danh sach goi dich vu server cau hinh cho tu (topic config, truong "packages") */
 #define CLOUD_MAX_PACKAGES 12
@@ -87,9 +90,12 @@ esp_err_t cloud_query_order(const char *order_id);
  * ESP_OK = ban tin da vao hang doi MQTT (dang ket noi). */
 esp_err_t cloud_report_session(const ws_session_t *s, bool ended);
 
-/* Meter WASHING cua phien dang rua: goi moi CLOUD_METER_INTERVAL_S giay, khi bat/tat/doi bom,
+/* Meter WASHING cua phien dang rua: goi moi cloud_meter_interval_s() giay, khi bat/tat/doi bom,
  * khi nhan StartTransaction lap lai cua chinh phien dang rua. */
 esp_err_t cloud_report_progress(const ws_session_t *s);
+
+/* Chu ky gui Meter dinh ky dang dung (giay): theo "meterInterval" cua topic config, chua co -> mac dinh */
+uint32_t cloud_meter_interval_s(void);
 
 /* Canh bao / su kien van hanh: giao thuc chua co goi tin -> chi ghi log */
 esp_err_t cloud_report_event(const char *event, const char *detail);

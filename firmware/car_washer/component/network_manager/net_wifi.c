@@ -5,6 +5,7 @@
 #include "esp_mac.h"
 #include "esp_timer.h"
 #include "esp_heap_caps.h"
+#include "nvs.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include <string.h>
@@ -46,6 +47,79 @@ static const int scan_backoff_ms[] = {5000, 10000, 30000, 60000, 120000, 300000,
 static void request_scan(void);
 static void schedule_next_scan(void);
 static net_wifi_credential_t s_tmp_saved[NET_WIFI_MAX_SAVED];
+
+/* ================= Ket noi nhanh luc khoi dong =================
+ * Nho AP ket noi thanh cong gan nhat (SSID + BSSID + kenh). Khoi dong: neu SSID do van con trong danh sach
+ * da luu -> ket noi THANG vao AP do tren dung kenh, bo qua buoc quet (~3 giay). That bai -> quet nhu cu. */
+#define LAST_AP_NS "net_wifi_last"
+#define LAST_AP_KEY "ap"
+typedef struct
+{
+    char ssid[33];
+    uint8_t bssid[6];
+    uint8_t channel;
+    uint8_t authmode;
+} wifi_last_ap_t;
+static bool s_fast_connect = false; /* dang thu ket noi nhanh */
+
+static bool last_ap_load(wifi_last_ap_t *o)
+{
+    nvs_handle_t h;
+    if (nvs_open(LAST_AP_NS, NVS_READONLY, &h) != ESP_OK)
+        return false;
+    size_t n = sizeof(*o);
+    esp_err_t e = nvs_get_blob(h, LAST_AP_KEY, o, &n);
+    nvs_close(h);
+    o->ssid[sizeof(o->ssid) - 1] = '\0';
+    return e == ESP_OK && n == sizeof(*o) && o->ssid[0];
+}
+
+static void last_ap_save_current(void)
+{
+    wifi_ap_record_t ap;
+    if (esp_wifi_sta_get_ap_info(&ap) != ESP_OK)
+        return;
+    wifi_last_ap_t cur = {0}, old = {0};
+    strlcpy(cur.ssid, (const char *)ap.ssid, sizeof(cur.ssid));
+    memcpy(cur.bssid, ap.bssid, 6);
+    cur.channel = ap.primary;
+    cur.authmode = (uint8_t)ap.authmode;
+    if (last_ap_load(&old) && memcmp(&old, &cur, sizeof(cur)) == 0)
+        return; /* khong doi -> khong ghi flash */
+    nvs_handle_t h;
+    if (nvs_open(LAST_AP_NS, NVS_READWRITE, &h) != ESP_OK)
+        return;
+    if (nvs_set_blob(h, LAST_AP_KEY, &cur, sizeof(cur)) == ESP_OK)
+        nvs_commit(h);
+    nvs_close(h);
+}
+
+/* s_tmp_saved da duoc nap (saved_count mang). true = da bat dau ket noi nhanh */
+static bool try_fast_connect(int saved_count)
+{
+    wifi_last_ap_t last;
+    if (!last_ap_load(&last))
+        return false;
+    for (int i = 0; i < saved_count; i++)
+    {
+        if (strncmp(s_tmp_saved[i].ssid, last.ssid, sizeof(s_tmp_saved[i].ssid)) != 0)
+            continue;
+        wifi_config_t cfg = {0};
+        strncpy((char *)cfg.sta.ssid, last.ssid, sizeof(cfg.sta.ssid) - 1);
+        strncpy((char *)cfg.sta.password, s_tmp_saved[i].pass, sizeof(cfg.sta.password));
+        cfg.sta.threshold.authmode = (wifi_auth_mode_t)last.authmode;
+        cfg.sta.bssid_set = true;
+        memcpy(cfg.sta.bssid, last.bssid, 6);
+        cfg.sta.channel = last.channel;
+        ESP_LOGI(TAG, "Ket noi nhanh -> %s (kenh %d, khong quet)", last.ssid, last.channel);
+        esp_wifi_set_config(WIFI_IF_STA, &cfg);
+        s_fast_connect = true;
+        s_sta_connecting = true;
+        esp_wifi_connect();
+        return true;
+    }
+    return false; /* mang cu da bi quen */
+}
 
 /* ================= AP SSID theo MAC ================= */
 static void build_ap_ssid(const char *prefix, char *out, size_t max_len)
@@ -210,9 +284,11 @@ static void wifi_event_handler(void *arg, esp_event_base_t base, int32_t event_i
     if (base == WIFI_EVENT && event_id == WIFI_EVENT_STA_START)
     {
         memset(s_tmp_saved, 0, sizeof(s_tmp_saved));
-        if (net_wifi_store_load(s_tmp_saved) > 0)
+        int saved = net_wifi_store_load(s_tmp_saved);
+        if (saved > 0)
         {
-            request_scan();
+            if (!try_fast_connect(saved))
+                request_scan();
         }
         else
         {
@@ -238,7 +314,16 @@ static void wifi_event_handler(void *arg, esp_event_base_t base, int32_t event_i
 
         if (d->reason == WIFI_REASON_ASSOC_LEAVE)
         {
+            s_fast_connect = false;
             s_sta_connecting = false;
+        }
+        else if (s_fast_connect && !s_api_connect_running)
+        {
+            /* AP cu doi kenh / thay router / mat song -> quet tim mang da luu ngay */
+            ESP_LOGW(TAG, "Ket noi nhanh that bai -> quet tim mang da luu");
+            s_fast_connect = false;
+            s_sta_connecting = false;
+            request_scan();
         }
         else if (s_api_connect_running)
         {
@@ -297,8 +382,10 @@ static void wifi_event_handler(void *arg, esp_event_base_t base, int32_t event_i
 
         s_scan_retry = 0;
         s_sta_connecting = false;
+        s_fast_connect = false;
         if (s_scan_timer)
             esp_timer_stop(s_scan_timer);
+        last_ap_save_current(); /* lan khoi dong sau ket noi thang vao AP nay */
 
         if (s_api_connect_running)
         {

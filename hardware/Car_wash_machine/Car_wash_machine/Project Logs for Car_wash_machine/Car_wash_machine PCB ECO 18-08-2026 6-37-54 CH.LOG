@@ -1,8 +1,0 @@
-Removed Pin From Net: NetName=+5V Pin=L2-2
-Removed Member From Class: ClassName=POWER_CAR_WASH_MACHINE Member=L2
-Added Pin To Net: NetName=+5V Pin=C3-1
-Added Pin To Net: NetName=+5V Pin=C4-1
-Added Pin To Net: NetName=+5V Pin=L1-2
-Added Pin To Net: NetName=+5V Pin=R1-2
-Added Pin To Net: NetName=+5V Pin=U1-3
-Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component GND TP_1MM

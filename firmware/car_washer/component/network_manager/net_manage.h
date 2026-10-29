@@ -22,12 +22,8 @@ typedef enum
     NETMGR_EVENT_ONLINE,
     NETMGR_EVENT_OFFLINE,
     NETMGR_EVENT_IF_DOWN,     /* 1 mang vua mat (rut day, rot WiFi, mat 4G). data = esp_netif_t* cua mang do */
-    NETMGR_EVENT_ETH_STABLE,  /* (noi bo) day mang da len on dinh NET_ETH_STABLE_MS */
 } netmgr_event_id_t;
 
-/* Day mang phai len LIEN TUC chung nay ms moi duoc dung lam mang chinh:
- * day long / switch dam phan lai lam link chap chon se khong lam tu nhay mang lien tuc. */
-#define NET_ETH_STABLE_MS 3000
 
 void net_manager_init(esp_netif_t *eth_netif, esp_netif_t *wifi_netif, esp_netif_t *ppp_netif);
 void net_manager_set_priority(const nm_if_t *order, size_t count);
@@ -47,5 +43,13 @@ bool net_manager_has_ready_other(esp_netif_t *exclude);
 /* Mang dung duoc uu tien cao nhat ngoai exclude: "eth" / "wifi" / "4g"; NULL neu khong con */
 const char *net_manager_ready_other_name(esp_netif_t *exclude);
 void net_manager_update_ppp_netif(esp_netif_t *netif);
+
+/* cloud_manager bao: mang chinh hien tai CO IP nhung khong toi duoc server (DNS / TCP loi lien tiep).
+ * Ethernet: lan dau khoi dong lai W5500 (giong rut/cam lai day); van loi -> tat ETH 2 phut, chay bang
+ * WiFi/4G roi thu lai. WiFi/4G: tam bo qua 2 phut neu con mang khac. Ghi log trang thai mang de chan doan. */
+void net_manager_report_unreachable(void);
+
+/* cloud_manager bao: da ket noi server qua mang chinh hien tai -> xoa dem loi cua mang do */
+void net_manager_report_reachable(void);
 
 #endif

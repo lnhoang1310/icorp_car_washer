@@ -35,6 +35,7 @@ typedef enum
     SCR_FINISHED,
     SCR_NOTICE,
     SCR_OFFLINE,
+    SCR_CONNECTING,
 } ui_scr_t;
 
 static lv_obj_t *s_scr = NULL;
@@ -271,6 +272,18 @@ void ui_show_offline(const char *phone)
         return;
     begin(SCR_OFFLINE);
     scr_offline_build(s_scr, phone);
+    unlock();
+}
+
+void ui_show_connecting(void)
+{
+    if (!lock())
+        return;
+    if (s_cur != SCR_CONNECTING) /* ve lai se lam giat vong quay */
+    {
+        begin(SCR_CONNECTING);
+        scr_connecting_build(s_scr);
+    }
     unlock();
 }
 

@@ -38,6 +38,8 @@ void ui_show_finished(const ws_session_t *s);
 void ui_show_notice(const char *title, const char *message);
 /* Mat ket noi server: kem so dien thoai chu cua hang (rong -> "lien he quan ly") */
 void ui_show_offline(const char *phone);
+/* Vua khoi dong, dang ket noi server lan dau: man cho "Dang ket noi..." */
+void ui_show_connecting(void);
 
 /* Co nguoi/cham man hinh: bat den nen day du */
 void ui_wake(void);

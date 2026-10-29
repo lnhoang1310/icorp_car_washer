@@ -1,134 +1,800 @@
-Command: ninja flash
-[1/11] Performing build step for 'bootloader'
-[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build/bootloader/bootloader.bin"
-Bootloader binary size 0x57f0 bytes. 0x2810 bytes (31%) free.
-[2/11] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\esp-idf\main && D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\littlefs_py_venv\Scripts\littlefs-python.exe create D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/assets/audio D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build/storage.bin -v --fs-size=0x400000 --name-max=64 --block-size=4096"
-LittleFS Configuration:
-  Block Size:       4096  /  0x1000
-  Image Size:    4194304  /  0x400000
-  Block Count:      1024
-  Name Max:           64
-  Image:       D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\storage.bin
-[3/11] No install step for 'bootloader'
-[4/11] Completed 'bootloader'
-[5/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/car_washer.c.obj
-[6/11] Linking C static library esp-idf\main\libmain.a
-[7/11] Generating esp-idf/esp_system/ld/sections.ld
-[8/11] Linking CXX executable car_washer.elf
-[9/11] Generating binary image from built executable
-esptool.py v4.10.0
-Creating esp32s3 image...
-Merged 2 ELF sections
-Successfully created esp32s3 image.
-Generated D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build/car_washer.bin
-[10/11] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build/partition_table/partition-table.bin D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build/car_washer.bin"
-car_washer.bin binary size 0x1939c0 bytes. Smallest app partition is 0x2ee000 bytes. 0x15a640 bytes (46%) free.
-[10/11] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.5.1\components\esptool_py && C:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.5.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.5_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.5.1/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/PROJECT/ICORP/CAR_WASHER/firmware/car_washer/build -P C:/Espressif/frameworks/esp-idf-v5.5.1/components/esptool_py/run_serial_tool.cmake"
-esptool.py --chip esp32s3 -p COM10 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size detect 0x0 bootloader/bootloader.bin 0x90000 car_washer.bin 0x8000 partition_table/partition-table.bin 0x89000 ota_data_initial.bin 0x66e000 storage.bin
-esptool.py v4.10.0
-Serial port COM10
-Connecting....
-Chip is ESP32-S3 (QFN56) (revision v0.2)
-Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
-Crystal is 40MHz
-MAC: 80:45:6b:28:17:74
-Uploading stub...
-Running stub...
-Stub running...
-Changing baud rate to 460800
-Changed.
-Configuring flash size...
-Auto-detected Flash size: 16MB
-Flash will be erased from 0x00000000 to 0x00005fff...
-Flash will be erased from 0x00090000 to 0x00223fff...
-Flash will be erased from 0x00008000 to 0x00008fff...
-Flash will be erased from 0x00089000 to 0x0008afff...
-Flash will be erased from 0x0066e000 to 0x00a6dfff...
-SHA digest in image updated
-Compressed 22512 bytes to 14397...
-Writing at 0x00000000... (100 %)
-Wrote 22512 bytes (14397 compressed) at 0x00000000 in 0.5 seconds (effective 371.2 kbit/s)...
-Hash of data verified.
-Compressed 1653184 bytes to 1057444...
-Writing at 0x00090000... (1 %)
-Writing at 0x0009b751... (3 %)
-Writing at 0x000a96c3... (4 %)
-Writing at 0x000b511c... (6 %)
-Writing at 0x000bfb78... (7 %)
-Writing at 0x000cd099... (9 %)
-Writing at 0x000d5500... (10 %)
-Writing at 0x000dde29... (12 %)
-Writing at 0x000e4dc5... (13 %)
-Writing at 0x000ea7d6... (15 %)
-Writing at 0x000f00b9... (16 %)
-Writing at 0x000f5690... (18 %)
-Writing at 0x000faf6b... (20 %)
-Writing at 0x00101bf1... (21 %)
-Writing at 0x00107f45... (23 %)
-Writing at 0x0010da8f... (24 %)
-Writing at 0x0011339c... (26 %)
-Writing at 0x00118eee... (27 %)
-Writing at 0x0011e07d... (29 %)
-Writing at 0x001236d4... (30 %)
-Writing at 0x001289b0... (32 %)
-Writing at 0x0012eada... (33 %)
-Writing at 0x00133d5e... (35 %)
-Writing at 0x00138ea7... (36 %)
-Writing at 0x0013e175... (38 %)
-Writing at 0x00143985... (40 %)
-Writing at 0x001497b5... (41 %)
-Writing at 0x0014ee53... (43 %)
-Writing at 0x00153fec... (44 %)
-Writing at 0x00159aee... (46 %)
-Writing at 0x0015f2b1... (47 %)
-Writing at 0x00164651... (49 %)
-Writing at 0x001699f1... (50 %)
-Writing at 0x0016eb62... (52 %)
-Writing at 0x00173df5... (53 %)
-Writing at 0x001796e0... (55 %)
-Writing at 0x0017ee40... (56 %)
-Writing at 0x0018476f... (58 %)
-Writing at 0x0018985c... (60 %)
-Writing at 0x0018ee72... (61 %)
-Writing at 0x0019434e... (63 %)
-Writing at 0x001997d5... (64 %)
-Writing at 0x0019ea33... (66 %)
-Writing at 0x001a3bc9... (67 %)
-Writing at 0x001a8ef2... (69 %)
-Writing at 0x001ae77f... (70 %)
-Writing at 0x001b3d2c... (72 %)
-Writing at 0x001b9142... (73 %)
-Writing at 0x001be6fd... (75 %)
-Writing at 0x001c43b2... (76 %)
-Writing at 0x001c9c13... (78 %)
-Writing at 0x001cec03... (80 %)
-Writing at 0x001d3cce... (81 %)
-Writing at 0x001d9568... (83 %)
-Writing at 0x001df0d4... (84 %)
-Writing at 0x001e45ed... (86 %)
-Writing at 0x001ec47e... (87 %)
-Writing at 0x001f5ba6... (89 %)
-Writing at 0x001fb6e0... (90 %)
-Writing at 0x00200e4e... (92 %)
-Writing at 0x00209e99... (93 %)
-Writing at 0x0020f6d9... (95 %)
-Writing at 0x0021525c... (96 %)
-Writing at 0x0021b48f... (98 %)
-Writing at 0x00220475... (100 %)
-Wrote 1653184 bytes (1057444 compressed) at 0x00090000 in 24.6 seconds (effective 538.5 kbit/s)...
-Hash of data verified.
-Compressed 3072 bytes to 146...
-Writing at 0x00008000... (100 %)
-Wrote 3072 bytes (146 compressed) at 0x00008000 in 0.0 seconds (effective 562.2 kbit/s)...
-Hash of data verified.
-Compressed 8192 bytes to 31...
-Writing at 0x00089000... (100 %)
-Wrote 8192 bytes (31 compressed) at 0x00089000 in 0.0 seconds (effective 1358.9 kbit/s)...
-Hash of data verified.
-Compressed 4194304 bytes to 4194...
-Writing at 0x0066e000... (100 %)
-Wrote 4194304 bytes (4194 compressed) at 0x0066e000 in 9.3 seconds (effective 3603.2 kbit/s)...
-Hash of data verified.
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM12 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\car_washer.elf D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM12'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1658
+load:0x403c8700,len:0xd98
+load:0x403cb700,len:0x33a4
+entry 0x403c899c
+[0;32mI (25) boot: ESP-IDF v5.5.1-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Sep 28 2026 18:07:58[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.4[0m
+[0;32mI (32) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (36) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00080000[0m
+[0;32mI (63) boot:  1 otadata          OTA data         01 00 00089000 00002000[0m
+[0;32mI (70) boot:  2 phy_init         RF data          01 01 0008b000 00001000[0m
+[0;32mI (76) boot:  3 ota_0            OTA app          00 10 00090000 002ee000[0m
+[0;32mI (83) boot:  4 ota_1            OTA app          00 11 00380000 002ee000[0m
+[0;32mI (89) boot:  5 storage          Unknown data     01 82 0066e000 00400000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00090020 vaddr=3c130020 size=57900h (358656) map[0m
+[0;32mI (167) esp_image: segment 1: paddr=000e7928 vaddr=3fc9ed00 size=05354h ( 21332) load[0m
+[0;32mI (171) esp_image: segment 2: paddr=000ecc84 vaddr=40374000 size=03394h ( 13204) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=000f0020 vaddr=42000020 size=12bd40h (1228096) map[0m
+[0;32mI (383) esp_image: segment 4: paddr=0021bd68 vaddr=40377394 size=178c0h ( 96448) load[0m
+[0;32mI (402) esp_image: segment 5: paddr=00233630 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (412) boot: Loaded app from partition at offset 0x90000[0m
+[0;32mI (412) boot: Disabling RNG early entropy source...[0m
+[0;32mI (423) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (423) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (423) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (425) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (429) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (434) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (438) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (443) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (447) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (452) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (457) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (462) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (466) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (469) esp_psram: Speed: 80MHz[0m
+[0;32mI (472) cpu_start: Multicore app[0m
+[0;32mI (888) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (897) cpu_start: Pro cpu start user code[0m
+[0;32mI (897) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (897) app_init: Application information:[0m
+[0;32mI (897) app_init: Project name:     car_washer[0m
+[0;32mI (901) app_init: App version:      1.0.0[0m
+[0;32mI (905) app_init: Compile time:     Oct 24 2026 16:25:59[0m
+[0;32mI (910) app_init: ELF file SHA256:  b18932a2c...[0m
+[0;32mI (915) app_init: ESP-IDF:          v5.5.1-dirty[0m
+[0;32mI (919) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (923) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (927) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (931) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (937) heap_init: At 3FCAADA8 len 0003E968 (250 KiB): RAM[0m
+[0;32mI (942) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (947) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (952) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (958) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (965) spi_flash: detected chip: generic[0m
+[0;32mI (968) spi_flash: flash io: dio[0m
+[0;32mI (971) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (977) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (984) main_task: Started on CPU0[0m
+[0;32mI (987) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (995) main_task: Calling app_main()[0m
+[0;32mI (1026) i2c_bus: i2c_bus_init OK (port=1 sda=1 scl=2)[0m
+[0;32mI (1027) io_exp: init OK (out=0x38 in=0x39 int=GPIO15)[0m
+[0;32mI (1029) device_id: device_id = 80456B281774[0m
+[0;32mI (1029) main: device_id = 80456B281774[0m
+[0;32mI (1032) fram: fram_init OK (port=1 sda=1 scl=2 addr=0x50 cap=32768 byte)[0m
+[0;32mI (1037) io_exp: PCF input 0x39 OK[0m
+[0;32mI (1042) rtc_ds3231: DS3231 connected (port=1 sda=1 scl=2)[0m
+[0;33mW (1047) ntp_time: Dong ho he thong chua hop le (vua boot/reset)[0m
+[0;32mI (1054) ntp_time: Da dat gio he thong TAM THOI tu RTC: 2026-10-26 17:52:15 (cho SNTP xac nhan lai)[0m
+[0;32mI (1064) devcfg: doc cau hinh NVS OK (config_ver=0, 4 goi)[0m
+[0;32mI (1237) display: doc ID man hinh (0xD3): 00 00 00 00 00[0m
+[0;33mW (1238) display: man hinh khong tra loi: chan SDO/MISO chua noi, hoac chip chua nhan duoc lenh (kiem tra day CS/DC/RST/SCK/SDI va nguon man hinh)[0m
+[0;32mI (1245) ili9341: LCD panel create success, version: 2.1.0[0m
+[0;32mI (1371) LVGL: Starting LVGL task[0m
+[0;33mW (1375) lcd_panel.io.spi: Callback on_color_trans_done was already set and now it was overwritten![0m
+[0;32mI (1420) display: cam ung: dung hieu chinh da luu (swap=1 inv_x=1 inv_y=1 x=416..3946 y=70..3838)[0m
+[0;32mI (1421) display: cam ung XPT2046 OK (doc dinh ky, CS=GPIO21)[0m
+[0;32mI (1424) display: display OK ILI9341 320x240, SPI 20 MHz[0m
+[0;32mI (1432) peripheral_test: cam ung da co hieu chinh trong NVS (muon lam lai: dat PT_TOUCH_CALIB = 2)[0m
+[0;32mI (1454) audio: phan vung am thanh: dung 620/4096 KB[0m
+[0;33mW (1464) audio: thieu 1/7 file am thanh trong assets/audio[0m
+[0;32mI (1465) audio: audio OK (I2S 16000 Hz, BCLK=6 WS=7 DIN=5 SD=4)[0m
+[0;32mI (1465) main: =========== Network init ==========[0m
+[1;31mE (1469) gpio: gpio_install_isr_service(526): GPIO isr service already installed[0m
+[0;33mW (1476) net_ethernet: GPIO ISR handler already installed, bo qua[0m
+[0;32mI (1504) esp_eth.netif.netif_glue: 80:45:6b:28:17:77[0m
+[0;32mI (1505) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+[0;32mI (1505) net_ethernet: net_ethernet_init OK (spi_host=2 cs=9 int=10)[0m
+[0;32mI (1520) net_ethernet: Driver started[0m
+[0;32mI (1521) pp: pp rom version: e7ae62f[0m
+[0;32mI (1522) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1523) wifi:wifi driver task: 3fce1c9c, prio:23, stack:6656, core=0[0m
+[0;32mI (1542) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (1542) wifi:wifi certification version: v7.0[0m
+[0;32mI (1543) wifi:config NVS flash: enabled[0m
+[0;32mI (1543) wifi:config nano formatting: disabled[0m
+[0;32mI (1547) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1552) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1556) wifi:Init management short buffer num: 32[0m
+[0;32mI (1561) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1565) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1569) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1573) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1577) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1582) wifi_init: rx ba win: 6[0m
+[0;32mI (1584) wifi_init: accept mbox: 6[0m
+[0;32mI (1587) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1590) wifi_init: udp mbox: 6[0m
+[0;32mI (1593) wifi_init: tcp mbox: 6[0m
+[0;32mI (1596) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1599) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1603) wifi_init: tcp mss: 1440[0m
+[0;32mI (1606) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (1609) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1613) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1621) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (1655) wifi:mode : sta (80:45:6b:28:17:74) + softAP (80:45:6b:28:17:75)[0m
+[0;32mI (1655) wifi:enable tsf[0m
+[0;32mI (1658) wifi:Total power save buffer number: 16[0m
+[0;32mI (1658) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1662) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1667) wifi:Set ps type: 0, coexist: 0[0m
 
-Leaving...
-Hard resetting via RTS pin...
+[0;33mW (1675) net_wifi: Khong co SSID da luu -> chua ket noi duoc[0m
+[0;32mI (1675) net_wifi: Schedule next scan in 10000 ms[0m
+[0;32mI (1680) net_wifi: AP SSID=XTECH - 281774 IP:192.168.4.1[0m
+[0;32mI (1681) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (1693) net_gsm: net_gsm_init OK (uart=2 tx=47 rx=48 apn=v-internet)[0m
+[0;32mI (1699) net_manager: net_manager_init[0m
+[0;32mI (1699) net_gsm: pulse reset[0m
+[0;32mI (1705) ntp_time: SNTP started[0m
+[1;31mE (1719) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (1720) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (1724) mqtt_client: Error transport connect[0m
+[0;33mW (1728) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (1732) cloud: broker uat-mqtt-carwash.icorp.vn:1883, client carwash-80456b281774, bayMac 80456b281774, khoang 0[0m
+[0;32mI (1745) wifi_portal: trang cau hinh WiFi: http://192.168.4.1/[0m
+[0;32mI (1749) main: khoi dong xong[0m
+[0;32mI (1750) main_task: Returned from app_main()[0m
+[0;32mI (1826) app_fsm: BOOT -> OUT_OF_SERVICE[0m
+[0;32mI (2992) wifi:new:<1,0>, old:<1,1>, ap:<1,0>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2993) wifi:station: 72:19:59:22:76:ff join, AID=1, bgn, 20[0m
+[0;32mI (3020) net_wifi: Station 72:19:59:22:76:ff joined AP, AID=1[0m
+[0;32mI (3035) wifi:<ba-add>idx:2 (ifx:1, 72:19:59:22:76:ff), tid:0, ssn:318, winSize:64[0m
+[0;33mW (3929) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (6201) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (9205) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (9206) uart: queue free spaces: 30[0m
+[0;32mI (9217) net_gsm: Signal quality OK: rssi=21 ber=99[0m
+[1;31mE (9232) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (9232) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (9237) mqtt_client: Error transport connect[0m
+[0;33mW (9241) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (9304) net_gsm: PPP connected, IP:11.255.236.20[0m
+[0;32mI (9304) net_manager: PPP netif duoc cap nhat runtime[0m
+[0;32mI (9304) net_manager: PPP GOT IP[0m
+[0;32mI (9304) esp-netif_lwip-ppp: ppp: Connected[0m
+[0;32mI (9309) net_manager: Switch default interface -> PPP_DEF (DNS 116.98.212.54)[0m
+[0;33mW (11208) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (11679) net_wifi: Auto scan fired (retry=1)[0m
+[0;32mI (14915) net_wifi: ===== SCAN RESULT (15 APs) =====[0m
+[0;32mI (14916) net_wifi: 1) SSID:TP-Link_FF1E RSSI:-45 CH:13[0m
+[0;32mI (14916) net_wifi: 2) SSID:Hanoi Office RSSI:-64 CH:11[0m
+[0;32mI (14919) net_wifi: 3) SSID:KTIC RSSI:-66 CH:1[0m
+[0;32mI (14923) net_wifi: 4) SSID:Hanoi Office RSSI:-67 CH:6[0m
+[0;32mI (14928) net_wifi: 5) SSID:HNO T4 RSSI:-67 CH:6[0m
+[0;32mI (14932) net_wifi: 6) SSID:VANTUNG_2.4G RSSI:-74 CH:6[0m
+[0;32mI (14937) net_wifi: 7) SSID:Vu Huy RSSI:-78 CH:1[0m
+[0;32mI (14942) net_wifi: 8) SSID:FPT Telecom-5C21-IOT RSSI:-79 CH:1[0m
+[0;32mI (14947) net_wifi: 9) SSID:ICORP PKD02 RSSI:-79 CH:11[0m
+[0;32mI (14952) net_wifi: 10) SSID:HNO T4 RSSI:-82 CH:1[0m
+[0;32mI (14957) net_wifi: 11) SSID:Hanoi Office RSSI:-82 CH:1[0m
+[0;32mI (14961) net_wifi: 12) SSID:Hanoi Office RSSI:-83 CH:1[0m
+[0;32mI (14966) net_wifi: 13) SSID:ICORP PKD01 RSSI:-85 CH:7[0m
+[0;32mI (14971) net_wifi: 14) SSID:70mai_Pro Plus+_6a9d RSSI:-86 CH:1[0m
+[0;32mI (14977) net_wifi: 15) SSID:TP-Link_C218 RSSI:-87 CH:8[0m
+[0;33mW (14985) net_wifi: Khong tim thay SSID da luu nao trong ket qua quet[0m
+[0;32mI (14988) net_wifi: Schedule next scan in 30000 ms[0m
+[0;33mW (16204) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (19187) ntp_time: SNTP dong bo thanh cong: 2026-10-26 17:52:33[0m
+[0;32mI (19189) ntp_time: Da ghi gio he thong xuong RTC[0m
+[0;33mW (21230) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (24108) cloud: da ket noi broker (qua PPP_DEF)[0m
+[0;32mI (24112) cloud: -> {"type":"Boot","packageId":"cfe34c75-de38-4d91-8757-26aff81b6e6c","timestamp":"2026-10-26T10:52:38Z","payload":{"mac":"80456b281774","firmwareVersion":"V1.0.0","hardwareVersion":"V1.0","operationMode":{"mode":"SPEED","foam":3,"water":1,"air":2,"vacuum":1}}}[0m
+[0;32mI (24127) cloud: -> {"type":"Meter","packageId":"d113e354-fc24-4fdc-b663-48b1140d7be8","timestamp":"2026-10-26T10:52:38Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"NORMAL","transactionId":0,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false}}[0m
+[0;33mW (24149) app_fsm: server DA KET NOI (trang thai OUT_OF_SERVICE)[0m
+[0;32mI (24155) app_fsm: OUT_OF_SERVICE -> IDLE[0m
+[0;32mI (24351) cloud: <- carwash/v1/80456b281774/config: {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400"}[0m
+[0;32mI (24353) cloud: <- config {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400"}[0m
+[0;32mI (24367) cloud: <- carwash/v1/server/status: ONLINE[0m
+[0;33mW (24368) cloud: SERVER ONLINE[0m
+[0;32mI (24493) cloud: <- carwash/v1/80456b281774/config: {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400"}[0m
+[0;32mI (24496) cloud: <- config {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400"}[0m
+[0;33mW (26209) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (31208) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (36209) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (41210) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (44993) net_wifi: Auto scan fired (retry=2)[0m
+[0;33mW (46821) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (48229) net_wifi: ===== SCAN RESULT (15 APs) =====[0m
+[0;32mI (48229) net_wifi: 1) SSID:TP-Link_FF1E RSSI:-48 CH:13[0m
+[0;32mI (48229) net_wifi: 2) SSID:Hanoi Office RSSI:-63 CH:11[0m
+[0;32mI (48232) net_wifi: 3) SSID:HNO T4 RSSI:-68 CH:6[0m
+[0;32mI (48237) net_wifi: 4) SSID:Hanoi Office RSSI:-69 CH:6[0m
+[0;32mI (48242) net_wifi: 5) SSID:KTIC RSSI:-70 CH:1[0m
+[0;32mI (48246) net_wifi: 6) SSID:Vu Huy RSSI:-75 CH:1[0m
+[0;32mI (48250) net_wifi: 7) SSID:VANTUNG_2.4G RSSI:-76 CH:6[0m
+[0;32mI (48255) net_wifi: 8) SSID:FPT Telecom-5C21-IOT RSSI:-77 CH:1[0m
+[0;32mI (48260) net_wifi: 9) SSID:Hanoi Office RSSI:-78 CH:1[0m
+[0;32mI (48265) net_wifi: 10) SSID:HNO T4 RSSI:-78 CH:1[0m
+[0;32mI (48270) net_wifi: 11) SSID:ICORP PKD02 RSSI:-79 CH:11[0m
+[0;32mI (48275) net_wifi: 12) SSID:Hanoi Office RSSI:-83 CH:1[0m
+[0;32mI (48280) net_wifi: 13) SSID:ICORP PKD01 RSSI:-84 CH:7[0m
+[0;32mI (48285) net_wifi: 14) SSID:XNMetal_DESIGN RSSI:-87 CH:11[0m
+[0;32mI (48290) net_wifi: 15) SSID:Hanoi Office RSSI:-88 CH:1[0m
+[0;33mW (48298) net_wifi: Khong tim thay SSID da luu nao trong ket qua quet[0m
+[0;32mI (48301) net_wifi: Schedule next scan in 60000 ms[0m
+[0;33mW (51213) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (56209) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (61215) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (66216) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (71218) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (76217) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (81232) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (86231) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (91221) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (96222) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (101223) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (105137) transport_base: tcp_read error, errno=Software caused connection abort[0m
+[1;31mE (105137) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=113[0m
+[0;33mW (105142) cloud: loi MQTT (sock errno 113)[0m
+[1;31mE (105146) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (105153) cloud: mat ket noi broker[0m
+[0;33mW (105156) app_fsm: server MAT KET NOI (trang thai IDLE)[0m
+[0;32mI (105161) app_fsm: IDLE -> OUT_OF_SERVICE[0m
+[0;33mW (106226) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (108305) net_wifi: Auto scan fired (retry=3)[0m
+[1;31mE (110174) esp-tls: [sock=53] connect() error: Host is unreachable[0m
+[1;31mE (110174) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (110175) mqtt_client: Error transport connect[0m
+[0;33mW (110179) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (111136) esp-netif_lwip-ppp: ppp: Connection lost[0m
+[0;33mW (111136) net_gsm: PPP lost IP -> yeu cau restart modem[0m
+[0;33mW (111136) net_manager: PPP LOST IP[0m
+[0;33mW (111138) net_manager: Offline[0m
+[0;32mI (111141) mqtt_client: Client force reconnect requested[0m
+[1;31mE (111147) esp-tls: [sock=53] connect() error: Host is unreachable[0m
+[1;31mE (111152) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (111157) mqtt_client: Error transport connect[0m
+[0;33mW (111162) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (111165) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (111170) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (111176) esp_modem_netif: PPP state changed event 5[0m
+[0;33mW (111292) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (111542) net_wifi: ===== SCAN RESULT (15 APs) =====[0m
+[0;32mI (111542) net_wifi: 1) SSID:TP-Link_FF1E RSSI:-46 CH:13[0m
+[0;32mI (111542) net_wifi: 2) SSID:KTIC RSSI:-66 CH:1[0m
+[0;32mI (111545) net_wifi: 3) SSID:Hanoi Office RSSI:-68 CH:11[0m
+[0;32mI (111550) net_wifi: 4) SSID:VANTUNG_2.4G RSSI:-69 CH:6[0m
+[0;32mI (111555) net_wifi: 5) SSID:Hanoi Office RSSI:-75 CH:6[0m
+[0;32mI (111560) net_wifi: 6) SSID:HNO T4 RSSI:-78 CH:6[0m
+[0;32mI (111564) net_wifi: 7) SSID:Vu Huy RSSI:-79 CH:1[0m
+[0;32mI (111569) net_wifi: 8) SSID:FPT Telecom-5C21-IOT RSSI:-80 CH:1[0m
+[0;32mI (111574) net_wifi: 9) SSID:ICORP PKD02 RSSI:-80 CH:11[0m
+[0;32mI (111579) net_wifi: 10) SSID:Hanoi Office RSSI:-83 CH:1[0m
+[0;32mI (111584) net_wifi: 11) SSID:TP-Link_C218 RSSI:-84 CH:8[0m
+[0;32mI (111589) net_wifi: 12) SSID:Hanoi Office RSSI:-85 CH:1[0m
+[0;32mI (111594) net_wifi: 13) SSID:New Wifi CMC RSSI:-85 CH:3[0m
+[0;32mI (111599) net_wifi: 14) SSID:Mi2-Office RSSI:-85 CH:6[0m
+[0;32mI (111604) net_wifi: 15) SSID:ICORP PKD01 RSSI:-85 CH:7[0m
+[0;33mW (111612) net_wifi: Khong tim thay SSID da luu nao trong ket qua quet[0m
+[0;32mI (111615) net_wifi: Schedule next scan in 120000 ms[0m
+[0;32mI (112181) net_gsm: pulse reset[0m
+[0;33mW (116226) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (119681) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (119682) uart: queue free spaces: 30[0m
+[0;32mI (119693) net_gsm: Signal quality OK: rssi=14 ber=99[0m
+[0;33mW (121228) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (125802) net_gsm: PPP handshake timeout -> restart modem, cho 5000 ms truoc lan sau (fail_count=0)[0m
+[0;33mW (126236) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (128668) esp-tls: [sock=53] select() timeout[0m
+[1;31mE (128668) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (128669) mqtt_client: Error transport connect[0m
+[0;33mW (128671) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (131228) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (136227) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (137802) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (137802) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (137802) esp_modem_netif: PPP state changed event 5[0m
+[0;33mW (141231) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (143807) net_gsm: pulse reset[0m
+[1;31mE (146178) esp-tls: [sock=53] select() timeout[0m
+[1;31mE (146178) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (146179) mqtt_client: Error transport connect[0m
+[0;33mW (146181) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (146239) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (151232) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (151307) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (151308) uart: queue free spaces: 30[0m
+[0;32mI (151315) net_gsm: Signal quality OK: rssi=19 ber=99[0m
+[0;32mI (151881) net_gsm: PPP connected, IP:6.199.194.21[0m
+[0;32mI (151882) net_manager: PPP netif duoc cap nhat runtime[0m
+[0;32mI (151882) net_manager: PPP GOT IP[0m
+[0;32mI (151882) esp-netif_lwip-ppp: ppp: Connected[0m
+[0;32mI (151888) net_manager: Switch default interface -> PPP_DEF (DNS 203.113.131.6)[0m
+[0;32mI (154259) cloud: da ket noi broker (qua PPP_DEF)[0m
+[0;32mI (154264) cloud: -> {"type":"Boot","packageId":"e9b7b307-c5af-4d1a-babb-c4c050fd5d8d","timestamp":"2026-10-26T10:54:48Z","payload":{"mac":"80456b281774","firmwareVersion":"V1.0.0","hardwareVersion":"V1.0","operationMode":{"mode":"SPEED","foam":3,"water":1,"air":2,"vacuum":1}}}[0m
+[0;32mI (154279) cloud: -> {"type":"Meter","packageId":"3f4d3e12-84c0-4b59-9e7f-239d4718c168","timestamp":"2026-10-26T10:54:48Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"NORMAL","transactionId":0,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false}}[0m
+[0;33mW (154301) app_fsm: server DA KET NOI (trang thai OUT_OF_SERVICE)[0m
+[0;32mI (154307) app_fsm: OUT_OF_SERVICE -> IDLE[0m
+[0;32mI (155028) cloud: <- carwash/v1/80456b281774/config: {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400"}[0m
+[0;32mI (155031) cloud: <- config {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400"}[0m
+[0;32mI (155044) cloud: <- carwash/v1/server/status: ONLINE[0m
+[0;32mI (155978) cloud: <- carwash/v1/80456b281774/config: {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400"}[0m
+[0;32mI (155980) cloud: <- config {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400"}[0m
+[0;33mW (156239) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (161235) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (166236) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (171237) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (176241) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (181239) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (186257) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (189926) transport_base: tcp_read error, errno=Software caused connection abort[0m
+[1;31mE (189926) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=113[0m
+[0;33mW (189931) cloud: loi MQTT (sock errno 113)[0m
+[1;31mE (189935) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (189942) cloud: mat ket noi broker[0m
+[0;33mW (189945) app_fsm: server MAT KET NOI (trang thai IDLE)[0m
+[0;32mI (189950) app_fsm: IDLE -> OUT_OF_SERVICE[0m
+[0;33mW (191240) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (194963) esp-tls: [sock=53] connect() error: Host is unreachable[0m
+[1;31mE (194964) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (194964) mqtt_client: Error transport connect[0m
+[0;33mW (194968) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (195924) esp-netif_lwip-ppp: ppp: Connection lost[0m
+[0;33mW (195924) net_gsm: PPP lost IP -> yeu cau restart modem[0m
+[0;33mW (195924) net_manager: PPP LOST IP[0m
+[0;33mW (195926) net_manager: Offline[0m
+[0;32mI (195929) mqtt_client: Client force reconnect requested[0m
+[1;31mE (195935) esp-tls: [sock=53] connect() error: Host is unreachable[0m
+[1;31mE (195940) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (195945) mqtt_client: Error transport connect[0m
+[0;33mW (195950) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (195953) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (195958) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (195964) esp_modem_netif: PPP state changed event 5[0m
+[0;33mW (196242) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (196970) net_gsm: pulse reset[0m
+[0;33mW (201244) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (204470) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (204471) uart: queue free spaces: 30[0m
+[0;32mI (204481) net_gsm: Signal quality OK: rssi=19 ber=99[0m
+[0;33mW (206245) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (210591) net_gsm: PPP handshake timeout -> restart modem, cho 5000 ms truoc lan sau (fail_count=0)[0m
+[0;33mW (211247) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (213456) esp-tls: [sock=53] select() timeout[0m
+[1;31mE (213457) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (213457) mqtt_client: Error transport connect[0m
+[0;33mW (213459) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (216245) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (221247) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (222591) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (222591) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (222591) esp_modem_netif: PPP state changed event 5[0m
+[0;33mW (226248) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (228596) net_gsm: pulse reset[0m
+[1;31mE (230966) esp-tls: [sock=53] select() timeout[0m
+[1;31mE (230967) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (230967) mqtt_client: Error transport connect[0m
+[0;33mW (230969) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (231272) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (231620) net_wifi: Auto scan fired (retry=4)[0m
+[0;32mI (234856) net_wifi: ===== SCAN RESULT (15 APs) =====[0m
+[0;32mI (234857) net_wifi: 1) SSID:TP-Link_FF1E RSSI:-48 CH:13[0m
+[0;32mI (234857) net_wifi: 2) SSID:KTIC RSSI:-65 CH:1[0m
+[0;32mI (234859) net_wifi: 3) SSID:Hanoi Office RSSI:-69 CH:11[0m
+[0;32mI (234864) net_wifi: 4) SSID:VANTUNG_2.4G RSSI:-73 CH:6[0m
+[0;32mI (234869) net_wifi: 5) SSID:Hanoi Office RSSI:-77 CH:6[0m
+[0;32mI (234874) net_wifi: 6) SSID:HNO T4 RSSI:-77 CH:6[0m
+[0;32mI (234879) net_wifi: 7) SSID:Hanoi Office RSSI:-79 CH:1[0m
+[0;32mI (234884) net_wifi: 8) SSID:HNO T4 RSSI:-79 CH:1[0m
+[0;32mI (234888) net_wifi: 9) SSID:FPT Telecom-5C21-IOT RSSI:-81 CH:1[0m
+[0;32mI (234894) net_wifi: 10) SSID:ICORP PKD02 RSSI:-81 CH:11[0m
+[0;32mI (234899) net_wifi: 11) SSID:Vu Huy RSSI:-82 CH:1[0m
+[0;32mI (234903) net_wifi: 12) SSID:ICORP PKD01 RSSI:-83 CH:7[0m
+[0;32mI (234908) net_wifi: 13) SSID:Hanoi Office RSSI:-84 CH:1[0m
+[0;32mI (234913) net_wifi: 14) SSID:Mi2-Office RSSI:-84 CH:6[0m
+[0;32mI (234918) net_wifi: 15) SSID:HNO T4 RSSI:-84 CH:11[0m
+[0;33mW (234926) net_wifi: Khong tim thay SSID da luu nao trong ket qua quet[0m
+[0;32mI (234929) net_wifi: Schedule next scan in 300000 ms[0m
+[0;32mI (236096) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (236097) uart: queue free spaces: 30[0m
+[0;32mI (236107) net_gsm: Signal quality OK: rssi=18 ber=99[0m
+[0;33mW (236273) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (241250) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (242217) net_gsm: PPP handshake timeout -> restart modem, cho 5000 ms truoc lan sau (fail_count=0)[0m
+[0;33mW (246256) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (248476) esp-tls: [sock=53] select() timeout[0m
+[1;31mE (248477) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (248477) mqtt_client: Error transport connect[0m
+[0;33mW (248479) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (251253) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (254217) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (254217) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (254217) esp_modem_netif: PPP state changed event 5[0m
+[0;33mW (256259) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (260222) net_gsm: pulse reset[0m
+[0;33mW (261268) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (265986) esp-tls: [sock=53] select() timeout[0m
+[1;31mE (265987) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (265987) mqtt_client: Error transport connect[0m
+[0;33mW (265989) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (266261) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (267722) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (267723) uart: queue free spaces: 30[0m
+[0;32mI (267733) net_gsm: Signal quality OK: rssi=19 ber=99[0m
+[0;32mI (267810) net_gsm: PPP connected, IP:11.14.196.58[0m
+[0;32mI (267811) net_manager: PPP netif duoc cap nhat runtime[0m
+[0;32mI (267811) net_manager: PPP GOT IP[0m
+[0;32mI (267811) esp-netif_lwip-ppp: ppp: Connected[0m
+[0;32mI (267816) net_manager: Switch default interface -> PPP_DEF (DNS 116.98.212.54)[0m
+[0;33mW (271259) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (273607) cloud: da ket noi broker (qua PPP_DEF)[0m
+[0;32mI (273612) cloud: -> {"type":"Boot","packageId":"16850582-bdfa-4873-90f8-d858a350a2f5","timestamp":"2026-10-26T10:56:48Z","payload":{"mac":"80456b281774","firmwareVersion":"V1.0.0","hardwareVersion":"V1.0","operationMode":{"mode":"SPEED","foam":3,"water":1,"air":2,"vacuum":1}}}[0m
+[0;32mI (273627) cloud: -> {"type":"Meter","packageId":"86a42e46-1a90-42f6-979f-5d2efb69582e","timestamp":"2026-10-26T10:56:48Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"NORMAL","transactionId":0,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false}}[0m
+[0;33mW (273649) app_fsm: server DA KET NOI (trang thai OUT_OF_SERVICE)[0m
+[0;32mI (273655) app_fsm: OUT_OF_SERVICE -> IDLE[0m
+[0;32mI (273735) cloud: <- carwash/v1/80456b281774/config: {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400"}[0m
+[0;32mI (273739) cloud: <- config {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400"}[0m
+[0;32mI (273752) cloud: <- carwash/v1/server/status: ONLINE[0m
+[0;32mI (273923) cloud: <- carwash/v1/80456b281774/config: {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400"}[0m
+[0;32mI (273925) cloud: <- config {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400"}[0m
+[0;33mW (276258) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (281259) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (286265) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (291259) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (296296) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (301264) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (306264) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (311267) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (316266) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (321269) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (326270) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (331275) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (336273) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (341277) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (346281) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (349520) net_ethernet: Link up, MAC 80:45:6b:28:17:77[0m
+[0;32mI (349522) net_manager: ETH LINK UP[0m
+[0;32mI (351027) net_ethernet: Got IP: 192.168.0.147 mask:255.255.255.0 gw:192.168.0.1[0m
+[0;32mI (351027) esp_netif_handlers: eth ip: 192.168.0.147, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (351031) net_manager: ETH GOT IP[0m
+[0;32mI (351034) net_manager: Switch default interface -> ETH_DEF (DNS 192.168.0.1)[0m
+[0;33mW (351271) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (356275) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (361280) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (363558) transport_base: tcp_read error, errno=Software caused connection abort[0m
+[1;31mE (363558) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=113[0m
+[0;33mW (363563) cloud: loi MQTT (sock errno 113)[0m
+[1;31mE (363566) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (363574) cloud: mat ket noi broker[0m
+[0;33mW (363577) app_fsm: server MAT KET NOI (trang thai IDLE)[0m
+[0;32mI (363582) app_fsm: IDLE -> OUT_OF_SERVICE[0m
+[0;33mW (366277) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (368768) cloud: da ket noi broker (qua ETH_DEF)[0m
+[0;32mI (368773) cloud: -> {"type":"Boot","packageId":"5cc50e0f-f9e2-4f89-869f-37fe1b56fb3c","timestamp":"2026-10-26T10:58:23Z","payload":{"mac":"80456b281774","firmwareVersion":"V1.0.0","hardwareVersion":"V1.0","operationMode":{"mode":"SPEED","foam":3,"water":1,"air":2,"vacuum":1}}}[0m
+[0;32mI (368788) cloud: -> {"type":"Meter","packageId":"e995294c-58e6-4476-b2af-541deaf97f38","timestamp":"2026-10-26T10:58:23Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"NORMAL","transactionId":0,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false}}[0m
+[0;33mW (368810) app_fsm: server DA KET NOI (trang thai OUT_OF_SERVICE)[0m
+[0;32mI (368816) app_fsm: OUT_OF_SERVICE -> IDLE[0m
+[0;32mI (368875) cloud: <- carwash/v1/80456b281774/config: {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400"}[0m
+[0;32mI (368878) cloud: <- config {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400"}[0m
+[0;32mI (368892) cloud: <- carwash/v1/server/status: ONLINE[0m
+[0;32mI (368925) cloud: <- carwash/v1/80456b281774/config: {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400"}[0m
+[0;32mI (368927) cloud: <- config {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400"}[0m
+[0;32mI (369557) esp-netif_lwip-ppp: ppp: Connection lost[0m
+[0;33mW (369557) net_gsm: PPP lost IP -> yeu cau restart modem[0m
+[0;33mW (369557) net_manager: PPP LOST IP[0m
+[0;32mI (369559) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (369563) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (369569) esp_modem_netif: PPP state changed event 5[0m
+[0;32mI (370575) net_gsm: pulse reset[0m
+[0;33mW (371279) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (376283) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (378075) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (378076) uart: queue free spaces: 30[0m
+[0;32mI (378087) net_gsm: Signal quality OK: rssi=16 ber=99[0m
+[0;33mW (381279) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (381520) net_ethernet: Link down[0m
+[0;33mW (381522) net_manager: ETH LINK DOWN[0m
+[0;33mW (381522) net_manager: Offline[0m
+[0;33mW (381522) cloud: mang dang chay MQTT (ETH_DEF) vua mat -> ket noi lai ngay qua mang khac[0m
+[0;32mI (381527) mqtt_client: Client asked to disconnect[0m
+[1;31mE (381532) transport_base: tcp_read error, errno=Software caused connection abort[0m
+[1;31mE (381538) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=113[0m
+[0;33mW (381547) cloud: loi MQTT (sock errno 113)[0m
+[1;31mE (381551) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (381558) cloud: mat ket noi broker[0m
+[0;33mW (381561) app_fsm: server MAT KET NOI (trang thai IDLE)[0m
+[0;32mI (381566) app_fsm: IDLE -> OUT_OF_SERVICE[0m
+[0;32mI (381578) mqtt_client: Client force reconnect requested[0m
+[1;31mE (381581) esp-tls: [sock=53] connect() error: Host is unreachable[0m
+[1;31mE (381582) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (381587) mqtt_client: Error transport connect[0m
+[0;33mW (381591) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (384197) net_gsm: PPP handshake timeout -> restart modem, cho 5000 ms truoc lan sau (fail_count=0)[0m
+[0;33mW (386280) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (387520) net_ethernet: Link up, MAC 80:45:6b:28:17:77[0m
+[0;32mI (387522) net_manager: ETH LINK UP[0m
+[1;31mE (389096) esp-tls: [sock=53] connect() error: Host is unreachable[0m
+[1;31mE (389097) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (389097) mqtt_client: Error transport connect[0m
+[0;33mW (389101) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (391281) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (393520) net_ethernet: Link down[0m
+[0;33mW (393521) net_manager: ETH LINK DOWN[0m
+[0;32mI (395520) net_ethernet: Link up, MAC 80:45:6b:28:17:77[0m
+[0;32mI (395522) net_manager: ETH LINK UP[0m
+[0;32mI (396197) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (396197) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (396197) esp_modem_netif: PPP state changed event 5[0m
+[0;33mW (396290) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (396606) esp-tls: [sock=53] connect() error: Host is unreachable[0m
+[1;31mE (396607) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (396607) mqtt_client: Error transport connect[0m
+[0;33mW (396611) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (401301) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (402202) net_gsm: pulse reset[0m
+[1;31mE (404116) esp-tls: [sock=53] connect() error: Host is unreachable[0m
+[1;31mE (404117) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (404117) mqtt_client: Error transport connect[0m
+[0;33mW (404121) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (406285) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (409702) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (409703) uart: queue free spaces: 30[0m
+[0;32mI (409713) net_gsm: Signal quality OK: rssi=19 ber=99[0m
+[0;33mW (411289) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (411626) esp-tls: [sock=53] connect() error: Host is unreachable[0m
+[1;31mE (411627) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (411627) mqtt_client: Error transport connect[0m
+[0;33mW (411631) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (415823) net_gsm: PPP handshake timeout -> restart modem, cho 5000 ms truoc lan sau (fail_count=0)[0m
+[0;33mW (416288) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (419136) esp-tls: [sock=53] connect() error: Host is unreachable[0m
+[1;31mE (419137) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (419137) mqtt_client: Error transport connect[0m
+[0;33mW (419141) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (421289) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (426288) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (426646) esp-tls: [sock=53] connect() error: Host is unreachable[0m
+[1;31mE (426647) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (426647) mqtt_client: Error transport connect[0m
+[0;33mW (426651) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (427823) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (427823) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (427823) esp_modem_netif: PPP state changed event 5[0m
+[0;33mW (431290) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (433828) net_gsm: pulse reset[0m
+[1;31mE (434156) esp-tls: [sock=53] connect() error: Host is unreachable[0m
+[1;31mE (434157) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (434157) mqtt_client: Error transport connect[0m
+[0;33mW (434161) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (436290) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (441297) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (441328) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (441329) uart: queue free spaces: 30[0m
+[0;32mI (441339) net_gsm: Signal quality OK: rssi=15 ber=99[0m
+[1;31mE (441666) esp-tls: [sock=53] connect() error: Host is unreachable[0m
+[1;31mE (441667) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (441667) mqtt_client: Error transport connect[0m
+[0;33mW (441671) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (444036) net_ethernet: Got IP: 192.168.0.147 mask:255.255.255.0 gw:192.168.0.1[0m
+[0;32mI (444037) esp_netif_handlers: eth ip: 192.168.0.147, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (444040) net_manager: ETH GOT IP[0m
+[0;32mI (444043) net_manager: Switch default interface -> ETH_DEF (DNS 192.168.0.1)[0m
+[0;33mW (446291) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (447449) net_gsm: PPP handshake timeout -> restart modem, cho 5000 ms truoc lan sau (fail_count=0)[0m
+[0;32mI (449195) cloud: da ket noi broker (qua ETH_DEF)[0m
+[0;32mI (449199) cloud: -> {"type":"Boot","packageId":"5078277d-6905-47ca-a093-9daa5b29a049","timestamp":"2026-10-26T10:59:43Z","payload":{"mac":"80456b281774","firmwareVersion":"V1.0.0","hardwareVersion":"V1.0","operationMode":{"mode":"SPEED","foam":3,"water":1,"air":2,"vacuum":1}}}[0m
+[0;32mI (449214) cloud: -> {"type":"Meter","packageId":"39216cae-e967-4699-bb9e-f09effda2563","timestamp":"2026-10-26T10:59:43Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"NORMAL","transactionId":0,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false}}[0m
+[0;33mW (449236) app_fsm: server DA KET NOI (trang thai OUT_OF_SERVICE)[0m
+[0;32mI (449242) app_fsm: OUT_OF_SERVICE -> IDLE[0m
+[0;32mI (449298) cloud: <- carwash/v1/80456b281774/config: {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400"}[0m
+[0;32mI (449301) cloud: <- config {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400"}[0m
+[0;32mI (449317) cloud: <- carwash/v1/server/status: ONLINE[0m
+[0;32mI (449352) cloud: <- carwash/v1/80456b281774/config: {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400"}[0m
+[0;32mI (449354) cloud: <- config {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400"}[0m
+[0;33mW (451294) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (456295) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (456380) mqtt_client: No PING_RESP, disconnected[0m
+[0;33mW (456382) cloud: mat ket noi broker[0m
+[0;33mW (456382) app_fsm: server MAT KET NOI (trang thai IDLE)[0m
+[0;32mI (456382) app_fsm: IDLE -> OUT_OF_SERVICE[0m
+[0;32mI (459449) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (459449) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (459449) esp_modem_netif: PPP state changed event 5[0m
+[0;33mW (461296) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (465454) net_gsm: pulse reset[0m
+[0;32mI (466078) app_fsm: den BAT (18:00, troi toi)[0m
+[0;33mW (466297) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (471299) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (471396) esp-tls: [sock=53] select() timeout[0m
+[1;31mE (471396) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (471397) mqtt_client: Error transport connect[0m
+[0;33mW (471399) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (472954) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (472955) uart: queue free spaces: 30[0m
+[0;32mI (472965) net_gsm: Signal quality OK: rssi=14 ber=99[0m
+[0;33mW (476298) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (479075) net_gsm: PPP handshake timeout -> restart modem, cho 5000 ms truoc lan sau (fail_count=0)[0m
+[0;33mW (481306) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (483557) net_gsm: PPP lost IP -> yeu cau restart modem[0m
+[0;33mW (483557) net_manager: PPP LOST IP[0m
+[0;33mW (486301) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (488906) esp-tls: [sock=53] select() timeout[0m
+[1;31mE (488906) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (488907) mqtt_client: Error transport connect[0m
+[0;33mW (488909) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (491075) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (491075) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (491075) esp_modem_netif: PPP state changed event 5[0m
+[0;33mW (491302) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (496305) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (497080) net_gsm: pulse reset[0m
+[0;33mW (501303) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (504580) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (504581) uart: queue free spaces: 30[0m
+[0;32mI (504591) net_gsm: Signal quality OK: rssi=14 ber=99[0m
+[0;33mW (506304) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (506416) esp-tls: [sock=53] select() timeout[0m
+[1;31mE (506416) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (506417) mqtt_client: Error transport connect[0m
+[0;33mW (506419) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (510701) net_gsm: PPP handshake timeout -> restart modem, cho 5000 ms truoc lan sau (fail_count=0)[0m
+[0;33mW (511307) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (516313) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (521312) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (522701) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (522701) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (522701) esp_modem_netif: PPP state changed event 5[0m
+[1;31mE (523926) esp-tls: [sock=53] select() timeout[0m
+[1;31mE (523926) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (523927) mqtt_client: Error transport connect[0m
+[0;33mW (523929) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (526316) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (528706) net_gsm: pulse reset[0m
+[0;33mW (531310) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (534934) net_wifi: Auto scan fired (retry=5)[0m
+[0;32mI (536206) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (536207) uart: queue free spaces: 30[0m
+[0;32mI (536218) net_gsm: Signal quality OK: rssi=15 ber=99[0m
+[0;33mW (536309) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (538170) net_wifi: ===== SCAN RESULT (15 APs) =====[0m
+[0;32mI (538170) net_wifi: 1) SSID:TP-Link_FF1E RSSI:-49 CH:13[0m
+[0;32mI (538170) net_wifi: 2) SSID:Hanoi Office RSSI:-66 CH:11[0m
+[0;32mI (538174) net_wifi: 3) SSID:HNO T4 RSSI:-69 CH:6[0m
+[0;32mI (538178) net_wifi: 4) SSID:Hanoi Office RSSI:-70 CH:6[0m
+[0;32mI (538183) net_wifi: 5) SSID:KTIC RSSI:-73 CH:1[0m
+[0;32mI (538187) net_wifi: 6) SSID:VANTUNG_2.4G RSSI:-75 CH:6[0m
+[0;32mI (538192) net_wifi: 7) SSID:Vu Huy RSSI:-78 CH:1[0m
+[0;32mI (538197) net_wifi: 8) SSID:FPT Telecom-5C21-IOT RSSI:-78 CH:1[0m
+[0;32mI (538202) net_wifi: 9) SSID:Hanoi Office RSSI:-79 CH:1[0m
+[0;32mI (538207) net_wifi: 10) SSID:ICORP PKD01 RSSI:-79 CH:7[0m
+[0;32mI (538212) net_wifi: 11) SSID:HNO T4 RSSI:-80 CH:1[0m
+[0;32mI (538217) net_wifi: 12) SSID:ICORP PKD02 RSSI:-83 CH:11[0m
+[0;32mI (538222) net_wifi: 13) SSID:TP-Link_C218 RSSI:-84 CH:9[0m
+[0;32mI (538227) net_wifi: 14) SSID:Hanoi Office RSSI:-86 CH:1[0m
+[0;32mI (538232) net_wifi: 15) SSID:CNL-Tang5 RSSI:-87 CH:1[0m
+[0;33mW (538240) net_wifi: Khong tim thay SSID da luu nao trong ket qua quet[0m
+[0;32mI (538243) net_wifi: Schedule next scan in 600000 ms[0m
+[0;33mW (541312) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (541436) esp-tls: [sock=53] select() timeout[0m
+[1;31mE (541436) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (541437) mqtt_client: Error transport connect[0m
+[0;33mW (541439) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (541520) net_ethernet: Link down[0m
+[0;33mW (541521) net_manager: ETH LINK DOWN[0m
+[0;33mW (541522) net_manager: Offline[0m
+[0;32mI (541522) mqtt_client: Client force reconnect requested[0m
+[1;31mE (541525) esp-tls: [sock=53] connect() error: Host is unreachable[0m
+[1;31mE (541530) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (541536) mqtt_client: Error transport connect[0m
+[0;33mW (541540) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (542328) net_gsm: PPP handshake timeout -> restart modem, cho 5000 ms truoc lan sau (fail_count=0)[0m
+[0;33mW (546322) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (549045) esp-tls: [sock=53] connect() error: Host is unreachable[0m
+[1;31mE (549045) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (549046) mqtt_client: Error transport connect[0m
+[0;33mW (549050) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (549520) net_ethernet: Link up, MAC 80:45:6b:28:17:77[0m
+[0;32mI (549522) net_manager: ETH LINK UP[0m
+[0;33mW (551314) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (553520) net_ethernet: Link down[0m
+[0;33mW (553521) net_manager: ETH LINK DOWN[0m
+[0;32mI (554328) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (554328) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (554328) esp_modem_netif: PPP state changed event 5[0m
+[0;33mW (556317) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (556555) esp-tls: [sock=53] connect() error: Host is unreachable[0m
+[1;31mE (556555) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (556556) mqtt_client: Error transport connect[0m
+[0;33mW (556560) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (559520) net_ethernet: Link up, MAC 80:45:6b:28:17:77[0m
+[0;32mI (559522) net_manager: ETH LINK UP[0m
+[0;32mI (560333) net_gsm: pulse reset[0m
+[0;33mW (561316) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (564065) esp-tls: [sock=53] connect() error: Host is unreachable[0m
+[1;31mE (564065) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (564066) mqtt_client: Error transport connect[0m
+[0;33mW (564070) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (566317) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (567833) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (567834) uart: queue free spaces: 30[0m
+[0;32mI (567844) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (571319) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (571575) esp-tls: [sock=53] connect() error: Host is unreachable[0m
+[1;31mE (571575) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (571576) mqtt_client: Error transport connect[0m
+[0;33mW (571580) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (573954) net_gsm: PPP handshake timeout -> restart modem, cho 5000 ms truoc lan sau (fail_count=0)[0m
+[0;33mW (576325) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (579085) esp-tls: [sock=53] connect() error: Host is unreachable[0m
+[1;31mE (579086) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (579086) mqtt_client: Error transport connect[0m
+[0;33mW (579090) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (581319) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (584032) net_ethernet: Got IP: 192.168.0.147 mask:255.255.255.0 gw:192.168.0.1[0m
+[0;32mI (584032) esp_netif_handlers: eth ip: 192.168.0.147, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (584036) net_manager: ETH GOT IP[0m
+[0;32mI (584039) net_manager: Switch default interface -> ETH_DEF (DNS 192.168.0.1)[0m
+[0;32mI (585954) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (585954) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (585954) esp_modem_netif: PPP state changed event 5[0m
+[0;33mW (586322) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (591321) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (591959) net_gsm: pulse reset[0m
+[0;33mW (596321) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (596597) esp-tls: [sock=53] select() timeout[0m
+[1;31mE (596598) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (596598) mqtt_client: Error transport connect[0m
+[0;33mW (596600) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (599459) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (599460) uart: queue free spaces: 30[0m
+[0;32mI (599470) net_gsm: Signal quality OK: rssi=17 ber=99[0m
+[0;33mW (601338) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (605580) net_gsm: PPP handshake timeout -> restart modem, cho 5000 ms truoc lan sau (fail_count=0)[0m
+[0;33mW (606325) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (611330) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (614107) esp-tls: [sock=53] select() timeout[0m
+[1;31mE (614107) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (614108) mqtt_client: Error transport connect[0m
+[0;33mW (614110) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (616339) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (617580) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (617580) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (617580) esp_modem_netif: PPP state changed event 5[0m
+[0;33mW (621328) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (623585) net_gsm: pulse reset[0m
+[0;33mW (626328) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (631085) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (631086) uart: queue free spaces: 30[0m
+[0;32mI (631096) net_gsm: Signal quality OK: rssi=14 ber=99[0m
+[0;33mW (631327) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (631617) esp-tls: [sock=53] select() timeout[0m
+[1;31mE (631617) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (631618) mqtt_client: Error transport connect[0m
+[0;33mW (631620) cloud: loi MQTT (sock errno 0)[0m
+[0;33mW (636331) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (637206) net_gsm: PPP handshake timeout -> restart modem, cho 5000 ms truoc lan sau (fail_count=0)[0m
+[0;33mW (641331) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (646332) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (649127) esp-tls: [sock=53] select() timeout[0m
+[1;31mE (649127) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (649128) mqtt_client: Error transport connect[0m
+[0;33mW (649130) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (649206) esp-netif_lwip-ppp: ppp: User interrupt[0m
+[0;33mW (649206) net_gsm: PPP error / user-interrupted event tu esp-netif[0m
+[0;32mI (649206) esp_modem_netif: PPP state changed event 5[0m
+[0;33mW (651332) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (655211) net_gsm: pulse reset[0m
+[0;33mW (656333) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (661330) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (662711) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (662712) uart: queue free spaces: 30[0m
+[0;32mI (662722) net_gsm: Signal quality OK: rssi=14 ber=99[0m

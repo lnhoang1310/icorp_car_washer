@@ -1,9 +1,0 @@
-Removed Pin From Net: NetName=RELAY5 Pin=U3-12
-Removed Pin From Net: NetName=RELAY4 Pin=U3-13
-Removed Pin From Net: NetName=RELAY2 Pin=U3-15
-Removed Pin From Net: NetName=RELAY1 Pin=U3-16
-Added Pin To Net: NetName=RELAY1 Pin=U3-12
-Added Pin To Net: NetName=RELAY2 Pin=U3-13
-Added Pin To Net: NetName=RELAY4 Pin=U3-15
-Added Pin To Net: NetName=RELAY5 Pin=U3-16
-Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component GND TP_1MM

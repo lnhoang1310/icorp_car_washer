@@ -39,6 +39,7 @@ typedef enum
     APP_EVT_CLOUD_START,
     APP_EVT_CLOUD_REMOTE_STOP,   /* server dung tu xa. data.result.order_id = transactionId */
     APP_EVT_CLOUD_OP_MODE,       /* mode moi trong topic config (da kiem tra hop le). data.op_mode */
+    APP_EVT_CLOUD_HOTLINE,       /* so dien thoai canh bao trong topic config. data.phone ("" = khong hien so) */
     APP_EVT_CLOUD_PACKAGES,      /* danh sach goi moi trong topic config. data.packages (cap phat dong, app_fsm free) */
 } app_evt_type_t;
 
@@ -77,6 +78,7 @@ typedef struct
         } op_mode;
         cloud_qr_t *qr;
         cloud_pkg_list_t *packages;
+        char phone[DEVCFG_PHONE_LEN];
         uint32_t u32;
         bool b;
     } data;

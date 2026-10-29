@@ -22,7 +22,7 @@ static const int STOPPED_BIT = BIT2;
 static const int MODEM_NEED_RESTART_BIT = BIT3;
 
 /* Backoff khi PPP thất bại */
-static const int gsm_backoff_ms[] = {5000, 10000};
+static const int gsm_backoff_ms[] = {5000};
 #define GSM_BACKOFF_COUNT (sizeof(gsm_backoff_ms) / sizeof(gsm_backoff_ms[0]))
 static int s_fail_count = 0;
 

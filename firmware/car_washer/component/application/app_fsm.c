@@ -293,10 +293,20 @@ static void apply_pending_config(void)
     ESP_LOGI(TAG, "da ap dung cau hinh moi");
 }
 
+/* Vua khoi dong, chua ket noi server lan nao: hien "Dang ket noi..." toi da BOOT_CONNECT_GRACE_S giay
+ * (tinh tu luc bat nguon) roi moi hien man canh bao "Mat ket noi". Da ket noi duoc 1 lan thi tu do
+ * mat mang la canh bao ngay. */
+#ifndef BOOT_CONNECT_GRACE_S
+#define BOOT_CONNECT_GRACE_S 30
+#endif
+static bool s_boot_grace = true;
+
 static void show_idle_screen(void)
 {
     if (io_fault())
         ui_show_fault(cfg()->owner_phone);
+    else if (s_state == ST_OUT_OF_SERVICE && s_boot_grace)
+        ui_show_connecting();
     else if (s_state == ST_OUT_OF_SERVICE)
         ui_show_offline(cfg()->owner_phone);
     else
@@ -945,6 +955,25 @@ static void apply_pending_packages(void)
     apply_packages(&s_pkgs_pending_list);
 }
 
+/* So dien thoai hien tren man canh bao (topic config, truong "hotline"). Luu NVS; dang hien man canh bao thi ve lai */
+static void on_hotline(const char *phone)
+{
+    if (strcmp(phone, cfg()->owner_phone) == 0)
+        return; /* nhan lai config retained giong het -> khong ghi NVS */
+    device_config_t c = *cfg();
+    strlcpy(c.owner_phone, phone, sizeof(c.owner_phone));
+    if (device_config_set(&c) != ESP_OK)
+    {
+        ESP_LOGW(TAG, "luu hotline loi");
+        return;
+    }
+    ESP_LOGI(TAG, "hotline: \"%s\"", phone);
+    if (s_state == ST_OUT_OF_SERVICE || (s_state == ST_IDLE && io_fault()))
+        show_idle_screen();
+    else if (s_state == ST_WASHING && io_fault())
+        show_session_screen();
+}
+
 static void handle_event(const app_evt_t *e)
 {
     switch (e->type)
@@ -1023,6 +1052,8 @@ static void handle_event(const app_evt_t *e)
 
     case APP_EVT_CLOUD_READY:
         ESP_LOGW(TAG, "server %s (trang thai %s)", e->data.b ? "DA KET NOI" : "MAT KET NOI", k_state_name[s_state]);
+        if (e->data.b)
+            s_boot_grace = false;
         if (s_state == ST_IDLE || s_state == ST_OUT_OF_SERVICE || (s_state == ST_SELECT && !e->data.b))
             go_idle();
         else if (!e->data.b && s_state == ST_CREATING_QR)
@@ -1081,6 +1112,10 @@ static void handle_event(const app_evt_t *e)
         on_op_mode(e);
         break;
 
+    case APP_EVT_CLOUD_HOTLINE:
+        on_hotline(e->data.phone);
+        break;
+
     case APP_EVT_CLOUD_PACKAGES:
         if (e->data.packages)
         {
@@ -1133,6 +1168,13 @@ static void handle_timeout(void)
 
 static void handle_tick(uint32_t dt_ms, bool second_boundary)
 {
+    if (s_boot_grace && now_ms() >= (int64_t)BOOT_CONNECT_GRACE_S * 1000)
+    {
+        s_boot_grace = false;
+        ESP_LOGW(TAG, "sau %d giay khoi dong van chua ket noi duoc server -> hien man mat ket noi", BOOT_CONNECT_GRACE_S);
+        if (s_state == ST_OUT_OF_SERVICE)
+            show_idle_screen();
+    }
 
     if (s_state == ST_WASHING)
     {
@@ -1183,10 +1225,10 @@ static void handle_tick(uint32_t dt_ms, bool second_boundary)
             ui_update_washing(&s_ws);
         }
 
-        /* Meter len server: ngay khi bom tu bat/tu tat, va moi CLOUD_METER_INTERVAL_S giay khi chuong
-         * WASHING (ke ca luc tam dung) */
+        /* Meter len server: ngay khi bom tu bat/tu tat, va moi cloud_meter_interval_s() giay (server cau hinh
+         * qua "meterInterval", mac dinh CLOUD_METER_INTERVAL_S) khi chuong WASHING (ke ca luc tam dung) */
         bool changed = ev & (WS_EVT_PUMP_ON | WS_EVT_PUMP_EXHAUSTED);
-        if (changed || now_ms() - s_progress_last_ms >= (int64_t)CLOUD_METER_INTERVAL_S * 1000)
+        if (changed || now_ms() - s_progress_last_ms >= (int64_t)cloud_meter_interval_s() * 1000)
             report_progress();
     }
 

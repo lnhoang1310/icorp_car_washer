@@ -1,9 +1,0 @@
-Removed Pin From Net: NetName=ETH_CLK Pin=U9-18
-Removed Pin From Net: NetName=ETH_MOSI Pin=U9-20
-Removed Pin From Net: NetName=ETH_INTN Pin=U9-21
-Removed Pin From Net: NetName=ETH_RST Pin=U9-22
-Added Pin To Net: NetName=ETH_INTN Pin=U9-18
-Added Pin To Net: NetName=ETH_RST Pin=U9-20
-Added Pin To Net: NetName=ETH_MOSI Pin=U9-21
-Added Pin To Net: NetName=ETH_CLK Pin=U9-22
-Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component GND TP_1MM

@@ -1,9 +1,0 @@
-Removed Pin From Net: NetName=A0_ROM Pin=R75-1
-Removed Pin From Net: NetName=A2_ROM Pin=R77-1
-Removed Pin From Net: NetName=A0_ROM Pin=SD1-7B
-Removed Pin From Net: NetName=A2_ROM Pin=SD1-9B
-Added Pin To Net: NetName=A2_ROM Pin=R75-1
-Added Pin To Net: NetName=A0_ROM Pin=R77-1
-Added Pin To Net: NetName=A2_ROM Pin=SD1-7B
-Added Pin To Net: NetName=A0_ROM Pin=SD1-9B
-Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component GND TP_1MM

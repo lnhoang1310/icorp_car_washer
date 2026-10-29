@@ -28435,10 +28435,7 @@
                                         "help": "RFC 4330 recommends a startup delay before sending the initial request.\nLWIP calculates this delay to a random number of milliseconds between 0 and this value.",
                                         "id": "LWIP_SNTP_MAXIMUM_STARTUP_DELAY",
                                         "name": "LWIP_SNTP_MAXIMUM_STARTUP_DELAY",
-                                        "range": [
-                                            100,
-                                            300000
-                                        ],
+                                        "range": null,
                                         "title": "Maximum startup delay (ms)",
                                         "type": "int"
                                     }

@@ -1,0 +1,251 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM19 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\car_washer.elf D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM19'
+ng RTC
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1658
+load:0x403c8700,len:0xd98
+load:0x403cb700,len:0x33a4
+entry 0x403c899c
+[0;32mI (25) boot: ESP-IDF v5.5.1-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Sep 28 2026 18:07:58[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.4[0m
+[0;32mI (32) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (36) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00080000[0m
+[0;32mI (63) boot:  1 otadata          OTA data         01 00 00089000 00002000[0m
+[0;32mI (70) boot:  2 phy_init         RF data          01 01 0008b000 00001000[0m
+[0;32mI (76) boot:  3 ota_0            OTA app          00 10 00090000 002ee000[0m
+[0;32mI (83) boot:  4 ota_1            OTA app          00 11 00380000 002ee000[0m
+[0;32mI (89) boot:  5 storage          Unknown data     01 82 0066e000 00400000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00090020 vaddr=3c130020 size=580e0h (360672) map[0m
+[0;32mI (167) esp_image: segment 1: paddr=000e8108 vaddr=3fc9ed00 size=05364h ( 21348) load[0m
+[0;32mI (171) esp_image: segment 2: paddr=000ed474 vaddr=40374000 size=02ba4h ( 11172) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=000f0020 vaddr=42000020 size=12d43ch (1233980) map[0m
+[0;32mI (384) esp_image: segment 4: paddr=0021d464 vaddr=40376ba4 size=180b0h ( 98480) load[0m
+[0;32mI (404) esp_image: segment 5: paddr=0023551c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (414) boot: Loaded app from partition at offset 0x90000[0m
+[0;32mI (414) boot: Disabling RNG early entropy source...[0m
+[0;32mI (424) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (424) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (425) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (427) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (431) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (435) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (439) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (444) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (449) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (454) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (459) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (464) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (467) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (471) esp_psram: Speed: 80MHz[0m
+[0;32mI (474) cpu_start: Multicore app[0m
+[0;32mI (890) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (899) cpu_start: Pro cpu start user code[0m
+[0;32mI (899) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (899) app_init: Application information:[0m
+[0;32mI (899) app_init: Project name:     car_washer[0m
+[0;32mI (903) app_init: App version:      1.0.0[0m
+[0;32mI (907) app_init: Compile time:     Oct 26 2026 19:48:47[0m
+[0;32mI (912) app_init: ELF file SHA256:  3f4cfb2cc...[0m
+[0;32mI (916) app_init: ESP-IDF:          v5.5.1-dirty[0m
+[0;32mI (921) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (924) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (928) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (932) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (939) heap_init: At 3FCAAE28 len 0003E8E8 (250 KiB): RAM[0m
+[0;32mI (944) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (949) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (954) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (960) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (967) spi_flash: detected chip: generic[0m
+[0;32mI (970) spi_flash: flash io: dio[0m
+[0;32mI (973) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (979) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (986) main_task: Started on CPU0[0m
+[0;32mI (989) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (997) main_task: Calling app_main()[0m
+[0;32mI (1029) i2c_bus: i2c_bus_init OK (port=1 sda=1 scl=2)[0m
+[0;32mI (1031) io_exp: init OK (out=0x38 in=0x39 int=GPIO15)[0m
+[0;32mI (1032) device_id: device_id = 80456B281774[0m
+[0;32mI (1032) main: device_id = 80456B281774[0m
+[0;32mI (1036) fram: fram_init OK (port=1 sda=1 scl=2 addr=0x50 cap=32768 byte)[0m
+[0;32mI (1040) io_exp: PCF input 0x39 OK[0m
+[0;32mI (1046) rtc_ds3231: DS3231 connected (port=1 sda=1 scl=2)[0m
+[0;33mW (1051) ntp_time: Dong ho he thong chua hop le (vua boot/reset)[0m
+[0;32mI (1057) ntp_time: Da dat gio he thong TAM THOI tu RTC: 2026-10-29 13:51:13 (cho SNTP xac nhan lai)[0m
+[0;32mI (1067) devcfg: doc cau hinh NVS OK (config_ver=0, 4 goi)[0m
+[0;32mI (1241) display: doc ID man hinh (0xD3): 00 00 00 00 00[0m
+[0;33mW (1242) display: man hinh khong tra loi: chan SDO/MISO chua noi, hoac chip chua nhan duoc lenh (kiem tra day CS/DC/RST/SCK/SDI va nguon man hinh)[0m
+[0;32mI (1249) ili9341: LCD panel create success, version: 2.1.0[0m
+[0;32mI (1375) LVGL: Starting LVGL task[0m
+[0;33mW (1378) lcd_panel.io.spi: Callback on_color_trans_done was already set and now it was overwritten![0m
+[0;32mI (1424) display: cam ung: dung hieu chinh da luu (swap=1 inv_x=1 inv_y=1 x=416..3946 y=70..3838)[0m
+[0;32mI (1425) display: cam ung XPT2046 OK (doc dinh ky, CS=GPIO21)[0m
+[0;32mI (1428) display: display OK ILI9341 320x240, SPI 20 MHz[0m
+[0;32mI (1436) main: =========== Network init ==========[0m
+[1;31mE (1438) gpio: gpio_install_isr_service(526): GPIO isr service already installed[0m
+[0;33mW (1444) net_ethernet: GPIO ISR handler already installed, bo qua[0m
+[0;32mI (1472) esp_eth.netif.netif_glue: 80:45:6b:28:17:77[0m
+[0;32mI (1473) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+[0;32mI (1473) net_ethernet: net_ethernet_init OK (spi_host=2 cs=9 int=10)[0m
+[0;32mI (1488) net_ethernet: Driver started[0m
+[0;32mI (1489) pp: pp rom version: e7ae62f[0m
+[0;32mI (1490) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1491) wifi:wifi driver task: 3fcdf8a4, prio:23, stack:6656, core=0[0m
+[0;32mI (1511) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (1511) wifi:wifi certification version: v7.0[0m
+[0;32mI (1511) wifi:config NVS flash: enabled[0m
+[0;32mI (1512) wifi:config nano formatting: disabled[0m
+[0;32mI (1516) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1521) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1525) wifi:Init management short buffer num: 32[0m
+[0;32mI (1530) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1534) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1538) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1542) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1546) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1550) wifi_init: rx ba win: 6[0m
+[0;32mI (1553) wifi_init: accept mbox: 6[0m
+[0;32mI (1556) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1559) wifi_init: udp mbox: 6[0m
+[0;32mI (1562) wifi_init: tcp mbox: 6[0m
+[0;32mI (1565) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1568) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1571) wifi_init: tcp mss: 1440[0m
+[0;32mI (1574) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (1578) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1582) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1590) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (1626) wifi:mode : sta (80:45:6b:28:17:74) + softAP (80:45:6b:28:17:75)[0m
+[0;32mI (1627) wifi:enable tsf[0m
+[0;32mI (1629) wifi:Total power save buffer number: 16[0m
+[0;32mI (1630) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1633) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1638) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1645) net_wifi: Ket noi nhanh -> TP-Link_FF1E (kenh 13, khong quet)[0m
+[0;32mI (1649) net_wifi: AP SSID=XTECH - 281774 IP:192.168.4.1[0m
+[0;32mI (1650) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (1661) net_gsm: net_gsm_init OK (uart=2 tx=47 rx=48 apn=v-internet)[0m
+[0;32mI (1667) net_gsm: pulse reset[0m
+[0;32mI (1668) net_manager: net_manager_init[0m
+[0;32mI (1674) ntp_time: SNTP started[0m
+[1;31mE (1686) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (1686) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (1691) mqtt_client: Error transport connect[0m
+[0;33mW (1696) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (1696) wifi:ap channel adjust o:1,1 n:13,2[0m
+[0;32mI (1703) wifi:new:<13,0>, old:<1,1>, ap:<13,2>, sta:<13,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1711) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1715) cloud: broker uat-mqtt-carwash.icorp.vn:1883, client carwash-80456b281774, bayMac 80456b281774, khoang 0[0m
+[0;32mI (1719) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1732) wifi_portal: trang cau hinh WiFi: http://192.168.4.1/[0m
+[0;32mI (1733) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1739) peripheral_test: cam ung da co hieu chinh trong NVS (muon lam lai: dat PT_TOUCH_CALIB = 2)[0m
+[0;32mI (1749) wifi:connected with TP-Link_FF1E, aid = 1, channel 13, BW20, bssid = c0:c9:e3:1b:ff:1e[0m
+[0;32mI (1754) wifi:security: WPA2-PSK, phy: bgn, rssi: -44[0m
+[0;32mI (1761) wifi:pm start, type: 0[0m
+
+[0;32mI (1762) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1770) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (1780) net_manager: WIFI STA CONNECTED[0m
+[0;32mI (1785) wifi:<ba-add>idx:0 (ifx:0, c0:c9:e3:1b:ff:1e), tid:0, ssn:0, winSize:64[0m
+[0;32mI (1795) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1805) audio: phan vung am thanh: dung 620/4096 KB[0m
+[0;33mW (1813) audio: thieu 1/7 file am thanh trong assets/audio[0m
+[0;32mI (1814) audio: audio OK (I2S 16000 Hz, BCLK=6 WS=7 DIN=5 SD=4)[0m
+[0;32mI (1815) main: khoi dong xong[0m
+[0;32mI (1816) main_task: Returned from app_main()[0m
+[0;32mI (1892) app_fsm: BOOT -> OUT_OF_SERVICE[0m
+[0;32mI (2799) esp_netif_handlers: sta ip: 192.168.0.144, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (2800) net_wifi: Got IP: 192.168.0.144[0m
+[0;32mI (2802) net_manager: WIFI GOT IP: 192.168.0.144[0m
+[0;32mI (2805) net_manager: Switch default interface -> WIFI_STA_DEF (DNS 192.168.0.1)[0m
+[0;32mI (2812) ntp_time: SNTP chua dong bo -> thu lai ngay (WiFi co IP)[0m
+[0;32mI (2818) mqtt_client: Client force reconnect requested[0m
+[0;32mI (2822) cloud: co mang -> ket noi broker ngay[0m
+[0;32mI (2886) wifi:<ba-add>idx:1 (ifx:0, c0:c9:e3:1b:ff:1e), tid:1, ssn:0, winSize:64[0m
+[0;32mI (2964) ntp_time: SNTP dong bo thanh cong: 2026-10-29 13:51:15[0m
+[0;32mI (2965) ntp_time: Da ghi gio he thong xuong RTC[0m
+[0;32mI (5196) cloud: da ket noi broker (qua WIFI_STA_DEF)[0m
+[0;32mI (5201) cloud: -> {"type":"Boot","packageId":"91335d18-2a71-4bc5-91f2-cf474e7a68a6","timestamp":"2026-10-29T06:51:17Z","payload":{"mac":"80456b281774","firmwareVersion":"V1.0.0","hardwareVersion":"V1.0","operationMode":{"mode":"SPEED","foam":3,"water":1,"air":2,"vacuum":1}}}[0m
+[0;32mI (5217) cloud: -> {"type":"Meter","packageId":"66d6195a-e87d-4fa2-8da6-30a3d2a88bbe","timestamp":"2026-10-29T06:51:17Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"NORMAL","transactionId":0,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false}}[0m
+[0;33mW (5238) app_fsm: server DA KET NOI (trang thai OUT_OF_SERVICE)[0m
+[0;32mI (5244) app_fsm: OUT_OF_SERVICE -> IDLE[0m
+[0;32mI (5303) cloud: <- carwash/v1/80456b281774/config: {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400","hotline":"0987654321"}[0m
+[0;32mI (5308) cloud: <- config {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400","hotline":"0987654321"}[0m
+[0;32mI (5327) cloud: <- carwash/v1/server/status: ONLINE[0m
+[0;33mW (5328) cloud: SERVER ONLINE[0m
+[0;32mI (5369) cloud: <- carwash/v1/80456b281774/config: {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400","hotline":"0987654321","meterInterval":5}[0m
+[0;32mI (5375) cloud: <- config {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400","hotline":"0987654321","meterInterval":5}[0m
+[0;32mI (5389) cloud: config: chu ky Meter 20 -> 5 giay[0m
+[0;32mI (9169) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (9170) uart: queue free spaces: 30[0m
+[1;31mE (29172) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (30173) net_gsm: Modem/song chua san sang, thu lai sau 5000 ms (fail_count=0)[0m
+[0;32mI (35173) net_gsm: pulse reset[0m
+[0;32mI (42673) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (42674) uart: queue free spaces: 30[0m
+[1;31mE (62675) net_gsm: Khong bat duoc song sau 20 lan thu[0m
+[0;33mW (63676) net_gsm: Modem/song chua san sang, thu lai sau 5000 ms (fail_count=0)[0m
+[0;32mI (68676) net_gsm: pulse reset[0m
+[0;32mI (76176) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (76177) uart: queue free spaces: 30[0m
+[0;32mI (76187) net_gsm: Signal quality OK: rssi=19 ber=99[0m
+[0;32mI (76264) net_gsm: PPP connected, IP:11.42.6.95[0m
+[0;32mI (76264) esp-netif_lwip-ppp: ppp: Connected[0m
+[0;32mI (76264) net_manager: PPP netif duoc cap nhat runtime[0m
+[0;32mI (76266) net_manager: PPP GOT IP[0m
+[0;32mI (87863) display: cam ung: nhan duoc cham dau tien tai x=244 y=192 (luc 598)[0m
+[0;32mI (88076) app_fsm: IDLE -> SELECT[0m
+[0;32mI (88917) app_fsm: tao don 80456B281774-1793256761-0045: Gói 5 phút (300s rua, 600s do xe) 10000 d[0m
+[0;32mI (88918) app_fsm: SELECT -> CREATING_QR[0m
+[0;32mI (88926) cloud: -> {"type":"InitTransaction","packageId":"c8b04df0-36c8-4a28-b4bc-3242c5f6f87c","timestamp":"2026-10-29T06:52:41Z","payload":{"bayMac":"80456b281774","bayNumber":0,"packageDuration":300,"price":10000}}[0m
+[0;32mI (89884) cloud: <- carwash/v1/80456b281774/down: {"type":"ShowPaymentCode","payload":{"code":"http://uat-api-carwash.icorp.vn/api/v1/payment-simulation/91/confirm?token=DhJhMVyQd4Ou74VSGGZuzBE80j_7oOQ_fk3eC3f4Cbc","bayMac":"80456b281774","expireAt":"2026-10-29T06:57:41.921Z","bayNumber":1,"transactionId":95},"packageId":"96d83ab6-00ab-475f-b356-e3533a21f8fe","timestamp":"2026-10-29T06:52:41.921Z"}[0m
+[0;32mI (89909) app_fsm: CREATING_QR -> WAIT_PAYMENT[0m
+[0;32mI (89985) audio: phat: "Vui lòng quét mã QR code trên màn hình để thanh toán"[0m
+[0;32mI (124678) cloud: <- carwash/v1/80456b281774/down: {"type":"StartTransaction","payload":{"bayMac":"80456b281774","bayNumber":1,"parkingTime":600,"transactionId":95,"packageDuration":300},"packageId":"3cae8756-c49e-42ef-8c47-7d2707a1f00a","timestamp":"2026-10-29T06:53:16.788Z"}[0m
+[0;32mI (124692) app_fsm: don 95 da thanh toan[0m
+[0;32mI (124702) cloud: -> {"type":"Meter","packageId":"cf5c107a-853d-4112-a8aa-1782cccffa05","timestamp":"2026-10-29T06:53:16Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":95,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":0,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (124726) app_fsm: WAIT_PAYMENT -> PAID[0m
+[0;32mI (124736) audio: phat: "Thanh toán thành công, bắt đầu rửa xe"[0m
+[0;32mI (127737) app_fsm: PAID -> WASHING[0m
+[0;32mI (129743) cloud: -> {"type":"Meter","packageId":"ac63bb55-7226-48dd-b2bd-e32d154301a3","timestamp":"2026-10-29T06:53:21Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":95,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":0,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (134708) audio: phat: "Button click"[0m
+[0;32mI (134717) cloud: -> {"type":"Meter","packageId":"ac3a9014-4a94-4ef9-a4b1-c5b55eed1bc7","timestamp":"2026-10-29T06:53:26Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":95,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":0,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (139743) cloud: -> {"type":"Meter","packageId":"82f5bfed-2af7-4cf5-a913-b2f48467cbb4","timestamp":"2026-10-29T06:53:31Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":95,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":5,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (144743) cloud: -> {"type":"Meter","packageId":"fc227779-c613-46cd-b15b-dfef05040f8a","timestamp":"2026-10-29T06:53:36Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":95,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":10,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (149743) cloud: -> {"type":"Meter","packageId":"aa1dfdac-eeed-4c55-a1de-ae54e4a47d7a","timestamp":"2026-10-29T06:53:41Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":95,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":15,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (154744) cloud: -> {"type":"Meter","packageId":"cf1426f5-b11d-4e36-ab80-9427ae22c9d2","timestamp":"2026-10-29T06:53:46Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":95,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":20,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (159746) cloud: -> {"type":"Meter","packageId":"f81aca4b-c8b7-45e0-a7d1-189fc5be0b9f","timestamp":"2026-10-29T06:53:51Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":95,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":25,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (164745) cloud: -> {"type":"Meter","packageId":"c1935bd8-5abb-45bb-aaaf-5b69e23ae7cc","timestamp":"2026-10-29T06:53:56Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":95,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":30,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (169745) cloud: -> {"type":"Meter","packageId":"7d585105-4e11-481a-b611-885a970c12aa","timestamp":"2026-10-29T06:54:01Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":95,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":35,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (174746) cloud: -> {"type":"Meter","packageId":"e019349e-3d89-45ac-bad8-f57c34a1d574","timestamp":"2026-10-29T06:54:06Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":95,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":40,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (179746) cloud: -> {"type":"Meter","packageId":"90cb0dca-0a8c-44ce-ae3b-6eca6e65e97f","timestamp":"2026-10-29T06:54:11Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":95,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":45,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (184747) cloud: -> {"type":"Meter","packageId":"0f141689-6ed7-4e69-90e4-118f0ab82518","timestamp":"2026-10-29T06:54:16Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":95,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":50,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (189748) cloud: -> {"type":"Meter","packageId":"e2e57ae5-03e1-45bc-a7bc-77b78140edde","timestamp":"2026-10-29T06:54:21Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":95,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":55,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (194747) cloud: -> {"type":"Meter","packageId":"44000626-42b7-4582-a7e0-6a010b651935","timestamp":"2026-10-29T06:54:26Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":95,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":60,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (199748) cloud: -> {"type":"Meter","packageId":"5e33ce4f-8e49-4e78-a395-1058c4ab7497","timestamp":"2026-10-29T06:54:31Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":95,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":65,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (204748) cloud: -> {"type":"Meter","packageId":"b7850c15-10cc-4dd6-936c-1bf16ee313ad","timestamp":"2026-10-29T06:54:36Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":95,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":70,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (209748) cloud: -> {"type":"Meter","packageId":"166c2ce5-2252-4521-977e-665ac071ea39","timestamp":"2026-10-29T06:54:41Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":95,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":75,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (214751) cloud: -> {"type":"Meter","packageId":"eb0c7329-861b-42a3-ac30-37e72557f842","timestamp":"2026-10-29T06:54:46Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":95,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":80,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (219846) cloud: -> {"type":"Meter","packageId":"742922a0-5510-42c7-99ac-e2fff58cf959","timestamp":"2026-10-29T06:54:51Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":95,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":85,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (224846) cloud: -> {"type":"Meter","packageId":"840fd0c1-2712-4a38-b2be-a8ee82c5fdfd","timestamp":"2026-10-29T06:54:56Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":95,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":90,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (229846) cloud: -> {"type":"Meter","packageId":"f4d1ec50-3dfb-48fa-bc6a-d284f273d8c7","timestamp":"2026-10-29T06:55:01Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"WASHING","transactionId":95,"foamOn":true,"waterOn":false,"airOn":false,"vacuumOn":false,"foamSeconds":95,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (234645) app_fsm: ket thuc phien 95 (kich ban 1, ly do 2): da tru bot 300s nuoc 0s kho 0s (bom thuc 100s/0s/0s), con 0s su dung, 493s do xe[0m
+[0;32mI (234669) cloud: -> [luu 0] {"type":"Meter","packageId":"5197c466-1ccf-470e-9142-ab76f83238d3","timestamp":"2026-10-29T06:55:06Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"NORMAL","transactionId":95,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false,"reason":"NORMAL_FINISHED","foamSeconds":100,"waterSeconds":0,"airSeconds":0,"vacuumSeconds":0,"parkingTime":600}}[0m
+[0;32mI (234699) app_fsm: WASHING -> FINISHED[0m
+[0;32mI (234717) audio: phat: "Kết thúc rửa xe, cảm ơn bạn đã sử dụng dịch vụ. Tạm biệt và hẹn gặp lại"[0m
+[0;32mI (235545) cloud: server da nhan ban tin [0], con 0 cho gui[0m
+[0;32mI (239746) app_fsm: FINISHED -> IDLE[0m

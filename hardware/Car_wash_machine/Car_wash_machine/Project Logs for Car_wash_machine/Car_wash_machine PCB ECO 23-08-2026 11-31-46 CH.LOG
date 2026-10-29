@@ -1,5 +1,0 @@
-Removed Pin From Net: NetName=RXD Pin=JP1-5
-Removed Pin From Net: NetName=TXD Pin=JP1-6
-Added Pin To Net: NetName=TXD Pin=JP1-5
-Added Pin To Net: NetName=RXD Pin=JP1-6
-Added Member To Class: ClassName=POWER_CAR_WASH_MACHINE Member=Component GND TP_1MM

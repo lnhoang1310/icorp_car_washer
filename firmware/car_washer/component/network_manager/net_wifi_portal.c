@@ -144,6 +144,21 @@ static esp_err_t h_status(httpd_req_t *req)
     cJSON_AddBoolToObject(links, "wifi", net_manager_type_ready(NM_IF_WIFI));
     cJSON_AddStringToObject(r, "net", active_net());
 
+    /* IP cua mang dang dung (Ethernet / WiFi / 4G) -> dong "Dia chi IP" tren trang */
+    {
+        esp_netif_ip_info_t nip;
+        if (netif_has_ip(net_manager_get_default_netif(), &nip))
+        {
+            char ipb[16];
+            snprintf(ipb, sizeof(ipb), IPSTR, IP2STR(&nip.ip));
+            cJSON_AddStringToObject(r, "net_ip", ipb);
+        }
+        else
+        {
+            cJSON_AddStringToObject(r, "net_ip", "");
+        }
+    }
+
     /* WiFi STA: dang ket noi thi lay ten AP that, chua thi lay ten dang cau hinh */
     esp_netif_ip_info_t ip;
     bool has_ip = netif_has_ip(net_wifi_get_netif(), &ip);

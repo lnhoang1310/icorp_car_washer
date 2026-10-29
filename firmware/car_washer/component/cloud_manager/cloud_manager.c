@@ -5,6 +5,7 @@
 #include "app_config.h"
 #include "device_id.h"
 #include "net_manage.h"
+#include "ntp_time.h"
 #include "peripheral_test.h" /* che do thu thao tac khong can server (PT_DEMO_PAYMENT) */
 
 #include "esp_log.h"
@@ -58,12 +59,24 @@
 
 static const char *TAG = "cloud";
 
+/* Chu ky gui Meter dinh ky (giay): "meterInterval" trong topic config (retained -> nhan lai moi lan ket noi),
+ * chi giu trong RAM. Doc tu task app_fsm, ghi tu task MQTT: 1 bien 32-bit -> khong can khoa */
+static volatile uint32_t s_meter_interval_s = CLOUD_METER_INTERVAL_S;
+
+uint32_t cloud_meter_interval_s(void)
+{
+    return s_meter_interval_s;
+}
+
 #define TOPIC_LEN 64
 #define TIME_VALID_EPOCH 1672531200 /* 01/01/2023 */
 
 static esp_mqtt_client_handle_t s_client = NULL;
 static SemaphoreHandle_t s_lock = NULL;
 static volatile bool s_connected = false;
+/* Da gui Boot tren ket noi hien tai. Moi goi up (Boot, Meter, Init, Cancel) deu mang timestamp UTC ->
+ * chi gui khi SNTP da dong bo; truoc do tu o trang thai chua san sang (OUT_OF_SERVICE). */
+static volatile bool s_booted = false;
 
 typedef enum
 {
@@ -113,9 +126,9 @@ static esp_err_t publish_raw(const char *json)
 {
     if (!json)
         return ESP_ERR_NO_MEM;
-    if (!s_client || !s_connected)
+    if (!s_client || !s_booted)
     {
-        ESP_LOGW(TAG, "chua ket noi, khong gui: %.80s", json);
+        ESP_LOGW(TAG, "%s, khong gui: %.80s", s_connected ? "chua dong bo gio (chua Boot)" : "chua ket noi", json);
         return ESP_ERR_INVALID_STATE;
     }
     int id = esp_mqtt_client_enqueue(s_client, s_topic_up, json, 0, 1, 0, true);
@@ -144,7 +157,7 @@ static esp_err_t send_important(char *json)
         return ESP_ERR_NO_MEM;
     lock();
     int slot = txq_push(json);
-    if (slot >= 0 && s_client && s_connected && s_srv != SRV_OFFLINE)
+    if (slot >= 0 && s_client && s_booted && s_srv != SRV_OFFLINE)
     {
         s_slot_msg[slot] = esp_mqtt_client_enqueue(s_client, s_topic_up, json, 0, 1, 0, true);
         ESP_LOGI(TAG, "-> [luu %d] %s", slot, json);
@@ -152,8 +165,8 @@ static esp_err_t send_important(char *json)
     else if (slot >= 0)
     {
         /* Mat ket noi, hoac server OFFLINE (broker van nhan nhung khong co ai xu ly) -> giu FRAM */
-        ESP_LOGW(TAG, "%s -> luu cho gui lai [%d]: %.80s", s_connected ? "server OFFLINE" : "dang mat ket noi",
-                 slot, json);
+        ESP_LOGW(TAG, "%s -> luu cho gui lai [%d]: %.80s",
+                 !s_connected ? "dang mat ket noi" : !s_booted ? "chua dong bo gio" : "server OFFLINE", slot, json);
     }
     unlock();
     if (slot >= 0)
@@ -174,7 +187,7 @@ static void flush_important(void)
     lock();
     int slots[TXQ_SLOTS];
     int n = txq_list(slots);
-    for (int i = 0; i < n && s_connected && s_srv != SRV_OFFLINE; i++)
+    for (int i = 0; i < n && s_booted && s_srv != SRV_OFFLINE; i++)
     {
         if (!txq_read(slots[i], buf, TXQ_SLOT_SIZE))
             continue;
@@ -353,13 +366,40 @@ static void on_config(const char *data, int len)
         ESP_LOGW(TAG, "config: packages %s -> giu danh sach goi dang dung (dung: \"10000#600#900|20000#900#1200\")",
                  c->has_packages ? "KHONG hop le" : "khong co");
     }
+
+    /* meterInterval: khong co truong / sai -> giu chu ky dang dung. Ap dung ngay (ke ca dang rua) */
+    if (c->meter_interval_ok)
+    {
+        if (c->meter_interval_s != s_meter_interval_s)
+            ESP_LOGI(TAG, "config: chu ky Meter %lu -> %lu giay", (unsigned long)s_meter_interval_s,
+                     (unsigned long)c->meter_interval_s);
+        s_meter_interval_s = c->meter_interval_s;
+    }
+    else if (c->has_meter_interval)
+    {
+        ESP_LOGW(TAG, "config: meterInterval KHONG hop le (so nguyen %d..%d giay) -> giu %lu giay",
+                 CLOUD_METER_INTERVAL_MIN_S, CLOUD_METER_INTERVAL_MAX_S, (unsigned long)s_meter_interval_s);
+    }
+
+    /* hotline: khong co truong -> giu so dang dung; sai dinh dang -> giu so dang dung */
+    if (c->hotline_ok)
+    {
+        app_evt_t ev = {.type = APP_EVT_CLOUD_HOTLINE};
+        strlcpy(ev.data.phone, c->hotline, sizeof(ev.data.phone));
+        app_post_event(&ev);
+    }
+    else if (c->has_hotline)
+    {
+        ESP_LOGW(TAG, "config: hotline KHONG hop le (chi gom so va + - . ( ), toi da %d ky tu) -> giu so dang dung",
+                 DEVCFG_PHONE_LEN - 1);
+    }
     free(c);
 }
 
 /* Bao app_fsm khi "san sang phuc vu" doi (ket noi broker + trang thai server) */
 static bool ready_now(void)
 {
-    if (!s_connected)
+    if (!s_booted)
         return false;
 #if CLOUD_SERVER_STATUS_STRICT
     return s_srv == SRV_ONLINE;
@@ -398,7 +438,7 @@ static void on_server_status(const char *data, int len)
         ESP_LOGW(TAG, "SERVER %s", st == SRV_ONLINE ? "ONLINE" : st == SRV_OFFLINE ? "OFFLINE -> tam ngung phuc vu"
                                                                                    : "chua ro trang thai");
     s_srv = st;
-    if (old == SRV_OFFLINE && st != SRV_OFFLINE && s_connected)
+    if (old == SRV_OFFLINE && st != SRV_OFFLINE && s_booted)
         flush_important(); /* server song lai: gui cac goi quan trong giu trong luc server OFFLINE */
     report_ready(false);
 }
@@ -411,8 +451,35 @@ static void on_server_status(const char *data, int len)
 static esp_netif_t *s_mqtt_netif = NULL;
 static volatile bool s_fast_reconnect = false;
 
+/* Ket noi that bai lien tiep tren CUNG mang chinh (DNS khong phan giai / TCP khong mo duoc).
+ * Du CLOUD_NET_FAIL_MAX lan -> bao net_manager tu xu ly (khoi dong lai ETH / doi mang). 1 = bao ngay lan dau. */
+#ifndef CLOUD_NET_FAIL_MAX
+#define CLOUD_NET_FAIL_MAX 1
+#endif
+static uint8_t s_conn_fail = 0;
+
+/* Vua co mang chinh moi trong luc MQTT dang thu ket noi do dang -> thu lai ngay khi lan do ket thuc */
+static volatile bool s_net_kick = false;
+
 static void on_netmgr_event(void *arg, esp_event_base_t base, int32_t id, void *data)
 {
+    if (id == NETMGR_EVENT_DEFAULT_CHANGED)
+    {
+        s_conn_fail = 0; /* mang chinh moi -> dem lai tu dau */
+        return;
+    }
+    if (id == NETMGR_EVENT_ONLINE)
+    {
+        /* Co mang chinh (luc khoi dong / doi mang) ma chua vao broker -> thu ngay, khong cho CLOUD_RECONNECT_MS */
+        if (s_client && !s_connected)
+        {
+            if (esp_mqtt_client_reconnect(s_client) == ESP_OK)
+                ESP_LOGI(TAG, "co mang -> ket noi broker ngay");
+            else
+                s_net_kick = true; /* dang ket noi do dang -> thu lai ngay khi lan nay ket thuc */
+        }
+        return;
+    }
     if (id != NETMGR_EVENT_IF_DOWN || !data || !s_client)
         return;
     esp_netif_t *down = *(esp_netif_t **)data;
@@ -431,15 +498,19 @@ static void on_netmgr_event(void *arg, esp_event_base_t base, int32_t id, void *
     }
 }
 
-static void on_connected(void)
+/* Boot, cac ban tin quan trong con ton (mat mang / mat dien truoc do), roi Meter hien tai.
+ * Chi chay khi DA ket noi broker VA SNTP da dong bo, dung 1 lan moi ket noi. Goi tu on_connected (task MQTT)
+ * va tu ntp_time_on_sync (task esp_timer) -> co ca 2 thu tu "ket noi truoc / gio truoc". */
+static void boot_sequence(void)
 {
-    esp_mqtt_client_subscribe(s_client, s_topic_down, 1);
-    esp_mqtt_client_subscribe(s_client, s_topic_cfg, 1);
-    esp_mqtt_client_subscribe(s_client, CLOUD_SERVER_STATUS_TOPIC, 1); /* retain -> nhan ngay trang thai hien tai */
-    esp_mqtt_client_enqueue(s_client, s_topic_status, "ONLINE", 6, 1, 1, true);
-    s_connected = true;
+    lock();
+    bool go = s_connected && !s_booted && ntp_time_is_synced();
+    if (go)
+        s_booted = true;
+    unlock();
+    if (!go)
+        return;
 
-    /* Boot, cac ban tin quan trong con ton (mat mang / mat dien truoc do), roi Meter hien tai */
     publish_take(cp_build_boot(s_mac, FW_VERSION, HW_VERSION, device_config_get()->wash.mode, device_config_get()->op_raw));
     flush_important();
     ws_session_t snap;
@@ -451,6 +522,27 @@ static void on_connected(void)
     send_meter(have ? &snap : NULL);
 
     report_ready(true);
+}
+
+static void on_time_synced(void)
+{
+    if (s_connected && !s_booted)
+        ESP_LOGI(TAG, "SNTP vua dong bo -> gui Boot");
+    boot_sequence();
+}
+
+static void on_connected(void)
+{
+    esp_mqtt_client_subscribe(s_client, s_topic_down, 1);
+    esp_mqtt_client_subscribe(s_client, s_topic_cfg, 1);
+    esp_mqtt_client_subscribe(s_client, CLOUD_SERVER_STATUS_TOPIC, 1); /* retain -> nhan ngay trang thai hien tai */
+    esp_mqtt_client_enqueue(s_client, s_topic_status, "ONLINE", 6, 1, 1, true); /* chuoi, khong co timestamp */
+    s_booted = false;
+    s_connected = true;
+
+    if (!ntp_time_is_synced())
+        ESP_LOGW(TAG, "da ket noi broker nhung CHUA dong bo gio SNTP -> cho dong bo roi moi gui Boot");
+    boot_sequence();
 }
 
 static bool topic_is(const esp_mqtt_event_t *e, const char *t)
@@ -466,6 +558,9 @@ static void mqtt_event_handler(void *arg, esp_event_base_t base, int32_t id, voi
     case MQTT_EVENT_CONNECTED:
         s_mqtt_netif = net_manager_get_default_netif();
         ESP_LOGI(TAG, "da ket noi broker (qua %s)", s_mqtt_netif ? esp_netif_get_ifkey(s_mqtt_netif) : "?");
+        s_conn_fail = 0;
+        s_net_kick = false;
+        net_manager_report_reachable();
         on_connected();
         break;
 
@@ -474,15 +569,17 @@ static void mqtt_event_handler(void *arg, esp_event_base_t base, int32_t id, voi
         {
             ESP_LOGW(TAG, "mat ket noi broker");
             s_connected = false;
+            s_booted = false;
             lock();
             for (int i = 0; i < TXQ_SLOTS; i++)
                 s_slot_msg[i] = -1; /* chua ACK -> ket noi lai gui lai */
             unlock();
             report_ready(true);
         }
-        if (s_fast_reconnect)
+        if (s_fast_reconnect || s_net_kick)
         {
             s_fast_reconnect = false;
+            s_net_kick = false;
             esp_mqtt_client_reconnect(s_client); /* khong cho CLOUD_RECONNECT_MS */
         }
         break;
@@ -511,6 +608,13 @@ static void mqtt_event_handler(void *arg, esp_event_base_t base, int32_t id, voi
             ESP_LOGE(TAG, "broker tu choi ket noi (ma %d) -- kiem tra user/password", e->error_handle->connect_return_code);
         else
             ESP_LOGW(TAG, "loi MQTT (sock errno %d)", e->error_handle ? e->error_handle->esp_transport_sock_errno : 0);
+        /* Loi khi dang ket noi (chua vao duoc broker) trong luc CO mang chinh -> mang do co the khong ra Internet */
+        if (!s_connected && e->error_handle && e->error_handle->error_type == MQTT_ERROR_TYPE_TCP_TRANSPORT &&
+            net_manager_get_default_netif() && ++s_conn_fail >= CLOUD_NET_FAIL_MAX)
+        {
+            s_conn_fail = 0;
+            net_manager_report_unreachable();
+        }
         break;
 
     default:
@@ -599,7 +703,10 @@ esp_err_t cloud_init(void)
 #endif
 
     esp_mqtt_client_register_event(s_client, ESP_EVENT_ANY_ID, mqtt_event_handler, NULL);
+    ntp_time_on_sync(on_time_synced);
     esp_event_handler_register(NETMGR_EVENT, NETMGR_EVENT_IF_DOWN, on_netmgr_event, NULL);
+    esp_event_handler_register(NETMGR_EVENT, NETMGR_EVENT_DEFAULT_CHANGED, on_netmgr_event, NULL);
+    esp_event_handler_register(NETMGR_EVENT, NETMGR_EVENT_ONLINE, on_netmgr_event, NULL);
     esp_err_t err = esp_mqtt_client_start(s_client);
     ESP_LOGI(TAG, "broker %s:%d%s, client %s, bayMac %s, khoang %d", CLOUD_BROKER_HOST, CLOUD_BROKER_PORT,
              CLOUD_BROKER_USE_TLS ? " (TLS)" : "", s_client_id, s_mac, CLOUD_BAY_NUMBER);

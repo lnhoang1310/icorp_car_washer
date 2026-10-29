@@ -15,7 +15,7 @@ static const char *TAG = "devcfg";
 
 /* So dien thoai hien thi khi CHUA nhan duoc tu server. De rong thi man loi ghi "lien he quan ly". */
 #ifndef DEVCFG_OWNER_PHONE_DEFAULT
-#define DEVCFG_OWNER_PHONE_DEFAULT "0866129857"
+#define DEVCFG_OWNER_PHONE_DEFAULT "" /* server gui qua topic config, truong "hotline" */
 #endif
 
 static device_config_t s_cfg;
@@ -121,6 +121,13 @@ void device_config_init(void)
 
     if (err == ESP_OK && len == sizeof(tmp) && device_config_validate(&tmp))
     {
+        /* So mac dinh cu dat cung trong firmware -> bo, cho server gui hotline */
+        if (strcmp(tmp.owner_phone, "0866129857") == 0)
+        {
+            tmp.owner_phone[0] = '\0';
+            nvs_store_set_blob(DEVCFG_NS, DEVCFG_KEY, &tmp, sizeof(tmp));
+            ESP_LOGW(TAG, "xoa so dien thoai mac dinh cu, cho server gui hotline");
+        }
         s_cfg = tmp;
         ESP_LOGI(TAG, "doc cau hinh NVS OK (config_ver=%lu, %u goi)",
                  (unsigned long)s_cfg.config_ver, s_cfg.package_count);

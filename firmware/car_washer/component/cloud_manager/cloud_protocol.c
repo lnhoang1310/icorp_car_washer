@@ -441,6 +441,26 @@ bool cp_parse_packages_str(const char *str, cp_pkg_list_t *out)
     return ok;
 }
 
+bool cp_parse_hotline(const char *str, char out[DEVCFG_PHONE_LEN])
+{
+    out[0] = '\0';
+    if (!str)
+        return false;
+    while (isspace((unsigned char)*str))
+        str++;
+    size_t n = strlen(str);
+    while (n && isspace((unsigned char)str[n - 1]))
+        n--;
+    if (n >= DEVCFG_PHONE_LEN)
+        return false;
+    for (size_t i = 0; i < n; i++)
+        if (!isdigit((unsigned char)str[i]) && !strchr("+-.() ", str[i]))
+            return false;
+    memcpy(out, str, n);
+    out[n] = '\0';
+    return true;
+}
+
 void cp_parse_config(const char *data, int len, cp_config_t *out)
 {
     memset(out, 0, sizeof(*out));
@@ -457,5 +477,19 @@ void cp_parse_config(const char *data, int len, cp_config_t *out)
     out->has_packages = cJSON_IsString(p);
     out->mode_ok = out->has_mode && cp_parse_mode_str(m->valuestring, &out->mode);
     out->packages_ok = out->has_packages && cp_parse_packages_str(p->valuestring, &out->packages);
+    const cJSON *h = cJSON_GetObjectItemCaseSensitive(root, "hotline");
+    out->has_hotline = cJSON_IsString(h);
+    out->hotline_ok = out->has_hotline && cp_parse_hotline(h->valuestring, out->hotline);
+    const cJSON *mi = cJSON_GetObjectItemCaseSensitive(root, "meterInterval");
+    out->has_meter_interval = (mi != NULL);
+    if (cJSON_IsNumber(mi))
+    {
+        double v = mi->valuedouble;
+        if (v == (double)(uint32_t)v && v >= CLOUD_METER_INTERVAL_MIN_S && v <= CLOUD_METER_INTERVAL_MAX_S)
+        {
+            out->meter_interval_ok = true;
+            out->meter_interval_s = (uint32_t)v;
+        }
+    }
     cJSON_Delete(root);
 }

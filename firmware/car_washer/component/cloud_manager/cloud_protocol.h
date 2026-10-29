@@ -83,6 +83,9 @@ void cp_parse_down(const char *data, int len, cp_down_t *out);
  *   {"mode": "S#3#1#2#1", "packages": "10000#600#900|20000#900#1200|30000#1200#1500"}
  *   mode     = mode#foam#water#air#vacuum. S = SPEED (he so > 0), R = RATIO (so nguyen > 0, tong 100)
  *   packages = cac goi ngan cach '|', moi goi price#packageDuration#parkingTime (VND, giay, giay)
+ *   meterInterval = chu ky gui Meter dinh ky khi dang rua (giay, so nguyen
+ *                   CLOUD_METER_INTERVAL_MIN_S..CLOUD_METER_INTERVAL_MAX_S)
+ *   hotline  = so dien thoai hien tren man canh bao ("Mat ket noi" / "Loi thiet bi"), "" = khong hien so
  * Hai truong doc DOC LAP: truong nao sai thi bo truong do, truong kia van dung. */
 
 typedef struct
@@ -107,6 +110,10 @@ typedef struct
     bool json_ok;                    /* payload la JSON object */
     bool has_mode, mode_ok;          /* co truong mode / mode hop le */
     bool has_packages, packages_ok;  /* co truong packages / danh sach hop le */
+    bool has_hotline, hotline_ok;    /* co truong hotline / so hop le (rong cung hop le = xoa so) */
+    char hotline[DEVCFG_PHONE_LEN];
+    bool has_meter_interval, meter_interval_ok; /* co truong meterInterval / so nguyen trong gioi han */
+    uint32_t meter_interval_s;
     cp_op_mode_t mode;
     cp_pkg_list_t packages;
 } cp_config_t;
@@ -118,6 +125,9 @@ bool cp_parse_mode_str(const char *str, cp_op_mode_t *out);
 /* "10000#600#900|20000#900#1200": 1..12 goi; 60 <= packageDuration <= 5999 giay (99:59),
  * packageDuration <= parkingTime <= packageDuration + 2 gio, gia > 0. Mot goi sai -> ca danh sach sai. */
 bool cp_parse_packages_str(const char *str, cp_pkg_list_t *out);
+
+/* So dien thoai: toi da DEVCFG_PHONE_LEN-1 ky tu, chi gom so va + - . ( ) khoang trang. "" hop le */
+bool cp_parse_hotline(const char *str, char out[DEVCFG_PHONE_LEN]);
 
 /* Doc ca goi config. Luon dien out (xem has_ / _ok). */
 void cp_parse_config(const char *data, int len, cp_config_t *out);

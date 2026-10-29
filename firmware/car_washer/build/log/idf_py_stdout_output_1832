@@ -1,0 +1,961 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM19 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\car_washer.elf D:\PROJECT\ICORP\CAR_WASHER\firmware\car_washer\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM19'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1658
+load:0x403c8700,len:0xd98
+load:0x403cb700,len:0x33a4
+entry 0x403c899c
+[0;32mI (25) boot: ESP-IDF v5.5.1-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Sep 28 2026 18:07:58[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.4[0m
+[0;32mI (32) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (36) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00080000[0m
+[0;32mI (63) boot:  1 otadata          OTA data         01 00 00089000 00002000[0m
+[0;32mI (70) boot:  2 phy_init         RF data          01 01 0008b000 00001000[0m
+[0;32mI (76) boot:  3 ota_0            OTA app          00 10 00090000 002ee000[0m
+[0;32mI (83) boot:  4 ota_1            OTA app          00 11 00380000 002ee000[0m
+[0;32mI (89) boot:  5 storage          Unknown data     01 82 0066e000 00400000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00090020 vaddr=3c130020 size=57bb0h (359344) map[0m
+[0;32mI (167) esp_image: segment 1: paddr=000e7bd8 vaddr=3fc9ed00 size=05354h ( 21332) load[0m
+[0;32mI (171) esp_image: segment 2: paddr=000ecf34 vaddr=40374000 size=030e4h ( 12516) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=000f0020 vaddr=42000020 size=12c288h (1229448) map[0m
+[0;32mI (383) esp_image: segment 4: paddr=0021c2b0 vaddr=403770e4 size=17b70h ( 97136) load[0m
+[0;32mI (403) esp_image: segment 5: paddr=00233e28 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (413) boot: Loaded app from partition at offset 0x90000[0m
+[0;32mI (413) boot: Disabling RNG early entropy source...[0m
+[0;32mI (423) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (423) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (423) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (425) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (430) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (434) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (438) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (443) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (448) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (452) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (458) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (462) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (466) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (470) esp_psram: Speed: 80MHz[0m
+[0;32mI (473) cpu_start: Multicore app[0m
+[0;32mI (889) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (898) cpu_start: Pro cpu start user code[0m
+[0;32mI (898) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (898) app_init: Application information:[0m
+[0;32mI (898) app_init: Project name:     car_washer[0m
+[0;32mI (902) app_init: App version:      1.0.0[0m
+[0;32mI (906) app_init: Compile time:     Oct 26 2026 19:48:47[0m
+[0;32mI (911) app_init: ELF file SHA256:  0c734d130...[0m
+[0;32mI (915) app_init: ESP-IDF:          v5.5.1-dirty[0m
+[0;32mI (919) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (923) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (927) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (931) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (937) heap_init: At 3FCAADB0 len 0003E960 (250 KiB): RAM[0m
+[0;32mI (942) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (948) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (953) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (958) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (965) spi_flash: detected chip: generic[0m
+[0;32mI (968) spi_flash: flash io: dio[0m
+[0;32mI (972) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (978) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (985) main_task: Started on CPU0[0m
+[0;32mI (988) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (996) main_task: Calling app_main()[0m
+[0;32mI (1026) i2c_bus: i2c_bus_init OK (port=1 sda=1 scl=2)[0m
+[0;32mI (1028) io_exp: init OK (out=0x38 in=0x39 int=GPIO15)[0m
+[0;32mI (1029) device_id: device_id = 80456B281774[0m
+[0;32mI (1030) main: device_id = 80456B281774[0m
+[0;32mI (1033) fram: fram_init OK (port=1 sda=1 scl=2 addr=0x50 cap=32768 byte)[0m
+[0;32mI (1038) io_exp: PCF input 0x39 OK[0m
+[0;32mI (1043) rtc_ds3231: DS3231 connected (port=1 sda=1 scl=2)[0m
+[0;33mW (1048) ntp_time: Dong ho he thong chua hop le (vua boot/reset)[0m
+[0;33mW (1055) ntp_time: Gio doc tu RTC khong hop le (co the do nhieu I2C lam sai lech du lieu) -- bo qua, cho SNTP[0m
+[0;32mI (1065) devcfg: doc cau hinh NVS OK (config_ver=0, 4 goi)[0m
+[0;32mI (1239) display: doc ID man hinh (0xD3): 00 00 00 00 00[0m
+[0;33mW (1240) display: man hinh khong tra loi: chan SDO/MISO chua noi, hoac chip chua nhan duoc lenh (kiem tra day CS/DC/RST/SCK/SDI va nguon man hinh)[0m
+[0;32mI (1247) ili9341: LCD panel create success, version: 2.1.0[0m
+[0;32mI (1373) LVGL: Starting LVGL task[0m
+[0;33mW (1376) lcd_panel.io.spi: Callback on_color_trans_done was already set and now it was overwritten![0m
+[0;32mI (1422) display: cam ung: dung hieu chinh da luu (swap=1 inv_x=1 inv_y=1 x=416..3946 y=70..3838)[0m
+[0;32mI (1423) display: cam ung XPT2046 OK (doc dinh ky, CS=GPIO21)[0m
+[0;32mI (1426) display: display OK ILI9341 320x240, SPI 20 MHz[0m
+[0;32mI (1434) peripheral_test: cam ung da co hieu chinh trong NVS (muon lam lai: dat PT_TOUCH_CALIB = 2)[0m
+[0;32mI (1456) audio: phan vung am thanh: dung 620/4096 KB[0m
+[0;33mW (1466) audio: thieu 1/7 file am thanh trong assets/audio[0m
+[0;32mI (1466) audio: audio OK (I2S 16000 Hz, BCLK=6 WS=7 DIN=5 SD=4)[0m
+[0;32mI (1466) main: =========== Network init ==========[0m
+[1;31mE (1471) gpio: gpio_install_isr_service(526): GPIO isr service already installed[0m
+[0;33mW (1478) net_ethernet: GPIO ISR handler already installed, bo qua[0m
+[0;32mI (1505) esp_eth.netif.netif_glue: 80:45:6b:28:17:77[0m
+[0;32mI (1506) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+[0;32mI (1506) net_ethernet: net_ethernet_init OK (spi_host=2 cs=9 int=10)[0m
+[0;32mI (1521) net_ethernet: Driver started[0m
+[0;32mI (1522) pp: pp rom version: e7ae62f[0m
+[0;32mI (1523) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1525) wifi:wifi driver task: 3fce1ba0, prio:23, stack:6656, core=0[0m
+[0;32mI (1542) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (1543) wifi:wifi certification version: v7.0[0m
+[0;32mI (1543) wifi:config NVS flash: enabled[0m
+[0;32mI (1543) wifi:config nano formatting: disabled[0m
+[0;32mI (1547) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1552) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1556) wifi:Init management short buffer num: 32[0m
+[0;32mI (1561) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1565) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1569) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1573) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1577) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1582) wifi_init: rx ba win: 6[0m
+[0;32mI (1584) wifi_init: accept mbox: 6[0m
+[0;32mI (1587) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1590) wifi_init: udp mbox: 6[0m
+[0;32mI (1593) wifi_init: tcp mbox: 6[0m
+[0;32mI (1596) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1599) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1603) wifi_init: tcp mss: 1440[0m
+[0;32mI (1606) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (1610) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1613) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1621) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (1660) wifi:mode : sta (80:45:6b:28:17:74) + softAP (80:45:6b:28:17:75)[0m
+[0;32mI (1661) wifi:enable tsf[0m
+[0;32mI (1663) wifi:Total power save buffer number: 16[0m
+[0;32mI (1664) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1667) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1672) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;33mW (1678) net_wifi: Khong co SSID da luu -> chua ket noi duoc[0m
+[0;32mI (1681) net_wifi: Schedule next scan in 10000 ms[0m
+[0;32mI (1686) net_wifi: AP SSID=XTECH - 281774 IP:192.168.4.1[0m
+[0;32mI (1686) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (1698) net_gsm: net_gsm_init OK (uart=2 tx=47 rx=48 apn=v-internet)[0m
+[0;32mI (1704) net_gsm: pulse reset[0m
+[0;32mI (1705) net_manager: net_manager_init[0m
+[0;32mI (1711) ntp_time: SNTP started[0m
+[1;31mE (1723) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (1724) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (1729) mqtt_client: Error transport connect[0m
+[0;33mW (1733) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (1736) cloud: broker uat-mqtt-carwash.icorp.vn:1883, client carwash-80456b281774, bayMac 80456b281774, khoang 0[0m
+[0;32mI (1749) wifi_portal: trang cau hinh WiFi: http://192.168.4.1/[0m
+[0;32mI (1753) main: khoi dong xong[0m
+[0;32mI (1754) main_task: Returned from app_main()[0m
+[0;32mI (1830) app_fsm: BOOT -> OUT_OF_SERVICE[0m
+[0;32mI (2837) app_fsm: den BAT (00:00, troi toi)[0m
+[0;32mI (5521) net_ethernet: Link up, MAC 80:45:6b:28:17:77[0m
+[0;32mI (5523) net_manager: ETH LINK UP[0m
+[0;32mI (6530) net_ethernet: Got IP: 192.168.0.147 mask:255.255.255.0 gw:192.168.0.1[0m
+[0;32mI (6530) esp_netif_handlers: eth ip: 192.168.0.147, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (6534) net_manager: ETH GOT IP[0m
+[0;32mI (6537) net_manager: Switch default interface -> ETH_DEF (DNS 192.168.0.1)[0m
+[0;32mI (6544) ntp_time: SNTP chua dong bo -> thu lai ngay (Ethernet co IP)[0m
+[0;32mI (6674) ntp_time: SNTP dong bo thanh cong: 2026-10-27 14:23:21[0m
+[0;32mI (6676) ntp_time: Da ghi gio he thong xuong RTC[0m
+[0;32mI (6838) app_fsm: den TAT (14:23, troi sang)[0m
+[0;32mI (9207) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (9208) uart: queue free spaces: 30[0m
+[0;32mI (9214) net_gsm: Signal quality OK: rssi=15 ber=99[0m
+[0;32mI (9375) cloud: da ket noi broker (qua ETH_DEF)[0m
+[0;32mI (9380) cloud: -> {"type":"Boot","packageId":"82c0a0fc-b01e-4ea1-8ad0-b6fa6ed62db5","timestamp":"2026-10-27T07:23:24Z","payload":{"mac":"80456b281774","firmwareVersion":"V1.0.0","hardwareVersion":"V1.0","operationMode":{"mode":"SPEED","foam":3,"water":1,"air":2,"vacuum":1}}}[0m
+[0;32mI (9395) cloud: -> {"type":"Meter","packageId":"13dcc9de-60ba-4ca9-a29c-c3606bf98823","timestamp":"2026-10-27T07:23:24Z","payload":{"bayMac":"80456b281774","bayNumber":0,"status":"NORMAL","transactionId":0,"foamOn":false,"waterOn":false,"airOn":false,"vacuumOn":false}}[0m
+[0;33mW (9417) app_fsm: server DA KET NOI (trang thai OUT_OF_SERVICE)[0m
+[0;32mI (9422) app_fsm: OUT_OF_SERVICE -> IDLE[0m
+[0;32mI (9480) cloud: <- carwash/v1/80456b281774/config: {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400","hotline":"0987654321"}[0m
+[0;32mI (9485) cloud: <- config {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400","hotline":"0987654321"}[0m
+[0;32mI (9502) cloud: <- carwash/v1/server/status: ONLINE[0m
+[0;33mW (9502) cloud: SERVER ONLINE[0m
+[0;32mI (9529) cloud: <- carwash/v1/80456b281774/config: {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400","hotline":"0987654321"}[0m
+[0;32mI (9533) cloud: <- config {"mode":"S#3#1#2#1","packages":"10000#300#600|20000#600#900|30000#900#1500|40000#1200#2400","hotline":"0987654321"}[0m
+[0;32mI (10319) net_gsm: PPP connected, IP:6.138.143.237[0m
+[0;32mI (10320) net_manager: PPP netif duoc cap nhat runtime[0m
+[0;32mI (10320) net_manager: PPP GOT IP[0m
+[0;32mI (10320) esp-netif_lwip-ppp: ppp: Connected[0m
+[0;32mI (11685) net_wifi: Auto scan fired (retry=1)[0m
+[0;32mI (14921) net_wifi: ===== SCAN RESULT (15 APs) =====[0m
+[0;32mI (14921) net_wifi: 1) SSID:TP-Link_FF1E RSSI:-55 CH:13[0m
+[0;32mI (14921) net_wifi: 2) SSID:Hanoi Office RSSI:-70 CH:11[0m
+[0;32mI (14924) net_wifi: 3) SSID:VANTUNG_2.4G RSSI:-71 CH:6[0m
+[0;32mI (14929) net_wifi: 4) SSID:KTIC RSSI:-71 CH:11[0m
+[0;32mI (14933) net_wifi: 5) SSID:Hanoi Office RSSI:-74 CH:6[0m
+[0;32mI (14938) net_wifi: 6) SSID:HNO T4 RSSI:-74 CH:6[0m
+[0;32mI (14943) net_wifi: 7) SSID:Hanoi Office RSSI:-79 CH:1[0m
+[0;32mI (14947) net_wifi: 8) SSID:Tecepe RSSI:-80 CH:6[0m
+[0;32mI (14952) net_wifi: 9) SSID:Hanoi Office RSSI:-81 CH:1[0m
+[0;32mI (14957) net_wifi: 10) SSID:HNO T4 RSSI:-81 CH:1[0m
+[0;32mI (14961) net_wifi: 11) SSID:Vu Huy RSSI:-82 CH:1[0m
+[0;32mI (14966) net_wifi: 12) SSID:ICORP PKD01 RSSI:-83 CH:8[0m
+[0;32mI (14970) net_wifi: 13) SSID:ICORP PKD02 RSSI:-83 CH:11[0m
+[0;32mI (14975) net_wifi: 14) SSID:FPT Telecom-5C21-IOT RSSI:-84 CH:1[0m
+[0;32mI (14981) net_wifi: 15) SSID:HNO T4 RSSI:-87 CH:11[0m
+[0;33mW (14989) net_wifi: Khong tim thay SSID da luu nao trong ket qua quet[0m
+[0;32mI (14992) net_wifi: Schedule next scan in 30000 ms[0m
+E BOD: Brownout detector was triggered
+
+
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1658
+load:0x403c8700,len:0xd98
+load:0x403cb700,len:0x33a4
+entry 0x403c899c
+[0;32mI (25) boot: ESP-IDF v5.5.1-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Sep 28 2026 18:07:58[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.4[0m
+[0;32mI (32) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (36) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00080000[0m
+[0;32mI (63) boot:  1 otadata          OTA data         01 00 00089000 00002000[0m
+[0;32mI (70) boot:  2 phy_init         RF data          01 01 0008b000 00001000[0m
+[0;32mI (76) boot:  3 ota_0            OTA app          00 10 00090000 002ee000[0m
+[0;32mI (83) boot:  4 ota_1            OTA app          00 11 00380000 002ee000[0m
+[0;32mI (89) boot:  5 storage          Unknown data     01 82 0066e000 00400000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00090020 vaddr=3c130020 size=57bb0h (359344) map[0m
+[0;32mI (167) esp_image: segment 1: paddr=000e7bd8 vaddr=3fc9ed00 size=05354h ( 21332) load[0m
+[0;32mI (171) esp_image: segment 2: paddr=000ecf34 vaddr=40374000 size=030e4h ( 12516) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=000f0020 vaddr=42000020 size=12c288h (1229448) map[0m
+[0;32mI (383) esp_image: segment 4: paddr=0021c2b0 vaddr=403770e4 size=17b70h ( 97136) load[0m
+[0;32mI (403) esp_image: segment 5: paddr=00233e28 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (413) boot: Loaded app from partition at offset 0x90000[0m
+[0;32mI (413) boot: Disabling RNG early entropy source...[0m
+[0;32mI (423) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (423) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (423) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (425) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (430) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (434) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (438) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (443) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (448) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (452) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (458) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (462) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (466) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (470) esp_psram: Speed: 80MHz[0m
+[0;32mI (473) cpu_start: Multicore app[0m
+[0;32mI (889) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (898) cpu_start: Pro cpu start user code[0m
+[0;32mI (898) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (898) app_init: Application information:[0m
+[0;32mI (898) app_init: Project name:     car_washer[0m
+[0;32mI (902) app_init: App version:      1.0.0[0m
+[0;32mI (906) app_init: Compile time:     Oct 26 2026 19:48:47[0m
+[0;32mI (911) app_init: ELF file SHA256:  0c734d130...[0m
+[0;32mI (915) app_init: ESP-IDF:          v5.5.1-dirty[0m
+[0;32mI (919) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (923) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (927) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (931) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (937) heap_init: At 3FCAADB0 len 0003E960 (250 KiB): RAM[0m
+[0;32mI (942) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (948) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (953) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (958) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (965) spi_flash: detected chip: generic[0m
+[0;32mI (968) spi_flash: flash io: dio[0m
+[0;32mI (972) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (978) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (985) main_task: Started on CPU0[0m
+[0;32mI (988) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (996) main_task: Calling app_main()[0m
+[0;32mI (1026) i2c_bus: i2c_bus_init OK (port=1 sda=1 scl=2)[0m
+[0;32mI (1028) io_exp: init OK (out=0x38 in=0x39 int=GPIO15)[0m
+[0;32mI (1029) device_id: device_id = 80456B281774[0m
+[0;32mI (1029) main: device_id = 80456B281774[0m
+[0;32mI (1033) fram: fram_init OK (port=1 sda=1 scl=2 addr=0x50 cap=32768 byte)[0m
+[0;32mI (1038) io_exp: PCF input 0x39 OK[0m
+[0;32mI (1043) rtc_ds3231: DS3231 connected (port=1 sda=1 scl=2)[0m
+[0;33mW (1048) ntp_time: Dong ho he thong chua hop le (vua boot/reset)[0m
+[0;33mW (1054) ntp_time: Gio doc tu RTC khong hop le (co the do nhieu I2C lam sai lech du lieu) -- bo qua, cho SNTP[0m
+[0;32mI (1065) devcfg: doc cau hinh NVS OK (config_ver=0, 4 goi)[0m
+[0;32mI (1239) display: doc ID man hinh (0xD3): 80 00 00 00 00[0m
+[0;33mW (1240) display: man hinh khong tra loi: chan SDO/MISO chua noi, hoac chip chua nhan duoc lenh (kiem tra day CS/DC/RST/SCK/SDI va nguon man hinh)[0m
+[0;32mI (1247) ili9341: LCD panel create success, version: 2.1.0[0m
+[0;32mI (1373) LVGL: Starting LVGL task[0m
+[0;33mW (1376) lcd_panel.io.spi: Callback on_color_trans_done was already set and now it was overwritten![0m
+[0;32mI (1422) display: cam ung: dung hieu chinh da luu (swap=1 inv_x=1 inv_y=1 x=416..3946 y=70..3838)[0m
+[0;32mI (1423) display: cam ung XPT2046 OK (doc dinh ky, CS=GPIO21)[0m
+[0;32mI (1426) display: display OK ILI9341 320x240, SPI 20 MHz[0m
+[0;32mI (1434) peripheral_test: cam ung da co hieu chinh trong NVS (muon lam lai: dat PT_TOUCH_CALIB = 2)[0m
+[0;32mI (1456) audio: phan vung am thanh: dung 620/4096 KB[0m
+[0;33mW (1466) audio: thieu 1/7 file am thanh trong assets/audio[0m
+[0;32mI (1466) audio: audio OK (I2S 16000 Hz, BCLK=6 WS=7 DIN=5 SD=4)[0m
+[0;32mI (1466) main: =========== Network init ==========[0m
+[1;31mE (1470) gpio: gpio_install_isr_service(526): GPIO isr service already installed[0m
+[0;33mW (1477) net_ethernet: GPIO ISR handler already installed, bo qua[0m
+[0;32mI (1505) esp_eth.netif.netif_glue: 80:45:6b:28:17:77[0m
+[0;32mI (1506) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+[0;32mI (1506) net_ethernet: net_ethernet_init OK (spi_host=2 cs=9 int=10)[0m
+[0;32mI (1521) net_ethernet: Driver started[0m
+[0;32mI (1522) pp: pp rom version: e7ae62f[0m
+[0;32mI (1523) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1524) wifi:wifi driver task: 3fce1c18, prio:23, stack:6656, core=0[0m
+[0;32mI (1542) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (1543) wifi:wifi certification version: v7.0[0m
+[0;32mI (1543) wifi:config NVS flash: enabled[0m
+[0;32mI (1543) wifi:config nano formatting: disabled[0m
+[0;32mI (1547) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1552) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1556) wifi:Init management short buffer num: 32[0m
+[0;32mI (1561) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1565) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1569) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1573) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1577) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1582) wifi_init: rx ba win: 6[0m
+[0;32mI (1584) wifi_init: accept mbox: 6[0m
+[0;32mI (1587) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1590) wifi_init: udp mbox: 6[0m
+[0;32mI (1593) wifi_init: tcp mbox: 6[0m
+[0;32mI (1596) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1599) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1603) wifi_init: tcp mss: 1440[0m
+[0;32mI (1606) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (1610) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1613) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1621) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (1654) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1666) wifi:mode : sta (80:45:6b:28:17:74) + softAP (80:45:6b:28:17:75)[0m
+[0;32mI (1667) wifi:enable tsf[0m
+[0;32mI (1669) wifi:Total power save buffer number: 16[0m
+[0;32mI (1670) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1673) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1678) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1685) net_wifi: AP SSID=XTECH - 281774 IP:192.168.4.1[0m
+[0;32mI (1686) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (1695) net_gsm: net_gsm_init OK (uart=2 tx=47 rx=48 apn=v-internet)[0m
+[0;32mI (1700) net_gsm: pulse reset[0m
+[0;32mI (1701) net_manager: net_manager_init[0m
+[0;32mI (1707) ntp_time: SNTP started[0m
+[1;31mE (1719) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (1720) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (1725) mqtt_client: Error transport connect[0m
+[0;33mW (1729) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (1732) cloud: broker uat-mqtt-carwash.icorp.vn:1883, client carwash-80456b281774, bayMac 80456b281774, khoang 0[0m
+[0;32mI (1745) wifi_portal: trang cau hinh WiFi: http://192.168.4.1/[0m
+[0;32mI (1749) main: khoi dong xong[0m
+[0;32mI (1751) main_task: Returned from app_main()[0m
+[0;32mI (1826) app_fsm: BOOT -> OUT_OF_SERVICE[0m
+[0;32mI (2833) app_fsm: den BAT (00:00, troi toi)[0m
+[0;32mI (3521) net_ethernet: Link up, MAC 80:45:6b:28:17:77[0m
+[0;32mI (3523) net_manager: ETH LINK UP[0m
+[0;32mI (4919) net_wifi: ===== SCAN RESULT (15 APs) =====[0m
+[0;32mI (4919) net_wifi: 1) SSID:TP-Link_FF1E RSSI:-51 CH:13[0m
+[0;32mI (4919) net_wifi: 2) SSID:Hanoi Office RSSI:-70 CH:11[0m
+[0;32mI (4923) net_wifi: 3) SSID:KTIC RSSI:-71 CH:11[0m
+[0;32mI (4927) net_wifi: 4) SSID:VANTUNG_2.4G RSSI:-72 CH:6[0m
+[0;32mI (4931) net_wifi: 5) SSID:HNO T4 RSSI:-78 CH:1[0m
+[0;32mI (4936) net_wifi: 6) SSID:Hanoi Office RSSI:-78 CH:1[0m
+[0;32mI (4941) net_wifi: 7) SSID:Hanoi Office RSSI:-79 CH:6[0m
+[0;32mI (4945) net_wifi: 8) SSID:HNO T4 RSSI:-79 CH:6[0m
+[0;32mI (4950) net_wifi: 9) SSID:Hanoi Office RSSI:-80 CH:1[0m
+[0;32mI (4954) net_wifi: 10) SSID:Vu Huy RSSI:-85 CH:1[0m
+[0;32mI (4959) net_wifi: 11) SSID:Tecepe RSSI:-90 CH:6[0m
+[0;32mI (4963) net_wifi: 12) SSID:HNO T4 RSSI:-91 CH:1[0m
+[0;32mI (4967) net_wifi: 13) SSID:CNL-Tang5 RSSI:-91 CH:1[0m
+[0;32mI (4972) net_wifi: 14) SSID:Hanoi Office RSSI:-92 CH:1[0m
+[0;32mI (4977) net_wifi: 15) SSID:Hanoi Office RSSI:-93 CH:6[0m
+[0;32mI (4985) net_wifi: Auto-connect -> TP-Link_FF1E[0m
+[0;32mI (5029) net_ethernet: Got IP: 192.168.0.147 mask:255.255.255.0 gw:192.168.0.1[0m
+[0;32mI (5029) esp_netif_handlers: eth ip: 192.168.0.147, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (5033) net_manager: ETH GOT IP[0m
+[0;32mI (5036) net_manager: Switch default interface -> ETH_DEF (DNS 192.168.0.1)[0m
+[0;32mI (5043) ntp_time: SNTP chua dong bo -> thu lai ngay (Ethernet co IP)[0m
+[0;32mI (5061) wifi:ap channel adjust o:1,1 n:13,2[0m
+[0;32mI (5061) wifi:new:<13,0>, old:<1,1>, ap:<13,2>, sta:<13,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (5062) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (5070) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (5077) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (5088) wifi:connected with TP-Link_FF1E, aid = 1, channel 13, BW20, bssid = c0:c9:e3:1b:ff:1e[0m
+[0;32mI (5089) wifi:security: WPA2-PSK, phy: bgn, rssi: -51[0m
+[0;32mI (5093) wifi:pm start, type: 0[0m
+
+[0;32mI (5094) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (5102) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (5112) net_manager: WIFI STA CONNECTED[0m
+[0;32mI (5116) wifi:<ba-add>idx:0 (ifx:0, c0:c9:e3:1b:ff:1e), tid:0, ssn:0, winSize:64[0m
+[0;32mI (5161) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (6133) esp_netif_handlers: sta ip: 192.168.0.144, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (6133) net_wifi: Got IP: 192.168.0.144[0m
+[0;32mI (6134) net_manager: WIFI GOT IP: 192.168.0.144[0m
+[0;32mI (6138) ntp_time: SNTP chua dong bo -> thu lai ngay (WiFi co IP)[0m
+[0;32mI (9203) uart_resource: tx_io_num: 47,rx_io_num: 48[0m
+[0;32mI (9204) uart: queue free spaces: 30[0m
+[0;32mI (9210) net_gsm: Signal quality OK: rssi=16 ber=99[0m
+[1;31mE (9232) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (9232) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (9237) mqtt_client: Error transport connect[0m
+[0;33mW (9241) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (10249) net_gsm: PPP connected, IP:215.56.147.121[0m
+[0;32mI (10250) net_manager: PPP netif duoc cap nhat runtime[0m
+[0;32mI (10250) net_manager: PPP GOT IP[0m
+[0;32mI (10250) esp-netif_lwip-ppp: ppp: Connected[0m
+[0;32mI (10251) ntp_time: SNTP chua dong bo -> thu lai ngay (4G co IP)[0m
+[0;32mI (11707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (16745) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (16745) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (16750) mqtt_client: Error transport connect[0m
+[0;33mW (16754) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (21707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (24258) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (24259) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (24263) mqtt_client: Error transport connect[0m
+[0;33mW (24267) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (31707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (31771) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (31771) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (31776) mqtt_client: Error transport connect[0m
+[0;33mW (31780) cloud: loi MQTT (sock errno 0)[0m
+[1;31mE (39284) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (39284) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (39289) mqtt_client: Error transport connect[0m
+[0;33mW (39293) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (41707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[0;32mI (42122) wifi:new:<13,2>, old:<13,0>, ap:<13,2>, sta:<13,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (42123) wifi:station: 14:ac:60:77:b3:77 join, AID=1, bgn, 40D[0m
+[0;32mI (42163) net_wifi: Station 14:ac:60:77:b3:77 joined AP, AID=1[0m
+[0;32mI (42998) wifi:<ba-add>idx:2 (ifx:1, 14:ac:60:77:b3:77), tid:0, ssn:24, winSize:64[0m
+[0;32mI (46077) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[1;31mE (46797) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (46798) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (46802) mqtt_client: Error transport connect[0m
+[0;33mW (46806) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (51707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[0;32mI (53003) net_wifi: ===== SCAN RESULT (14 APs) =====[0m
+[0;32mI (53003) net_wifi: 1) SSID:TP-Link_FF1E RSSI:-52 CH:13[0m
+[0;32mI (53004) net_wifi: 2) SSID:Hanoi Office RSSI:-67 CH:11[0m
+[0;32mI (53007) net_wifi: 3) SSID:KTIC RSSI:-71 CH:11[0m
+[0;32mI (53011) net_wifi: 4) SSID:VANTUNG_2.4G RSSI:-74 CH:6[0m
+[0;32mI (53016) net_wifi: 5) SSID:Hanoi Office RSSI:-74 CH:6[0m
+[0;32mI (53021) net_wifi: 6) SSID:HNO T4 RSSI:-74 CH:6[0m
+[0;32mI (53025) net_wifi: 7) SSID:HNO T4 RSSI:-78 CH:1[0m
+[0;32mI (53030) net_wifi: 8) SSID:ICORP PKD02 RSSI:-78 CH:11[0m
+[0;32mI (53034) net_wifi: 9) SSID:Hanoi Office RSSI:-79 CH:1[0m
+[0;32mI (53039) net_wifi: 10) SSID:Hanoi Office RSSI:-79 CH:1[0m
+[0;32mI (53044) net_wifi: 11) SSID:ICORP PKD01 RSSI:-81 CH:8[0m
+[0;32mI (53049) net_wifi: 12) SSID:New Wifi CMC RSSI:-83 CH:3[0m
+[0;32mI (53054) net_wifi: 13) SSID:FPT Telecom-5C21-IOT RSSI:-87 CH:1[0m
+[0;32mI (53060) net_wifi: 14) SSID:CNL-Tang5 RSSI:-92 CH:1[0m
+[0;32mI (53064) net_wifi: Scan theo yeu cau API -> xong, khong auto-connect[0m
+[1;31mE (54310) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (54310) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (54315) mqtt_client: Error transport connect[0m
+[0;33mW (54319) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (61707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (61823) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (61824) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (61828) mqtt_client: Error transport connect[0m
+[0;33mW (61832) cloud: loi MQTT (sock errno 0)[0m
+[1;31mE (69336) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (69336) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (69341) mqtt_client: Error transport connect[0m
+[0;33mW (69345) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (71707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (76849) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (76850) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (76854) mqtt_client: Error transport connect[0m
+[0;33mW (76858) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (81707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (84362) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (84362) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (84367) mqtt_client: Error transport connect[0m
+[0;33mW (84371) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (91707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (91875) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (91875) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (91880) mqtt_client: Error transport connect[0m
+[0;33mW (91884) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (92598) wifi:station: 14:ac:60:77:b3:77 leave, AID = 1, reason = 3, bss_flags is 756835, bss:0x3c196b6c[0m
+[0;32mI (92599) wifi:new:<13,0>, old:<13,2>, ap:<13,2>, sta:<13,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (92605) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (92607) wifi:new:<13,2>, old:<13,0>, ap:<13,2>, sta:<13,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (92616) net_wifi: Station 14:ac:60:77:b3:77 left AP, AID=1[0m
+[1;31mE (99388) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (99388) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (99393) mqtt_client: Error transport connect[0m
+[0;33mW (99397) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (101707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (106901) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (106901) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (106906) mqtt_client: Error transport connect[0m
+[0;33mW (106910) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (111707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (114414) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (114414) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (114419) mqtt_client: Error transport connect[0m
+[0;33mW (114423) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (121707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (121927) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (121927) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (121932) mqtt_client: Error transport connect[0m
+[0;33mW (121936) cloud: loi MQTT (sock errno 0)[0m
+[1;31mE (129440) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (129440) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (129445) mqtt_client: Error transport connect[0m
+[0;33mW (129449) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (131707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (136953) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (136953) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (136958) mqtt_client: Error transport connect[0m
+[0;33mW (136962) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (141707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (144466) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (144466) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (144471) mqtt_client: Error transport connect[0m
+[0;33mW (144475) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (151707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (151979) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (151979) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (151984) mqtt_client: Error transport connect[0m
+[0;33mW (151988) cloud: loi MQTT (sock errno 0)[0m
+[1;31mE (159492) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (159493) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (159497) mqtt_client: Error transport connect[0m
+[0;33mW (159501) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (161707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (167005) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (167005) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (167010) mqtt_client: Error transport connect[0m
+[0;33mW (167014) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (171707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (174518) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (174518) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (174523) mqtt_client: Error transport connect[0m
+[0;33mW (174527) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (181707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (182031) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (182031) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (182036) mqtt_client: Error transport connect[0m
+[0;33mW (182040) cloud: loi MQTT (sock errno 0)[0m
+[1;31mE (189544) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (189544) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (189549) mqtt_client: Error transport connect[0m
+[0;33mW (189553) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (191707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (197057) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (197058) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (197062) mqtt_client: Error transport connect[0m
+[0;33mW (197067) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (201707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (204570) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (204570) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (204575) mqtt_client: Error transport connect[0m
+[0;33mW (204579) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (211707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (212083) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (212083) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (212088) mqtt_client: Error transport connect[0m
+[0;33mW (212092) cloud: loi MQTT (sock errno 0)[0m
+[1;31mE (219596) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (219596) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (219601) mqtt_client: Error transport connect[0m
+[0;33mW (219605) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (221707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (227109) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (227109) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (227114) mqtt_client: Error transport connect[0m
+[0;33mW (227118) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (231707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (234622) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (234623) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (234627) mqtt_client: Error transport connect[0m
+[0;33mW (234631) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (241707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (242135) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (242135) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (242140) mqtt_client: Error transport connect[0m
+[0;33mW (242144) cloud: loi MQTT (sock errno 0)[0m
+[1;31mE (249648) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (249648) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (249653) mqtt_client: Error transport connect[0m
+[0;33mW (249657) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (251707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (257161) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (257161) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (257166) mqtt_client: Error transport connect[0m
+[0;33mW (257170) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (261707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (264674) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (264674) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (264679) mqtt_client: Error transport connect[0m
+[0;33mW (264683) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (271707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (272187) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (272187) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (272192) mqtt_client: Error transport connect[0m
+[0;33mW (272196) cloud: loi MQTT (sock errno 0)[0m
+[1;31mE (279700) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (279700) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (279705) mqtt_client: Error transport connect[0m
+[0;33mW (279709) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (281707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (287213) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (287213) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (287218) mqtt_client: Error transport connect[0m
+[0;33mW (287222) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (291707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (294726) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (294726) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (294731) mqtt_client: Error transport connect[0m
+[0;33mW (294735) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (301707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (302239) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (302239) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (302244) mqtt_client: Error transport connect[0m
+[0;33mW (302248) cloud: loi MQTT (sock errno 0)[0m
+[1;31mE (309752) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (309753) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (309757) mqtt_client: Error transport connect[0m
+[0;33mW (309761) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (311707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (317265) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (317265) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (317270) mqtt_client: Error transport connect[0m
+[0;33mW (317275) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (321707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (324778) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (324779) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (324783) mqtt_client: Error transport connect[0m
+[0;33mW (324787) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (331707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (332291) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (332291) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (332296) mqtt_client: Error transport connect[0m
+[0;33mW (332300) cloud: loi MQTT (sock errno 0)[0m
+[1;31mE (339804) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (339804) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (339809) mqtt_client: Error transport connect[0m
+[0;33mW (339813) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (341707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (347317) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (347317) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (347322) mqtt_client: Error transport connect[0m
+[0;33mW (347326) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (351707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (354830) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (354830) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (354835) mqtt_client: Error transport connect[0m
+[0;33mW (354839) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (361707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (362343) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (362344) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (362348) mqtt_client: Error transport connect[0m
+[0;33mW (362352) cloud: loi MQTT (sock errno 0)[0m
+[1;31mE (369856) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (369857) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (369861) mqtt_client: Error transport connect[0m
+[0;33mW (369865) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (371707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (377369) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (377369) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (377374) mqtt_client: Error transport connect[0m
+[0;33mW (377378) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (381707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (384882) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (384883) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (384887) mqtt_client: Error transport connect[0m
+[0;33mW (384891) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (391707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (392395) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (392396) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (392400) mqtt_client: Error transport connect[0m
+[0;33mW (392405) cloud: loi MQTT (sock errno 0)[0m
+[1;31mE (399908) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (399909) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (399913) mqtt_client: Error transport connect[0m
+[0;33mW (399918) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (401707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (407421) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (407421) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (407426) mqtt_client: Error transport connect[0m
+[0;33mW (407430) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (411707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (414934) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (414934) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (414939) mqtt_client: Error transport connect[0m
+[0;33mW (414943) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (421707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (422447) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (422447) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (422452) mqtt_client: Error transport connect[0m
+[0;33mW (422456) cloud: loi MQTT (sock errno 0)[0m
+[1;31mE (429960) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (429960) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (429965) mqtt_client: Error transport connect[0m
+[0;33mW (429969) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (431707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (437473) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (437473) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (437478) mqtt_client: Error transport connect[0m
+[0;33mW (437482) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (441707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (444986) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (444986) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (444991) mqtt_client: Error transport connect[0m
+[0;33mW (444995) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (451707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (452499) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (452499) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (452504) mqtt_client: Error transport connect[0m
+[0;33mW (452508) cloud: loi MQTT (sock errno 0)[0m
+[1;31mE (460012) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (460013) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (460017) mqtt_client: Error transport connect[0m
+[0;33mW (460021) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (461707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (467525) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (467525) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (467530) mqtt_client: Error transport connect[0m
+[0;33mW (467534) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (471707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (475038) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (475038) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (475043) mqtt_client: Error transport connect[0m
+[0;33mW (475047) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (481707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (482551) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (482552) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (482557) mqtt_client: Error transport connect[0m
+[0;33mW (482561) cloud: loi MQTT (sock errno 0)[0m
+[1;31mE (490065) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (490065) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (490070) mqtt_client: Error transport connect[0m
+[0;33mW (490074) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (491707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (497578) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (497578) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (497583) mqtt_client: Error transport connect[0m
+[0;33mW (497587) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (501707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (505091) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (505091) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (505096) mqtt_client: Error transport connect[0m
+[0;33mW (505100) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (511707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (512604) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (512604) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (512609) mqtt_client: Error transport connect[0m
+[0;33mW (512613) cloud: loi MQTT (sock errno 0)[0m
+[1;31mE (520117) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (520117) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (520122) mqtt_client: Error transport connect[0m
+[0;33mW (520126) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (521707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (527630) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (527630) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (527635) mqtt_client: Error transport connect[0m
+[0;33mW (527639) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (531707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (535143) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (535144) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (535148) mqtt_client: Error transport connect[0m
+[0;33mW (535152) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (541707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (542656) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (542656) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (542661) mqtt_client: Error transport connect[0m
+[0;33mW (542665) cloud: loi MQTT (sock errno 0)[0m
+[1;31mE (550169) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (550169) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (550174) mqtt_client: Error transport connect[0m
+[0;33mW (550178) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (551707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (557682) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (557683) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (557687) mqtt_client: Error transport connect[0m
+[0;33mW (557691) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (561707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (565195) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (565195) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (565200) mqtt_client: Error transport connect[0m
+[0;33mW (565204) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (571707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (572708) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (572708) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (572713) mqtt_client: Error transport connect[0m
+[0;33mW (572717) cloud: loi MQTT (sock errno 0)[0m
+[1;31mE (580221) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (580221) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (580226) mqtt_client: Error transport connect[0m
+[0;33mW (580230) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (581707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (587734) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (587734) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (587739) mqtt_client: Error transport connect[0m
+[0;33mW (587743) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (591707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (595247) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (595247) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (595252) mqtt_client: Error transport connect[0m
+[0;33mW (595256) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (601707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (602760) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (602760) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (602765) mqtt_client: Error transport connect[0m
+[0;33mW (602769) cloud: loi MQTT (sock errno 0)[0m
+[1;31mE (610273) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (610273) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (610278) mqtt_client: Error transport connect[0m
+[0;33mW (610282) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (611707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (617786) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (617786) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (617791) mqtt_client: Error transport connect[0m
+[0;33mW (617795) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (621707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (625299) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (625299) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (625304) mqtt_client: Error transport connect[0m
+[0;33mW (625308) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (631707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (632812) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (632813) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (632817) mqtt_client: Error transport connect[0m
+[0;33mW (632821) cloud: loi MQTT (sock errno 0)[0m
+[1;31mE (640325) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (640325) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (640330) mqtt_client: Error transport connect[0m
+[0;33mW (640334) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (641707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (647838) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (647838) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (647843) mqtt_client: Error transport connect[0m
+[0;33mW (647847) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (651707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (655351) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (655351) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (655356) mqtt_client: Error transport connect[0m
+[0;33mW (655360) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (661707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (662864) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (662864) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (662869) mqtt_client: Error transport connect[0m
+[0;33mW (662873) cloud: loi MQTT (sock errno 0)[0m
+[1;31mE (670377) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (670377) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (670382) mqtt_client: Error transport connect[0m
+[0;33mW (670386) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (671707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (677890) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (677891) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (677895) mqtt_client: Error transport connect[0m
+[0;33mW (677900) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (681707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (685403) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (685404) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (685408) mqtt_client: Error transport connect[0m
+[0;33mW (685412) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (691707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (692916) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (692916) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (692921) mqtt_client: Error transport connect[0m
+[0;33mW (692925) cloud: loi MQTT (sock errno 0)[0m
+[1;31mE (700429) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (700429) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (700434) mqtt_client: Error transport connect[0m
+[0;33mW (700438) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (701707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (707942) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (707943) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (707947) mqtt_client: Error transport connect[0m
+[0;33mW (707952) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (711707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (715455) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (715455) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (715460) mqtt_client: Error transport connect[0m
+[0;33mW (715464) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (721707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (722968) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (722968) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (722973) mqtt_client: Error transport connect[0m
+[0;33mW (722977) cloud: loi MQTT (sock errno 0)[0m
+[1;31mE (730481) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (730481) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (730486) mqtt_client: Error transport connect[0m
+[0;33mW (730490) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (731707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (737994) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (737994) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (737999) mqtt_client: Error transport connect[0m
+[0;33mW (738003) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (741707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (745507) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (745507) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (745512) mqtt_client: Error transport connect[0m
+[0;33mW (745516) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (751707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (753020) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (753020) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (753025) mqtt_client: Error transport connect[0m
+[0;33mW (753029) cloud: loi MQTT (sock errno 0)[0m
+[1;31mE (760533) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (760533) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (760538) mqtt_client: Error transport connect[0m
+[0;33mW (760542) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (761707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (768046) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (768046) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (768051) mqtt_client: Error transport connect[0m
+[0;33mW (768055) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (771707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (775559) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (775559) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (775564) mqtt_client: Error transport connect[0m
+[0;33mW (775568) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (781707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (783072) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (783072) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (783077) mqtt_client: Error transport connect[0m
+[0;33mW (783081) cloud: loi MQTT (sock errno 0)[0m
+[1;31mE (790585) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (790585) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (790590) mqtt_client: Error transport connect[0m
+[0;33mW (790594) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (791707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (798098) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (798098) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (798103) mqtt_client: Error transport connect[0m
+[0;33mW (798107) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (801707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (805611) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (805611) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (805616) mqtt_client: Error transport connect[0m
+[0;33mW (805621) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (811707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (813124) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (813124) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (813129) mqtt_client: Error transport connect[0m
+[0;33mW (813133) cloud: loi MQTT (sock errno 0)[0m
+[1;31mE (820637) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (820637) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (820642) mqtt_client: Error transport connect[0m
+[0;33mW (820646) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (821707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
+[1;31mE (828150) esp-tls: couldn't get hostname for :uat-mqtt-carwash.icorp.vn: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (828150) transport_base: Failed to open a new connection: 32769[0m
+[1;31mE (828155) mqtt_client: Error transport connect[0m
+[0;33mW (828159) cloud: loi MQTT (sock errno 0)[0m
+[0;32mI (831707) ntp_time: SNTP chua dong bo -> thu lai ngay (dinh ky)[0m
