@@ -81,7 +81,8 @@ void cp_parse_down(const char *data, int len, cp_down_t *out);
 /* ================= CAU HINH TU: carwash/v1/{mac}/config (retain) =================
  * Tai lieu muc 6 (cap nhat 23/10/2026):
  *   {"mode": "S#3#1#2#1", "packages": "10000#600#900|20000#900#1200|30000#1200#1500"}
- *   mode     = mode#foam#water#air#vacuum. S = SPEED (he so > 0), R = RATIO (so nguyen > 0, tong 100)
+ *   mode     = mode#foam#water#air#vacuum. S = SPEED (he so > 0), R = RATIO (so nguyen > 0, tong 100).
+ *              Gia tri 0 = bo loai do (vd "R#20#50#30#0", "S#3#0#2#0"); can it nhat 1 trong bot/nuoc/khi > 0
  *   packages = cac goi ngan cach '|', moi goi price#packageDuration#parkingTime (VND, giay, giay)
  *   meterInterval = chu ky gui Meter dinh ky khi dang rua (giay, so nguyen
  *                   CLOUD_METER_INTERVAL_MIN_S..CLOUD_METER_INTERVAL_MAX_S)

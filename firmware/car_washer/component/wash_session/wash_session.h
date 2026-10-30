@@ -91,12 +91,13 @@ typedef enum
 typedef struct
 {
     uint8_t mode;                     /* ws_mode_t */
-    uint16_t rate_pct[WS_KIND_COUNT]; /* kich ban 1: toc do tru khi bom chay, 100 = 1x, 300 = 3x */
-    uint16_t permille[WS_KIND_COUNT]; /* kich ban 2: phan chia cho tung loai, tong phai = 1000 */
+    uint16_t rate_pct[WS_KIND_COUNT]; /* kich ban 1: toc do tru khi bom chay, 100 = 1x, 300 = 3x. 0 = BO loai nay */
+    uint16_t permille[WS_KIND_COUNT]; /* kich ban 2: phan chia cho tung loai, tong phai = 1000. 0 = BO loai nay */
     uint32_t deadtime_ms;
     uint32_t park_extra_ms;           /* thoi gian do xe = thoi gian goi + khoang nay */
 } ws_config_t;
 
+/* rate_pct hop le: 0 (bo loai nay, nut bam bi bo qua nhu "da het phan") hoac MIN..MAX */
 #define WS_RATE_PCT_MIN 10
 #define WS_RATE_PCT_MAX 1000
 #define WS_PARK_EXTRA_MAX_MS (2u * 3600u * 1000u)

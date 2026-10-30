@@ -215,10 +215,13 @@ char *cp_build_meter(const char *bay_mac, int bay_number, const ws_session_t *s)
     {
         if (!washing)
             cJSON_AddStringToObject(p, "reason", end_reason_str(s->end_reason));
-        /* Giay bom THUC TE cua tung chuc nang trong phien */
-        cJSON_AddNumberToObject(p, "foamSeconds", s->used_ms[WS_FOAM] / 1000);
-        cJSON_AddNumberToObject(p, "waterSeconds", s->used_ms[WS_WATER] / 1000);
-        cJSON_AddNumberToObject(p, "airSeconds", s->used_ms[WS_DRY] / 1000);
+        /* Giay DA SU DUNG cua tung chuc nang DUNG NHU HIEN TREN MAN HINH (da nhan he so toc do, vd bot 3x:
+         * bom 10 giay -> 30). Cung so voi man ket thuc. Giay bom thuc te van co trong s->used_ms (khong gui). */
+        ws_view_t v;
+        ws_get_view(s, &v);
+        cJSON_AddNumberToObject(p, "foamSeconds", v.used_s[WS_FOAM]);
+        cJSON_AddNumberToObject(p, "waterSeconds", v.used_s[WS_WATER]);
+        cJSON_AddNumberToObject(p, "airSeconds", v.used_s[WS_DRY]);
         cJSON_AddNumberToObject(p, "vacuumSeconds", 0);
         /* Thoi luong do xe TOI DA cua phien (goi + thoi gian them), khong doi trong phien */
         cJSON_AddNumberToObject(p, "parkingTime", s->park_total_ms / 1000);
@@ -296,12 +299,16 @@ done:
 /* Doi 4 gia tri goc (bot, nuoc, khi, hut bui) sang tham so wash_session. is_speed: SPEED / RATIO */
 static bool fill_op_mode(bool is_speed, const double v[4], cp_op_mode_t *out)
 {
+    /* Moi gia tri >= 0; 0 = bo loai do (tram khong co bot / nuoc / khi / hut bui).
+     * Phai con it nhat 1 trong bot / nuoc / khi > 0 (V1 chua co hut bui) */
     for (int i = 0; i < 4; i++)
     {
-        if (!isfinite(v[i]) || v[i] <= 0)
+        if (!isfinite(v[i]) || v[i] < 0)
             return false;
         out->raw[i] = (float)v[i];
     }
+    if (v[0] <= 0 && v[1] <= 0 && v[2] <= 0)
+        return false;
     if (is_speed)
     {
         /* He so x100 (3 -> 300%). Chi so wash_session: 0 bot, 1 nuoc, 2 kho (= air). */
@@ -309,13 +316,15 @@ static bool fill_op_mode(bool is_speed, const double v[4], cp_op_mode_t *out)
         for (int k = 0; k < WS_KIND_COUNT; k++)
         {
             long r = lround(v[k] * 100.0);
-            if (r < WS_RATE_PCT_MIN || r > WS_RATE_PCT_MAX)
+            if (r != 0 && (r < WS_RATE_PCT_MIN || r > WS_RATE_PCT_MAX)) /* 0 = bo loai nay */
+                return false;
+            if (r == 0 && v[k] > 0) /* vd 0.001 -> lam tron thanh 0: coi la sai, khong am tham bo loai */
                 return false;
             out->rate_pct[k] = (uint16_t)r;
         }
         return true;
     }
-    /* RATIO: so nguyen > 0, tong 100. V1 chua co hut bui -> phan hut bui chia lai cho
+    /* RATIO: so nguyen >= 0 (0 = bo loai do), tong 100. V1 chua co hut bui -> phan hut bui chia lai cho
      * bot/nuoc/kho theo dung ti le cua chung, vd 20/50/20/10 -> 22.2% / 55.6% / 22.2% */
     out->mode = WS_MODE_SHARE;
     long sum = 0;
@@ -327,14 +336,17 @@ static bool fill_op_mode(bool is_speed, const double v[4], cp_op_mode_t *out)
     }
     if (sum != 100)
         return false;
-    double s3 = v[0] + v[1] + v[2];
-    int acc = 0;
-    for (int k = 0; k < WS_KIND_COUNT - 1; k++)
+    double s3 = v[0] + v[1] + v[2]; /* > 0 (da kiem tra o tren) */
+    int acc = 0, big = 0;
+    for (int k = 0; k < WS_KIND_COUNT; k++)
     {
         out->permille[k] = (uint16_t)lround(v[k] * 1000.0 / s3);
         acc += out->permille[k];
+        if (v[k] > v[big])
+            big = k;
     }
-    out->permille[WS_KIND_COUNT - 1] = (uint16_t)(1000 - acc);
+    /* Sai so lam tron (+-1) don vao loai lon nhat -> loai bi bo (0) van dung bang 0, tong dung 1000 */
+    out->permille[big] = (uint16_t)(out->permille[big] + (1000 - acc));
     return true;
 }
 

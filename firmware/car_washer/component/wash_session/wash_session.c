@@ -51,14 +51,18 @@ bool ws_config_valid(const ws_config_t *cfg)
 {
     if (!cfg || (cfg->mode != WS_MODE_RATE && cfg->mode != WS_MODE_SHARE))
         return false;
-    uint32_t sum = 0;
+    uint32_t sum = 0, rate_on = 0;
     for (int k = 0; k < WS_KIND_COUNT; k++)
     {
-        if (cfg->rate_pct[k] < WS_RATE_PCT_MIN || cfg->rate_pct[k] > WS_RATE_PCT_MAX)
+        /* 0 = bo loai nay (server gui he so / ti le 0) */
+        if (cfg->rate_pct[k] != 0 && (cfg->rate_pct[k] < WS_RATE_PCT_MIN || cfg->rate_pct[k] > WS_RATE_PCT_MAX))
             return false;
+        rate_on += cfg->rate_pct[k] != 0;
         sum += cfg->permille[k];
     }
     if (sum != 1000u)
+        return false;
+    if (cfg->mode == WS_MODE_RATE && rate_on == 0) /* bo het ca 3 loai -> khong rua duoc */
         return false;
     return cfg->deadtime_ms <= WS_MAX_DEADTIME_MS && cfg->park_extra_ms <= WS_PARK_EXTRA_MAX_MS;
 }
@@ -88,14 +92,20 @@ bool ws_start(ws_session_t *s, const ws_config_t *cfg, uint32_t total_ms, uint32
 
     if (s->mode == WS_MODE_SHARE)
     {
-        /* Chia theo GIAY tron (de so tren man hinh khop nhau); loai cuoi nhan phan du */
+        /* Chia theo GIAY tron (de so tren man hinh khop nhau); phan du cho loai CUOI CO ti le > 0
+         * (loai bi bo = 0 phan nghin thi khong duoc giay nao) */
         uint32_t total_s = total_ms / 1000u, assigned = 0;
-        for (int k = 0; k < WS_KIND_COUNT - 1; k++)
+        int last = WS_KIND_COUNT - 1;
+        while (last > 0 && cfg->permille[last] == 0)
+            last--;
+        for (int k = 0; k < WS_KIND_COUNT; k++)
         {
+            if (k == last)
+                continue;
             s->budget_ms[k] = (uint32_t)(((uint64_t)total_s * cfg->permille[k]) / 1000u) * 1000u;
             assigned += s->budget_ms[k];
         }
-        s->budget_ms[WS_KIND_COUNT - 1] = total_ms - assigned;
+        s->budget_ms[last] = total_ms - assigned;
         for (int k = 0; k < WS_KIND_COUNT; k++)
             s->rate_pct[k] = 100;
     }
@@ -103,7 +113,8 @@ bool ws_start(ws_session_t *s, const ws_config_t *cfg, uint32_t total_ms, uint32
     {
         for (int k = 0; k < WS_KIND_COUNT; k++)
         {
-            s->budget_ms[k] = total_ms; /* khong gioi han rieng tung loai */
+            /* khong gioi han rieng tung loai; he so 0 = bo loai nay -> phan = 0, nut bam bi bo qua */
+            s->budget_ms[k] = cfg->rate_pct[k] ? total_ms : 0;
             s->rate_pct[k] = cfg->rate_pct[k];
         }
     }
@@ -206,6 +217,11 @@ uint32_t ws_tick(ws_session_t *s, uint32_t elapsed_ms)
         uint32_t shown_before = ws_left_shown_s(s);
         uint32_t rate = s->rate_pct[k];
         uint32_t avail = ws_kind_left_ms(s, k);
+        if (rate == 0) /* loai bi bo (khong the xay ra: nut bam da bi bo qua) -> tat bom, khong chia 0 */
+        {
+            pumps_off(s);
+            return ev;
+        }
         uint64_t acc = (uint64_t)d * rate + s->charge_rem;
         uint64_t charge = acc / 100u;
 
@@ -325,7 +341,7 @@ bool ws_validate(const ws_session_t *s)
     uint64_t sum = s->session_left_ms, shown = ws_left_shown_s(s), budget = 0;
     for (int k = 0; k < WS_KIND_COUNT; k++)
     {
-        if (s->rate_pct[k] < WS_RATE_PCT_MIN || s->rate_pct[k] > WS_RATE_PCT_MAX)
+        if (s->rate_pct[k] != 0 && (s->rate_pct[k] < WS_RATE_PCT_MIN || s->rate_pct[k] > WS_RATE_PCT_MAX))
             return false;
         if (s->charged_ms[k] > s->budget_ms[k] || s->budget_ms[k] > s->total_ms)
             return false;
